@@ -1,0 +1,104 @@
+
+summary{padding-left:10px;padding:5px;cursor:help;}
+ 
+    body{
+    word-wrap:break-word;
+    font-size:16px;
+    line-height:23px;
+    font-family:ms gothic;
+    color:black;}
+    
+    li{list-style-image: url('/!g/pix/li19.gif');padding-left:2px;list-style-position:inside;}
+
+   i{background:#C7D9F8;}
+   b,strong{background:#E4A79D;}
+   mark{background:#FFE481;}
+  
+    a{
+    color:#7D82B8;
+    font-weight:bold;
+    text-decoration:wavy underline;}
+
+    a:focus{outline: 1px dashed black; outline-offset: 3px;}
+ 
+    a:hover{
+    color:black;
+    text-decoration:underline;
+    cursor:help;}
+ 
+    p{
+    margin:0 0 10px 0;
+    padding:5px;}
+    p img{vertical-align:middle;}
+    
+    ::selection{ 
+    color:black; 
+    background-color:#C8CEFF;}
+ 
+    ::-webkit-scrollbar {
+    width: 8px;
+    height:8px;}
+ 
+    ::-webkit-scrollbar-thumb:vertical{
+    background-color: #E5C3D1;
+    border-radius:10px;}
+    
+    ::-webkit-scrollbar-thumb:horizontal{
+    background-color: #E5C3D1;
+    border-radius:10px;}
+ 
+    ::-webkit-scrollbar-track {
+    background: rgb(255,255,255);
+background: linear-gradient(0deg, rgba(255,255,255,0.7506652319130778) 0%, rgba(255,255,255,0.7562674728094363) 100%);}
+    
+.spoiler{
+	 background-color:black;
+  color:black;
+  }
+
+.spoiler:hover { 
+  background-color:transparent; 
+  }
+
+.date {text-align:right;}
+.date mark{background:#E5C3D1}
+
+ #iframepc {
+  background-image:url(/!g/bg/bggrid.png);
+  padding:6px;
+  max-width:600px;
+  margin:auto;
+}
+
+#iframepc .title{font-family:morningtea}
+
+#s-m-t-tooltip{
+	max-width: 200px;
+	font-family:ms gothic;
+ text-align:center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding:5px;
+ border-radius:10px;
+	border:1px dashed black;
+	color:black;
+	background: linear-gradient(-45deg, #FFEFA6, #D9FFC6, #BBDFFF, #E2D1FF, #FFCBD4);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;}
+		
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@font-face{
+      font-family: 'morningtea';
+  src: url(/fonts/MorningTea.ttf);
+    }

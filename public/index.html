@@ -1,0 +1,200 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- 
+				 |\__/,|   (`\
+				 |_ _  |.--.) )
+				 ( T   )     /
+				(((^_(((/(((_/
+				coded with love by des
+
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>doqmeat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.gif">
+	<link href="!f/index.css" rel="stylesheet" type="text/css" media="all">
+	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="!f/snowflakes.css" rel="stylesheet" type="text/css" media="all">
+	<!-- 	webring stuff -->
+	<link href="https://adilene.net/webring/webring.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://sugarforbrains.neocities.org/mobring/onionring.css">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$("[title]").style_my_tooltips({
+					tip_follows_cursor: true,
+					tip_delay_time: 10,
+					tip_fade_speed: 10,
+					attribute: "title"
+				});
+			});
+		})(jQuery);
+
+	</script>
+	<!--  end of tooltip shit -->
+	<script type="text/javascript">
+		// <![CDATA[
+		var speed = 500; // speed colours change, 1 second = 1000
+		var glow = 1; // can be set from '0' for no glow, to 10
+		var raincol = new Array("#8BA479", "#F5978F", "#807182"); // change the colours if you want to
+		var alink = "/home"; // page to link text to (set to ="" for no link)
+
+		/****************************
+		 *    Rainbow Text Effect    *
+		 *(c)2003-13 mf2fm web-design*
+		 *  http://www.mf2fm.com/rv  *
+		 * DON'T EDIT BELOW THIS BOX *
+		 ****************************/
+		var rainbow, raintxt, raincnt = 0;
+
+		function addLoadEvent(funky) {
+			var oldonload = window.onload;
+			if (typeof(oldonload) != 'function') window.onload = funky;
+			else window.onload = function() {
+				if (oldonload) oldonload();
+				funky();
+			}
+		}
+
+		addLoadEvent(regenbogen);
+
+		function regenbogen() {
+			if (document.getElementById) {
+				var i, rainbeau;
+				rainbow = document.getElementById("rainbow");
+				raintxt = rainbow.firstChild.nodeValue;
+				while (rainbow.childNodes.length) rainbow.removeChild(rainbow.childNodes[0]);
+				for (i = 0; i < raintxt.length; i++) {
+					rainbeau = document.createElement("span");
+					rainbeau.setAttribute("id", "rain" + i);
+					rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
+					if (alink) {
+						rainbeau.style.cursor = "pointer";
+						rainbeau.onclick = function() {
+							top.location.href = alink;
+						}
+					}
+					rainbow.appendChild(rainbeau);
+				}
+				rainbow = setInterval("raining()", speed);
+			}
+		}
+
+		function raining() {
+			var i, c;
+			for (i = 0; i < raintxt.length; i++) {
+				c = raincol[(i + raincnt) % raincol.length];
+				document.getElementById("rain" + i).style.color = c;
+				if (glow) document.getElementById("rain" + i).style.textShadow = c + " 0px 0px " + glow + "px";
+			}
+			raincnt++;
+		}
+		// ]]>
+
+	</script>
+</head>
+
+<body>
+	<div id="top"></div>
+
+	<main>
+		<p>hello there! you're about to enter <span id="rainbow">doqmeat.neocities.org</span> </p>
+
+		<p>this website uses <u>javascript</u> and <u>iframes</u>. on rare occasions there will be <u>autoplay audio</u>, and discussions of <u>heavy topics</u>.</p>
+		<p class="hide"><b>it is not compatible with mobile devices</b>, sorry!</p>
+		<p>this is a personal website made by an adult (for an adult audience in mind) and for my own enjoyment.</p>
+		<p>with that said, have fun browsing!</p>
+
+		<img src="https://doqmeat.neocities.org/!g/deco/flower6.gif">
+		<img src="https://doqmeat.neocities.org/!g/deco/treestump.gif">
+		<img src="https://doqmeat.neocities.org/!g/deco/flower6.gif">
+	</main>
+
+	<div id="cat">
+		<a title="shhhhhh he's sleeping! but you can still come in :)" href="/home.html" style="background:transparent"><img src="https://doqmeat.neocities.org/!g/deco/sleeping-cat.gif" alt="picture of a cat sleeping that links to homepage"></a>
+	</div>
+
+	<div id="chatbox">
+		<h3>chatbox</h3>
+		<iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+	</div>
+
+	<div id="webrings">
+		<h3>webrings</h3>
+		<center>
+			<!-- neo creatives -->
+			<div id='ncring' style="margin:auto;">
+				<script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script>
+				<script type="text/javascript" src="https://neocreatives.neocities.org/onionring-widget.js"></script>
+			</div>
+
+			<!-- mob psycho 100 / mp100 webring -->
+			<div id='mobring' style="margin:5px;">
+				<script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/onionring-variables.js"></script>
+				<script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/basic-widget.js"></script>
+			</div>
+
+			<!-- pikring -->
+			<div id='PikRing' style="margin:5px 0px;">
+				<link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/rock.css">
+				<script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-variables.js"></script>
+				<script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
+			</div>
+
+			<!-- wiiring -->
+			<div style="width:150px;margin:auto;">
+				<script src="https://jeith.neocities.org/assets/webring/wii-ring.js"></script>
+				<wii-ring site="https://doqmeat.neocities.org"></wii-ring>
+			</div>
+
+			<!--  vocaloid webring -->
+			<div id="vocaring">
+				<script type="text/javascript" src="https://adilene.net/webring/webring-variables.js"></script>
+				<script type="text/javascript" src="https://adilene.net/webring/webring-widget.js"></script>
+				<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+			</div>
+
+			<!-- melonland surf -->
+			<object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#c999f0" type="image/svg+xml" style="width: 100px; height: 100px;"></object>
+		</center>
+	</div>
+
+	<footer>
+		<p class="cred"><b>credit:</b>
+			background by <a href="https://www.pexels.com/photo/white-and-yellow-flower-on-a-forest-105075/">david j. boozer</a> from pexels
+
+			<img src="!g/pix/1leaf.png">
+
+			lace borders by <a href="https://sorahana.ciao.jp/">sorahana</a>
+
+			<img src="!g/pix/1leaf.png">
+
+			<a href="http://www.mf2fm.com/rv/dhtmlrainbow.php">blinking JS text effect</a>
+
+			<br>
+
+			<a href="mailto:doqmeat@gmail.com">contact email</a>
+			⋆
+			<a href="https://neocities.org/site/doqmeat">neocities profile</a>
+
+		</p>
+		<img src="/sites/!g/doqmeat.png">
+		<img src="/collection/internet-stamps/!g/best%20viewed.jpg">
+		<img src="/collection/internet-stamps/!g/nop.gif">
+		<img src="/collection/internet-stamps/!g/dontfeedai.gif">
+		<img src="/collection/internet-stamps/!g/antinft.png">
+		<a href="https://yesterweb.org/no-to-web3/" style="background:transparent"><img src="/collection/internet-stamps/!g/yesterweb-saynotoweb3.gif"></a>
+		<br>
+		<img src="/collection/internet-stamps/!g/borntodie.png">
+	</footer>
+
+	<div id="bottom"></div>
+
+</body>
+
+</html>
