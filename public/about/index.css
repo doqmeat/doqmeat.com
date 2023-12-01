@@ -1,0 +1,378 @@
+:root {
+	--darkblue: #15197B;
+	--lightblue: #87ADE3;
+	--hotpink: #FE88FA;
+	--lightpink: #FDBEFA;
+	--grey: #F3F3F1;
+	--whiteish: #FAFAFA;
+}
+
+body {
+	background: url(iyueni.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	word-wrap: break-word;
+	text-align: left;
+	font-size: 20px;
+	word-spacing: 8px;
+	line-height: 23px;
+	margin: 0px;
+	font-family: nintendo-ds-bios;
+	color: black;
+}
+
+li {
+	padding-left: 2px;
+	list-style-position: inside;
+}
+
+a {
+	color: var(--hotpink);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+a:hover {
+	color: var(--darkblue);
+	text-decoration: none;
+	cursor: help;
+}
+
+a:focus {
+	outline: 1px dashed black;
+	outline-offset: 3px;
+}
+
+mark {
+	background: var(--lightpink)
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+/* header and box */
+#header {
+	text-align: left;
+	color: white;
+	font-family: nintendo-ds-bios;
+	letter-spacing: 1px;
+	font-size: 16px;
+	line-height: 17px;
+	padding-left: 5px;
+	background: #15197B;
+	height: 18px;
+	border: 1px inset black;
+}
+
+.himg {
+	float: right;
+	border-radius: 1px;
+	width: 11px;
+	margin: 2px;
+}
+
+#header:hover {
+	cursor: move;
+}
+
+#box {
+	position: absolute;
+}
+
+.borderwrap {
+	border: 5px solid #F3F3F1
+}
+
+.wrapper-in {
+	background: #F3F3F1;
+	border: 4px inset #FCFCFC;
+}
+
+.wrapper-in img {
+	vertical-align: top;
+}
+
+.padding {
+	padding: 5px;
+}
+
+/* contents */
+
+.pop-up {
+	bottom: 260px;
+	left: 40px;
+	width: 210px;
+}
+
+.pop-up .wrapper-in {
+	background: #FD5DF8;
+	color: white;
+	border: none
+}
+
+.pop-up a {
+	color: black;
+}
+
+
+.about {
+	top: 120px;
+	right: 290px;
+	width: 500px;
+}
+
+.about .wrapper-in {
+	box-sizing: border-box;
+	padding: 10px;
+	overflow: auto;
+	height: 300px;
+}
+
+.mv {
+	bottom: 200px;
+	left: 20px;
+	width: 250px;
+	height: 10px;
+}
+
+.mv .wrapper-in {
+	overflow: hidden;
+	height: 150px;
+}
+
+.secret {
+	top: 90px;
+	right: 400px;
+	width: 300px;
+	height: 10px;
+}
+
+.secret .wrapper-in {
+	height: auto;
+}
+
+.likes {
+	bottom: 10px;
+	right: 50px;
+	width: 220px;
+}
+
+.likes .wrapper-in {
+	height: 350px;
+	overflow: auto;
+}
+
+.likes li {
+	list-style-image: url(/!g/pix/heartfabi.gif)
+}
+
+.dislikes {
+	bottom: 290px;
+	right: 30px;
+	width: 160px;
+}
+
+.dislikes .wrapper-in {
+	height: 100px;
+	overflow: auto;
+}
+
+.dislikes li {
+	list-style-image: url(/!g/pix/block.gif)
+}
+
+.list {
+	font-size: 17px;
+	line-height: 18px;
+}
+
+.title {
+	font-weight: bold;
+	color: #FD5DF8;
+	letter-spacing: 2px;
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.me {
+	top: 20px;
+	right: 100px;
+	width: 230px;
+}
+
+.me .wrapper-in {
+	height: 150px;
+	word-spacing: -3px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+}
+
+.me .wrapper-in img {
+	display: inline-block;
+	height: 150px;
+}
+
+.charas {
+	top: 500px;
+	right: 360px;
+	width: 350px;
+}
+
+.charas .wrapper-in {
+	height: 100px;
+	overflow-y: hidden;
+	overflow-x: auto;
+	white-space: nowrap;
+	word-spacing: -3px;
+}
+
+.charas .wrapper-in img {
+	display: inline-block;
+	height: 100px;
+}
+
+.nostalgia {
+	top: 190px;
+	right: 830px;
+	width: 300px;
+}
+
+.nostalgia .wrapper-in {
+	height: 200px;
+	overflow-y: auto;
+	overflow-x: hide;
+	text-align: center;
+	/* white-space:nowrap; */
+}
+
+.nostalgia .wrapper-in img {
+	display: inline-block;
+	vertical-align: middle;
+	max-width: 100%;
+}
+
+.toys {
+	bottom: 40px;
+	right: 760px;
+	width: 220px;
+}
+
+.toys .wrapper-in {
+	text-align: center;
+	height: 240px;
+	overflow: auto;
+	white-space: normal;
+}
+
+.toys .wrapper-in img {
+	vertical-align: baseline;
+	display: inline-block;
+}
+
+.contact {
+	top: 20px;
+	right: 810px;
+	width: 170px;
+}
+
+.contact .wrapper-in {
+	height: 100px;
+	overflow: auto;
+	white-space: normal;
+}
+
+.contact li {
+	list-style-image: url('/!g/pix/1leaf.png');
+	padding-left: 2px;
+	list-style-position: inside;
+}
+
+#close {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+/* BASIC CSS */
+
+body::before {
+	content: " ";
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: linear-gradient(rgba(12, 5, 15, 0) 10%, #00000025 90%);
+	background-size: 100% 2px;
+	pointer-events: none;
+	z-index: 1;
+}
+
+/* tooltip hover */
+#s-m-t-tooltip {
+	max-width: 200px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	color: white;
+	background: #FD5DF8;
+}
+
+::selection {
+	color: black;
+	background-color: #C8CEFF;
+}
+
+/* scrollbar */
+::-webkit-scrollbar {
+	width: 14px;
+	height: 14px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #F3F3F1;
+	border-right: 1px outset #F3F3F1;
+	border-bottom: 1px outset #F3F3F1;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-color: #F3F3F1;
+	border-right: 1px outset #F3F3F1;
+	border-bottom: 1px outset #F3F3F1;
+	border-left: 1px solid white;
+	border-top: 1px solid white;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #F3F3F1;
+}
+
+::-webkit-scrollbar-button:vertical:increment {
+	background-image: url(!g/down.jpg);
+}
+
+::-webkit-scrollbar-button:vertical:decrement {
+	background-image: url(!g/up.jpg);
+}
+
+::-webkit-scrollbar-button:horizontal:increment {
+	background-image: url(!g/right.jpg);
+}
+
+::-webkit-scrollbar-button:horizontal:decrement {
+	background-image: url(!g/left.jpg);
+}

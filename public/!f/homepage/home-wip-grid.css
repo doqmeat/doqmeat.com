@@ -1,0 +1,246 @@
+* {
+	box-sizing: border-box;
+	list-style-position: inside;
+}
+
+:root {
+	--fonts: gaegu-b, natsuzemi, arial;
+}
+
+body {
+	font-family: var(--fonts);
+	font-size: 20px;
+	line-height:25px;
+	margin: 0px;
+}
+
+#wrapper {
+	background: url('/!g/homepage/bg1.png');
+	position: relative;
+	display: grid;
+	border-radius: 30px;
+	grid-template-areas:
+		"nav head head head"
+		"nav intro intro update"
+		"nav stat stat update"
+		"nav cur cat f-cat"
+		"button cur deco1 deco1"
+		"button f-page list ring"
+		"wid f-page list ring";
+	grid-template-rows: 80px 200px 100px 180px 50px 140px 70px;
+	grid-template-columns: 240px 300px 240px 240px;
+	border: 1px solid yellow;
+	max-width: 1150px;
+	padding: 20px;
+	gap: 20px 30px;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+.box {
+	position: relative;
+	overflow: auto;
+	padding: 5px;
+	background: white;
+}
+
+.deco {
+	position: absolute;
+}
+
+header {
+	grid-area: head;
+	text-align: center;
+	border: 1px solid yellow;
+}
+
+h1 {
+	font-family: katto, var(--fonts);
+	letter-spacing: 3px;
+	margin: 0px;
+	display: inline-block;
+	transition-duration: 0.5s;
+}
+
+h1:hover {
+	letter-spacing: 7px;
+}
+
+h2 {
+	margin: 0px;
+}
+
+h3{
+	margin:10px 5px;;
+}
+
+h4 {
+	margin: 0px;
+}
+
+p{
+	margin:12px 0px;
+}
+
+nav {
+	grid-area: nav;
+	margin-top: 50px;
+	border: 1px dotted green;
+	overflow: auto;
+}
+
+nav a {
+	display: block;
+}
+
+#intro {
+	grid-area: intro;
+	border: 1px dotted green;
+}
+
+#status {
+	grid-area: stat;
+	background: url('/!g/homepage/cloud1.png') no-repeat;
+	background-size: contain;
+	text-align: center;
+	padding: 40px 170px 40px 30px;
+	height: 220%;
+	border: 2px solid lightblue;
+}
+
+#status .padding {
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+#status h3 {
+	margin: 5px;
+}
+
+#current {
+	grid-area: cur;
+	margin-top: 100px;
+	height: 72%;
+	border: 1px dotted red;
+}
+
+#cat {
+	grid-area: cat;
+	overflow: visible;
+	background: transparent;
+	margin-top: 30px;
+}
+
+#cat img {
+	width: 75%;
+	position: absolute;
+	top: -20%;
+	left: 35%;
+}
+
+#updates {
+	grid-area: update;
+	/*	height:80%;*/
+	border: 1px dashed pink;
+}
+
+#updates h2 + li {
+	background: lightblue;
+}
+
+#featured-cat {
+	grid-area: f-cat;
+	border: 1px solid green;
+}
+
+#featured-cat a img {
+	width: 100%;
+}
+
+#deco-1 {
+	grid-area: deco1;
+	border: 2px dashed red;
+}
+
+#widget {
+	grid-area: wid;
+	text-align: center;
+	border: 2px dashed red;
+}
+
+#listing {
+	grid-area: list;
+	text-align: center;
+	border: 2px dashed red;
+}
+
+#webrings {
+	grid-area: ring;
+	text-align: center;
+	border: 2px dashed red;
+}
+
+#featured-page {
+	grid-area: f-page;
+	margin-top: 30px;
+	border: 2px dashed red;
+}
+
+#featured-page a img {
+	width: 100%;
+}
+
+#deco-2 {
+	grid-area: deco2;
+	border: 2px dashed red;
+}
+
+#button {
+	grid-area: button;
+	text-align: center;
+	border: 1px solid pink;
+}
+
+footer {
+	margin: auto;
+	max-width: 1150px;
+	border-radius: 20px;
+	text-align: center;
+	position: relative;
+	border: 1px solid red;
+	margin-bottom: 20px;
+}
+
+footer img {
+	vertical-align: middle;
+}
+
+@media only screen and (max-width: 1152px) {
+	#wrapper {
+		grid-template-columns: 19% auto auto 20%;
+	}
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	color: black;
+	background: white;
+}
+
+@media only screen and (max-width: 828px) {
+	#status {
+		background: white;
+		text-align: center;
+		padding: 10px;
+		height: 130%;
+		border: 2px solid lightblue;
+	}
+}
