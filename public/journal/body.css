@@ -1,0 +1,170 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fonts: ms pgothic, newpenji, gaegu-l, arial;
+	--r-border: 2px solid #E4A79D;
+	--cream: #FFFCDC;
+	--red: #C9525E;
+	--l-red: #E4A79D;
+	--l-blue: #C7D9F8;
+	--green: #D0FF8D;
+	--yellow: #FFE481;
+}
+
+body {
+	word-wrap: break-word;
+	font-size: 16px;
+	line-height: 23px;
+	font-family: var(--fonts);
+	color: black;
+	padding: 0px;
+	margin: 0px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: morningtea, newpenji, gaegu-l, var(--fonts);
+}
+
+i {
+	background: #C7D9F8;
+}
+
+mark {
+	background: #FFE481;
+}
+
+li {
+	list-style-image: url('/!g/pix/li19.gif');
+	padding: 10px;
+	list-style-position: inside;
+	margin: 0px;
+}
+
+ul {
+	margin:0px;
+	padding: 0px 5px 5px 35px;
+}
+
+a {
+	color: black;
+	background: #D0FF8D;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	cursor: help;
+}
+
+a:focus {
+	text-decoration: wavy underline;
+}
+
+a:active {
+	outline: 0
+}
+
+p {
+	margin: 0 0 10px 0;
+	padding: 5px;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+blockquote {
+	font-family: YU gothic UI;
+	font-size: 16px;
+	font-style: italic;
+	border-left: 2px solid #E4A79D;
+	padding-left: 5px;
+}
+
+::selection {
+	color: black;
+	background-color: #A6DDFF;
+}
+
+summary {
+	cursor: help;
+	padding: 0px 5px;
+}
+
+.spoiler {
+	background-color: black;
+	color: black;
+}
+
+.spoiler:hover {
+	background-color: transparent;
+}
+
+.f-fix {
+	overflow: hidden;
+}
+
+.transp {
+	background: transparent;
+}
+
+.centered {
+	text-align: center;
+}
+
+.outlink:after {
+	content: url(/!g/web/materials/outlink2.png);
+	padding-left: 3px;
+	vertical-align: text-bottom;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	font-size: 15px;
+	font-family: YU gothic UI;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px dashed #C9525E;
+	color: black;
+	background: white;
+}
+
+@media only screen and (max-width: 599px) {
+	.hide {
+		display: none;
+	}
+}
+
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #E4A79D;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-color: #C7D9F8;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;} /* End https://www.cursors-4u.com */
