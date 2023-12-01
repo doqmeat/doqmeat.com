@@ -1,0 +1,285 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- coded with love by des 
+------------
+palette:
+https://coolors.co/e3edff-fff4bf-d1ebcd-ffe3e3-e2d2f0
+
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>notebook</title>
+	<link rel="icon" type="image/x-icon" href="/!g/pix/notebook.gif">
+	<link href="index.css" rel="stylesheet" type="text/css" media="all">
+	<link href="body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
+	<script>
+		(function($) {
+			$(document).ready(function() {
+				$("[title]").style_my_tooltips({
+					tip_follows_cursor: true,
+					tip_delay_time: 10,
+					tip_fade_speed: 10,
+					attribute: "title"
+				});
+			});
+		})(jQuery);
+
+	</script>
+	<!--  end of tooltip shit -->
+</head>
+
+<body>
+
+	<div id="wrapper-index">
+
+		<div class="tab">
+			<button class="tablinks link-b" onclick="openTab(event, 'link-wrapper')">links</button>
+			<button class="tablinks site-b" onclick="openTab(event, 'site-wrapper')">sitely</button>
+			<button class="tablinks archive-b" onclick="openTab(event, 'archive-wrapper')">archives</button>
+			<button class="tablinks F2U-b" onclick="openTab(event, 'F2U-wrapper')">F2U</button>
+		</div>
+
+		<div class="tab2">
+			<button id="defaultOpen" class="tablinks info-b" onclick="openTab(event, 'info-wrapper')">info &amp; creds</button>
+		</div>
+
+		<!-- 	link tab wrapper -->
+		<div id="link-wrapper" class="tabcontent">
+			<div id="link-p" class="paper left">
+				<div class="left-in">
+
+					<p>lots and lots of links. i save them all here!</p>
+					<li><a href="links/index.html" target="iframe_a">links</a></li>
+					<ul>
+						↳ <a href="links#c" target="iframe_a">coding</a>
+						<ul><small>
+								<a href="links#coding-help" target="iframe_a">HTML, CSS, and JS tutorials</a>,
+								<a href="links#editor" target="iframe_a">editors</a>,
+								<a href="links#sites" target="iframe_a">useful sites</a>,
+								<a href="links#tut" target="iframe_a">tutorials</a>,
+								<a href="links#cool" target="iframe_a">stuff to put on your site</a>,
+								<a href="links#neat" target="iframe_a">neat codes</a>,
+								<a href="links#layouts" target="iframe_a">F2U layouts</a>,
+								<a href="links#hosting" target="iframe_a">hosting</a>
+							</small></ul>
+						<br>↳ <a href="links#p" target="iframe_a">graphics</a>
+						<ul><small>
+								<a href="links#F2U" target="iframe_a">sites w/ F2U materials</a>,
+								<a href="links#bgs" target="iframe_a">backgrounds</a>,
+								<a href="links#archives" target="iframe_a">archives / collections</a>,
+								<a href="links#tumblr" target="iframe_a">tumblr blogs and masterposts</a>
+							</small></ul>
+						<br>↳ <a href="links#font" target="iframe_a">fonts</a>
+						<br>↳ <a href="links#misc" target="iframe_a">misc resources</a>
+						<br>↳ <a href="links#fun" target="iframe_a">for fun</a>
+						<ul><small>
+								<a href="links#music" target="iframe_a">music</a>,
+								<a href="links#games" target="iframe_a">games</a>,
+								<a href="links#articles" target="iframe_a">articles</a>,
+								<a href="links#join" target="iframe_a">things to join</a>,
+							</small></ul>
+					</ul>
+					<li><a href="links/fonts.html" target="iframe_a">font page</a></li>
+					<li><a href="links/credit.html" target="iframe_a">site inspiration &amp; credit</a></li>
+					<li><a href="/sites" class="outlink">button wall</a> for other websites!</li>
+					<!-- paper-left end div -->
+				</div>
+			</div>
+
+			<div id="link-p" class="paper right">
+				<iframe src="links" name="iframe_a" height="600px" width="488px" style="border:none"></iframe>
+				<!-- paper right end div -->
+			</div>
+			<!-- 	link wrapper end div -->
+		</div>
+
+		<!-- 	site related tab wrapper -->
+		<div id="site-wrapper" class="tabcontent">
+			<div id="site-p" class="paper left">
+				<div class="left-in">
+					<p>this is the site related things tab</p>
+					<li><a href="/sitemap.html" target="iframe_b">sitemap</a></li>
+					<li><a href="sitely/to-dos.html" target="iframe_b">to-do's</a></li>
+					<li><a title="img heavy, might have to reload frame" href="sitely/graphics.html" target="iframe_b">graphics collection</a></li>
+					<ul>
+						↳ <a href="sitely/graphics.html#emo" target="iframe_b">emoticons</a>
+						<br>↳ <a href="sitely/graphics.html#pix" target="iframe_b">pixels</a>
+						<ul><small>
+								<a href="sitely/graphics.html#tiny" target="iframe_b">tiny</a>, <a href="sitely/graphics.html#fav" target="iframe_b">favicons</a>, <a href="sitely/graphics.html#big" target="iframe_b">big</a>
+							</small></ul>
+						<br>↳ <a href="sitely/graphics.html#div" target="iframe_b">dividers</a>
+						<br>↳ <a href="sitely/graphics.html#stickers" target="iframe_b">stickers</a>
+						<ul><small>
+								<a href="sitely/graphics.html#cats" target="iframe_b">cats</a>,
+								<a href="sitely/graphics.html#music" target="iframe_b">music</a>,
+								<a href="sitely/graphics.html#heart" target="iframe_b">hearts</a>,
+								<a href="sitely/graphics.html#stationary" target="iframe_b">stationary</a>,
+								<a href="sitely/graphics.html#nat" target="iframe_b">nature</a>,
+								<a href="sitely/graphics.html#text" target="iframe_b">with text</a>,
+								<a href="sitely/graphics.html#other-stickers" target="iframe_b">other</a>,
+								<a href="sitely/graphics.html#hw" target="iframe_b">halloween</a>,
+								<a href="sitely/graphics.html#long" target="iframe_b">long</a>,
+								<a href="sitely/graphics.html#vgs" target="iframe_b">video games</a>
+							</small></ul>
+						<br>↳ <a href="sitely/graphics.html#gif" target="iframe_b">gifs</a>
+						<br>↳ <a href="sitely/graphics.html#frames" target="iframe_b">frames</a>
+					</ul>
+
+					<!-- 		paper left end div -->
+				</div>
+			</div>
+
+			<div id="site-p" class="paper right">
+				<iframe src="sitely/to-dos.html" name="iframe_b" height="600px" width="489px" style="border:none"></iframe>
+			</div>
+			<!-- 	site wrapper end div -->
+		</div>
+
+		<!-- 	archive related tab wrapper -->
+		<div id="archive-wrapper" class="tabcontent">
+			<div id="archive-p" class="paper left">
+				<div class="left-in">
+					<p>the archives. its dusty in here. </p>
+					<p><mark>some links within these pages might be broken!</mark></p>
+					<li><a href="archive/homepage.html" target="iframe_c">homepage</a></li>
+					<ul>
+						↳ <a href="archive/homepage.html#v1" target="iframe_c">v1</a>
+					</ul>
+					<li><a href="archive/layouts.html" target="iframe_c">page layouts</a></li>
+
+					<li><a href="archive/updates.html" target="iframe_c">site updates</a></li>
+
+					<li><a title="no longer updated since i decided to just have everything in the site updates" href="archive/change-log.html" target="iframe_c">change log</a></li>
+					<!-- 		paper left end div -->
+				</div>
+			</div>
+
+			<div id="archive-p" class="paper right">
+				<iframe src="archive/homepage.html" name="iframe_c" height="600px" width="489px" style="border:none"></iframe>
+
+				<!-- 	paper right end div -->
+			</div>
+			<!-- 	archive wrapper end div -->
+		</div>
+
+		<!-- 	F2U wrapper -->
+		<div id="F2U-wrapper" class="tabcontent">
+			<div id="F2U-p" class="paper left">
+				<div class="left-in">
+					<p>things i make that is free to use! hoping to add more stuff here in the future!</p>
+					<p>note: please <mark>do not <a class="outlink" href="https://www.hostinger.com/tutorials/hotlinking" target="_blank">hotlink</a>!</mark> download them and save them to your own server. i change things around frequently too so it might break lol</p>
+					<li><a href="F2U/codes.html" target="iframe_d">templates</a></li>
+					<ul>
+						↳ <a href="F2U/codes.html#notebook" target="iframe_d">notebook</a>
+					</ul>
+					<li><a href="F2U/materials.html" target="iframe_d">site materials</a></li>
+					<ul>
+						↳ <a href="F2U/materials.html#bgs" target="iframe_d">backgrounds</a>
+						<br>
+						↳ <a href="F2U/materials.html#pix" target="iframe_d">pixels</a>
+					</ul>
+
+					<li><a href="F2U/stamps.html" target="iframe_d">stamps</a></li>
+
+					<!-- 		paper left end div -->
+				</div>
+			</div>
+
+			<div id="F2U-p" class="paper right">
+				<iframe src="F2U/materials.html" name="iframe_d" height="600px" width="489px" style="border:none"></iframe>
+
+				<!-- 	paper right end div -->
+			</div>
+			<!-- 	F2U wrapper end div -->
+		</div>
+
+		<!-- 	archive related tab wrapper -->
+		<div id="info-wrapper" class="tabcontent">
+			<div id="info-p" class="paper left">
+				<div class="left-in">
+					<h1> </h1>
+					<div id="sticky" class="draggable">
+						<br><br>welcome to my little resource notebook! :3<br><img src="/!g/deco/bunnyzzz.gif">
+						<div id="sticky-in">
+
+						</div>
+					</div>
+					<p>in this page you'll find a variery of things i have saved for my own reference, but maybe they might be helpful (or at least interesting) for you too!</p>
+					<p>i also have things related to the making of this website here!</p>
+					<p><mark>click on the tabs to navigate it</mark> <img src="/!g/deco/catlaying.gif"></p>
+					<p><a href="/home">go back home?</a> <img src="/about/!g/adopted/midnightcreamy_star3.gif"> </p>
+
+
+
+					<!-- 		paper left end div -->
+				</div>
+			</div>
+
+			<div id="info-p" class="paper info-p-right">
+				<center>
+					<h2>credits</h2>
+				</center>
+				<li>upper corner stationary pixel by <a href="https://www.deviantart.com/king-lulu-deer" target="_blank">king-lulu-deer</a></li>
+
+				<li>notebook, paper stars, and pencil case pixels by <a href="http://lastsecret.net/bitmapdreams/" target="_blank">bitmapdreams</a></li>
+
+				<li>bullet point imgs used in these pages by <a href="https://www.fancyparts.com/" target="_blank">fancyparts.com</a></li>
+
+				<li>handwritten font by <a href="http://sozaiya405.chu.jp/405/font.htm#NEW%E3%83%9A%E3%83%B3%E5%AD%97P" target="_blank">sozaiya405</a></li>
+
+				<li>notebook holographic cover img <a title="from pexels" href="https://www.pexels.com/photo/holographic-foil-as-abstract-background-4286932/" target="_blank">by miodrag kitanović on pexels</a></li>
+
+				<mark>(one day i will understand javascript and that day is not today)</mark>
+
+				<li>and tabs javascript code from <a href="https://www.w3schools.com/howto/howto_js_tabs.asp" target="_blank">w3chools</a> beloved</li>
+				<img src="/!g/deco/crystalgreenhouse_book.gif">
+				<img src="/!g/deco/collegeroad_pencase.gif">
+
+				<!-- 	paper right end div -->
+			</div>
+			<!-- 	F2U wrapper end div -->
+		</div>
+		<!-- 	wrapper end div -->
+	</div>
+
+	<div id="home">
+		<a title="go back home" href="/home"><img src="/!g/deco/stationary.gif"></a>
+	</div>
+
+	<div id="pen1">
+		<img src="black-cat-pen.png" width="80px" class="border-1">
+	</div>
+
+	<div id="pen2">
+		<img src="cow-pen.png" class="border-1">
+	</div>
+
+	<script>
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+
+	</script>
+</body>
+
+</html>
