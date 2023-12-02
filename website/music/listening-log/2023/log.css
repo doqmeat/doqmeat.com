@@ -177,6 +177,7 @@ footer {
 
 	.log {
 		border: 0px;
+		border-bottom: border: var(--d-border);
 	}
 
 	p:hover {
