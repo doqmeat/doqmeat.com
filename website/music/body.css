@@ -79,8 +79,8 @@ b {
 }
 
 mark {
-	padding: 0px 5px;
-	background: var(--yellow);
+	padding: 0px 2px;
+	background: white;
 }
 
 li {
@@ -97,9 +97,9 @@ summary {
 	cursor: help;
 }
 
-blockquote{
- border-left:2px dashed var(--brown);
- padding-left:10px;
+blockquote {
+	border-left: 2px dashed var(--brown);
+	padding-left: 10px;
 }
 
 .spoiler {
