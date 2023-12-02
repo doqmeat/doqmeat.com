@@ -159,10 +159,13 @@ footer {
 	}
 
 	#wrapperlog {
+		margin: 0px;
 		margin-top: 30px;
 	}
 
 	h2 {
+		margin: 0px;
+		padding: 0px;
 		font-size: 10px;
 		text-align: center;
 	}
@@ -177,10 +180,12 @@ footer {
 
 	.log {
 		border: 0px;
-		border-bottom: border: var(--d-border);
+		border-bottom: var(--d-border);
 	}
 
-	p:hover {
-		background: transparent;
+	footer {
+		margin: 0px;
+		border: 0px;
+		border-radius: 0px;
 	}
 }
