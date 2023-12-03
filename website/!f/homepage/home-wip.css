@@ -217,6 +217,12 @@ footer img {
 	vertical-align: middle;
 }
 
+.outlink::after{
+	content: url('/!g/web/materials/outlink2.png');
+	padding-left:2px;
+	vertical-align: text-bottom;
+}
+
 @media only screen and (max-width: 1152px) {
 	#wrapper {
 		grid-template-columns: 19% auto auto 20%;
