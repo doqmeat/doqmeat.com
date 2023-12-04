@@ -10,17 +10,16 @@
 body {
 	font-family: var(--fonts);
 	font-size: 20px;
-	line-height:25px;
+	line-height: 25px;
 	margin: 0px;
 }
 
 #wrapper {
-	background: url('/!g/homepage/bg1.png');
 	position: relative;
 	display: grid;
 	border-radius: 30px;
 	grid-template-areas:
-		"nav head head head"
+		"nav head head picker"
 		"nav intro intro update"
 		"nav stat stat update"
 		"nav cur cat f-cat"
@@ -29,7 +28,6 @@ body {
 		"wid f-page list ring";
 	grid-template-rows: 80px 200px 100px 180px 50px 140px 70px;
 	grid-template-columns: 240px 300px 240px 240px;
-	border: 1px solid yellow;
 	max-width: 1150px;
 	padding: 20px;
 	gap: 20px 30px;
@@ -42,7 +40,6 @@ body {
 	position: relative;
 	overflow: auto;
 	padding: 5px;
-	background: white;
 }
 
 .deco {
@@ -52,61 +49,63 @@ body {
 header {
 	grid-area: head;
 	text-align: center;
-	border: 1px solid yellow;
+	overflow: visible;
 }
 
 h1 {
-	font-family: katto, var(--fonts);
+	font-family: daydream, var(--fonts);
+	font-size: 23px;
+	line-height: normal;
 	letter-spacing: 3px;
 	margin: 0px;
 	display: inline-block;
-	transition-duration: 0.5s;
-}
-
-h1:hover {
-	letter-spacing: 7px;
+	transition-duration: 1s;
+	transition-timing-function: ease-out;
 }
 
 h2 {
 	margin: 0px;
 }
 
-h3{
-	margin:10px 5px;;
+h3 {
+	margin: 10px 5px;
 }
 
 h4 {
 	margin: 0px;
 }
 
-p{
-	margin:12px 0px;
+p {
+	margin: 12px 0px;
 }
 
 nav {
 	grid-area: nav;
 	margin-top: 50px;
-	border: 1px dotted green;
+	height: 650px;
 	overflow: auto;
 }
 
 nav a {
 	display: block;
+	text-decoration: none;
+}
+
+nav a img {
+	vertical-align: middle;
 }
 
 #intro {
 	grid-area: intro;
-	border: 1px dotted green;
 }
 
 #status {
 	grid-area: stat;
-	background: url('/!g/homepage/cloud1.png') no-repeat;
+	background-repeat: no-repeat;
 	background-size: contain;
 	text-align: center;
 	padding: 40px 170px 40px 30px;
 	height: 220%;
-	border: 2px solid lightblue;
 }
 
 #status .padding {
@@ -123,7 +122,10 @@ nav a {
 	grid-area: cur;
 	margin-top: 100px;
 	height: 72%;
-	border: 1px dotted red;
+}
+
+#theme-picker {
+	grid-area: picker;
 }
 
 #cat {
@@ -131,6 +133,7 @@ nav a {
 	overflow: visible;
 	background: transparent;
 	margin-top: 30px;
+	border: 0px;
 }
 
 #cat img {
@@ -138,21 +141,19 @@ nav a {
 	position: absolute;
 	top: -20%;
 	left: 35%;
+	cursor: move;
 }
 
 #updates {
 	grid-area: update;
-	/*	height:80%;*/
-	border: 1px dashed pink;
 }
 
 #updates h2 + li {
-	background: lightblue;
+	border-radius: 5px;
 }
 
 #featured-cat {
 	grid-area: f-cat;
-	border: 1px solid green;
 }
 
 #featured-cat a img {
@@ -161,31 +162,29 @@ nav a {
 
 #deco-1 {
 	grid-area: deco1;
-	border: 2px dashed red;
 }
 
 #widget {
 	grid-area: wid;
 	text-align: center;
-	border: 2px dashed red;
+
 }
 
 #listing {
 	grid-area: list;
 	text-align: center;
-	border: 2px dashed red;
+
 }
 
 #webrings {
 	grid-area: ring;
 	text-align: center;
-	border: 2px dashed red;
+
 }
 
 #featured-page {
 	grid-area: f-page;
 	margin-top: 30px;
-	border: 2px dashed red;
 }
 
 #featured-page a img {
@@ -194,13 +193,12 @@ nav a {
 
 #deco-2 {
 	grid-area: deco2;
-	border: 2px dashed red;
 }
 
 #button {
+	margin-top: 80px;
 	grid-area: button;
 	text-align: center;
-	border: 1px solid pink;
 }
 
 footer {
@@ -209,7 +207,6 @@ footer {
 	border-radius: 20px;
 	text-align: center;
 	position: relative;
-	border: 1px solid red;
 	margin-bottom: 20px;
 }
 
@@ -217,9 +214,9 @@ footer img {
 	vertical-align: middle;
 }
 
-.outlink::after{
+.outlink::after {
 	content: url('/!g/web/materials/outlink2.png');
-	padding-left:2px;
+	padding-left: 2px;
 	vertical-align: text-bottom;
 }
 
@@ -229,24 +226,18 @@ footer img {
 	}
 }
 
-#s-m-t-tooltip {
-	max-width: 200px;
-	text-align: center;
-	z-index: 9999;
-	margin: 30px 15px 7px 12px;
-	padding: 5px;
-	border-radius: 10px;
-	border: 1px dashed black;
-	color: black;
-	background: white;
-}
-
 @media only screen and (max-width: 828px) {
 	#status {
 		background: white;
 		text-align: center;
 		padding: 10px;
 		height: 130%;
-		border: 2px solid lightblue;
 	}
+}
+
+#s-m-t-tooltip {
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
 }

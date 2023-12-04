@@ -1,0 +1,61 @@
+/*https://coolors.co/d69e2e-667eea-7cb6af-cbd5e0-1a202c*/
+
+/*main colors: yellow, blue, mint green */
+
+:root {
+	--yellow-d: rgb(214, 158, 46);
+	--blue-d: rgb(102, 126, 234);
+	--mint-d: rgb(124, 182, 175);
+	--grey: rgb(203, 213, 224);
+	--black: rgb(26, 32, 44);
+}
+
+body {
+	color: var(--black);
+	background: url('/!g/homepage/bg1.png');
+	background-size: 1200px;
+	background-position: right;
+}
+
+.box {
+	border: 1px solid var(--yellow-d);
+	background: rgb(203, 213, 224, 0.97);
+}
+
+h1 {
+	background: url(/!g/homepage/bg1.png);
+	background-size: 200px;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: var(--yellow-d);
+}
+
+h1:hover {
+	background: var(--yellow-d);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 0.5px;
+	-webkit-text-stroke-color: var(--blue-d);
+}
+
+#status {
+	background-image: url('/!g/homepage/cloud1.png');
+}
+
+#updates h2 + li {
+	color:var(--grey);
+	background: var(--mint-d);
+}
+
+footer {
+	background: var(--grey);
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	border-radius: 20px;
+	border: 1px dashed var(--black);
+	color: var(--grey);
+	background: var(--yellow-d);
+}

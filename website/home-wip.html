@@ -9,13 +9,15 @@ feel free to look around :) just don't be THAT person and take the entire code f
 <head>
 	<!-- for characters -->
 	<meta charset="UTF-8">
-
-	<title>doqmeat v3</title>
+	<title>☆ doqmeat v3 ☆</title>
 	<meta name="description" content="des' personal website">
 	<link rel="icon" type="image/x-icon" href="favicon.gif">
 	<!--	CSS -->
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<link href="!f/homepage/home-wip.css" rel="stylesheet" type="text/css" media="all">
+	<!--	theme picker -->
+	<link class="theme" href="/!f/homepage/flower.css" rel="stylesheet" type="text/css">
+	<script src="/!f/css-picker.js"></script>
 
 	<!--
 	<link class="theme" href="CSS" rel="stylesheet" type="text/css">
@@ -45,32 +47,32 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 		<nav class="box">
 			<h3>personal</h3>
-			<a href="/about">about</a>
-			<a href="/journal">journal</a>
-			<a href="/blog">blog</a>
-			<a href="/photobook">photobook</a>
-			<s><a href="/wip">arts &amp; crafts</a></s>
-
-			<a href="/shrines">shrines</a>
-			<a href="/collection">collections</a>
-			<a href="/vgs">gaming log</a>
-			<a href="/music">music</a>
-			<a href="/music/listening-log/2023/11.html">listening log</a>
+			<a title="the webmaster and site!" href="/about"><img src="/!g/pix/cateepyy.gif" alt=""> about</a>
+			<a href="/journal"><img src="/!g/pix/notebook-1.gif" alt=""> journal</a>
+			<a href="/blog"><img src="/!g/pix/paper.gif" alt=""> blog</a>
+			<a href="/photobook"><img src="/!g/pix/camera.gif" alt=""> photobook</a>
+			<a href="/shrines"><img src="/!g/pix/heart2.gif" alt=""> shrines</a>
+			<a href="/collection"><img src="/!g/pix/pics.gif" alt=""> collections</a>
+			<a href="/vgs"><img src="/!g/pix/vgs.gif" alt=""> gaming log</a>
+			<a href="/music"><img src="/!g/pix/sorahanamuu1.gif" alt=""> music</a>
+			<a href="/music/listening-log/2023/12.html"><img src="/!g/pix/cat-music.gif" alt=""> listening log</a>
 
 			<h3>misc</h3>
-			<a href="/masaaki-yuasa">masaaki yuasa watchlist</a>
-			<a href="/october-movies">october movie log</a>
-			<a title="a digital place where i come to relax with mental health resources" href="safe-spot/index.html">safe spot</a>
+			<a href="/masaaki-yuasa"><img src="/!g/pix/tv.gif"> masaaki yuasa watchlist</a>
+			<a href="/october-movies"><img src="/!g/pix/gaikotsu2.gif"> october movie log</a>
+			<a title="a digital place where i come to relax with mental health resources" href="safe-spot/index.html"><img src="/!g/pix/flowerpink.gif" alt=""> safe spot</a>
 
 			<h3>site</h3>
-			<a href="/sites">button wall</a>
-			<a href="webgarden/greenhouse.html">webgarden</a>
-			<a title="contains links, resources, F2U stuff, archives, etc!" href="/notebook">notebook</a>
-			<a href="/sitemap">sitemap</a>
+			<a href="/sites"><img src="/!g/pix/favcharas.gif"> button wall</a>
+			<a href="webgarden/greenhouse.html"><img src="/!g/pix/home.gif"> webgarden</a>
+			<a title="contains links, resources, F2U stuff, archives, etc!" href="/notebook"><img src=""> notebook</a>
+			<a href="/sitemap"><img src="/!g/pix/world.gif"> sitemap</a>
+
 			<h3>offsite</h3>
-			<a href="" target="_blank">guestbook</a>
-			<a href="" target="_blank">neocities profile</a>
-			<a href="https://github.com/doqmeat/doqmeat.neocities.org" target="_blank" class="outlink">github</a>
+			<a href="" target="_blank"><img src="/!g/pix/heart-paper.gif"> guestbook</a>
+			<a href="" target="_blank"><img src="/!g/pix/catheadswing.gif"> neocities profile</a>
+			<a href="https://github.com/doqmeat/doqmeat.neocities.org" target="_blank" class="outlink"><img src="/!g/pix/puter.gif"> github</a>
+			<a title="doqmeat@gmail.com" href="mailto:doqmeat@gmail.com" target="_blank" class="outlink"><img src="/!g/pix/mail-sozaiya.gif" alt=""> e-mail</a>
 		</nav>
 
 		<div id="intro" class="box">
@@ -84,7 +86,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 			<li>coded in <a href="https://brackets.io/" class="outlink" target="_blank">brackets.io</a> using firefox and tested on chrome when i remember to do so.</li>
 			<li>recommended to view on a 1536px+ wide screen.</li>
 			<li>though smaller monitor users do not fear. <a title="some are on my to-do list!" href="/notebook/sitely/to-dos.html">most</a> pages are responsive to your screen's size!</li>
-			<li>mobile users do fear. sorry!</li>
+			<li>mobile users: do fear. sorry!</li>
 		</div>
 
 		<div id="status" class="box;">
@@ -102,9 +104,12 @@ feel free to look around :) just don't be THAT person and take the entire code f
 				<a href="https://piclog.blue/profile.php?id=51"><img src="https://piclog.blue/latest.php?id=51" width="50%"></a>
 
 			</div>
+		</div>
 
-
-
+		<div id="theme-picker" class="box">
+			<h3>theme picker</h3>
+			<button onclick="toggleTheme('/!f/homepage/flower.css')">flower</button>
+			<button onclick="toggleTheme('/!f/homepage/space.css')">space</button>
 		</div>
 
 		<div id="current" class="box">
@@ -242,12 +247,14 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		</div>
 
 		<div id="cat" class="box">
-			<img title="me irl btw" src="/!g/deco/cat-plush-BIG.png" alt="">
+			<img id="catIMG" title="me irl btw" src="/!g/deco/cat-plush-BIG.png" alt="">
 		</div>
+
+		<!--		stickers around home-->
 
 		<img src="/!g/deco/flower1.gif" style="top:41.5%;left:25%;" class="deco" alt="">
 
-		<img src="/!g/deco/catpat.gif" style="bottom:93.5%;left:5.5%;width:15%" class="deco" alt="">
+		<img src="/!g/deco/catpat.gif" style="bottom:92.8%;left:5.5%;width:15%" class="deco" alt="">
 
 		<img src="!g/deco/sleepy-cats.gif" style="top:41.7%;left:93%" class="deco" alt="">
 
@@ -256,11 +263,68 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	</div>
 
 	<footer>
-		website coded with love by des! <img src="/!g/pix/heart-paper.gif"> hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a> since april 11, 2023 /
-		<b>last updated on 26.nov.23</b>
-		<br>
-		<b>credit:</b> <a href="https://www.pexels.com/photo/yellow-wildflowers-against-cloudy-sky-4497731/">wrapper bg</a>
+		website coded with love by des! <img src="/!g/pix/cathead.gif" alt=""> hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a> since april 11, 2023
+		<p><a href="/notebook/links/credit.html#home">credit</a> / <b>last updated on 03.dec.23</b></p>
+
 	</footer>
+
+
+	<script>
+		(function titleScroller(text) {
+			document.title = text;
+			setTimeout(function() {
+				titleScroller(text.substr(1) + text.substr(0, 1));
+			}, 500);
+		}(" doqmeat v3 ☆⌒(*＾-゜)v☆ "));
+
+		//Make the DIV element draggagle:
+		dragElement(document.getElementById("catIMG"));
+
+		function dragElement(elmnt) {
+			var pos1 = 0,
+				pos2 = 0,
+				pos3 = 0,
+				pos4 = 0;
+			if (document.getElementById(elmnt.id + "header")) {
+				/* if present, the header is where you move the DIV from:*/
+				document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+			} else {
+				/* otherwise, move the DIV from anywhere inside the DIV:*/
+				elmnt.onmousedown = dragMouseDown;
+			}
+
+			function dragMouseDown(e) {
+				e = e || window.event;
+				e.preventDefault();
+				// get the mouse cursor position at startup:
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				document.onmouseup = closeDragElement;
+				// call a function whenever the cursor moves:
+				document.onmousemove = elementDrag;
+			}
+
+			function elementDrag(e) {
+				e = e || window.event;
+				e.preventDefault();
+				// calculate the new cursor position:
+				pos1 = pos3 - e.clientX;
+				pos2 = pos4 - e.clientY;
+				pos3 = e.clientX;
+				pos4 = e.clientY;
+				// set the element's new position:
+				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+			}
+
+			function closeDragElement() {
+				/* stop moving when mouse button is released:*/
+				document.onmouseup = null;
+				document.onmousemove = null;
+			}
+		}
+
+	</script>
 
 </body>
 
