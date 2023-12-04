@@ -14,7 +14,7 @@ coded by lil ol me (des)
 	<link href="/!f/snowflakes.css" rel="stylesheet" type="text/css" media="all">
 	<link href="index.css" rel="stylesheet" type="text/css" media="all">
 	<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
-	
+
 	<!-- tooltip shit -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
@@ -46,13 +46,13 @@ coded by lil ol me (des)
 
 	<main>
 
-			<h1>des' safe spot</h1>
-			
-			<p><img src="/!g/deco/catrock.gif" class="mo-img" align="left" style="margin-right:5px;" alt=""> <img src="/!g/deco/cattower.gif" class="mo-img" align="right" style="margin-left:5px;" alt="">a page for when i need a place to relax, take a break, or calm down. i will also put in here mental health resources that have helped me in the past. <b>please keep in mind this is for my own personal use</b> but i hope i can also help someone else with these resources i've collected over time.</p>
+		<h1>des' safe spot</h1>
+
+		<p><img src="/!g/deco/catrock.gif" class="mo-img" align="left" style="margin-right:5px;" alt=""> <img src="/!g/deco/cattower.gif" class="mo-img" align="right" style="margin-left:5px;" alt="">a page for when i need a place to relax, take a break, or calm down. i will also put in here mental health resources that have helped me in the past. <b>please keep in mind this is for my own personal use</b> but i hope i can also help someone else with these resources i've collected over time.</p>
 
 
 
-			<h2>mental health resources</h2>
+		<h2>mental health resources</h2>
 
 
 		<li class="f1"><a href="https://www.helpguide.org/articles/suicide-prevention/are-you-feeling-suicidal.htm" target="_blank">what to do when feeling suicidal</a>: the next couple of links are articles from HelpGuide.org. always gets me out of a bad over thinking spiral that my brain likes to fixate on during a breakdown</li>
@@ -61,8 +61,8 @@ coded by lil ol me (des)
 		<li class="f1"> <a href="https://philome.la/jace_harr/you-feel-like-shit-an-interactive-self-care-guide/play/index.html" target="_blank">interactive flow chart for self care</a>: great for keeping track of simple things during bad days</li>
 
 
-	
-			<h3> stuff that calms me  </h3>
+
+		<h3> stuff that calms me </h3>
 
 
 		<li class="f2"> <a href="https://purrli.com" target="_blank">cat purr generator</a> (its like having a cat in your browser!) </li>
@@ -71,16 +71,16 @@ coded by lil ol me (des)
 
 
 
-			<h3> videos  </h3>
-			<details>
-				<summary>
-					<small>either for relaxing or having a giggle</small>
-				</summary>
-				
-				<iframe width="100%" height="215" src="https://www.youtube-nocookie.com/embed/srZdDAJbHfc?start=2874" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-					<iframe width="100%" height="215" src="https://www.youtube-nocookie.com/embed/Yy318EfvbCM?start=2874" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-			
-			</details>
+		<h3> videos </h3>
+		<details>
+			<summary>
+				<small>either for relaxing or having a giggle</small>
+			</summary>
+
+			<iframe width="100%" height="215" src="https://www.youtube-nocookie.com/embed/srZdDAJbHfc?start=2874" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+			<iframe width="100%" height="215" src="https://www.youtube-nocookie.com/embed/Yy318EfvbCM?start=2874" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+		</details>
 
 	</main>
 
@@ -140,9 +140,9 @@ coded by lil ol me (des)
 		<div class="snowflake"><img src="/!g/pix/petals.gif"></div>
 		<!--    snowflake end div -->
 	</div>
-	
+
 	<footer>ready to go <a href="/home">back?</a></footer>
-	
+
 	<script>
 		var styles = ` 
 #musicplayer{
@@ -258,15 +258,13 @@ coded by lil ol me (des)
 
 		// create new audio element
 		let curr_track = document.getElementById("music");
-
-		//
-		// DEFINE YOUR SONGS HERE!!!!!
-		// MORE THAN FOUR SONGS CAN BE ADDED!!
-		// JUST ADD ANOTHER BRACKET WITH NAME AND PATH
-		// CATBOX.MOE IS RECOMMENDED FOR UPLOADING MP3 FILES
 		let track_list = [{
 				name: "zweiton - c418",
 				path: "https://files.catbox.moe/c7em4k.mp3"
+			},
+			{
+				name: "golden - lena raine",
+				path: "https://files.catbox.moe/9rh0cl.mp3"
 			},
 			{
 				name: "the water shelf - disasterpeace",
@@ -307,11 +305,6 @@ coded by lil ol me (des)
 			},
 
 		];
-		//
-		//
-		//
-		//
-		//
 
 		function loadTrack(track_index) {
 			clearInterval(updateTimer);
