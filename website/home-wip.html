@@ -14,15 +14,10 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<link rel="icon" type="image/x-icon" href="favicon.gif">
 	<!--	CSS -->
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-	<link href="!f/homepage/home-wip.css" rel="stylesheet" type="text/css" media="all">
+	<link href="!f/homepage/home-v3.css" rel="stylesheet" type="text/css" media="all">
 	<!--	theme picker -->
 	<link class="theme" href="/!f/homepage/flower.css" rel="stylesheet" type="text/css">
 	<script src="/!f/css-picker.js"></script>
-
-	<!--
-	<link class="theme" href="CSS" rel="stylesheet" type="text/css">
-	<script src="/!f/css-picker.js"></script>
--->
 
 	<!--	JS for webrings-->
 	<link href="https://adilene.net/webring/webring.css" rel="stylesheet">
@@ -39,7 +34,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 	<div id="wrapper">
 
-		<header class="box">
+		<header>
 			welcome to...
 			<br>
 			<h1>doqmeat.neocities.org</h1>
@@ -69,13 +64,16 @@ feel free to look around :) just don't be THAT person and take the entire code f
 			<a href="/sitemap"><img src="/!g/pix/world.gif"> sitemap</a>
 
 			<h3>offsite</h3>
-			<a href="" target="_blank"><img src="/!g/pix/heart-paper.gif"> guestbook</a>
-			<a href="" target="_blank"><img src="/!g/pix/catheadswing.gif"> neocities profile</a>
+			<a href="https://doqmeat.123guestbook.com/" target="_blank"><img src="/!g/pix/heart-paper.gif"> guestbook</a>
+			<a href="https://neocities.org/site/doqmeat" target="_blank"><img src="/!g/pix/catheadswing.gif"> neocities profile</a>
 			<a href="https://github.com/doqmeat/doqmeat.neocities.org" target="_blank" class="outlink"><img src="/!g/pix/puter.gif"> github</a>
 			<a title="doqmeat@gmail.com" href="mailto:doqmeat@gmail.com" target="_blank" class="outlink"><img src="/!g/pix/mail-sozaiya.gif" alt=""> e-mail</a>
 		</nav>
 
 		<div id="intro" class="box">
+			<h4>to-do's:</h4>
+			<li>add a lil music player <img src="/!g/pix/beat-stop.png"></li>
+			<li>add more cliques</li>
 			<p>hello! my name is <b>des</b> and this is my humble little corner on the internet. it mostly serves as a digital journal where i share whatever i want, however i want it! coding this site has been the most fun i've had online in a long time. so thank you for checking it out! i hope you find something you like.</p>
 
 			<p>here's my <a class="outlink" href="https://doqmeat.123guestbook.com/">guestbook</a> if you'd like to write a little message <img src="!g/pix/cat-heart.gif"></p>
@@ -125,6 +123,8 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		<div id="updates" class="box">
 			<h2>updates</h2>
 			<li>someday - doqmeat homepage v3 is now live!</li>
+			<li>28.04.20 - <a href="">test 1</a> created</li>
+			<li>25.04.23 - <a href="">test 2</a> created</li>
 		</div>
 
 		<div id="featured-cat" class="box">
@@ -169,6 +169,10 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 			<br>
 			<a href="https://dust.kuchiki.net/" target="_blank"><img src="/!g/web/fanlisting-cliques/cats.gif"></a>
+			<br>
+			<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting-cliques/lejlart-space.gif" alt="appledust space mini-clique"></a>
+			<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting-cliques/lejlart-pastelcolors.gif" alt="appledust pastel colors mini-clique"></a>
+			<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting-cliques/lejlart-clouds.gif" alt="appledust clouds mini-clique"></a>
 
 			<br>
 			<img src="/!g/web/fanlisting-cliques/cat-moudoku.png" width="20px" alt="pixel art of a grey cat"> i am a <a href="https://cliques.moudoku.com/cats" target="_blank">black cat</a>
@@ -251,24 +255,57 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		</div>
 
 		<!--		stickers around home-->
-
-		<img src="/!g/deco/flower1.gif" style="top:41.5%;left:25%;" class="deco" alt="">
-
-		<img src="/!g/deco/catpat.gif" style="bottom:92.8%;left:5.5%;width:15%" class="deco" alt="">
-
-		<img src="!g/deco/sleepy-cats.gif" style="top:41.7%;left:93%" class="deco" alt="">
-
-		<img src="/!g/deco/koinuko-kittytiny.gif" class="deco" style="top:30%;left:62%">
-
+		<img id="sticker1" class="deco" alt="">
+		<img id="sticker2" class="deco" alt="">
+		<img id="sticker3" class="deco" alt="">
+		<img id="sticker4" class="deco" alt="">
+		<!--		wrapper end div-->
 	</div>
 
-	<footer>
-		website coded with love by des! <img src="/!g/pix/cathead.gif" alt=""> hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a> since april 11, 2023
+	<!--	music player -->
+	<audio loop id="music" src="https://files.catbox.moe/9rh0cl.mp3"></audio>
+	<button title="click to play some music! golden (celeste OST) by lena raine" id="music-btn" onclick="playpause()">
+		<img src="/!g/pix/beat-stop.png" alt="music button">
+	</button>
+	<footer class="box">
 		<p><a href="/notebook/links/credit.html#home">credit</a> / <b>last updated on 03.dec.23</b></p>
-
+		<p>website coded with love by des! <img src="/!g/pix/cathead.gif" alt=""> hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a> since april 11, 2023</p>
 	</footer>
 
+	<script>
+		var audio = document.getElementById("music");
+		audio.volume = 0.8;
 
+	</script>
+
+	<script>
+		let player = document.getElementById("music"); //the audio id
+		let btn = document.getElementById("music-btn"); //the button id
+		isPlaying = false; //set to false because it is not playing yet
+
+		function playpause() {
+			if (!isPlaying) play(); //if isPlaying is false, then play the music
+			else pause(); //if isPlaying is true, then pause the music
+		}
+
+		function play() {
+			player.play(); //play the music
+			isPlaying = true; //set to true because the music is playing
+			btn.innerHTML = '<img src="/!g/pix/beat.gif">'; //change the button to say pause
+		}
+
+		function pause() {
+			player.pause(); //pause the music
+			isPlaying = false; //set to false because the music is not playing
+			btn.innerHTML = '<img src="/!g/pix/beat-stop.png">'; //change the button to say play
+		}
+
+		player.onended = function() {
+			isPlaying = false; //the song has ended, isPlaying is false
+			btn.innerHTML = '<img src="/!g/pix/beat-stop.png">'; //change the button to say play
+		}
+
+	</script>
 	<script>
 		(function titleScroller(text) {
 			document.title = text;
@@ -277,55 +314,8 @@ feel free to look around :) just don't be THAT person and take the entire code f
 			}, 500);
 		}(" doqmeat v3 ☆⌒(*＾-゜)v☆ "));
 
-		//Make the DIV element draggagle:
-		dragElement(document.getElementById("catIMG"));
-
-		function dragElement(elmnt) {
-			var pos1 = 0,
-				pos2 = 0,
-				pos3 = 0,
-				pos4 = 0;
-			if (document.getElementById(elmnt.id + "header")) {
-				/* if present, the header is where you move the DIV from:*/
-				document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-			} else {
-				/* otherwise, move the DIV from anywhere inside the DIV:*/
-				elmnt.onmousedown = dragMouseDown;
-			}
-
-			function dragMouseDown(e) {
-				e = e || window.event;
-				e.preventDefault();
-				// get the mouse cursor position at startup:
-				pos3 = e.clientX;
-				pos4 = e.clientY;
-				document.onmouseup = closeDragElement;
-				// call a function whenever the cursor moves:
-				document.onmousemove = elementDrag;
-			}
-
-			function elementDrag(e) {
-				e = e || window.event;
-				e.preventDefault();
-				// calculate the new cursor position:
-				pos1 = pos3 - e.clientX;
-				pos2 = pos4 - e.clientY;
-				pos3 = e.clientX;
-				pos4 = e.clientY;
-				// set the element's new position:
-				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-			}
-
-			function closeDragElement() {
-				/* stop moving when mouse button is released:*/
-				document.onmouseup = null;
-				document.onmousemove = null;
-			}
-		}
-
 	</script>
-
+	<script src="!f/homepage/mccatdrag.js"></script>
 </body>
 
 </html>

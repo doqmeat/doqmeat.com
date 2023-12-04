@@ -14,16 +14,17 @@ body {
 	color: var(--black);
 	background: url('/!g/homepage/bg1.png');
 	background-size: 1200px;
-	background-position: right;
+	background-position: right top;
 }
 
 .box {
 	border: 1px solid var(--yellow-d);
+	border-radius:10px;
 	background: rgb(203, 213, 224, 0.97);
 }
 
-h1 {
-	background: url(/!g/homepage/bg1.png);
+h1:hover {
+	background: var(--blue-d);
 	background-size: 200px;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -31,7 +32,7 @@ h1 {
 	-webkit-text-stroke-color: var(--yellow-d);
 }
 
-h1:hover {
+h1 {
 	background: var(--yellow-d);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -44,13 +45,25 @@ h1:hover {
 }
 
 #updates h2 + li {
-	color:var(--grey);
+	color: var(--grey);
 	background: var(--mint-d);
 }
 
-footer {
-	background: var(--grey);
+/* strickers */
+
+#sticker1 {
+	content: url('/!g/deco/flower1.gif');
+	top: 47.5%;
+	left: 25%;
 }
+
+#sticker2 {
+	content: url('/!g/deco/catpat.gif');
+	bottom: 92.8%;
+	left: 5.5%;
+}
+
+/*-----------------------*/
 
 #s-m-t-tooltip {
 	max-width: 200px;

@@ -3,6 +3,11 @@
 	list-style-position: inside;
 }
 
+body,
+.box {
+	transition-duration: 0.5s;
+}
+
 :root {
 	--fonts: gaegu-b, natsuzemi, arial;
 }
@@ -33,7 +38,7 @@ body {
 	gap: 20px 30px;
 	margin: auto;
 	margin-top: 50px;
-	margin-bottom: 30px;
+	;
 }
 
 .box {
@@ -49,7 +54,9 @@ body {
 header {
 	grid-area: head;
 	text-align: center;
-	overflow: visible;
+	overflow: auto;
+	background: transparent;
+	border: 0px;
 }
 
 h1 {
@@ -202,12 +209,16 @@ nav a img {
 }
 
 footer {
-	margin: auto;
-	max-width: 1150px;
-	border-radius: 20px;
+	max-width: 1110px;
 	text-align: center;
 	position: relative;
+	margin: auto;
 	margin-bottom: 20px;
+}
+
+footer p,
+#button p {
+	margin: 0px;
 }
 
 footer img {
@@ -220,18 +231,41 @@ footer img {
 	vertical-align: text-bottom;
 }
 
-@media only screen and (max-width: 1152px) {
+#music-btn {
+	width: 30px;
+	height: 30px;
+	border-radius: 10px;
+	position: fixed;
+	bottom: 5px;
+	left: 5px;
+}
+
+
+@media only screen and (max-width: 1140px) {
 	#wrapper {
-		grid-template-columns: 19% auto auto 20%;
+		grid-template-columns: 19% 30% 20% 20%;
+	}
+
+	h1 {
+		font-size: 15px;
 	}
 }
 
-@media only screen and (max-width: 828px) {
+
+@media only screen and (max-width: 860px) {
+
+	.deco,
+	#cat {
+		display: none;
+	}
+
+	#wrapper {
+		display: block;
+	}
+
 	#status {
 		background: white;
-		text-align: center;
-		padding: 10px;
-		height: 130%;
+
 	}
 }
 
