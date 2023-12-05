@@ -1,4 +1,4 @@
-//from this site! https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript//
+//code taken from this site! https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript//
 
 function toggleTheme() {
 

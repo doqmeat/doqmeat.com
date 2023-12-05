@@ -14,9 +14,9 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<link rel="icon" type="image/x-icon" href="favicon.gif">
 	<!--	CSS -->
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-	<link href="!f/homepage/home-v3.css" rel="stylesheet" type="text/css" media="all">
+	<link href="!f/homepage-v3/body.css" rel="stylesheet" type="text/css" media="all">
 	<!--	theme picker -->
-	<link class="theme" href="/!f/homepage/flower.css" rel="stylesheet" type="text/css">
+	<link class="theme" href="/!f/homepage-v3/flower.css" rel="stylesheet" type="text/css">
 	<script src="/!f/css-picker.js"></script>
 
 	<!--	JS for webrings-->
@@ -106,8 +106,8 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 		<div id="theme-picker" class="box">
 			<h3>theme picker</h3>
-			<button onclick="toggleTheme('/!f/homepage/flower.css')">flower</button>
-			<button onclick="toggleTheme('/!f/homepage/space.css')">space</button>
+			<button onclick="toggleTheme('/!f/homepage-v3/flower.css')">flower</button>
+			<button onclick="toggleTheme('/!f/homepage-v3/space.css')">space</button>
 		</div>
 
 		<div id="current" class="box">
@@ -273,40 +273,6 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	</footer>
 
 	<script>
-		var audio = document.getElementById("music");
-		audio.volume = 0.8;
-
-	</script>
-
-	<script>
-		let player = document.getElementById("music"); //the audio id
-		let btn = document.getElementById("music-btn"); //the button id
-		isPlaying = false; //set to false because it is not playing yet
-
-		function playpause() {
-			if (!isPlaying) play(); //if isPlaying is false, then play the music
-			else pause(); //if isPlaying is true, then pause the music
-		}
-
-		function play() {
-			player.play(); //play the music
-			isPlaying = true; //set to true because the music is playing
-			btn.innerHTML = '<img src="/!g/pix/beat.gif">'; //change the button to say pause
-		}
-
-		function pause() {
-			player.pause(); //pause the music
-			isPlaying = false; //set to false because the music is not playing
-			btn.innerHTML = '<img src="/!g/pix/beat-stop.png">'; //change the button to say play
-		}
-
-		player.onended = function() {
-			isPlaying = false; //the song has ended, isPlaying is false
-			btn.innerHTML = '<img src="/!g/pix/beat-stop.png">'; //change the button to say play
-		}
-
-	</script>
-	<script>
 		(function titleScroller(text) {
 			document.title = text;
 			setTimeout(function() {
@@ -315,6 +281,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		}(" doqmeat v3 ☆⌒(*＾-゜)v☆ "));
 
 	</script>
+	<script src="!f/music-toggle.js"></script>
 	<script src="!f/homepage/mccatdrag.js"></script>
 </body>
 
