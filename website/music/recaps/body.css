@@ -1,0 +1,23 @@
+h2{
+				background: var(--pink);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: var(--soft-brown);
+}
+
+h3 {
+			background: var(--l-brown);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: var(--brown);
+		}
+
+h4 {
+			background: var(--yellow);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: var(--soft-brown);
+		}

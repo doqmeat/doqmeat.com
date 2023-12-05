@@ -44,7 +44,6 @@ h6 {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 1px;
-	/* this is the border */
 	-webkit-text-stroke-color: var(--l-brown);
 }
 
