@@ -3,9 +3,14 @@
 /*main colors: yellow, blue, mint green */
 
 :root {
-	--yellow-d: rgb(214, 158, 46);
-	--blue-d: rgb(102, 126, 234);
-	--mint-d: rgb(124, 182, 175);
+	--d-yellow: rgb(214, 158, 46);
+	--l-yellow: #F2D69E;
+	--d-blue: rgb(102, 126, 234);
+	--l-blue: rgb(168, 196, 232);
+	--d-mint: rgb(124, 182, 175);
+	--l-mint: #C5E6E1;
+	--l-brown: #C39684;
+	--d-brown: #8C7167;
 	--grey: rgb(203, 213, 224);
 	--black: rgb(26, 32, 44);
 }
@@ -14,30 +19,65 @@ body {
 	color: var(--black);
 	background: url('/!g/homepage/bg1.png');
 	background-size: 1200px;
-	background-position: right top;
+	background-position: left bottom;
 }
 
 .box {
-	border: 1px solid var(--yellow-d);
-	border-radius:10px;
-	background: rgb(203, 213, 224, 0.97);
+	border: 3px dotted var(--d-yellow);
+	border-radius: 10px;
+	background: rgb(203, 213, 224, 0.9);
 }
 
-h1:hover {
-	background: var(--blue-d);
-	background-size: 200px;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: var(--yellow-d);
+header {
+	height: 112%;
+	overflow: hidden;
+	background: rgb(203, 213, 224, 0.9);
+	border-radius: 30px 30px 0px 0px;
+	border: 3px dotted var(--d-yellow);
+	border-bottom: 0px;
+}
+
+#intro {
+	border-radius:0px 0px 10px 10px;
+	border-top: 0px;
+}
+
+#intro p {
+	margin-top: 0px;
+}
+
+header p {
+	font-size: 17px;
+	margin: 0px;
+	margin-left: 10px;
+	position: absolute;
 }
 
 h1 {
-	background: var(--yellow-d);
+	font-family: typogarden;
+	font-size: 89px;
+	font-weight: normal;
+	letter-spacing: 4px;
+	background: var(--black);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: var(--blue-d);
+	-webkit-text-stroke-color: var(--black);
+}
+
+h2 {
+	font-weight: normal;
+	font-family: garden-cursive, var(--fonts);
+	font-size: 35px;
+	margin-bottom: 10px;
+}
+
+nav a {
+	font-family: morningtea;
+	font-size: 19px;
+	font-weight: bold;
+	color: var(--d-brown);
+	margin: 5px 0px;
 }
 
 #status {
@@ -45,8 +85,16 @@ h1 {
 }
 
 #updates h2 + li {
-	color: var(--grey);
-	background: var(--mint-d);
+	padding: 3px;
+	border-radius: 10px;
+	color: var(--d-blue);
+	background: var(--l-yellow);
+	border: 1px solid var(--d-blue);
+}
+
+#music-btn {
+	background: var(--d-blue);
+	border: 2px outset var(--d-yellow);
 }
 
 /* strickers */
@@ -63,6 +111,24 @@ h1 {
 	left: 5.5%;
 }
 
+#sticker3 {
+	content: url('/!g/deco/flower3.gif');
+	bottom: 92.8%;
+	left: 5.5%;
+}
+
+#sticker4 {
+	content: url('/!g/deco/flowers-cloud-rainbow.gif');
+	bottom: 92.8%;
+	left: 5.5%;
+}
+
+#sticker5 {
+	content: url('/!g/deco/left-hanger.gif');
+	bottom: 92.8%;
+	left: 5.5%;
+}
+
 /*-----------------------*/
 
 #s-m-t-tooltip {
@@ -70,5 +136,14 @@ h1 {
 	border-radius: 20px;
 	border: 1px dashed var(--black);
 	color: var(--grey);
-	background: var(--yellow-d);
+	background: var(--d-yellow);
+}
+
+
+@media only screen and (max-width: 860px) {
+	#status {
+		border: 1px solid var(--d-yellow);
+		border-radius: 10px;
+		background: rgb(203, 213, 224, 0.97);
+	}
 }
