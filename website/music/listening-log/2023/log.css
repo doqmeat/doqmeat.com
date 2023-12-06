@@ -3,6 +3,10 @@
 	--l-border: 2px solid var(--yellow);
 }
 
+hr{
+	border-color: var(--l-brown);
+}
+
 p img {
 	vertical-align: middle;
 }
@@ -81,6 +85,10 @@ side {
 	text-align: center;
 }
 
+.cred{
+	font-size:14px;
+	margin:0px;
+}
 
 main {
 	position: relative;
