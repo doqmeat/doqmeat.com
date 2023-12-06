@@ -15,9 +15,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<!--	CSS -->
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<link href="!f/homepage-v3/body.css" rel="stylesheet" type="text/css" media="all">
-	<!--	theme picker -->
 	<link class="theme" href="/!f/homepage-v3/flower.css" rel="stylesheet" type="text/css">
-	<script src="/!f/css-picker.js"></script>
 
 	<!--	JS for webrings-->
 	<link href="https://adilene.net/webring/webring.css" rel="stylesheet">
@@ -35,10 +33,15 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<div id="wrapper">
 
 		<header>
-			welcome to...
-			<br>
+			<p>welcome to...</p>
 			<h1>doqmeat.neocities.org</h1>
 		</header>
+
+		<div id="theme-picker" class="box">
+			<p>pick a theme!</p>
+			<button onclick="toggleTheme('/!f/homepage-v3/flower.css')">flower</button>
+			<button onclick="toggleTheme('/!f/homepage-v3/space.css')">space</button>
+		</div>
 
 		<nav class="box">
 			<h3>personal</h3>
@@ -71,27 +74,23 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		</nav>
 
 		<div id="intro" class="box">
-			<h4>to-do's:</h4>
-			<li>add a lil music player <img src="/!g/pix/beat-stop.png"></li>
-			<li>add more cliques</li>
 			<p>hello! my name is <b>des</b> and this is my humble little corner on the internet. it mostly serves as a digital journal where i share whatever i want, however i want it! coding this site has been the most fun i've had online in a long time. so thank you for checking it out! i hope you find something you like.</p>
 
 			<p>here's my <a class="outlink" href="https://doqmeat.123guestbook.com/">guestbook</a> if you'd like to write a little message <img src="!g/pix/cat-heart.gif"></p>
 
-			<p>credit for graphics and js snippets used in this page can be found <a href="/notebook/links/credit.html#home">here!</a></p>
+			<p>credit for all graphics and js snippets used on this page can be found <a href="/notebook/links/credit.html#home">here!</a></p>
 
 			<p>this website will probably be an <a href="/notebook/sitely/to-dos.html">endless work-in-progress</a> for quite a bit. meaning that i am <b>always</b> working on it and updating it. if anything looks broken, a quick cache clean should help! if not, then feel free to <a href="mailto:doqmeat@gmail.com">e-mail me</a>.</p>
 
 			<h4>notes:</h4>
 			<li>coded in <a href="https://brackets.io/" class="outlink" target="_blank">brackets.io</a> using firefox and tested on chrome when i remember to do so.</li>
-			<li>recommended to view on a 1536px+ wide screen.</li>
-			<li>though smaller monitor users do not fear. <a title="some are on my to-do list!" href="/notebook/sitely/to-dos.html">most</a> pages are responsive to your screen's size!</li>
-			<li>mobile users: do fear. sorry!</li>
+			<li>recommended to view on a 1536+px wide screen.</li>
+			<li>i've made <i>most</i> of the pages on this site responsive to different screen sizes. with that said, it is not tested or recommended to view on mobile devices.</li>
 		</div>
 
 		<div id="status" class="box;">
 			<div class="padding">
-
+				<h3>status</h3>
 				<a href="https://www.imood.com/users/doqmeat"><img src="https://moods.imood.com/display/uname-doqmeat/trans-1/imood.gif" alt="The current mood of doqmeat at www.imood.com" border="0"></a>
 
 				<div id="statuscafe">
@@ -104,12 +103,6 @@ feel free to look around :) just don't be THAT person and take the entire code f
 				<a href="https://piclog.blue/profile.php?id=51"><img src="https://piclog.blue/latest.php?id=51" width="50%"></a>
 
 			</div>
-		</div>
-
-		<div id="theme-picker" class="box">
-			<h3>theme picker</h3>
-			<button onclick="toggleTheme('/!f/homepage-v3/flower.css')">flower</button>
-			<button onclick="toggleTheme('/!f/homepage-v3/space.css')">space</button>
 		</div>
 
 		<div id="current" class="box">
@@ -131,11 +124,11 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 		<div id="featured-cat" class="box">
 			<h2>featured cat</h2>
-			<a href="/collection/cats/!g/orange-eating-stupid.gif"><img src="/collection/cats/!g/orange-eating-stupid.gif" alt="gif of a cat eating from his bowl and suddenly stops to look blankly at the camera. after 3 seconds he resumes to eat again."></a>
+			<a href="/collection/cats/!g/orange-eating-stupid.gif"><img src="/collection/cats/!g/orange-eating-stupid.gif" width="100%" alt="gif of a cat eating from his bowl and suddenly stops to look blankly at the camera. after 3 seconds he resumes to eat again."></a>
 		</div>
 
 		<div id="deco-1" class="box">
-			deco 1
+			deco
 		</div>
 
 		<div id="listing" class="box">
@@ -246,7 +239,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 		<div id="button" class="box">
 			<h2>link me!</h2>
-			<p><small>and remember to <a class="outlink" href="" target="_blank">not hotlink</a></small></p>
+			<p>and remember to <a class="outlink" href="" target="_blank">not hotlink</a></p>
 
 			<img src="sites/!g/doqmeat.png" alt="doqmeat button">
 			<textarea style="max-width:88px;height:35px;"><a href="https://doqmeat.neocities.org" target="_blank"><img src="https://files.catbox.moe/xqrl8u.png" alt="doqmeat"></a></textarea>
@@ -261,6 +254,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		<img id="sticker2" class="deco" alt="">
 		<img id="sticker3" class="deco" alt="">
 		<img id="sticker4" class="deco" alt="">
+		<img id="sticker5" class="deco" alt="">
 		<!--		wrapper end div-->
 	</div>
 
@@ -283,8 +277,9 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		}(" doqmeat v3 ☆⌒(*＾-゜)v☆ "));
 
 	</script>
+	<script src="/!f/css-picker.js"></script>
 	<script src="!f/music-toggle.js"></script>
-	<script src="!f/homepage/mccatdrag.js"></script>
+	<script src="!f/homepage-v3/mccatdrag.js"></script>
 </body>
 
 </html>
