@@ -1,6 +1,7 @@
-# doqmeat website
-hello! this is the repository of [doqmeat.neocities.org](https://doqmeat.neocities.org/) !! 
-i code in brackets.io and upload my code using github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template)
+# doqmeat.neocities.org
+hello! this is the repository of my personal website, [doqmeat.neocities.org](https://doqmeat.neocities.org/) !
+
+i code in brackets.io (currently learning how to use VS code) and upload my code using github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template)
 
 ## source code
 - i learned how to code HTML and CSS by looking at other people's code and <b>playing around with it offline</b>, so you're welcome to do that with mine!
