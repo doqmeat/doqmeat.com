@@ -3,7 +3,6 @@
 	list-style-position: inside;
 }
 
-body,
 .box {
 	transition-duration: 0.5s;
 }
@@ -35,7 +34,7 @@ body {
 	grid-template-columns: 240px 300px 240px 240px;
 	max-width: 1150px;
 	padding: 20px;
-	gap: 20px 30px;
+	gap: 10px 30px;
 	margin: auto;
 	margin-top: 50px;
 	;
@@ -60,10 +59,9 @@ header {
 }
 
 h1 {
-	font-family: daydream, var(--fonts);
+	font-family:var(--fonts);
 	font-size: 23px;
 	line-height: normal;
-	letter-spacing: 3px;
 	margin: 0px;
 	display: inline-block;
 	transition-duration: 1s;
@@ -71,10 +69,12 @@ h1 {
 }
 
 h2 {
+	text-align: center;
 	margin: 0px;
 }
 
 h3 {
+	text-align: center;
 	margin: 10px 5px;
 }
 
@@ -86,16 +86,26 @@ p {
 	margin: 12px 0px;
 }
 
+footer p{
+	margin: 0px;
+}
+
 nav {
 	grid-area: nav;
-	margin-top: 50px;
-	height: 650px;
+	margin-top: 45px;
+	height: 620px;
 	overflow: auto;
 }
 
 nav a {
 	display: block;
 	text-decoration: none;
+	transition-timing-function: ease-out;
+	transition-duration: 0.3s;
+}
+
+nav a:hover {
+	margin-left: 20px;
 }
 
 nav a img {
@@ -128,11 +138,16 @@ nav a img {
 #current {
 	grid-area: cur;
 	margin-top: 100px;
-	height: 72%;
+	height: 70%;
 }
 
 #theme-picker {
 	grid-area: picker;
+	text-align: center;
+}
+
+#theme-picker p{
+	margin:0px;
 }
 
 #cat {
@@ -161,10 +176,7 @@ nav a img {
 
 #featured-cat {
 	grid-area: f-cat;
-}
-
-#featured-cat a img {
-	width: 100%;
+	text-align: center;
 }
 
 #deco-1 {
@@ -174,19 +186,16 @@ nav a img {
 #widget {
 	grid-area: wid;
 	text-align: center;
-
 }
 
 #listing {
 	grid-area: list;
 	text-align: center;
-
 }
 
 #webrings {
 	grid-area: ring;
 	text-align: center;
-
 }
 
 #featured-page {
@@ -208,17 +217,17 @@ nav a img {
 	text-align: center;
 }
 
+#button p{
+	font-size:15px;
+	line-height: 16px;
+}
+
 footer {
 	max-width: 1110px;
 	text-align: center;
 	position: relative;
 	margin: auto;
 	margin-bottom: 20px;
-}
-
-footer p,
-#button p {
-	margin: 0px;
 }
 
 footer img {
@@ -231,10 +240,13 @@ footer img {
 	vertical-align: text-bottom;
 }
 
+button {
+	border-radius: 10px;
+}
+
 #music-btn {
 	width: 30px;
 	height: 30px;
-	border-radius: 10px;
 	position: fixed;
 	bottom: 5px;
 	left: 5px;
@@ -255,18 +267,40 @@ footer img {
 @media only screen and (max-width: 860px) {
 
 	.deco,
-	#cat {
+	#cat,
+	#deco-1,
+	#webrings,
+	#button {
 		display: none;
 	}
 
 	#wrapper {
+		margin: 0px;
 		display: block;
 	}
 
-	#status {
-		background: white;
-
+	nav a {
+		display: inline-block;
 	}
+
+	#status {
+		padding: 10px;
+	}
+
+	nav,
+	#status,
+	#current,
+	#featured-cat,
+	#featured-page,
+	header {
+		margin: 25px 0px;
+		height: auto;
+	}
+
+	footer {
+		margin: 0px 20px;
+	}
+
 }
 
 #s-m-t-tooltip {
