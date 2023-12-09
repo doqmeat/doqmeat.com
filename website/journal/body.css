@@ -159,12 +159,12 @@ summary {
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-	background-color: #C7D9F8;
+	background-color: #E4A79D;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: transparent;
+	background-color: #FFFCDC;
 }
 
 /* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;} /* End https://www.cursors-4u.com */

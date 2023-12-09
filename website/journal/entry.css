@@ -9,6 +9,10 @@ body {
 	color: black;
 }
 
+header{
+	padding:5px;
+}
+
 li {
 	list-style-image: url('/!g/pix/starpink.gif');
 	padding-left: 2px;
