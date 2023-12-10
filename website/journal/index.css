@@ -46,6 +46,7 @@ h1 {
 	padding: 3px 0px;
 	border-right: 2px solid #E4A79D;
 	overflow: auto;
+	scrollbar-width: none;
 }
 
 #col1 img {
@@ -75,6 +76,10 @@ h1 {
 #col1 details {
 	margin: 0px;
 	padding: 0px;
+}
+
+#col1::-webkit-scrollbar {
+	display: none;
 }
 
 #col2 {
@@ -137,9 +142,9 @@ h1 {
 	border-top: none;
 }
 
-.sticker{
+.sticker {
 	position: absolute;
-		transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
 
@@ -153,7 +158,7 @@ h1 {
 
 .tape {
 	position: absolute;
-	rotate:-50deg;
+	rotate: -50deg;
 	top: 25px;
 	left: 5%;
 	transform: translate(-50%, -50%);
@@ -166,7 +171,7 @@ h1 {
 
 .tape2 {
 	position: absolute;
-	rotate:130deg;
+	rotate: 130deg;
 	top: 270px;
 	left: 62%;
 	transform: translate(-50%, -50%);
@@ -177,10 +182,10 @@ h1 {
 	width: 120px;
 }
 
-	.mask{
--webkit-mask-image: url('/!g/deco/paper.png');
-  -webkit-mask-size: 400px;
-  -webkit-mask-repeat: no-repeat;
+.mask {
+	-webkit-mask-image: url('/!g/deco/paper.png');
+	-webkit-mask-size: 400px;
+	-webkit-mask-repeat: no-repeat;
 }
 
 #tag {
