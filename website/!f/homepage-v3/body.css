@@ -47,6 +47,7 @@ body {
 }
 
 .deco {
+	pointer-events: none;
 	position: absolute;
 }
 
@@ -59,7 +60,7 @@ header {
 }
 
 h1 {
-	font-family:var(--fonts);
+	font-family: var(--fonts);
 	font-size: 23px;
 	line-height: normal;
 	margin: 0px;
@@ -86,7 +87,7 @@ p {
 	margin: 12px 0px;
 }
 
-footer p{
+footer p {
 	margin: 0px;
 }
 
@@ -121,7 +122,7 @@ nav a img {
 	background-repeat: no-repeat;
 	background-size: contain;
 	text-align: center;
-	padding: 40px 170px 40px 30px;
+	padding: 46px 200px 40px 40px;
 	height: 220%;
 }
 
@@ -146,11 +147,12 @@ nav a img {
 	text-align: center;
 }
 
-#theme-picker p{
-	margin:0px;
+#theme-picker p {
+	margin: 0px;
 }
 
 #cat {
+	z-index: 999;
 	grid-area: cat;
 	overflow: visible;
 	background: transparent;
@@ -217,8 +219,8 @@ nav a img {
 	text-align: center;
 }
 
-#button p{
-	font-size:15px;
+#button p {
+	font-size: 15px;
 	line-height: 16px;
 }
 

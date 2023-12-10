@@ -4,42 +4,42 @@
 
 :root {
 	--d-yellow: rgb(214, 158, 46);
-	--l-yellow: #F2D69E;
+	--l-yellow: rgb(250, 240, 137);
 	--d-blue: rgb(102, 126, 234);
 	--l-blue: rgb(168, 196, 232);
 	--d-mint: rgb(124, 182, 175);
 	--l-mint: #C5E6E1;
 	--l-brown: #C39684;
 	--d-brown: #8C7167;
+	--d-green: #4D6B4D;
 	--grey: rgb(203, 213, 224);
 	--black: rgb(26, 32, 44);
 }
 
 body {
 	color: var(--black);
-	background: url('/!g/homepage/bg1.png');
-	background-size: 1200px;
-	background-position: left bottom;
+	background: url('/!g/homepage/bg5.png') no-repeat bottom fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 .box {
 	border: 3px dotted var(--d-yellow);
 	border-radius: 10px;
-	background: rgb(203, 213, 224, 0.9);
+	background: rgb(247, 250, 252, 0.9);
 }
 
 header {
 	height: 112%;
+	color: white;
 	overflow: hidden;
-	background: rgb(203, 213, 224, 0.9);
-	border-radius: 30px 30px 0px 0px;
-	border: 3px dotted var(--d-yellow);
-	border-bottom: 0px;
 }
 
 #intro {
 	border-radius: 0px 0px 10px 10px;
-	border-top: 0px;
+	padding-bottom: 50px;
 }
 
 #intro p {
@@ -58,24 +58,45 @@ h1 {
 	font-size: 89px;
 	font-weight: normal;
 	letter-spacing: 4px;
-	background: var(--black);
+	background: rgb(255, 166, 166);
+	background: linear-gradient(180deg, rgba(255, 166, 166, 1) 30%, rgba(124, 152, 116, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: var(--black);
+	filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white) drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white);
 }
 
 h2 {
 	font-weight: normal;
-	font-family: garden-cursive, var(--fonts);
-	font-size: 35px;
+	font-family: newpenji, var(--fonts);
+	font-size: 26px;
+	letter-spacing: 3px;
 	margin-bottom: 10px;
 }
 
+h3 {
+	font-family: newpenji, var(--fonts);
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: normal;
+}
+
+h3::after,
+h3::before {
+	content: url('/!g/pix/flower-white.gif');
+}
+
+h3::before {
+	margin-right: 10px;
+}
+
+h3::after {
+	margin-left: 10px;
+}
+
+
 nav a {
-	font-family: morningtea;
+	font-family: newpenji, var(--fonts);
 	font-size: 19px;
-	font-weight: bold;
 	color: var(--d-brown);
 	margin: 5px 0px;
 }
@@ -106,27 +127,121 @@ nav a {
 }
 
 #sticker2 {
-	content: url('/!g/deco/catpat.gif');
-	bottom: 92.8%;
-	left: 5.5%;
+	content: url('/!g/div/flower2.gif');
+	top: 0.5%;
+	left: -1%;
+	rotate: -6deg;
 }
 
 #sticker3 {
-	content: url('/!g/deco/flower3.gif');
-	bottom: 92.8%;
-	left: 5.5%;
+	content: url('https://doqmeat.neocities.org/!g/deco/tulips.gif');
+	top: 62%;
+	left: 54%;
 }
 
 #sticker4 {
-	content: url('/!g/deco/flowers-cloud-rainbow.gif');
-	bottom: 92.8%;
-	left: 5.5%;
+	content: url('https://doqmeat.neocities.org/!g/deco/happy-cloud.gif');
+	top: 35%;
+	left: 56%;
 }
 
 #sticker5 {
 	content: url('/!g/deco/left-hanger.gif');
-	bottom: 92.8%;
-	left: 5.5%;
+	top: 50%;
+	left: -1.6%;
+}
+
+#sticker6 {
+	content: url('/!g/deco/paper-planes.gif');
+	top: 76%;
+	rotate: 10deg;
+	left: -3%;
+}
+
+#sticker7 {
+	content: url('/!g/deco/sleepy-cats.gif');
+	top: 43%;
+	left: 95%;
+}
+
+#sticker8 {
+	content: url('https://doqmeat.neocities.org/!g/deco/sunflowers1.gif');
+	top: 90.9%;
+	left: 20%;
+}
+
+#sticker9 {
+	content: url('/!g/deco/flowerpatch2.gif');
+	top: 29%;
+	left: 24%;
+}
+
+#sticker10 {
+	content: url('/!g/deco/catbutter-Katze_91.gif');
+	top: 0.5%;
+	left: 5%;
+}
+
+#sticker11 {
+	content: url('/!g/deco/bench-flowers.gif');
+	top: -5%;
+	left: 90%;
+	rotate: -10deg;
+}
+
+#sticker12 {
+	content: url('/!g/deco/bee.png');
+	top: -3%;
+	width: 110px;
+	left: 50%;
+	rotate: -10deg;
+}
+
+#sticker13 {
+	content: url('https://doqmeat.neocities.org/!g/deco/hk-pixel%20(5).gif');
+	top: 35%;
+	left: 66%;
+}
+
+#sticker14 {
+	content: url('https://doqmeat.neocities.org/!g/deco/flower8.gif');
+	top: 4%;
+	left: 76%;
+}
+
+#sticker15 {
+	content: url('https://doqmeat.neocities.org/!g/deco/flower7.gif');
+	top: 90.8%;
+	left: 74%;
+}
+
+#sticker16 {
+	content: url('https://doqmeat.neocities.org/!g/deco/bouquet-flowers2.gif');
+	top: 75%;
+	left: 48%;
+	rotate: -40deg;
+}
+
+#sticker17 {
+	content: url('https://doqmeat.neocities.org/!g/pix/buttermeadow.gif');
+	top: 42%;
+	left: 77%;
+}
+
+/*fixed stickers*/
+
+#r-sticker {
+	position: fixed;
+	content: url('https://doqmeat.neocities.org/!g/deco/flower2.gif');
+	bottom: 10px;
+	right: 20px;
+}
+
+#l-sticker {
+	position: fixed;
+	content: url('/!g/deco/flower3.gif');
+	top: -19px;
+	left: 30px;
 }
 
 /*-----------------------*/
