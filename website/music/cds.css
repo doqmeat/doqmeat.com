@@ -40,7 +40,7 @@
 		letter-spacing: 3px;
 	}
 
-	.i {
+.i {
 		padding: 0px;
 		background: transparent;
 	}
@@ -134,6 +134,11 @@
 		margin: 5px 0px;
 	}
 
+	.caption p:hover {
+		background:var(--brown);
+		color:var(--cream);
+	}
+
 	.caption img {
 		vertical-align: middle;
 		width: auto;
@@ -153,7 +158,7 @@
 
 	.date::before,
 	.ver::before {
-		border-bottom: 3px double black;
+		border-bottom: 3px double var(--brown);
 	}
 
 	.ver::before {
