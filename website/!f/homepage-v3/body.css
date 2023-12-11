@@ -98,21 +98,6 @@ nav {
 	overflow: auto;
 }
 
-nav a {
-	display: block;
-	text-decoration: none;
-	transition-timing-function: ease-out;
-	transition-duration: 0.3s;
-}
-
-nav a:hover {
-	margin-left: 20px;
-}
-
-nav a img {
-	vertical-align: middle;
-}
-
 #intro {
 	grid-area: intro;
 }
@@ -183,6 +168,15 @@ nav a img {
 
 #deco-1 {
 	grid-area: deco1;
+	line-height: 0px;
+	word-spacing: 0px;
+	letter-spacing: 0px;
+	overflow: hidden;
+}
+
+#deco-1 img {
+	vertical-align: middle;
+	height: 37px;
 }
 
 #widget {
@@ -209,10 +203,6 @@ nav a img {
 	width: 100%;
 }
 
-#deco-2 {
-	grid-area: deco2;
-}
-
 #button {
 	margin-top: 80px;
 	grid-area: button;
@@ -234,12 +224,6 @@ footer {
 
 footer img {
 	vertical-align: middle;
-}
-
-.outlink::after {
-	content: url('/!g/web/materials/outlink2.png');
-	padding-left: 2px;
-	vertical-align: text-bottom;
 }
 
 button {

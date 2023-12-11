@@ -31,18 +31,18 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 	<div id="wrapper">
 
-		<header>
+		<header id="header">
 			<p>welcome to...</p>
 			<h1>doqmeat.neocities.org</h1>
 		</header>
 
 		<div id="theme-picker" class="box">
-			<p>pick a theme!</p>
+			<h2>pick a theme!</h2>
 			<button onclick="toggleTheme('/!f/homepage-v3/flower.css')">flower</button>
 			<button onclick="toggleTheme('/!f/homepage-v3/space.css')">space</button>
 		</div>
 
-		<nav class="box">
+		<nav id="nav" class="box">
 			<h2>navigation</h2>
 			<a href="/">landing page</a>
 			<h3>personal</h3>
@@ -90,8 +90,6 @@ feel free to look around :) just don't be THAT person and take the entire code f
 				clean should help! if not, then feel free to <a href="mailto:doqmeat@gmail.com">e-mail me</a>.</p>
 
 			<h4>notes:</h4>
-			<li>coded in <a href="https://brackets.io/" class="outlink" target="_blank">brackets.io</a> using firefox and
-				tested on chrome when i remember to do so.</li>
 			<li>recommended to view on a 1536+px wide screen.</li>
 			<li>i've made <i>most</i> of the pages on this site responsive to different screen sizes. with that said, it is
 				not tested or recommended to view on mobile devices.</li>
@@ -116,18 +114,18 @@ feel free to look around :) just don't be THAT person and take the entire code f
 
 		<div id="current" class="box">
 			<h2>currently</h2>
-			<p>playing: fortnite, fashion dreamer</p>
-			<p>reading: <i>he guy she was interested in wasn't a guy at all</i> by sumiko arai, <i>chainsaw man</i> by tatsuki
+			<p><span class="hl">playing:</span> fortnite, fashion dreamer</p>
+			<p><span class="hl">reading:</span> <i>he guy she was interested in wasn't a guy at all</i> by sumiko arai, <i>chainsaw man</i> by tatsuki
 				fujimoto, <i>villain</i> by fujita</p>
-			<p>watching: -</p>
-			<p>listening to:</p>
-			<p>working on: getting into college again!</p>
-			<p>coding: this very homepage!!!</p>
+			<p><span class="hl">watching:</span> -</p>
+			<p><span class="hl">listening to:</span> <span id="song">&#8987;</span></p>
+			<p><span class="hl">working on:</span> getting into college again!</p>
+			<p><span class="hl">coding:</span> this very homepage!!!</p>
 		</div>
 
 		<div id="updates" class="box">
 			<h2>updates</h2>
-			<li>someday - doqmeat homepage v3 is now live!</li>
+			<li>someday - doqmeat homepage v3 is now live! <a href="/">link</a></li>
 			<li>28.04.20 - <a href="">test 1</a> created</li>
 			<li>25.04.23 - <a href="">test 2</a> created</li>
 		</div>
@@ -138,7 +136,23 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		</div>
 
 		<div id="deco-1" class="box">
-			deco
+			<marquee class="marquee" direction="left" scrollamount="5" behavior="alternate" onmouseover="this.stop()" onmouseout="this.start()">
+				<img src="/collection/internet-stamps/!g/deathclaw.png">
+				<img src="/collection/internet-stamps/!g/corncat.gif">
+				<img src="/collection/internet-stamps/!g/cat.png">
+				<img src="/collection/internet-stamps/!g/minecraft.png">
+				<img src="/collection/internet-stamps/!g/nyancat.gif">
+				<img src="/collection/internet-stamps/!g/skyfish.png">
+				<img src="/collection/internet-stamps/!g/cat2.gif">
+				<img src="/collection/internet-stamps/!g/vivi.gif">
+				<img src="/collection/internet-stamps/!g/halo.png">
+				<img src="/collection/internet-stamps/!g/evil.png">
+				<img src="/collection/internet-stamps/!g/ipod%20repeat.gif">
+				<img src="/collection/internet-stamps/!g/reigensweatie.png">
+				<img src="/collection/internet-stamps/!g/teru.png">
+				<img src="/collection/internet-stamps/!g/balled.png">
+				<img src="/collection/internet-stamps/!g/jermabreakliminal.gif">
+			</marquee>
 		</div>
 
 		<div id="listing" class="box">
@@ -289,7 +303,8 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<button title="click to play some music! golden (celeste OST) by lena raine" id="music-btn" onclick="playpause()">
 		<img src="/!g/pix/beat-stop.png" alt="music button">
 	</button>
-	<footer class="box">
+
+	<footer id="foot" class="box">
 		<p><a href="/notebook/links/credit.html#home">credit</a> / <b>last updated on 03.dec.23</b></p>
 		<p>website coded with love by des! <img src="/!g/pix/cathead.gif" alt=""> hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a> since april 11, 2023</p>
 	</footer>
@@ -303,6 +318,8 @@ feel free to look around :) just don't be THAT person and take the entire code f
 			}, 500);
 		}(" doqmeat v3 ☆⌒(*＾-゜)v☆ "));
 
+	</script>
+	<script src="!f/homepage-v3/last.fm.js">
 	</script>
 	<script src="/!f/css-picker.js"></script>
 	<script src="!f/music-toggle.js"></script>
