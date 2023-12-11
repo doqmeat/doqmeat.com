@@ -150,8 +150,10 @@ blockquote {
 	text-align: center;
 }
 
-#iframepc sub {
-	font-weight: bold;
+.outlink:after {
+	content: url(/!g/web/materials/outlink2.png);
+	padding-left: 3px;
+	vertical-align: text-bottom;
 }
 
 .info {
