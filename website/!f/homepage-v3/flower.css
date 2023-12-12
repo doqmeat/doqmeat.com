@@ -209,9 +209,10 @@ nav a:hover {
 
 #sticker2 {
 	content: url('/!g/div/flower2.gif');
-	top: 0.5%;
-	left: -1%;
+	top: 1.8%;
+	left: 1%;
 	rotate: -6deg;
+	width: 250px;
 }
 
 #sticker3 {
@@ -259,8 +260,8 @@ nav a:hover {
 
 #sticker10 {
 	content: url('/!g/deco/catbutter-Katze_91.gif');
-	top: 0.5%;
-	left: 5%;
+	top: 2%;
+	left: 6%;
 }
 
 #sticker11 {
@@ -312,7 +313,7 @@ nav a:hover {
 #sticker18 {
 	content: url('/!g/pix/sorahana-butterflyanime.gif');
 	top: 4%;
-	left: 43%;
+	left: 26%;
 }
 
 #sticker19 {
@@ -329,21 +330,36 @@ nav a:hover {
 
 #sticker22 {
 	content: url('/!g/deco/worm.gif');
-	top: 96%;
-	left: 1%;
+	top: 71%;
+	left: 78%;
 }
 
 #sticker23 {
 	content: url('/!g/deco/yellowbutteer.gif');
-	top: 96%;
-	left: 1%;
+	top: 5%;
+	left: 73%;
+	rotate: 10deg;
+}
+
+#sticker24 {
+	content: url('/!g/pix/butter1.gif');
+	top: 49%;
+	left: 28%;
+	rotate: -20deg;
+}
+
+#sticker25 {
+	content: url('/!g/deco/koinuko-kittytiny.gif');
+	top: 36%;
+	left: 25%;
+	rotate: -14deg;
 }
 
 /*fixed stickers*/
 
 #r-sticker {
 	position: fixed;
-	content: url('/!g/deco/flower2.gif');
+	content: url('');
 	bottom: 10px;
 	right: 20px;
 }
