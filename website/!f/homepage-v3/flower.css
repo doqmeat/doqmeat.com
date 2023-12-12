@@ -1,0 +1,381 @@
+/*https://coolors.co/90619d-fe6d92-ffb5d5-a9d079-2e6314-c39684-f4b535-4a90c6-bfe1f2-edf4f7*/
+
+/*main colors: yellow, blue, mint green */
+
+:root {
+	--d-yellow: #F4B535;
+	--l-yellow: #FFEBAF;
+	--d-blue: #4A90C6;
+	--l-blue: #BFE1F2;
+	--l-brown: #C39684;
+	--d-brown: #8C7167;
+	--l-pink: #FFB5D5;
+	--d-pink: #FE6D92;
+	--l-green: #A9D079;
+	--d-green: #285114;
+	--purple: #90619D;
+	--grey: #EDF4F7;
+	--black: rgb(26, 32, 44);
+	--shadow: rgb(237, 244, 247, 0.8);
+	--border1: 3px dotted var(--l-yellow);
+	--border2: 3px dotted var(--l-pink);
+	--border3: 3px dotted var(--l-blue);
+	--bg1: rgb(191, 225, 242, 0.8);
+	--bg2: rgb(255, 229, 162, 0.9);
+	--bg3: rgb(255, 181, 213, 0.8);
+	--bg4: rgb(169, 208, 121, 0.8);
+	--gradient1: rgb(191, 225, 242);
+	--gradient2: linear-gradient(137deg, rgba(191, 225, 242, 0.8) 0%, rgba(255, 247, 223, 0.8) 48%, rgba(255, 181, 213, 0.8) 100%);
+}
+
+body {
+	color: var(--black);
+	background: url('/!g/homepage/bg5.png') no-repeat bottom fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.box {
+	border-radius: 10px;
+}
+
+a {
+	color: var(--purple);
+	border-radius: 10px;
+}
+
+
+#nav,
+.hl {
+	background: var(--gradient1);
+	background: var(--gradient2);
+	border: 3px dotted var(--l-brown);
+}
+
+.hl {
+	border: 1px solid var(--black);
+	border-radius: 10px;
+	padding: 1px 3px;
+}
+
+#intro {
+	border-radius: 0px 0px 10px 10px;
+	padding-bottom: 50px;
+	border: 3px dotted var(--d-brown);
+}
+
+#intro p {
+	margin-top: 0px;
+}
+
+header {
+	height: 112%;
+	color: white;
+	overflow: hidden;
+	font-size: 17px;
+}
+
+header p {
+	margin-top: -10px;
+	margin-left: 10px;
+	position: absolute;
+}
+
+h1 {
+	font-family: typogarden;
+	font-size: 89px;
+	font-weight: normal;
+	letter-spacing: 4px;
+	background: rgb(208, 121, 154);
+	background: linear-gradient(180deg, rgba(208, 121, 154, 1) 32%, rgba(89, 151, 106, 1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	filter: drop-shadow(2px 0px 0px var(--shadow)) drop-shadow(0px 2px 0px var(--shadow)) drop-shadow(-2px 0px 0px var(--shadow)) drop-shadow(0px -2px 0px var(--shadow));
+}
+
+h2 {
+	color: var(--d-brown);
+	font-weight: normal;
+	font-family: spirit, var(--fonts);
+	font-size: 20px;
+	margin-bottom: 5px;
+	line-height: 24px;
+}
+
+h3 {
+	background: rgb(237, 244, 247, 0.8);
+	border-radius: 10px;
+	font-family: spirit, var(--fonts);
+	font-weight: normal;
+	font-size: 16px;
+	border: 2px dashed var(--black);
+}
+
+nav a img {
+	vertical-align: middle;
+}
+
+nav a {
+	font-family: morningtea, var(--fonts);
+	color: var(--d-brown);
+	font-size: 19px;
+	font-weight: bold;
+	background: transparent;
+	padding: 0px 0px 0px 10px;
+	margin: 5px 5px;
+	display: block;
+	text-decoration: none;
+	transition-timing-function: ease-out;
+	transition-duration: 0.3s;
+}
+
+nav a:hover {
+	background: rgb(237, 244, 247, 0.8);
+	border: 1px solid var(--l-brown);
+	margin-left: 20px;
+}
+
+#status {
+	background-image: url('/!g/homepage/cloud1.png');
+}
+
+#updates,
+#listing {
+	background: var(--bg3);
+	border: var(--border3);
+}
+
+#theme-picker,
+#featured-page {
+	background: var(--bg2);
+	border: var(--border2);
+}
+
+#current,
+#webrings {
+	background: var(--bg1);
+	border: var(--border1);
+}
+
+#featured-cat,
+#button {
+	background: var(--bg4);
+	border: 3px dotted var(--l-brown);
+}
+
+#deco-1,
+#widget,
+#intro {
+	background: rgb(237, 244, 247, 0.8);
+	border: var(--border2);
+}
+
+#foot {
+	background: rgb(195, 150, 132, 0.8);
+	color: var(--grey);
+	border: var(--border1);
+}
+
+#foot a {
+	color: var(--l-yellow);
+}
+
+#foot .outlink::after {
+	content: url('/!g/web/materials/outlink1.png');
+}
+
+#updates h2 + li {
+	padding: 3px;
+	border-radius: 10px;
+	color: var(--d-brown);
+	background: rgb(237, 244, 247, 0.8);
+	border: 2px solid var(--d-brown);
+}
+
+#music-btn {
+	background: var(--d-blue);
+	border: 2px outset var(--d-yellow);
+}
+
+/* strickers */
+
+#sticker1 {
+	content: url('/!g/deco/flower1.gif');
+	top: 47.5%;
+	left: 25%;
+}
+
+#sticker2 {
+	content: url('/!g/div/flower2.gif');
+	top: 0.5%;
+	left: -1%;
+	rotate: -6deg;
+}
+
+#sticker3 {
+	content: url('/!g/deco/tulips.gif');
+	top: 62%;
+	left: 54%;
+}
+
+#sticker4 {
+	content: url('/!g/deco/happy-cloud.gif');
+	top: 35%;
+	left: 56%;
+}
+
+#sticker5 {
+	content: url('/!g/deco/left-hanger.gif');
+	top: 50%;
+	left: -1.6%;
+}
+
+#sticker6 {
+	content: url('/!g/deco/paper-planes.gif');
+	top: 76%;
+	rotate: 10deg;
+	left: -3%;
+}
+
+#sticker7 {
+	content: url('/!g/deco/sleepy-cats.gif');
+	top: 63%;
+	left: 95%;
+}
+
+#sticker8 {
+	content: url('/!g/deco/sunflowers1.gif');
+	top: 90.8%;
+	left: 20%;
+}
+
+#sticker9 {
+	content: url('/!g/deco/grass.gif');
+	top: 27.4%;
+	left: 24%;
+}
+
+#sticker10 {
+	content: url('/!g/deco/catbutter-Katze_91.gif');
+	top: 0.5%;
+	left: 5%;
+}
+
+#sticker11 {
+	content: url('/!g/deco/bench-flowers.gif');
+	top: -5%;
+	left: 90%;
+	rotate: -10deg;
+}
+
+#sticker12 {
+	content: url('/!g/deco/bee.png');
+	top: -3%;
+	width: 110px;
+	left: 50%;
+	rotate: -10deg;
+}
+
+#sticker13 {
+	content: url('/!g/deco/hk-pixel%20(5).gif');
+	top: 35%;
+	left: 66%;
+}
+
+#sticker14 {
+	content: url('/!g/deco/flower8.gif');
+	top: 4%;
+	left: 76%;
+}
+
+#sticker15 {
+	content: url('/!g/deco/flower7.gif');
+	top: 90.8%;
+	left: 74%;
+}
+
+#sticker16 {
+	content: url('/!g/deco/bouquet-flowers2.gif');
+	top: 75%;
+	left: 48%;
+	rotate: -40deg;
+}
+
+#sticker17 {
+	content: url('/!g/pix/buttermeadow.gif');
+	top: 42%;
+	left: 77%;
+}
+
+#sticker18 {
+	content: url('/!g/pix/sorahana-butterflyanime.gif');
+	top: 4%;
+	left: 43%;
+}
+
+#sticker19 {
+	content: url('/!g/pix/sorahana-beebig2.gif');
+	top: 96%;
+	left: 1%;
+}
+
+#sticker20 {
+	content: url('/!g/deco/kitty-basket.gif');
+	top: 70%;
+	left: 17%;
+}
+
+#sticker22 {
+	content: url('/!g/deco/worm.gif');
+	top: 96%;
+	left: 1%;
+}
+
+#sticker23 {
+	content: url('/!g/deco/yellowbutteer.gif');
+	top: 96%;
+	left: 1%;
+}
+
+/*fixed stickers*/
+
+#r-sticker {
+	position: fixed;
+	content: url('/!g/deco/flower2.gif');
+	bottom: 10px;
+	right: 20px;
+}
+
+#l-sticker {
+	position: fixed;
+	content: url('/!g/deco/flower3.gif');
+	top: -19px;
+	left: 30px;
+}
+
+/*-----------------------*/
+
+.outlink::after {
+	content: url('/!g/web/materials/outlink2.png');
+	padding-left: 2px;
+	vertical-align: text-bottom;
+}
+
+#s-m-t-tooltip {
+	max-width: 300px;
+	border-radius: 20px;
+	border: 2px dashed var(--l-brown);
+	background: rgb(191, 225, 242);
+	background: linear-gradient(137deg, rgba(191, 225, 242, 1) 0%, rgba(255, 247, 223, 1) 48%, rgba(255, 181, 213, 1) 100%);
+}
+
+
+@media only screen and (max-width: 860px) {
+	#status {
+		border: 1px solid var(--d-yellow);
+		border-radius: 10px;
+		background: rgb(203, 213, 224, 0.97);
+	}
+}
