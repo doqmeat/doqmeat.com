@@ -29,7 +29,7 @@
 }
 
 body {
-	color: var(--d-green);
+	color: var(--black);
 	background: url('/!g/homepage/bg5.png') no-repeat bottom fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -88,8 +88,8 @@ h1 {
 	font-size: 89px;
 	font-weight: normal;
 	letter-spacing: 4px;
-	background: rgb(255, 166, 166);
-	background: linear-gradient(180deg, rgba(255, 166, 166, 1) 30%, rgba(124, 152, 116, 1) 100%);
+	background: rgb(208, 121, 154);
+	background: linear-gradient(180deg, rgba(208, 121, 154, 1) 32%, rgba(89, 151, 106, 1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	filter: drop-shadow(2px 0px 0px var(--shadow)) drop-shadow(0px 2px 0px var(--shadow)) drop-shadow(-2px 0px 0px var(--shadow)) drop-shadow(0px -2px 0px var(--shadow));
@@ -98,30 +98,19 @@ h1 {
 h2 {
 	color: var(--d-brown);
 	font-weight: normal;
-	font-family: always-in-my-heart, var(--fonts);
-	font-size: 32px;
-	margin-bottom: 10px;
+	font-family: spirit, var(--fonts);
+	font-size: 20px;
+	margin-bottom: 5px;
+	line-height: 24px;
 }
 
 h3 {
 	background: rgb(237, 244, 247, 0.8);
 	border-radius: 10px;
-	font-family: newpenji, var(--fonts);
+	font-family: spirit, var(--fonts);
 	font-weight: normal;
-	font-size: 20px;
-}
-
-h3::after,
-h3::before {
-	content: url('/!g/pix/flower-white.gif');
-}
-
-h3::before {
-	margin-right: 10px;
-}
-
-h3::after {
-	margin-left: 17px;
+	font-size: 16px;
+	border: 2px dashed var(--black);
 }
 
 nav a img {
@@ -130,7 +119,7 @@ nav a img {
 
 nav a {
 	font-family: morningtea, var(--fonts);
-	color: var(--d-blue);
+	color: var(--d-brown);
 	font-size: 19px;
 	font-weight: bold;
 	background: transparent;
@@ -226,13 +215,13 @@ nav a:hover {
 }
 
 #sticker3 {
-	content: url('https://doqmeat.neocities.org/!g/deco/tulips.gif');
+	content: url('/!g/deco/tulips.gif');
 	top: 62%;
 	left: 54%;
 }
 
 #sticker4 {
-	content: url('https://doqmeat.neocities.org/!g/deco/happy-cloud.gif');
+	content: url('/!g/deco/happy-cloud.gif');
 	top: 35%;
 	left: 56%;
 }
@@ -252,19 +241,19 @@ nav a:hover {
 
 #sticker7 {
 	content: url('/!g/deco/sleepy-cats.gif');
-	top: 43%;
+	top: 63%;
 	left: 95%;
 }
 
 #sticker8 {
-	content: url('https://doqmeat.neocities.org/!g/deco/sunflowers1.gif');
+	content: url('/!g/deco/sunflowers1.gif');
 	top: 90.8%;
 	left: 20%;
 }
 
 #sticker9 {
-	content: url('/!g/deco/flowerpatch2.gif');
-	top: 29%;
+	content: url('/!g/deco/grass.gif');
+	top: 27.4%;
 	left: 24%;
 }
 
@@ -290,41 +279,71 @@ nav a:hover {
 }
 
 #sticker13 {
-	content: url('https://doqmeat.neocities.org/!g/deco/hk-pixel%20(5).gif');
+	content: url('/!g/deco/hk-pixel%20(5).gif');
 	top: 35%;
 	left: 66%;
 }
 
 #sticker14 {
-	content: url('https://doqmeat.neocities.org/!g/deco/flower8.gif');
+	content: url('/!g/deco/flower8.gif');
 	top: 4%;
 	left: 76%;
 }
 
 #sticker15 {
-	content: url('https://doqmeat.neocities.org/!g/deco/flower7.gif');
+	content: url('/!g/deco/flower7.gif');
 	top: 90.8%;
 	left: 74%;
 }
 
 #sticker16 {
-	content: url('https://doqmeat.neocities.org/!g/deco/bouquet-flowers2.gif');
+	content: url('/!g/deco/bouquet-flowers2.gif');
 	top: 75%;
 	left: 48%;
 	rotate: -40deg;
 }
 
 #sticker17 {
-	content: url('https://doqmeat.neocities.org/!g/pix/buttermeadow.gif');
+	content: url('/!g/pix/buttermeadow.gif');
 	top: 42%;
 	left: 77%;
+}
+
+#sticker18 {
+	content: url('/!g/pix/sorahana-butterflyanime.gif');
+	top: 4%;
+	left: 43%;
+}
+
+#sticker19 {
+	content: url('/!g/pix/sorahana-beebig2.gif');
+	top: 96%;
+	left: 1%;
+}
+
+#sticker20 {
+	content: url('/!g/deco/kitty-basket.gif');
+	top: 70%;
+	left: 17%;
+}
+
+#sticker22 {
+	content: url('/!g/deco/worm.gif');
+	top: 96%;
+	left: 1%;
+}
+
+#sticker23 {
+	content: url('/!g/deco/yellowbutteer.gif');
+	top: 96%;
+	left: 1%;
 }
 
 /*fixed stickers*/
 
 #r-sticker {
 	position: fixed;
-	content: url('https://doqmeat.neocities.org/!g/deco/flower2.gif');
+	content: url('/!g/deco/flower2.gif');
 	bottom: 10px;
 	right: 20px;
 }
