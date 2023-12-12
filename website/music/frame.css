@@ -2,7 +2,7 @@
 	background: var(--l-yellow);
 	max-width: 700px;
 	margin: auto;
-	padding: 5px 10px 40px 10px;
+	padding: 5px 10px 10px 10px;
 	border: 4px dashed var(--l-brown);
 	border-top: none;
 	border-bottom: none;
