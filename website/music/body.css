@@ -57,6 +57,11 @@ a {
 	cursor: help;
 }
 
+::selection {
+	color: var(--peach);
+	background: var(--l-brown);
+}
+
 a:hover {
 	color: var(--soft-brown);
 	background: var(--l-yellow);
