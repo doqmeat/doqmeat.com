@@ -187,3 +187,18 @@
 	font-family: 'nanum-r';
 	src: url('NanumSquareRoundOTFR.otf');
 }
+
+@font-face {
+	font-family: 'bm-neko';
+	src: url('bm-neko.TTF');
+}
+
+@font-face {
+	font-family: 'kiwisoda';
+	src: url('KiwiSoda.ttf');
+}
+
+@font-face {
+	font-family: 'oldschool-ad';
+	src: url('old-school-adventures.ttf');
+}
