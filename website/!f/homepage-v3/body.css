@@ -157,10 +157,6 @@ nav {
 	grid-area: update;
 }
 
-#updates h2 + li {
-	border-radius: 5px;
-}
-
 #featured-cat {
 	grid-area: f-cat;
 	text-align: center;
@@ -238,14 +234,21 @@ button {
 	left: 5px;
 }
 
+#s-m-t-tooltip {
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+}
+
 
 @media only screen and (max-width: 1140px) {
 	#wrapper {
 		grid-template-columns: 19% 30% 20% 20%;
 	}
-
-	h1 {
-		font-size: 15px;
+	
+	.deco, #l-sticker, #r-sticker{
+		display:none;
 	}
 }
 
@@ -287,11 +290,4 @@ button {
 		margin: 0px 20px;
 	}
 
-}
-
-#s-m-t-tooltip {
-	text-align: center;
-	z-index: 9999;
-	margin: 30px 15px 7px 12px;
-	padding: 5px;
 }

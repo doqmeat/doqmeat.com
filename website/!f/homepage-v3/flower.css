@@ -21,7 +21,7 @@
 	--border2: 3px dotted var(--l-pink);
 	--border3: 3px dotted var(--l-blue);
 	--bg1: rgb(191, 225, 242, 0.8);
-	--bg2: rgb(255, 229, 162, 0.9);
+	--bg2: rgb(255, 229, 162, 0.8);
 	--bg3: rgb(255, 181, 213, 0.8);
 	--bg4: rgb(169, 208, 121, 0.8);
 	--gradient1: rgb(191, 225, 242);
@@ -42,26 +42,31 @@ body {
 }
 
 a {
+	font-weight: bold;
 	color: var(--purple);
 	border-radius: 10px;
+	text-decoration: underline;
+	transition-duration: 0.3s;
 }
 
+a:hover {
+	letter-spacing: 2px;
+	text-decoration: none;
+}
 
-#nav,
-.hl {
+#nav {
 	background: var(--gradient1);
 	background: var(--gradient2);
 	border: 3px dotted var(--l-brown);
 }
 
-.hl {
-	border: 1px solid var(--black);
-	border-radius: 10px;
-	padding: 1px 3px;
+.me {
+	color: #B98FC3;
+	text-shadow: 2px 2px var(--grey);
 }
 
 #intro {
-	border-radius: 0px 0px 10px 10px;
+	font-family: gaegu-l, var(--fonts);
 	padding-bottom: 50px;
 	border: 3px dotted var(--d-brown);
 }
@@ -105,12 +110,19 @@ h2 {
 }
 
 h3 {
-	background: rgb(237, 244, 247, 0.8);
+	background: url('/!g/bg/h069-5.gif');
 	border-radius: 10px;
 	font-family: spirit, var(--fonts);
 	font-weight: normal;
 	font-size: 16px;
 	border: 2px dashed var(--black);
+	box-shadow: 1px 1px 6px 1px var(--l-pink) inset;
+}
+
+h4 {
+	font-family: spirit;
+	font-size: 16px;
+	font-weight: normal;
 }
 
 nav a img {
@@ -132,13 +144,136 @@ nav a {
 }
 
 nav a:hover {
-	background: rgb(237, 244, 247, 0.8);
-	border: 1px solid var(--l-brown);
+	letter-spacing: 0px;
+	background: var(--grey);
+	border: 1px solid var(--l-yellow);
 	margin-left: 20px;
+	box-shadow: 0px 0px 20px 1px var(--l-yellow) inset;
+}
+
+nav h2 {
+	color: var(--d-blue);
+}
+
+button {
+	font-family: nintendo-ds-bios;
+	font-size: 17px;
+	color: var(--d-brown);
+	box-shadow: 1px 1px 6px 1px var(--l-yellow) inset;
+	background: var(--l-blue);
+	border: 3px inset var(--l-yellow);
+
+}
+
+button:hover {
+	color: var(--d-pink);
+	background: var(--l-yellow);
+	border: 3px outset var(--d-pink);
+	box-shadow: 1px 1px 6px 1px var(--l-pink) inset;
+}
+
+#music-btn {
+	background: var(--l-brown);
+	border: 4px ridge var(--l-yellow);
+}
+
+.imood {
+	font-family: simple, var(--fonts);
+	vertical-align: text-bottom;
+}
+
+#status h2 {
+	margin: 0px;
+	line-height: 23px;
+}
+
+#statuscafe {
+	font-family: nintendo-ds-bios;
+	line-height: 25px;
+	font-size: 21px;
+	margin: auto;
+	margin-bottom: 10px;
+	border: 1px solid var(--l-blue);
+	width: 95%;
+	border-radius: 15px;
+}
+
+#statuscafe-username {
+	background: rgb(255, 255, 255);
+	background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(171, 215, 246, 1) 86%, rgba(95, 123, 198, 1) 100%);
+	border-radius: 15px 15px 0px 0px;
+	font-size: 17px;
+	font-style: italic;
 }
 
 #status {
 	background-image: url('/!g/homepage/cloud1.png');
+}
+
+#status a {
+	color: var(--d-blue);
+	text-decoration: none;
+}
+
+.hl {
+	background: var(--gradient1);
+	background: var(--gradient2);
+	font-family: gaegu-b;
+	border: 1px solid var(--d-brown);
+	color: var(--d-brown);
+	border-radius: 10px;
+	padding: 2px 3px;
+}
+
+#current i {
+	text-shadow: 1px 1px var(--l-yellow);
+}
+
+#current a {
+	color: var(--d-pink);
+	text-decoration: underline;
+}
+
+
+#updates,
+#current {
+	font-family: gaegu-r, var(--fonts);
+	font-size: 18px;
+	line-height: 20px;
+}
+
+#updates {
+	padding-bottom: 25px;
+}
+
+#updates a {
+	color: var(--l-yellow);
+	text-shadow: 2px 1px var(--d-brown);
+	text-decoration: none;
+}
+
+#updates li {
+	list-style-image: url('/!g/pix/1leaf.png');
+	padding: 6px 5px;
+}
+
+#updates h2 + li {
+	list-style-image: url('/!g/pix/sorahana-butterfly-pmm.gif');
+	border: 2px solid var(--d-brown);
+	border-radius: 10px;
+	background: url('/!g/bg/h056-4.gif');
+	box-shadow: 0px 0px 17px 15px var(--grey) inset;
+}
+
+#updates h2 + li a {
+	font-weight: bold;
+	text-decoration: underline;
+	color: var(--d-brown);
+	text-shadow: 1px 1px var(--grey);
+}
+
+#updates h2 + li .outlink {
+	content: url('/!g/web/materials/outlink1.png');
 }
 
 #updates,
@@ -184,19 +319,6 @@ nav a:hover {
 
 #foot .outlink::after {
 	content: url('/!g/web/materials/outlink1.png');
-}
-
-#updates h2 + li {
-	padding: 3px;
-	border-radius: 10px;
-	color: var(--d-brown);
-	background: rgb(237, 244, 247, 0.8);
-	border: 2px solid var(--d-brown);
-}
-
-#music-btn {
-	background: var(--d-blue);
-	border: 2px outset var(--d-yellow);
 }
 
 /* strickers */
@@ -368,7 +490,7 @@ nav a:hover {
 	position: fixed;
 	content: url('/!g/deco/flower3.gif');
 	top: -19px;
-	left: 30px;
+	right: 20px;
 }
 
 /*-----------------------*/
@@ -380,6 +502,7 @@ nav a:hover {
 }
 
 #s-m-t-tooltip {
+	font-family: gaegu-l;
 	max-width: 300px;
 	border-radius: 20px;
 	border: 2px dashed var(--l-brown);
@@ -387,11 +510,35 @@ nav a:hover {
 	background: linear-gradient(137deg, rgba(191, 225, 242, 1) 0%, rgba(255, 247, 223, 1) 48%, rgba(255, 181, 213, 1) 100%);
 }
 
+@media only screen and (max-width: 1140px) {
+	h1 {
+		font-size: 70px;
+	}
+}
 
 @media only screen and (max-width: 860px) {
+	#l-sticker {
+		display: none;
+	}
+
+	h1 {
+		font-family: spirit;
+		font-size: 25px;
+		letter-spacing: 1px;
+		margin-top: 10px;
+	}
+
+	header p {
+		margin-left: 100px;
+	}
+
+	nav a {
+		display: inline-block;
+	}
+
 	#status {
-		border: 1px solid var(--d-yellow);
+		background: var(--bg4);
+		border: 3px dotted var(--l-brown);
 		border-radius: 10px;
-		background: rgb(203, 213, 224, 0.97);
 	}
 }
