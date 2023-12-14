@@ -288,14 +288,18 @@ button:hover {
 	border: 2px solid var(--d-brown);
 	border-radius: 10px;
 	background: url('/!g/bg/h056-4.gif');
-	box-shadow: 0px 0px 17px 15px var(--grey) inset;
+	box-shadow: 0px 0px 17px 2px var(--grey) inset;
 }
 
 #updates h2 + li a {
-	font-weight: bold;
-	text-decoration: underline;
+	font-weight: normal;
 	color: var(--d-brown);
 	text-shadow: 1px 1px var(--grey);
+}
+
+#updates a:hover {
+	letter-spacing: 0px;
+	text-decoration: underline;
 }
 
 #updates h2 + li .outlink {
@@ -305,6 +309,13 @@ button:hover {
 #widget {
 	font-family: gaegu-r;
 	font-size: 17px;
+	top: -10px;
+	height: 110%;
+}
+
+#button {
+	height: 110px;
+	;
 }
 
 #button p {
@@ -338,7 +349,6 @@ button:hover {
 	border: 3px dotted var(--l-brown);
 }
 
-#deco-1,
 #widget,
 #intro {
 	background: rgb(237, 244, 247, 0.8);
@@ -367,6 +377,10 @@ button:hover {
 
 /* strickers */
 
+.deco {
+	pointer-events: all;
+}
+
 #sticker1 {
 	content: url('/!g/deco/flower1.gif');
 	top: 47.5%;
@@ -383,7 +397,7 @@ button:hover {
 
 #sticker3 {
 	content: url('/!g/deco/tulips.gif');
-	top: 62%;
+	top: 61.2%;
 	left: 54%;
 }
 
@@ -408,7 +422,7 @@ button:hover {
 
 #sticker7 {
 	content: url('/!g/deco/sleepy-cats.gif');
-	top: 63%;
+	top: 94%;
 	left: 95%;
 }
 
@@ -496,8 +510,8 @@ button:hover {
 
 #sticker22 {
 	content: url('/!g/deco/worm.gif');
-	top: 71%;
-	left: 78%;
+	top: 64%;
+	left: 76%;
 }
 
 #sticker23 {

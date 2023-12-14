@@ -27,7 +27,7 @@ body {
 		"nav intro intro update"
 		"nav stat stat update"
 		"nav cur cat f-cat"
-		"button cur deco1 deco1"
+		"button cur list ring"
 		"button f-page list ring"
 		"wid f-page list ring";
 	grid-template-rows: 80px 200px 100px 180px 50px 140px 70px;
@@ -166,19 +166,6 @@ nav a {
 	text-align: center;
 }
 
-#deco-1 {
-	grid-area: deco1;
-	line-height: 0px;
-	word-spacing: 0px;
-	letter-spacing: 0px;
-	overflow: hidden;
-}
-
-#deco-1 img {
-	vertical-align: middle;
-	height: 37px;
-}
-
 #widget {
 	grid-area: wid;
 	text-align: center;
@@ -310,7 +297,6 @@ button {
 
 	.deco,
 	#cat,
-	#deco-1,
 	#webrings,
 	#button {
 		display: none;
@@ -335,9 +321,13 @@ button {
 	#featured-cat,
 	#featured-page,
 	header,
-	#chatbox {
+	#widget {
 		margin: 25px 0px;
 		height: auto;
+	}
+
+	#chatbox {
+		margin: 0px;
 	}
 
 	footer {

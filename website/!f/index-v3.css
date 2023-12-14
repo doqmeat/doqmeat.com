@@ -59,7 +59,8 @@ main {
 	background: rgb(42, 67, 101, 0.9);
 	color: var(--peach);
 	position: relative;
-	margin-top: 50px;
+	margin-top: 200px;
+	margin-bottom: 170px;
 	max-width: 430px;
 	border-radius: 20px;
 	padding: 10px 10px;
@@ -93,7 +94,7 @@ main {
 	height: 400px;
 	background: var(--white);
 	border: 2px dashed var(--magenta);
-	bottom: 25px;
+	bottom: 50px;
 	right: -350px;
 	transition-duration: 1.5s;
 }
@@ -110,8 +111,8 @@ main {
 	border-radius: 10px 10px 0px 0px;
 	margin: 0px;
 	padding: 1px 5px;
-	left: -19%;
-	top: 70%;
+	left: -20%;
+	top: 80%;
 }
 
 .hide {
@@ -190,22 +191,22 @@ main {
 
 #top {
 	z-index: 100;
-	background: url(https://doqmeat.neocities.org/!g/div/sorahana-lacey.gif);
+	background: url('/!g/div/sorahana-lace-g4.gif');
 	background-repeat: repeat-x;
 	position: fixed;
 	width: 100%;
-	height: 15px;
+	height: 43px;
 	top: 0px;
 }
 
 #bottom {
 	z-index: 100;
-	background: url(https://doqmeat.neocities.org/!g/div/sorahana-lacey2.gif);
+	background: url('/!g/div/sorahana-lace-g4-u.gif');
 	background-repeat: repeat-x;
 	position: fixed;
 	width: 100%;
-	height: 18px;
-	bottom: 0px;
+	height: 43px;
+	bottom: -1px;
 }
 
 footer {
