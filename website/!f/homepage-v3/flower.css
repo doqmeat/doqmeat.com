@@ -137,7 +137,6 @@ nav a {
 	background: transparent;
 	padding: 0px 0px 0px 10px;
 	margin: 5px 5px;
-	display: block;
 	text-decoration: none;
 	transition-timing-function: ease-out;
 	transition-duration: 0.3s;
@@ -162,7 +161,7 @@ button {
 	box-shadow: 1px 1px 6px 1px var(--l-yellow) inset;
 	background: var(--l-blue);
 	border: 3px inset var(--l-yellow);
-
+	line-height: 20px;
 }
 
 button:hover {
@@ -190,7 +189,9 @@ button:hover {
 #statuscafe {
 	font-family: nintendo-ds-bios;
 	line-height: 25px;
-	font-size: 21px;
+	font-size: 19px;
+	word-spacing: 5px;
+	background: white;
 	margin: auto;
 	margin-bottom: 10px;
 	border: 1px solid var(--l-blue);
@@ -213,6 +214,31 @@ button:hover {
 #status a {
 	color: var(--d-blue);
 	text-decoration: none;
+}
+
+#chatbox,
+#chatbox h2 {
+	background: rgb(191, 225, 242);
+	background: linear-gradient(137deg, rgba(191, 225, 242, 1) 0%, rgba(255, 247, 223, 1) 48%, rgba(255, 181, 213, 1) 100%);
+	border: var(--border2);
+}
+
+#chatbox {
+	z-index: 10;
+	transition-duration: 1.5s;
+}
+
+#chatbox h2 {
+	border-radius: 10px 10px 0px 0px;
+	margin: 0px;
+	padding: 10px;
+	left: -27%;
+	top: 70%;
+}
+
+#chatbox h2::before {
+	content: url('/!g/pix/msg.gif');
+	padding-right: 4px;
 }
 
 .hl {
@@ -258,6 +284,7 @@ button:hover {
 }
 
 #updates h2 + li {
+	font-family: gaegu-b;
 	list-style-image: url('/!g/pix/sorahana-butterfly-pmm.gif');
 	border: 2px solid var(--d-brown);
 	border-radius: 10px;
@@ -274,6 +301,18 @@ button:hover {
 
 #updates h2 + li .outlink {
 	content: url('/!g/web/materials/outlink1.png');
+}
+
+#widget {
+	font-family: gaegu-r;
+	font-size: 17px;
+}
+
+#button p {
+	margin: 4px 5px;
+	font-family: simple;
+	font-size: 20px;
+	line-height: 14px;
 }
 
 #updates,
@@ -311,10 +350,16 @@ button:hover {
 	background: rgb(195, 150, 132, 0.8);
 	color: var(--grey);
 	border: var(--border1);
+	font-family: nintendo-ds-bios;
+	font-size: 19px;
+	line-height: 20px;
+	word-spacing: 6px;
 }
 
 #foot a {
 	color: var(--l-yellow);
+	font-weight: normal;
+	text-decoration: none;
 }
 
 #foot .outlink::after {
@@ -477,16 +522,15 @@ button:hover {
 	rotate: -14deg;
 }
 
-/*fixed stickers*/
-
-#r-sticker {
-	position: fixed;
-	content: url('');
-	bottom: 10px;
-	right: 20px;
+#sticker26 {
+	content: url('/!g/deco/bunnyzzz.gif');
+	top: 9%;
+	left: 93%;
 }
 
-#l-sticker {
+/*fixed stickers*/
+
+#fixed-2 {
 	position: fixed;
 	content: url('/!g/deco/flower3.gif');
 	top: -19px;
@@ -541,4 +585,19 @@ button:hover {
 		border: 3px dotted var(--l-brown);
 		border-radius: 10px;
 	}
+
+	#chatbox {
+		position: relative;
+		left: 0px;
+		top: 0px;
+		border-radius: 20px;
+		max-width: 100%;
+		width: 100%;
+		height: 300px;
+	}
+
+	#chatbox h2 {
+		display: none;
+	}
+
 }

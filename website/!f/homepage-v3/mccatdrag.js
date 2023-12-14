@@ -1,4 +1,6 @@
-		//Make the DIV element draggagle:
+//	credit: https://www.w3schools.com/howto/howto_js_draggable.asp
+
+//Make the DIV element draggagle:
 		dragElement(document.getElementById("catIMG"));
 
 		function dragElement(elmnt) {

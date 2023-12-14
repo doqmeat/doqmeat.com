@@ -34,11 +34,12 @@ h1:hover {
 
 #status {
 	background-image: url('/!g/homepage/cloud1.png');
+	color: black;
 }
 
 #updates h2 + li {
-	color: var(--grey);
-	background: var(--mint-d);
+	color: ;
+	background:;
 }
 
 footer {
@@ -48,7 +49,7 @@ footer {
 #s-m-t-tooltip {
 	max-width: 200px;
 	border-radius: 20px;
-	border: 1px dashed var(--black);
-	color: var(--grey);
-	background: var(--yellow-d);
+	border: 1px dashed black;
+	color: white;
+	background: black;
 }

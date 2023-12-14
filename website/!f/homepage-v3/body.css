@@ -8,7 +8,7 @@
 }
 
 :root {
-	--fonts: gaegu-b, natsuzemi, arial;
+	--fonts: gaegu-b, ms pgothic, arial;
 }
 
 body {
@@ -96,6 +96,10 @@ nav {
 	margin-top: 45px;
 	height: 620px;
 	overflow: auto;
+}
+
+nav a {
+	display: block;
 }
 
 #intro {
@@ -241,17 +245,66 @@ button {
 	padding: 5px;
 }
 
+#chatbox {
+	position: fixed;
+	width: 350px;
+	right: -350px;
+	height: 400px;
+	bottom: 25px;
+}
+
+#chatbox:hover {
+	right: 0px;
+}
+
+#chatbox h2 {
+	position: absolute;
+	rotate: -90deg;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	border-radius: 10px;
+	background-color: white;
+	border-top: 1px solid #bdbdbd;
+	border-left: 1px solid #bdbdbd;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	border-radius: 10px;
+	background-color: white;
+	border-top: 1px solid #bdbdbd;
+	border-left: 1px solid #bdbdbd;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
 
 @media only screen and (max-width: 1140px) {
 	#wrapper {
 		grid-template-columns: 19% 30% 20% 20%;
 	}
-	
-	.deco, #l-sticker, #r-sticker{
-		display:none;
+
+	#status {
+		padding: 46px 130px 40px 40px;
+	}
+
+	.deco,
+	#fixed-1,
+	#fixed-2 {
+		display: none;
 	}
 }
-
 
 @media only screen and (max-width: 860px) {
 
@@ -281,7 +334,8 @@ button {
 	#current,
 	#featured-cat,
 	#featured-page,
-	header {
+	header,
+	#chatbox {
 		margin: 25px 0px;
 		height: auto;
 	}
