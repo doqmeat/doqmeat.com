@@ -144,10 +144,9 @@ nav a {
 
 nav a:hover {
 	letter-spacing: 0px;
-	background: var(--grey);
+	background: url('/!g/bg/h049-6.gif');
 	border: 1px solid var(--l-yellow);
 	margin-left: 20px;
-	box-shadow: 0px 0px 20px 1px var(--l-yellow) inset;
 }
 
 nav h2 {
