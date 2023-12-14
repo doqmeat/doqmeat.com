@@ -244,7 +244,7 @@ button:hover {
 .hl {
 	background: var(--gradient1);
 	background: var(--gradient2);
-	font-family: gaegu-b;
+	font-family: gaegu-b, var(--fonts);
 	border: 1px solid var(--d-brown);
 	color: var(--d-brown);
 	border-radius: 10px;
@@ -284,7 +284,7 @@ button:hover {
 }
 
 #updates h2 + li {
-	font-family: gaegu-b;
+	font-family: gaegu-b, var(--fonts);
 	list-style-image: url('/!g/pix/sorahana-butterfly-pmm.gif');
 	border: 2px solid var(--d-brown);
 	border-radius: 10px;
