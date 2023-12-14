@@ -6,12 +6,15 @@
 
 :root {
 	--fonts: morningtea, ms pgothic, arial;
-	--green: #E8F6E8;
-	--purple: #FBEBFF;
-	--yellow: rgb(252, 252, 222, 0.77);
+	--peach: #E8A5AD;
+	--magenta: #DC81BE;
+	--sky-blue: #B1CFD9;
+	--mint: #9BDDB7;
+	--grey: #7C7B94;
+	--black: #2A4365;
+	--white: #D7E7E8;
 	--margin: auto;
 	--heading: spirit;
-	--black: rgb(119, 105, 108, 0.5);
 }
 
 body {
@@ -22,19 +25,23 @@ body {
 	font-family: var(--fonts);
 	text-align: center;
 	word-wrap: break-word;
-	background: url(/!g/bg/index-bg1.png) fixed center center;
+	background: url(/!g/bg/rebellion-bg.png) fixed bottom center;
 	background-size: cover;
+	color: var(--black);
 	margin: 0px;
 }
 
 a {
-	background: var(--purple);
-	color: black;
-	transition-duration: 0.6s;
+	background: var(--white);
+	color: var(--black);
+	padding: 1px 3px;
+	border-radius: 4px;
+	transition-duration: 0.8s;
 }
 
 a:hover {
-	background: var(--green);
+	background: var(--black);
+	color: var(--white);
 	text-decoration: none;
 }
 
@@ -49,13 +56,14 @@ h3 {
 main {
 	margin: auto;
 	z-index: 2;
-	background: var(--yellow);
+	background: rgb(42, 67, 101, 0.9);
+	color: var(--peach);
 	position: relative;
 	margin-top: 50px;
 	max-width: 430px;
 	border-radius: 20px;
 	padding: 10px 10px;
-	border: 7px ridge var(--purple);
+	border: 2px dashed var(--mint);
 }
 
 #rainbow {
@@ -75,6 +83,7 @@ main {
 
 #cat {
 	z-index: 1;
+	margin-bottom: 120px;
 }
 
 #chatbox {
@@ -82,8 +91,8 @@ main {
 	position: fixed;
 	width: 350px;
 	height: 400px;
-	background: var(--green);
-	border: 7px ridge var(--yellow);
+	background: var(--white);
+	border: 2px dashed var(--magenta);
 	bottom: 25px;
 	right: -350px;
 	transition-duration: 1.5s;
@@ -96,12 +105,12 @@ main {
 #chatbox h3 {
 	position: absolute;
 	rotate: -90deg;
-	background: var(--green);
-	border: 7px ridge var(--yellow);
+	background: var(--white);
+	border: 2px dashed var(--magenta);
 	border-radius: 10px 10px 0px 0px;
 	margin: 0px;
 	padding: 1px 5px;
-	left: -23%;
+	left: -19%;
 	top: 70%;
 }
 
@@ -124,6 +133,7 @@ main {
 		left: 0px;
 		top: 0px;
 		margin: auto;
+		margin-bottom: 20px;
 		border-radius: 20px;
 		max-width: 300px;
 		height: 315px;
@@ -146,22 +156,37 @@ main {
 }
 
 #webrings {
+	display: inline-block;
+	vertical-align: middle;
 	margin: auto;
-	background: var(--purple);
+	margin-bottom: 20px;
+	background: var(--peach);
 	position: relative;
-	margin-top: 50px;
 	max-width: 300px;
 	height: 200px;
 	overflow: auto;
 	border-radius: 20px;
 	padding: 10px 10px;
-	border: 5px ridge var(--green);
+	border: 2px dashed var(--mint);
 }
 
 #webrings a {
 	background: transparent;
 }
 
+#cred {
+	padding: 10px 5px;
+	max-width: 300px;
+	height: 200px;
+	vertical-align: middle;
+	margin: auto;
+	margin-bottom: 20px;
+	display: inline-block;
+	background: var(--sky-blue);
+	border-radius: 10px;
+	border: 2px dashed var(--grey);
+	overflow: auto;
+}
 
 #top {
 	z-index: 100;
@@ -183,18 +208,12 @@ main {
 	bottom: 0px;
 }
 
-.cred {
-	background: var(--yellow);
-	padding: 2px 4px;
-	border-radius: 10px;
-	border: 5px ridge var(--purple);
-}
-
 footer {
 	margin: auto;
 	max-width: 800px;
 	position: relative;
 	overflow: auto;
+	margin-top: 30px;
 	margin-bottom: 50px;
 }
 
