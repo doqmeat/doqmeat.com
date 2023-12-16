@@ -250,15 +250,36 @@ button:hover {
 	padding: 2px 3px;
 }
 
+.date {
+	
+	font-family: simple, var(--fonts);
+	font-size: 20px;
+	color:var(--d-blue);
+	background:var(--bg2);
+	line-height: 16px;
+	letter-spacing: 2px;
+	text-align: center;
+	margin:0px;
+	padding-bottom:2px;
+border:1px solid white;
+	border-radius: 20px;
+}
+
 #current i {
 	text-shadow: 1px 1px var(--l-yellow);
 }
 
 #current a {
+	text-shadow: 1px 1px white;
 	color: var(--d-pink);
-	text-decoration: underline;
+	font-weight: normal;
+	text-decoration: none;
 }
 
+#current a:hover {
+	letter-spacing: 0px;
+	text-decoration: underline;
+}
 
 #updates,
 #current {
@@ -325,6 +346,28 @@ button:hover {
 	line-height: 14px;
 }
 
+#foot {
+	background: rgb(195, 150, 132, 0.8);
+	color: var(--grey);
+	border: var(--border1);
+	font-family: nintendo-ds-bios;
+	font-size: 19px;
+	line-height: 20px;
+	word-spacing: 6px;
+}
+
+#foot a {
+	color: var(--l-yellow);
+	font-weight: normal;
+	text-decoration: none;
+}
+
+#foot .outlink::after {
+	content: url('/!g/web/materials/outlink1.png');
+}
+
+/*colors for boxes*/
+
 #updates,
 #listing {
 	background: var(--bg3);
@@ -353,26 +396,6 @@ button:hover {
 #intro {
 	background: rgb(237, 244, 247, 0.8);
 	border: var(--border2);
-}
-
-#foot {
-	background: rgb(195, 150, 132, 0.8);
-	color: var(--grey);
-	border: var(--border1);
-	font-family: nintendo-ds-bios;
-	font-size: 19px;
-	line-height: 20px;
-	word-spacing: 6px;
-}
-
-#foot a {
-	color: var(--l-yellow);
-	font-weight: normal;
-	text-decoration: none;
-}
-
-#foot .outlink::after {
-	content: url('/!g/web/materials/outlink1.png');
 }
 
 /* strickers */
@@ -568,8 +591,8 @@ button:hover {
 }
 
 @media only screen and (max-width: 1261px) {
-	#fixed-2{
-		display:none;
+	#fixed-2 {
+		display: none;
 	}
 }
 
