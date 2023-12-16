@@ -567,6 +567,12 @@ button:hover {
 	background: linear-gradient(137deg, rgba(191, 225, 242, 1) 0%, rgba(255, 247, 223, 1) 48%, rgba(255, 181, 213, 1) 100%);
 }
 
+@media only screen and (max-width: 1261px) {
+	#fixed-2{
+		display:none;
+	}
+}
+
 @media only screen and (max-width: 1140px) {
 	h1 {
 		font-size: 70px;

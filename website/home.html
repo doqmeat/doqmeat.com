@@ -2,10 +2,11 @@
 <html lang="en">
 <!-- 
 coded with love by des!
-started on nov 15 2023
+started on nov 15 2023 / finished on dec 14 2023!
 feel free to look around :) just don't be THAT person and take the entire code for your site...
  -->
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <head>
 	<!-- for characters -->
@@ -17,7 +18,6 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<link href="!f/homepage-v3/body.css" rel="stylesheet" type="text/css" media="all">
 	<link href="!f/snowflakes.css" rel="stylesheet" type="text/css" media="all">
 	<link class="theme" href="/!f/homepage-v3/flower.css" rel="stylesheet" type="text/css">
-
 	<!--	JS for webrings-->
 	<link href="https://adilene.net/webring/webring.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://sugarforbrains.neocities.org/mobring/onionring.css">
@@ -25,7 +25,6 @@ feel free to look around :) just don't be THAT person and take the entire code f
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/!f/tooltip-jquary.js"></script>
 	<script src="/!f/tooltip.js"></script>
-
 </head>
 
 <body>
@@ -69,10 +68,10 @@ feel free to look around :) just don't be THAT person and take the entire code f
 			<a href="/sitemap"><img src="/!g/pix/world.gif"> sitemap</a>
 
 			<h3>offsite</h3>
-			<a href="https://doqmeat.123guestbook.com/" target="_blank"><img src="/!g/pix/heart-paper.gif"> guestbook</a>
-			<a href="https://neocities.org/site/doqmeat" target="_blank"><img src="/!g/pix/catheadswing.gif"> neocities
+			<a href="https://doqmeat.123guestbook.com/"><img src="/!g/pix/heart-paper.gif"> guestbook</a>
+			<a href="https://neocities.org/site/doqmeat" target="_blank" class="outlink"><img src="/!g/pix/catheadswing.gif"> neocities
 				profile</a>
-			<a title="the site's repository!" href="https://github.com/doqmeat/doqmeat.neocities.org" target="_blank" class="outlink"><img src="/!g/pix/puter.gif"> github</a>
+			<a title="the site's repository!" href="https://github.com/doqmeat/doqmeat.neocities.org" target="_blank" class="outlink"><img src="/!g/pix/puter.gif"> github code</a>
 			<a title="doqmeat@gmail.com" href="mailto:doqmeat@gmail.com" target="_blank" class="outlink"><img src="/!g/pix/mail-sozaiya.gif" alt=""> e-mail</a>
 		</nav>
 
@@ -256,6 +255,7 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		<div id="cat" class="box">
 			<img id="catIMG" title="me irl btw" src="/!g/deco/cat-plush-BIG.png" alt="">
 		</div>
+
 		<!--		stickers around home-->
 		<img id="sticker1" class="deco" alt="">
 		<img id="sticker2" class="deco" alt="">
@@ -288,19 +288,6 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		<!--		wrapper end div-->
 	</div>
 
-	<!--	music player -->
-	<audio loop id="music" src="https://files.catbox.moe/9rh0cl.mp3"></audio>
-	<button title="click to play some music! golden (celeste OST) by lena raine" id="music-btn" onclick="playpause()">
-		<img src="/!g/pix/beat-stop.png" alt="music button">
-	</button>
-
-	<footer id="foot" class="box">
-		<p><a href="/notebook/links/credit.html#home">credit for materials used!</a> / homepage runing on v3!</p>
-		<p>website coded with lots of love by des <img src="/!g/pix/catheart1.gif" alt="">
-			on the web since <b>april 11, 2023</b> <img src="/!g/pix/catroll.gif" alt="">
-			hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a></p>
-	</footer>
-
 	<div class="snowflakes">
 		<div class="snowflake"><img src="/!g/pix/sorahana-butterfly-p2.gif"></div>
 		<div class="snowflake"><img src="/!g/pix/sparkles1.gif"></div>
@@ -314,6 +301,19 @@ feel free to look around :) just don't be THAT person and take the entire code f
 		<div class="snowflake"><img src="/!g/pix/sparkles1.gif"></div>
 		<!--    snowflake end div -->
 	</div>
+
+	<footer id="foot" class="box">
+		<p><a href="/notebook/links/credit.html#home">credit for materials used!</a> / homepage runing on v3!</p>
+		<p>website coded with lots of love by des <img src="/!g/pix/catheart1.gif" alt="">
+			on the web since <b>april 11, 2023</b> <img src="/!g/pix/catroll.gif" alt="">
+			hosted on <a class="outlink" href="https://neocities.org/site/doqmeat">neocities</a></p>
+	</footer>
+
+	<!--	music player -->
+	<audio loop id="music" src="https://files.catbox.moe/9rh0cl.mp3"></audio>
+	<button title="click to play some music! golden (celeste OST) by lena raine" id="music-btn" onclick="playpause()">
+		<img src="/!g/pix/beat-stop.png" alt="music button">
+	</button>
 
 	<!--scripts-->
 	<script>
