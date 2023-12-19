@@ -300,7 +300,7 @@ button:hover {
 	border: 2px solid #EBBBE1;
 	border-radius: 10px;
 	background: url('/!g/bg/h096-2.gif');
-	box-shadow: 0px 0px 70px 19px white inset;
+	box-shadow: 0px 0px 7px 10px white inset;
 }
 
 #updates h2 + li a {
