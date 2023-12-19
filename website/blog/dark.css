@@ -1,14 +1,19 @@
 :root {
-	--bg: rgb(68, 68, 68,0.9);
+	--bg: rgb(68, 68, 68, 0.96);
 	--text: #F0F4E1;
-	--acc:#645067;
+	--acc: #645067;
 }
 
 .outlink:after {
-	content: url(/!g/web/materials/outlink1.png);}
+	content: url(/!g/web/materials/outlink1.png);
+}
 
 body {
 	color: var(--text);
+}
+
+li {
+	list-style-image: url('/!g/pix/sorahana-butterfly-pinkmm.gif');
 }
 
 i,
@@ -54,8 +59,7 @@ nav a {
 }
 
 #s-m-t-tooltip {
-	color:var(--bg);
+	color: var(--bg);
 	border: 1px dashed var(--bg);
 	background: var(--text);
 }
-

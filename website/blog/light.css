@@ -1,16 +1,21 @@
 /*https://coolors.co/fdfffa-444444-dde2c6-ffeca6-a72608*/
 
 :root {
-	--bg: rgb(253, 255, 250,0.9);
+	--bg: rgb(253, 255, 250, 0.96);
 	--text: #444444;
-	--acc:#DDE2C6;
+	--acc: #DDE2C6;
 }
 
 .outlink:after {
-	content: url(/!g/web/materials/outlink2.png);}
+	content: url(/!g/web/materials/outlink2.png);
+}
 
 body {
 	color: var(--text);
+}
+
+li{
+		list-style-image: url('https://doqmeat.neocities.org/!g/pix/1leaf.png');
 }
 
 i,
@@ -55,7 +60,7 @@ nav a {
 }
 
 #s-m-t-tooltip {
-	color:var(--bg);
+	color: var(--bg);
 	border: 1px dashed var(--bg);
 	background: var(--text);
 }
