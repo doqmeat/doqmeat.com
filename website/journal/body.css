@@ -3,7 +3,7 @@
 }
 
 :root {
-	--fonts: ms pgothic, newpenji, gaegu-l, arial;
+	--fonts: ms pgothic, gaegu-l, arial;
 	--r-border: 2px solid #E4A79D;
 	--cream: #FFFCDC;
 	--red: #C9525E;
@@ -48,7 +48,7 @@ li {
 }
 
 ul {
-	margin:0px;
+	margin: 0px;
 	padding: 0px 5px 5px 35px;
 }
 
@@ -167,4 +167,9 @@ summary {
 	background-color: #FFFCDC;
 }
 
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;} /* End https://www.cursors-4u.com */
+/* Start https://www.cursors-4u.com */
+* {
+	cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;
+}
+
+/* End https://www.cursors-4u.com */
