@@ -2,13 +2,34 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--fonts: ms pgothic, arial;
+}
+
 body {
-	font-family: ms pgothic;
+	font-family: var(--fonts);
 	font-size: 18px;
 	word-wrap: break-word;
+}
+
+header {
+	text-align: left;
 }
 
 footer {
 	margin: 20px 0px;
 	text-align: center;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	font-family: var(--fonts);
+	text-align: center;
+	z-index: 999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	color: black;
+	background: white;
 }
