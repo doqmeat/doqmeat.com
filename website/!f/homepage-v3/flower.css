@@ -198,6 +198,7 @@ button:hover {
 	font-family: nintendo-ds-bios, var(--fonts);
 	line-height: 25px;
 	font-size: 19px;
+	padding: 5px;
 	word-spacing: 5px;
 	background: url('/!g/bg/h009-3.gif');
 	background-size: 35px;
