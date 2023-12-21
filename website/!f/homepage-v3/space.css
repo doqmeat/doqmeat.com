@@ -15,6 +15,10 @@ body {
 	background: rgb(26, 32, 44, 0.8);
 }
 
+a {
+	color: white;
+}
+
 h1 {
 	background: url(/!g/bg/pixelins-bg-blu.png);
 	background-size: 200px;
@@ -39,7 +43,7 @@ h1:hover {
 
 #updates h2 + li {
 	color: ;
-	background:;
+	background: ;
 }
 
 footer {
