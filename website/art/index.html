@@ -1,371 +1,76 @@
 <!DOCTYPE HTML>
+<html lang="en">
+
 <head>
- 
-<!--  
+
+	<!--  
 coded with love by des
------ image gallery code:
-https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
------
-https://www.w3schools.com/cssref/pr_class_display.php
----- palette:
-https://coolors.co/ef798a-f7a9a8-c8ceff-613f75-e5c3d1
  -->
- 
-<meta charset="UTF-8"> 
-<title>my art</title>
-<meta name="description" content="doqmeat's art">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="icon" type="image/x-icon" href="favicon.gif">
-<link href="index.css" rel="stylesheet" type="text/css" media="all">
+
+	<meta charset="UTF-8">
+	<title>my art</title>
+	<meta name="description" content="doqmeat's art">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.gif">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="body.css" rel="stylesheet" type="text/css" media="all">
 	<!-- tooltip shit -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
-<script>
-							(function($){
-							$(document).ready(function(){
-							$("[title]").style_my_tooltips({
-							tip_follows_cursor: true,
-							tip_delay_time:10,
-							tip_fade_speed:10,
-							attribute:"title"
-							});
-							});
-							})(jQuery);
-</script>
-<!--  end of tooltip shit -->
-<style>
-	body{
-background: rgb(157,164,219);
-background: linear-gradient(90deg, rgba(157,164,219,1) 0%, rgba(214,143,181,1) 50%, rgba(255,223,163,1) 100%);
-}
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+	<style>
+		body {
+			margin: auto;
+			max-width: 800px;
+		}
 
-#wrapper{
-background-image:url(/!g/bg/bggrid.png);
-overflow:hidden;
-width:912px;
-height:600px;
-margin-left:50px;
-margin-top:30px;
-margin-bottom:15px;
-border-radius:10px;
-border:4px dashed #E3EDFF;
-}
+		img {
+			vertical-align: middle;
+		}
 
-#desc {
-float:left;
-width:400px;
-height:590px;
-padding:5px;
-overflow:auto;
-border-right:4px solid #E3EDFF;
-}
+		.full {
+			width: 100%;
+		}
 
-#post {
-float:left;
-width:1px;
-height:600px;
-}
-
-#wrappertag{
-position:fixed;
-width:100px;
-top:40px;
-left:968px;
-}
-
-.tag{
-position:relative;}
-.tag img{width:70px;}
-	
-#wrappertag	.text a{
-	color:black;
-	text-decoration:none;
-	background:transparent;
-	font-weight:bold;
-	font-size:10px;
-position:absolute;  
-	 bottom: 0px;
-  left: 19px;
-	}
-
-#wrappertag .text a:focus{outline:none;}
-
-.wrapperart{
-overflow:hidden;
-margin-bottom:15px;
-margin-left:50px;
-width:920px;
-text-align:center;
-}
-
-   .caps{
-   background-image: url("/!g/bg/bggrid.png");
-   background-repeat:repeat;
-   background-size:auto;
-   padding:5px;
-			font-size:16px;
-   line-height:20px;
-   text-align:center;
-			border-radius: 0px 0px 10px 10px;
-}
-	
-	.caps a{font-weight:normal;text-decoration:underline;color:black;}
-	.caps a:hover{text-decoration:none;}
-	.caps a:focus{text-decoration:wavy underline;outline:none;}
-	
-
-.row {
-  display:flex;
-}
-
-
-.column {
-  flex: 100%;
-  margin: 0 4px;
-}
-
-.art-img {
-	 border-radius: 10px 10px 0px 0px;
-  margin-top: 10px;
-	 width:100%;
-  vertical-align:middle;
-}
-
-.no {
-	border-radius: 10px 10px 10px 10px;
-  margin-top: 10px;
-	 width:100%;
-  vertical-align:middle;
-}
-
-.column img:hover {opacity:0.5;transition:0.3s;}
-
-  	#home{
-position:fixed;
-top:0px;
-left:4px;}
-	
-	#home .text a{
-	background:transparent;
-	color:black;
-	text-decoration:none;
-	font-weight:bold;
-	font-size:13px;
-position:absolute;  
-	 bottom: 40px;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-	rotate:-90deg;
-	}
-
-#home .text a:hover{text-decoration:underline;}
-#home .text a:focus{outline:none;}
-
-
-#halo img{z-index:-1;position:fixed;bottom:0px;right:0px;width:450px;}
+		.half {
+			width: 48%;
+		}
 
 	</style>
-	
 </head>
 
 <body>
-	
-	<div id="home">
-			<span class="text"><a title="go back home" href="/home">home</a></span>
-		<img src="/!g/pix/lc02-icon-bookmark.gif" width="23px">
-	</div>
-	
-	<div id="halo">
-		<img src="/!g/deco/halotransp.png">
-	</div>
-	
-	<div id="wrapper">
-	<div id="desc">
-<h2>22.jul.23 edit: i will be redoing this page sometime in the future :)</h2>
-<h3><img src="/!g/pix/paint.gif"> des' art corner</h3>
-	<p>this is a silly hobby of mine that i've picked up since i was 13 years old. i dont really have OCs so <b>most of my art is fanart of media i love</b>. i started out with tradional media. on march 2022 i got a laptop with a stylus and touchscreen and thats how i do my digital drawings. also LOVE using watercolor so much. 
-<p>i only draw whenever my brain lets me (2 times every 5 months or so) because of this i rarely draw at times despite being a hobby i like
-<p>i'll sometimes be making posts about the art that i make where i talk more about them. <mark>my latest artwork will always be displayed on refresh in the iframe! --></mark>
-<p>this page is image heavy so <i>if stuff seems to be missing just reload the page and/or iframe!</i>
-<p>icons, bookmark, and tag images templates are by <a href="foollovers.com">foollovers</a>!
-<p>and im anti AI art!!!!! fuck AI art!!! draw it yourself even if it looks ugly as hell!!!!!
-	</div>
-		
-		<div id="post">
-<iframe src="/art/post/230722-hellokitty.html" name="iframe_a" height="600px" width="500px" style="border:none;"></iframe>
-		</div>
-		
-		<!-- wrapper end div -->
-	</div>
-	
-		<!-- tag links / tags -->
-	
-	<div id="wrappertag">
-	
-	<div class="tag">
-		<span class="text"><a title="top" href="#">top</a></span>
-	<img src="/!g/pix/tag%20blue.gif">
-	</div>
-	
-		<div class="tag">
-		<span class="text"><a title="art" href="#a">art</a></span>
-	<img src="/!g/pix/taggreeen.gif">
-	</div>
-		
-	<div class="tag">
-		<span class="text"><a title="doodles" href="#d">doodles</a></span>
-	<img src="/!g/pix/tagourple.gif">
-	</div>
-		
-		<div class="tag">
-		<span class="text"><a title="journal collages" href="#c">collages</a></span>
-	<img src="/!g/pix/tagyello.gif">
-	</div>
-		
-		<div class="tag">
-		<span class="text"><a title="other stuff i've made" href="#o">misc</a></span>
-	<img src="/!g/pix/tagpink.gif">
-	</div>
-	<!-- end wrapper tag div -->
-	</div>
-	
-	<!-- template 
-	<img class="art-img"  src="">
- <div class="caps">x</div>
--->
-	
-	<!-- art / illustrations -->
-	<div id="a" class="wrapperart">
-		<h3>illustrations aka the good stuff</h3>
-<div class="row">
-  <div class="column">
-    <img class="art-img" src="!g/drawings/halo2.jpg">
-    <div class="caps">inspired by siinamota's halo</div>
-		<img class="art-img" src="!g/drawings/sannn.png" >
-    <div class="caps">fanart of ateez' san</div>
-    <img class="art-img" src="!g/drawings/oyasumi.jpg">
-    <div class="caps">fanart of siinamota's dream inside a dream</div>
-    
-    
-  </div>
-  <div class="column">
-    <img class="art-img" src="!g/drawings/halotransp.png" >
-    <div class="caps">fanart of siinamota's halo</div>
-    <img class="art-img" src="!g/drawings/kasio.jpg" >
-    <div class="caps">fanart of if found...</div>
-		<img class="art-img"
-src="!g/drawings/pandora.jpg" >
-    <div class="caps">one of my many pandoras</div>
+	<h1>arts &amp; crafts</h1>
+	<p>a page dedicated to the stuff i've made. idk what's up with me but i only have energy to draw like once per year.</p>
+	<p><small>really hated my previous version of this page DDLFKJF i will eventually upload more stuff to it + CSS but for now this will do. on my to-do list for this page: i wanna figure out how can i make an img pop up as a tooltip... but that's for another time</small></p>
 
-  </div>
-  <div class="column">
-    <img class="art-img" src="!g/drawings/hyperlightdrifter6thanni.jpg" >
-    <div class="caps">hyper light drifter fanart for its 6th anniversary</div>
-    <img class="art-img" src="!g/drawings/rsz_what_hurricane_maria_did_to_me_by_spacevvolf_dbyyp5e.jpg" >
-    <div class="caps">page with a ton of inked doodles</div>
-    <img class="art-img" src="!g/drawings/oneandonly.jpg" >
-    <div class="caps">inspired by gowon's music video: one & only</div>
+	<h2>posts</h2>
+	<p><a href="post/depression-cherry-booklet.html">depression cherry custom booklet</a></p>
 
-  </div>
-  <div class="column">
-    <img class="art-img" src="!g/drawings/sepiarecord.jpg">
-    <div class="caps">watercolor illustration inspired by siinamota's sepia record album and it's song sky fish</div>
-    <img class="art-img" src="!g/drawings/thelittleprincejrn.jpg" >
-    <div class="caps">the little prince fanart done on my journal</div>
-<img class="art-img" src="!g/drawings/thelittleprince.jpg" >
-    <div class="caps">watercolor the little prince</div>
+	<h2>arts</h2>
+	<img src="!g/drawings/halo2.jpg" class="full">
+		<img src="!g/drawings/halotransp.png" class="half">
+	<img src="!g/drawings/sepiarecord.jpg" class="half">
+	<img src="!g/drawings/oyasumi.jpg" class="half">
+	<img src="!g/drawings/thelittleprincejrn.jpg" class="half">
+	<img src="!g/drawings/pahwah.png" class="half">
+	<img src="!g/drawings/panocto2.png" class="half">
+	<img src="!g/drawings/pan4.jpg" class="half">
+	<img src="!g/drawings/hyperlightdrifter6thanni.jpg" class="half">
+	<img src="!g/drawings/fastfoodworkerhellokitty1.jpg" class="half">
 
-</div></div></div>
-	
-<!-- 	doodles / sketches section -->
-	<div id="d" class="wrapperart">
-		<h3>doodles</h3>
-	<div class="row">
-  <div class="column">
-<!-- 			col 1 doodles -->
-		<img class="art-img" title="22.july.2023" src="!g/drawings/fastfoodworkerhellokitty1.jpg"><div class="caps"><a title="art post" href="/art/post/230722-hellokitty" target="iframe_a">mcdonalds worker hello kitty</a></div>
-    <img class="art-img" src="!g/drawings/mugung%201.png"><div class="caps">redraw of a pic taken by mu_gung on insta</div>
-			
-    <img class="art-img" src="!g/drawings/pan4.jpg">
-    <div class="caps">one of my many pandoras</div>
-  </div>
-<!-- 		col 2 doodles -->
-  <div class="column">
-    <img class="art-img" src="!g/drawings/yeah.png" >
-    <div class="caps">redraw of a pic taken by mu_gung on insta</div>
-    <img class="art-img" src="!g/drawings/pahwah.png" >
-    <div class="caps">doodle of pahwah (power) from chainsaw man :3</div>
-  </div>
-<!-- 		col 3 doodles -->
-  <div class="column">
-    <img class="art-img" src="!g/drawings/pandora2.png" >
-    <div class="caps">one of my many pandoras</div>
-    <img class="art-img" src="!g/drawings/minecraft.png" >
-    <div class="caps">im not really sure what this is. i like minecraft and mushrooms</div>
-</div>
-<!-- 		col 4 doodles -->
-  <div class="column">
-			<img class="art-img" src="!g/drawings/orangecaramelwip.png" >
-    <div class="caps">sketch of kpop group orange caramel</div>
-    <img class="no" src="!g/drawings/sketch-orange.jpg">
-    <img class="art-img" src="!g/drawings/junho.jpg">
-    <div class="caps">drippin's junho</div>
+	<h2>crafts</h2>
+	<img src="!g/collage/loona.jpg" class="full">
+	<img src="!g/collage/lucy.jpg" class="full">
+	<img src="!g/collage/mizu.jpg" class="half">
+	<img src="!g/collage/olivia.jpg" class="half">
+	<img src="!g/collage/siinamota.jpg" class="half">
+	<img src="!g/collage/yukika.jpg" class="half">
 
-</div></div></div>
-	
-	<!-- collages -->
-	<div id="c" class="wrapperart">
-		<h3>journal collages</h3>
-<div class="row">
-  <div class="column">
-    <img class="art-img" src="!g/collage/lucy.jpg" >
-    <div class="caps">lucy's blue EP inclusions</div>
-    <img class="art-img" src="!g/collage/tulips.jpg" >
-    <div class="caps">pretty sure this was done bc i found those tulips in a magazine</div>
-
-  </div>
-  <div class="column">
-    <img class="art-img" src="!g/collage/mizu.jpg" >
-    <div class="caps">instax pics of mizu (my cat!!)</div>
-    <img class="art-img" src="!g/collage/yukika.jpg" >
-    <div class="caps">collage made for yukika's fancall in which i got to show it to her!</div>
-
-
-  </div>
-  <div class="column">
-			
-    <img class="art-img" src="!g/collage/olivia.jpg" >
-    <div class="caps">loona's olivia hye. inspired by her music video egoist</div>
-    <img class="art-img" src="!g/collage/loona.jpg" >
-    <div class="caps">done with 12:00 album inclusions</div>
-
-  </div>
-  
-  <div class="column">
-    <img class="art-img" src="!g/collage/siinamota.jpg" >
-    <div class="caps">done with printed illustrations of siinamota's ikiru booklet</div>
-
-</div></div>
-	</div>
-	
-	
-<!-- 	misc section -->
-	<div id="o" class="wrapperart">
-		<h3>misc</h3>
-		<div class="row">
-  <div class="column">
-    <img class="art-img" src="!g/other/depressioncherry1.png" >
-    <div class="caps">custom lyric booklet i did for beach house' depression cherry. example 1</div>
-
-
-  </div>
-  <div  class="column">
-  <img class="art-img" src="!g/other/depressioncherry2.png" >
-    <div class="caps">custom lyric booklet i did for beach house' depression cherry. example 2</div>
-
-		</div></div></div>
-																							
-	
+	<footer>
+		<a href="#">top</a> / <a href="/home">homepage</a> / <a href="/sitemap">sitemap</a>
+	</footer>
 </body>
+
 </html>
