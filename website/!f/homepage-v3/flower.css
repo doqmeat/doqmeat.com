@@ -595,7 +595,7 @@ button:hover {
 /*-----------------------*/
 
 .outlink::after {
-	content: url('/!g/web/materials/outlink2.png');
+	content: "↗";
 	padding-left: 2px;
 	vertical-align: text-bottom;
 }
