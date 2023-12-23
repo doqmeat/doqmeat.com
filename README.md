@@ -9,7 +9,7 @@ hello! this is the repository of my personal website, [doqmeat.neocities.org](ht
 ## source code
 - i learned how to code HTML and CSS by looking at other people's code and <b>playing around with it offline</b>, so you're welcome to do that with mine!
 - you're free to take <b>bits of my code</b> for your own site!
-- with that said, i prefer if you <b>did not copy the entire code and upload it to your site.</b> the only code you can do that with are with my [F2U HTML templates](https://github.com/doqmeat/F2U-templates)
+- with that said, i prefer if you <b>did not copy the entire code of a page and upload it to your site.</b> the only code you can do that with are with my [F2U HTML templates](https://github.com/doqmeat/F2U-templates)
 
 ### notes
 
