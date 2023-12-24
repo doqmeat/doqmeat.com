@@ -6,12 +6,11 @@
 	--fonts: ms pgothic, nanum-r, arial;
 }
 
-article {
+.song {
 	overflow: hidden;
 }
 
 .cover {
-	width: 30%;
 	margin: 10px;
 	border-radius: 5px;
 	transition-duration: 0.5s;
@@ -19,7 +18,7 @@ article {
 
 .cover:hover {
 	rotate: 5deg;
-	filter: grayscale(50%);
+	filter: grayscale(100%);
 }
 
 body {
@@ -128,6 +127,7 @@ blockquote {
 h1 {
 	font-family: katto;
 	font-size: 50px;
+	line-height: normal;
 	text-align: center;
 }
 
