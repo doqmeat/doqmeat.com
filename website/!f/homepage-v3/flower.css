@@ -321,10 +321,6 @@ button:hover {
 	text-decoration: underline;
 }
 
-#updates h2 + li .outlink {
-	content: url('/!g/web/materials/outlink1.png');
-}
-
 #widget {
 	font-family: gaegu-r;
 	font-size: 17px;
@@ -383,10 +379,6 @@ button:hover {
 	color: var(--l-yellow);
 	font-weight: normal;
 	text-decoration: none;
-}
-
-#foot .outlink::after {
-	content: url('/!g/web/materials/outlink1.png');
 }
 
 /*bgs and borders -------------------------------*/

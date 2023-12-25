@@ -188,6 +188,12 @@ nav a {
 
 #featured-page a img {
 	width: 100%;
+	border-radius: 20px;
+	transition-duration: 0.8s;
+}
+
+#featured-page a img:hover {
+	filter: brightness(70%);
 }
 
 #button {
