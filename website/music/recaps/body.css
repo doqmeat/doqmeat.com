@@ -6,21 +6,6 @@
 	--fonts: ms pgothic, nanum-r, arial;
 }
 
-.song {
-	overflow: hidden;
-}
-
-.cover {
-	margin: 10px;
-	border-radius: 5px;
-	transition-duration: 0.5s;
-}
-
-.cover:hover {
-	rotate: 5deg;
-	filter: grayscale(100%);
-}
-
 body {
 	word-wrap: break-word;
 	margin: 0px;
@@ -29,6 +14,16 @@ body {
 	word-spacing: 2px;
 	font-size: 18px;
 	color: var(--dark);
+}
+
+main {
+	background: var(--light);
+	max-width: 700px;
+	margin: auto;
+	padding: 5px 10px 10px 10px;
+	border: 2px solid var(--light);
+	border-top: none;
+	border-bottom: none;
 }
 
 a {
@@ -55,16 +50,6 @@ a:hover {
 	background: var(--light);
 }
 
-.outlink::after {
-	content: url(/!g/web/materials/outlink1.png);
-	padding-left: 3px;
-	vertical-align: top;
-}
-
-.outlink:hover::after {
-	content: url(/!g/web/materials/outlink2.png);
-}
-
 b {
 	letter-spacing: 2px;
 	text-shadow: 1px 1px 2px var(--2);
@@ -83,6 +68,15 @@ mark {
 
 li {
 	list-style-position: inside;
+	transition-duration: 0.3s;
+	margin-bottom: 15px;
+}
+
+li:hover {
+	background: white;
+	border-radius: 10px;
+	padding: 5px;
+	border: 2px dashed var(--1);
 }
 
 p {
@@ -95,6 +89,9 @@ p img {
 
 p:hover {
 	background: white;
+	padding: 3px;
+	border-radius: 10px;
+	border: 2px solid var(--3);
 }
 
 summary {
@@ -132,6 +129,7 @@ h1 {
 }
 
 h2,
+h3,
 h4,
 h5 {
 	font-family: natsuzemi;
@@ -141,28 +139,23 @@ h5 {
 
 
 h3 {
-	font-family: daydream;
-	font-size: 17px;
-	line-height: 27px;
-	letter-spacing: 2px;
-	word-spacing: 8px;
+	font-size: 30px;
+	line-height: 36px;
+	word-spacing: 0px;
 	background: var(--gradient1);
 	background: var(--gradient2);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 	-webkit-text-stroke-width: 0.4px;
 	-webkit-text-stroke-color: var(--dark);
+	transition-duration: 0.5s;
 }
 
-main {
-	background: var(--light);
-	max-width: 700px;
-	margin: auto;
-	padding: 5px 10px 10px 10px;
-	border: 2px solid var(--light);
-	border-top: none;
-	border-bottom: none;
+h3:hover {
+	letter-spacing: 5px;
+	-webkit-text-stroke-width: 1px;
 }
+
 
 footer {
 	padding: 10px;
@@ -174,6 +167,31 @@ footer {
 	margin-bottom: 20px;
 	border: 2px solid var(--l-brown);
 	border-radius: 0px 0px 10px 10px;
+}
+
+.song {
+	overflow: hidden;
+}
+
+.cover {
+	margin: 10px;
+	border-radius: 5px;
+	transition-duration: 0.5s;
+}
+
+.cover:hover {
+	rotate: 5deg;
+	filter: grayscale(100%);
+}
+
+.outlink::after {
+	content: url(/!g/web/materials/outlink1.png);
+	padding-left: 3px;
+	vertical-align: top;
+}
+
+.outlink:hover::after {
+	content: url(/!g/web/materials/outlink2.png);
 }
 
 #s-m-t-tooltip {
