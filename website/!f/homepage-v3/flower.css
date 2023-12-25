@@ -298,6 +298,10 @@ button:hover {
 	padding: 6px 5px;
 }
 
+#updates li img {
+	vertical-align: middle;
+}
+
 #updates h2 + li {
 	font-family: gaegu-b, var(--fonts);
 	list-style-image: url('/!g/pix/sorahana-butterfly-pmm.gif');
