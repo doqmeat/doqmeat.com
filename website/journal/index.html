@@ -10,7 +10,7 @@ palette url: https://coolors.co/c7d9f8-c9525e-e4a79d-fffcdc-a6ddff-d0ff8d-ffe481
  -->
 
 	<meta charset="UTF-8">
-	<title>journal logs</title>
+	<title>journal</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="doqmeat's journal logs">
 	<link rel="icon" type="image/x-icon" href="favicon.gif">
@@ -51,7 +51,7 @@ palette url: https://coolors.co/c7d9f8-c9525e-e4a79d-fffcdc-a6ddff-d0ff8d-ffe481
 		<div id="top"></div>
 		<div id="col1">
 
-			<h1>des' notepad</h1>
+			<h1>des' journal</h1>
 			<img src="/!g/deco/diary.gif">
 			<br>
 			<span style="padding: 4px;">a place where i talk about what's going on in my life and about my site!</span>
@@ -86,12 +86,28 @@ palette url: https://coolors.co/c7d9f8-c9525e-e4a79d-fffcdc-a6ddff-d0ff8d-ffe481
 
 
 	<div id="wrapper2">
-		<span style="font-size:13px;font-weight:bold;">mini logs from <a style="background:transparent;font-weight:bold;text-decoration:underline;" title="status.cafe profile" href="https://status.cafe/users/doqmeat" target="_blank">status.cafe</a>!</span>
-		<div id="status">
+
+		<div class="tab">
+			<button class="tablinks" onclick="openTab(event, 'fc2')" id="defaultOpen">microblog</button>
+			<button class="tablinks" onclick="openTab(event, 'status')">statuses</button>
+
+		</div>
+
+		<div id="status" class="tabcontent">
 			<!-- start sw-rss-feed code -->
 			<script type="text/javascript" src="status-cafe-feed.js"></script>
 			<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
-			<br><span style="font-size:small;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+			<span style="font-size:small;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+		</div>
+
+		<div id="fc2" class="tabcontent">
+			<details class="desc2">
+				<summary>
+					~(=^‥^)ノ FC2 microblog
+				</summary>
+				in an attempt to leave tw*tter behind. here goes short ramblings that are too long for status.cafe without filling up my site's journal with nonsense.
+			</details>
+			<script src="//rss.bloople.net/?url=https%3A%2F%2Fdoqmeat.blog.fc2.com%2F%3Fxml&showtitle=false&type=js"></script>
 		</div>
 
 		<iframe src="https://free.timeanddate.com/clock/i8tprgzv/n226/fn3/tct/pct/tt0/tw1/tm1/td1/th2/ta1/tb4" class="time" allowtransparency="true"></iframe>
@@ -115,7 +131,7 @@ palette url: https://coolors.co/c7d9f8-c9525e-e4a79d-fffcdc-a6ddff-d0ff8d-ffe481
 			<img src="/!g/deco/pencil2.gif" alt="">
 		</div>
 
-		<div class="sticker" style="top:5%;left:100%;"><img src="/!g/deco/pin.png" alt=""></div>
+		<div class="sticker" style="top:2%;left:100%;"><img src="/!g/deco/pin.png" alt=""></div>
 
 		<br><span class="credit">pixels by <a href="http://whimsical.heartette.net" target="_blank">whimsical</a></span>
 
@@ -163,6 +179,26 @@ palette url: https://coolors.co/c7d9f8-c9525e-e4a79d-fffcdc-a6ddff-d0ff8d-ffe481
 		</center>
 		<!-- 		music box end div -->
 	</div>
+
+	<script>
+		function openTab(evt, tabName) {
+			var i, tabcontent, tablinks;
+			tabcontent = document.getElementsByClassName("tabcontent");
+			for (i = 0; i < tabcontent.length; i++) {
+				tabcontent[i].style.display = "none";
+			}
+			tablinks = document.getElementsByClassName("tablinks");
+			for (i = 0; i < tablinks.length; i++) {
+				tablinks[i].className = tablinks[i].className.replace(" active", "");
+			}
+			document.getElementById(tabName).style.display = "block";
+			evt.currentTarget.className += " active";
+		}
+
+		// Get the element with id="defaultOpen" and click on it
+		document.getElementById("defaultOpen").click();
+
+	</script>
 
 	<script>
 		var audio = document.getElementById("music");

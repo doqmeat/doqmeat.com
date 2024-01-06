@@ -144,6 +144,8 @@ h1 {
 
 .sticker {
 	position: absolute;
+	pointer-events: none;
+	z-index: 100;
 	transform: translate(-50%, -50%);
 	-ms-transform: translate(-50%, -50%);
 }
@@ -207,6 +209,7 @@ h1 {
 }
 
 #musicbox {
+	z-index: 500;
 	background-image: url("https://doqmeat.neocities.org/!g/deco/paper.gif");
 	background-size: 220px;
 	background-repeat: no-repeat;
@@ -218,4 +221,100 @@ h1 {
 
 #musicbox i {
 	background: transparent
+}
+
+/* RSS widgets */
+
+.desc2 {
+	font-size: 10px;
+	font-weight: bold;
+	line-height: 13px;
+	background: transparent;
+	text-align: left;
+}
+
+.desc2 a {
+	background: transparent;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#fc2 {
+	padding: 3px;
+	background-image: url("https://blog-imgs-168.fc2.com/d/o/q/doqmeat/bg.gif");
+	background-attachment: fixed;
+	width: 200px;
+	height: 245px;
+	overflow: auto;
+	border-radius: 10px;
+	border: 4px ridge var(--l-blue);
+	text-align: left;
+}
+
+#fc2 .feed-title {
+	display: none;
+}
+
+#fc2 h4 {
+	background: #598c0c;
+	margin: 5px 0 0 0;
+	padding-left: 4px;
+	border-radius: 5px 5px 0 0;
+}
+
+#fc2 h4::before {
+	content: url('https://blog-imgs-18.fc2.com/p/u/k/puku2/clover-g.gif');
+	padding-right: 4px;
+}
+
+#fc2 p {
+	background: white;
+	border-radius: 0 0 5px 5px;
+}
+
+#fc2 h4 a {
+	background: transparent;
+	color: #dbefc0;
+}
+
+
+.tab {
+	text-align: left;
+	overflow: hidden;
+	position: absolute;
+	left: 60%;
+	top: 15%;
+	rotate: 90deg;
+	width: 180px;
+	z-index: 1;
+}
+
+
+.tab button {
+	font-family: arial, var(--fonts);
+	font-size: 10px;
+	background: var(--cream);
+	padding: 3px 3px 10px 3px;
+	border-radius: 5px 5px 0 0;
+	margin: 0px 1px;
+	position: relative;
+	top: 6px;
+	border: 4px ridge var(--cream);
+	border-bottom: none;
+	transition-duration: 0.5s;
+}
+
+.tab button:hover {
+	top: 0px;
+}
+
+.tab button.active {
+	background: var(--green);
+	top: 0px;
+}
+
+.tabcontent {
+	position: relative;
+	z-index: 2;
+	display: none;
 }
