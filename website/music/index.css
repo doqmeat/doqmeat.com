@@ -272,6 +272,38 @@ h4 {
 	margin-right: 5px;
 }
 
+.feed-title {
+	display: none;
+}
+
+.feed-item-title {
+	font-family: gaegu-r, var(--fonts);
+	word-spacing: 2px;
+	letter-spacing: 3px;
+	line-height: normal;
+	background: var(--brown);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 0.1px;
+	-webkit-text-stroke-color: var(--brown);
+	text-align: left;
+	transition-duration: 0.5s;
+	padding-left: 5px;
+}
+
+.feed-item-title:hover {
+	margin-left: 10px;
+}
+
+.feed-item-title::before {
+	content: url('/!g/pix/starpink.gif');
+	padding: 5px;
+}
+
+#last a {
+	background: transparent;
+}
+
 #fun {
 	background: var(--pink);
 	width: 175px;
