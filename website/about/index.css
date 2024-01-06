@@ -58,7 +58,7 @@ p img {
 }
 
 /* header and box */
-#header {
+.header {
 	text-align: left;
 	color: white;
 	font-family: nintendo-ds-bios;
@@ -78,11 +78,11 @@ p img {
 	margin: 2px;
 }
 
-#header:hover {
+.header:hover {
 	cursor: move;
 }
 
-#box {
+.draggable {
 	position: absolute;
 }
 
@@ -376,3 +376,16 @@ body::before {
 ::-webkit-scrollbar-button:horizontal:decrement {
 	background-image: url(!g/left.jpg);
 }
+
+/*
+@media only screen and (max-width: 1134px) {
+	.draggable {
+		width:90%;
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+*/
