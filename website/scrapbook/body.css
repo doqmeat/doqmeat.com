@@ -1,0 +1,103 @@
+:root {
+	--fonts: gaegu-l, ms pgothic, arial;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--fonts);
+	font-size: 16px;
+	margin: 0px;
+}
+
+li {
+	list-style-position: inside;
+}
+
+.scrap-img {
+	width: 20%;
+	margin: 10px;
+	border: 3px solid black;
+	border-radius: 5px 10px;
+	line-height: 0px;
+	overflow: hidden;
+}
+
+.left {
+	rotate: 2deg;
+	float: left;
+}
+
+.right {
+	rotate: -2deg;
+	float: right;
+}
+
+h1 {
+	font-family: newpenji, var(--fonts);
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-align: center;
+}
+
+h2 {
+	font-family: newpenji, var(--fonts);
+	font-weight: normal;
+	letter-spacing: 3px;
+	font-size: 30px;
+	text-align: right;
+}
+
+.page {
+	margin: auto;
+	margin-top: 40px;
+	max-width: 700px;
+	border: 1px solid lightblue;
+	padding: 15px;
+	background: url('https://doqmeat.neocities.org/notebook/!g/grid-blue.png');
+	border-radius: 10px;
+}
+
+li details {
+	display: inline-block;
+}
+
+li summary {
+	display: inline;
+	cursor: help;
+}
+
+li.played {
+	list-style-image: url('https://doqmeat.neocities.org/!g/pix/vgs.gif');
+}
+
+li.watched {
+	list-style-image: url('https://doqmeat.neocities.org/!g/pix/tv.gif')
+}
+
+li.read {
+	list-style-image: url('/!g/pix/book3.gif')
+}
+
+footer {
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid lightpink;
+	background: url('https://doqmeat.neocities.org/notebook/!g/grid-pink.png');
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	font-family: var(--fonts);
+	text-align: center;
+	z-index: 999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	color: black;
+	background: white;
+}
