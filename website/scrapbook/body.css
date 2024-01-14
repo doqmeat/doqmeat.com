@@ -50,6 +50,10 @@ a:hover {
 	background: var(--green);
 }
 
+::selection {
+	background: var(--yellow);
+}
+
 mark {
 	background: var(--yellow);
 	padding: 0px 2px;
