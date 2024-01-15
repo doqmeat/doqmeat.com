@@ -147,7 +147,7 @@ header.page {
 	max-width: 700px;
 	border: 1px solid lightblue;
 	padding: 15px;
-	background: url('https://doqmeat.neocities.org/notebook/!g/grid-blue.png');
+	background: url('/notebook/!g/grid-blue.png');
 	border-radius: 10px;
 }
 
@@ -166,11 +166,11 @@ li summary {
 }
 
 li.played {
-	list-style-image: url('https://doqmeat.neocities.org/!g/pix/vgs.gif');
+	list-style-image: url('/!g/pix/vgs.gif');
 }
 
 li.watched {
-	list-style-image: url('https://doqmeat.neocities.org/!g/pix/tv.gif')
+	list-style-image: url('/!g/pix/tv.gif')
 }
 
 li.read {
@@ -182,7 +182,7 @@ footer {
 	padding: 10px;
 	text-align: center;
 	border: 1px solid lightpink;
-	background: url('https://doqmeat.neocities.org/notebook/!g/grid-pink.png');
+	background: url('/notebook/!g/grid-pink.png');
 }
 
 #s-m-t-tooltip {
