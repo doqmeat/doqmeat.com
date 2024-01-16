@@ -1,6 +1,6 @@
 		// Wrap the module in a self-executing anonymous function
 		// to avoid leaking variables into global scope:
-		(function(document) {
+		(function (document) {
 			// Enable ECMAScript 5 strict mode within this function:
 			'use strict';
 
