@@ -1,105 +1,136 @@
-#wrapper{
-	position:relative;
- margin:auto;
-	margin-top:100px;
- width:400px;
-	height:480px;
+#wrapper {
+	position: relative;
+	margin: auto;
+	margin-top: 100px;
+	width: 400px;
+	height: 480px;
 }
 
-.container{
-	position:relative;
-	top:305px;
-	margin-left:98px;
-	width:200px;
-	height:160px;
-	overflow:auto;
+.container {
+	position: relative;
+	top: 305px;
+	margin-left: 98px;
+	width: 200px;
+	height: 160px;
+	overflow: auto;
 }
 
-.home{
-	position:fixed;
-	top:10px;
-	left:10px;
+.home {
+	position: fixed;
+	top: 10px;
+	left: 10px;
 }
 
-.corner-right{
-	position:fixed;
-	right:20px;
-	bottom:5px;
+.corner-right {
+	position: fixed;
+	right: 20px;
+	bottom: 5px;
 }
 
-.border{
-filter: drop-shadow(3px 0px 5px white) drop-shadow(0px 3px 5px white) drop-shadow(-1px 0px 5px white) ;
+.border {
+	filter: drop-shadow(3px 0px 5px white) drop-shadow(0px 3px 5px white) drop-shadow(-1px 0px 5px white);
 }
-	
-	.desc{
-		text-align:center;
+
+.desc {
+	text-align: center;
+}
+
+body {
+	background: #F9E7E7;
+	word-wrap: break-word;
+	font-size: 12px;
+	line-height: 20px;
+	font-family: starlight, ms gothic;
+	letter-spacing: 1px;
+	color: black;
+}
+
+li {
+	list-style-image: url('/!g/pix/heartfabi.gif');
+	padding-left: 2px;
+}
+
+ul {
+	padding-left: 30px;
+	margin: 0px;
+}
+
+a {
+	color: #F04A4F;
+	font-weight: normal;
+	text-decoration: none;
+	transition-duration: 0.3s;
+}
+
+a:hover {
+	color: black;
+	text-decoration: wavy underline;
+	cursor: help;
+}
+
+a:focus {
+	text-decoration: wavy underline;
+}
+
+p {
+	margin: 0px;
+	padding: 5px;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+footer {
+	max-width: 400px;
+	margin: auto;
+	margin-top: 20px;
+	text-align: center;
+}
+
+::selection {
+	color: black;
+	background-color: #FFEA86;
+}
+
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #F48286;
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-color: #FBEAF0;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #FBEAF0;
+}
+
+@media only screen and (max-width: 600px) {
+
+	.corner-right,
+	.home {
+		display: none;
 	}
 
-body{
-background:#F9E7E7;
-word-wrap:break-word;
-font-size:12px;
-line-height:20px;
-font-family:starlight, ms gothic;
-letter-spacing:1px;
-color:black;}
+}
 
-    li{
-					list-style-image: url('/!g/pix/heartfabi.gif');
-					padding-left:2px;}
-	
-	ul{
-		padding-left:30px;
-		margin:0px;
-	}
-
-    a{
-    color:#F04A4F;
-    font-weight:normal;
-    text-decoration:none;
-    transition-duration:0.3s;}
- 
-    a:hover{
-    color:black;
-    text-decoration:wavy underline;
-    cursor:help;}
-
-a:focus{text-decoration:wavy underline;}
- 
-    p{
-    margin:0px;
-    padding:5px;}
-    p img{vertical-align:middle;}
-    
-    ::selection{ 
-    color:black; 
-    background-color:#FFEA86;}
- 
-    ::-webkit-scrollbar {
-    width:6px;
-    height:6px;}
- 
-    ::-webkit-scrollbar-thumb:vertical{
-    background-color: #F48286;
-				border:1px solid black;
-    border-radius:5px;}
-    
-    ::-webkit-scrollbar-thumb:horizontal{
-    background-color: #FBEAF0;}
- 
-    ::-webkit-scrollbar-track {
-    background-color: #FBEAF0;}
-  
-#s-m-t-tooltip{
+#s-m-t-tooltip {
 	max-width: 200px;
- text-align:center;
-	font-size:10px;
-	word-spacing:8px;
+	text-align: center;
+	font-size: 10px;
+	word-spacing: 8px;
 	z-index: 9999;
 	margin: 30px 15px 7px 12px;
-	padding:5px;
- border-radius:10px;
-	border:1px dashed black;
-	color:black;
-	background:white;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	color: black;
+	background: white;
 }
