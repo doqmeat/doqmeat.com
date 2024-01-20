@@ -257,6 +257,7 @@ h1 {
 
 #fc2 h4 {
 	background: #598c0c;
+	font-size: 13px;
 	margin: 5px 0 0 0;
 	padding-left: 4px;
 	border-radius: 5px 5px 0 0;
@@ -270,6 +271,11 @@ h1 {
 #fc2 p {
 	background: white;
 	border-radius: 0 0 5px 5px;
+}
+
+#fc2 p.feed-item-desc {
+	line-height: 20px;
+	font-size: 14px;
 }
 
 #fc2 h4 a {
