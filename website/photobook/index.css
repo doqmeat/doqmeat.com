@@ -13,6 +13,12 @@ body {
 	box-sizing: border-box;
 }
 
+::selection {
+	background: #FFFAC4;
+	color: black;
+
+}
+
 header {
 	background: #F27688;
 	position: relative;
