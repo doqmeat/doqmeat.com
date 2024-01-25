@@ -1,10 +1,3 @@
-/* Start https://www.cursors-4u.com */
-* {
-	cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat720.cur), auto !important;
-}
-
-/* End https://www.cursors-4u.com */
-
 body {
 	background: url(forestbg.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -12,250 +5,12 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	word-wrap: break-word;
-	text-align: left;
+	text-align: center;
 	font-size: 18px;
 	line-height: 23px;
 	font-family: basiic;
 	color: black;
 	margin: 0px;
-}
-
-img {
-	border-radius: 10px;
-}
-
-#wrapper {
-	margin: auto;
-	position: relative;
-	width: 980px;
-	overflow: visible;
-}
-
-#header {
-	position: relative;
-	width: 100%;
-	height: 600px;
-	margin-bottom: 90px;
-}
-
-#imgcenter {
-	z-index: 1;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transition-duration: 0.5s;
-}
-
-#imgcenter:hover {
-	top: 46%;
-}
-
-#imgleft {
-	z-index: 1;
-	position: absolute;
-	top: 60%;
-	left: 1%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	rotate: 20deg;
-	transition-duration: 0.5s;
-}
-
-#imgleft:hover {
-	top: 56%;
-}
-
-#imgright {
-	z-index: 1;
-	position: absolute;
-	top: 40%;
-	left: 97%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	rotate: -20deg;
-	transition-duration: 0.5s;
-}
-
-#imgright:hover {
-	top: 36%;
-}
-
-#headerwords {
-	color: black;
-	background: rgb(255, 255, 255);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
-	box-shadow: 1px 1px 20px 1px white;
-	padding: 5px;
-	border-radius: 20px;
-	text-align: center;
-	word-wrap: break-word;
-	font-size: 16px;
-	line-height: 19px;
-	z-index: 99;
-	position: absolute;
-	top: 87%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transition-duration: 0.5s;
-	border: 2px dotted black;
-}
-
-#headerwords p {
-	margin: 3px 0px;
-	padding: 0px;
-}
-
-.mizu {
-	font-size: 70px;
-	margin: 5px 0px;
-	line-height: 50px;
-	font-family: quiet-meows;
-	transition-duration: 0.5s;
-}
-
-.mizu:hover {
-	letter-spacing: 10px;
-}
-
-#container {
-	position: relative;
-	overflow: visible;
-	height: 3050px;
-}
-
-#text {
-	z-index: 1;
-	position: relative;
-	background: rgb(255, 255, 255);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
-	box-shadow: 1px 1px 20px 1px white;
-	width: 500px;
-	border: 1px double black;
-	border-radius: 10px;
-	margin: 0px 15px 100px 10px;
-}
-
-.centered {
-	text-align: center;
-}
-
-.left {
-	float: left;
-}
-
-.right {
-	float: right;
-}
-
-#containerfoot {
-	position: relative;
-	width: auto;
-	margin-top: 1030px;
-	margin-bottom: 30px;
-}
-
-#footer {
-	z-index: 1;
-	position: relative;
-	background: rgb(255, 255, 255);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
-	box-shadow: 1px 1px 20px 1px white;
-	width: 500px;
-	border: 2px dotted black;
-	border-radius: 10px;
-	margin: auto;
-	margin-bottom: 30px;
-}
-
-#footer p {
-	margin: 0px;
-}
-
-#top {
-	z-index: 99999999;
-	position: fixed;
-	top: 5px;
-	left: 5px;
-	filter: drop-shadow(1px 1px 10px white);
-}
-
-/* going up pics */
-
-.elevate {
-	line-height: 0px;
-	transition-duration: 0.5s;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	position: absolute;
-}
-
-/* no rotation imgs / gallery */
-
-.hoverfx {
-	z-index: 1;
-	position: absolute;
-	transition-duration: 0.5s;
-}
-
-.hoverfx:hover {
-	rotate: 5deg;
-}
-
-/* for stickers */
-
-.deco {
-	z-index: 999;
-	position: absolute;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-}
-
-/* borders for imgs */
-
-/* like a sticker border */
-.border1 {
-	filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white) drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white) drop-shadow(1px 0px 0 black) drop-shadow(0px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black);
-}
-
-
-#mizuimg-1 {
-	top: 5%;
-	left: 73%;
-	rotate: -15deg;
-}
-
-
-#mizuimg-2 {
-	top: 15%;
-	left: 85%;
-	rotate: 15deg;
-}
-
-#mizuimg-3 {
-	top: 25%;
-	left: 23%;
-	rotate: 5deg;
-}
-
-#mizuimg-4 {
-	top: 39%;
-	left: 80%;
-	rotate: -5deg;
-}
-
-#mizuimg-5 {
-	top: 52%;
-	left: 13%;
-	rotate: -5deg;
-}
-
-#mizuimg-6 {
-	top: 57%;
-	left: 33%;
-	rotate: 10deg;
 }
 
 li {
@@ -313,22 +68,252 @@ p img {
 	background-color: #C8CEFF;
 }
 
+img {
+	border-radius: 10px;
+}
+
+#wrapper {
+	margin: auto;
+	position: relative;
+	width: 980px;
+	overflow: visible;
+}
+
+#header {
+	position: relative;
+	width: 100%;
+	height: 600px;
+	margin-bottom: 90px;
+}
+
+.header-imgs {
+	z-index: 1;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transition-duration: 0.5s;
+}
+
+.center-img {
+	top: 50%;
+	left: 50%;
+}
+
+.center-img:hover {
+	top: 46%;
+}
+
+.left-img {
+	top: 60%;
+	left: 1%;
+	rotate: 20deg;
+}
+
+.left-img:hover {
+	top: 56%;
+}
+
+.right-img {
+	top: 40%;
+	left: 97%;
+	rotate: -20deg;
+}
+
+.right-img:hover {
+	top: 36%;
+}
+
+#headerwords {
+	background: rgb(255, 255, 255);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
+	box-shadow: 1px 1px 20px 1px white;
+	padding: 5px;
+	border-radius: 20px;
+	font-size: 16px;
+	line-height: 19px;
+	z-index: 99;
+	position: absolute;
+	top: 87%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transition-duration: 0.5s;
+	border: 2px dotted black;
+}
+
+#headerwords p {
+	margin: 3px 0px;
+	padding: 0px;
+}
+
+h1 {
+	font-size: 70px;
+	margin: 5px 0px;
+	line-height: 50px;
+	font-family: quiet-meows;
+	transition-duration: 0.5s;
+}
+
+h1:hover {
+	letter-spacing: 10px;
+}
+
+#container {
+	position: relative;
+	overflow: visible;
+	height: 3050px;
+}
+
+.text-bbl {
+	z-index: 1;
+	position: relative;
+	background: rgb(255, 255, 255);
+	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
+	box-shadow: 1px 1px 20px 1px white;
+	max-width: 500px;
+	border: 1px double black;
+	border-radius: 10px;
+	margin: 0px 15px 100px 10px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#footer {
+	border: 2px dotted black;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+}
+
+#footer p {
+	margin: 2px;
+}
+
+#top {
+	z-index: 9999;
+	position: fixed;
+	top: 5px;
+	left: 5px;
+	filter: drop-shadow(1px 1px 10px white);
+}
+
+/* going up pics */
+
+.elevate {
+	line-height: 0px;
+	transition-duration: 0.5s;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	position: absolute;
+}
+
+/* no rotation imgs / gallery */
+
+.hoverfx {
+	z-index: 1;
+	position: absolute;
+	transition-duration: 0.5s;
+}
+
+.hoverfx:hover {
+	rotate: 5deg;
+}
+
+/* for stickers */
+
+.deco {
+	z-index: 999;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}
+
+/* borders for imgs */
+
+/* like a sticker border */
+.border1 {
+	filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white) drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white) drop-shadow(1px 0px 0 black) drop-shadow(0px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black);
+}
+
+/* gallery */
+
+#gallery {
+	margin: auto;
+	margin-top: 100px;
+	max-width: 800px;
+	height: 620px;
+	overflow: auto;
+}
+
+#gallery .container {
+	display: flex;
+}
+
+.column {
+	margin: 5px;
+	flex: 100%;
+}
+
+.column img,
+.column video {
+	width: 100%;
+}
+
+#mizuimg-1 {
+	top: 5%;
+	left: 73%;
+	rotate: -15deg;
+}
+
+#mizuimg-2 {
+	top: 15%;
+	left: 85%;
+	rotate: 15deg;
+}
+
+#mizuimg-3 {
+	top: 25%;
+	left: 23%;
+	rotate: 5deg;
+}
+
+#mizuimg-4 {
+	top: 39%;
+	left: 80%;
+	rotate: -5deg;
+}
+
+#mizuimg-5 {
+	top: 52%;
+	left: 13%;
+	rotate: -5deg;
+}
+
+#mizuimg-6 {
+	top: 57%;
+	left: 33%;
+	rotate: 10deg;
+}
+
 /* js tooltip */
 
 #s-m-t-tooltip {
 	max-width: 200px;
-	font-family: ms gothic;
-	font-size: 14px;
 	z-index: 99999;
 	margin: 30px 100px 7px 12px;
 	padding: 8px;
 	border: 2px dashed black;
 	border-radius: 10px;
 	background: #FFDDEA;
-	color: black;
 }
 
-/* scrollbar */
+/* scrollbar for chrome ppl*/
 
 ::-webkit-scrollbar {
 	width: 8px;
@@ -351,3 +336,10 @@ p img {
 	border-radius: 10px;
 	background: transparent;
 }
+
+/* Start https://www.cursors-4u.com */
+* {
+	cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat720.cur), auto !important;
+}
+
+/* End https://www.cursors-4u.com */
