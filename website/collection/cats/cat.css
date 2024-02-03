@@ -107,6 +107,12 @@ h1 {
 	}
 }
 
+@media only screen and (max-width: 600px) {
+	#gallery {
+		height: auto;
+	}
+}
+
 #s-m-t-tooltip {
 	max-width: 200px;
 	font-family: var(--fonts);
