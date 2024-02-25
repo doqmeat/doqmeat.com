@@ -133,7 +133,7 @@ nav a {
 	font-size: 19px;
 	font-weight: bold;
 	background: transparent;
-	padding: 0px 0px 0px 10px;
+	padding: 0px 3px 0px 5px;
 	margin: 5px 5px;
 	text-decoration: none;
 	transition-timing-function: ease-out;
@@ -635,12 +635,18 @@ button:hover {
 		margin-left: 100px;
 	}
 
+	nav {
+		text-align: center;
+	}
+
 	nav a {
-		display: inline-block;
+		border: none;
 	}
 
 	nav a:hover {
-		margin: normal;
+		border: none;
+		top: 1px;
+		margin: 5px 5px;
 	}
 
 	#status {
