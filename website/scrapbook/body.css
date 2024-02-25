@@ -90,8 +90,8 @@ h2 {
 }
 
 h3 {
-	padding: 0px 10px 0 0;
-	margin: 5px 400px 5px 100px;
+	padding: 0px 10px 0 10px;
+	margin: 5px 50% 5px 10%;
 	height: 25px;
 	border-radius: 10px;
 	background: var(--green);
@@ -112,7 +112,7 @@ header.page {
 }
 
 .scrap-img {
-	width: 20%;
+	width: 23%;
 	padding: 10px;
 	background: white;
 	margin: 10px;
@@ -176,7 +176,7 @@ li summary::after {
 li details,
 li summary {
 	display: inline;
-	padding: 0px 1px;
+	padding: 5px;
 	border-radius: 4px;
 	background: var(--pink);
 	margin-bottom: 3px;
