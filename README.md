@@ -2,7 +2,7 @@
 hello! this is the repository of my personal website, [doqmeat.neocities.org](https://doqmeat.neocities.org/) !
 
 ## about site
-- i code in brackets.io (currently learning how to use VS code)
+- i code in brackets.io
 - upload my code using github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template)
 - tested on firefox and chrome
 
