@@ -9,8 +9,8 @@ body {
 	color: black;
 }
 
-header{
-	padding:5px;
+header {
+	padding: 5px;
 }
 
 li {
@@ -163,5 +163,9 @@ p.date {
 	.entry {
 		border-left: 0px;
 		border-right: 0px;
+	}
+
+	body {
+		background: transparent;
 	}
 }

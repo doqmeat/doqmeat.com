@@ -1,0 +1,118 @@
+#notepad {
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"margin body";
+	grid-template-rows: 50px 700px;
+	grid-template-columns: 180px 520px;
+	max-width: 700px;
+	border: 1px solid var(--red);
+	border-radius: 10px 10px 0 0;
+	background: url("https://doqmeat.neocities.org/!g/bg/yellobg.png");
+	overflow: hidden;
+}
+
+#header {
+	position: relative;
+	grid-area: header;
+	background: #C9525E;
+	border-bottom: 2px solid var(--l-red);
+}
+
+aside {
+	text-align: center;
+	font-family: gaegu-l, var(--fonts);
+	padding: 5px;
+	grid-area: margin;
+	border-right: 2px solid var(--l-red);
+	overflow: auto;
+	scroll-behavior: smooth;
+	scrollbar-color: #C7D9F8 #E4A79D;
+}
+
+aside::-webkit-scrollbar {
+	display: none;
+}
+
+h1 {
+	text-align: center;
+}
+
+main {
+	grid-area: body;
+	margin-left: 5px;
+	border-left: 2px solid var(--l-red);
+}
+
+#tag {
+	position: absolute;
+	top: -6px;
+	left: 4px;
+	transition-duration: 0.5s;
+}
+
+#tag a {
+	background: transparent;
+	font-weight: bold;
+	font-size: 12px;
+	position: absolute;
+	bottom: 40px;
+	left: 40%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	rotate: -90deg;
+}
+
+#tag:hover {
+	top: 0px;
+}
+
+#musicbox {
+	z-index: 500;
+	background-image: url("https://doqmeat.neocities.org/!g/deco/paper.gif");
+	background-size: 220px;
+	background-repeat: no-repeat;
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	width: 230px;
+}
+
+#musicbox i {
+	background: transparent
+}
+
+@media only screen and (max-width:700px) {
+	#notepad {
+		grid-template-columns: 25% 75%;
+	}
+}
+
+@media only screen and (max-width:500px) {
+	#notepad {
+		display: block;
+		margin-top: 0;
+	}
+
+	#header {
+		height: 40px;
+	}
+
+	main {
+		height: 600px;
+		border: none;
+		margin: 0px 3%;
+	}
+
+	details {
+		display: inline-block;
+	}
+
+	#musicbox {
+		display: none;
+	}
+}
