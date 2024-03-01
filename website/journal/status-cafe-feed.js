@@ -2,7 +2,7 @@
 				rssfeed_url = new Array();
 				rssfeed_url[0] = "https://status.cafe/users/doqmeat.atom";
 				rssfeed_frame_width = "100%";
-				rssfeed_frame_height = "200";
+				rssfeed_frame_height = "130";
 				rssfeed_scroll = "off";
 				rssfeed_scroll_step = "6";
 				rssfeed_scroll_bar = "on";

@@ -2,8 +2,6 @@
 #musicplayer{
         background:transparent; /* background color of player */
         width:100%; /* width of the player */
-								padding:10px 40px;
-								rotate:-3deg;
     }
  
     .songtitle{

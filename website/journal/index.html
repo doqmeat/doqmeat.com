@@ -30,11 +30,12 @@ v3 of journal started on 25.feb.24.
 	<div id="notepad">
 		<div id="header"></div>
 
-		<aside>
+		<nav>
 			<h1>des' journal</h1>
 			<!--			<p>test. this is <b>bolded</b>. this is a <a href="/">link</a>. this is in <i>italics</i>. this is <mark>highlighted</mark>.</p>-->
 			<img src="/!g/deco/diary.gif">
 			<p>a place where i talk about what's going on in my life and about my site!</p>
+			<small class="sticky">all sticky notes are draggable!</small>
 			<details>
 				<summary>notes</summary>
 				<p>i try to be as coherent as possible in these entries. for whatever nonsense i have atm, feel free to check out my <a href="" class="outlink">microblog</a></p>
@@ -62,7 +63,7 @@ v3 of journal started on 25.feb.24.
 				<a href="2023/05.html" target="iframe_a">may</a>
 				<a href="2023/04.html" target="iframe_a">april</a>
 			</details>
-		</aside>
+		</nav>
 
 		<main>
 			<iframe src="2024/02.html" name="iframe_a" height="100%" width="100%" style="border:none;"></iframe>
@@ -74,9 +75,26 @@ v3 of journal started on 25.feb.24.
 		<img src="/!g/pix/lc01-icon-bookmark.gif" width="23px">
 	</div>
 
-	<div id="musicbox">
-		<img src="/!g/deco/catmoon.gif" style="position:absolute;top:10px;left:-50px;">
-		<center>
+	<aside id="memo1" class="memo draggable">
+		<div class="innermemo">
+			<!-- start sw-rss-feed code -->
+			<script type="text/javascript" src="status-cafe-feed.js"></script>
+			<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+			<span style="font-size:small;">powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+		</div>
+	</aside>
+
+	<aside id="memo2" class="memo draggable">
+		<div class="innermemo">
+			<iframe src="https://calendar.sakura.ne.jp/blog_cal.html" class="calendar"></iframe>
+			<div id="side">
+				a chocolate sepia record that is important to me and no one else <br> <b> - <a href="https://vocaloidlyrics.fandom.com/wiki/999/Powapowa-P" title="translation credit!">999</a> (siinamota)</b>
+			</div>
+		</div>
+	</aside>
+
+	<aside id="memo3" class="memo draggable">
+		<div class="innermemo">
 			<div id="musicplayer">
 				<div>
 					<marquee scrollamount="6" class="songtitle"></marquee>
@@ -105,36 +123,18 @@ v3 of journal started on 25.feb.24.
 					<div class="total-duration">0:00</div>
 				</div><audio id="music" src=""></audio>
 			</div>
-		</center>
-		<!-- 		music box end div -->
-	</div>
+		</div>
+	</aside>
 
-	<script>
-		function openTab(evt, tabName) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
-			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(tabName).style.display = "block";
-			evt.currentTarget.className += " active";
-		}
-
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
-
-	</script>
+	<aside id="pen"><img src="!g/tulip.png" width="100%"></aside>
 
 	<script>
 		var audio = document.getElementById("music");
-		audio.volume = 0.3;
+		audio.volume = 0.8;
 
 	</script>
 	<script src="music-player.js"></script>
+	<script src="/!f/draggable.js"></script>
 </body>
 
 </html>

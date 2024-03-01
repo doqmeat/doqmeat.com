@@ -7,8 +7,8 @@
 	grid-template-areas:
 		"header header"
 		"margin body";
-	grid-template-rows: 50px 700px;
-	grid-template-columns: 180px 520px;
+	grid-template-rows: 50px 580px;
+	grid-template-columns: 160px 540px;
 	max-width: 700px;
 	border: 1px solid var(--red);
 	border-radius: 10px 10px 0 0;
@@ -23,7 +23,7 @@
 	border-bottom: 2px solid var(--l-red);
 }
 
-aside {
+nav {
 	text-align: center;
 	font-family: gaegu-l, var(--fonts);
 	padding: 5px;
@@ -34,7 +34,7 @@ aside {
 	scrollbar-color: #C7D9F8 #E4A79D;
 }
 
-aside::-webkit-scrollbar {
+nav::-webkit-scrollbar {
 	display: none;
 }
 
@@ -84,6 +84,106 @@ main {
 
 #musicbox i {
 	background: transparent
+}
+
+#pen {
+	position: fixed;
+	bottom: -90px;
+	right: 340px;
+	width: 100px;
+}
+
+.memo {
+	position: fixed;
+	overflow: hidden;
+	border-radius: 10px;
+}
+
+.memo a {
+	background: transparent;
+	text-decoration: underline;
+}
+
+.memo a:hover {
+	text-decoration: line-through;
+}
+
+#memo1 {
+	text-align: center;
+	top: 50%;
+	left: 2%;
+	line-height: 18px;
+	font-size: 15px;
+	width: 350px;
+	height: 250px;
+	background: url('!g/memo-cloud.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#memo2 {
+	text-align: left;
+	top: 10%;
+	right: 3%;
+	rotate: -3deg;
+	width: 300px;
+	height: 400px;
+	background: url('!g/memo-green.jpg');
+	background-size: cover;
+}
+
+#memo2 #side {
+	font-family: spirit;
+	font-size: 13px;
+	overflow: auto;
+	padding: 2px;
+	position: absolute;
+	width: 100px;
+	height: 185px;
+	bottom: 40px;
+	right: 10px;
+}
+
+#memo3 {
+	top: 16%;
+	left: 5%;
+	rotate: -3deg;
+	padding: 60px 20px;
+	width: 300px;
+	height: 150px;
+	background: url('!g/memo-picnic.jpg');
+	background-size: cover;
+}
+
+.calendar {
+	display: block;
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+	border: none;
+	overflow: hidden;
+	width: 170px;
+	height: 213px;
+}
+
+.innermemo {
+	overflow: auto;
+}
+
+#memo1 .innermemo {
+	overflow: hidden;
+	padding: 10px;
+	margin: 30px 60px 0px 60px;
+	height: 190px;
+}
+
+@media only screen and (max-width:1300px) {
+
+	aside,
+	.sticky {
+		display: none;
+	}
 }
 
 @media only screen and (max-width:700px) {
