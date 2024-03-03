@@ -1,7 +1,7 @@
 #notepad {
 	margin: auto;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 20px;
+	margin-bottom: 40px;
 	position: relative;
 	display: grid;
 	grid-template-areas:
@@ -97,21 +97,14 @@ main {
 	position: fixed;
 	overflow: hidden;
 	border-radius: 10px;
-}
-
-.memo a {
-	background: transparent;
-	text-decoration: underline;
-}
-
-.memo a:hover {
-	text-decoration: line-through;
+	box-shadow: 5px 5px 10px 1px var(--l-red);
+	scrollbar-color: #E4A79D #fffcdc;
 }
 
 #memo1 {
 	text-align: center;
 	top: 50%;
-	left: 2%;
+	right: 2%;
 	line-height: 18px;
 	font-size: 15px;
 	width: 350px;
@@ -125,7 +118,7 @@ main {
 #memo2 {
 	text-align: left;
 	top: 10%;
-	right: 3%;
+	left: 3%;
 	rotate: -3deg;
 	width: 300px;
 	height: 400px;
@@ -146,13 +139,24 @@ main {
 }
 
 #memo3 {
-	top: 16%;
-	left: 5%;
-	rotate: -3deg;
-	padding: 60px 20px;
-	width: 300px;
+	top: 67%;
+	left: 10%;
+	rotate: 14deg;
+	padding: 30px 20px;
+	width: 200px;
 	height: 150px;
 	background: url('!g/memo-picnic.jpg');
+	background-size: cover;
+}
+
+#memo4 {
+	top: 8%;
+	right: 5%;
+	rotate: -10deg;
+	width: 300px;
+	height: 290px;
+	background: url('!g/memo-cube.jpg');
+	background-position: top center;
 	background-size: cover;
 }
 
@@ -176,6 +180,58 @@ main {
 	padding: 10px;
 	margin: 30px 60px 0px 60px;
 	height: 190px;
+}
+
+#memo4 .innermemo {
+	margin: 60px 40px 0px 20px;
+	height: 220px;
+	padding-right: 20px;
+}
+
+#memo4 .innermemo .feed-title {
+	display: none;
+}
+
+#memo4 .innermemo h4 {
+	background: url("https://blog-imgs-168.fc2.com/d/o/q/doqmeat/bg.gif");
+	background-size: 60px;
+	color: black;
+	height: 23px;
+	font-size: 13px;
+	margin: 0;
+	padding-left: 4px;
+	border-radius: 5px 5px 0 0;
+}
+
+#memo4 .innermemo h4::before {
+	content: url('/!g/pix/cateepyy.gif');
+	vertical-align: text-top;
+	padding-right: 4px;
+}
+
+#memo4 .innermemo p {
+	background: url("/notebook/!g/grid-blue.png");
+	font-family: arial;
+	border-radius: 0 0 5px 5px;
+}
+
+#memo4 .innermemo p.feed-item-desc {
+	line-height: 18px;
+	font-size: 13px;
+}
+
+#memo4 .innermemo h4 a {
+	background: transparent;
+	color: black;
+}
+
+.memo a {
+	background: transparent;
+	text-decoration: underline;
+}
+
+.memo a:hover {
+	text-decoration: line-through;
 }
 
 @media only screen and (max-width:1300px) {

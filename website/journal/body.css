@@ -14,6 +14,7 @@
 }
 
 body {
+	background: url('/!g/bg/patterbg.gif');
 	word-wrap: break-word;
 	font-size: 16px;
 	line-height: 23px;
@@ -21,6 +22,7 @@ body {
 	color: black;
 	padding: 0px;
 	margin: 0px;
+	scrollbar-color: #E4A79D #fffcdc;
 }
 
 h1,
@@ -44,7 +46,7 @@ li {
 	list-style-image: url('/!g/pix/li19.gif');
 	padding: 10px;
 	list-style-position: inside;
-	margin: 0px;
+	margin: 5px;
 }
 
 ul {
