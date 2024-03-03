@@ -176,7 +176,7 @@ li summary::after {
 li details,
 li summary {
 	display: inline;
-	padding: 5px;
+	padding: 1px;
 	border-radius: 4px;
 	background: var(--pink);
 	margin-bottom: 3px;
