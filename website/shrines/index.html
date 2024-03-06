@@ -1,182 +1,52 @@
 <!DOCTYPE HTML>
+<html lang="en">
+
 <head>
- <!-- 
+	<!-- 
 coded with love by des  
------------
-https://www.w3schools.com/css/css3_box-sizing.asp
 -------------
 color palette: https://coolors.co/feef89-99d9ea-2e2eab-ff7f27
  -->
-<meta charset="UTF-8"> 
-<title>shrines</title>
-<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-<link rel="icon" type="image/x-icon" href="favicon.gif">
-<!-- tooltip shit -->
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-<script src="https://static.tumblr.com/lspzyz3/xloqk6cgp/jquery.style-my-tooltips.js"></script>
-<script>
-							(function($){
-							$(document).ready(function(){
-							$("[title]").style_my_tooltips({
-							tip_follows_cursor: true,
-							tip_delay_time:10,
-							tip_fade_speed:10,
-							attribute:"title"
-							});
-							});
-							})(jQuery);
-</script>
-<!--  end of tooltip shit -->
-<style>
-	
-#yep{
-position:relative;
-margin-top:200px;
-margin-bottom:100px;
-margin-left:auto;
-margin-right:auto;
-width:565px;
-}
-
-#title{
-position:absolute;
-top:-40px;
-font-family:morningtea;
-font-size:40px;
-}
-
-#yep2{
-position:relative;
-overflow:hidden;
-width:100%;
-}
-
-.shrine{
-	background:white;
-	box-sizing:border-box;
-	position:relative;
-	float:left;
-	text-align:center;
-	margin:8px;
-	padding:10px;
-	width:170px;
-	height:205px;
-	border:1px solid black;
-	transition-duration:1s;
-	font-size:15px;
-	line-height:25px;
-}
-
-.shrine img{
-width:100%;
-}
-
-.shrine:hover{rotate:5deg;letter-spacing:2px;}
-
-#credit{
-font-size:small;
-background:#FFFBAA;
-position:relative;
-margin-top:100px;
-margin-right:auto;
-margin-left:auto;
-width:400px;
-border:1px dashed black;
-text-align:center;}
-
-#home{position:fixed;top:-30px;left:-30px;}
-	
-#corner{position:fixed;bottom:0px;right:5px;}
-
-.notdone{
-	filter: grayscale(100%);}
-	.notdone:hover{
-	cursor:not-allowed;}
-	
-/* BASIC CSS */
- 
-    body{
-background:url(/!g/bg/picnicclothbg.png);
-    word-wrap:break-word;
-    font-size:16px;
-    line-height:23px;
-    font-family:ms gothic;
-    color:black;}
-
-    a{
-    color:blue;
-    font-weight:bold;
-    text-decoration:underline;}
- 
-    a:hover{
-    color:black;
-    text-decoration:none;
-    cursor:pointer;}
- 
-    p{
-    margin:0 0 10px 0;
-    padding:5px;}
-    p img{vertical-align:middle;}
-    
-    ::selection{ 
-    color:black; 
-    background-color:#D0FF8D;}
- 
-        ::-webkit-scrollbar {
-    width: 8px;
-    height:8px;}
- 
-    ::-webkit-scrollbar-thumb:vertical{
-    background-color: #FF7F27;
-    border-radius:10px;}
-    
-    ::-webkit-scrollbar-thumb:horizontal{
-    background-color: #FF7F27;
-    border-radius:10px;}
- 
-    ::-webkit-scrollbar-track {
-    background-color:#FEEF89;}
-  
-#s-m-t-tooltip{
-	max-width: 200px;
-	font-family:ms gothic;
- text-align:center;
-	font-size:14px;
-	z-index: 9999;
-	margin: 30px 15px 7px 12px;
-	padding:5px;
- border-radius:10px;
-	border:1px solid #99D9EA;
-	color:black;
-	background:white;
-}
-	
-	</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>shrines</title>
+	<link href="/fonts/stylesheet.css" rel="stylesheet">
+	<link href="index.css" rel="stylesheet">
+	<link rel="icon" type="image/x-icon" href="favicon.gif">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
 </head>
-<body>
-	
-<div id="yep">
-	<div id="title">doqmeat's shrines</div>
-<div id="yep2">
-	
-	<div class="shrine"><a title="my pet cat :3" href="/shrines/mizu" target="_parent"><img src="/shrines/mizu/cover.jpg"></a>mizu</div>
-	
-		<div class="shrine"><img title="vocaloid producer (TBA)" src="/shrines/siinamota/cover.jpg" class="notdone">siinamota</div>
-	
-		<div class="shrine"><img title="k-pop boy group (TBA)" src="/shrines/drippin/cover.jpg" class="notdone">drippin</div>
 
-<!-- 	yep2 end div -->
-	</div>
-	
-	<div id="credit">pixels in this page are by <a href="https://pixelins.tumblr.com" target="_blank">pixelins</a> on tumblr</div>
-	
-<!-- 	yep end div -->
-	</div>
-	
-<div id="home"><a title="go back home" style="cursor:pointer;" href="/home"><img src="/!g/deco/laptop.gif" width="300px"></a></div>
-	
+<body>
+
+	<main>
+		<h1>doqmeat's shrines</h1>
+		<div id="container">
+
+			<div class="shrine"><a title="my pet cat :3" href="/shrines/mizu" target="_parent"><img src="/shrines/mizu/cover.jpg"></a>mizu</div>
+
+			<div class="shrine"><img title="vocaloid producer (TBA)" src="/shrines/siinamota/cover.jpg" class="notdone">siinamota</div>
+
+			<div class="shrine"><img title="k-pop boy group (TBA)" src="/shrines/drippin/cover.jpg" class="notdone">drippin</div>
+		</div>
+	</main>
+
+	<footer>
+		coded with love by des
+		<br>
+		<b>credit:</b> pixels in this page are by <a href="https://pixelins.tumblr.com" target="_blank">pixelins</a> on tumblr
+		<br>
+		<a href="/">go back home</a>
+	</footer>
+
+	<div id="home"><a title="go back home" style="cursor:pointer;" href="/home"><img src="/!g/deco/laptop.gif"></a></div>
+
 	<div id="corner"><img src="/!g/deco/stationarypages.png" width="300px"></div>
-	
-	
+
+
 </body>
+
 </html>
