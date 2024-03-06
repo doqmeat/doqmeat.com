@@ -1,48 +1,4 @@
 //	credit: https://www.w3schools.com/howto/howto_js_draggable.asp
 
 //Make the DIV element draggagle:
-		dragElement(document.getElementById("catIMG"));
-
-		function dragElement(elmnt) {
-			var pos1 = 0,
-				pos2 = 0,
-				pos3 = 0,
-				pos4 = 0;
-			if (document.getElementById(elmnt.id + "header")) {
-				/* if present, the header is where you move the DIV from:*/
-				document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-			} else {
-				/* otherwise, move the DIV from anywhere inside the DIV:*/
-				elmnt.onmousedown = dragMouseDown;
-			}
-
-			function dragMouseDown(e) {
-				e = e || window.event;
-				e.preventDefault();
-				// get the mouse cursor position at startup:
-				pos3 = e.clientX;
-				pos4 = e.clientY;
-				document.onmouseup = closeDragElement;
-				// call a function whenever the cursor moves:
-				document.onmousemove = elementDrag;
-			}
-
-			function elementDrag(e) {
-				e = e || window.event;
-				e.preventDefault();
-				// calculate the new cursor position:
-				pos1 = pos3 - e.clientX;
-				pos2 = pos4 - e.clientY;
-				pos3 = e.clientX;
-				pos4 = e.clientY;
-				// set the element's new position:
-				elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-				elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-			}
-
-			function closeDragElement() {
-				/* stop moving when mouse button is released:*/
-				document.onmouseup = null;
-				document.onmousemove = null;
-			}
-		}
+function dragElement(a){function f(a){a=a||window.event,a.preventDefault(),d=a.clientX,e=a.clientY,document.onmouseup=h,document.onmousemove=g}function g(f){f=f||window.event,f.preventDefault(),b=d-f.clientX,c=e-f.clientY,d=f.clientX,e=f.clientY,a.style.top=a.offsetTop-c+"px",a.style.left=a.offsetLeft-b+"px"}function h(){document.onmouseup=null,document.onmousemove=null}var b=0,c=0,d=0,e=0;document.getElementById(a.id+"header")?document.getElementById(a.id+"header").onmousedown=f:a.onmousedown=f}dragElement(document.getElementById("catIMG"));

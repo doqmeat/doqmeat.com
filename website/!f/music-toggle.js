@@ -2,7 +2,7 @@
 	audio.volume = 0.8;
 
 	// i dont remember where i took this music player code from DKJF but i will find it eventually
-	//edit: I REMEMBERED: it is from this template: https://www.tumblr.com/compassionately/688695677850714112/1999-neocities-layout-by-me-emotion-preview?source=share
+// it is from this template: https://www.tumblr.com/compassionately/688695677850714112/1999-neocities-layout-by-me-emotion-preview?source=share
 
 	let player = document.getElementById("music"); //the audio id
 	let btn = document.getElementById("music-btn"); //the button id
