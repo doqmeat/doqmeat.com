@@ -234,7 +234,7 @@ main {
 	text-decoration: line-through;
 }
 
-@media only screen and (max-width:1300px) {
+@media only screen and (max-width:1240px) {
 
 	aside,
 	.sticky {
