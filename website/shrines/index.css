@@ -1,135 +1,142 @@
 body {
-			background: url(/!g/bg/picnicclothbg.png);
-			word-wrap: break-word;
-			font-size: 16px;
-			line-height: 23px;
-			font-family: ms gothic;
-			color: black;
-		}
+	background: url(/!g/bg/picnicclothbg.png);
+	word-wrap: break-word;
+	font-size: 16px;
+	line-height: 23px;
+	font-family: ms gothic;
+	color: black;
+}
 
-		a {
-			color: blue;
-			font-weight: bold;
-			text-decoration: underline;
-		}
+a {
+	color: blue;
+	font-weight: bold;
+	text-decoration: underline;
+}
 
-		a:hover {
-			color: black;
-			text-decoration: none;
-			cursor: pointer;
-		}
+a:hover {
+	color: black;
+	text-decoration: none;
+	cursor: pointer;
+}
 
-		::selection {
-			color: black;
-			background-color: #D0FF8D;
-		}
+::selection {
+	color: black;
+	background-color: #D0FF8D;
+}
 
-		main {
-			position: relative;
-			margin: auto;
-			margin-top: 50px;
-			margin-bottom: 20px;
-			max-width: 565px;
-		}
+main {
+	position: relative;
+	margin: auto;
+	margin-top: 50px;
+	margin-bottom: 20px;
+	max-width: 565px;
+}
 
-		h1 {
-			position: relative;
-			margin: 10px;
-			font-family: morningtea;
-			font-size: 40px;
-		}
+h1 {
+	position: relative;
+	margin: 10px;
+	font-family: morningtea;
+	font-size: 40px;
+}
 
-		#container {
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: center;
-			position: relative;
-			overflow: hidden;
-			width: 100%;
-		}
+#container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+}
 
-		.shrine {
-			background: white;
-			box-sizing: border-box;
-			position: relative;
-			float: left;
-			text-align: center;
-			margin: 8px;
-			padding: 10px;
-			width: 170px;
-			max-height: 205px;
-			border: 1px solid black;
-			transition-duration: 1s;
-			font-size: 15px;
-			line-height: 25px;
-		}
+.shrine {
+	background: white;
+	box-sizing: border-box;
+	position: relative;
+	float: left;
+	text-align: center;
+	margin: 8px;
+	padding: 10px;
+	width: 170px;
+	max-height: 205px;
+	border: 1px solid black;
+	transition-duration: 1s;
+	font-size: 15px;
+	line-height: 25px;
+}
 
-		.shrine img {
-			width: 100%;
-		}
+.shrine img {
+	width: 100%;
+}
 
-		.shrine:hover {
-			rotate: 5deg;
-			letter-spacing: 2px;
-		}
+.shrine:hover {
+	rotate: 5deg;
+	letter-spacing: 2px;
+}
 
-		footer {
-			font-size: small;
-			background: #FFFBAA;
-			position: relative;
-			margin-top: 10px;
-			margin-right: auto;
-			margin-left: auto;
-			max-width: 400px;
-			border: 1px dashed black;
-			text-align: center;
-		}
+footer {
+	font-size: small;
+	background: #FFFBAA;
+	position: relative;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 400px;
+	border: 1px dashed black;
+	text-align: center;
+}
 
-		#home {
-			position: fixed;
-			top: -10px;
-			left: -10px;
-		}
+#home {
+	position: fixed;
+	top: -10px;
+	left: -10px;
+}
 
-		#home img {
-			width: 200px;;
-		}
+#home img {
+	width: 200px;
+	;
+}
 
-		#corner {
-			position: fixed;
-			bottom: 0px;
-			right: 5px;
-		}
+#corner {
+	position: fixed;
+	bottom: 0px;
+	right: 5px;
+}
 
-		.notdone {
-			filter: grayscale(100%);
-		}
+.notdone {
+	filter: grayscale(100%);
+}
 
-		.notdone:hover {
-			cursor: not-allowed;
-		}
+.notdone:hover {
+	cursor: not-allowed;
+}
 
-		#s-m-t-tooltip {
-			max-width: 200px;
-			font-family: ms gothic;
-			text-align: center;
-			font-size: 14px;
-			z-index: 9999;
-			margin: 30px 15px 7px 12px;
-			padding: 5px;
-			border-radius: 10px;
-			border: 1px solid #99D9EA;
-			color: black;
-			background: white;
-		}
+#s-m-t-tooltip {
+	max-width: 200px;
+	font-family: ms gothic;
+	text-align: center;
+	font-size: 14px;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid #99D9EA;
+	color: black;
+	background: white;
+}
 
-		@media only screen and (max-width: 600px) {
-			#corner {
-				display: none;
-			}
+@media only screen and (max-width: 800px) {
+	#home {
+		display: none;
+	}
+}
 
-			#home {
-				display: none;
-			}
+@media only screen and (max-width: 600px) {
+	#corner {
+		display: none;
+	}
 
-		}
+	#home {
+		display: none;
+	}
+
+}
