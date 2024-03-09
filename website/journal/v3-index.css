@@ -48,8 +48,12 @@ main {
 	border-left: 2px solid var(--l-red);
 }
 
+#journal {
+	border: none;
+}
+
 #tag {
-	position: absolute;
+	position: fixed;
 	top: -6px;
 	left: 4px;
 	transition-duration: 0.5s;
@@ -262,6 +266,7 @@ main {
 		height: 600px;
 		border: none;
 		margin: 0px 3%;
+		padding: 10px;
 	}
 
 	details {
@@ -270,5 +275,9 @@ main {
 
 	#musicbox {
 		display: none;
+	}
+
+	#journal {
+		border: 6px double var(--l-red);
 	}
 }
