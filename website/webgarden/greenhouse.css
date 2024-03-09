@@ -107,8 +107,6 @@ textarea {
 	right: 5px;
 }
 
-/* tooltip link hover */
-
 #s-m-t-tooltip {
 	max-width: 200px;
 	text-align: center;
@@ -117,8 +115,13 @@ textarea {
 	padding: 5px;
 	border-radius: 10px;
 	border: 1px dashed black;
-	color: black;
 	background: rgb(249, 255, 209);
 	background: radial-gradient(circle, rgba(249, 255, 209, 1) 0%, rgba(187, 230, 191, 1) 100%);
 	text-shadow: 2px 2px 2px white;
 	border-radius: 10px;
+
+	@media only screen and (max-width: 1000px) {
+		#corner {
+			display: none;
+		}
+	}
