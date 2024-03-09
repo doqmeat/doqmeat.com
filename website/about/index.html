@@ -2,41 +2,58 @@
 <html lang="en">
 
 <head>
-	<!-- coded with love by des 
---------------------
-inspired by iyueni (Iゆえに) by parsley onuma MV
----
-palette: https://coolors.co/15197b-fe88fa-87ade3-fdbefa-fafafa-f3f3f1
----
-draggable elements:
-https://stackoverflow.com/questions/14695933/draggable-div-with-classname
----
--->
+	<!-- coded with love by des -->
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<title>about</title>
-	<link rel="icon" type="image/x-icon" href="https://doqmeat.neocities.org/!g/pix/catblue.gif">
+	<link rel="icon" type="image/x-icon" href="/!g/pix/catblue.gif">
 	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<link href="index.css" rel="stylesheet" type="text/css" media="all">
 	<!-- tooltip shit -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/!f/tooltip-jquary.js"></script>
-	<script>
-		(function($) {
-			$(document).ready(function() {
-				$("[title]").style_my_tooltips({
-					tip_follows_cursor: true,
-					tip_delay_time: 10,
-					tip_fade_speed: 10,
-					attribute: "title"
-				});
-			});
-		})(jQuery);
-
-	</script>
+	<script src="/!f/tooltip.js"></script>
 	<!--  end of tooltip shit -->
 </head>
 
 <body>
+	<!-- 	info pop up -->
+	<div class="pop-up draggable">
+		<div class="header">read_me.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+		<div class="wrapper-in padding list">
+			<li class="mobile">every window is draggable!</li>
+			<li class="mobile">best viewed on a 1134px+ screen.</li>
+			<li>this page is inspired by parsley onuma's iyueni and its music video.</li>
+			<li>illustration is by <a href="https://twitter.com/narumeNKR/status/1531955172074631171" target="_blank">narumeNKR</a></li>
+			<li><b>credit:</b> draggable JS code from <a href="https://stackoverflow.com/questions/14695933/draggable-div-with-classname" target="_blank">stackoverflow</a></li>
+		</div>
+	</div>
+
+	<!-- 	about me -->
+	<div class="about draggable">
+		<div class="header">webmaster_&amp;_site_info.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+		<div class="borderwrap">
+			<div class="wrapper-in padding">
+				<p><img title="this is me btw" src="/!g/deco/silly-cat.gif" align="left" style="margin-right:5px;" width="25%">hello everyone! i go by <mark>des</mark> and i am <mark>the webmaster of this site!</mark> i'm 23 year olds from a small island called puerto rico. i've lived here pretty much my entire life. gender is something i don't really care much about these days but i am nonbinary and go by any pronouns.</p>
+
+				<p><a title="art by bitmapdreams" href="http://lastsecret.net/bitmapdreams/" target="_blank"><img src="/!g/deco/springflowers.gif" width="20%" align="right"></a>i find it extremely difficult to write about who i am. i'm not sure why. i would say i know myself pretty well. but when comes to things like this, i am pretty horrible at it. hopefully you can get an idea of who i am by exploring my site, which i pour a lot of myself and love into <img src="/!g/pix/catroll.gif"></p>
+
+				<p>one day i stumbled upon <a href="https://hunipyon.neocities.org/" target="_blank">hunipyon</a>'s site and i just fell in love with the concept of having my very own site i can customize however the hell i want and put whatever i want in it. the possibilities are truly endless!</p>
+
+				<p><img src="/!g/deco/puter.gif" align="left" style="margin-right:15px;">so i took it upon myself to learn html and css. it was pretty tricky the first few months. and i still have much to learn. but i am confident enough in my coding skills where i can imagine how i want a page and build it from scratch. which is certainly a new hobby i've picked up from making my own site! i have fallen in love with the process of making new pages and decorating them to my liking. i find it very entertaining and fun to do, which is why all of my pages are unique on their own!</p>
+
+				<p>i like keeping track of things and talking about what i love (or hate). these are pretty much the foundations that my site is built upon.</p>
+
+				<p><a title="art by blackrabbit-25" href="https://www.deviantart.com/blackrabbit-25" target="_blank"><img src="/!g/deco/blackrabbit25-book.gif" align="right" style="margin-top:-25px;"></a>so think of my website as a digital journal. i will share bits and pieces of my personal life, interests, passions, and even creations. <mark>my goal is simply to have a place on the internet where i can freely be myself without the chaos and limitations of social media. and to have fun</mark>, of course :3 i wouldn't be doing any of this if it wasn't fun for me.</p>
+
+				<p>my love for this site has inspired me to pursue college education again, and i'm currently studying computer science <img src="https://doqmeat.neocities.org/!g/pix/emote1m.gif" alt=""></p>
+
+				<p><img src="/!g/deco/mail.gif" align="left" style="margin-right:15px;">with all that said, i am pretty friendly and love to interact with other people. feel free to e-mail me at <a href="mailto:doqmeat@gmail.com" target="_blank">doqmeat@gmail.com</a> about whatever, really! whether it be to tell me about what you thought about my site, to send me pictures of your cats, recommend me an album you think i might like, or even ask any coding related questions you might have. i might take a bit to answer back but anything goes, thank you very much for reading!</p>
+
+				<p style="text-align: right"><b>last updated on: 07.mar.24</b></p>
+			</div>
+		</div>
+	</div>
 
 	<!-- 	me af pics -->
 	<div class="me draggable">
@@ -65,7 +82,72 @@ https://stackoverflow.com/questions/14695933/draggable-div-with-classname
 		</div>
 	</div>
 
-	<!-- 	about me -->
+	<!-- 	interests -->
+	<div class="likes draggable">
+		<div class="header">favs.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+		<div class="borderwrap">
+			<div class="wrapper-in padding list">
+				<h3>general</h3>
+				<li>petting cats</li>
+				<li>making lists / journaling</li>
+				<li>photography</li>
+				<li>art</li>
+				<li>horror</li>
+				<li>driving at night (with no traffic)</li>
+				<li>coding HTML and CSS</li>
+				<li>hand shakes</li>
+				<li>purple and yellow</li>
+
+				<h3>video games</h3>
+				<li>portal 2</li>
+				<li>stray</li>
+				<li>hyper light drifter</li>
+				<li>if found...</li>
+
+				<h3>animanga</h3>
+				<li>kaiba (2008)</li>
+				<li>our dreams at dusk</li>
+				<li>mob psycho 100</li>
+				<li>madoka magica</li>
+				<li>eizouken</li>
+				<li>chainsaw man</li>
+
+				<h3>films</h3>
+				<li>wall-e</li>
+				<li>madoka magica rebellion</li>
+				<li>everything everywhere all at once</li>
+				<li>surf's up</li>
+				<li>final destination</li>
+
+				<h3>other media</h3>
+				<li>the little prince</li>
+				<li>joe pera talks with you</li>
+				<li>bee and puppycat</li>
+
+				<h3>animals</h3>
+				<li>cats! :3</li>
+				<li>any felines really</li>
+				<li>but top 3 big cats: lynx, tigers, cheetahs</li>
+				<li>seals</li>
+			</div>
+		</div>
+	</div>
+
+	<!-- 	interests linkes -->
+	<div class="dislikes draggable">
+		<div class="header">i_hate_u.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+		<div class="borderwrap">
+			<div class="wrapper-in padding list">
+				<li>most spicy food...</li>
+				<li>driving at night (with traffic)</li>
+				<li>the puertorican government</li>
+				<li>most old ppl here too</li>
+				<li>nfts, AI shit, whatever cryptobros are up to</li>
+				<li>coding JavaScript</li>
+			</div>
+		</div>
+	</div>
+
 	<div class="nostalgia draggable">
 		<div class="header"><img src="!g/folder.png" class="folder"> nostalgia<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
@@ -179,79 +261,6 @@ https://stackoverflow.com/questions/14695933/draggable-div-with-classname
 		</div>
 	</div>
 
-	<!-- 	interests linkes -->
-	<div class="dislikes draggable">
-		<div class="header">i_hate_u.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
-		<div class="borderwrap">
-			<div class="wrapper-in padding list">
-				<li>most spicy food...</li>
-				<li>driving at night (with traffic)</li>
-				<li>the puertorican government</li>
-				<li>most old ppl here too</li>
-				<li>nfts, AI shit, whatever cryptobros are up to</li>
-				<li>coding JavaScript</li>
-			</div>
-		</div>
-	</div>
-
-	<!-- 	interests linkes -->
-	<div class="likes draggable">
-		<div class="header">favs.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
-		<div class="borderwrap">
-			<div class="wrapper-in padding list">
-				<div class="title">general</div>
-				<li>petting cats</li>
-				<li>making lists / journaling</li>
-				<li>photography</li>
-				<li>art</li>
-				<li>horror</li>
-				<li>driving at night (with no traffic)</li>
-				<li>coding HTML and CSS</li>
-
-				<div class="title">video games</div>
-				<li>portal 2</li>
-				<li>stray</li>
-				<li>hyper light drifter</li>
-				<li>if found...</li>
-
-				<div class="title">anime</div>
-				<li>kaiba (2008)</li>
-				<li>mob psycho 100</li>
-				<li>madoka magica</li>
-				<li>eizouken</li>
-
-				<div class="title">manga</div>
-				<li>our dreams at dusk</li>
-				<li>mob psycho 100</li>
-
-				<div class="title">films</div>
-				<li>wall-e</li>
-				<li>madoka magica rebellion</li>
-				<li>everything everywhere all at once</li>
-				<li>surf's up</li>
-
-				<div class="title">shows</div>
-				<li>joe pera talks with you</li>
-				<li>bee and puppycat</li>
-
-				<div class="title">colors</div>
-				<li>purple</li>
-				<li>yellow</li>
-
-				<div class="title">books</div>
-				<li>the little prince</li>
-
-				<div class="title">animals</div>
-				<li>cats! :3</li>
-				<li>any felines really</li>
-				<li>but top 3 big cats: lynx, tigers, cheetahs</li>
-				<li>seals</li>
-			</div>
-		</div>
-	</div>
-
-
-
 	<!-- 	music video -->
 	<div class="mv draggable">
 		<div class="header">iyueni.mp4<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
@@ -267,9 +276,10 @@ https://stackoverflow.com/questions/14695933/draggable-div-with-classname
 		<div class="header">links.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding list">
-				<img src="/!g/pix/buttermeadow.gif" style="position:absolute;bottom:20px;right:20px;pointer-events:none;width:55px;">
+				<img src="/!g/pix/buttermeadow.gif" style="position:absolute;bottom:20px;right:20px;pointer-events:none;width:55px;" class="mobile">
+				you can find me in other places like...
 				<a title="e-mail" href="mailto:doqmeat@gmail.com"><img src="/!g/pix/mail11a.gif" align="left" style="margin-right:15px;margin-top:5px;margin-left:10px;"></a>
-				<li><a href="https://github.com/doqmeat" target="_blank">github</a></li>
+				<li><a href="https://github.com/doqmeat" target="_blank">github</a> / <a href="https://doqmeat.github.io" target="_blank">projects website</a></li>
 				<li><a href="https://codepen.io/doqmeat" target="_blank">codepen</a></li>
 				<li><a href="https://doqmeat.blog.fc2.com/" target="_blank">FC2 blog</a></li>
 				<li><a href="https://rateyourmusic.com/~doqmeat" target="_blank">RYM</a></li>
@@ -286,41 +296,6 @@ https://stackoverflow.com/questions/14695933/draggable-div-with-classname
 			<div class="wrapper-in padding">
 				<img src="/collection/cats/!g/YOUVEBEENJESTERED.jpg" width="100%">
 			</div>
-		</div>
-	</div>
-
-	<!-- 	about me -->
-	<div class="about draggable">
-		<div class="header">about_the_webmaster_and_site.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
-		<div class="borderwrap">
-			<div class="wrapper-in padding">
-				<p><img title="this is me btw" src="/!g/deco/silly-cat.gif" align="left" style="margin-right:5px;" width="25%">hello everyone! i go by <mark>des</mark> and i am <mark>the webmaster of this site!</mark> i'm 23 year olds from a small island called puerto rico. i've lived here pretty much my entire life. gender is something i don't really care much about these days but i am nonbinary and go by any pronouns.</p>
-
-				<p><a title="art by bitmapdreams" href="http://lastsecret.net/bitmapdreams/" target="_blank"><img src="/!g/deco/springflowers.gif" width="20%" align="right"></a>i find it extremely difficult to write about who i am. i'm not sure why. i would say i know myself pretty well. but when comes to things like this, i am pretty horrible at it. hopefully you can get an idea of who i am by exploring my site, which i pour a lot of myself and love into <img src="/!g/pix/catroll.gif"></p>
-
-				<p>one day i stumbled upon <a href="https://hunipyon.neocities.org/" target="_blank">hunipyon</a>'s site and i just fell in love with the concept of having my very own site i can customize however the hell i want and put whatever i want in it. the possibilities are truly endless!</p>
-
-				<p><img src="/!g/deco/puter.gif" align="left" style="margin-right:15px;">so i took it upon myself to learn html and css. it was pretty tricky the first few months. and i still have much to learn. but i am confident enough in my coding skills where i can imagine how i want a page and build it from scratch. which is certainly a new hobby i've picked up from making my own site! i have fallen in love with the process of making new pages and decorating them to my liking. i find it very entertaining and fun to do, which is why all of my pages are unique on their own!</p>
-
-				<p>i like keeping track of things and talking about what i love (or hate). these are pretty much the foundations that my site is built upon.</p>
-
-				<p><a title="art by blackrabbit-25" href="https://www.deviantart.com/blackrabbit-25" target="_blank"><img src="/!g/deco/blackrabbit25-book.gif" align="right" style="margin-top:-25px;"></a>so think of my website as a digital journal. i will share bits and pieces of my personal life, interests, passions, and even creations. <mark>my goal is simply to have a place on the internet where i can freely be myself without the chaos and limitations of social media. and to have fun</mark>, of course :3 i wouldn't be doing any of this if it wasn't fun for me.</p>
-
-				<p><img src="/!g/deco/mail.gif" align="left" style="margin-right:15px;">with all that said, i am pretty friendly and love to interact with other people. feel free to e-mail me at <a href="mailto:doqmeat@gmail.com" target="_blank">doqmeat@gmail.com</a> about whatever, really! whether it be to tell me about what you thought about my site, to send me pictures of your cats, recommend me an album you think i might like, or even ask any coding related questions you might have. i might take a bit to answer back but anything goes, thank you very much for reading!</p>
-
-				<p style="text-align: right"><b>last updated on: 01.dec.23</b></p>
-			</div>
-		</div>
-	</div>
-
-	<!-- 	info pop up -->
-	<div class="pop-up draggable">
-		<div class="header">read_me.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
-		<div class="wrapper-in padding list">
-			<li>every window is draggable!</li>
-			<li>best viewed on a 1134px+ screen.</li>
-			<li>this page is inspired by parsley onuma's iyueni and its music video.</li>
-			<li>illustration by <a href="https://twitter.com/narumeNKR/status/1531955172074631171" target="_blank">narumeNKR</a></li>
 		</div>
 	</div>
 

@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 :root {
 	--darkblue: #15197B;
 	--lightblue: #87ADE3;
@@ -173,6 +177,16 @@ p img {
 	list-style-image: url(/!g/pix/heartfabi.gif)
 }
 
+.likes h3 {
+	font-weight: bold;
+	font-size: 19px;
+	color: #FD5DF8;
+	letter-spacing: 2px;
+	text-align: right;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
 .dislikes {
 	bottom: 290px;
 	right: 30px;
@@ -189,17 +203,8 @@ p img {
 }
 
 .list {
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 18px;
-}
-
-.title {
-	font-weight: bold;
-	color: #FD5DF8;
-	letter-spacing: 2px;
-	text-align: right;
-	margin-top: 10px;
-	margin-bottom: 10px;
 }
 
 .me {
@@ -297,12 +302,10 @@ p img {
 }
 
 #close {
-	position: absolute;
+	position: fixed;
 	top: 5px;
 	left: 5px;
 }
-
-/* BASIC CSS */
 
 body::before {
 	content: " ";
@@ -317,7 +320,6 @@ body::before {
 	z-index: 1;
 }
 
-/* tooltip hover */
 #s-m-t-tooltip {
 	max-width: 200px;
 	text-align: center;
@@ -377,15 +379,62 @@ body::before {
 	background-image: url(!g/left.jpg);
 }
 
-/*
 @media only screen and (max-width: 1134px) {
 	.draggable {
-		width:90%;
+		margin: auto;
+		width: 90%;
 		position: relative;
 		top: 0;
 		left: 0;
 		right: 0;
 		bottom: 0;
+		height: auto;
+		margin-bottom: 30px;
+	}
+
+	.nostalgia .wrapper-in,
+	.about .wrapper-in,
+	.dislikes .wrapper-in,
+	.contact .wrapper-in,
+	.likes .wrapper-in {
+		height: 100%;
+	}
+
+	.mv {
+		width: 70%;
+	}
+
+	.toys {
+		width: 50%;
+	}
+
+	.pop-up {
+		width: 50%;
+		margin-top: 30px;
+	}
+
+	.contact li,
+	.likes li {
+		display: inline-block;
+	}
+
+	.likes li::before {
+		content: url(/!g/pix/heartfabi.gif);
+		padding-right: 4px;
+	}
+
+	.likes h3 {
+		text-align: center;
+	}
+
+	.contact li::before {
+		content: url('/!g/pix/1leaf.png');
+		padding-right: 4px;
+	}
+
+	.secret,
+	.nostalgia,
+	.mobile {
+		display: none;
 	}
 }
-*/
