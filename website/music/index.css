@@ -353,14 +353,17 @@ footer {
 	#featured,
 	#is-he-listening,
 	nav,
-	#main {
+	#main,
+	#log {
 		display: block;
 		width: 100%;
 	}
 
+/*
 	#log {
 		display: none;
 	}
+*/
 
 	h1 {
 		font-size: 25px;
