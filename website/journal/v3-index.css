@@ -98,6 +98,7 @@ main {
 }
 
 .memo {
+	cursor: move;
 	position: fixed;
 	overflow: hidden;
 	border-radius: 10px;
@@ -182,51 +183,14 @@ main {
 #memo1 .innermemo {
 	overflow: hidden;
 	padding: 10px;
-	margin: 30px 60px 0px 60px;
-	height: 190px;
+	margin: 10px 60px 0px 60px;
+	height: 200px;
 }
 
 #memo4 .innermemo {
-	margin: 60px 40px 0px 20px;
+	margin: 70px 40px 0px 20px;
 	height: 220px;
 	padding-right: 20px;
-}
-
-#memo4 .innermemo .feed-title {
-	display: none;
-}
-
-#memo4 .innermemo h4 {
-	background: url("https://blog-imgs-168.fc2.com/d/o/q/doqmeat/bg.gif");
-	background-size: 60px;
-	color: black;
-	height: 23px;
-	font-size: 13px;
-	margin: 0;
-	padding-left: 4px;
-	border-radius: 5px 5px 0 0;
-}
-
-#memo4 .innermemo h4::before {
-	content: url('/!g/pix/cateepyy.gif');
-	vertical-align: text-top;
-	padding-right: 4px;
-}
-
-#memo4 .innermemo p {
-	background: url("/notebook/!g/grid-blue.png");
-	font-family: arial;
-	border-radius: 0 0 5px 5px;
-}
-
-#memo4 .innermemo p.feed-item-desc {
-	line-height: 18px;
-	font-size: 13px;
-}
-
-#memo4 .innermemo h4 a {
-	background: transparent;
-	color: black;
 }
 
 .memo a {

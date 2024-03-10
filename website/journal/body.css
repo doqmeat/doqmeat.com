@@ -85,7 +85,7 @@ p img {
 }
 
 blockquote {
-	font-family: YU gothic UI;
+	font-family: YU gothic UI, var(--fonts);
 	font-size: 16px;
 	font-style: italic;
 	border-left: 2px solid #E4A79D;
