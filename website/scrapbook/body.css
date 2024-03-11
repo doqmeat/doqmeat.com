@@ -36,6 +36,10 @@ b {
 	font-family: gaegu-b, var(--fonts);
 }
 
+p img{
+	vertical-align: top;
+}
+
 a {
 	cursor: help;
 	font-family: gaegu-b, var(--fonts);
