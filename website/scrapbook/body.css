@@ -36,7 +36,7 @@ b {
 	font-family: gaegu-b, var(--fonts);
 }
 
-p img{
+p img {
 	vertical-align: top;
 }
 
@@ -171,6 +171,7 @@ header.page {
 	padding: 15px;
 	background: url('/notebook/!g/grid-blue.png');
 	border-radius: 10px;
+	overflow: auto;
 }
 
 li summary::after {
@@ -185,6 +186,7 @@ li summary {
 	background: var(--pink);
 	margin-bottom: 3px;
 	font-size: 17px;
+	overflow: hidden;
 }
 
 li.played {
