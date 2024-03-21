@@ -1,17 +1,14 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 
 <head>
 	<!-- 
 coded with love by des
---------
-i pretty much just used this code to get the buttons to work as like filters:
-https://www.w3schools.com/howto/howto_js_filter_elements.asp
----
+----
 how to get an img to recognize the :focus thingy in css: https://stackoverflow.com/questions/27327765/how-to-get-a-img-tag-the-focus
 -->
 	<meta charset="UTF-8">
-			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>video games</title>
 	<link rel="icon" type="image/x-icon" href="/vgs/favicon.gif">
 	<link href="body.css" rel="stylesheet" type="text/css" media="all">
@@ -20,19 +17,7 @@ how to get an img to recognize the :focus thingy in css: https://stackoverflow.c
 	<!-- tooltip shit -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/!f/tooltip-jquary.js"></script>
-	<script>
-		(function($) {
-			$(document).ready(function() {
-				$("[title]").style_my_tooltips({
-					tip_follows_cursor: true,
-					tip_delay_time: 10,
-					tip_fade_speed: 10,
-					attribute: "title"
-				});
-			});
-		})(jQuery);
-
-	</script>
+	<script src="/!f/tooltip.js"></script>
 	<!--  end of tooltip shit -->
 	<style>
 	</style>
@@ -156,6 +141,9 @@ how to get an img to recognize the :focus thingy in css: https://stackoverflow.c
 		</div>
 		<div class="filterDiv fav finished cat single">
 			<a title="night in the woods" href="nitw/index.html" target="iframe_a"><img src="nitw.jpg" class="vgimg" tabindex="0"></a>
+		</div>
+		<div class="filterDiv notdone vn single horror">
+			<a title="paranormasight" href="paranormasight/index.html" target="iframe_a"><img src="paranormasight/cover.jpg" class="vgimg" tabindex="0"></a>
 		</div>
 		<div class="filterDiv notdone adventure single">
 			<a title="pikmin 4" href="pikmin-4/index.html" target="iframe_a"><img src="pikmin-4.jpg" class="vgimg" tabindex="0"></a>
