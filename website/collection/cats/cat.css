@@ -15,6 +15,7 @@ body {
 	font-family: var(--fonts);
 	font-size: 17px;
 	color: black;
+	scrollbar-color: #937B69 #FFF8D6;
 }
 
 a {
@@ -63,7 +64,7 @@ h1 {
 	margin: 0px;
 	letter-spacing: 5px;
 	text-align: center;
-	font-size: 40px;
+	font-size: 50px;
 	font-family: cat paw, var(--fonts);
 }
 
