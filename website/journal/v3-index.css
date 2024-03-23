@@ -12,7 +12,7 @@
 	max-width: 700px;
 	border: 1px solid var(--red);
 	border-radius: 10px 10px 0 0;
-	background: url("https://doqmeat.neocities.org/!g/bg/yellobg.png");
+	background: url("/!g/bg/yellobg.png");
 	overflow: hidden;
 }
 
@@ -77,7 +77,7 @@ main {
 
 #musicbox {
 	z-index: 500;
-	background-image: url("https://doqmeat.neocities.org/!g/deco/paper.gif");
+	background-image: url("/!g/deco/paper.gif");
 	background-size: 220px;
 	background-repeat: no-repeat;
 	position: fixed;
