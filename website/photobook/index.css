@@ -7,6 +7,7 @@ body {
 	line-height: 20px;
 	text-align: center;
 	word-wrap: break-word;
+	scrollbar-color: #e4cad2 #fbedb8;
 }
 
 * {
@@ -16,7 +17,6 @@ body {
 ::selection {
 	background: #FFFAC4;
 	color: black;
-
 }
 
 header {
@@ -66,11 +66,6 @@ a:hover {
 	max-height: 420px;
 	overflow: auto;
 	transition-duration: 0.3s;
-	scrollbar-width: none;
-}
-
-.pic::-webkit-scrollbar {
-	display: none;
 }
 
 .pic:hover {
@@ -85,7 +80,7 @@ a:hover {
 
 .film {
 	border: 10px solid white;
-	border-bottom-width: 50px;
+	border-bottom-width: 2.5rem;
 }
 
 .pic > img {
