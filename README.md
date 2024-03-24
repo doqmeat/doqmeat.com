@@ -1,5 +1,5 @@
-# doqmeat.neocities.org
-hello! this is the repository of my personal website, [doqmeat.neocities.org](https://doqmeat.neocities.org/) !
+# doqmeat.com
+hello! this is the repository of my personal website, [doqmeat.com](https://doqmeat.com/) !
 
 ## about site
 - i code in brackets.io
