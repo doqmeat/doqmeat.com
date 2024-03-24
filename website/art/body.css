@@ -7,9 +7,24 @@
 }
 
 body {
+	margin: auto;
+	max-width: 800px;
 	font-family: var(--fonts);
 	font-size: 18px;
 	word-wrap: break-word;
+	padding:10px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+.full {
+	width: 100%;
+}
+
+.half {
+	width: 48%;
 }
 
 header {
