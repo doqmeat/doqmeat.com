@@ -106,7 +106,8 @@ h2 {
 }
 
 h3 {
-	background: url(/!g/bg/h069-5.gif);
+	background: white;
+	background-image: url(/!g/bg/h069-5.gif);
 	border-radius: 10px;
 	font-family: spirit, var(--fonts);
 	font-weight: 400;
@@ -302,7 +303,8 @@ button:hover {
 	list-style-image: url(/!g/pix/sorahana-butterfly-pmm.gif);
 	border: 2px solid #EBBBE1;
 	border-radius: 10px;
-	background: url(/!g/bg/h096-2.gif);
+	background: white;
+	background-image: url(/!g/bg/h096-2.gif);
 	box-shadow: 0 0 7px 10px #fff inset
 }
 
