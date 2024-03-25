@@ -365,7 +365,7 @@ button:hover {
 	border: var(--border1);
 	font-family: nintendo-ds-bios;
 	font-size: 19px;
-	line-height: 20px;
+	line-height: 15px;
 	word-spacing: 6px
 }
 
@@ -373,6 +373,14 @@ button:hover {
 	color: var(--l-yellow);
 	font-weight: 400;
 	text-decoration: none
+}
+
+#foot p {
+	margin: 6px 0px;
+}
+
+#foot p img {
+	vertical-align: top;
 }
 
 #updates,

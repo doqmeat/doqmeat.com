@@ -57,8 +57,8 @@ main {
 	background: rgb(42, 67, 101, 0.9);
 	color: var(--peach);
 	position: relative;
-	margin-top: 150px;
-	margin-bottom: 170px;
+	margin-top: 210px;
+	margin-bottom: 200px;
 	max-width: 430px;
 	border-radius: 20px;
 	padding: 10px 10px;
@@ -76,7 +76,7 @@ main {
 }
 
 #rainbow:hover {
-	letter-spacing: 4px;
+	letter-spacing: 6px;
 }
 
 #cat {
@@ -131,20 +131,6 @@ main {
 	background: transparent;
 }
 
-#cred {
-	padding: 10px 5px;
-	max-width: 300px;
-	height: 200px;
-	vertical-align: middle;
-	margin: auto;
-	margin-bottom: 20px;
-	display: inline-block;
-	background: var(--sky-blue);
-	border-radius: 10px;
-	border: 2px dashed var(--grey);
-	overflow: auto;
-}
-
 #top {
 	z-index: 100;
 	background: url('/!g/div/sorahana-lace-g4.gif');
@@ -166,12 +152,15 @@ main {
 }
 
 footer {
-	margin: auto;
+	padding: 5px 5px;
 	max-width: 800px;
-	position: relative;
-	overflow: auto;
-	margin-top: 30px;
-	margin-bottom: 50px;
+	vertical-align: middle;
+	margin: auto;
+	margin-bottom: 70px;
+	display: block;
+	background: var(--sky-blue);
+	border-radius: 10px;
+	border: 2px dashed var(--grey);
 }
 
 #s-m-t-tooltip {
