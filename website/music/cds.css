@@ -40,7 +40,7 @@
 		letter-spacing: 3px;
 	}
 
-.i {
+	.i {
 		padding: 0px;
 		background: transparent;
 	}
@@ -119,7 +119,7 @@
 		top: 11%;
 		left: 5%;
 		overflow: auto;
-		background-color:var(--cream);
+		background-color: var(--cream);
 		background-image: url("!g/cds/bg2.png");
 		background-attachment: local;
 		background-position: top;
@@ -135,8 +135,8 @@
 	}
 
 	.caption p:hover {
-		background:var(--brown);
-		color:var(--cream);
+		background: var(--brown);
+		color: var(--cream);
 	}
 
 	.caption img {
@@ -174,15 +174,31 @@
 		font-weight: bold;
 	}
 
-.placeholder::after{
- content: '(img is a placeholder!)';
- font-size: 16px;
-}
+	.placeholder::after {
+		content: '(img is a placeholder!)';
+		font-size: 16px;
+	}
 
 	#home {
 		position: fixed;
 		top: 10px;
 		left: 5px;
+	}
+
+	#lost {
+		max-width: 500px;
+		margin: auto;
+		background: var(--brown);
+		text-align: center;
+		padding: 5px;
+		border-radius: 10px;
+		border: 2px dashed var(--cream);
+		margin-bottom: 50px;
+	}
+
+	#lost h2 {
+		font-family: spirit, var(--fonts);
+		font-size: 19px;
 	}
 
 	footer {
