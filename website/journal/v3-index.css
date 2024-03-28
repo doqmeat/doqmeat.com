@@ -237,7 +237,7 @@ main {
 		display: inline-block;
 	}
 
-	#musicbox {
+	.hide{
 		display: none;
 	}
 
