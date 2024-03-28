@@ -41,6 +41,7 @@ footer {
 }
 
 header p {
+	text-align: center;
 	background: var(--pink);
 	padding: 5px 15px;
 	border-radius: 10px;
