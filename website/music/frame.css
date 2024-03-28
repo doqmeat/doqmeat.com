@@ -44,10 +44,6 @@ footer {
 		border: none;
 		margin: auto;
 	}
-
-	footer {
-		display: none;
-	}
 }
 
 @media only screen and (max-width: 710px) {
@@ -64,5 +60,27 @@ footer {
 		border: 0px;
 		margin: auto;
 		max-width: 100%;
+	}
+
+	@media only screen and (max-width: 600px) {
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6 {
+			font-family: daydream, gaegu-b, var(--fonts);
+			font-size: small;
+			word-spacing: 10px;
+			letter-spacing: 3px;
+			line-height: normal;
+			background: rgb(254, 234, 199);
+			background: linear-gradient(61deg, rgba(254, 234, 199, 1) 0%, rgba(251, 181, 205, 1) 100%);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			-webkit-text-stroke-width: 1px;
+			-webkit-text-stroke-color: var(--l-brown);
+		}
 	}
 }

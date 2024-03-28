@@ -49,10 +49,10 @@ h6 {
 
 a {
 	text-decoration: none;
-	padding: 0px 5px;
+	padding: 0 5px;
 	color: var(--pink);
 	background: var(--soft-brown);
-	font-weight: bold;
+	font-weight: normal;
 	border-radius: 5px;
 	cursor: help;
 }

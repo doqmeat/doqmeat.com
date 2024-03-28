@@ -72,7 +72,7 @@ a:hover {
 }
 
 .intro-img {
-	content:url(/!g/deco/kitty-text.gif);
+	content: url(/!g/deco/kitty-text.gif);
 	margin: 5px;
 }
 
@@ -652,7 +652,7 @@ button:hover {
 	nav a:hover {
 		border: none;
 		top: 1px;
-		margin: 5px
+		margin: 5px;
 	}
 
 	#status {
