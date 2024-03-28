@@ -1,12 +1,20 @@
 /*space !!!! */
-/*i should prob use the filter greyscale for the imgs in this...*/
 
 :root {
 	--white: rgb(203, 213, 224);
 	--black: rgb(26, 32, 44, 0.8);
 }
 
+img {
+	filter: grayscale(10);
+}
+
+img:hover {
+	filter: grayscale(0)
+}
+
 body {
+	font-size: 16px;
 	color: white;
 	background: url('/!g/bg/pixelins-bg.png');
 }
@@ -20,6 +28,38 @@ a {
 	color: white;
 }
 
+a:hover {
+	background: white;
+	color: black;
+	text-decoration: none;
+}
+
+.intro-img {
+	content: url(/!g/gif/hellokittystar.gif);
+	margin: 2%;
+}
+
+header p {
+	margin-top: -10px;
+	margin-left: 120px;
+	position: absolute;
+}
+
+h1 {
+	margin-top: 20px;
+	font-family: daydream, var(--fonts);
+}
+
+h2 {
+	font-family: nintendo-ds-bios, var(--fonts);
+	font-size: 18px;
+	letter-spacing: 2px;
+	word-spacing: 3px;
+	margin-bottom: 5px;
+	line-height: 20px;
+}
+
+/*
 h1 {
 	background: url(/!g/bg/pixelins-bg-blu.png);
 	background-size: 200px;
@@ -36,25 +76,158 @@ h1:hover {
 	-webkit-text-stroke-width: 0.5px;
 	-webkit-text-stroke-color: black;
 }
+*/
+.snowflakes {
+	display: none;
+}
+
+nav a {
+	text-decoration: none;
+	letter-spacing: 3px;
+	word-spacing: 3px;
+}
+
+nav a:hover {
+	letter-spacing: 0px;
+	word-spacing: 0px;
+}
 
 #status {
 	background-image: url('/!g/homepage/cloud1.png');
 	color: black;
 }
 
+#statuscafe-username a {
+	color: black;
+}
+
+#statuscafe-content {
+	font-size: 14px;
+	font-style: italic;
+}
+
+#updates li {
+	margin: 10px 0;
+}
+
 #updates h2 + li {
-	color: ;
-	background: ;
+	color: black;
+	background: white;
+	border-radius: 5px;
+}
+
+#updates h2 + li a {
+	color: black;
+}
+
+
+.imood {
+	font-family: nintendo-ds-bios, var(--fonts);
+	vertical-align: top;
+	font-size: 18px;
+}
+
+.hl {
+	background: white;
+	color: black;
+	padding: 2px;
+	border-radius: 5px;
+}
+
+button {
+	background: white;
+	color: black;
+	font-family: var(--fonts);
+	border-radius: 15px;
+	border: 3px ridge white;
+}
+
+button:hover {
+	background: black;
+	color: white;
+}
+
+button:focus {
+	background: black;
+	color: white;
+	border: 3px solid black;
 }
 
 footer {
 	background: var(--grey);
 }
 
+#chatbox,
+#chatbox h2 {
+	color: white;
+	font-weight: normal;
+	background: black;
+	border: var(--border2);
+}
+
+#chatbox {
+	background: white;
+	z-index: 10;
+	transition-duration: 1.5s
+}
+
+#chatbox h2 {
+	border-radius: 10px 10px 0 0;
+	margin: 0;
+	padding: 10px;
+	left: -17%;
+	top: 85%;
+	border: 1px solid white;
+}
+
+.outlink::after {
+	content: "↗";
+	padding-left: 2px;
+	vertical-align: text-bottom
+}
+
 #s-m-t-tooltip {
+	border: 2px dashed white;
 	max-width: 200px;
 	border-radius: 20px;
 	border: 1px dashed black;
 	color: white;
 	background: black;
+}
+
+@media only screen and (max-width: 860px) {
+
+	nav {
+		text-align: center
+	}
+
+	#status {
+		background:var(--black);
+		color:white;
+		border: 3px dotted var(--l-brown);
+		border-radius: 10px
+	}
+	
+	#status a{
+		color:white;
+	}
+	
+	#status img{
+		background: var(--white);
+	}
+
+	#chatbox {
+		position: relative;
+		margin-top: -10px;
+		left: 0;
+		top: 0;
+		border-radius: 20px;
+		max-width: 100%;
+		width: 100%;
+		height: 300px;
+	}
+
+	#chatbox h2 {
+		display: none
+	}
 }

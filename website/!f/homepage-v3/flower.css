@@ -68,17 +68,23 @@ a:hover {
 }
 
 #intro p {
-	margin-top: 0
+	margin-top: 0;
+}
+
+.intro-img {
+	content:url(/!g/deco/kitty-text.gif);
+	margin: 5px;
 }
 
 header {
 	height: 112%;
 	color: #fff;
-	overflow: hidden;
 	font-size: 17px
 }
 
 header p {
+	font-family: spirit, var(--fonts);
+	font-size: 20px;
 	margin-top: -10px;
 	margin-left: 120px;
 	position: absolute
@@ -176,6 +182,7 @@ button:hover {
 
 .imood {
 	font-family: simple, var(--fonts);
+	font-size: 20px;
 	vertical-align: text-bottom
 }
 
@@ -381,10 +388,6 @@ button:hover {
 	margin: 6px 0px;
 }
 
-#foot p img {
-	vertical-align: top;
-}
-
 #updates,
 #listing {
 	background: var(--bg3);
@@ -530,7 +533,7 @@ button:hover {
 
 #sticker18 {
 	content: url('/!g/pix/sorahana-butterflyanime.gif');
-	top: 1.5%;
+	top: 0%;
 	left: 45%
 }
 
@@ -605,7 +608,8 @@ button:hover {
 }
 
 #s-m-t-tooltip {
-	font-family: gaegu-l;
+	font-family: var(--fonts);
+	font-size: 15px;
 	max-width: 300px;
 	border-radius: 20px;
 	border: 2px dashed var(--l-brown);

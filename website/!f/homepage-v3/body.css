@@ -8,12 +8,12 @@
 }
 
 :root {
-	--fonts: gaegu-b, ms pgothic, arial;
+	--fonts: ms pgothic, arial;
 }
 
 body {
 	font-family: var(--fonts);
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 25px;
 	margin: 0px;
 }
@@ -54,7 +54,7 @@ body {
 header {
 	grid-area: head;
 	text-align: center;
-	overflow: auto;
+	overflow: hidden;
 	background: transparent;
 	border: 0px;
 }
@@ -89,6 +89,10 @@ p {
 
 footer p {
 	margin: 0px;
+}
+
+#foot p img {
+	vertical-align: top;
 }
 
 nav {
