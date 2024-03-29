@@ -5,6 +5,10 @@
 	--black: rgb(26, 32, 44, 0.8);
 }
 
+body {
+	font-family: ms pgothic, natsuzemi, var(--fonts);
+}
+
 img {
 	filter: grayscale(10);
 }
@@ -32,6 +36,11 @@ a:hover {
 	background: white;
 	color: black;
 	text-decoration: none;
+	border-radius: 10px;
+}
+
+a:hover img {
+	filter: grayscale(0);
 }
 
 .intro-img {
@@ -59,37 +68,28 @@ h2 {
 	line-height: 20px;
 }
 
-/*
-h1 {
-	background: url(/!g/bg/pixelins-bg-blu.png);
-	background-size: 200px;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: white;
-}
-
-h1:hover {
-	background: white;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 0.5px;
-	-webkit-text-stroke-color: black;
-}
-*/
 .snowflakes {
 	display: none;
 }
 
 nav a {
+	font-family: nintendo-ds-bios;
 	text-decoration: none;
 	letter-spacing: 3px;
 	word-spacing: 3px;
+	transition-duration: 0.3s;
 }
 
 nav a:hover {
-	letter-spacing: 0px;
+	letter-spacing: 1px;
 	word-spacing: 0px;
+}
+
+nav h3{
+	font-family:natsuzemi, var(--fonts);
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-decoration: overline;
 }
 
 #status {
@@ -195,24 +195,35 @@ footer {
 	background: black;
 }
 
+@media only screen and (max-width:1000px) {
+	nav a:hover {
+		letter-spacing: 3px;
+		word-spacing: 3px;
+	}
+}
+
 @media only screen and (max-width: 860px) {
 
 	nav {
 		text-align: center
 	}
 
+	body {
+		font-family:
+	}
+
 	#status {
-		background:var(--black);
-		color:white;
+		background: var(--black);
+		color: white;
 		border: 3px dotted var(--l-brown);
 		border-radius: 10px
 	}
-	
-	#status a{
-		color:white;
+
+	#status a {
+		color: white;
 	}
-	
-	#status img{
+
+	#status img {
 		background: var(--white);
 	}
 
