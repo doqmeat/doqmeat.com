@@ -14,7 +14,7 @@ body {
 	color: #ca5e2c;
 	background: #fad97c;
 	scrollbar-color: #fcdac8 #f5f2ea;
-		background: url("/notebook/!g/grid-mustard.png");
+	background: url("/notebook/!g/grid-mustard.png");
 	background-size: 6px;
 	background-position: center;
 }
@@ -40,6 +40,9 @@ code {
 	font-family: consolas;
 	font-size: 14px;
 	color: #6A5C3E;
+	border: 1px solid #6A5C3E;
+	border-radius: 10px;
+	padding: 0 5px;
 }
 
 a {
