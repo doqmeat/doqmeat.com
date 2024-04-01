@@ -134,6 +134,10 @@ p img {
 	width: 500px;
 }
 
+.about h3{
+text-shadow: 1px 1px 4px #f459ef;
+}
+
 .about .wrapper-in {
 	box-sizing: border-box;
 	padding: 10px;
