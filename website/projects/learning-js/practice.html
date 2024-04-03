@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/x-icon" href="/!g/pix/sticky.gif">
+	<link href="/fonts/stylesheet.css" rel="stylesheet">
+	<link href="/projects/body.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<title>i'm learning JS</title>
+	<style>
+		textarea {
+			display: block;
+			width: 70%;
+			height: 100%;
+			font-size: 10px;
+			font-family: consolas;
+			margin: auto;
+			margin-top: 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+	<h1>practice page</h1>
+	<main>
+		<p id="pa1">today i learned how to make a button to change the text of something! yay</p>
+		<button id="button1">change text</button>
+		<textarea>
+const button1 = document.querySelector("#button1");
+
+const pa1 = document.querySelector("#pa1");
+
+button1.onclick = changePa1;
+
+function changePa1() {
+	pa1.innerText = "meow :3";
+
+	button1.innerText = "meow!!!!!";
+
+	button1.onclick = revertPa1;
+}
+
+function revertPa1() {
+	pa1.innerText = "okay i'm normal";
+
+	button1.innerHTML = "meow again?";
+
+	button1.onclick = changePa1;
+}
+
+		</textarea>
+		<hr>
+
+
+
+	</main>
+
+	<footer>
+		....... ᓚᘏᗢ .......
+		<br>
+		<a href="/projects">projects</a> / <a href="/home">home</a> / <a href="#">top</a>
+	</footer>
+	<script src="practice.js"></script>
+</body>
+
+</html>
