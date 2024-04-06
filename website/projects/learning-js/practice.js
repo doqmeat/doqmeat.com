@@ -2,20 +2,45 @@ const button1 = document.querySelector("#button1");
 
 const pa1 = document.querySelector("#pa1");
 
-button1.onclick = changePa1;
+const cats = [
 
-function changePa1() {
-	pa1.innerText = "meow :3";
+	{
+		"p text": 'meow :3 <br> <img src="/collection/cats/!g/icecat.jpg">',
+		"button text": "stop it",
+		"button function": stopMeow
+	},
 
-	button1.innerText = "meow!!!!!";
+	{
+		"p text": 'okay...... <br> <img src="/collection/cats/!g/gulpcat.gif">',
+		"button text": "wait do it again",
+		"button function": reallyMeow
+	},
 
-	button1.onclick = revertPa1;
+	{
+		"p text": 'really? <br> <img src="/collection/cats/!g/surprised.jpg">',
+		"button text": "yes",
+		"button function": startMeow
+	}
+
+]
+
+button1.onclick = startMeow;
+
+
+function update(cats) {
+	pa1.innerHTML = cats['p text'];
+	button1.innerText = cats['button text'];
+	button1.onclick = cats['button function'];
 }
 
-function revertPa1() {
-	pa1.innerText = "okay i'm normal";
+function startMeow() {
+	update(cats[0]);
+}
 
-	button1.innerHTML = "meow again?";
+function stopMeow() {
+	update(cats[1]);
+}
 
-	button1.onclick = changePa1;
+function reallyMeow() {
+	update(cats[2])
 }
