@@ -3,7 +3,7 @@
 	--l-border: 2px solid var(--yellow);
 }
 
-hr{
+hr {
 	border-color: var(--l-brown);
 }
 
@@ -85,9 +85,9 @@ side {
 	text-align: center;
 }
 
-.cred{
-	font-size:14px;
-	margin:0px;
+.cred {
+	font-size: 14px;
+	margin: 0px;
 }
 
 main {
@@ -116,6 +116,10 @@ iframe {
 	padding: 10px;
 	border: var(--d-border);
 	margin-top: 20px;
+}
+
+.log [align] {
+	margin: 10px;
 }
 
 .info {
