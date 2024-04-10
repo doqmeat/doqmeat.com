@@ -106,6 +106,17 @@ main {
 	scrollbar-color: #E4A79D #fffcdc;
 }
 
+.memo h2 {
+	text-align: center;
+	margin: 5px;
+	font-size: 16px;
+}
+
+.memo h3 {
+	margin: 5px;
+	font-size: 13px;
+}
+
 #memo1 {
 	text-align: center;
 	top: 50%;
@@ -237,7 +248,7 @@ main {
 		display: inline-block;
 	}
 
-	.hide{
+	.hide {
 		display: none;
 	}
 
