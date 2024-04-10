@@ -2,16 +2,13 @@
 hello! this is the repository of my personal website, [doqmeat.com](https://doqmeat.com/) !
 
 ## about site
-- i code in brackets.io
-- upload my code using github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template)
-- tested on firefox and chrome
+- created on 11.apr.23 on neocities as doqmeat.neocities.org, under doqmeat.com since 24.mar.24
+- my beloved code editor is brackets.io.
+- upload my code using github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template).
+- tested on firefox and on chrome sometimes.
 
 ## source code
-- i learned how to code HTML and CSS by looking at other people's code and <b>playing around with it offline</b>, so you're welcome to do that with mine!
-- you're free to take <b>bits of my code</b> for your own site!
-- with that said, i prefer if you <b>did not copy the entire code of a page and upload it to your site.</b> the only code you can do that with are with my [F2U HTML templates](https://github.com/doqmeat/F2U-templates)
-
-### notes
-
-i'm still pretty new to all of this so any pointers on something i could be doing better are appreciated. this website is just for fun at the end of the day and i am learning at my own pace! 
+- i learned how to code HTML and CSS by looking at other people's code and <b>playing around with it offline</b>, you're welcome to do that with mine! i also learned by going to sites like w3schools, using HTML templates, and the likes.
+- you're free to take <b>bits of my code</b> for your own site! though do be aware that i've used code that isn't mine and is credited on my site. refrain from taking this code without crediting the creators.
+- with that said, i prefer if you <b>did not copy the entire code of a page and upload it to your site as a base</b>. the only code you can do that with are with my [F2U HTML templates](https://github.com/doqmeat/F2U-templates). if you do end up doing this i'll be a bit sad but after a week i'll be fine 👍
   
