@@ -215,8 +215,7 @@ main {
 
 @media only screen and (max-width:1240px) {
 
-	aside,
-	.sticky {
+	aside {
 		display: none;
 	}
 }

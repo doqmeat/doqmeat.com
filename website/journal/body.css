@@ -23,6 +23,7 @@ body {
 	padding: 0px;
 	margin: 0px;
 	scrollbar-color: #E4A79D #fffcdc;
+	cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;
 }
 
 h1,
@@ -168,10 +169,3 @@ summary {
 ::-webkit-scrollbar-track {
 	background-color: #FFFCDC;
 }
-
-/* Start https://www.cursors-4u.com */
-* {
-	cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;
-}
-
-/* End https://www.cursors-4u.com */
