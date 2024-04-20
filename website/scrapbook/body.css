@@ -180,6 +180,7 @@ li summary::after {
 
 li details,
 li summary {
+	vertical-align: bottom;
 	display: inline;
 	padding: 1px;
 	border-radius: 4px;
