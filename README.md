@@ -2,10 +2,8 @@
 hello! this is the repository of my personal website, [doqmeat.com](https://doqmeat.com/) !
 
 ## about site
-- created on 11.apr.23 on neocities as doqmeat.neocities.org, under doqmeat.com since 24.mar.24
-- my beloved code editor is brackets.io.
-- upload my code using github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template).
-- tested on firefox and on chrome sometimes.
+- i upload my code using deploy to neocities and github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template).
+- tested on firefox. and on chrome sometimes.
 
 ## source code
 - i learned how to code HTML and CSS by looking at other people's code and <b>playing around with it offline</b>, you're welcome to do that with mine! i also learned by going to sites like w3schools, using HTML templates, and the likes.
