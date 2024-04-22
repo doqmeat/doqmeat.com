@@ -58,7 +58,7 @@ main {
 	color: var(--peach);
 	position: relative;
 	margin-top: 210px;
-	margin-bottom: 200px;
+	margin-bottom: 100px;
 	max-width: 430px;
 	border-radius: 20px;
 	padding: 10px 10px;
@@ -79,18 +79,13 @@ main {
 	letter-spacing: 6px;
 }
 
-#cat {
-	z-index: 1;
-	margin-bottom: 120px;
-}
-
 #chatbox {
 	z-index: 10;
 	position: fixed;
 	width: 350px;
 	height: 400px;
-	background: var(--white);
-	border: 2px dashed var(--magenta);
+	background: var(--peach);
+	border: 2px dashed var(--white);
 	bottom: 50px;
 	right: -350px;
 	transition-duration: 1.5s;
@@ -103,32 +98,13 @@ main {
 #chatbox h3 {
 	position: absolute;
 	rotate: -90deg;
-	background: var(--white);
-	border: 2px dashed var(--magenta);
+	background: var(--peach);
+	border: 2px dashed var(--white);
 	border-radius: 10px 10px 0px 0px;
 	margin: 0px;
 	padding: 1px 5px;
 	left: -20%;
 	top: 80%;
-}
-
-#webrings {
-	display: inline-block;
-	vertical-align: middle;
-	margin: auto;
-	margin-bottom: 20px;
-	background: var(--peach);
-	position: relative;
-	max-width: 300px;
-	height: 200px;
-	overflow: auto;
-	border-radius: 20px;
-	padding: 10px 10px;
-	border: 2px dashed var(--mint);
-}
-
-#webrings a {
-	background: transparent;
 }
 
 #top {
@@ -153,7 +129,7 @@ main {
 
 footer {
 	padding: 5px 5px;
-	max-width: 800px;
+	max-width: 600px;
 	vertical-align: middle;
 	margin: auto;
 	margin-bottom: 70px;
