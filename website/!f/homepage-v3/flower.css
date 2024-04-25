@@ -534,11 +534,20 @@ button:hover {
 	rotate: -40deg
 }
 
+/*
 #sticker17 {
 	content: url('/!g/pix/buttermeadow.gif');
 	top: 42%;
 	left: 77%
 }
+*/
+
+#sticker17 {
+	content: url('/!g/deco/tora-cat-peek.gif');
+	top: 44%;
+	left: 85%
+}
+
 
 #sticker18 {
 	content: url('/!g/pix/sorahana-butterflyanime.gif');
@@ -592,7 +601,7 @@ button:hover {
 }
 
 #sticker27 {
-	content: url(https://doqmeat.com/!g/deco/flower4.gif);
+	content: url(/!g/deco/flower4.gif);
 	top: 6%;
 	left: 65%;
 }
