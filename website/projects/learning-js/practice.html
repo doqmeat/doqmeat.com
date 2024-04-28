@@ -37,11 +37,24 @@
 
 		<hr>
 
+		<p>note: i am still wrapping my head around the difference between <code>==</code> and <code>===</code> when i used it for a toggle like this</p>
+		<button onclick="popHK()">if you click me something will pop up :)</button>
+		<p id="pa2" style="display:none;"><img id="hkpixel" src="/!g/deco/hk-pixel%20(10).gif"></p>
+		<script>
+			function popHK() {
+				var popUp = document.getElementById("pa2");
+				if (popUp.style.display == "none") {
+					popUp.style.display = "block";
+				} else {
+					popUp.style.display = "none";
+				}
+			}
 
+		</script>
 	</main>
 
 	<footer>
-		last updated: <b>05.apr.24</b>
+		last updated: <b>28.apr.24</b>
 		<br>
 		....... ᓚᘏᗢ .......
 		<br>
