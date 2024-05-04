@@ -6,24 +6,34 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<title>fc2 microblog</title>
 	<link href="index.css" rel="stylesheet" />
+	<!--	tooltip shit-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
 </head>
 
 <body>
 	<main>
-		<div id="bar"> |_ |◻|×|</div>
+		<div id="bar"> <img src="/about/!g/hide.jpg" alt="" class="icons"> <img src="/about/!g/max.jpg" alt="" class="icons"> <img src="/about/!g/close.jpg" alt="" class="icons"></div>
 		<div id="address-bar">← → ↻ ⌂<span id="address"><a title="click to open in a new tab if your heart so desires" href="https://doqmeat.blog.fc2.com" target="_blank">https://doqmeat.blog.fc2.com</a></span></div>
 		<iframe src="https://doqmeat.blog.fc2.com"></iframe>
 	</main>
 
-	<div id="trash" class="icon"><img src="recycle.png" alt="recycle icon"><br><span>recycle bin</span></div>
+	<div onclick="trashClick()" id="trash" class="icon"><img src="recycle.png" alt="recycle icon"><br><span>recycle bin</span></div>
 
-	<a href="/home">
+	<div id="trash2" class="draggable">
+		<button onclick="trashClick()" class="x">x</button>
+		<img src="public-diary.png" alt="screenshot of a tweet that says" width="100%">
+	</div>
+
+	<a title="click to go back to homepage" href="/home">
 		<div id="puter" class="icon"><img src="puter.png" alt="computer icon"><br><span>homepage</span></div>
 	</a>
 
 	<div id="mouse" onclick="infoClick()" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></div>
 
-	<div id="info">
+	<div id="info" class="draggable">
+		<button onclick="infoClick()" class="x">x</button>
 		<p> this is my microblog hosted on fc2!</p>
 		<p><b>credit:</b> body bg from <a href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino Al</a> on <a href="https://unsplash.com/photos/body-of-water-and-seashore-JFeOy62yjXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> / <a href="https://archive.org/details/WindowsXPExtractedIcons" target="_blank">windows XP icons</a></p>
 	</div>
@@ -38,8 +48,17 @@
 			}
 		}
 
-	</script>
+		function trashClick() {
+			var icon = document.getElementById("trash2");
+			if (icon.style.display === "block") {
+				icon.style.display = "none";
+			} else {
+				icon.style.display = "block";
+			}
+		}
 
+	</script>
+	<script src="/!f/draggable.js"></script>
 	<!--	<footer>hello this is the footer</footer>-->
 </body>
 

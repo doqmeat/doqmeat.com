@@ -2,6 +2,15 @@
 			box-sizing: border-box;
 		}
 
+		:root {
+			--blue1: hsla(212, 46%, 52%, 1);
+			--blue2: hsla(213, 41%, 69%, 1);
+			--yellow: hsla(33, 88%, 83%, 1);
+			--pink: hsla(344, 51%, 67%, 1);
+			--violet: hsla(323, 21%, 41%, 1);
+			--peach: hsla(16, 91%, 78%, 1);
+		}
+
 		body {
 			background: url(bg.png);
 			background-position: right center;
@@ -20,7 +29,7 @@
 		}
 
 		main {
-			color: #99664c;
+			color: var(--violet);
 			background: #ecd3fc;
 			display: grid;
 			grid-template-areas:
@@ -33,14 +42,14 @@
 			margin: auto;
 			margin-top: 30px;
 			width: 1000px;
-			border: 3px #99664c solid;
+			border: 2px var(--blue2) solid;
 			overflow: hidden;
 			box-shadow: 3px 3px 10px #4b81bd;
 			border-radius: 5px;
 		}
 
 		main a {
-			color: white;
+			color: black;
 		}
 
 		iframe {
@@ -51,20 +60,24 @@
 			border: none;
 		}
 
+		.icons {
+			width: 15px;
+			border-radius: 3px;
+			margin-top: 3px;
+		}
+
 		#bar {
-			/*
-			background: rgb(255, 255, 255);
-			background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(214, 130, 152, 1) 100%);
-*/
+			background: rgb(250, 216, 175);
+			background: linear-gradient(0deg, rgba(250, 216, 175, 1) 0%, rgba(214, 130, 152, 1) 100%);
 			grid-area: bar;
 			text-align: right;
 			font-weight: bold;
-			letter-spacing: 3px;
 			font-size: 11px;
 			padding: 1px 5px;
 		}
 
 		#address-bar {
+			background: var(--yellow);
 			grid-area: address;
 			font-weight: bold;
 			text-align: left;
@@ -80,7 +93,8 @@
 			margin-left: 40px;
 			padding: 5px;
 			display: inline-block;
-			background: #99664c;
+			background: white;
+			color: black;
 			width: 80%;
 			line-height: 10px;
 			border: 1px solid grey;
@@ -96,11 +110,25 @@
 		#trash {
 			top: 100px;
 			right: 50px;
+			cursor: cell;
+		}
+
+		#trash2 {
+			display: none;
+			position: absolute;
+			background: rgb(250, 216, 175);
+			background: linear-gradient(0deg, rgba(250, 216, 175, 1) 0%, rgba(214, 130, 152, 1) 100%);
+			top: 200px;
+			right: 50px;
+			width: 500px;
+			padding: 10px;
+			border-radius: 10px;
 		}
 
 		#puter {
 			top: 10px;
 			left: 10px;
+			cursor: cell;
 		}
 
 		#mouse {
@@ -109,13 +137,24 @@
 			cursor: cell;
 		}
 
+		.x {
+			font-family: ms pgothic;
+			font-size: 18px;
+			padding: 5px;
+			line-height: 10px;
+			border-radius: 5px;
+			background: var(--blue2);
+			float: right;
+		}
+
 		#info {
 			display: none;
+			text-align: left;
 			position: absolute;
 			bottom: 100px;
 			left: 30px;
-			background: url(/!g/bg/h056-4.gif);
-			background-position: left top;
+			background: rgb(250, 216, 175);
+			background: linear-gradient(0deg, rgba(250, 216, 175, 1) 0%, rgba(214, 130, 152, 1) 100%);
 			width: 150px;
 			height: 150px;
 			padding: 10px;
@@ -128,8 +167,8 @@
 		}
 
 		#info a {
-			color: #e992f7;
-			background: #dcf0c2;
+			color: black;
+			background: lightyellow;
 			padding: 0px 3px;
 		}
 
@@ -151,4 +190,17 @@
 			background: white;
 			width: 100%;
 			margin: 0;
+		}
+
+		#s-m-t-tooltip {
+			color: white;
+			font-size: 15px;
+			max-width: 200px;
+			border-radius: 5px;
+			background: #4b81bd;
+			box-shadow: 0px 0px 10px white inset;
+			text-align: center;
+			z-index: 999;
+			margin: 30px 15px 7px 12px;
+			padding: 5px;
 		}
