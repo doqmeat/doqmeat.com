@@ -1,3 +1,19 @@
+//for the toggle button
+
+function popHK() {
+	var popUp = document.getElementById("pa2");
+	var buttonText = document.getElementById("HKbutton");
+	if (popUp.style.display == "none") {
+		popUp.style.display = "block";
+		buttonText.innerText = "if you click me again it will hide";
+	} else {
+		popUp.style.display = "none";
+		buttonText.innerText = "if you click me something will pop up :)";
+	}
+}
+
+//cats
+
 const button1 = document.querySelector("#button1");
 
 const pa1 = document.querySelector("#pa1");
