@@ -1,3 +1,7 @@
+* {
+	box-sizing: border-box;
+}
+
 body {
 	background: url("/!g/bg/yellobg.png");
 	background-position: center;
@@ -66,38 +70,25 @@ article {
 }
 
 .date {
+	font-family: morningtea, var(--fonts);
 	font-size: 16px;
 }
 
-/* this is for older entries LOL i cant be bothered to fix them*/
-
-p.date {
-	font-size: 27px;
-	background: url(/!g/bg/h056-4.gif);
-	background-size: 50px;
-	border: 4px double black;
-	text-align: right;
-	font-weight: bold;
-	margin: 5px 0px 15px 0px;
-	padding: 0px 10px;
-}
-
 .entry {
-	font-size: 27px;
+	font-size: 28px;
 	background: url(/!g/bg/h056-4.gif);
 	background-size: 50px;
 	border: 4px double black;
 	text-align: right;
 	font-weight: bold;
 	margin: 5px 0px 15px 0px;
-	padding: 0px 10px;
+	padding: 2px 10px;
 }
 
 .mini {
 	display: inline-block;
-	box-sizing: border-box;
 	line-height: 23px;
-	font-family: newpenji;
+	font-family: newpenji, var(--fonts);
 	background: url(/!g/bg/picnicclothbg.png);
 	font-size: 17px;
 	border: 4px double black;
@@ -159,6 +150,21 @@ p.date {
 .e::after {
 	content: "eating:";
 }
+
+/* this is for older entries LOL i cant be bothered to fix them*/
+
+p.date {
+	font-size: 27px;
+	background: url(/!g/bg/h056-4.gif);
+	background-size: 50px;
+	border: 4px double black;
+	text-align: right;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+	padding: 0px 10px;
+}
+
+/*end*/
 
 @media only screen and (max-width: 599px) {
 

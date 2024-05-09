@@ -133,7 +133,7 @@ summary {
 #s-m-t-tooltip {
 	max-width: 200px;
 	font-size: 15px;
-	font-family: YU gothic UI;
+	font-family: YU gothic UI, var(--fonts);
 	text-align: center;
 	z-index: 9999;
 	margin: 30px 15px 7px 12px;
