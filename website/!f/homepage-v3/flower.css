@@ -360,7 +360,7 @@ button:hover {
 }
 
 #chatbox {
-	z-index: 10;
+	z-index: 11;
 	transition-duration: 1.5s
 }
 
