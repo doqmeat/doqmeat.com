@@ -202,3 +202,8 @@
 	font-family: 'oldschool-ad';
 	src: url(old-school-adventures.ttf)
 }
+
+@font-face {
+	font-family: 'momo';
+	src: url(Momos-Regular.ttf)
+}
