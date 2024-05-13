@@ -3,7 +3,7 @@
 }
 
 :root {
-	--fonts: morningtea, ms pgothic, arial;
+	--fonts: momo,morningtea, ms pgothic, arial;
 	--peach: #E8A5AD;
 	--magenta: #DC81BE;
 	--sky-blue: #B1CFD9;
@@ -12,11 +12,11 @@
 	--black: #2A4365;
 	--white: #D7E7E8;
 	--margin: auto;
-	--heading: spirit;
+	--heading: momo;
 }
 
 body {
-	font-size: 17px;
+	font-size: 16px;
 	word-spacing: 5px;
 	letter-spacing: 0px;
 	line-height: 22px;
@@ -30,11 +30,14 @@ body {
 }
 
 a {
-	background: var(--white);
 	color: var(--black);
 	padding: 1px 3px;
 	border-radius: 4px;
 	transition-duration: 0.8s;
+}
+
+main a{
+	color:var(--sky-blue);
 }
 
 a:hover {
@@ -57,8 +60,8 @@ main {
 	background: rgb(42, 67, 101, 0.9);
 	color: var(--peach);
 	position: relative;
-	margin-top: 210px;
-	margin-bottom: 100px;
+	margin-top: 220px;
+	margin-bottom: 260px;
 	max-width: 430px;
 	border-radius: 20px;
 	padding: 10px 10px;
@@ -66,17 +69,16 @@ main {
 }
 
 #rainbow {
-	padding: 3px 2px;
 	border-radius: 3px;
 	font-family: var(--heading), var(--fonts);
-	font-size: 25px;
+	font-size: 28px;
 	line-height: 30px;
-	letter-spacing: 2px;
+	letter-spacing: 6px;
 	transition-duration: 0.5s;
 }
 
 #rainbow:hover {
-	letter-spacing: 6px;
+	letter-spacing: 1px;
 }
 
 #chatbox {
