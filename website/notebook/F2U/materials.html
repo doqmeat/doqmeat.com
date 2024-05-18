@@ -1,72 +1,112 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8"> 
-<title>F2U materials</title>
-<link rel="icon" type="image/x-icon" href="favicon.gif">
-<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-<link href="/notebook/body.css" rel="stylesheet" type="text/css" media="all">
-<link href="F2U.css" rel="stylesheet" type="text/css" media="all">
-			
-		<style>
-			body{
-				cursor:crosshair;
-			}
-			
-			.tiled-bg{
-background-position:center;
-display:inline-block;
-width:100px;
-height:100px;
-border:2px solid black;
-}
 
-textarea{
-display:block;
-}
-			</style>
-  </head>
-  <body>
+<head>
+	<meta charset="UTF-8">
+	<title>F2U materials</title>
+	<link rel="icon" type="image/x-icon" href="/notebook/favicon.gif">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/notebook/body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="F2U.css" rel="stylesheet" type="text/css" media="all">
+		<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+	<style>
+		body {
+			cursor: crosshair;
+		}
 
-<div id="wrapper">
-<p class="hide"><small><a href="/home" target="_parent">home</a> > <a href="/notebook" target="_parent">notebook</a> > F2U ></small>
-<center><h1>site materials</h1></center>
-	<p>credit is not necesary but a link back is appreciated!</p>
+		.tiled-bg {
+			background-position: center;
+			display: inline-block;
+			width: 100px;
+			height: 100px;
+			border: 2px solid black;
+		}
 
-<h2 id="bgs">backgrounds</h2>
-	
-	<p>click the bgs for the img to open in a new tab!</p>
-	
-<a href="/notebook/!g/grid-blue.png" target="_blank"><div class="tiled-bg" style="background:url(/notebook/!g/grid-blue.png)"></div></a>
-	
-		<a href="/notebook/!g/grid-green2.png" target="_blank"><div class="tiled-bg" style="background:url(/notebook/!g/grid-green2.png)"></div></a>
-	
-		<a href="/notebook/!g/grid-yellow2.png" target="_blank"><div class="tiled-bg" style="background:url(/notebook/!g/grid-yellow2.png)"></div></a>
-	
-		<a href="/notebook/!g/grid-pink.png" target="_blank"><div class="tiled-bg" style="background:url(/notebook/!g/grid-pink.png)"></div></a>
-		
-	  <a href="/notebook/!g/grid-purple.png" target="_blank"><div class="tiled-bg" style="background:url(/notebook/!g/grid-purple.png)"></div></a>
-	  
-	  <a href="/notebook/!g/grid-grey.png" target="_blank"><div class="tiled-bg" style="background:url(/notebook/!g/grid-grey.png)"></div></a>
-	
-    <a href="/!g/bg/yellobg.png" target="_blank"><div class="tiled-bg" style="background:url(/!g/bg/yellobg.png)"></div></a>
-    
-    <a href="/!g/bg/whiteline.jpg" target="_blank"><div class="tiled-bg" style="background:url(/!g/bg/whiteline.jpg)"></div></a>
-	
-	<h2 id="pix">pixels</h2>
-	
-<p><img src="/!g/web/materials/outlink2.png"> i made this little pixel to put on outbound links! 
-	<br><mark>example: <a href="https://neocities.org" target="_blank" class="outlink">neocities.org</a></mark></p>
-	
-	<details><summary>you can do so by setting up a class to put on your outbound links:</summary>
-		
-<textarea style="width:200px;height:80px;">.outlink:after {
+		textarea {
+			display: block;
+		}
+
+		.link {
+			text-decoration: none;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<div id="wrapper">
+		<p class="hide"><small><a href="/home" target="_parent">home</a> > <a href="/notebook" target="_parent">notebook</a> > F2U ></small>
+			<center>
+				<h1>site materials</h1>
+			</center>
+		<p>credit is not necesary but a link back is appreciated!</p>
+
+		<h2 id="bgs">backgrounds</h2>
+
+		<p>click the bgs for the img to open in a new tab!</p>
+
+		<a class="link" href="/notebook/!g/grid-blue.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/notebook/!g/grid-blue.png)"></div>
+		</a>
+
+		<a class="link" href="/notebook/!g/grid-green2.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/notebook/!g/grid-green2.png)"></div>
+		</a>
+
+		<a class="link" href="/notebook/!g/grid-yellow2.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/notebook/!g/grid-yellow2.png)"></div>
+		</a>
+
+		<a class="link" href="/notebook/!g/grid-pink.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/notebook/!g/grid-pink.png)"></div>
+		</a>
+
+		<a class="link" href="/notebook/!g/grid-purple.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/notebook/!g/grid-purple.png)"></div>
+		</a>
+
+		<a class="link" href="/notebook/!g/grid-grey.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/notebook/!g/grid-grey.png)"></div>
+		</a>
+
+		<a class="link" href="/!g/bg/yellobg.png" target="_blank">
+			<div class="tiled-bg" style="background:url(/!g/bg/yellobg.png)"></div>
+		</a>
+
+		<a class="link" href="/!g/bg/whiteline.jpg" target="_blank">
+			<div class="tiled-bg" style="background:url(/!g/bg/whiteline.jpg)"></div>
+		</a>
+
+		<h2 id="pix">pixels</h2>
+
+		<p><img src="/!g/web/materials/outlink2.png"> i made this little pixel to put on outbound links!
+			<br><mark>example: <a href="https://neocities.org" target="_blank" class="outlink">neocities.org</a></mark>
+		</p>
+		<details>
+			<summary>you can do so by setting up a class to put on your outbound links:</summary>
+			<textarea style="width:200px;height:80px;">.outlink:after {
 content:url(YOUR-IMG-HERE);
 padding-left:3px;
 vertical-align:top;
-}</textarea></details>
+}</textarea>
+		</details>
 
-	
-</div>
+		<h2 id="cur">cursors</h2>
+		<p>rei chiquita cursors <a title="click to download .cur file" href="/notebook/!g/rei-grey.cur"><img src="/notebook/!g/rei-chiquita-pix-blu.png" width="26"></a> <a title="click to download .cur file" href="/notebook/!g/rei-blu.cur"><img src="/notebook/!g/rei-chiquita-pix-grey.png" width="26"></a></p>
+		<details>
+			<summary>use custom cursors on your sites with this code:</summary>
+			<textarea>body {
+cursor: url(IMG-URL-HERE), auto;
+}
+		</textarea>
+		</details>
+
+	</div>
 </body>
+
 </html>
