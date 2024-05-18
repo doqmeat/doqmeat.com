@@ -78,6 +78,7 @@ main {
 }
 
 .plush {
+	width:100%;
 	background: rgb(163, 213, 225);
 	background: linear-gradient(76deg, rgba(163, 213, 225, 0.7) 0%, rgba(219, 169, 186, 0.7) 50%, rgba(230, 218, 158, 0.7) 100%);
 	/*	background: rgb(203, 200, 182, 0.8);*/
