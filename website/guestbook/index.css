@@ -76,7 +76,7 @@ footer p {
 	background: transparent;
 	border: none;
 	position: absolute;
-	top: -10%;
+	top: -30px;
 	left: 10%;
 }
 
@@ -90,6 +90,12 @@ footer p {
 	border: 1px solid var(--orange);
 	color: var(--coral);
 	background: white;
+}
+
+@media only screen and (max-width:500px) {
+	#pop-up {
+		margin-bottom: 20px;
+	}
 }
 
 /* Start https://www.cursors-4u.com */
