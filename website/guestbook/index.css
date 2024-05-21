@@ -1,0 +1,100 @@
+/*https://coolors.co/512d38-b27092-f4bfdb-ffe9f3-87baab*/
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fonts: gaegu-r, ms pgothic, arial;
+	--purple: #5E5275;
+	--lilac: #B19DBE;
+	--pink: #D38985;
+	--coral: #EB9E92;
+	--orange: #FDAC7F;
+}
+
+body {
+	font-family: var(--fonts);
+	background: url('bg.png');
+	font-size: 18px;
+	background-position: center top;
+	background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	margin: 0px;
+	color: white;
+}
+
+a {
+	color: var(--lilac);
+	background: white;
+	padding: 1px 2px;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+a:hover {
+	background: var(--lilac);
+	color: white;
+}
+
+h1 {
+	margin: 20px 0;
+	color: var(--orange);
+	font-family: morningtea, var(--fonts);
+	text-align: center;
+}
+
+main {
+	max-width: 600px;
+	margin: auto;
+
+}
+
+footer {
+	margin-top: 50px;
+	text-align: center;
+}
+
+footer p {
+	margin: 3px;
+}
+
+#guestbook {
+	position: relative;
+}
+
+#pop-up {
+	text-align: left;
+	border-radius: 10px;
+	display: none;
+	background: var(--orange);
+	max-width: 300px;
+	padding: 10px;
+}
+
+.deco {
+	background: transparent;
+	border: none;
+	position: absolute;
+	top: -10%;
+	left: 10%;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid var(--orange);
+	color: var(--coral);
+	background: white;
+}
+
+/* Start https://www.cursors-4u.com */
+* {
+	cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat345.cur), auto !important;
+}
+
+/* End https://www.cursors-4u.com */
