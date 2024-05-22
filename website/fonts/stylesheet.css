@@ -207,3 +207,8 @@
 	font-family: 'momo';
 	src: url(Momos-Regular.ttf)
 }
+
+@font-face {
+	font-family: 'small-pixel';
+	src: url(04B-24.TTF)
+}
