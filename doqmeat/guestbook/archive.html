@@ -1,0 +1,2235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Free guestbook - doqmeat's guestbook - 123Guestbook.com - Get your free guestbook now!</title>
+	<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+	<style type="text/css">
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		html {
+			overflow-y: scroll;
+
+		}
+
+		body {
+			margin: 0;
+			text-align: center;
+			font-family: Century Gothic, sans-serif;
+			font-size: 13px;
+			color: #000000;
+			background-color: ;
+
+			background-image: url("https://doqmeat.com/!g/bg/h096-2.gif");
+			background-attachment: scroll;
+
+		}
+
+		a {
+			padding: 1px 2px 1px 2px;
+			color: #000000;
+		}
+
+		.ad,
+		.d {
+			margin-bottom: 24px;
+		}
+
+		#logo {
+			margin: 0 0 10px 0;
+		}
+
+		.nom {
+			float: right;
+			text-align: right;
+			line-height: 1.3em;
+			margin: 0px;
+			padding: 0px;
+		}
+
+		.wrap {
+			margin: 0 auto;
+
+			text-align: center;
+			clear: both;
+		}
+
+		div.wrap {
+			width: 500px;
+		}
+
+		dl {
+			color: #000000;
+			overflow: hidden;
+			margin: 0 0 24px 0;
+			padding: 0;
+			-webkit-border-radius: 6px;
+			-moz-border-radius: 6px;
+			border-radius: 6px;
+		}
+
+		dl a {
+			color: #000000;
+		}
+
+		dt a {
+			color: #000000;
+		}
+
+		dt,
+		dd {
+			background: #C0EBAD;
+			padding: 6px;
+			text-align: left;
+		}
+
+		dd {
+			margin: 0;
+			padding: 12px;
+		}
+
+		.dark {
+			padding: 6px;
+			background: #F9EF9F;
+			color: #000000;
+		}
+
+		div.date {
+			float: right;
+			padding-right: 6px;
+		}
+
+		div.name {
+			padding-left: 6px;
+		}
+
+		.q {
+			border-left: 4px solid #F9EF9F;
+			padding: 0 0 6px 10px;
+			margin-bottom: 6px;
+		}
+
+		.q p {
+			margin: 6px 0 0px 0;
+			font-weight: bold;
+			font-size: 90%;
+		}
+
+		.r {
+			padding: 6px;
+			margin-left: 25px;
+			border-top: 1px dashed #FFFFFF;
+			-webkit-border-bottom-left-radius: 6px;
+			-moz-border-radius-bottomleft: 6px;
+			border-bottom-left-radius: 6px;
+		}
+
+		.r p {
+			margin: 6px 0 0 0;
+		}
+
+		.r a {
+			color: #000000;
+		}
+
+		.i {
+			padding-top: 6px;
+			text-align: right;
+			font-size: 80%;
+		}
+
+		.nav-bar {
+			overflow: auto;
+		}
+
+		form {
+			padding: 0 0 10px 0;
+			margin: 0;
+		}
+
+		.input,
+		#captcha input {
+			font-family: Century Gothic;
+			font-size: 13px;
+			border: 1px solid #999;
+		}
+
+		.input-group {
+			padding-bottom: 6px;
+		}
+
+		.fr .input-group {
+			float: left;
+			width: 50%;
+		}
+
+		.input-group label {
+			display: block;
+		}
+
+		.input-group-name {
+			padding-right: 6px;
+		}
+
+		.input {
+			width: 100%;
+			padding: 3px;
+		}
+
+		#captcha input {
+			width: 80%;
+			margin-left: 6px;
+		}
+
+		select {
+			font-size: 10px;
+			margin: 1px 0 0 1px;
+		}
+
+		.ubb button {
+			margin: 0 1px 0 0;
+			padding: 0;
+			height: 22px;
+		}
+
+		.center {
+			text-align: center;
+		}
+
+		#smilie_box {
+			display: none;
+			padding: 5px;
+			border: 1px solid #F9EF9F;
+			margin-bottom: 15px;
+			background: #C0EBAD;
+		}
+
+
+		#add_msg {
+			display: none;
+		}
+
+		#readonly_notice {
+			padding: 5px;
+			background: #C0EBAD;
+			color: #000000;
+			border: 1px solid #F9EF9F;
+			margin-bottom: 10px;
+		}
+
+		#box {
+			position: absolute;
+			display: none;
+			margin: -50px 0 0 10px;
+			background: #fff;
+			font: 12px Arial;
+		}
+
+		#box,
+		#box a {
+			color: #000;
+		}
+
+		#box #boxwrap {
+			width: 440px;
+			border: 1px solid #999999
+		}
+
+		#boxwrap .c {
+			padding: 10px;
+		}
+
+		#box h2 {
+			background-color: #eee;
+			margin: 4px 4px 0 4px;
+			padding: 2px;
+			font-size: 16px;
+		}
+
+		#box .bottom {
+			text-align: right;
+			padding: 10px 10px 0 0;
+		}
+
+		#box p {
+			margin: 15px 0 10px 0;
+			padding: 0;
+		}
+
+		#pane_ubb textarea {
+			margin: 0;
+		}
+
+		.ubb button {
+			margin: 0 1px 0 0;
+			padding: 0;
+			height: 22px;
+		}
+
+		.footer_txt,
+		.footer_txt a,
+		.footer_txt a:hover {
+			color: #000000 !important;
+		}
+
+		.body {
+			padding: 10px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<p class="wrap"><img src="https://doqmeat.com/!g/web/1icon.png" id="logo" /></p>
+	<div class="wrap">
+		<p>22.may.24: this is an archive of my <a href="https://doqmeat.123guestbook.com" target="_blank">123guestbook</a> page!</p>
+
+		<dl class="nav-bar">
+			<dd>
+
+				&laquo; <a href="https://doqmeat.com/guestbook" target="_self" rel="noopener noreferrer nofollow">back to current guestbook</a>
+			</dd>
+		</dl>
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:22pm 05-21-2024</div>
+				<div class="name">des </div>
+			</dt>
+
+			<dd class="msg">
+				since 123guestbook is closing, <a href="http://doqmeat.com/guestbook" target="_blank" rel="external nofollow">i made a guestbook page here!</a> in the future i'll archive all of these messages on my site <img src="/img/smile.gif" /> for now this guestbook will be in read only mode.
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">6:34pm 05-11-2024</div>
+				<div class="name">Grub </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://your-local-grubdog.neocities.org/<p>How did you found my site?</p>pik-ring
+				</div>
+			</dd>
+			<dd class="msg">
+				Been going through all the pik-ring members. Your site looks really cool! I like how soft and lively it all is, and it's organized well. Was a lot of fun to look through ^^
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">4:19pm 05-11-2024</div>
+				<div class="name">Vulpix </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://ocha.cafe<p>How did you found my site?</p>Guestbook comment
+				</div>
+			</dd>
+			<dd class="msg">
+				Hey, Des! Glad I found a second to look through your site! I love the sheer amount of content you have up; especially your photo gallery since I love to take photos, myself! You also have a lovely art style!<br />
+				<br />
+				Feel free to reach out any time! <img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:08pm 05-18-2024</b>
+				<p>thank you so much! i honestly just love taking pics of small moments and keeping them. makes life a bit more fun!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:45pm 04-24-2024</div>
+				<div class="name">mimi </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://neet-elite.net/home<p>How did you found my site?</p>oh you know... <img src="/img/biggrin.gif" />
+					<p>Current favorite song:</p>Mario Artist: Talent Studio - Title Theme
+				</div>
+			</dd>
+			<dd class="msg">
+				hi des!!!! imagine im petting ur head right now. love the look of ur site rn !! im happy ur still around &lt;3
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:56am 04-25-2024</b>
+				<p>:&gt; virtual hug for you mimi</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">4:48pm 04-16-2024</div>
+				<div class="name">ode </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Current favorite song:</p>stop and go by the regrettes!
+				</div>
+			</dd>
+			<dd class="msg">
+				your site is so cool! this is going to be so inspirational for me when I start making my own &gt;:3 makes me want to start so bad
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:21pm 04-17-2024</b>
+				<p>i'd love to visit your site if you ever make one! i'm very happy to be able to inspire you, thank you!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:46pm 04-12-2024</div>
+				<div class="name">cyclopamine </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>cyclopamine.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				HAPPY SITE BIRTHDAY!!!! i love ur site, its been a big inspiration <img src="/img/biggrin.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 2:38am 04-13-2024</b>
+				<p>very happy to hear that!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:08pm 04-11-2024</div>
+				<div class="name">celi </div>
+			</dt>
+
+			<dd class="msg">
+				im coming back here again after seeing it on my laptop lol but once again, i love your little corner of the internet!! can't wait to see what else you do with ur site &lt;3
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 2:36am 04-13-2024</b>
+				<p>AWEE CELI ❤️ muchas gracias :3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:57am 04-11-2024</div>
+				<div class="name">kaf </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://sea-of-colors.neocities.org/<p>Current favorite song:</p>Heaven Pierce Her - Danse Macabre
+				</div>
+			</dd>
+			<dd class="msg">
+				The moment I saw the madoka background I had to engage LOL
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:20pm 04-17-2024</b>
+				<p>FELT</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:13pm 03-29-2024</div>
+				<div class="name">pam </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>pameluft.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				visiting your site feels like getting a warm hug :') such beautiful nostalgic images and color palettes
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:52pm 03-28-2024</div>
+				<div class="name">ellen </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://shydeer.neocities.org/<p>Current favorite song:</p>postcard - balance and composure
+				</div>
+			</dd>
+			<dd class="msg">
+				your website is sooooooo so good.......i hope someday i'll be at your level *___* both the coding expertise and the aesthetic sophistication........just amazing work
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:28pm 03-23-2024</div>
+				<div class="name">Megan </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://acetrainermeg.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				Cool site! Mizu is cute and I love the story behind him.
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:06am 03-29-2024</b>
+				<p>mizu &lt;3 ty for the comment!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:24pm 03-18-2024</div>
+				<div class="name">Alys </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>alysrealm.neocities.org<p>Current favorite song:</p>What You Know- Two Door Cinema Club
+				</div>
+			</dd>
+			<dd class="msg">
+				I love your page so much! It's so beautifully designed+ I love the graphics!! I've been lurking for a while so I think this is my first time writing a msg here but wowza! pls keep it up i enjoy looking around sm! <img src="/img/bouncey.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 5:47pm 03-24-2024</b>
+				<p>thank you for your sweet msg alys!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:08am 03-03-2024</div>
+				<div class="name">JohnDavid </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://johndavid.neocities.org/<p>Current favorite song:</p>Hashigeyo - Can I Have A Word
+				</div>
+			</dd>
+			<dd class="msg">
+				Went through your music pages and seeing so many of my favorites. Excited to try out some of the music I didn't recognize. Rest of the site also amazing of course!
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:50am 02-25-2024</div>
+				<div class="name">ふ </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://futen.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				your website is so cool; theres so much to see everywhere, its very intricate and colourful, and it really shows how much care and time youve put into it and how much of yourself youve put in as well. really loved you &quot;little prince&quot; drawing, and your photos are very nice. maybe biased, but the photo of mizu and the different photos of flowers are my favourite. your username is also sick.
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:01am 02-12-2024</div>
+				<div class="name">Nove </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://novas-nonsense.neocities.org/<p>Current favorite song:</p>literally everything by Murder Person For Hire!!!
+				</div>
+			</dd>
+			<dd class="msg">
+				your website is so cool!!! <img src="/img/biggrin.gif" />DD<br />
+				i think i'm gonna take a lot of inspiration from it :&#093;<br />
+				i think it might be my favorite website i've seen so far!!! /gen<br />
+				i love your cat shrine :&#093; i might make a one for my dog!!<br />
+				i also love your photography and collections!!! also your art looks so cool!!!<br />
+				your whole website is just so cool!!!!
+			</dd>
+		</dl>
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:40pm 01-30-2024</div>
+				<div class="name">mima </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://sylum.web.fc2.com/<p>Current favorite song:</p>Magic Touch - KISS
+				</div>
+			</dd>
+			<dd class="msg">
+				Your site is so adorable! It feels like a breath of fresh air. I love the layout and look of your music section. Keep it up! <img src="/img/perfect.gif" />
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">7:38pm 01-29-2024</div>
+				<div class="name">mala </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://ophanimkei.com/<p>Current favorite song:</p>sakura kiss for string
+				</div>
+			</dd>
+			<dd class="msg">
+				<img src="/img/rose.gif" /> your website is so darling. i'm having a wonderful time exploring. such love poured into it- i hope to have as much love in my own site someday. your layouts are really creative and amazing, and there's so much writing to read! really wonderful
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:38pm 01-23-2024</div>
+				<div class="name">futureisfailed </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://erbatur.web.fc2.com/<p>Current favorite song:</p>MIDInco - Confession
+				</div>
+			</dd>
+			<dd class="msg">
+				Cute website :&gt;
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 5:09pm 03-24-2024</b>
+				<p>omg thank uuu! :&gt;</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:15am 01-14-2024</div>
+				<div class="name">wyrm </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Current favorite song:</p>cosmo sheldrake - solar waltz
+				</div>
+			</dd>
+			<dd class="msg">
+				found your site whilst scrolling on the neocites search! genuinely your site is really lovely, the love you put into each page is really admirable <img src="/img/biggrin.gif" /> !!! hopefully one day i'll make a site of my own too &#091;:<br />
+				<br />
+				p.s i love your cat he is very cute
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:55pm 03-24-2024</b>
+				<p>thank you!!! i hope to see it one day <img src="/img/smile.gif" /></p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:33pm 01-08-2024</div>
+				<div class="name">rb </div>
+			</dt>
+
+			<dd class="msg">
+				<span style="font-family: verdana">My girlfriend showed me your site and it's so awesome, I hope I can make something as cool as this one day !!!</span><img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:53pm 03-24-2024</b>
+				<p>this is so cuteee... whatever you make i'm sure it will be awesome!!! i hope to see it one day!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:01am 01-04-2024</div>
+				<div class="name">telle </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://catcakes.neocities.org<p>Current favorite song:</p>been listening to anything on the piano...
+				</div>
+			</dd>
+			<dd class="msg">
+				hi! been checking your site since it was launched back in 2023 and im still blown away by how much its improved since then. the page layouts are really lovely on the eyes and your pages are always super fun to look through and read. your gaming logs and photobook page are especially fun to peruse. ill be sure to check back every now and then so ill see you around <img src="/img/biggrin.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 10:44pm 01-04-2024</b>
+				<p>i am super happy to hear you've been coming back to my site! thank you very much for your lovely visits (๑&gt;ᴗ&lt;๑)</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:32pm 01-01-2024</div>
+				<div class="name">Dryad </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website:</p>https://cyberneticdryad.neocities.org/<p>Current favorite song:</p>June - Florence + The Machine
+				</div>
+			</dd>
+			<dd class="msg">
+				I'm so in love with your layouts and graphic organization! It makes me want to stretch myself a little more with the graphics on my own page. Thank you for sharing all that you have, and happy web weaving!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 11:44am 01-02-2024</b>
+				<p>YAY thank you so much! i'm glad my site has been able to inspire you :3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">4:47pm 12-11-2023</div>
+				<div class="name">Wren </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://wrender.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				I love your website sooo much, it was a huge inspiration to me and your resources page was essential for my website :&#093;
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:26pm 12-16-2023</b>
+				<p>super happy to hear that it has helped you out!! tysm for the message <img src="/img/smile.gif" /></p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">10:36pm 12-10-2023</div>
+				<div class="name">will </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://willdotjpg.gay
+				</div>
+			</dd>
+			<dd class="msg">
+				i am so enamored with your site!!! you've got so much going on, it's so cool!
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">6:24pm 12-10-2023</div>
+				<div class="name">laura </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>willowworld.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT DOQMEAT !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:23am 12-10-2023</div>
+				<div class="name">chara </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://hunipyon.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				des!! i saw your message on my guestbook a few days ago...i wanted to let you know how happy it made me..! i even cried a bit T__T i love your site so much and i can't believe that i was an inspiration to your beginnings. every time i seem to have free time i always find myself reading your site, even pages i've already read. i am in awe that in such a short amount of time you were able to create such a beautiful site!! thank you for such a sweet message on my guestbook. i can't stress enough how happy it makes me knowing i was able to positively impact your life. here's to many more months of old web and neocities! have a wonderful day! &lt;3
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:25pm 12-16-2023</b>
+				<p>OMG chara &lt;3333333 thank you for the lovely message :3 hope you had a wonderful day too!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:16pm 12-07-2023</div>
+				<div class="name">Mei </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://sylvanianforest.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				i love your site! i specially loved all the pixels and decoration!!!
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:57am 12-05-2023</div>
+				<div class="name">Venture </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://ventureintotheknown.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				It's like dropping into a internet time paradox, both a look into the past whilst being relevant to modern events, I absolutely adore it!
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">12:56am 11-19-2023</div>
+				<div class="name">august </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://gougou772.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				I ABSOLUTELY LOVE YOUR SITE SO SO MUCH!! your music page especially is absolutely amazing..... you have such good taste in music, I love how beautifully decorated so many amazing albums and songs are on your page
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:18pm 12-16-2023</b>
+				<p>awwwwwwe thank you so much!! i'm super happy you think so!!! that page is one of my favorites from my site. and i'm also looking forward to your site! it looks super cool</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:09am 11-12-2023</div>
+				<div class="name">za </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://kengo.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				your website is so beautiful &amp; full of love des!!! i'm using your notebook template for a little diary &amp; photographs section (sorta like a photobook) &amp; i want to extend my thanks plus love for ur site!!!! fellow orbit <img src="/img/rose.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:14am 11-13-2023</b>
+				<p>wahh this is so sweet, thank you! i visited your site and you have done a wonderful job with the template + your photos look so cool!!! i'll def be visiting it in the future!</p>
+			</dd>
+
+		</dl>
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:04pm 11-01-2023</div>
+				<div class="name">seven </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://halcyyyon.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				ur site is so cute!!!! so many small treats and decorations on each page i'm bookmarking to steal ideas from &gt;<img src="/img/biggrin.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 3:04pm 11-02-2023</b>
+				<p>he he thank you!!!! i love seeing other sites take inspiration from my own!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:54am 10-25-2023</div>
+				<div class="name">Ares </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://hellstarares.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				just wanted to say i really love your site, it's super fun and creative! ive also been using your notebook template and its been super helpful to me, thank you sm for making it <img src="/img/rose.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 3:03pm 11-02-2023</b>
+				<p>thank you!!! im very happy my notebook template has been very helpful to you!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:49pm 10-22-2023</div>
+				<div class="name">JJ </div>
+			</dt>
+
+			<dd class="msg">
+				&#091;deleted&#093;
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 11:34pm 10-22-2023</b>
+				<p>my guestbook is not the place for calling out other people or things of that nature, hence why i deleted your message. i'd prefer to be contacted about those things through e-mail, which is visibly linked on my landing page and homepage, if you really want to have a conversation. thanks!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">6:46am 10-15-2023</div>
+				<div class="name">zawieja </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>2044.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				as a cat lover I absolutely love your website!! so many cats everywhere! I love the about page especially, it's so nicely done - and I loved being jestered by a cat there as well &lt;3
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 11:41pm 10-22-2023</b>
+				<p>:33 i'm glad people have been having a pleasant surprise with the jester cat!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:12pm 10-10-2023</div>
+				<div class="name">jeith </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://jeith.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				long overdue, but i love this site so much!! it's crazy seeing how many pages you've created over the past few months and how creative all the layouts are - you can tell alot of time and love went into making the site <img src="/img/smile.gif" /> i especially love the mizu page!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 11:45pm 10-22-2023</b>
+				<p>thank you so much jeith!!! i remember you were one of those first couple of mutuals i had on neocities so i really appreciate your message. the site means a lot to me and i'm glad it shows! mizu :3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:04pm 09-13-2023</div>
+				<div class="name">pom </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://pomelo.lol/
+				</div>
+			</dd>
+			<dd class="msg">
+				omg!! i love your site, so much content to explore here. i especially love the video game page! its so nicely organized! also the safe spot is very cozy &lt;3
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:06pm 09-17-2023</b>
+				<p>thank you so much!!!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:50pm 09-12-2023</div>
+				<div class="name">mothman </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://moethman.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				ABSOLUTELY PAWESOME SITE
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:13pm 09-05-2023</div>
+				<div class="name">☺ </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://ugly74rg37.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				Great site.
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:05am 08-31-2023</div>
+				<div class="name">sabrin </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://sabrin.party/
+				</div>
+			</dd>
+			<dd class="msg">
+				hello omg!! first of all thanks for ur sweet message on my page! second of all i am currently BLOWN AWAY by how many interests we have in common so im sorry if i sound too excited!! your website is gorgeous and i love your art!! the oliviahye collage is my favorite &lt;33 i'm an orbit too! you've inspired me to create a page dedicated to my music interests. i really love what you have for yours! i hope you have a wonderful day and i'll be surely visiting your site again for new updates!! <img src="/img/biggrin.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:40pm 08-31-2023</b>
+				<p>OMG hello fellow orbit!!!! thank you so much for the sweet msg &lt;3 i had a lot of fun doing that collage! AND IM HAPPY i got to inspire you. i cant wait to visit it in the future when its ready :&#093; have a nice day too!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:31pm 08-30-2023</div>
+				<div class="name">moth </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>interviewinggods.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				Hi there!! your site looks super cool- I'm so interested in all the little details you put into it, especially on the homepage with the falling cats. Your mixing of the different programming languages creates such an awesome space. I hope you have a nice day!
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">4:20pm 08-30-2023</div>
+				<div class="name">grim </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>bisuko.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				thank you so much for stopping by!! i love your site too!! &lt;3 it's so cute, and there's so much to read and read!! the way every page is set up individually is so nice, so much thought was put into everything Q3Q beautiful!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 6:25pm 08-30-2023</b>
+				<p>thank you very much &lt;33 im very happy to hear that! your site was very wonderful to me as well and it even inspired me for some future pages i wanna have on my site :3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:17am 08-30-2023</div>
+				<div class="name">abelpom </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://scouts-basement.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				awesome site!! there's so much to see and do - i especially love the notebook page, it's so unique! also Mizu is absolutely adorable ^_^<br />
+				<br />
+				(btw. i came from the psycho helmet webring and you have a very good taste in characters fnrjnsdjk)
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 6:06pm 08-30-2023</b>
+				<p>YAY thank you so much!!! &lt;333 (^≗&omega;≗^)<br />
+					(tome and teru enjoyers rise!!!)</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">5:52pm 08-26-2023</div>
+				<div class="name">luna </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>pixelmoondust.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				ooh, your site is sooooooo wonderful omg &lt;3 i love sites that are so clearly made with love and yours makes me so happy to see :3 i especially love all the cats!!! it makes me so nostalgic for the older days of personal websites, when everything was unique to who made it~ 💖
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:48pm 08-28-2023</b>
+				<p>thank you very much luna!!! i think your site is wonderful as well &lt;3 im glad you appreciate all the kitties</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:50am 08-25-2023</div>
+				<div class="name">Cazzy Smith </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://cazzysmith.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				I love your website! It's so beautiful and interesting around here, and I deeply appreciate all the cats.
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 6:07pm 08-30-2023</b>
+				<p>thank you!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">10:13pm 08-24-2023</div>
+				<div class="name">Moo </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>mooeena.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				Your site is delightful! I especially loved the quilting bees retrospective. I've added your button to my site ^_^
+			</dd>
+
+
+		</dl>
+
+		<dl>
+			<dt class="dark">
+				<div class="date">4:30pm 08-22-2023</div>
+				<div class="name">Lana </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://porce-lana.blogspot.com/
+				</div>
+			</dd>
+			<dd class="msg">
+				I've been listening to your DnB playlist on Spotify without knowing it was yours. I'm so into those drums right now, and shoegaze songs, then I read your recent log about it. Realy love your listening log, thinking on doing something like this too... Your blog is so inspiring! Love the way all pages are different and has a lot of things to read and see.
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:34am 08-23-2023</b>
+				<p>thank you so so much!! the DnB playlist is such a crazy coincidence too... i'm glad you have found my site inspiring &lt;3 it makes me very happy to hear</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">5:56pm 08-20-2023</div>
+				<div class="name">cerises </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>1000cerises.neocities.com
+				</div>
+			</dd>
+			<dd class="msg">
+				love how nostalgic your front page is&lt;3 and your site is soo elaborate and fun to navigate omg <img src="/img/rose.gif" /><br />
+				<br />
+				have a good day&lt;33
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:50pm 08-28-2023</b>
+				<p>omg thank u very much i hope you have a nice day as well!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:31am 08-20-2023</div>
+				<div class="name">trinity </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://trinityexe.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				love how your personality just explodes out of the screen the second I open your main page. Love everything about it <img src="/img/laugh.gif" />
+			</dd>
+
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:37am 08-20-2023</div>
+				<div class="name">sasa </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>sasant.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				i LOVE your site omg it's so pretty, and I'm so happy to see another spanish speaking fellow <img src="/img/hail.gif" /> i also love loona and my bias is gowon ??!!!!! gosh i feel so at home in here!!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 3:20am 08-20-2023</b>
+				<p>OMG YESSS TASTE hi hi hola!!!! un placer conocerte!! i'm very happy to hear that, thank you very much &lt;3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:19pm 08-18-2023</div>
+				<div class="name">Mika </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>mikaorangeart.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				I absolutely love what you've done with the graphics here!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:17am 08-23-2023</b>
+				<p>thank u!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">6:07pm 08-17-2023</div>
+				<div class="name">juno </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://fuchi.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				your website is so fun and cool! i love visiting it <img src="/img/biggrin.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 3:00am 08-20-2023</b>
+				<p>YAYYYY thank you juno!!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:06pm 08-16-2023</div>
+				<div class="name">vurren </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://vurren.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				oh my gosh your website is sososo cool... i love all the little pages and tidbits you have!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 2:59am 08-20-2023</b>
+				<p>thank you vurren!!! &lt;3 your site is super cool as well</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:02pm 08-11-2023</div>
+				<div class="name">soupie </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://soupie.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				HII came here from the guestbook message you left on my site and can i just ?!!? your website is so wonderful and fun omg. the page dedicated to your cat is without a doubt the best thing on the internet. also, i love your music taste (lucy!! love to see them <img src="/img/biggrin.gif" />). sending love!!!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:00am 08-12-2023</b>
+				<p>HI hi hi!!! omg im so happy you enjoyed my mizu page!!! it is one of my fav pages on my site as well. AND YAY lucy!!! i love their music a whole lot, thank you for checking my site out :&#093;<br />
+					hope you're having a nice day!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">10:46pm 08-07-2023</div>
+				<div class="name">fedya </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://fedyafunk.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				came over to check your site from your msg on my guestbook, and OMG!! love how detailed everything is! your video game page is really cool, with how you can sort the games by tags (i've recently started playing fortnite!) also really excited to see your thoughts on fallout new vegas! Your art is really cute too!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 11:57pm 08-11-2023</b>
+				<p>omg thank you!!! i think i might have to restart my playthrough of new vegas cus my save seems to be corrupted or something JDFSLK but lucky for me i wasnt that far in the game. still i had really enjoyed what i had seen so far!<br />
+					<br />
+					ty for the nice msg, fedya!
+				</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:29pm 08-07-2023</div>
+				<div class="name">pierce </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>code-cafe.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				Your site is super cool! i love everything about it<br />
+				P.S.: hope you get well soon
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 11:51pm 08-11-2023</b>
+				<p>thank you for the well wishes! i am feeling quite better</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">5:59am 07-30-2023</div>
+				<div class="name">ciel </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>ciel.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				this is such a cool site!! i love the mental health links and all the cats ^.w.^
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:47am 08-02-2023</b>
+				<p>thank you ciel!!! :3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">9:16pm 07-29-2023</div>
+				<div class="name">Aevisia | TheCozyCat </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://www.thecozy.cat
+				</div>
+			</dd>
+			<dd class="msg">
+				I love your website! This is such a creative space! I confess, I read through a bit of your diary and safe space pages and I'm so sorry to hear you're going through some difficult stuff.I went through some difficult spirals the past few years and one practice that helped me tremendously in healing is Shadow Work. I'll warn you, it is not an easy practice. It involves a lot of self reflection, reflecting back on childhood and past traumas, and really getting to the roots of where our negative feelings stem from and healing them. Things like feelings of unworthiness, worthlessness, self hatred, etc. all have a root. This process allows a lot of old wounds and pain to resurface so it can be properly processed and worked through to achieve healing and release. Anyways, I just thought I'd mention it in case you've never heard of it and it maybe become something you find to be useful! Feel free to reach out to me anytime if you're interested to learn more about it as I don't want to overstep boundaries. <img src="/img/smile.gif" /> If you choose to do that, I'd be happy to point you to some great resources if it's something you're interested in exploring further.&hearts;<br />
+				<br />
+				I hope you're having a great weekend!<br />
+				<br />
+				- Aevisia<br />
+				www.thecozy.cat<br />
+				<br />
+				P.S. I found you through the MelonLand Surf Club Webring!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:47am 08-02-2023</b>
+				<p>Thank you for the lovely message, Aevisia! shadow work sounds like an interesting concept so im willing to give it a try at some point. i really appreciate it &lt;3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">5:13pm 07-29-2023</div>
+				<div class="name">meowbark </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://meowbark2000.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				love your site everything about it is so calming so many cats around too its very wonderful ^_^
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:29am 08-02-2023</b>
+				<p>i love cats very much!!! im glad you found my site calming &lt;3 ty!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">2:47am 07-29-2023</div>
+				<div class="name">gemma </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://nimravidae.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				thank you for the message on my guestbook!! your site's so lovely as well, &amp; it was a joy to wander through:&#093;
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:28am 08-02-2023</b>
+				<p>thank you gemma!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">4:47pm 06-25-2023</div>
+				<div class="name">Harley </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://cherrycloudchiffon.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				Aww, your site looks super fun! I like how honest you are with your writing in your diary ^^ It's relatable!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:06pm 07-19-2023</b>
+				<p>omg thank you so much &lt;333</p>
+			</dd>
+
+		</dl>
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:22pm 06-23-2023</div>
+				<div class="name">Arcadia </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://staticattic.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				So so cute!!! I love your site, its so full of personality! <img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 9:15pm 06-24-2023</b>
+				<p>thank youu!~ your site is pretty cool too</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:59pm 06-21-2023</div>
+				<div class="name">sum </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://starrchild.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				SUCH A COOL SITE !!<img src="/img/perfect.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 9:13pm 06-24-2023</b>
+				<p>thankiess :&#093; !</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:53am 06-20-2023</div>
+				<div class="name">lisa </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://maggotgirl2002.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				<span style="font-family: times new roman"><br />
+					I think your site is so cool. i think you have such wonderful content, and such beautiful pages and style. i really admire you, and i think you are a very nice person. i love seeing what you come out with next, and i hope you know i appreciate your support, and i think you are truly talented and i wish the best for you.<br />
+					<br />
+				</span>
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 9:11pm 06-24-2023</b>
+				<p>thank you so much lisa &lt;333 i absolutely love your content a lot as well! i think your site is very beautiful and love the way you write. im also wishing you the best &lt;3 thank you for the lovely msg</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">12:34am 06-20-2023</div>
+				<div class="name">princss </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>princss.online
+				</div>
+			</dd>
+			<dd class="msg">
+				ur site rules so much i love how colorful it isand bright and kind of playful the theme is. layout is aweomse had a fun time going thru ur listening song log thingy! definitely going to do something like that for my music page as well so thx for the inspo
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 9:06pm 06-24-2023</b>
+				<p>OMG im happy to have inspired you!!! thank you for the msg &lt;3 i look forward to checking out your music page once its done!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:33pm 06-19-2023</div>
+				<div class="name">viter </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://lovelystar.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				i literally love sm your site!!!!!!1! its amazing! your music taste and organisation is everythingggg, yukika??? youle??? and i'm so reading that notion intro omgggg. i'm amazed by it &lt;3
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 8:58pm 06-24-2023</b>
+				<p>thank you so much!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">11:54pm 06-10-2023</div>
+				<div class="name">Mika </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>mikaorangeart.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				Your site is ah-dorable. I love your little Minecraft cat mascot. I took him for a nice walkies across your homepage.
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:08am 06-12-2023</b>
+				<p>ah thank you!!! im happy that people take him on walks :&#093;</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">12:43pm 06-10-2023</div>
+				<div class="name">ari </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>none
+				</div>
+			</dd>
+			<dd class="msg">
+				this is by far my favourite website i've discovered on neocities thus far. every aspect of it makes me feel so at ease, i've not been well lately and this is helping a lot. thank you so much for creating this.
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 12:07am 06-12-2023</b>
+				<p>thank you so much &lt;3 i havent been feeling very well either, so i am very glad that it could help you! take care ari!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:12pm 06-06-2023</div>
+				<div class="name">mouse </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://aisforaardvark.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				your site is so cool!! i cant wait to explore <img src="/img/smile.gif" />)
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 8:28pm 06-11-2023</b>
+				<p>thank you so much!!!!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:36pm 06-05-2023</div>
+				<div class="name">alexandra </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://xandra.cc
+				</div>
+			</dd>
+			<dd class="msg">
+				love your site, and happy belated birthday! loved exploring your site. btw i would do anything for scoobert
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 2:48am 06-06-2023</b>
+				<p>love scoobert as well &lt;3 thank you!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">12:07pm 06-03-2023</div>
+				<div class="name">em </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://trollmama44.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				happy late birthday!!! and thank u for adding my button and adding to my guestbook (and being mutuals...) your like the first person to interact w me on this site and i thank u sm!!!!! i hope ur birthday was great!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 2:47am 06-06-2023</b>
+				<p>thank uuu &lt;3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:17am 05-30-2023</div>
+				<div class="name">luc </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>freakphone.net
+				</div>
+			</dd>
+			<dd class="msg">
+				:-D thank you for the follow back! I really enjoy your website and how lovingly crafted it is. had a lot of fun visiting your music page and reading the posts there in particular, makes me want to make my own listening log!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 6:28am 05-30-2023</b>
+				<p>omg im so happy to hear that!!!! logging in the music that i listen to is one of my fav activities so im glad i can inspired to make your own as well!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">10:09pm 05-29-2023</div>
+				<div class="name">em </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://trollmama44.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				i love ur website so much !!!!! i gave the mascot of ur website maybe a little too many treats... (srry &gt;;3) i added ur button to my website!!!! again ur website is so cool!!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 6:25am 05-30-2023</b>
+				<p>THANK YOU!!!! i cant wait to see how your site evolves! it looks so cute so far</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">10:27pm 05-28-2023</div>
+				<div class="name">sophia </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://monchhichi.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				cool site! say hi 2 mizu for me <img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 2:28am 05-29-2023</b>
+				<p>i will!!! tysm!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">12:02am 05-24-2023</div>
+				<div class="name">coco </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://pixelsafari.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				thanks for following my site!!! yours is awesome!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:10am 05-24-2023</b>
+				<p>thank u!!! love your site as well it was very useful &lt;3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:52pm 05-22-2023</div>
+				<div class="name">candle </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://candlelitsmiles.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				this website is really cute <img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:09am 05-24-2023</b>
+				<p>&lt;33</p>
+			</dd>
+
+		</dl>
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:37am 05-19-2023</div>
+				<div class="name">zed </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://ohrade.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				love ur art man. your websites got a cool vibe to it!!!! i feel like the music u chose really suits it
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 1:45pm 05-19-2023</b>
+				<p>&lt;333 thank you!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">7:09pm 05-02-2023</div>
+				<div class="name">rj </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://optimism.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				your site is so cute and calming! your art is really cool too!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:45pm 05-02-2023</b>
+				<p>thank you so much &lt;3 that means a lot to me!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">5:42pm 05-02-2023</div>
+				<div class="name">nebula </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://nebula-galaxy.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				i love your site so much!!!!! cats are the best <img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:43pm 05-02-2023</b>
+				<p>:3 im glad you like it!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">3:51pm 05-02-2023</div>
+				<div class="name">Taterinx </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://taterinx.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				This site is so cute, I love every bit of it. Definitely glad to see another person on Better Call Saul, you'll never regret sticking it out till the end!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:37pm 05-02-2023</b>
+				<p>tysm and yes!! i've been having so much fun (and stress...) watching it since i rewatched breaking bad last year!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">5:51am 05-02-2023</div>
+				<div class="name">Noah </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>scarecrowkid.net
+				</div>
+			</dd>
+			<dd class="msg">
+				i'm so happy you like my color choices! they're my favorite <img src="/img/rose.gif" /> your website is SO fun, especially your new video game page. It's so cool clicking on everything!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 7:42pm 05-02-2023</b>
+				<p>thank you!!!</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">12:59am 04-30-2023</div>
+				<div class="name">Ellie </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://myfancybear.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				Your website is so cute and I especially loved your listening log. <img src="/img/perfect.gif" /> I'll be checking back often! <img src="/img/smile.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 4:23am 04-30-2023</b>
+				<p>im so happy to hear that!! tysm &lt;3</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">1:52am 04-28-2023</div>
+				<div class="name">cyrus </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>shadowtriad.neocities.org
+				</div>
+			</dd>
+			<dd class="msg">
+				<img src="/img/cheers.gif" /><img src="/img/cheers.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 6:52pm 04-28-2023</b>
+				<p>( ^O^)_旦~ ~旦_(^O^ )</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">10:20pm 04-27-2023</div>
+				<div class="name">Elliot </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://snipchu.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				HI DES!!!!!
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 10:42pm 04-27-2023</b>
+				<p>HI elliot!!! ^-^</p>
+			</dd>
+
+		</dl>
+
+
+
+		<dl>
+			<dt class="dark">
+				<div class="date">8:52pm 04-27-2023</div>
+				<div class="name">mimi </div>
+			</dt>
+			<dd>
+				<div class="q">
+					<p>Website url:</p>https://awhe.neocities.org/
+				</div>
+			</dd>
+			<dd class="msg">
+				HELLO DES i love ur site and am wishing u well always !!! &lt;333 <img src="/img/perfect.gif" />
+			</dd>
+
+
+			<dd class="r">
+				<b>Replied on: 9:59pm 04-27-2023</b>
+				<p>thank u mimi take care as well!</p>
+			</dd>
+
+		</dl>
+
+		<p class="footer_txt">This free guestbook is brought to you by: <a href="http://www.123guestbook.com/">123Guestbook.com</a></p>
+	</div>
+
+
+</body>
+
+</html>
