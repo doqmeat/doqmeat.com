@@ -1,0 +1,94 @@
+:root {
+	--fonts: gaegu-r, ms pgothic, arial;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 17px;
+	font-family: var(--fonts);
+	margin: 0;
+	text-align: center;
+	color: #ca5e2c;
+	background: #fad97c;
+	scrollbar-color: #fcdac8 #f5f2ea;
+	background: url("/notebook/!g/grid-mustard.png");
+	background-size: 6px;
+	background-position: center;
+}
+
+::selection {
+	background: #fad97c;
+	color: firebrick;
+}
+
+h1 {
+	letter-spacing: 5px;
+	font-size: 40px;
+	line-height: 60px;
+	font-family: bm-neko, var(--fonts);
+}
+
+li {
+	text-align: left;
+	margin-bottom: 10px;
+}
+
+code {
+	font-family: consolas;
+	font-size: 14px;
+	color: #6A5C3E;
+	border: 1px solid #6A5C3E;
+	border-radius: 10px;
+	padding: 0 5px;
+}
+
+a {
+	font-family: , var(--fonts);
+	color: #634937;
+	transition: 0.5s;
+	text-decoration: none;
+}
+
+a:hover {
+	border-radius: 5px 5px 0 0;
+	background: #fcd7c7;
+}
+
+h1,
+footer {
+	margin: 1%;
+}
+
+main {
+	margin: auto;
+	max-width: 900px;
+	padding: 10px;
+	overflow: auto;
+	border-radius: 20px;
+}
+
+main,
+footer {
+	word-spacing: 9px;
+	line-height: 20px;
+}
+
+footer p {
+	background: #fad97c;
+	margin: 1px;
+}
+
+#s-m-t-tooltip {
+	background: brown;
+	color: white;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	font-family: gaegu-l;
+	max-width: 300px;
+	border-radius: 20px;
+}

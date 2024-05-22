@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<!-- 
+				 |\__/,|   (`\
+				 |_ _  |.--.) )
+				 ( T   )     /
+				(((^_(((/(((_/
+				coded with love by des <3
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>(o゜▽゜)o☆ doqmeat</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="favicon.gif">
+	<link href="!f/index-v4.css" rel="stylesheet" type="text/css" media="all">
+	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="!f/snowflakes.css" rel="stylesheet" type="text/css" media="all">
+	<!-- 	webring stuff -->
+	<script src="https://eggring.neocities.org/js/hatring.js"></script>
+	<script src="https://eggring.neocities.org/js/eggring-config.js"></script>
+	<link href="https://adilene.net/webring/webring.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://sugarforbrains.neocities.org/mobring/onionring.css">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+	<script type="text/javascript">
+		// <![CDATA[
+		var speed = 500; // speed colours change, 1 second = 1000
+		var glow = 5; // can be set from '0' for no glow, to 10
+		var raincol = new Array("#E8A5AD", "#9BDDB7", "#B1CFD9"); // change the colours if you want to
+		var alink = "/home"; // page to link text to (set to ="" for no link)
+
+		/****************************
+		 *    Rainbow Text Effect    *
+		 *(c)2003-13 mf2fm web-design*
+		 *  http://www.mf2fm.com/rv  *
+		 * DON'T EDIT BELOW THIS BOX *
+		 ****************************/
+		var rainbow, raintxt, raincnt = 0;
+
+		function addLoadEvent(funky) {
+			var oldonload = window.onload;
+			if (typeof(oldonload) != 'function') window.onload = funky;
+			else window.onload = function() {
+				if (oldonload) oldonload();
+				funky();
+			}
+		}
+
+		addLoadEvent(regenbogen);
+
+		function regenbogen() {
+			if (document.getElementById) {
+				var i, rainbeau;
+				rainbow = document.getElementById("rainbow");
+				raintxt = rainbow.firstChild.nodeValue;
+				while (rainbow.childNodes.length) rainbow.removeChild(rainbow.childNodes[0]);
+				for (i = 0; i < raintxt.length; i++) {
+					rainbeau = document.createElement("span");
+					rainbeau.setAttribute("id", "rain" + i);
+					rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
+					if (alink) {
+						rainbeau.style.cursor = "pointer";
+						rainbeau.onclick = function() {
+							top.location.href = alink;
+						}
+					}
+					rainbow.appendChild(rainbeau);
+				}
+				rainbow = setInterval("raining()", speed);
+			}
+		}
+
+		function raining() {
+			var i, c;
+			for (i = 0; i < raintxt.length; i++) {
+				c = raincol[(i + raincnt) % raincol.length];
+				document.getElementById("rain" + i).style.color = c;
+				if (glow) document.getElementById("rain" + i).style.textShadow = c + " 0px 0px " + glow + "px";
+			}
+			raincnt++;
+		}
+		// ]]>
+
+	</script>
+</head>
+
+<body>
+
+	<main>
+		<p>hello there! you're about to enter my personal website:</p>
+		<p><a style="background:transparent;text-decoration: none;" href="/home"><span id="rainbow">doqmeat.com</span></a></p>
+		<p>site can be <b>very</b> IMG heavy and might require you to reload the page more than once for everything to load.</p>
+		<p class="hide"><b>homepage is compatible with mobile devices but i cannot guarantee that for every page on my site.</b></p>
+		<p><a href="/home">go to homepage!</a> / <a href="mailto:doqmeat@gmail.com">email</a></p>
+	</main>
+
+	<footer>
+		<p><b>credit:</b>
+			body bg from PMMM rebellion /
+			<a href="http://www.mf2fm.com/rv/dhtmlrainbow.php">blinking JS text effect</a>
+			/
+			<a href="/notebook/links/fonts.html">fonts</a> used: momo
+		</p>
+	</footer>
+
+</body>
+
+</html>

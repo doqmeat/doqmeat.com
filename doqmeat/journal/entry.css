@@ -1,0 +1,179 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("/!g/bg/yellobg.png");
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-size: 20px;
+	word-spacing: 8px;
+	line-height: 24px;
+	color: black;
+}
+
+header {
+	padding: 5px;
+}
+
+li {
+	list-style-image: url('/!g/pix/starpink.gif');
+	padding-left: 2px;
+	list-style-position: inside;
+}
+
+p {
+	margin: 20px 10px 20px 12px;
+}
+
+img {
+	vertical-align: middle;
+}
+
+hr {
+	background: url('/!g/div/scissors.gif');
+	height: 20px;
+	border: 0px;
+}
+
+#log,
+main {
+	padding: 0px;
+	max-width: 700px;
+	margin: auto;
+	margin-bottom: 10px;
+	scrollbar-color: #E4A79D #fffcdc;
+}
+
+i {
+	background: #C7D9F8;
+}
+
+b,
+strong {
+	background: #E4A79D;
+}
+
+mark {
+	background: #FFE481;
+}
+
+article {
+	margin-bottom: 30px;
+}
+
+.title {
+	font-family: morningtea, var(--fonts);
+	float: left;
+	padding-top: 5px;
+}
+
+.date {
+	font-family: morningtea, var(--fonts);
+	font-size: 16px;
+}
+
+.entry {
+	font-size: 28px;
+	background: url(/!g/bg/h056-4.gif);
+	background-size: 50px;
+	border: 4px double black;
+	text-align: right;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+	padding: 2px 10px;
+}
+
+.mini {
+	display: inline-block;
+	line-height: 23px;
+	font-family: newpenji, var(--fonts);
+	background: url(/!g/bg/picnicclothbg.png);
+	font-size: 17px;
+	border: 4px double black;
+	margin: 5px 5px;
+	padding: 0px 5px;
+	border-radius: 10px;
+}
+
+.mini > a {
+	background: transparent;
+	text-decoration: underline;
+}
+
+::before {
+	margin: 5px;
+	vertical-align: middle;
+}
+
+::after {
+	font-weight: bold;
+}
+
+.l::before {
+	content: url(/!g/pix/music%20notes.gif);
+}
+
+.l::after {
+	content: "listening to:";
+}
+
+.f::before {
+	content: url(/!g/pix/catloaf.gif);
+}
+
+.f::after {
+	content: "feeling:";
+}
+
+.w::before {
+	content: url(/!g/pix/tv.gif);
+}
+
+.w::after {
+	content: "watching:";
+}
+
+.p::before {
+	content: url(/!g/pix/vgs.gif);
+}
+
+.p::after {
+	content: "playing:";
+}
+
+.e::before {
+	content: url(/!g/pix/cookingpan.gif);
+}
+
+.e::after {
+	content: "eating:";
+}
+
+/* this is for older entries LOL i cant be bothered to fix them*/
+
+p.date {
+	font-size: 27px;
+	background: url(/!g/bg/h056-4.gif);
+	background-size: 50px;
+	border: 4px double black;
+	text-align: right;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+	padding: 0px 10px;
+}
+
+/*end*/
+
+@media only screen and (max-width: 599px) {
+
+	.entry {
+		border-left: 0px;
+		border-right: 0px;
+	}
+
+	body {
+		background: transparent;
+	}
+}

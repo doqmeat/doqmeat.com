@@ -1,0 +1,113 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	word-wrap: break-word;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: ms gothic;
+	color: black;
+	scrollbar-color: #E4A79D #fffcdc;
+}
+
+i {
+	background: #C7D9F8;
+}
+
+mark {
+	background: #FFE481;
+}
+
+li {
+	list-style-image: url('/!g/pix/li19.gif');
+	padding-left: 2px;
+	list-style-position: inside;
+}
+
+a {
+	color: black;
+	background: #D0FF8D;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	cursor: help;
+}
+
+a:focus {
+	text-decoration: wavy underline;
+}
+
+a:active,
+a:hover {
+	outline: 0
+}
+
+p {
+	margin: 0 0 10px 0;
+	padding: 5px;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+::selection {
+	color: black;
+	background-color: #A6DDFF;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #E4A79D;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-color: #C7D9F8;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.description {
+	overflow: hidden;
+}
+
+.title {
+	overflow: hidden;
+}
+
+.pubDt {
+	font-style: italic;
+	font-size: 11px;
+	float: right;
+	padding-right: 3px;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	font-family: morningtea;
+	text-align: center;
+	font-size: 14px;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px dashed #C9525E;
+	color: black;
+	background: #FFFCDC;
+}
+
+@font-face {
+	font-family: 'morningtea';
+	src: url(/fonts/MorningTea.ttf);
+}
