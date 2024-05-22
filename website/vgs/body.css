@@ -69,7 +69,9 @@ li {
 }
 
 hr {
-	border: 1px dashed black;
+	background: url(/!g/div/clover.png);
+	height: 23px;
+	border: none;
 }
 
 p {
@@ -136,7 +138,8 @@ blockquote {
 
 /*content*/
 
-#iframepc {
+#iframepc,
+main {
 	background: #ffe3ff;
 	padding: 10px;
 	max-width: 600px;
