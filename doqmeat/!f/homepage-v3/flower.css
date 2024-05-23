@@ -33,6 +33,11 @@ body {
 	background-size: cover
 }
 
+::selection {
+	color: white;
+	background: var(--d-brown);
+}
+
 .box {
 	border-radius: 10px
 }
