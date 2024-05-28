@@ -1,3 +1,7 @@
+html {
+	scrollbar-color: #ffe5a2 #a9d079;
+}
+
 :root {
 	--d-yellow: #F4B535;
 	--l-yellow: #FFEBAF;
@@ -12,7 +16,7 @@
 	--purple: #90619D;
 	--grey: #EDF4F7;
 	--black: #1a202c;
-	--shadow: #edf4f7;
+	--shadow: #578bb0;
 	--border1: 3px dotted var(--l-yellow);
 	--border2: 3px dotted var(--l-pink);
 	--border3: 3px dotted var(--l-blue);
@@ -30,7 +34,7 @@ body {
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
-	background-size: cover
+	background-size: cover;
 }
 
 ::selection {
@@ -56,6 +60,7 @@ a:hover {
 }
 
 #nav {
+	scrollbar-color: #EDF4F7 #FFB5D5;
 	background: var(--gradient1);
 	background: var(--gradient2);
 	border: 3px dotted var(--l-brown)
@@ -63,7 +68,7 @@ a:hover {
 
 .me {
 	color: #B98FC3;
-	text-shadow: 2px 2px var(--grey)
+	text-shadow: 2px 2px var(--grey);
 }
 
 #intro {
@@ -100,11 +105,8 @@ h1 {
 	font-size: 89px;
 	font-weight: 400;
 	letter-spacing: 4px;
-	background: #d0799a;
-	background: linear-gradient(180deg, rgba(208, 121, 154, 1) 32%, rgba(89, 151, 106, 1) 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	filter: drop-shadow(2px 0px 0px var(--shadow)) drop-shadow(0px 2px 0px var(--shadow)) drop-shadow(-2px 0px 0px var(--shadow)) drop-shadow(0px -2px 0px var(--shadow))
+	filter: drop-shadow(2px 0px 0px var(--shadow)) drop-shadow(0px 2px 0px var(--shadow)) drop-shadow(-2px 0px 0px var(--shadow)) drop-shadow(0px -2px 0px var(--shadow));
+	pointer-events: none;
 }
 
 h2 {
@@ -405,31 +407,36 @@ button:hover {
 #updates,
 #listing {
 	background: var(--bg3);
-	border: var(--border3)
+	border: var(--border3);
+	scrollbar-color: #ffe5a2 #ffb5d5;
 }
 
 #theme-picker,
 #featured-page {
 	background: var(--bg2);
-	border: var(--border2)
+	border: var(--border2);
+	scrollbar-color: #a9d079 #ffe5a2;
 }
 
 #current,
 #webrings {
 	background: var(--bg1);
-	border: var(--border1)
+	border: var(--border1);
+	scrollbar-color: #ffb5d5 #bfe1f2;
 }
 
 #featured-cat,
 #button {
 	background: var(--bg4);
-	border: 3px dotted var(--l-brown)
+	border: 3px dotted var(--l-brown);
+	scrollbar-color: #ffe5a2 #a9d079;
 }
 
 #widget,
 #intro {
 	background: #edf4f7;
-	border: var(--border2)
+	border: var(--border2);
+	scrollbar-color: #a9d079 #edf4f7;
 }
 
 .deco {
