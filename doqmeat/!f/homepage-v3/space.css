@@ -85,8 +85,8 @@ nav a:hover {
 	word-spacing: 0px;
 }
 
-nav h3{
-	font-family:natsuzemi, var(--fonts);
+nav h3 {
+	font-family: natsuzemi, var(--fonts);
 	font-weight: normal;
 	letter-spacing: 5px;
 	text-decoration: overline;
@@ -112,6 +112,7 @@ nav h3{
 
 #updates h2 + li {
 	color: black;
+	padding: 5px;
 	background: white;
 	border-radius: 5px;
 }

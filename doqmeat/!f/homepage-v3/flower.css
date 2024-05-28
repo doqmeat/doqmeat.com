@@ -96,7 +96,7 @@ header p {
 }
 
 h1 {
-	font-family: typogarden;
+	font-family: typogarden, var(--fonts);
 	font-size: 89px;
 	font-weight: 400;
 	letter-spacing: 4px;
@@ -128,7 +128,7 @@ h3 {
 }
 
 h4 {
-	font-family: spirit;
+	font-family: spirit, var(--fonts);
 	font-size: 16px;
 	font-weight: 400
 }
@@ -164,7 +164,7 @@ nav h2 {
 }
 
 button {
-	font-family: nintendo-ds-bios;
+	font-family: nintendo-ds-bios, var(--fonts);
 	font-size: 17px;
 	color: var(--d-brown);
 	box-shadow: 1px 1px 6px 1px var(--l-yellow) inset;
@@ -340,7 +340,7 @@ button:hover {
 }
 
 #widget {
-	font-family: gaegu-r;
+	font-family: gaegu-r, var(--fonts);
 	font-size: 17px;
 	top: -10px;
 	height: 110%
@@ -352,7 +352,7 @@ button:hover {
 
 #button p {
 	margin: 4px 5px;
-	font-family: simple;
+	font-family: simple, var(--fonts);
 	font-size: 20px;
 	line-height: 14px
 }
@@ -386,7 +386,7 @@ button:hover {
 	background: #c39684;
 	color: var(--grey);
 	border: var(--border1);
-	font-family: nintendo-ds-bios;
+	font-family: nintendo-ds-bios, var(--fonts);
 	font-size: 19px;
 	line-height: 15px;
 	word-spacing: 6px
