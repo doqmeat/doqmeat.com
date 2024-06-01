@@ -1,0 +1,39 @@
+songBox {
+	background-color: #111;
+	border: 4px ridge aliceblue;
+	align-items: center;
+}
+
+siteName {
+	margin: auto;
+	color: darkgray;
+	font-size: 1.5vmin;
+}
+
+trackInfo {
+	/* You can set font-family here after importing from google fonts or your own site and it will apply to all text in your song box  */
+	width: fit-content;
+}
+
+trackCover {
+	height: 150px;
+	float: left;
+}
+
+trackName {
+	font-size: 2vmin;
+	font-weight: bold;
+}
+
+artistName {
+	font-size: 1vmax;
+	margin: 5px auto;
+}
+
+searchButton {
+	color: #fff;
+	background: #303030;
+	font-size: 1vmax;
+	padding: 4px;
+	text-decoration: none;
+}
