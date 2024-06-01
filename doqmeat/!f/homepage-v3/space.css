@@ -72,17 +72,25 @@ h2 {
 	display: none;
 }
 
-nav a {
+nav a,
+nav button {
+	font-size: 18px;
 	font-family: nintendo-ds-bios;
+	background: transparent;
 	text-decoration: none;
 	letter-spacing: 3px;
 	word-spacing: 3px;
 	transition-duration: 0.3s;
+	border: none;
+	color: white;
 }
 
-nav a:hover {
+nav a:hover,
+nav button:hover {
+	background: white;
 	letter-spacing: 1px;
 	word-spacing: 0px;
+	color: black;
 }
 
 nav h3 {
@@ -158,27 +166,11 @@ footer {
 	background: var(--grey);
 }
 
-#chatbox,
-#chatbox h2 {
-	color: white;
-	font-weight: normal;
-	background: black;
-	border: var(--border2);
-}
-
 #chatbox {
 	background: white;
 	z-index: 10;
-	transition-duration: 1.5s
-}
-
-#chatbox h2 {
-	border-radius: 10px 10px 0 0;
-	margin: 0;
-	padding: 10px;
-	left: -17%;
-	top: 85%;
-	border: 1px solid white;
+	color: black;
+	border: 1px solid black;
 }
 
 .outlink::after {
@@ -197,7 +189,9 @@ footer {
 }
 
 @media only screen and (max-width:1000px) {
-	nav a:hover {
+
+	nav a:hover,
+	nav button:hover {
 		letter-spacing: 3px;
 		word-spacing: 3px;
 	}

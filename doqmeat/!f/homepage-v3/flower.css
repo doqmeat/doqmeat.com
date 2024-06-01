@@ -135,11 +135,13 @@ h4 {
 	font-weight: 400
 }
 
-nav a img {
+nav a img,
+nav button img {
 	vertical-align: middle
 }
 
-nav a {
+nav a,
+nav button {
 	font-family: morningtea, var(--fonts);
 	color: var(--d-brown);
 	font-size: 19px;
@@ -152,13 +154,28 @@ nav a {
 	transition-duration: .3s
 }
 
-nav a:hover {
+nav a:hover,
+nav button:hover {
 	letter-spacing: 0;
 	background: url(/!g/bg/h056-4.gif);
 	background-size: 50px;
 	border: 2px solid #fff;
 	color: var(--black);
-	margin-left: 20px
+	margin-left: 20px;
+}
+
+nav button {
+	cursor: help;
+	text-align: left;
+	width: 90%;
+	padding: 2px 5px 2px 5px;
+	border: none;
+	box-shadow: none;
+	line-height: normal;
+}
+
+nav button:hover {
+	box-shadow: none;
 }
 
 nav h2 {
@@ -172,7 +189,7 @@ button {
 	box-shadow: 1px 1px 6px 1px var(--l-yellow) inset;
 	background: var(--l-blue);
 	border: 3px inset var(--l-yellow);
-	line-height: 20px
+	line-height: 20px;
 }
 
 button:hover {
@@ -349,7 +366,7 @@ button:hover {
 }
 
 #button {
-	height: 110px
+	height: 110px;
 }
 
 #button p {
@@ -359,8 +376,7 @@ button:hover {
 	line-height: 14px
 }
 
-#chatbox,
-#chatbox h2 {
+#chatbox {
 	background: #bfe1f2;
 	background: linear-gradient(137deg, rgba(191, 225, 242, 1) 0%, rgba(255, 247, 223, 1) 48%, rgba(255, 181, 213, 1) 100%);
 	border: var(--border2)
@@ -368,21 +384,8 @@ button:hover {
 
 #chatbox {
 	z-index: 11;
-	transition-duration: 1.5s
 }
 
-#chatbox h2 {
-	border-radius: 10px 10px 0 0;
-	margin: 0;
-	padding: 10px;
-	left: -27%;
-	top: 70%
-}
-
-#chatbox h2::before {
-	content: url('/!g/pix/msg.gif');
-	padding-right: 4px
-}
 
 #foot {
 	background: #c39684;
@@ -546,14 +549,6 @@ button:hover {
 	rotate: -40deg
 }
 
-/*
-#sticker17 {
-	content: url('/!g/pix/buttermeadow.gif');
-	top: 42%;
-	left: 77%
-}
-*/
-
 #sticker17 {
 	content: url('/!g/deco/tora-cat-peek.gif');
 	top: 44%;
@@ -624,7 +619,7 @@ button:hover {
 	left: 26%;
 }
 
-#fixed-2 {
+#fixed-1 {
 	position: fixed;
 	content: url('/!g/deco/flower3.gif');
 	top: -19px;
@@ -638,7 +633,7 @@ button:hover {
 }
 
 #s-m-t-tooltip {
-	font-family: gaegu-b, var(--fonts);
+	font-family: gaegu-r, var(--fonts);
 	font-size: 15px;
 	max-width: 300px;
 	border-radius: 20px;
@@ -648,7 +643,7 @@ button:hover {
 }
 
 @media only screen and (max-width: 1261px) {
-	#fixed-2 {
+	#fixed-1 {
 		display: none
 	}
 }
@@ -660,8 +655,19 @@ button:hover {
 }
 
 @media only screen and (max-width: 860px) {
+
+
+
+	.no {
+		display: none;
+	}
+
 	#l-sticker {
 		display: none
+	}
+
+	#widget {
+		top: 0px;
 	}
 
 	h1 {
@@ -675,11 +681,18 @@ button:hover {
 		text-align: center
 	}
 
-	nav a {
+	nav button {
+		display: inline-block;
+		width: auto;
+	}
+
+	nav a,
+	nav button {
 		border: none
 	}
 
-	nav a:hover {
+	nav a:hover,
+	nav button:hover {
 		border: none;
 		top: 1px;
 		margin: 5px;
@@ -692,21 +705,21 @@ button:hover {
 	}
 
 	#chatbox {
+		display: block;
 		position: relative;
-		margin-top: -10px;
-		left: 0;
-		top: 0;
 		border-radius: 20px;
 		max-width: 100%;
 		width: 100%;
-		height: 300px
+		height: 400px;
+		overflow: hidden;
 	}
 
 	#chatbox h2 {
-		display: none
+		display: block;
+		text-align: center;
 	}
 
 	#foot {
-		margin-bottom: 20px
+		margin-bottom: 20px;
 	}
 }
