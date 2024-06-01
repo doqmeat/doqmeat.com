@@ -103,7 +103,8 @@ nav {
 	overflow: auto;
 }
 
-nav a {
+nav a,
+nav button {
 	display: block;
 }
 
@@ -236,28 +237,37 @@ button {
 	left: 5px;
 }
 
+#chatbox {
+	display: none;
+	position: absolute;
+	width: 300px;
+	left: 150px;
+	top: 200px;
+	height: 400px;
+	resize: both;
+	cursor: move;
+	overflow: auto;
+
+}
+
+#chatbox button {
+	float: right;
+	margin: 5px;
+	width: 30px;
+	height: 30px;
+}
+
+#chatbox h2 {
+	text-align: left;
+	display: inline-block;
+	margin: 10px 0px 5px 20px;
+}
+
 #s-m-t-tooltip {
 	text-align: center;
 	z-index: 9999;
 	margin: 30px 15px 7px 12px;
 	padding: 5px;
-}
-
-#chatbox {
-	position: fixed;
-	width: 350px;
-	right: -350px;
-	height: 400px;
-	bottom: 25px;
-}
-
-#chatbox:hover {
-	right: 0px;
-}
-
-#chatbox h2 {
-	position: absolute;
-	rotate: -90deg;
 }
 
 ::-webkit-scrollbar {
@@ -320,10 +330,12 @@ button {
 
 	#wrapper {
 		margin: 0px;
+		padding-bottom: 0px;
 		display: block;
 	}
 
-	nav a {
+	nav a,
+	nav button {
 		display: inline-block;
 	}
 
@@ -338,12 +350,15 @@ button {
 	#featured-page,
 	header,
 	#widget {
-		margin: 25px 0px;
+		margin: 20px 0px;
 		height: auto;
 	}
 
 	#chatbox {
+		top: 0px;
+		left: 0px;
 		margin: 0px;
+		resize: none;
 	}
 
 	footer {
