@@ -216,7 +216,8 @@ footer {
 		background: #ffe3ff
 	}
 
-	#iframepc {
+	#iframepc,
+	main {
 		border: none;
 		margin: 0px 0px 0px 0px;
 		border-radius: 0px;
