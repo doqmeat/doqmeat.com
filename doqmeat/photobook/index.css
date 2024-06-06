@@ -84,6 +84,16 @@ a:hover {
 	-moz-border-image: url("/!g/border/greenlaceborde.png") 8 round;
 }
 
+.ds {
+	background: white;
+	border: 7px solid transparent;
+	padding: 4px;
+	border-image: url("/!g/border/bluelaceborde.png") 8 round;
+	-webkit-border-image: url("/!g/border/bluelaceborde.png") 8 round;
+	-o-border-image: url("/!g/border/bluelaceborde.png") 8 round;
+	-moz-border-image: url("/!g/border/bluelaceborde.png") 8 round;
+}
+
 .film {
 	border-radius: 5px;
 	border: 10px solid white;
@@ -162,6 +172,11 @@ footer {
 
 footer img {
 	vertical-align: top;
+}
+
+details p {
+	display: inline-block;
+	margin: 0 5px;
 }
 
 #s-m-t-tooltip {
