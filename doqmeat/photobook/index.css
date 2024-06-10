@@ -19,6 +19,24 @@ body {
 	color: black;
 }
 
+#cam-pics {
+	display: none;
+
+}
+
+#cam-pics img {
+	max-width: 100%;
+}
+
+button {
+	color: lightblue;
+	text-shadow: 1px 1px 1px white;
+	border: none;
+	background: transparent;
+	font-family: var(--fonts);
+	font-size: inherit;
+}
+
 header {
 	background: #F27688;
 	position: relative;

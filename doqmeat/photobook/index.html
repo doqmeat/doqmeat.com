@@ -23,7 +23,11 @@ coded with love by des
 
 	<header>
 		<h1>doqmeat's photobook</h1>
-		<p>my <b>instant film</b> pics are taken with a fujifilm instax mini 26. i've had it since 2018, works like a charm! both the camera and film it uses are pretty affordable. i love the pics you can get with it so i highly recommend it if you're looking for something to have some fun with!</p>
+		<p>my <b>instant film</b> pics are taken with a <button title="click to show camera!" onclick="showPics()">fujifilm instax mini 26</button>. i've had it since 2018, works like a charm! both the camera and film it uses are pretty affordable. i love the pics you can get with it so i highly recommend it if you're looking for something to have some fun with!</p>
+		<div id="cam-pics">
+			<img src="instant-cam%20(2).png">
+			<img src="instant-cam%20(1).png">
+		</div>
 		<p><b>digital</b> pics are from my shitty android phone *crying* wanna save for a nice digital camera someday! and i also take pics with my <b>3DS</b> cus it's fun :3</p>
 		<details>
 			<summary>border legend</summary>
@@ -47,6 +51,15 @@ hiii this is a caption
 -->
 		<!-- 1st column -->
 		<div class="column">
+			<div class="pic digi"><img src="!g/240609-sunset.jpg">
+				<div class="hov">
+					<div class="caption">
+						beautiful sunset
+						<br>
+						<b>taken on 08.jun.24</b>
+					</div>
+				</div>
+			</div>
 
 			<div class="pic digi">
 				<img src="!g/240601-az%20(2).jpg">
@@ -201,9 +214,9 @@ hiii this is a caption
 		<div class="column">
 
 			<div class="pic ds">
+				<img src="!g/240605-flower-garden-3ds%20(3).JPG">
 				<img src="!g/240605-flower-garden-3ds%20(1).JPG">
 				<img src="!g/240605-flower-garden-3ds%20(2).JPG">
-				<img src="!g/240605-flower-garden-3ds%20(3).JPG">
 				<img src="!g/240605-flower-garden-3ds%20(4).JPG">
 				<img src="!g/240605-flower-garden-3ds%20(5).JPG">
 				<div class="hov">
@@ -360,12 +373,23 @@ hiii this is a caption
 	<div id="home"><a title="go back to homepage" href="/"><img src="/!g/pix/polaroid_5.gif"></a></div>
 
 	<footer>
-		please <u>don't</u> use my pics without my permission! <img src="/!g/pix/cam-shoot.gif"> <b>last updated: 08.jun.24</b>
+		please <u>don't</u> use my pics without my permission! <img src="/!g/pix/cam-shoot.gif"> <b>last updated: 09.jun.24</b>
 		<br>
 		<b>credit:</b> bg by <a href="http://sozaioukoku.fc2web.com/index.html" target="_blank">sozaioukoku</a> / header font by <a href="https://www.dafont.com/growing-garden-script.font" target="_blank">helotype</a> / border-img from <a href="https://fujoshi.nekoweb.org" target="_blank">mimi</a>!
 		<br>
 		<a href="/">home</a> <img src="/!g/pix/cam.png" width="16px"> <a href="#">top</a> <img src="/!g/pix/cam.png" width="16px"> <a href="/sitemap.html">sitemap</a>
 	</footer>
+	<script>
+		function showPics() {
+			var picDiv = document.getElementById("cam-pics");
+			if (picDiv.style.display == "block") {
+				picDiv.style.display = "none";
+			} else {
+				picDiv.style.display = "block";
+			}
+		}
+
+	</script>
 </body>
 
 </html>
