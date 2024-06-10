@@ -13,36 +13,47 @@
 </head>
 
 <body>
+	<div id="info">
+		<button onclick="infoClick()" class="x">x</button>
+		<p>des' microblog. made for smaller thoughts i want to share.</p>
+
+		<p><b>credit:</b> body bg from <a href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino Al</a> on <a href="https://unsplash.com/photos/body-of-water-and-seashore-JFeOy62yjXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> / <a href="https://archive.org/details/WindowsXPExtractedIcons" target="_blank">windows XP icons</a></p>
+	</div>
+	
 	<main>
 		<div id="bar"> __ □ X</div>
 		<div id="address-bar">← → ↻ ⌂<span id="address">https://doqmeat.com/microblog</span></div>
 		<div id="blog">
 			<article>
+				<p><b>10.jun.24 - 12am:</b> my mom in her knitting phase so she made me some slippers. they are so warm and soft! <button onclick="showPic('!g/240610-slippers.png' , 'slippers')">240610-slippers.png</button></p>
+			</article>
+			<article>
 				<p><b>09.jun.24 - 12am:</b> i've had this page on my draft for like 2 months or something! i thought about using it for my fc2 microblog but i've kind of just stopped using that... i want something simple so i can update it though the github app on my phone so i think this will do!</p>
 			</article>
+		</div>
 
+		<div class="draggable" id="picture-win">
+			<span class="picture-url"></span>
+			<button onclick="closePic()" class="x">x</button>
+			<br>
+			<img class="picture" src="" alt="">
 		</div>
 	</main>
 
+	<!--
 	<div onclick="trashClick()" id="trash" class="icon"><img src="recycle.png" alt="recycle icon"><br><span>recycle bin</span></div>
 
 	<div id="trash2" class="draggable">
 		<button onclick="trashClick()" class="x">x</button>
 		<img src="public-diary.png" alt="screenshot of a tweet that says" width="100%">
 	</div>
+-->
 
 	<a title="click to go back to homepage" href="/home">
 		<div id="puter" class="icon"><img src="puter.png" alt="computer icon"><br><span>homepage</span></div>
 	</a>
 
 	<div id="mouse" onclick="infoClick()" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></div>
-
-	<div id="info" class="draggable">
-		<button onclick="infoClick()" class="x">x</button>
-		<p>hi this is my microblog :) for not very important thoughts that i still need to let out there. you know how it is.</p>
-
-		<p><b>credit:</b> body bg from <a href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino Al</a> on <a href="https://unsplash.com/photos/body-of-water-and-seashore-JFeOy62yjXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> / <a href="https://archive.org/details/WindowsXPExtractedIcons" target="_blank">windows XP icons</a></p>
-	</div>
 
 	<script>
 		function infoClick() {
@@ -62,8 +73,8 @@
 				icon.style.display = "block";
 			}
 		}
-
-	</script>
+</script>
+<script src="picture.js"></script>
 	<script src="/!f/draggable.js"></script>
 	<!--	<footer>hello this is the footer</footer>-->
 </body>

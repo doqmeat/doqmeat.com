@@ -37,10 +37,10 @@
 				"microblog";
 			grid-template-columns: 100%;
 			grid-template-rows: 25px 27px 550px;
-			position: relative;
+			position: static;
 			margin: auto;
 			margin-top: 30px;
-			max-width: 1000px;
+			max-width: 800px;
 			border: 2px var(--blue2) solid;
 			overflow: hidden;
 			box-shadow: 3px 3px 10px #4b81bd;
@@ -58,6 +58,51 @@
 			overflow: scroll;
 			scrollbar-color: #a3b5cb #ca7f9a;
 			padding: 10px;
+		}
+
+		#blog img {
+			max-width: 100%;
+		}
+
+		#blog button {
+			font-family: ms pgothic;
+			padding: 2px;
+			line-height: inherit;
+			border-radius: 5px;
+			background: var(--blue2);
+		}
+
+		#blog button:focus {
+			border-color: var(--blue2);
+			background: var(--pink);
+		}
+
+		#picture-win {
+			display: none;
+			padding: 5px;
+			background: var(--blue2);
+			border: 1px solid black;
+			position: absolute;
+			bottom: 30px;
+			right: 250px;
+			height: 300px;
+			overflow: scroll;
+			width: 290px;
+			cursor: move;
+		}
+
+		.picture {
+			max-width: 100%;
+		}
+
+		.picture-url {
+			display: inline-block;
+			margin-top: 5px;
+			text-shadow: 1px 1px 3px white;
+		}
+
+		#picture-win .x {
+			margin: 4px;
 		}
 
 		#bar {
@@ -101,6 +146,7 @@
 
 		}
 
+		/*
 		#trash {
 			top: 100px;
 			right: 50px;
@@ -118,6 +164,7 @@
 			padding: 10px;
 			border-radius: 10px;
 		}
+*/
 
 		#puter {
 			top: 10px;
@@ -141,15 +188,19 @@
 			float: right;
 		}
 
+		.x:hover {
+			background: var(--yellow);
+		}
+
 		#info {
 			display: none;
 			text-align: left;
 			position: absolute;
 			bottom: 100px;
 			left: 30px;
-			background: rgb(250, 216, 175);
-			background: linear-gradient(0deg, rgba(250, 216, 175, 1) 0%, rgba(214, 130, 152, 1) 100%);
-			width: 150px;
+			background: #6f5994;
+			color: white;
+			width: 190px;
 			padding: 10px;
 			border-radius: 10px;
 		}
