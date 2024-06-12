@@ -96,11 +96,11 @@
 			cursor: move;
 		}
 
-		.picture {
+		#picture {
 			max-width: 100%;
 		}
 
-		.picture-title {
+		#picture-title {
 			display: inline-block;
 			margin-top: 5px;
 			text-shadow: 1px 1px 3px white;

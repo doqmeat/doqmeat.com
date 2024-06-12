@@ -1,16 +1,11 @@
 		function showPic(img, text, caption) {
-			var pic = document.getElementsByClassName("picture");
+			var pic = document.getElementById("picture");
 			var picDiv = document.getElementById("picture-win");
-			var picTitle = document.getElementsByClassName("picture-title");
-			var picCaption = document.getElementsByClassName("picture-caption");
-			pic[0].src = img;
-			pic[0].alt = text;
-			picTitle[0].innerText = img;
-			picCaption[0].innerText = caption;
+			var picTitle = document.getElementById("picture-title");
+			var picCaption = document.getElementById("picture-caption");
+			pic.src = img;
+			pic.alt = text;
+			picTitle.innerText = img;
+			picCaption.innerText = caption;
 			picDiv.style.display = "block";
-		}
-
-		function closePic() {
-			var picDiv = document.getElementById("picture-win");
-			picDiv.style.display = "none";
 		}
