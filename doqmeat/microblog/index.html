@@ -14,8 +14,10 @@
 </head>
 
 <body>
+	<div id="mouse" onclick="toggleclick('info')" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></div>
+
 	<div id="info">
-		<button onclick="infoClick()" class="x">x</button>
+		<button onclick="toggleclick('info')" class="x">x</button>
 		<p>des' microblog. made for smaller thoughts i want to share.</p>
 
 		<p><b>credit:</b> body bg from <a href="https://unsplash.com/@quinoal?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Quino Al</a> on <a href="https://unsplash.com/photos/body-of-water-and-seashore-JFeOy62yjXk?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> / <a href="https://archive.org/details/WindowsXPExtractedIcons" target="_blank">windows XP icons</a></p>
@@ -33,7 +35,7 @@
 -->
 
 			<article>
-				<p><b>10.jun.24 - 12am:</b> my mom in her knitting phase so she made me some slippers. they are so warm and soft! <button onclick="showPic('!g/240610-slippers.png' , 'slippers')">240610-slippers.png</button></p>
+				<p><b>10.jun.24 - 12am:</b> my mom in her knitting phase so she made me some slippers. they are so warm and soft! <button onclick="showPic('!g/240610-slippers.png' , 'slippers', 'they are super cozy')">240610-slippers.png</button></p>
 			</article>
 
 			<article>
@@ -43,44 +45,26 @@
 		</div>
 
 		<div class="draggable" id="picture-win">
-			<span class="picture-url"></span>
+			<span class="picture-title"></span>
 			<button onclick="closePic()" class="x">x</button>
 			<br>
 			<img class="picture" src="" alt="">
+			<p class="picture-caption"></p>
 		</div>
 	</main>
 
-	<!--
-	<div onclick="trashClick()" id="trash" class="icon"><img src="recycle.png" alt="recycle icon"><br><span>recycle bin</span></div>
 
-	<div id="trash2" class="draggable">
-		<button onclick="trashClick()" class="x">x</button>
-		<img src="public-diary.png" alt="screenshot of a tweet that says" width="100%">
-	</div>
--->
-
-	<a title="click to go back to homepage" href="/home">
+	<a title="click to go back to homepage" href="/">
 		<div id="puter" class="icon"><img src="puter.png" alt="computer icon"><br><span>homepage</span></div>
 	</a>
 
-	<div id="mouse" onclick="infoClick()" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></div>
-
 	<script>
-		function infoClick() {
-			var icon = document.getElementById("info");
-			if (icon.style.display === "block") {
-				icon.style.display = "none";
+		function toggleclick(window) {
+			var popup = document.getElementById(window);
+			if (popup.style.display === "block") {
+				popup.style.display = "none";
 			} else {
-				icon.style.display = "block";
-			}
-		}
-
-		function trashClick() {
-			var icon = document.getElementById("trash2");
-			if (icon.style.display === "block") {
-				icon.style.display = "none";
-			} else {
-				icon.style.display = "block";
+				popup.style.display = "block";
 			}
 		}
 

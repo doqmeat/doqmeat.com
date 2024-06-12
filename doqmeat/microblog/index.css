@@ -72,6 +72,11 @@
 			background: var(--blue2);
 		}
 
+		#blog button:hover {
+			background: var(--yellow);
+			border-color: var(--blue);
+		}
+
 		#blog button:focus {
 			border-color: var(--blue2);
 			background: var(--pink);
@@ -95,7 +100,7 @@
 			max-width: 100%;
 		}
 
-		.picture-url {
+		.picture-title {
 			display: inline-block;
 			margin-top: 5px;
 			text-shadow: 1px 1px 3px white;
@@ -146,25 +151,15 @@
 
 		}
 
+
 		/*
 		#trash {
 			top: 100px;
 			right: 50px;
 			cursor: cell;
 		}
-
-		#trash2 {
-			display: none;
-			position: absolute;
-			background: rgb(250, 216, 175);
-			background: linear-gradient(0deg, rgba(250, 216, 175, 1) 0%, rgba(214, 130, 152, 1) 100%);
-			top: 200px;
-			right: 50px;
-			width: 500px;
-			padding: 10px;
-			border-radius: 10px;
-		}
 */
+
 
 		#puter {
 			top: 10px;
@@ -250,7 +245,6 @@
 
 		@media only screen and (max-width: 1160px) {
 
-			#trash,
 			#puter {
 				display: none;
 			}
