@@ -12,7 +12,7 @@ li {
 }
 
 #wrapper-index {
-	background: url(/notebook/!g/transp-foil-2.png);
+	background: url(/notebook/!g/cover-small.png);
 	position: relative;
 	margin: auto;
 	margin-top: 30px;
@@ -313,8 +313,8 @@ button {
 	cursor: grab;
 }
 
-.tab button.active,
-.tab2 button.active {
+.tab button:focus,
+.tab2 button:focus {
 	top: 0px;
 	cursor: -webkit-grabbing;
 	cursor: grabbing;
@@ -347,27 +347,6 @@ button {
 
 .tabcontent {
 	display: none;
-}
-
-.sv-button {
-	margin-left: 400px;
-	background: lightgrey;
-	position: relative;
-	width: 50px;
-	height: 25px;
-	padding: 0px;
-	line-height: 10px;
-	font-family: ms pgothic;
-	font-size: 18px;
-	border-radius: 5px;
-	border: 2px outset black;
-	transition-duration: 0s;
-	cursor: pointer;
-}
-
-.sv-button:active {
-	background: white;
-	border: 2px inset black;
 }
 
 /* tooltip */

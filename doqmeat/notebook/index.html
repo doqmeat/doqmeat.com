@@ -27,14 +27,14 @@ https://coolors.co/e3edff-fff4bf-d1ebcd-ffe3e3-e2d2f0
 	<div id="wrapper-index">
 
 		<div class="tab">
-			<button class="tablinks link-b" onclick="openTab(event, 'link-wrapper')">links</button>
-			<button class="tablinks site-b" onclick="openTab(event, 'site-wrapper')">sitely</button>
-			<button class="tablinks archive-b" onclick="openTab(event, 'archive-wrapper')">archives</button>
-			<button class="tablinks F2U-b" onclick="openTab(event, 'F2U-wrapper')">F2U</button>
+			<button class="tablinks link-b" onclick="openTab('link-wrapper')">links</button>
+			<button class="tablinks site-b" onclick="openTab('site-wrapper')">sitely</button>
+			<button class="tablinks archive-b" onclick="openTab('archive-wrapper')">archives</button>
+			<button class="tablinks F2U-b" onclick="openTab('F2U-wrapper')">F2U</button>
 		</div>
 
 		<div class="tab2">
-			<button id="defaultOpen" class="tablinks info-b" onclick="openTab(event, 'info-wrapper')">info &amp; creds</button>
+			<button id="defaultOpen" class="tablinks info-b" onclick="openTab('info-wrapper')">info &amp; creds</button>
 		</div>
 
 		<!-- 	link tab wrapper -->
@@ -204,7 +204,6 @@ https://coolors.co/e3edff-fff4bf-d1ebcd-ffe3e3-e2d2f0
 					<p>in this page you'll find a variety of things i have saved for my own reference, but maybe they might be helpful (or at least interesting) for you too!</p>
 					<p>i also have things related to the making of this website here!</p>
 					<p><mark>click on the tabs to navigate it</mark> <img src="/!g/deco/catlaying.gif"></p>
-					<p><a href="/">go back home?</a> <img src="/about/!g/adopted/midnightcreamy_star3.gif"> </p>
 
 
 
@@ -244,30 +243,25 @@ https://coolors.co/e3edff-fff4bf-d1ebcd-ffe3e3-e2d2f0
 	</div>
 
 	<div id="pen1">
-		<img src="black-cat-pen.png" width="80px" class="border-1">
+		<img src="pen1.png" width="80px" class="border-1">
 	</div>
 
 	<div id="pen2">
-		<img src="cow-pen.png" class="border-1">
+		<img src="pen2.png" class="border-1">
 	</div>
 
 	<script>
-		function openTab(evt, tabName) {
-			var i, tabcontent, tablinks;
-			tabcontent = document.getElementsByClassName("tabcontent");
-			for (i = 0; i < tabcontent.length; i++) {
-				tabcontent[i].style.display = "none";
+		function openTab(tabName) {
+			var i;
+			var tabcontent = document.getElementById(tabName);
+			var otherTabs = document.getElementsByClassName("tabcontent");
+			var defaultOpen = document.getElementById("defaultOpen");
+			for (i = 0; i < otherTabs.length; i++) {
+				otherTabs[i].style.display = "none";
 			}
-			tablinks = document.getElementsByClassName("tablinks");
-			for (i = 0; i < tablinks.length; i++) {
-				tablinks[i].className = tablinks[i].className.replace(" active", "");
-			}
-			document.getElementById(tabName).style.display = "block";
-			evt.currentTarget.className += " active";
+			tabcontent.style.display = "block";
 		}
-
-		// Get the element with id="defaultOpen" and click on it
-		document.getElementById("defaultOpen").click();
+		defaultOpen.click();
 
 	</script>
 </body>
