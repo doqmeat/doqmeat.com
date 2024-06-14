@@ -12,6 +12,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scrollbar-color: #BCC88F #5BA0E0;
+}
+
 body {
 	background: url("!g/bg/ikiru.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -25,6 +29,7 @@ body {
 	color: black;
 	text-shadow: 1px 1px 5px white;
 	margin: 0px;
+	scrollbar-color: #e5eaf2 #5BA0E0;
 }
 
 a {
@@ -145,6 +150,7 @@ h2 {
 
 .btn {
 	position: absolute;
+	padding: 0px;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
@@ -166,7 +172,7 @@ h2 {
 	text-align: center;
 }
 
-/* The Modal (background) */
+/*modal popup*/
 .modal {
 	display: none;
 	position: fixed;
@@ -178,7 +184,7 @@ h2 {
 	overflow: auto;
 }
 
-/* Modal Content */
+/* modal box*/
 .modal-content {
 	position: relative;
 	box-sizing: border-box;
@@ -200,7 +206,8 @@ h2 {
 	animation-duration: 0.4s;
 }
 
-/* Add Animation */
+
+/*
 @-webkit-keyframes animatetop {
 	from {
 		top: -500px;
@@ -224,6 +231,7 @@ h2 {
 		opacity: 1;
 	}
 }
+*/
 
 /* The Close Button */
 .close:before {
