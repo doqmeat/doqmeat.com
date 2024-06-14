@@ -24,7 +24,7 @@ body {
 	display: grid;
 	border-radius: 30px;
 	grid-template-areas:
-		"nav head head picker"
+		"nav head head update"
 		"nav intro intro update"
 		"nav stat stat update"
 		"nav cur cat f-cat"

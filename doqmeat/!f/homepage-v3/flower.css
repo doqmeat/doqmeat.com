@@ -25,7 +25,7 @@ html {
 	--bg3: #ffb5d5;
 	--bg4: #a9d079;
 	--gradient1: #bfe1f2;
-	--gradient2: linear-gradient(137deg, rgba(191, 225, 242, 0.8) 0%, rgba(255, 247, 223, 0.8) 48%, rgba(255, 181, 213, 0.8) 100%)
+	--gradient2: linear-gradient(137deg, rgba(191, 225, 242, 0.8) 0%, rgba(255, 247, 223, 0.8) 48%, rgba(255, 181, 213, 0.8) 100%);
 }
 
 body {
@@ -408,14 +408,14 @@ button:hover {
 }
 
 #updates,
-#listing {
+#featured-page {
 	background: var(--bg3);
 	border: var(--border3);
 	scrollbar-color: #ffe5a2 #ffb5d5;
 }
 
 #theme-picker,
-#featured-page {
+#listing {
 	background: var(--bg2);
 	border: var(--border2);
 	scrollbar-color: #a9d079 #ffe5a2;
@@ -603,7 +603,7 @@ button:hover {
 
 #sticker26 {
 	content: url('/!g/deco/bunnyzzz.gif');
-	top: 9%;
+	top: 40%;
 	left: 93%
 }
 
