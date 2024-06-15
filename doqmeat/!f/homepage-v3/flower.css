@@ -156,11 +156,11 @@ nav button {
 
 nav a:hover,
 nav button:hover {
+	color: var(--d-brown);
 	letter-spacing: 0;
-	background: url(/!g/bg/h056-4.gif);
+	background: url(/!g/bg/ritva-1.gif);
 	background-size: 50px;
-	border: 2px solid #fff;
-	color: var(--black);
+	border: 1px solid var(--d-brown);
 	margin-left: 20px;
 }
 
