@@ -1,0 +1,105 @@
+/* https://coolors.co/a6d0c8-535e7c-764c7f-bb95af-e5b8d1-d24f9c-2a4365-dfecbf */
+* {
+	box-sizing: border-box;
+}
+
+:root{
+	--fonts:basiic, ms gothic, arial;
+}
+
+body {
+	font-family: var(--fonts);
+	background: url(/!g/bg/rebellion-bg.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+main,
+footer {
+	padding: 10px;
+	background: rgb(166, 208, 200, 0.9);
+	margin: auto;
+	max-width: 900px;
+}
+
+h3 {
+	margin:5px;
+	font-family:natsuzemi,var(--fonts);
+}
+
+a {
+	color: #535E7C;
+	font-weight: bold;
+}
+
+a:hover {
+	color: #E5B8D1;
+	background: #535E7C;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.show {
+	position: relative;
+	display: inline-block;
+	height: 290px;
+	max-width: 200px;
+}
+
+.show img {
+	height: 100%;
+}
+
+.hov {
+	position: absolute;
+	top: 0%;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+}
+
+.hov:hover {
+	opacity: 1;
+}
+
+.box {
+	text-align: center;
+	width: 90%;
+	max-height: 50%;
+	overflow: auto;
+	position: absolute;
+	top: 25%;
+	left: 6%;
+	padding: 5px;
+	background: rgb(229, 184, 209, 0.9);
+	border-radius: 10px;
+}
+
+.box p {
+	margin: 10px;
+}
+
+.status {
+	background: white;
+	border: 1px dashed #2A4365;
+	display: inline-block;
+	padding: 3px;
+	border-radius: 10px;
+	font-style: oblique;
+}
+
+footer {
+	border-top: 2px dashed #764C7F;
+	padding: 5px;
+	text-align: center;
+}
