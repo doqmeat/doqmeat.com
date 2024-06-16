@@ -3,8 +3,14 @@
 	box-sizing: border-box;
 }
 
-:root{
-	--fonts:basiic, ms gothic, arial;
+:root {
+	--fonts: basiic, ms gothic, arial;
+	--wrapper: 900px;
+	--l-blue: #a6d0c8;
+	--d-blue: #535E7C;
+	--purple: #764C7F;
+	--berry: #D24F9C;
+	--green: #DFECBF;
 }
 
 body {
@@ -17,24 +23,43 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-position: bottom center;
+	color: var(--d-blue);
+	margin-bottom: 50px;
 }
 
 main,
-footer {
+footer,
+header {
 	padding: 10px;
-	background: rgb(166, 208, 200, 0.9);
 	margin: auto;
-	max-width: 900px;
+	max-width: var(--wrapper);
+}
+
+header,
+footer {
+	text-align: center;
+	background: var(--green);
+	max-width: 800px;
+	border-radius: 20px;
+	border: 2px dashed var(--d-blue);
+}
+
+h1 {
+	font-family: pink-tape, var(--fonts);
 }
 
 h3 {
-	margin:5px;
-	font-family:natsuzemi,var(--fonts);
+	margin: 5px;
+	font-family: pink-tape, natsuzemi, var(--fonts);
+	word-wrap: break-word;
+	font-size: 15px;
 }
 
 a {
 	color: #535E7C;
 	font-weight: bold;
+	background: var(--green);
+	cursor: help;
 }
 
 a:hover {
@@ -47,6 +72,7 @@ a:hover {
 	flex-direction: row;
 	justify-content: center;
 	flex-wrap: wrap;
+	margin-bottom: 40px;
 }
 
 .show {
@@ -54,6 +80,11 @@ a:hover {
 	display: inline-block;
 	height: 290px;
 	max-width: 200px;
+	margin: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 4px ridge var(--l-blue);
+	box-shadow:
 }
 
 .show img {
@@ -66,6 +97,7 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	opacity: 0;
+	transition-duration: 0.5s;
 }
 
 .hov:hover {
@@ -75,10 +107,10 @@ a:hover {
 .box {
 	text-align: center;
 	width: 90%;
-	max-height: 50%;
+	max-height: 90%;
 	overflow: auto;
 	position: absolute;
-	top: 25%;
+	top: 5%;
 	left: 6%;
 	padding: 5px;
 	background: rgb(229, 184, 209, 0.9);
@@ -90,7 +122,7 @@ a:hover {
 }
 
 .status {
-	background: white;
+	background: var(--l-blue);
 	border: 1px dashed #2A4365;
 	display: inline-block;
 	padding: 3px;
@@ -98,8 +130,50 @@ a:hover {
 	font-style: oblique;
 }
 
+.status:before {
+	content: "status: ";
+	font-weight: bold;
+}
+
+main details {
+	background: var(--purple);
+	color: var(--l-blue);
+	padding: 0px 5px;
+	max-width: 500px;
+	margin: auto;
+	cursor: help;
+}
+
 footer {
-	border-top: 2px dashed #764C7F;
 	padding: 5px;
+	max-width: 700px;
+	margin-top: 50px;
+}
+
+footer p {
+	margin: 3px 0px;
+}
+
+#home {
+	position: fixed;
+	top: 10px;
+	left: 10px;
+}
+
+#home a {
+	background: transparent;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
 	text-align: center;
+	font-size: 15px;
+	word-spacing: 8px;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed var(--green);
+	color: var(--l-blue);
+	background: var(--berry);
 }
