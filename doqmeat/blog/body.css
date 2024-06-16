@@ -42,6 +42,7 @@ strong,
 mark {
 	padding: 1px 3px;
 	border-radius: 5px;
+	box-decoration-break: clone;
 }
 
 i a,
@@ -112,7 +113,7 @@ blockquote {
 	color: black;
 }
 
-.transp{
+.transp {
 	background: transparent;
 }
 
@@ -150,7 +151,7 @@ blockquote {
 #music-btn {
 	background-color: transparent;
 	border: 0px;
-	margin-top:5px;
+	margin-top: 5px;
 	float: right;
 	cursor: help;
 }
