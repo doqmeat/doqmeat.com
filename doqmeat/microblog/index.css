@@ -55,7 +55,7 @@
 			width: 100%;
 			height: 100%;
 			border: none;
-			overflow: scroll;
+			overflow: auto;
 			scrollbar-color: #a3b5cb #ca7f9a;
 			padding: 10px;
 		}
@@ -91,7 +91,7 @@
 			bottom: 30px;
 			right: 250px;
 			height: 300px;
-			overflow: scroll;
+			overflow: auto;
 			width: 290px;
 			cursor: move;
 		}
