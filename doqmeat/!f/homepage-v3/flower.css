@@ -220,7 +220,7 @@ button:hover {
 	font-size: 16px;
 	word-spacing: 3px;
 	letter-spacing: 1px;
-	background-image: url(/!g/homepage/cloud1.png)
+	background-image: url(/!g/homepage/cloud2.png)
 }
 
 #status a {
@@ -594,12 +594,14 @@ button:hover {
 	rotate: -20deg
 }
 
+/*
 #sticker25 {
 	content: url('/!g/deco/koinuko-kittytiny.gif');
 	top: 36%;
 	left: 25%;
 	rotate: -14deg
 }
+*/
 
 #sticker26 {
 	content: url('/!g/deco/bunnyzzz.gif');
@@ -617,6 +619,12 @@ button:hover {
 	content: url("/!g/deco/hk-pixel%20(10).gif");
 	top: -0.3%;
 	left: 26%;
+}
+
+#mizu {
+	content: url('/!g/homepage/mizu.png');
+	top: 31%;
+	left: 22.5%;
 }
 
 #fixed-1 {
