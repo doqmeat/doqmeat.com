@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--fonts: ms pgothic, arial;
+}
+
 body {
 	background: url(celeste/celestefarewell.jpg) no-repeat top fixed;
 	-webkit-background-size: cover;
@@ -15,10 +19,6 @@ body {
 	font-family: var(--fonts);
 	color: black;
 	margin: 0px;
-}
-
-:root {
-	--fonts: ms pgothic, arial;
 }
 
 h1,
@@ -237,11 +237,6 @@ footer {
 }
 
 /*fonts and cursor*/
-
-@font-face {
-	font-family: 'morningtea';
-	src: url(/fonts/MorningTea.ttf);
-}
 
 @font-face {
 	font-family: 'basiic';
