@@ -412,13 +412,16 @@ feel free to look around for any help you need :) just don't be THAT person and 
 		<img id="sticker27" class="deco" alt="">
 		<img id="sticker28" class="deco" alt="">
 		<img id="fixed-1" alt="">
-		<img id="mizu" class="deco" alt="">
+		<img onclick="mizu()" id="mizu" class="deco" alt="">
 		<!--		wrapper end div-->
+	</div>
+
+	<div id="mizu-pop-up">
+		<p>meow! i am the best <a href="/shrines/mizu/index.html">cat</a> in the world! (p≧w≦q)</p>
 	</div>
 
 	<div class="snowflakes">
 		<div class="snowflake"><img src="/!g/pix/sorahana-butterfly-p2.gif"></div>
-		<div class="snowflake"></div>
 		<div class="snowflake"><img src="/!g/pix/butter2.gif"></div>
 		<div class="snowflake"><img src="/!g/pix/nyancat.gif"></div>
 		<div class="snowflake"><img src="/!g/pix/sparkles1.gif"></div>
@@ -458,12 +461,22 @@ feel free to look around for any help you need :) just don't be THAT person and 
 			setTimeout(function() {
 				titleScroller(text.substr(1) + text.substr(0, 1));
 			}, 500);
-		}("☆⌒(*＾-゜)v☆"));
+		}("doqmeat homepage ☆⌒(*＾-゜)v☆"));
 
 	</script>
-	<script src="!f/homepage-v3/last.fm.js">
+	<script>
+		var mizuPop = document.getElementById("mizu-pop-up");
+
+		function mizu() {
+			if (mizuPop.style.display == "block") {
+				mizuPop.style.display = "none";
+			} else {
+				mizuPop.style.display = "block";
+			}
+		}
+
 	</script>
-	<script src="!f/css-picker.js"></script>
+	<script src="!f/homepage-v3/last.fm.js"></script>
 	<script src="!f/music-toggle.js"></script>
 	<script src="!f/homepage-v3/mccatdrag.js"></script>
 	<script src="!f/homepage-v3/chatbox.js"></script>
