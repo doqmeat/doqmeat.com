@@ -142,7 +142,7 @@ nav button img {
 
 nav a,
 nav button {
-	font-family: morningtea, var(--fonts);
+	font-family: var(--fonts);
 	color: var(--d-brown);
 	font-size: 19px;
 	font-weight: 700;
@@ -317,7 +317,7 @@ button:hover {
 }
 
 #updates {
-	font-family: gaegu-r, var(--fonts);
+	font-family: gaegu-l, var(--fonts);
 	font-size: 18px;
 	line-height: 20px;
 	padding-bottom: 25px
@@ -359,7 +359,7 @@ button:hover {
 }
 
 #widget {
-	font-family: gaegu-r, var(--fonts);
+	font-family: gaegu-l, var(--fonts);
 	font-size: 17px;
 	top: -10px;
 	height: 110%
