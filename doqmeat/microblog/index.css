@@ -12,8 +12,10 @@
 		}
 
 		body {
-			background: url(bg.png);
-			background-position: right center;
+			background: url(bg.png) no-repeat bottom fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
 			background-size: cover;
 			font-family: ms pgothic, arial;
 			margin: 0;
