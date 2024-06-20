@@ -3,6 +3,7 @@ body {
 	font-size: 16px;
 	line-height: 20px;
 	font-family: yoster;
+	margin: 0px;
 }
 
 .centered {
@@ -27,21 +28,21 @@ a {
 	color: black;
 }
 
-.vgimg {
+.filterDiv img {
 	box-sizing: border-box;
 	width: 100%;
 	opacity: 0.7;
 	transition-duration: 0.4s;
 }
 
-.vgimg:hover {
+.filterDiv img:hover {
 	opacity: 1;
 	cursor: cell;
 }
 
-.vgimg:focus {
+.filterDiv img:focus {
 	opacity: 1;
-	border: 2px solid black;
+	border: 1px dashed black;
 }
 
 .filterDiv {
