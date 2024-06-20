@@ -1,17 +1,18 @@
 songBox {
-	background-color: #111;
+	background: url(https://doqmeat.com/!g/bg/h069-5.gif);
 	border: 4px ridge aliceblue;
 	align-items: center;
 }
 
 siteName {
 	margin: auto;
-	color: darkgray;
+	color: black;
 	font-size: 1.5vmin;
 }
 
 trackInfo {
 	/* You can set font-family here after importing from google fonts or your own site and it will apply to all text in your song box  */
+	font-family: gaegu-r, ms pgothic;
 	width: fit-content;
 }
 
@@ -36,4 +37,9 @@ searchButton {
 	font-size: 1vmax;
 	padding: 4px;
 	text-decoration: none;
+}
+
+@font-face {
+	font-family: 'gaegu-r';
+	src: url(https://doqmeat.com/fonts/Gaegu-Regular.ttf)
 }
