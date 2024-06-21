@@ -44,6 +44,10 @@ footer {
 	border: 2px dashed var(--d-blue);
 }
 
+header {
+	margin-top: 50px;
+}
+
 h1 {
 	font-family: pink-tape, var(--fonts);
 }
@@ -113,7 +117,7 @@ a:hover {
 	top: 5%;
 	left: 6%;
 	padding: 5px;
-	background: rgb(229, 184, 209, 0.9);
+	background: rgb(229, 184, 209, 0.98);
 	border-radius: 10px;
 }
 
