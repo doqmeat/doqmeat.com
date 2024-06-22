@@ -1,6 +1,9 @@
 songBox {
-	background: url(https://doqmeat.com/!g/bg/h069-5.gif);
-	border: 4px ridge aliceblue;
+	/*	background: url(https://doqmeat.com/!g/bg/h069-5.gif);*/
+	background-color: blanchedalmond;
+	background-image: url(https://doqmeat.com/notebook/!g/grid-mustard.png);
+	border: 2px solid pink;
+	border-radius: 10px;
 	align-items: center;
 }
 
@@ -12,7 +15,7 @@ siteName {
 
 trackInfo {
 	/* You can set font-family here after importing from google fonts or your own site and it will apply to all text in your song box  */
-	font-family: gaegu-r, ms pgothic;
+	font-family: gaegu-r, ms pgothic, arial;
 	width: fit-content;
 }
 
@@ -21,14 +24,20 @@ trackCover {
 	float: left;
 }
 
+a {
+	color: black;
+}
+
 trackName {
 	font-size: 2vmin;
 	font-weight: bold;
+	color: black;
 }
 
 artistName {
 	font-size: 1vmax;
 	margin: 5px auto;
+	color: black;
 }
 
 searchButton {
@@ -41,5 +50,5 @@ searchButton {
 
 @font-face {
 	font-family: 'gaegu-r';
-	src: url(https://doqmeat.com/fonts/Gaegu-Regular.ttf)
+	src: url(https://doqmeat.com/fonts/Gaegu-Regular.ttf);
 }
