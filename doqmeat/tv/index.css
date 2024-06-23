@@ -15,7 +15,7 @@
 
 body {
 	font-family: var(--fonts);
-	background: url(/!g/bg/rebellion-bg.png);
+	background: url(bg.png);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
