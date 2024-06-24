@@ -149,6 +149,28 @@ footer {
 	bottom: 10px;
 }
 
+.lp {
+	background: #E2D1CC;
+}
+
+.ep {
+	background: #C5CAA5;
+}
+
+.single {
+	background: #EADCD2
+}
+
+.track {
+	background: #F2F2EB;
+}
+
+.misc,
+.ost,
+.post {
+	background: #B9B0A2
+}
+
 @media only screen and (max-width: 940px) {
 	#wrapperlog {
 		width: 100%;
@@ -162,6 +184,7 @@ footer {
 		position: relative;
 		width: 100%;
 	}
+
 
 }
 
