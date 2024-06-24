@@ -7,7 +7,7 @@
 
 	<title>fav artists n genres</title>
 	<link rel="icon" type="image/x-icon" href="favicon.gif">
-<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<link href="body.css" rel="stylesheet" type="text/css" media="all">
 	<link href="frame.css" rel="stylesheet" type="text/css" media="all">
 
@@ -16,32 +16,86 @@
 	<script src="/!f/tooltip-jquary.js"></script>
 	<script src="/!f/tooltip.js"></script>
 	<!--  end of tooltip shit -->
+	<style>
+		li a:before {
+			content: url(/!g/pix/ball_s_18.gif);
+			padding-right: 5px;
+		}
 
+		li a {
+			background: transparent;
+			color: var(--l-brown);
+			text-shadow: 1px 1px 1px var(--pink);
+		}
+
+		li mark {
+			background: var(--pink);
+		}
+
+		#iframe-player {
+			display: block;
+			margin: auto;
+			width: 60%;
+			height: 200px;
+			border: none;
+			overflow: hidden;
+			box-shadow: -5px 5px 10px var(--pink), 5px -5px 10px var(--pink);
+			;
+		}
+
+	</style>
 </head>
 
 <body>
 	<div id="frame">
-
-		<h2>favorite artists</h2>
-		<p>i enjoy the music they make a whole lot :) <b>links</b> are my favorite songs from them</p>
+		<h2>fav artists</h2>
+		<p>i enjoy the music they make a whole lot :) here are my favorite songs from them. <small>links will pop-up in the iframe below! this page will eventually be reworked...</small></p>
+		<iframe id="iframe-player" name="player" src="https://www.youtube-nocookie.com/embed/xCd5ancA8Aw?si=zuhmY_l_ovkyHeSu"></iframe>
 		<ul>
-			<li>yukika - <a href="https://www.youtube.com/watch?v=67jSYCSrnE4&pp=ygULeXVraWthIG5lb24%3D" target="_blank">neon</a> <a href="https://www.youtube.com/watch?v=rK69AriTIZc&pp=ygUMeXVraWthIHNoYWRl" target="_blank">shade</a></li>
-			<li>siinamota - <a href="https://www.youtube.com/watch?v=xCd5ancA8Aw&pp=ygUYc2lpbmFtb3RhIGxvc3QgYW5kIGZvdW5k" target="_blank">lost &amp; found</a> <a href="https://youtu.be/WchOJBb--PU?si=yYnET0-oIo_oALaq" target="_blank">halo</a> <a href="https://www.youtube.com/watch?v=j17SaXuAQGg&pp=ygUYc2lpbmFtb3RhIG1hc2hpcm8gbm8gaXJv" target="_blank">mashiro no iro</a> <a href="https://www.youtube.com/watch?v=RNKRbnWVIxw&pp=ygUNc2lpbmFtb3RhIDk5OQ%3D%3D" target="_blank">999</a></li>
-			<li>c418 - <a href="https://www.youtube.com/watch?v=KhDWXgOsTUU&list=PLXrHraoebMTssp0Filc0XSzWkct4N0Gom&index=1&pp=iAQB8AUB" target="_blank">zweiton</a> <a href="https://www.youtube.com/watch?v=Z8PPOyt1OW8&pp=ygUTYzQxOCBoYWJpdHVhbCBjcnVzaA%3D%3D" target="_blank">habitual crush</a> <a href="https://youtu.be/BxD6yVYX9bI?si=nXeJbHB-bforzXHX" target="_blank">sleepless</a></li>
-			<li>beach house - <a href="https://youtu.be/NFhJRTdmviA?si=hHX1RZLGRqzufbhp" target="_blank">PPP</a> <a href="https://youtu.be/Bv7IcjmxjGo?si=U1vz4r95PVrOUBf5" target="_blank">myth</a> <a href="https://youtu.be/AEVjxKlP3nA?si=lKgBuluO0EjZPA27" target="_blank">used to be</a> <a href="https://youtu.be/2-eBDrE25ec?si=DTqonBPz-H4qEjIh" target="_blank">dark spring</a></li>
-			<li>daoko - <a href="https://youtu.be/i4VwuseyA7Q?si=mrN0DsIiET-Ow8jv" target="_blank">abon</a> <a href="https://youtu.be/P5cI2Phbv8Y?si=bXOrRal_dLIZ9ULW" target="_blank">shibuyaK</a></li>
-			<li>arctic monkeys - <a href="https://youtu.be/8-LewaeKejM?si=jshmfVrjTgQgmUgd" target="_blank">fireside</a> <a href="https://youtu.be/1_O_T6Aq85E?si=O42jiHyQsxAB_TgF" target="_blank">snap out of it</a> <a href="https://youtu.be/71Es-8FfATo?si=1mUisN6wxLRluBir" target="_blank">four out of five</a></li>
-			<li>parsley onuma - <a href="https://www.youtube.com/watch?v=_DBspn22T98" target="_blank">corruption</a> <a href="https://www.youtube.com/watch?v=44L09CWyrsU&pp=ygUUcGFyc2xleSBvbnVtYSBpeXVlbmk%3D" target="_blank">iyueni</a> <a href="https://www.youtube.com/watch?v=jHt5_A58bMc&pp=ygUUcGFyc2xleSBvbnVtYSBwcmFpc2U%3D" target="_blank">praise</a> <a href="https://www.youtube.com/watch?v=QprnVxCveSY&pp=ygUUcGFyc2xleSBvbnVtYSBlZ29pc3Q%3D" target="_blank">egoist</a></li>
-			<li>drippin - <a href="https://www.youtube.com/watch?v=hLy97A992FA&pp=ygUOZHJpcHBpbiBzd2l0Y2g%3D" target="_blank">switch</a> <a href="https://www.youtube.com/watch?v=BdUCdh7ff9I&pp=ygURZHJpcHBpbiBub3N0YWxnaWE%3D" target="_blank">nostalgia</a> <a href="https://www.youtube.com/watch?v=XjkTVx9V5dE&pp=ygUPZHJpcHBpbiB0aGUgb25l" target="_blank">the one</a> <a href="https://www.youtube.com/watch?v=uFS_kLS_DC4&pp=ygUOZHJpcHBpbiB1dG9waWE%3D" target="_blank">utopia</a></li>
-			<li>toby fox - <a href="https://youtu.be/qrtt7mgwCTw?si=u02h9X2Uyp0cWRPb" target="_blank">asgore</a> <a href="https://youtu.be/XJ9XtKJHvjQ?si=NRUXnLy5tq0X_BoX" target="_blank">heartache</a> <a href="https://www.youtube.com/watch?v=jyDdV8eIHGE" target="_blank">descend</a></li>
-			<li>kinoue64 - <a href="https://youtu.be/kX9wf-6hV7M?si=HSVIIFOmsOujWCCf" target="_blank">ずっと夢の中 (always in a dream)</a> <a href="https://youtu.be/29nzLUsgpbY?si=ZSj-Hx3wgK95zXVQ" target="_blank">亡霊(ghost)</a></li>
-			<li>oohyo - <a href="https://youtu.be/2gtdcbj5GDc?si=PNi0cACz00iXxZ_s" target="_blank">papercut</a></li>
-			<li>TRPP - <a href="https://youtu.be/v6kA8Xys0Gw?si=Pngb6Ftx2VN0cSy7" target="_blank">a joke...</a> <a href="https://youtu.be/krOoRkdbIAk?si=61r-ujD739Smhc2L" target="_blank">home dance</a> <a href="https://youtu.be/I7grPwXeCFE?si=dK0tGQNe5BUHGFxh" target="_blank">dodgy</a></li>
-			<li>perfume - <a href="https://youtu.be/Q5_2VK_Hj2s?si=AFP8ExvGP8hLh3XP" target="_blank">polygon wave</a> <a href="https://youtu.be/jyTiZUbL_Qg" target="_blank">linear motor girl</a> <a href="https://youtu.be/8zh0ouiYIZc?si=j7TpKQlzjGMjPp22" target="_blank">electro world</a> <a href="https://youtu.be/LM4oV01FTZM?si=RMuUDgkRKyxPra4o" target="_blank">perfume</a></li>
-			<li>yeule - <a href="https://youtu.be/muCYlrHjg3o?si=VCoHhG3PCTPZZAVE" target="_blank">pocky boy</a> <a href="https://youtu.be/U112Stii6uE?si=KpHAtY8TdOkXynaV" target="_blank">dazies</a> <a href="https://youtu.be/esjN9TdbzdE?si=C7jxI7nuZXdfMs5X" target="_blank">an angel held me like a child</a></li>
-			<li>bebe yana - <a href="https://youtu.be/fXgmejO7vYM?si=67FzI7K8h4tvBQlf" target="_blank">space mulan</a></li>
-		</ul>
+			<li>yukika - <a href="https://www.youtube-nocookie.com/embed/67jSYCSrnE4?si=18CbQhWmEj9dipFg" target="player">neon</a> <a href="https://www.youtube-nocookie.com/embed/rK69AriTIZc?si=IbG8dIH1aST_Rebk" target="player">shade</a></li>
 
+			<li>siinamota - <a href="https://www.youtube-nocookie.com/embed/xCd5ancA8Aw?si=zuhmY_l_ovkyHeSu" target="player">lost &amp; found</a> <a href="https://www.youtube-nocookie.com/embed/WchOJBb--PU?si=C66O9BYVZgGZnnns" target="player">halo</a> <a href="https://www.youtube-nocookie.com/embed/j17SaXuAQGg?si=3hVlFpjOC39qFRUb" target="player">mashiro no iro</a> <a href="https://www.youtube-nocookie.com/embed/RNKRbnWVIxw?si=k36sWhxQoK0Zw5tM" target="player">999</a></li>
+
+			<li>c418 - <a href="https://www.youtube-nocookie.com/embed/feYMk063DNU?si=kAaxIngXEw54reka" target="player">zweiton</a> <a href="https://www.youtube-nocookie.com/embed/Z8PPOyt1OW8?si=9-jO-JvBzBSQ-inD" target="player">habitual crush</a> <a href="https://www.youtube-nocookie.com/embed/BxD6yVYX9bI?si=VO5qHV-kid_aFoo0" target="player">sleepless</a></li>
+
+			<li>beach house - <a href="https://www.youtube-nocookie.com/embed/NFhJRTdmviA?si=qRpfzZFW6NQL1x8-" target="player">PPP</a> <a href="https://www.youtube-nocookie.com/embed/Bv7IcjmxjGo?si=y9foN18aNIZCz72n" target="player">myth</a> <a href="https://www.youtube-nocookie.com/embed/AEVjxKlP3nA?si=RdQ3Ga0dK11D7JVH" target="player">used to be</a> <a href="https://www.youtube-nocookie.com/embed/2-eBDrE25ec?si=83ZuWCk93dOJ0ebw" target="player">dark spring</a></li>
+
+			<li>daoko - <a href="https://www.youtube-nocookie.com/embed/i4VwuseyA7Q?si=YSQlB41O_qwKNFKK" target="player">abon</a> <a href="https://www.youtube-nocookie.com/embed/P5cI2Phbv8Y?si=WXSW_5AzU2FLqLyR" target="player">shibuyaK</a> <a href="https://www.youtube-nocookie.com/embed/CITkrPiTbS0?si=QED-afK-CEPYo6t2" target="player">天使がいたよ</a></li>
+
+			<li>arctic monkeys - <a href="https://www.youtube-nocookie.com/embed/8-LewaeKejM?si=zlolewTYpX3JO8kf" target="player">fireside</a> <a href="https://www.youtube-nocookie.com/embed/1_O_T6Aq85E?si=Jff-WG3M3kbkl4L6" target="player">snap out of it</a> <a href="https://www.youtube-nocookie.com/embed/71Es-8FfATo?si=tcCndOoEdrcfOE4x" target="player">four out of five</a></li>
+
+			<li>loona - <a href="https://www.youtube-nocookie.com/embed/s4-CdO5jbq0?si=6TD1KLHkGLSqFqRp" target="player">loonatic</a> <a href="https://www.youtube-nocookie.com/embed/QmpyuhX5DJg?si=iWBtSZVvxolmm0IZ" target="player">colors</a> <a href="https://www.youtube-nocookie.com/embed/mmtvjxighdM?si=lE4estCBZsZGONYU" target="player">oh (yes i am)</a> <a href="https://www.youtube-nocookie.com/embed/FrkCjKIrBPU?si=vufVKMvyb-pxFrpu" target="player">one &amp; only</a> <a href="https://www.youtube-nocookie.com/embed/NzAcFY8D_yk?si=4Vg4wqJwaeid5IsC" target="player">egoist</a>
+				<ul>
+					<li>ARTMS - <a href="https://www.youtube-nocookie.com/embed/ggsUTr8oCNM?si=kbkudu7WoxeorbWm" target="player">the hitchhiker's guide to the galaxy</a></li>
+				</ul>
+			</li>
+
+			<li>parsley onuma - <a title="warning: gross / graphic imagery" href="https://www.youtube-nocookie.com/embed/t0B6QJFJ0LM?si=mi0D4MQhSYNfaZpR" target="player">corruption</a> <a href="https://www.youtube-nocookie.com/embed/44L09CWyrsU?si=bmhJMFeQxBJGiHF1" target="player">iyueni</a> <a href="https://www.youtube-nocookie.com/embed/jHt5_A58bMc?si=RM8qjuzj1LM3HENx" target="player">praise</a> <a href="https://www.youtube-nocookie.com/embed/QprnVxCveSY?si=inb1TyV_0tv68rxG" target="player">egoist</a> <a href="https://www.youtube-nocookie.com/embed/juHEaW3-V9E?si=kJyTg0FO_h20W8g4" target="player">atelier</a> <a href="https://www.youtube-nocookie.com/embed/44L09CWyrsU?si=LGLS8lfjgafcr6y7" target="player">iyueni</a></li>
+
+			<li>drippin - <a href="https://www.youtube-nocookie.com/embed/hLy97A992FA?si=IUCNyAUgQOncmv93" target="player">switch</a> <a href="https://www.youtube-nocookie.com/embed/BdUCdh7ff9I?si=CjzX4H40H9ru9dix" target="player">nostalgia</a> <a href="https://www.youtube-nocookie.com/embed/XjkTVx9V5dE?si=3SFC5YoAND2q9Iy5" target="player">the one</a> <a href="https://www.youtube-nocookie.com/embed/pRTANHJxVis?si=lBmwlzktOlWlo2pm" target="player">utopia</a></li>
+
+			<li>toby fox - <a href="https://www.youtube-nocookie.com/embed/hMa4hZQbrms?si=ilbuUKziP-scKLew" target="player">asgore</a> <a href="https://www.youtube-nocookie.com/embed/xflkF-sqNaM?si=D-_0Rl4J6z-5EnnU" target="player">heartache</a> <a href="https://youtu.be/jyDdV8eIHGE?si=0hBHYusPVfZPV7SF" target="player">descend</a> <a href="https://www.youtube-nocookie.com/embed/OEB1uh0T9UA?si=TT1Cd1-NHVi3yTYf" target="player">umbral ultimatum</a> <a href="https://www.youtube-nocookie.com/embed/eUcThHVbrXY?si=vyMh6XqC23AKZTpE" target="player">your best nightmare</a></li>
+
+			<li>kinoue64 - <a href="https://www.youtube-nocookie.com/embed/kX9wf-6hV7M?si=dW76S5XyWuwacFH3" target="player">ずっと夢の中 (always in a dream)</a> <a href="https://www.youtube-nocookie.com/embed/29nzLUsgpbY?si=DOIAt5fGpYVTMeZX" target="player">亡霊(ghost)</a></li>
+
+			<li>oohyo - <a href="https://www.youtube-nocookie.com/embed/2gtdcbj5GDc?si=J6VpgDxTClQ51LI6" target="player">papercut</a> <a href="https://www.youtube-nocookie.com/embed/i2VTnyBLRdg?si=7taAQce0n4YbeUy_" target="player">a good day</a></li>
+
+			<li>TRPP - <a href="https://www.youtube-nocookie.com/embed/v6kA8Xys0Gw?si=fJy1AWl8mLdXqbfD" target="player">a joke...</a> <a href="https://www.youtube-nocookie.com/embed/krOoRkdbIAk?si=U0XK-eQDxUZzpoKg" target="player">home dance</a> <a href="https://www.youtube-nocookie.com/embed/I7grPwXeCFE?si=3Vg8rW03MpmzrbkW" target="player">dodgy</a></li>
+
+			<li>perfume - <a href="https://www.youtube-nocookie.com/embed/Q5_2VK_Hj2s?si=guyjXjGT-UIwta6f" target="player">polygon wave</a> <a href="https://www.youtube-nocookie.com/embed/jyTiZUbL_Qg?si=pqlseUVlO4y75XPT" target="player">linear motor girl</a> <a href="https://www.youtube-nocookie.com/embed/8zh0ouiYIZc?si=Dwvw1y5ZQb6r9j9o" target="player">electro world</a> <a href="https://www.youtube-nocookie.com/embed/LM4oV01FTZM?si=Y96AOW68iCQqftMG" target="player">perfume</a></li>
+
+			<li>yeule - <a href="https://www.youtube-nocookie.com/embed/muCYlrHjg3o?si=7xLtK8oK2LsIHtdW" target="player">pocky boy</a> <a href="https://www.youtube-nocookie.com/embed/U112Stii6uE?si=cVycRS-ekxJLhwk-" target="player">dazies</a> <a href="https://www.youtube-nocookie.com/embed/esjN9TdbzdE?si=9S-qRHOO11DUhkuc" target="player">an angel held me like a child</a></li>
+
+			<li>bebe yana - <a href="https://www.youtube-nocookie.com/embed/fXgmejO7vYM?si=EeS3LGqhBwkg5FD3" target="player">space mulan</a> <a href="https://www.youtube-nocookie.com/embed/T2CIz6r1gDU?si=ICUWtc0RqwfgAcW6" target="player">chemistry</a></li>
+
+			<li>tomorrow x together - <a href="https://www.youtube-nocookie.com/embed/z7YWwpCk98c?si=clsw9IIpzLmsoKHw" target="player">roller coaster</a> <a href="https://www.youtube-nocookie.com/embed/MtDeVpVzLhY?si=J6wk1RnrEiQ1tyDC" target="player">i'll see you there tomorrow</a> <a href="https://www.youtube-nocookie.com/embed/n9nRQHMnBls?si=odqsalVlz55LvM0k" target="player">fairy of shampoo</a></li>
+
+			<li>tripleS - <a href="https://www.youtube-nocookie.com/embed/3TQd2ahq6oU?si=NKdozD0ZZYdckhyY" target="player">rising</a> <a href="https://www.youtube-nocookie.com/embed/E0GDA-5D7W0?si=7-raXZmnGeEKiQ5P" target="player">speed love</a> <a href="https://www.youtube-nocookie.com/embed/0cZ7o0Wn_dc?si=3vYHh_HesmKa-y9S" target="player">generation</a> <a href="https://www.youtube-nocookie.com/embed/6AXfDqaMBIw?si=h6AgGP5hptAJhdNP" target="player">24</a> <a href="https://www.youtube-nocookie.com/embed/gWDSUFmRLq0?si=8O15G3i9Jw8Cay4F" target="player">dimension</a> <a href="https://www.youtube-nocookie.com/embed/2tda_TCjz8w?si=vmzpqGN3XHBCgSiD" target="player">girls never die</a></li>
+
+			<li>lucy - <a href="https://www.youtube-nocookie.com/embed/mK8ROkM8ff4?si=XKGfiBa_zOr89wQa" target="player">watermelon</a> <a href="https://www.youtube-nocookie.com/embed/dh684FWByO4?si=pFK1y5wbgDPrFRFm" target="player">jogging</a> <a href="https://www.youtube-nocookie.com/embed/Vf_DhjXG4rs?si=ikmomfEk0pL-Mtd5" target="player">꿈</a> <a href="https://www.youtube-nocookie.com/embed/NC0pVi9MJq4?si=8H5PqZj1_lv0VNt4" target="player">domino</a></li>
+
+			<li>erbatur / futureisfailed - <a href="https://bandcamp.com/EmbeddedPlayer/album=3020021047/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2369725388/transparent=true/" target="player">bye-bye strobe</a> <a href="https://bandcamp.com/EmbeddedPlayer/album=663551354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=3128202033/transparent=true/" target="player">miku opera</a> <a href="https://bandcamp.com/EmbeddedPlayer/album=2139139048/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/transparent=true/" target="player">ハロー</a> <a href="https://bandcamp.com/EmbeddedPlayer/album=663551354/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=small/track=2200126477/transparent=true/" target="player">異​邦​ツ​チ​ノ​コ </a></li>
+		</ul>
 
 		<h2>fav genres</h2>
 		<p>i pretty much listen to anything with a good beat to it. i go more in-depth about my favorite songs from each genre in my <a href="playlists.html">playlists</a> page!</p>
@@ -62,23 +116,13 @@
 			<li>indie rock</li>
 		</ul>
 
-		<h2>kpop related</h2>
-		<h3>fav idols</h3>
-		<ul>
-			<li>drippin <img src="/!g/pix/heart2.gif"> <mark>minseo, alex, junho</mark>
-			<li>yukika <img src="/!g/pix/heart2.gif">
-			<li>loona <img src="/!g/pix/heart2.gif"> <mark>vivi, gowon</mark>
-			<li>lucy <img src="/!g/pix/heart2.gif"> <mark>yechan</mark>
 
-				<h4>other groups i listen to</h4>
-			<li>txt</li>
-			<li>onf</li>
-			<li>shinee</li>
-			<li>tempest</li>
-			<li>mirae</li>
-			<li>road-b</li>
-			<li>taemin</li>
-			<li>tripleS</li>
+		<h3>kpop idols &amp; groups i am in a parasocial relationship with</h3>
+		<ul>
+			<li>yukika</li>
+			<li>drippin <mark>minseo, alex, junho</mark></li>
+			<li>loona <mark>vivi, gowon</mark></li>
+			<li>lucy <mark>yechan</mark></li>
 
 		</ul>
 
@@ -86,7 +130,7 @@
 	</div>
 
 	<footer>
-		last updated: 19.oct.23 <br>
+		last updated: 24.jun.24 <br>
 		<a href="#">top</a> <span class="emoji2"></span> <a href="/music">music</a> <span class="emoji2"></span> <a href="/">home</a> <span class="emoji2"></span> <a href="/sitemap.html">sitemap</a>
 	</footer>
 </body>
