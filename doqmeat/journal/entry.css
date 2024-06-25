@@ -17,10 +17,17 @@ header {
 	padding: 5px;
 }
 
+q{
+	font-style: italic;
+}
+
 li {
 	list-style-image: url('/!g/pix/starpink.gif');
-	padding-left: 2px;
+
 	list-style-position: inside;
+	padding: 0px;
+	padding-left: 10px;
+	margin: 10px 0;
 }
 
 p {
