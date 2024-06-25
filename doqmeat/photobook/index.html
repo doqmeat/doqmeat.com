@@ -23,7 +23,7 @@ coded with love by des
 
 	<header>
 		<h1>doqmeat's photobook</h1>
-		<p>my <b>instant film</b> pics are taken with a <button title="click to show camera!" onclick="showPics()">fujifilm instax mini 26</button>. i've had it since 2018, works like a charm! both the camera and film it uses are pretty affordable. i love the pics you can get with it so i highly recommend it if you're looking for something to have some fun with!</p>
+		<p>my <b>instant film</b> pics are taken with a <button id="cam-button" title="click to show cam!" onclick="showPics()">fujifilm instax mini 26</button>. i've had it since 2018, works like a charm! both the camera and film it uses are pretty affordable. i love the pics you can get with it so i highly recommend it if you're looking for something to have some fun with!</p>
 		<div id="cam-pics">
 			<img src="instant-cam%20(2).png">
 			<img src="instant-cam%20(1).png">
@@ -393,10 +393,13 @@ hiii this is a caption
 	<script>
 		function showPics() {
 			var picDiv = document.getElementById("cam-pics");
+			var btn = document.getElementById("cam-button");
 			if (picDiv.style.display == "block") {
 				picDiv.style.display = "none";
+				btn.title = "click to show cam!";
 			} else {
 				picDiv.style.display = "block";
+				btn.title = "click to hide cam!";
 			}
 		}
 
