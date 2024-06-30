@@ -214,6 +214,7 @@ footer {
 	}
 
 	.log {
+		background: transparent;
 		border: 0px;
 		border-bottom: var(--d-border);
 	}
