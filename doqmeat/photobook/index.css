@@ -112,15 +112,19 @@ a:hover {
 	-moz-border-image: url("/!g/border/bluelaceborde.png") 8 round;
 }
 
-.film {
-	border-radius: 5px;
-	border: 10px solid white;
-	border-bottom-width: 4rem;
+.pic img {
+	width: 100%;
 }
 
-.pic > img {
-	width: 100%;
-	border-radius: 5px;
+.pic img:first-child {
+	border-radius: 10px 10px 0 0;
+}
+
+.film {
+	background: white;
+	border-radius: 10px;
+	border: 10px solid white;
+	border-bottom-width: 4rem;
 }
 
 .caption {
