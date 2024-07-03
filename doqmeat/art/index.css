@@ -1,0 +1,104 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--fonts: gaegu-b, ms pgothic, arial;
+}
+
+body {
+	background-image: url("/!g/bg/bg4.gif");
+	background-color: #cabbe6;
+	font-family: var(--fonts);
+	font-size: 18px;
+	word-wrap: break-word;
+	padding: 10px;
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+	text-decoration: wavy underline;
+	color: black;
+	transition-duration: 0.5s;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+h1,
+h2 {
+	font-family: bangalore;
+	font-weight: normal;
+}
+
+main {
+	position: relative;
+	max-width: 700px;
+	text-align: center;
+}
+
+button.container {
+	padding: 5px;
+	width: 140px;
+	height: 140px;
+	border: 1px dashed #f5c9ca;
+	background: white;
+	margin: 10px;
+	transition-duration: 0.5s;
+}
+
+button.container img {
+	width: 100%;
+}
+
+button:hover {
+	cursor: zoom-in;
+	rotate: 5deg;
+	border: 1px solid #ddeeed;
+}
+
+button:focus {
+	rotate: -10deg;
+	border: 1px solid #ddeeed;
+}
+
+button:focus::after {
+	content: url("/!g/deco/pin.png");
+	position: absolute;
+	margin-top: -20px;
+	margin-left: -10px;
+	pointer-events: none;
+}
+
+.window {
+	background: white;
+	border: 1px dashed black;
+	border-radius: 20px;
+	padding: 20px;
+	display: none;
+	top: 50px;
+	left: 740px;
+	position: fixed;
+	width: 500px;
+	max-height: 600px;
+	overflow: auto;
+	scrollbar-color: #cdddfc #fff;
+}
+
+footer {
+	margin: 50px 0px;
+}
+
+#pagedoll {
+	position: fixed;
+	bottom: -7px;
+	right: 15px;
+}
+
+@media only screen and (max-width:1212px) {
+	.window {
+		position: absolute;
+	}
+}
