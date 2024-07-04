@@ -7,7 +7,7 @@
 }
 
 body {
-	background-image: url("/!g/bg/bg4.gif");
+	background-image: url("/notebook/!g/grid-mustard.png");
 	background-color: #cabbe6;
 	font-family: var(--fonts);
 	font-size: 18px;
@@ -18,8 +18,12 @@ body {
 }
 
 a {
-	text-decoration: wavy underline;
-	color: black;
+	background: #eeb096;
+	text-decoration: none;
+	padding: 0px 2px;
+	border-radius: 2px;
+	color: white;
+	text-shadow: 1px 1px 1px black;
 	transition-duration: 0.5s;
 }
 
@@ -34,6 +38,7 @@ h2 {
 }
 
 main {
+	padding: 10px;
 	position: relative;
 	max-width: 700px;
 	text-align: center;
@@ -43,23 +48,27 @@ button.container {
 	padding: 5px;
 	width: 140px;
 	height: 140px;
-	border: 1px dashed #f5c9ca;
-	background: white;
+	border: 1px solid white;
+	background: #ffeda8;
 	margin: 10px;
 	transition-duration: 0.5s;
+	border-radius: 10px;
 }
 
 button.container img {
 	width: 100%;
+	border-radius: 10px;
 }
 
 button:hover {
 	cursor: zoom-in;
+	background: #eeb096;
 	rotate: 5deg;
 	border: 1px solid #ddeeed;
 }
 
 button:focus {
+	background: #eeb096;
 	rotate: -10deg;
 	border: 1px solid #ddeeed;
 }
@@ -74,17 +83,21 @@ button:focus::after {
 
 .window {
 	background: white;
-	border: 1px dashed black;
 	border-radius: 20px;
+	border: 1px solid #f67a02;
 	padding: 20px;
 	display: none;
-	top: 50px;
+	top: 60px;
 	left: 740px;
 	position: fixed;
-	width: 500px;
-	max-height: 600px;
+	max-width: 500px;
+	max-height: 500px;
 	overflow: auto;
 	scrollbar-color: #cdddfc #fff;
+}
+
+.window p:hover {
+	background: white;
 }
 
 footer {
@@ -97,8 +110,42 @@ footer {
 	right: 15px;
 }
 
-@media only screen and (max-width:1212px) {
+#home {
+	position: fixed;
+	top: 5px;
+	left: 7px;
+}
+
+#home a {
+	background: transparent;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed black;
+	color: white;
+	background: #eeb096;
+}
+
+@media only screen and (max-width:1134px) {
+	main {
+		margin: auto;
+	}
+
 	.window {
-		position: absolute;
+		position: relative;
+		top: 0px;
+		left: 0px;
+		margin: auto;
+		max-height: 100%;
+	}
+
+	#pagedoll {
+		display: none;
 	}
 }
