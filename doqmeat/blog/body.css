@@ -3,7 +3,7 @@
 }
 
 :root {
-	--fonts: ms pgothic, basiic, arial;
+	--fonts: ms pgothic, gaegu-l, arial;
 }
 
 body {
@@ -30,7 +30,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: newpenji, var(--fonts);
+	font-family: spirit, var(--fonts);
 	letter-spacing: 2px;
 }
 
@@ -50,6 +50,14 @@ b a,
 mark a,
 strong a {
 	background: transparent;
+}
+
+figure {
+	text-align: center;
+}
+
+figcaption {
+	font-size: 14px;
 }
 
 a {
@@ -233,9 +241,9 @@ nav a:hover {
 /* black and white classes options */
 
 .date {
-	font-family: newpenji, var(--fonts);
+	font-family: spirit, var(--fonts);
 	text-align: right;
-	font-size: 18px;
+	font-size: 13px;
 	font-weight: normal;
 }
 
