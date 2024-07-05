@@ -134,8 +134,8 @@ p img {
 	width: 500px;
 }
 
-.about h3{
-text-shadow: 1px 1px 4px #f459ef;
+.about h3 {
+	text-shadow: 1px 1px 4px #f459ef;
 }
 
 .about .wrapper-in {
@@ -232,7 +232,7 @@ text-shadow: 1px 1px 4px #f459ef;
 
 .me .wrapper-in img {
 	display: inline-block;
-	height: 150px;
+	height: 148px;
 }
 
 .charas {
