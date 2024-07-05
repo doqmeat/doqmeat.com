@@ -85,7 +85,8 @@ h1 {
 	margin: 3px;
 }
 
-.column img {
+.column img,
+.column video {
 	border-radius: 5px;
 	width: 100%;
 	padding: 2px 0px;
