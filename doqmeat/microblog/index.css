@@ -244,8 +244,10 @@
 			margin: 30px 15px 7px 12px;
 			padding: 5px;
 		}
-.show{
-display:none}
+
+		.show {
+			display: none
+		}
 
 		@media only screen and (max-width: 1160px) {
 
@@ -259,8 +261,10 @@ display:none}
 		}
 
 		@media only screen and (max-width: 600px) {
-.show{
-display:block;}
+			.show {
+				display: block;
+			}
+
 			#mouse {
 				display: none;
 			}
