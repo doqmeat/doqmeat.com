@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+	<channel>
+		<title>doqmeat.com</title>
+		<link>https://doqmeat.com.com</link>
+		<description>des' personal website!</description>
+		<item>
+			<title>journal v3 now up!</title>
+			<link>https://doqmeat.com/journal</link>
+			<description>updated my journal layout + added a new log + oh hey now there's an RSS feed!</description>
+		</item>
+	</channel>
+
+</rss>
