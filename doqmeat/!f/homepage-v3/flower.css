@@ -325,37 +325,73 @@ button:hover {
 
 #updates a {
 	color: var(--l-yellow);
-	text-shadow: 2px 1px var(--d-brown);
-	text-decoration: none
+	text-shadow: 2px 1px 2px var(--d-brown);
+	text-decoration: none;
 }
 
-#updates li {
-	list-style-image: url(/!g/pix/1leaf.png);
+h4.feed-item-title {
+	color: #908BC2;
+	font-family: gaegu-r, var(--fonts);
+	font-size: 16px;
+}
+
+.feed-item-desc {
+	padding: 0;
+	margin: 0px;
+	margin-bottom: 15px;
+	font-size: 15px;
+}
+
+.feed-item-desc::before {
+	content: url(/!g/pix/1leaf.png);
 	padding: 6px 5px;
 }
 
-#updates li img {
-	vertical-align: middle
-}
-
-#updates a + li {
-	font-family: gaegu-b, var(--fonts);
-	list-style-image: url(/!g/pix/sorahana-butterfly-pmm.gif);
+h4 + .feed-item-desc:nth-of-type(1) {
+	padding: 8px;
+	font-family: gaegu-r, var(--fonts);
+	font-size: 16px;
 	border: 2px solid #EBBBE1;
 	border-radius: 10px;
 	background: white;
 	background-image: url(/!g/bg/h096-2.gif);
-	box-shadow: 0 0 7px 10px #fff inset
+	box-shadow: 0 0 10px 10px #fff inset
 }
 
-#updates a + li a {
+h4 + .feed-item-desc:nth-of-type(1)::before {
+	content: url(/!g/pix/sorahana-butterfly-pmm.gif);
+	padding-right: 4px;
+}
+
+.rss {
+	width:15px;
+image-rendering: pixelated;
+}
+
+#updates div a {
+	font-size: 13px;
+}
+
+#updates h3 + h4 {
+	padding: 2px;
+	font-family: gaegu-b, var(--fonts);
+	border: 2px solid #EBBBE1;
+	border-radius: 10px;
+
+}
+
+#updates h3 + h4 a {
 	color: #908BC2;
-	text-shadow: 1px 1px #fff
+	text-shadow: 1px 1px 2px #fff;
 }
 
 #updates a:hover {
 	letter-spacing: 0;
 	text-decoration: underline
+}
+
+h3.feed-title {
+	display: none;
 }
 
 #widget {
