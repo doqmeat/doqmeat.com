@@ -3,11 +3,7 @@
 }
 
 body {
-	background: url("/!g/bg/yellobg.png");
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: fixed;
-	font-size: 20px;
+	font-size: 18px;
 	word-spacing: 8px;
 	line-height: 24px;
 	color: black;
@@ -15,19 +11,6 @@ body {
 
 header {
 	padding: 5px;
-}
-
-q{
-	font-style: italic;
-}
-
-li {
-	list-style-image: url('/!g/pix/starpink.gif');
-
-	list-style-position: inside;
-	padding: 0px;
-	padding-left: 10px;
-	margin: 10px 0;
 }
 
 p {
@@ -39,8 +22,8 @@ img {
 }
 
 hr {
-	background: url('/!g/div/scissors.gif');
-	height: 20px;
+	background: url('/journal/!g/leaf.gif');
+	height: 15px;
 	border: 0px;
 }
 
@@ -53,39 +36,37 @@ main {
 	scrollbar-color: #E4A79D #fffcdc;
 }
 
-i {
-	background: #C7D9F8;
-}
-
-b,
-strong {
-	background: #E4A79D;
-}
-
-mark {
-	background: #FFE481;
-}
-
 article {
+	background: url("/notebook/!g/grid-blue.png");
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	background-size: 10px;
+	border: 1px dashed black;
 	margin-bottom: 30px;
+	padding: 0 0 10px 0;
+
+}
+
+article:last-child {
+	margin-bottom: 0px;
 }
 
 .title {
-	font-family: morningtea, var(--fonts);
+	font-family: var(--fonts);
 	float: left;
 	padding-top: 5px;
 }
 
 .date {
-	font-family: morningtea, var(--fonts);
+	font-family: spirit, var(--fonts);
 	font-size: 16px;
 }
 
 .entry {
 	font-size: 28px;
-	background: url(/!g/bg/h056-4.gif);
 	background-size: 50px;
-	border: 4px double black;
+	border-bottom: 4px double black;
 	text-align: right;
 	font-weight: bold;
 	margin: 5px 0px 15px 0px;
@@ -95,10 +76,11 @@ article {
 .mini {
 	display: inline-block;
 	line-height: 23px;
-	font-family: newpenji, var(--fonts);
-	background: url(/!g/bg/picnicclothbg.png);
+	font-family: gaegu-r, newpenji, var(--fonts);
+	background: url(/!g/bg/h096-2.gif);
+	background-size: 60px;
 	font-size: 17px;
-	border: 4px double black;
+	border: 1px solid black;
 	margin: 5px 5px;
 	padding: 0px 5px;
 	border-radius: 10px;
@@ -111,7 +93,7 @@ article {
 
 ::before {
 	margin: 5px;
-	vertical-align: middle;
+	vertical-align: text-top;
 }
 
 ::after {
@@ -166,18 +148,22 @@ p.date {
 	background-size: 50px;
 	border: 4px double black;
 	text-align: right;
-	font-weight: bold;
+	font-weight: normal;
 	margin: 5px 0px 15px 0px;
 	padding: 0px 10px;
 }
 
 /*end*/
 
-@media only screen and (max-width: 599px) {
+@media only screen and (max-width: 800px) {
 
 	.entry {
 		border-left: 0px;
 		border-right: 0px;
+	}
+
+	.hide {
+		display: none;
 	}
 
 	body {

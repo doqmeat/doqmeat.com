@@ -3,27 +3,23 @@
 }
 
 :root {
-	--fonts: ms pgothic, gaegu-l, arial;
-	--r-border: 2px solid #E4A79D;
-	--cream: #FFFCDC;
-	--red: #C9525E;
-	--l-red: #E4A79D;
-	--l-blue: #C7D9F8;
-	--green: #D0FF8D;
-	--yellow: #FFE481;
+	--fonts: gaegu-l, ms gothic, arial;
+}
+
+html {
+	scrollbar-color: #e0dcf0 #fffcdc;
 }
 
 body {
-	background: url('/!g/bg/patterbg.gif');
+	background: url('/journal/!g/bg.gif');
 	word-wrap: break-word;
-	font-size: 16px;
+	font-size: 17px;
 	line-height: 23px;
 	font-family: var(--fonts);
 	color: black;
 	padding: 0px;
 	margin: 0px;
 	scrollbar-color: #E4A79D #fffcdc;
-	cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;
 }
 
 h1,
@@ -32,22 +28,38 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: morningtea, gaegu-l, var(--fonts);
-}
-
-i {
-	background: #C7D9F8;
+	font-family: gaegu-l, var(--fonts);
+	text-shadow: 1px 1px 1px #b5b5d8;
 }
 
 mark {
-	background: #FFE481;
+	background: #e0dcf0;
+}
+
+q {
+	font-style: italic;
+	text-shadow: 1px 1px 1px #f6bdcf;
+}
+
+i {
+	text-shadow: 1px 1px 1px #f6bdcf;
+}
+
+b {
+	text-shadow: 1px 1px 1px #97b7b6;
+}
+
+b,
+i {
+	font-family: gaegu-r, var(--fonts);
 }
 
 li {
-	list-style-image: url('/!g/pix/li19.gif');
-	padding: 10px;
+	list-style-image: url('/!g/pix/starblue.gif');
 	list-style-position: inside;
-	margin: 5px;
+	padding: 0px;
+	padding-left: 10px;
+	margin: 10px 0;
 }
 
 ul {
@@ -56,8 +68,10 @@ ul {
 }
 
 a {
+	border-radius: 5px;
+	padding: 0px 2px;
 	color: black;
-	background: #D0FF8D;
+	background: #FFE481;
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -70,10 +84,6 @@ a:hover {
 
 a:focus {
 	text-decoration: wavy underline;
-}
-
-a:active {
-	outline: 0
 }
 
 p {
@@ -125,31 +135,25 @@ summary {
 }
 
 .outlink:after {
-	content: url(/!g/web/materials/outlink2.png);
+	content: "↗";
 	padding-left: 3px;
 	vertical-align: text-bottom;
 }
 
 #s-m-t-tooltip {
 	max-width: 200px;
-	font-size: 15px;
-	font-family: YU gothic UI, var(--fonts);
+	font-size: 17px;
+	font-family: gaegu-b, var(--fonts);
 	text-align: center;
 	z-index: 9999;
-	margin: 30px 15px 7px 12px;
+	margin: 30px 15px 7px 20px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 2px dashed #C9525E;
-	color: black;
-	background: white;
-}
+	background: #b9b6d5;
+	border: 1px dashed white;
+	color: white;
 
-@media only screen and (max-width: 599px) {
-	.hide {
-		display: none;
-	}
 }
-
 
 ::-webkit-scrollbar {
 	width: 8px;
@@ -168,4 +172,9 @@ summary {
 
 ::-webkit-scrollbar-track {
 	background-color: #FFFCDC;
+}
+
+* {
+	cursor: url(/journal/!g/cursor-pencil.png),
+		auto !important;
 }
