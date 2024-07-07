@@ -10,6 +10,18 @@
 			<link>https://doqmeat.com/journal</link>
 			<description>updated my journal layout + new log + oh hey now there's an RSS feed! this was easier to set up than i thought it would be...</description>
 		</item>
+
+		<item>
+			<title>04.jul.24 - new blog post</title>
+			<link>https://doqmeat.com/blog/2024/grandma</link>
+			<description>blog post for my grandma's b-day</description>
+		</item>
+
+		<item>
+			<title>03.jul.24 - new art page layout</title>
+			<link>https://doqmeat.com/art</link>
+			<description>after months the art page finally has CSS! + new <a href="https://doqmeat.com/music/listening-log/2024/summer.html#1">listening log</a>: slash-&amp;-dash</description>
+		</item>
 	</channel>
 
 </rss>

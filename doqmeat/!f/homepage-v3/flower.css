@@ -331,14 +331,14 @@ button:hover {
 
 #updates li {
 	list-style-image: url(/!g/pix/1leaf.png);
-	padding: 6px 5px
+	padding: 6px 5px;
 }
 
 #updates li img {
 	vertical-align: middle
 }
 
-#updates h2 + li {
+#updates a + li {
 	font-family: gaegu-b, var(--fonts);
 	list-style-image: url(/!g/pix/sorahana-butterfly-pmm.gif);
 	border: 2px solid #EBBBE1;
@@ -348,7 +348,7 @@ button:hover {
 	box-shadow: 0 0 7px 10px #fff inset
 }
 
-#updates h2 + li a {
+#updates a + li a {
 	color: #908BC2;
 	text-shadow: 1px 1px #fff
 }
