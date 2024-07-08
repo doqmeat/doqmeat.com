@@ -154,15 +154,6 @@
 		}
 
 
-		/*
-		#trash {
-			top: 100px;
-			right: 50px;
-			cursor: cell;
-		}
-*/
-
-
 		#puter {
 			top: 10px;
 			left: 10px;
@@ -230,6 +221,16 @@
 			background: white;
 			width: 100%;
 			margin: 0;
+		}
+
+		article {
+			margin: 10px;
+		}
+
+		article:hover {
+			background: white;
+			border-radius: 10px;
+			padding: 5px;
 		}
 
 		#s-m-t-tooltip {
