@@ -330,6 +330,7 @@ button:hover {
 }
 
 h4.feed-item-title {
+	margin: 0 5px;
 	color: #908BC2;
 	font-family: gaegu-r, var(--fonts);
 	font-size: 16px;
@@ -337,7 +338,7 @@ h4.feed-item-title {
 
 .feed-item-desc {
 	padding: 0;
-	margin: 0px;
+	margin: 0px 5px;
 	margin-bottom: 15px;
 	font-size: 15px;
 }
@@ -364,20 +365,19 @@ h4 + .feed-item-desc:nth-of-type(1)::before {
 }
 
 .rss {
-	width:15px;
-image-rendering: pixelated;
+	width: 15px;
+	image-rendering: pixelated;
 }
 
 #updates div a {
-	font-size: 13px;
+	font-size: 12px;
+	color: grey;
 }
 
 #updates h3 + h4 {
 	padding: 2px;
 	font-family: gaegu-b, var(--fonts);
-	border: 2px solid #EBBBE1;
-	border-radius: 10px;
-
+	;
 }
 
 #updates h3 + h4 a {
