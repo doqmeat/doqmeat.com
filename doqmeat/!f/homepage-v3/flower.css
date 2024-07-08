@@ -377,7 +377,6 @@ h4 + .feed-item-desc:nth-of-type(1)::before {
 #updates h3 + h4 {
 	padding: 2px;
 	font-family: gaegu-b, var(--fonts);
-	;
 }
 
 #updates h3 + h4 a {
