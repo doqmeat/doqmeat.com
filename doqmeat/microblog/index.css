@@ -17,7 +17,7 @@
 			-moz-background-size: cover;
 			-o-background-size: cover;
 			background-size: cover;
-			font-family: ms pgothic, arial;
+			font-family: consolas, arial;
 			margin: 0;
 			padding: 0;
 			text-align: center;
@@ -287,6 +287,7 @@
 				bottom: 0px;
 				position: relative;
 				display: block;
+				text-align: center;
 			}
 
 			#address {
