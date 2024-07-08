@@ -13,6 +13,10 @@
 	margin-top: 10px;
 }
 
+#nav {
+	overflow: hidden;
+}
+
 #nav a {
 	background: transparent;
 	display: block;
@@ -169,5 +173,28 @@ aside div {
 
 	#sticker {
 		display: none;
+	}
+}
+
+@media only screen and (max-width:600px) {
+	#wrapper {
+		display: block;
+		margin: 20px 0;
+	}
+
+	#pic,
+	#quote {
+		display: none;
+	}
+
+	#mainframe {
+		margin: 20px;
+		width: 100%;
+		max-width: 425px;
+		height: 600px;
+	}
+	
+	footer{
+				margin: 20px;
 	}
 }

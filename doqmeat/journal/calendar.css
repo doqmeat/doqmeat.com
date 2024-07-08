@@ -1,4 +1,5 @@
 body {
+	background: transparent;
 	-ms-overflow-style: none;
 	scrollbar-width: none;
 }
@@ -46,10 +47,7 @@ p {
 	margin-bottom: 20px;
 }
 
-@media only screen and (max-width:400px) {
-	body {
-		background: transparent;
-	}
+@media only screen and (max-width:600px) {
 
 	.hide {
 		display: none;
