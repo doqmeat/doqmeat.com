@@ -4,7 +4,7 @@
 }
 
 :root {
-	--fonts: basiic, ms gothic, arial;
+	--fonts: gaegu-r, ms gothic, arial;
 	--wrapper: 900px;
 	--l-blue: #a6d0c8;
 	--d-blue: #535E7C;
@@ -14,6 +14,7 @@
 }
 
 body {
+	font-size: 17px;
 	font-family: var(--fonts);
 	background: url(bg.png);
 	background-size: cover;
@@ -46,6 +47,7 @@ footer {
 
 header {
 	margin-top: 50px;
+	max-width: 500px;
 }
 
 h1 {
@@ -79,16 +81,24 @@ a:hover {
 	margin-bottom: 40px;
 }
 
+main {
+	max-width: 1100px;
+}
+
 .show {
 	position: relative;
 	display: inline-block;
-	height: 290px;
-	max-width: 200px;
+	height: 298px;
+	width: 200px;
 	margin: 10px;
 	border-radius: 10px;
 	overflow: hidden;
 	border: 4px ridge var(--l-blue);
-	box-shadow:
+	background: var(--green);
+}
+
+.show:hover {
+	width: 400px;
 }
 
 .show img {
@@ -96,12 +106,13 @@ a:hover {
 }
 
 .hov {
+	background: rgb(229, 184, 209, 0.98);
 	position: absolute;
 	top: 0%;
 	width: 100%;
 	height: 100%;
 	opacity: 0;
-	transition-duration: 0.5s;
+	transition-duration: 0.3s;
 }
 
 .hov:hover {
@@ -119,10 +130,17 @@ a:hover {
 	padding: 5px;
 	background: rgb(229, 184, 209, 0.98);
 	border-radius: 10px;
+	transition-duration: 0.3s;
 }
 
 .box p {
 	margin: 10px;
+}
+
+.box p:hover {
+	background: white;
+	border-radius: 10px;
+	padding: 3px;
 }
 
 .status {
@@ -180,4 +198,16 @@ footer p {
 	border: 1px dashed var(--green);
 	color: var(--l-blue);
 	background: var(--berry);
+}
+
+@media only screen and (max-width:1128px) {
+	main {
+		max-width: 890px;
+	}
+}
+
+@media only screen and (max-width:870px) {
+	main {
+		max-width: 679px;
+	}
 }
