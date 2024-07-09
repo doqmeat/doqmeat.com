@@ -6,7 +6,14 @@
 		<link>https://doqmeat.com.com</link>
 		<description>des' personal website!</description>
 		<item>
-			<title>06.jul.24 - tv log updated</title>
+			<title>09.jul.24 - gaming log</title>
+			<link>https://doqmeat.com/vgs</link>
+			<description>added &lt;i&gt;cato: buttered cat&lt;/i&gt; to gaming log!</description>
+			<pubDate>Tue, 09 Jul 2024 15:04:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>08.jul.24 - tv log updated</title>
 			<link>https://doqmeat.com/tv</link>
 			<description>added twin peaks and my thoughts on it so far</description>
 			<pubDate>Mon, 08 Jul 2024 18:48:50 -0400</pubDate>
