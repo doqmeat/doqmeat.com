@@ -322,8 +322,6 @@ button {
 
 	.deco,
 	#cat,
-	#webrings,
-	#button,
 	.snowflakes {
 		display: none;
 	}
@@ -349,7 +347,9 @@ button {
 	#featured-cat,
 	#featured-page,
 	header,
-	#widget {
+	#widget,
+	#webrings,
+	#button{
 		margin: 20px 0px;
 		height: auto;
 	}
