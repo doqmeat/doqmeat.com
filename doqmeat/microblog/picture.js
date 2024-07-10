@@ -3,6 +3,8 @@
 			var picDiv = document.getElementById("picture-win");
 			var picTitle = document.getElementById("picture-title");
 			var picCaption = document.getElementById("picture-caption");
+			var link = document.getElementById("pic-link");
+			link.href = img;
 			pic.src = img;
 			pic.alt = text;
 			picTitle.innerText = img;
