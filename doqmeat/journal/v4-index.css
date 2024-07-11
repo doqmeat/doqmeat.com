@@ -116,7 +116,7 @@ aside div {
 	background: url("/!g/bg/whiteline.jpg");
 	background-position: bottom;
 	background-repeat: repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: 10px;
 	margin-top: 0px;
 }
@@ -146,7 +146,7 @@ aside div {
 	background: url("/!g/bg/yellobg.png");
 	background-position: center;
 	background-repeat: repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: 10px;
 }
 
@@ -193,8 +193,8 @@ aside div {
 		max-width: 425px;
 		height: 600px;
 	}
-	
-	footer{
-				margin: 20px;
+
+	footer {
+		margin: 20px;
 	}
 }
