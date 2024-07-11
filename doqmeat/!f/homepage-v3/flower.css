@@ -377,6 +377,7 @@ h4 + .feed-item-desc:nth-of-type(1)::before {
 #updates h3 + h4 {
 	padding: 2px;
 	font-family: gaegu-b, var(--fonts);
+	;
 }
 
 #updates h3 + h4 a {
@@ -719,6 +720,8 @@ h3.feed-title {
 
 @media only screen and (max-width: 860px) {
 
+
+
 	.no {
 		display: none;
 	}
@@ -732,7 +735,7 @@ h3.feed-title {
 	}
 
 	h1 {
-		font-family: spirit, var(--fonts);
+		font-family: spirit;
 		font-size: 25px;
 		letter-spacing: 1px;
 		margin-top: 10px
@@ -782,9 +785,5 @@ h3.feed-title {
 
 	#foot {
 		margin-bottom: 20px;
-	}
-
-	#webrings {
-		height: 300px;
 	}
 }
