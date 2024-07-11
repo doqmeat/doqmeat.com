@@ -65,7 +65,7 @@ footer {
 	background: url("/notebook/!g/grid-pink.png");
 	background-position: center;
 	background-repeat: repeat;
-	background-attachment: fixed;
+	background-attachment: scroll;
 	background-size: 10px;
 }
 
@@ -91,18 +91,12 @@ aside h3::before {
 
 aside div:nth-child(odd) {
 	background: url("/notebook/!g/grid-yellow2.png");
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: fixed;
 	background-size: 10px;
 
 }
 
 aside div:nth-child(even) {
 	background: url("/notebook/!g/grid-pink.png");
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: fixed;
 	background-size: 10px;
 }
 
@@ -110,13 +104,15 @@ aside div {
 	border: 1px dashed black;
 	padding: 10px;
 	margin: 20px;
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: scroll;
 }
 
 #desc {
 	background: url("/!g/bg/whiteline.jpg");
 	background-position: bottom;
 	background-repeat: repeat;
-	background-attachment: scroll;
 	background-size: 10px;
 	margin-top: 0px;
 }
@@ -146,7 +142,6 @@ aside div {
 	background: url("/!g/bg/yellobg.png");
 	background-position: center;
 	background-repeat: repeat;
-	background-attachment: scroll;
 	background-size: 10px;
 }
 
