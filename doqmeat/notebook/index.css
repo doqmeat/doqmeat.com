@@ -342,7 +342,13 @@ button {
 }
 
 .info-b {
+	right: -20px;
 	background: #E2D2F0;
+}
+
+.tut-b {
+	right: -160px;
+	background: #FFF4BF;
 }
 
 .tabcontent {
