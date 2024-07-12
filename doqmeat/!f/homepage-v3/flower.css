@@ -720,8 +720,6 @@ h3.feed-title {
 
 @media only screen and (max-width: 860px) {
 
-
-
 	.no {
 		display: none;
 	}
@@ -760,6 +758,10 @@ h3.feed-title {
 		border: none;
 		top: 1px;
 		margin: 5px;
+	}
+
+	#webrings {
+		height: 250px;
 	}
 
 	#status {
