@@ -331,7 +331,6 @@ button:hover {
 
 h4.feed-item-title {
 	margin: 0 5px;
-	color: #908BC2;
 	font-family: gaegu-r, var(--fonts);
 	font-size: 16px;
 }
@@ -348,7 +347,7 @@ h4.feed-item-title {
 	padding: 6px 5px;
 }
 
-h4 + .feed-item-desc:nth-of-type(1) {
+.feed-item-desc:nth-of-type(1) {
 	padding: 8px;
 	font-family: gaegu-r, var(--fonts);
 	font-size: 16px;
@@ -359,7 +358,7 @@ h4 + .feed-item-desc:nth-of-type(1) {
 	box-shadow: 0 0 10px 10px #fff inset
 }
 
-h4 + .feed-item-desc:nth-of-type(1)::before {
+.feed-item-desc:nth-of-type(1)::before {
 	content: url(/!g/pix/sorahana-butterfly-pmm.gif);
 	padding-right: 4px;
 }
@@ -369,9 +368,13 @@ h4 + .feed-item-desc:nth-of-type(1)::before {
 	image-rendering: pixelated;
 }
 
+#updates .feed-item-desc:nth-of-type(1) a {
+	color: #908BC2;
+	text-shadow: 1px 1px 2px white;
+}
+
 #updates div a {
 	font-size: 12px;
-	color: grey;
 }
 
 #updates h3 + h4 {
