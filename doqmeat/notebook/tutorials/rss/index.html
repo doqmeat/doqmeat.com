@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>tut rss</title>
+	<link rel="icon" type="image/x-icon" href="/notebook/favicon.gif">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/notebook/body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="../tut.css" rel="stylesheet" type="text/css" media="all">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+	<style>
+		textarea {
+			width: 100%;
+			height: 200px;
+		}
+
+	</style>
+</head>
+
+<body>
+
+	<main>
+		<p class="hide"><small><a href="/" target="_parent">home</a> &gt; <a href="/notebook" target="_parent">notebook</a> &gt; tutorials &gt;</small>
+		<h1>RSS feeds</h1>
+		<nav>table of contents: <a href="#intro">why igaf about RSS feed</a>, <a href="#reader">RSS feed readers</a>, <a href="#setup">setting up an RSS feed</a>, <a href="#display">displaying an RSS feed in HTML</a></nav>
+		<h2 id="intro">why i give a fuck about RSS feed</h2>
+
+		<p>while the neocities activity feed sort of gets the job done at keeping you updated with other sites, there are other ways of getting updates from websites right to your doorstep. with this method, you can also see updates from sites that have their profiles disabled, or aren't <b>hosted</b> into neocities!</p>
+		<p>from the <b>perspective of a webmaster</b>, an <mark>RSS feed</mark> is also way more customizable and reliable than whatever the neocities activity feed decides to show on your profile. this is also a great way of keeping up to date with sites without feeling obligated to check the neocities activity feed on a daily basis.</p>
+		<p><mark>RSS feeds</mark> are also called <mark>web feeds</mark>. these are usually files such as .rss .xml .atom and there's probably more that i either forgot or haven't personally seen used. you can read more about them <a href="https://en.wikipedia.org/wiki/RSS" target="_blank" class="outlink">here</a>. </p>
+		<p><mark>in this guide i'll be showing you how you can see RSS feeds from <i>other</i> sites and how to set up your own for your site</mark>! </p>
+		<p><small>btw this stuff is super easy to set up with some google searches. you probably do not need this guide, but i still went out of my way to write all of this to show you how this works and how easy it is to set up.</small></p>
+
+		<h2 id="reader">RSS feed readers</h2>
+		<p>i believe it would be easier to start with how you can <u>view and recieve updates from other sites</u> via an <mark>RSS reader</mark>. but, if you just wanna know how to set up your own, you're free to skip this and go directly to the RSS feed <a href="#setup">setup</a>.</p>
+		<hr>
+		<p>you can have an RSS reader as an extension for your browser, an app on your phone, a newsletter via e-mail, or a widget on your website.</p>
+		<p>for this guide, i will be using a browser extension. you will want search for an <b>rss reader</b> on your browser's extension library. i am pretty sure any will do the job! i use <b>feedbro</b> on <a href="https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/" target="_blank" class="outlink">firefox</a> and it is also available for <a href="https://chromewebstore.google.com/detail/feedbro/mefgmmbdailogpfhfblcnnjfmnpnmdfa?hl=en" target="_blank" class="outlink">chrome</a>.</p>
+		<p>once you have a <b>reader</b> installed, we can go look for some <mark>web feeds</mark> to add to the reader!</p>
+		<p>if you've been around some websites you might have seen a link with the name <b>RSS feed</b> with this icon <img src="/!g/web/materials/rss-icon.png" width="15" alt="RSS icon"> or this badge <img src="/!g/web/materials/rss.png" alt="RSS badge"> these will get you the <b>link for their web feed</b>. <u>NOTE:</u> <small>depending on browser settings, when clicking these links your browser might download the file instead of opening the code on your browser. if this happends, just right-click on the link and click <i>copy</i>.</small></p>
+		<p>once you have copied the feed link from a website, you will add it to your reader. the reader will show you a certain amount of updates + any new ones from here on out.</p>
+
+		<details>
+			<summary>here's some pictures in case you need some more help!</summary>
+		</details>
+
+		<h2 id="setup">setting up an RSS feed</h2>
+
+		<p>now that you have a reader all set up, let's make an RSS feed for your website!</p>
+		<p>it's important to say that your site can have more than one RSS feed. you can have one for your microblog, another one for site updates, and so on.</p>
+		<p>do keep in mind you will have to update these manually, though there are some neat tools out there that can make you an automated RSS feed based on a HTML such as <a href="https://journal.miso.town/" target="_blank" class="outlink">journal.miso.town</a>'s <a href="https://journal.miso.town/journal-to-atom" target="_blank" class="outlink">journal to atom</a></p>
+		<hr>
+		<p>so we are going to start off by creating the <code>.xml</code> file that will have your RSS feed. name and placement of the file do not matter. let's call it <code>rss.xml</code></p>
+		<p>once you have your empty <code>rss.xml</code>, copy-paste this code into it</p>
+		<textarea><?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+	<channel>
+		<title>title of your RSS feed. can just be your site's name</title>
+		<link>https://YOUR-URL</link>
+		<description>description of your site</description>
+
+		<item>
+			<title>title of the update 1</title>
+			<link>https://URL-OF-THE-UPDATE2</link>
+			<description>this is a description of the update</description>
+			<pubDate>Tue, 09 Jul 2024 15:00:00 -0400</pubDate>
+		</item>
+
+	</channel>
+</rss>
+</textarea>
+		<p>this will be the template you will use for it. this template has what is required for an RSS feed to function. here are some other <a href="https://www.w3schools.com/xml/xml_rss.asp" target="_blank" class="outlink">optional tags</a> you can also use on your feed, for now i will only work with what's required.</p>
+		<p>go ahead put your info into the template provided. as you will noticed <mark>anything <b>inside</b> an <code>item</code> tag refers to an <b>entry</b></mark>. each time you want to make a new <b>entry</b>, you have to use that same code!</p>
+		<p>here's an example: <img src="template-2.jpg" width="100%"></p>
+		<p>the date of each <code>item</code> is the <code>pubDate</code> aka <i>published date</i>. it has to be formatted as shown in the code or you will get an error. the time of the <code>item</code> <code>pubDate</code> is configured using your timezone. you'll have to check your time zone in order to put the correct value! my time zone is GMT -4 which why you see a <code>-0400</code> in there.</p>
+		<p>example: if you're in eastern standard time, then you can just input <code>Tue, 09 Jul 2024 15:00:00 EST</code> in the <code>pubDate</code>.</p>
+		<p>once you have your <code>rss.xml</code> done you need to validate it using something like w3c's <a href="https://validator.w3.org/feed/" target="_blank" class="outlink">feed validation service</a>. this is an important step since you wanna make sure your <code>rss.xml</code> is not causing any errors when being put into a <b>reader</b>.</p>
+		<p>once you get that sweet <img src="valid.png" alt="a button that says VALID RSS with a red check"> then you are good to go!</p>
+		<p>link to your <code>rss.xml</code> file somewhere on your page so people know you have an RSS feed.</p>
+
+		<h2 id="display">how to display an RSS feed on HTML</h2>
+		<p>so now you must be saying <q>wow this is awesome, but can i display this on my website and style it?</q> and the answer is YES you can!</p>
+		<p>there is a way to do this with javascript as seen in <a href="https://www.w3schools.com/xml/xml_parser.asp" target="_blank" class="outlink">w3schools</a> and this <a href="https://github.com/22ru/microblog" target="_blank" class="outlink">RSS microblog</a> by 22ru that uses a <code>.xml</code> and <code>.js</code> file to create a microblog page for your site. if you come back to this page in 1-3 years, i might have my own version of it for this guide.</p>
+		<p>in this case, we will be using a WAY easier method: <mark>using a 3rd party site to generate our RSS widget</mark>.</p>
+		<p>my preferred site to use for widgets has been <a href="https://rss.bloople.net/" target="_blank">rss.bloople.net</a> but you can also use surfing waves' <a href="https://surfing-waves.com/feed.htm" target="_blank">free RSS widget</a>. whatever you use, please be cool and leave the link back to the site. it is a free service after all.</p>
+		<p></p>
+	</main>
+</body>
+
+</html>
