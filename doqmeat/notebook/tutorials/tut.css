@@ -19,12 +19,15 @@ mark {
 	background-color: #FFF4BF;
 }
 
-code{
-	background:black;
-	color:white;
-	font-size:16px;
-	padding:0px 1px;
+code,
+xmp {
+	display: inline;
+	background: black;
+	color: white;
+	font-size: 16px;
+	padding: 0px 1px;
 }
+
 #s-m-t-tooltip {
 	max-width: 200px;
 	text-align: center;

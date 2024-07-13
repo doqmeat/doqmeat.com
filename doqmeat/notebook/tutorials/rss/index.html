@@ -16,7 +16,43 @@
 	<style>
 		textarea {
 			width: 100%;
-			height: 200px;
+			height: 100px;
+		}
+
+		#rss {
+			margin: auto;
+			box-sizing: border-box;
+			max-width: 400px;
+			border: 1px solid black;
+			padding: 10px;
+			background: pink;
+			color: darkslategrey;
+		}
+
+		#rss a {
+			color: white;
+			text-decoration: none;
+		}
+
+		#rss h3 a {
+			color: dodgerblue;
+		}
+
+		#rss h3 {
+			margin: 5px;
+		}
+
+		#rss h4 {
+			margin: 10px 4px;
+		}
+
+		#rss p {
+			padding: 0;
+			margin: 0px 0px 0px 20px;
+		}
+
+		#rss div a {
+			font-size: 10px;
 		}
 
 	</style>
@@ -78,8 +114,13 @@
 		<p>this will be the template you will use for it. this template has what is required for an RSS feed to function. here are some other <a href="https://www.w3schools.com/xml/xml_rss.asp" target="_blank" class="outlink">optional tags</a> you can also use on your feed, for now i will only work with what's required.</p>
 		<p>go ahead put your info into the template provided. as you will noticed <mark>anything <b>inside</b> an <code>item</code> tag refers to an <b>entry</b></mark>. each time you want to make a new <b>entry</b>, you have to use that same code!</p>
 		<p>here's an example: <img src="template-2.jpg" width="100%"></p>
-		<p>the date of each <code>item</code> is the <code>pubDate</code> aka <i>published date</i>. it has to be formatted as shown in the code or you will get an error. the time of the <code>item</code> <code>pubDate</code> is configured using your timezone. you'll have to check your time zone in order to put the correct value! my time zone is GMT -4 which why you see a <code>-0400</code> in there.</p>
-		<p>example: if you're in eastern standard time, then you can just input <code>Tue, 09 Jul 2024 15:00:00 EST</code> in the <code>pubDate</code>.</p>
+		<p><u>note 1</u>: the date of each <code>item</code> is the <code>pubDate</code> aka <i>published date</i>. it has to be formatted as shown in the code or you will get an error. the time of the <code>item</code> <code>pubDate</code> is configured using your timezone. you'll have to check your time zone in order to put the correct value! my time zone is GMT -4 which why you see a <code>-0400</code> in there.</p>
+		<blockquote>example: if you're in eastern standard time, then you can just input <code>Tue, 09 Jul 2024 15:00:00 EST</code> in the <code>pubDate</code>.</blockquote>
+		<p><u>note 2</u>: you can display HTML code in your <code>rss.xml</code> but not the way you are probably thinking of.</p>
+		<p>for example: let's say you want to include a link in the <code>description</code> of an <code>item</code>. instead of writing <code>&lt;a href=&quot;URL&quot;&gt;LINK&lt;/a&gt;</code> you instead have to do it with <a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank" class="outlink">HTML entities</a>, like so: <xmp>&lt;a href=&quot;URL&quot;&gt;LINK&lt;/a&gt;
+</xmp></p>
+		<p>i know. nasty. but at least whatever you put in there will appear like it would in HTML on a RSS reader or widget.</p>
+
 		<p>once you have your <code>rss.xml</code> done you need to validate it using something like w3c's <a href="https://validator.w3.org/feed/" target="_blank" class="outlink">feed validation service</a>. this is an important step since you wanna make sure your <code>rss.xml</code> is not causing any errors when being put into a <b>reader</b>.</p>
 		<p>once you get that sweet <img src="valid.png" alt="a button that says VALID RSS with a red check"> then you are good to go!</p>
 		<p>link to your <code>rss.xml</code> file somewhere on your page so people know you have an RSS feed.</p>
@@ -88,8 +129,48 @@
 		<p>so now you must be saying <q>wow this is awesome, but can i display this on my website and style it?</q> and the answer is YES you can!</p>
 		<p>there is a way to do this with javascript as seen in <a href="https://www.w3schools.com/xml/xml_parser.asp" target="_blank" class="outlink">w3schools</a> and this <a href="https://github.com/22ru/microblog" target="_blank" class="outlink">RSS microblog</a> by 22ru that uses a <code>.xml</code> and <code>.js</code> file to create a microblog page for your site. if you come back to this page in 1-3 years, i might have my own version of it for this guide.</p>
 		<p>in this case, we will be using a WAY easier method: <mark>using a 3rd party site to generate our RSS widget</mark>.</p>
-		<p>my preferred site to use for widgets has been <a href="https://rss.bloople.net/" target="_blank">rss.bloople.net</a> but you can also use surfing waves' <a href="https://surfing-waves.com/feed.htm" target="_blank">free RSS widget</a>. whatever you use, please be cool and leave the link back to the site. it is a free service after all.</p>
-		<p></p>
+		<p>my preferred site to use for widgets has been <a href="https://rss.bloople.net/" target="_blank" class="outlink">rss.bloople.net</a> but you can also use surfing waves' <a href="https://surfing-waves.com/feed.htm" target="_blank" class="outlink">free RSS widget</a>. whatever you use, please be cool and leave the link back to the site that provides the service. it is free after all.</p>
+		<p>with <b>rss.bloople.net</b> you can also customize it with CSS! <code>CTRL + SHIFT + I</code> aka the inspect tool in your browser will be your best friend when customizing the look of your widget.</p>
+		<p>for this widget i used the <a href="template.xml" target="_blank">RSS feed template</a> and put it inside a <code>div</code> with <code>id="rss"</code> and used this on my CSS to style it.</p>
+		<textarea>		#rss {
+			margin: auto;
+			box-sizing: border-box;
+			max-width: 400px;
+			border: 1px solid black;
+			padding: 10px;
+			background: pink;
+			color: darkslategrey;
+		}
+
+		#rss a {
+			color: white;
+			text-decoration: none;
+		}
+
+		#rss h3 a {
+			color: dodgerblue;
+		}
+
+		#rss h3 {
+			margin: 5px;
+		}
+
+		#rss h4 {
+			margin: 10px 4px;
+		}
+
+		#rss p {
+			padding: 0;
+			margin: 0px 0px 0px 20px;
+		}
+
+		#rss div a {
+			font-size: 10px;
+		}</textarea>
+		<p>and this is the result!</p>
+		<div id="rss">
+			<script src="//rss.bloople.net/?url=https%3A%2F%2Fdoqmeat.com%2Fnotebook%2Ftutorials%2Frss%2Ftemplate.xml&limit=10&showtitle=false&type=js"></script>
+		</div>
 	</main>
 </body>
 
