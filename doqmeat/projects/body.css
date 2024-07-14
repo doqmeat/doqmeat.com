@@ -38,8 +38,9 @@ li {
 
 code {
 	font-family: consolas;
+	background: black;
+	color: white;
 	font-size: 14px;
-	color: #6A5C3E;
 	border: 1px solid #6A5C3E;
 	border-radius: 10px;
 	padding: 0 5px;

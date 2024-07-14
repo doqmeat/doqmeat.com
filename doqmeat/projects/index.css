@@ -1,24 +1,12 @@
-#wrapper {
-	position: relative;
-	margin-left: 2%;
-	padding: 10px;
-	max-width: 600px;
-}
-
 body {
 	background: #fad97c;
 }
 
 main {
-	margin: auto;
-	max-width: 400px;
-	height: 500px;
-	background: url("/notebook/!g/grid-mustard.png");
-	background-size: 10px;
-	background-position: center;
-	overflow: auto;
-	border-radius: 20px;
-	border: 2px solid #e1613c;
+	position: relative;
+	margin-left: 2%;
+	padding: 10px;
+	max-width: 600px;
 }
 
 #power {
@@ -29,17 +17,3 @@ main {
 	left: 600px;
 	z-index: -1;
 }
-
-#learning-javascript {
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: auto;
-	padding: 10px;
-}
-
-/*
-@media only screen and (max-width: 850px) {
-}
-*/
