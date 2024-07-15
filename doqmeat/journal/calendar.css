@@ -47,6 +47,19 @@ p {
 	margin-bottom: 20px;
 }
 
+td a {
+	display: block;
+	text-shadow: 1px 1px 1px grey;
+}
+
+td a:hover {
+	background: #ffc0cb;
+}
+
+td a:focus {
+	background: #e0def2;
+}
+
 @media only screen and (max-width:600px) {
 
 	.hide {
