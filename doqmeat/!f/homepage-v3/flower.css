@@ -342,6 +342,10 @@ h4.feed-item-title {
 	font-size: 15px;
 }
 
+.feed-item-desc img {
+	vertical-align: middle;
+}
+
 .feed-item-desc::before {
 	content: url(/!g/pix/1leaf.png);
 	padding: 6px 5px;
@@ -351,11 +355,11 @@ h4.feed-item-title {
 	padding: 8px;
 	font-family: gaegu-r, var(--fonts);
 	font-size: 16px;
-	border: 2px solid #EBBBE1;
+	border: 2px dashed #EBBBE1;
 	border-radius: 10px;
 	background: white;
 	background-image: url(/!g/bg/h096-2.gif);
-	box-shadow: 0 0 10px 10px #fff inset
+	box-shadow: 0 0 50px 30px #fff inset;
 }
 
 .feed-item-desc:nth-of-type(1)::before {
@@ -483,20 +487,6 @@ h3.feed-title {
 
 .deco {
 	pointer-events: none
-}
-
-#sticker1 {
-	content: url('/!g/deco/flower1.gif');
-	top: 47.5%;
-	left: 25%
-}
-
-#sticker2 {
-	content: url('/!g/div/flower2.gif');
-	top: 1.8%;
-	left: 1%;
-	rotate: -6deg;
-	width: 250px
 }
 
 #sticker3 {
