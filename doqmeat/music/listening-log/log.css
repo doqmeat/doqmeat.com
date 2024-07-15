@@ -158,17 +158,20 @@ footer {
 }
 
 .single {
-	background: #EADCD2
+	background: #d4f6ec;
 }
 
 .track {
 	background: #F2F2EB;
 }
 
+.ost {
+	background: #e4ffd1;
+}
+
 .misc,
-.ost,
 .post {
-	background: #B9B0A2
+	background: #f7ffd1;
 }
 
 @media only screen and (max-width: 940px) {
