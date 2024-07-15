@@ -17,6 +17,10 @@ p {
 	margin: 20px 10px 20px 12px;
 }
 
+p:hover {
+	background: white;
+}
+
 img {
 	vertical-align: middle;
 }

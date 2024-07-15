@@ -20,7 +20,6 @@
 #nav a {
 	background: transparent;
 	display: block;
-	max-width: 40%;
 	margin: 2px 30px;
 }
 
@@ -183,9 +182,7 @@ aside div {
 	}
 
 	#mainframe {
-		margin: 20px;
-		width: 100%;
-		max-width: 425px;
+		padding: 20px;
 		height: 600px;
 	}
 
