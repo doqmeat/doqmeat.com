@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+:root {
+	--log-bg: url("/notebook/!g/grid-blue.png");
+}
+
 body {
 	font-size: 18px;
 	word-spacing: 8px;
@@ -41,7 +45,7 @@ main {
 }
 
 article {
-	background: url("/notebook/!g/grid-blue.png");
+	background: var(--log-bg);
 	background-position: center;
 	background-repeat: repeat;
 	background-attachment: fixed;
