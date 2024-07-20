@@ -212,6 +212,20 @@ footer {
 	background: url('/notebook/!g/grid-pink.png');
 }
 
+.spoiler {
+	background: white;
+	color: white;
+	text-shadow: none;
+}
+
+.spoiler:hover {
+	background: transparent;
+	color: inherit;
+	text-shadow: 1px 1px 1px white;
+	border:1px solid white;
+	padding: 0px 2px;
+}
+
 #s-m-t-tooltip {
 	max-width: 400px;
 	font-family: var(--fonts);
