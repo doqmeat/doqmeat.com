@@ -238,33 +238,36 @@ button:hover {
 	line-height: 25px;
 	font-size: 19px;
 	word-spacing: 5px;
-	background: url(/!g/bg/h009-3.gif);
+	background: white;
 	background-size: 35px;
 	margin: auto;
 	margin-bottom: 10px;
-	border: 1px solid var(--l-blue);
+	border: 1px dashed grey;
 	width: 95%;
-	border-radius: 15px
+	border-radius: 15px;
 }
 
 #statuscafe-content {
-	padding: 5px
+	padding: 5px;
+	box-shadow: 1px 0px 10px 0px #f9f1ce inset, 0px 0px 10px 1px #f9f1ce inset;
 }
 
 #statuscafe-username {
 	padding: 1px 7px;
 	text-align: left;
-	color: #fff;
-	background: #5f7bc6;
-	background: linear-gradient(90deg, rgba(95, 123, 198, 1) 0%, rgba(251, 213, 249, 1) 85%, rgba(255, 255, 255, 1) 100%);
+	color: black;
+	background: #f9f1ce;
 	border-radius: 15px 15px 0 0;
 	font-size: 17px;
-	font-style: italic
 }
 
 #statuscafe-username a {
-	color: #fff;
-	letter-spacing: 3px
+	color: black;
+}
+
+#statuscafe-username::before {
+	padding-right: 4px;
+	content: url(/!g/pix/staryellow.gif);
 }
 
 #statuscafe-username a:hover {
