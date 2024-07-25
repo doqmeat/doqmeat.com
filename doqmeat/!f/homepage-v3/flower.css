@@ -245,10 +245,12 @@ button:hover {
 	border: 1px dashed grey;
 	width: 95%;
 	border-radius: 15px;
+	overflow: hidden;
 }
 
 #statuscafe-content {
 	padding: 5px;
+	overflow: hidden;
 	box-shadow: 1px 0px 10px 0px #f9f1ce inset, 0px 0px 10px 1px #f9f1ce inset;
 }
 
