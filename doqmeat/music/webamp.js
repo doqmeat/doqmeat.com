@@ -3,7 +3,7 @@ new Webamp({
 
 			metaData: {
 				artist: "homestuck",
-				title: "upwards movement (dave owns)",
+				title: "upward movement (dave owns)",
 			},
 			url: "https://files.catbox.moe/kguu40.mp3",
  },
