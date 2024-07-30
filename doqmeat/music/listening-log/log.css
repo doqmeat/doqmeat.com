@@ -53,6 +53,14 @@ side {
 	margin-right: 30px;
 }
 
+figure {
+	text-align: center;
+}
+
+figcaption {
+	font-size: 14px;
+}
+
 .content {
 	background: var(--l-brown);
 	color: var(--l-yellow);

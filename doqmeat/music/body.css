@@ -108,8 +108,9 @@ summary {
 }
 
 blockquote {
-	border-left: 2px dashed var(--brown);
+	border-left: 2px solid var(--brown);
 	padding-left: 10px;
+	font-style: italic;
 }
 
 .spoiler {
