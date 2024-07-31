@@ -281,3 +281,14 @@ nav a:hover {
 	}
 
 }
+
+@media only screen and (max-width: 630px) {
+	header {
+		margin-top: 0px;
+		border-top: 0px;
+	}
+
+	footer {
+		border-bottom: 0px;
+	}
+}
