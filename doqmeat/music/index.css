@@ -153,7 +153,7 @@ h4 {
 	word-spacing: 2px;
 }
 
-#ad {
+#mv {
 	background: var(--yellow);
 	margin-top: 5px;
 	width: 100%;
@@ -163,11 +163,11 @@ h4 {
 	line-height: 0px;
 }
 
-#ad img {
+#mv img {
 	width: 100%;
 }
 
-#ad a {
+#mv a {
 	padding: 0px;
 	background: var(--yellow);
 }
@@ -359,7 +359,7 @@ footer {
 		width: 100%;
 	}
 
-/*
+	/*
 	#log {
 		display: none;
 	}
@@ -395,7 +395,7 @@ footer {
 	}
 
 	#featured,
-	#ad {
+	#mv {
 		height: auto;
 	}
 
