@@ -366,7 +366,7 @@ input[type=range]::-moz-range-thumb {
 	}
 
 	#featured-cat {
-		height: 390px;
+		max-height: 390px;
 	}
 
 	#comm {
@@ -383,7 +383,7 @@ input[type=range]::-moz-range-thumb {
 	}
 
 	#piclog {
-		height: 300px;
+		max-height: 300px;
 	}
 
 	#nav {
