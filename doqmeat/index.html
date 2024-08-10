@@ -3,7 +3,7 @@
 <!-- 
 coded with love by des!
 -
-homepage v3 started on nov 15 2023 / finished on dec 14 2023!
+homepage v4 started on 01.aug.24 / finished on 09.aug.24
 -
 feel free to look around for any help you need :) just don't be THAT person and take the entire code for your site... you're free to take bits of my code but pls let me know before hand! i might be able to help you out :-)
  -->
@@ -17,202 +17,104 @@ feel free to look around for any help you need :) just don't be THAT person and 
 	<!--	CSS -->
 	<link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
 	<link href="fonts/stylesheet.css" rel="stylesheet" type="text/css">
-	<link href="!f/homepage-v3/body.css" rel="stylesheet" type="text/css">
+	<link href="!f/v4/body.css" rel="stylesheet" type="text/css">
 	<link href="!f/snowflakes.css" rel="stylesheet" type="text/css">
-	<link class="theme" href="/!f/homepage-v3/flower.css" rel="stylesheet" type="text/css">
-	<!--	JS for webrings-->
+	<link class="theme" href="!f/v4/garden.css" rel="stylesheet" type="text/css">
+	<!--	extra -->
 	<link rel="stylesheet" href="https://sugarforbrains.neocities.org/mobring/onionring.css">
+	<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
 	<!--	tooltip shit-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/!f/tooltip-jquary.js"></script>
 	<script src="/!f/tooltip.js"></script>
-	<script type="text/javascript">
-		// <![CDATA[
-		var speed = 500; // speed colours change, 1 second = 1000
-		var glow = 8; // can be set from '0' for no glow, to 10
-		var raincol = new Array("#ffe5a2", "#bfe1f2", "#feb5d5", "#a9d079"); // change the colours if you want to
-		var alink = "/"; // page to link text to (set to ="" for no link)
-
-		/****************************
-		 *    Rainbow Text Effect    *
-		 *(c)2003-13 mf2fm web-design*
-		 *  http://www.mf2fm.com/rv  *
-		 * DON'T EDIT BELOW THIS BOX *
-		 ****************************/
-		var rainbow,
-			raintxt,
-			raincnt = 0;
-
-		function addLoadEvent(funky) {
-			var oldonload = window.onload;
-			if (typeof oldonload != "function") window.onload = funky;
-			else
-				window.onload = function() {
-					if (oldonload) oldonload();
-					funky();
-				};
-		}
-
-		addLoadEvent(regenbogen);
-
-		function regenbogen() {
-			if (document.getElementById) {
-				var i, rainbeau;
-				rainbow = document.getElementById("rainbow");
-				raintxt = rainbow.firstChild.nodeValue;
-				while (rainbow.childNodes.length) rainbow.removeChild(rainbow.childNodes[0]);
-				for (i = 0; i < raintxt.length; i++) {
-					rainbeau = document.createElement("span");
-					rainbeau.setAttribute("id", "rain" + i);
-					rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
-					if (alink) {
-						rainbeau.style.cursor = "pointer";
-						rainbeau.onclick = function() {
-							top.location.href = alink;
-						};
-					}
-					rainbow.appendChild(rainbeau);
-				}
-				rainbow = setInterval("raining()", speed);
-			}
-		}
-
-		function raining() {
-			var i, c;
-			for (i = 0; i < raintxt.length; i++) {
-				c = raincol[(i + raincnt) % raincol.length];
-				document.getElementById("rain" + i).style.color = c;
-				if (glow) document.getElementById("rain" + i).style.textShadow = c + " 0px 0px " + glow + "px";
-			}
-			raincnt++;
-		}
-		// ]]>
-
-	</script>
 </head>
 
 <body>
-	<script>
-		NekoType = "black";
-
-	</script>
-	<h1 id="nl">
-		<script src="https://webneko.net/n20171213.js"></script>
-		<a href="https://webneko.net">Neko</a>
-	</h1>
 
 	<div id="wrapper">
 		<header id="header">
-			<p>welcome to...</p>
-			<h1 id="rainbow">doqmeat.com</h1>
+			<select name="theme" onchange="pickTheme(this.value)">
+				<option value="!f/v4/sunset.css">homepage theme</option>
+				<option value="!f/v4/sunset.css">sunset</option>
+				<option value="!f/v4/garden.css">garden</option>
+			</select>
+			<h1>welcome to doqmeat.com</h1>
 		</header>
 
-		<!--
-		<div id="theme-picker" class="box">
-			<h2>pick a theme!</h2>
-			<button onclick="toggleTheme('/!f/homepage-v3/flower.css')">flower</button>
-		</div>
--->
 
 		<nav id="nav" class="box">
-			<h3>personal</h3>
-			<a href="/about"><img src="/!g/pix/cateepyy.gif" alt=""> about</a>
-			<a href="/photobook"><img src="/!g/pix/camera.gif" alt=""> photobook</a>
-			<a href="/journal"><img src="/!g/pix/notebook-1.gif" alt=""> journal</a>
-			<a href="/microblog"><img src="/!g/pix/catidea.gif" alt=""> microblog </a>
-			<a href="/blog"><img src="/!g/pix/paper.gif" alt=""> blog <img src="/!g/pix/updated1.gif" alt="updated"></a>
-			<a href="/scrapbook"><img src="!g/pix/scissors6.gif" alt=""> scrapbook</a>
-			<a href="/shrines"><img src="/!g/pix/heart2.gif" alt=""> shrines</a>
-			<a href="/collection"><img src="/!g/pix/pics.gif" alt=""> collections</a>
-			<a title="WIP!" href="/art"><img src="/!g/pix/catdraw.gif" alt=""> art &amp; crafts</a>
-			<h3>media logs</h3>
-			<a href="/music"><img src="/!g/pix/sorahanamuu1.gif" alt=""> music</a>
-			<a href="/vgs"><img src="/!g/pix/vgs.gif" alt=""> video games</a>
-			<a href="/tv"><img src="!g/pix/tv1.gif" alt=""> shows</a>
-			<a title="WIP" href="/books"><img src="/!g/pix/book3.gif" alt=""> books <img src="!g/pix/caution1.gif" alt="caution symbol"></a>
-			<a href="/october-movies"><img src="/!g/pix/gaikotsu2.gif" alt=""> october movies</a>
-			<h3>misc</h3>
-			<a href="/projects"><img src="/!g/pix/sticky.gif" alt=""> web projects</a>
-			<a href="/masaaki-yuasa"><img src="/!g/pix/tv.gif" alt=""> masaaki yuasa watchlist</a>
-			<a href="safe-spot/index.html"><img src="/!g/pix/flowerpink.gif" alt=""> safe spot</a>
-			<a href="webgarden/greenhouse.html"><img src="/!g/pix/home.gif" alt=""> webgarden</a>
+			<h3 class="personal"> personal</h3>
+			<a href="/about">about</a>
+			<a href="/photobook">photobook</a>
+			<a href="/journal">journal</a>
+			<a href="/microblog">microblog </a>
+			<a href="/blog">blog</a>
+			<a href="/scrapbook">scrapbook</a>
+			<a href="/shrines">shrines</a>
+			<a href="/collection">collections</a>
+			<a href="/art">art &amp; crafts</a>
 
-			<h3>sitely</h3>
-			<a href="/sites"><img src="/!g/pix/favcharas.gif" alt=""> button wall</a>
-			<a title="contains links, resources, F2U stuff, archives, etc!" href="/notebook"><img src="/!g/pix/notebook.gif" alt=""> notebook</a>
-			<a href="/guestbook"><img src="/!g/pix/bear-inside-mail.gif" alt=""> guestbook</a>
-			<button title="chatbox will open in a tiny window!" onclick="chat()" class="no">
-				<img src="/!g/pix/msgbbl.gif" alt=""> chatbox
-			</button>
-			<a href="/sitemap"><img src="/!g/pix/world.gif" alt=""> sitemap</a>
+			<h3 class="media"> media logs</h3>
+			<a href="/music">music</a>
+			<a href="/vgs">video games</a>
+			<a href="/tv">shows</a>
+			<a title="WIP" href="/books">books <img src="!g/pix/caution1.gif" alt="caution symbol"></a>
+			<a href="/october-movies">october movies</a>
 
-			<h3>offsite</h3>
-			<a href="https://neocities.org/site/doqmeat" target="_blank" class="outlink"><img src="/!g/pix/catheadswing.gif" alt=""> neocities profile</a>
-			<a title="github repository" href="https://github.com/doqmeat/doqmeat.com" target="_blank" class="outlink"><img src="/!g/pix/puter.gif" alt=""> source code</a>
-			<a title="doqmeat@gmail.com" href="mailto:doqmeat@gmail.com" target="_blank" class="outlink"><img src="/!g/pix/mail-sozaiya.gif" alt=""> e-mail</a>
+			<h3 class="misc"> misc</h3>
+			<a href="/projects">web projects</a>
+			<a href="/masaaki-yuasa">masaaki yuasa watchlist</a>
+			<a href="safe-spot/index.html">safe spot</a>
+
+			<h3 class="site"> sitely</h3>
+			<a href="/sites">button wall</a>
+			<a title="contains links, resources, F2U stuff, archives, etc!" href="/notebook"> notebook</a>
+			<a href="/guestbook">guestbook</a>
+			<a href="/sitemap">sitemap</a>
+
+			<h3 class="offsite"> offsite</h3>
+			<a href="https://neocities.org/site/doqmeat" target="_blank" class="outlink"> neocities profile</a>
+			<a title="github repository" href="https://github.com/doqmeat/doqmeat.com" target="_blank" class="outlink">source code</a>
+			<a title="doqmeat@gmail.com" href="mailto:doqmeat@gmail.com" target="_blank" class="outlink">e-mail</a>
 		</nav>
 
 		<div id="intro" class="box">
-			<img class="intro-img" align="left" style="max-width: 100%" alt="">
-			<p>
-				hello! my name is <b class="me">des</b> and this is my website! it mostly serves as a digital
-				journal, mostly about my interests and life.
-				<b title="yes, it is a reference to fallout's dogmeat!">doqmeat.com</b> is 100% a passion project of
-				mine that i've been doing for fun since 2023! i've had a lot of fun learning how to code this site
-				in order to put out whatever i want however i want it! i hope you find something you like as you
-				browse :3
-			</p>
-
-			<p>
-				here's my <a href="/guestbook">guestbook</a> if you'd like to write a little message about your
-				visit
-				<span class="no">and my <a style="cursor: help" onclick="chat()">chatbox</a> if you'd like something more
-					casual</span>
-				<img src="!g/pix/cat-heart.gif"> every single message means a ton to me!ヾ(￣▽￣)
-			</p>
-
-			<p>
-				this website will probably be an endless
-				<a title="github issues" href="https://github.com/doqmeat/doqmeat.com/issues/35" target="_blank" class="outlink">work-in-progress</a>, meaning that i am <b>always</b> working on it and updating it. if anything looks broken, a quick
-				cache clean should help! if not, then feel free to <a href="mailto:doqmeat@gmail.com">e-mail</a> me.
-			</p>
-
+			<img title="meow" class="mc-cat" alt="minecraft cat plushie" width="33%" align="right">
+			<p>hello! my name is <b>des</b>, and i'm the person behind this site! just like everyone always says, this is my <u>own</u> little corner of the internet. i use this space for just about anything. though i mostly use it as a <b>digital journal, of both my personal life and interests</b>.</p>
 			<center>
 				<a href="https://user.xmission.com/~emailbox/catstuff.htm" title="img source!"><img src="/collection/internet-graphics/!g/timecat.png" alt="button that reads 'no time spent with a cat is wasted'" width="30%"></a>
-				<img src="/collection/internet-graphics/!g/borntodie.png" width="40%">
+				<img src="/collection/internet-graphics/!g/borntodie.png" width="40%" alt="button that reads 'BORN TO DIE, WORLD IS A FUCK, Kill Em All 1989, This user is a trash man, 410,757,864,530 DEAD COPS'">
 			</center>
-
-			<h4>notes:</h4>
-			<li>
-				website does not contain any <u>explicit</u> content but it is made by an adult with an adult
-				audience in mind.
-			</li>
-			<li>
-				some pages are heavy on graphics / IMGS and might require you to reload more than once. all IMGS on
-				my site are compressed so load times are a bit better.
-			</li>
-			<li>
-				recommended to view on <u>firefox</u> with a 1400px+ wide screen <i>but</i> i will try my best to
-				make pages responsive to different screen sizes and browsers :)
-			</li>
-			<li>
-				site uses <b>javascript</b> and <b>iframes</b> that are necessary for navigation and other fun
-				stuff.
-			</li>
+			<p>starting as <i>doqmeat.neocities.org</i> in april 2023, i made this website purely just out of curiosity and boredom but it eventually turn out to be something i immensely care about. this is 100% a passion project of mine about self expression. welcome to my internet home!</p>
+			<h4>quick notes about site:</h4>
+			<ul>
+				<li>uses javascript and iframes. for fun stuff.</li>
+				<li>there is <u>no</u> explicit content on my site but keep in mind it is made by an adult with an adult audience in mind.</li>
+				<li>i try to make most of my pages responsive to different screen sizes, though the intended viewing size is 1080px.</li>
+				<li>i update my site a lot. hit that CTRL + F5 is something looks wonky. if that doesn't fix it feel free to e-mail me.</li>
+				<li>yes, my domain is a reference to fallout's <a title="fallout wiki" href="https://fallout.wiki/wiki/Dogmeat" target="_blank">dogmeat</a>! despite being a huge cat person, i love that dog.</li>
+			</ul>
 		</div>
 
-		<div id="status" class="box;">
-			<div class="padding">
-				<h2>status</h2>
-				<span class="imood">i am feeling...</span>
-				<a href="https://www.imood.com/users/doqmeat"><img src="https://moods.imood.com/display/uname-doqmeat/trans-1/imood.gif" alt="The current mood of doqmeat at www.imood.com" border="0"></a>
+		<div id="updates" class="box">
+			<h2>
+				<a title="my RSS feed" href="rss.xml"><img class="rss" width="15px" alt="RSS button"></a>
+				updates
+				<small><a title="what is an RSS feed?" href="/notebook/tutorials/rss/index.html">[?]</a></small>
+			</h2>
+			<script src="//rss.bloople.net/?url=https%3A%2F%2Fdoqmeat.com%2Frss.xml&limit=5&showtitle=false&type=js"></script>
+		</div>
 
-				<div id="statuscafe">
-					<div id="statuscafe-username"></div>
-					<div id="statuscafe-content"></div>
-				</div>
-				<script src="https://status.cafe/current-status.js?name=doqmeat" defer></script>
+		<div id="status" class="box">
+			<h2>status</h2>
+			i am feeling...
+			<a href="https://www.imood.com/users/doqmeat" class="imood"><img src="https://moods.imood.com/display/uname-doqmeat/trans-1/imood.gif" alt="The current mood of doqmeat at www.imood.com" border="0"></a>
+
+			<div id="statuscafe">
+				<div id="statuscafe-username"></div>
+				<div id="statuscafe-content"></div>
 			</div>
+			<script src="https://status.cafe/current-status.js?name=doqmeat" defer></script>
 		</div>
 
 		<div id="current" class="box">
@@ -223,276 +125,239 @@ feel free to look around for any help you need :) just don't be THAT person and 
 			<p><span class="hl">reading:</span> <i>chainsaw man</i> by tatsuki fujimoto</p>
 			<p><span class="hl">watching:</span> joe pera talks with you, twin peaks: the return</p>
 			<p><span class="hl">listening to:</span> <span id="song">&#8987;</span></p>
-			<p><span class="hl">working on:</span> homepage version 4!</p>
-			<p class="date">last updated on 08.aug.24</p>
+			<p><span class="hl">working on:</span> not much atm!</p>
+			<p class="date">last updated on 30.jul.24</p>
+
 		</div>
 
-		<div id="updates" class="box">
-			<h2>
-				<a title="my RSS feed" href="rss.xml"><img class="rss" width="15px" src="!g/web/materials/rss-icon.png" alt="RSS button"></a>
-				updates
-				<small><a title="what is an RSS feed?" href="/notebook/tutorials/rss/index.html">[?]</a></small>
-			</h2>
-			<script src="//rss.bloople.net/?url=https%3A%2F%2Fdoqmeat.com%2Frss.xml&limit=5&showtitle=false&type=js"></script>
+		<div id="piclog" class="box">
+			<h2>piclog</h2>
+			<a href="https://piclog.blue/profile.php?id=51"><img src="https://piclog.blue/latest.php?id=51" width="90%"></a>
 		</div>
 
 		<div id="featured-cat" class="box">
 			<h2>featured cat</h2>
-			<a title="click me to see more freaks" href="/collection/cats" target="_blank"><img src="/collection/cats/!g/cat-ad.jpg" width="90%" alt="featured cat"></a>
+			<a href="/collection/cats" title="click to see more freaks"><img src="collection/cats/!g/smile.jpg" alt="featured cat" width="70%"></a>
 		</div>
 
-		<div id="listing" class="box">
-			<h2>fanlistings &amp; cliques</h2>
-			<img title="by me! - based on the minecraft cat plushie" src="!g/web/cliques/kitty-friends/doqmeat.png" alt="the mc cat plush but in kitty pixel">
-			<a title="kitty friends pixel club" href="https://divergentrays.com/kitty" target="_blank"><img src="!g/web/cliques/kitty-friends/button.gif" alt="kitty friends button"></a>
-			<br>
-			<a href="https://siinamota.doqmeat.com/fanlisting" target="_blank"><img src="!g/web/fanlisting/siinamota-big.png" style="max-width: 100%" alt="siinamota fanlisting"></a>
-			<br>
-			<a href="https://fanlistings.melankorin.net/vocaloid/" target="_blank"><img src="!g/web/fanlisting/vocaloid.png" alt="vocaloid fanlisting"></a>
 
-			<a href="https://theatregirl.net/cats/" target="_blank"><img src="!g/web/fanlisting/cats.png" alt="cats"></a>
-
-			<a href="https://movieloverfls.org/3ds/index.php" target="_blank"><img src="!g/web/fanlisting/3ds.jpg" alt="3ds"></a>
-
-			<a href="https://puppyluv-listings.neocities.org/enhypen/" target="_blank"><img src="!g/web/fanlisting/enhypen.png" alt="enhypen"></a>
-
-			<a href="https://fan.cocorichelle.com/nekoatsume/index.php" target="_blank"><img src="!g/web/fanlisting/neko.png" alt="neko atsume"></a>
-
-			<a href="https://fans.thislove.nu/star/" target="_blank"><img src="!g/web/fanlisting/stargazing.gif" alt="stargazing"></a>
-
-			<a href="http://fan.after-death.org/magica" target="_blank"><img src="!g/web/fanlisting/madoka.png" alt="madoka fanlisting"></a>
-
-			<a href="https://siinamota.doqmeat.com/fanlisting" target="_blank"><img src="!g/web/fanlisting/siinamota-small.png" alt="siinamota fanlisting"></a>
-
-			<a href="https://www.marheavenj.net/power" target="_blank"><img src="!g/web/fanlisting/power.jpg" alt="power fanlisting"></a>
-
-			<a href="https://loonathefanlisting.neocities.org/" target="_blank"><img src="/!g/web/fanlisting/loona50x50_14.png" alt="loona fanlisting"></a>
-
-			<a href="https://loonathefanlisting.neocities.org/" target="_blank"><img src="/!g/web/fanlisting/loona50x50_0.png" alt="loona fanlisting"></a>
-
-			<a href="https://loonathefanlisting.neocities.org/" target="_blank"><img src="/!g/web/fanlisting/loona50x50_8.png" alt="loona fanlisting"></a>
-
-			<a href="http://precious-memory.net/nature/flowers" target="_blank"><img src="/!g/web/fanlisting/flowers.gif" alt="flowers fanlisting"></a>
-
-			<a href="http://thirteenthfloor.altervista.org/blackcats" target="_blank"><img src="/!g/web/fanlisting/blackcats.png"></a>
-
-			<a href="http://fan.warmer-climate.net/mushrooms/" target="_blank"><img src="/!g/web/fanlisting/mush50x50.png"></a>
-
-			<a href="http://fan.winterlantern.net/bloodborne/index.php" target="_blank"><img src="/!g/web/fanlisting/bloodborne_50x50_4.png"></a>
-
-			<a href="https://fan.redcrown.net/fallout/" target="_blank"><img src="/!g/web/fanlisting/fallout.png"></a>
-
-			<a href="http://fan.warmer-climate.net/portal2/" target="_blank"><img src="/!g/web/fanlisting/portal2.png"></a>
-
-			<a href="https://hellokitty.i-heart-you.net" target="_blank"><img src="/!g/web/fanlisting/hellokitty50x50_05.gif"></a>
-
-			<a href="http://hellokitty.ravenbeauty.net/chococat" target="_blank"><img src="/!g/web/fanlisting/chococat50x50_1.png" alt="chococat fanlisting"></a>
-
-			<br>
-			<a href="https://allyratworld.com/cafe/rose" target="_blank"><img src="/!g/web/fanlisting/88x31kuromi.png" alt="cafe rose banner"></a>
-
-			<br>
-			<a href="https://mizuki.world/nso/" target="_blank"><img src="/!g/web/fanlisting/nso.png" alt="needy streamer overdose fanlisting" style="max-width: 100%"></a>
-
-			<br>
-			<a href="https://dust.kuchiki.net/" target="_blank"><img src="/!g/web/fanlisting/cats.gif"></a>
-			<br>
-			<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting/lejlart-space.gif" alt="appledust space mini-clique"></a>
-			<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting/lejlart-pastelcolors.gif" alt="appledust pastel colors mini-clique"></a>
-			<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting/lejlart-clouds.gif" alt="appledust clouds mini-clique"></a>
-
-			<br>
-			<img src="/!g/web/fanlisting/cat-moudoku.png" width="20px" alt="pixel art of a grey cat">
-			<span style="font-size: 15px">i am a <a href="https://cliques.moudoku.com/cats" target="_blank">black cat</a></span>
-		</div>
-
-		<div id="webrings" class="box">
-			<h2>webrings &amp; widgets</h2>
-			<!--			no AI webring-->
-			<map name="noaimini2">
-				<area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="5,3,83,14" alt="no ai webring" title="no ai webring">
-				<area href="https://baccyflap.com/noai/?prv&s=des" target="_top" shape="rect" coords="5,16,16,26" alt="previous" title="previous">
-				<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="38,16,51,27" alt="random" title="random">
-				<area href="https://baccyflap.com/noai/?nxt&s=des" target="_top" shape="rect" coords="72,16,83,26" alt="next" title="next">
-			</map>
-			<img usemap="#noaimini2" src="https://baccyflap.com/noai/miniwidget2.gif" style="width: 88px; height: 31px" alt="a white rounded rectangle in red outline, with the words 'no ai webring'. there's a no access emoji, a little robot emoji, two arrows pointing left and right, and two crossed arrows">
-
-			<!--		catfolk-->
-			<script src="https://snewberry.neocities.org/catfolk/webstring.js"></script>
-
-			<!--		bisexualism-->
-			<div id="bisexualism">
-				<script type="text/javascript" src="https://emeowly.github.io/bi/onionring-variables.js" defer></script>
-				<script type="text/javascript" src="https://emeowly.github.io/bi/onionring-img-widget.js" defer></script>
-			</div>
-
-			<!--				silly.city-->
-			<iframe src="https://silly.city/embed.html?user=doqmeat" title="silly.city webring" frameborder="no" width="100%" height="60px">
-			</iframe>
-
-			<!--			journalring -->
-			<journal-ring icon="lavender"></journal-ring>
-			<script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script>
-
-			<!-- wiiring -->
-			<div style="width: 150px; margin: auto">
-				<script src="https://jeith.neocities.org/assets/webring/wii-ring.js"></script>
-				<wii-ring site="https://doqmeat.neocities.org"></wii-ring>
-			</div>
-
-			<!--  vocaloid webring -->
-			<div id="vocaring">
-				<script src="!f/voca.js"></script>
-			</div>
-
-			<!-- mob psycho 100 / mp100 webring -->
+		<div id="outro" class="box">
+			<h2>bye bye</h2>
+			<p>i hope you have fun browsing my website :3</p>
+			<p>you can leave a message about your visit (or about anything really! i usually reply) on my <a href="/guestbook">guestbook</a>, the chatbox, or even send me an e-mail if you'd like! go crazy.</p>
+			<p>want to link back to me? here are some of my buttons! i would prefer if you didn't <a href="https://awesomelytechie.com/dont-hotlink/" target="_blank">hotlink</a> please! save to your own server.</p>
 			<center>
-				<div id="mobring">
-					<script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/onionring-variables.js"></script>
-					<script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/basic-widget.js"></script>
-				</div>
+				<img src="!g/web/doqmeat.png" alt="button">
+				<img src="!g/web/doqmeat-2.png" alt="button 2">
 			</center>
-
-			<!-- pikring -->
-			<div id="PikRing" style="margin: 5px 0px">
-				<link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/rock.css">
-				<script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-variables.js"></script>
-				<script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
-			</div>
-
-			<!-- neo creatives 
-			<div id="ncring">
-				<script type="text/javascript" src="https://neocreatives.neocities.org/onionring-variables.js"></script>
-				<script type="text/javascript" src="https://neocreatives.neocities.org/onionring-widget.js"></script>
-			</div>
--->
-
-			<!--		WEB GUARDIAN -->
-			<div class="results" style="
-                        width: 200px;
-                        background-color: #fff;
-                        color: #000;
-                        padding: 10px;
-                        border: 1px solid;
-                        margin: 0 auto;
-                        font-size: &quot;15pt&quot;;
-                    ">
-				<p style="margin: 0">This page is protected by a</p>
-				<h2 class="title" style="margin: 0">OWL</h2>
-				<img class="image" style="max-width: 160px; border: 1px solid" alt="OWL" src="https://i.ibb.co/MSGxtwm/owl.jpg">
-				<p class="description">A group of owls is called a parliament.</p>
-				<small>
-					<a href="https://hekate.neocities.org">Want your own? Visit hekate.neocities.org!</a>
-				</small>
-			</div>
-
-			<!-- melonland surf -->
-			<p>
-				<object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#c999f0" type="image/svg+xml" style="width: 100px; height: 100px"></object>
-			</p>
-
-			<!--  moon widget -->
-			<div id="moon">
-				<iframe width="180" height="180" style="border: none; background: black" src="https://dimden.dev/moon?custom=1" name="dimdenmoonwidget"></iframe>
-			</div>
-
-			<!-- mushroom -->
-			<iframe src="https://shroom.ink/guard.html/?site=doqmeat&shroom=4" height="250px" width="200px" scrolling="no" frameborder="0"></iframe>
+			<p>if you want to explore more personal sites beyond doqmeat.com, check out my <a href="/sites">button wall</a> with tons of buttons from my neighbors and just overall sites that i enjoy visiting.</p>
+			<p>take care and come visit again someday :3</p>
 		</div>
 
-		<div id="featured-page" class="box">
-			<h2>featured page</h2>
-			<a title="my arts n craft... take me there!" href="/art"><img src="!g/art.jpg" alt="featured page"></a>
+		<div id="chat" class="box">
+			<h2>chatbox</h2>
+			<iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="90%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
 		</div>
 
-		<div id="button" class="box">
-			<h2>link me!</h2>
-			<p>
-				and remember to
-				<a class="outlink" href="https://awesomelytechie.com/dont-hotlink/" target="_blank">not hotlink</a>
-				save them to your own server/site pls!
-			</p>
+		<div id="musicbox" class="box">
+			<h2>music player</h2>
+			<div id="musicplayer">
+				<div>
+					<marquee scrollamount="8" class="songtitle"></marquee>
+				</div>
 
-			<img src="!g/web/doqmeat.png" alt="doqmeat button">
-			<img src="!g/web/doqmeat-2.png" alt="doqmeat button">
-		</div>
+				<table class="controls">
+					<tr>
+						<td>
+							<div class="prev-track" onclick="prevTrack()"><i class="fas fa-backward"></i></div>
+						</td>
+						<td>
+							<div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-play"></i></div>
+						</td>
+						<td>
+							<div class="next-track" onclick="nextTrack()"><i class="fas fa-forward"></i></div>
+						</td>
+					</tr>
+				</table>
 
-		<div id="chatbox">
-			<div id="chatboxheader">
-				<h2><img src="/!g/pix/msg.gif" class="no"> chatbox</h2>
-				<button title="close chatbox" onclick="chat()" class="no">x</button>
+				<div class="seeking">
+					<div class="current-time">00:00</div>
+
+					<input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+
+					<div class="total-duration">0:00</div>
+				</div>
+
+				<audio id="music" src=""></audio>
 			</div>
-			<iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="85%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+			<details>
+				<summary>playlist</summary>
+				<ol>
+					<li>放課後、通学路。 (after school, on the way to school) - kinoue64</li>
+					<li>on top of the inaudible white key - siinamota</li>
+					<li> 溢れてる (overflow) - kinoue64
+					</li>
+					<li>999 - siinamota</li>
+				</ol>
+			</details>
 		</div>
 
-		<div id="widget" class="box">
+		<div id="comm" class="box">
+			<h2>community</h2>
+			<button id="default-button" onclick="toggleComm('webring')">webrings</button>
+			<button onclick="toggleComm('listing')">listings</button>
+			<button onclick="toggleComm('pixel')">pixel</button>
+			<button onclick="toggleComm('misc')">misc</button>
+			<div id="webring" class="comm-box">
+
+				<!--			no AI webring-->
+				<map name="noaimini2">
+					<area href="https://baccyflap.com/noai" target="_blank" shape="rect" coords="5,3,83,14" alt="no ai webring" title="no ai webring">
+					<area href="https://baccyflap.com/noai/?prv&s=des" target="_top" shape="rect" coords="5,16,16,26" alt="previous" title="previous">
+					<area href="https://baccyflap.com/noai/?rnd" target="_top" shape="rect" coords="38,16,51,27" alt="random" title="random">
+					<area href="https://baccyflap.com/noai/?nxt&s=des" target="_top" shape="rect" coords="72,16,83,26" alt="next" title="next">
+				</map>
+				<img usemap="#noaimini2" src="https://baccyflap.com/noai/miniwidget2.gif" style="width: 88px; height: 31px" alt="a white rounded rectangle in red outline, with the words 'no ai webring'. there's a no access emoji, a little robot emoji, two arrows pointing left and right, and two crossed arrows">
+
+				<!--		catfolk-->
+				<script src="https://snewberry.neocities.org/catfolk/webstring.js"></script>
+
+				<!--		bisexualism-->
+				<div id="bisexualism">
+					<script type="text/javascript" src="https://emeowly.github.io/bi/onionring-variables.js" defer></script>
+					<script type="text/javascript" src="https://emeowly.github.io/bi/onionring-img-widget.js" defer></script>
+				</div>
+
+				<!--				silly.city-->
+				<iframe src="https://silly.city/embed.html?user=doqmeat" title="silly.city webring" frameborder="no" width="100%" height="60px">
+				</iframe>
+
+				<!--			journalring -->
+				<journal-ring icon="lavender"></journal-ring>
+				<script async src="https://cdn.jsdelivr.net/gh/js044/nenrikido@main/static/js/misc/journalring.js"></script>
+
+				<!--  vocaloid webring -->
+				<div id="vocaring">
+					<script src="!f/voca.js"></script>
+				</div>
+
+				<!-- wiiring -->
+				<div style="width: 150px; margin: auto">
+					<script src="https://jeith.neocities.org/assets/webring/wii-ring.js"></script>
+					<wii-ring site="https://doqmeat.neocities.org"></wii-ring>
+				</div>
+
+				<!-- mob psycho 100 / mp100 webring -->
+				<center>
+					<div id="mobring">
+						<script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/onionring-variables.js"></script>
+						<script type="text/javascript" src="https://sugarforbrains.neocities.org/mobring/basic-widget.js"></script>
+					</div>
+				</center>
+
+				<!-- pikring -->
+				<div id="PikRing" style="margin: 5px 0px">
+					<link rel="stylesheet" href="https://nickolox.neocities.org/pikring/css/rock.css">
+					<script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-variables.js"></script>
+					<script type="text/javascript" src="https://nickolox.neocities.org/pikring/pikring-widget.js"></script>
+				</div>
+
+				<p>
+					<object id="melonland-surf-club" data="https://melonland.net/surf-badge.svg?fill=#c999f0" type="image/svg+xml" style="width: 100px; height: 100px"></object>
+				</p>
+			</div>
+			<div id="listing" class="comm-box">
+				<a href="https://siinamota.doqmeat.com/fanlisting" target="_blank"><img src="!g/web/fanlisting/siinamota-big.png" style="max-width: 100%" alt="siinamota fanlisting"></a>
+				<br>
+				<a href="https://fanlistings.melankorin.net/vocaloid/" target="_blank"><img src="!g/web/fanlisting/vocaloid.png" alt="vocaloid fanlisting"></a>
+
+				<a href="https://theatregirl.net/cats/" target="_blank"><img src="!g/web/fanlisting/cats.png" alt="cats"></a>
+
+				<a href="https://movieloverfls.org/3ds/index.php" target="_blank"><img src="!g/web/fanlisting/3ds.jpg" alt="3ds"></a>
+
+				<a href="https://puppyluv-listings.neocities.org/enhypen/" target="_blank"><img src="!g/web/fanlisting/enhypen.png" alt="enhypen"></a>
+
+				<a href="https://fan.cocorichelle.com/nekoatsume/index.php" target="_blank"><img src="!g/web/fanlisting/neko.png" alt="neko atsume"></a>
+
+				<a href="https://fans.thislove.nu/star/" target="_blank"><img src="!g/web/fanlisting/stargazing.gif" alt="stargazing"></a>
+
+				<a href="http://fan.after-death.org/magica" target="_blank"><img src="!g/web/fanlisting/madoka.png" alt="madoka fanlisting"></a>
+
+				<a href="https://siinamota.doqmeat.com/fanlisting" target="_blank"><img src="!g/web/fanlisting/siinamota-small.png" alt="siinamota fanlisting"></a>
+
+				<a href="https://www.marheavenj.net/power" target="_blank"><img src="!g/web/fanlisting/power.jpg" alt="power fanlisting"></a>
+
+				<a href="https://loonathefanlisting.neocities.org/" target="_blank"><img src="/!g/web/fanlisting/loona50x50_14.png" alt="loona fanlisting"></a>
+
+				<a href="https://loonathefanlisting.neocities.org/" target="_blank"><img src="/!g/web/fanlisting/loona50x50_0.png" alt="loona fanlisting"></a>
+
+				<a href="https://loonathefanlisting.neocities.org/" target="_blank"><img src="/!g/web/fanlisting/loona50x50_8.png" alt="loona fanlisting"></a>
+
+				<a href="http://precious-memory.net/nature/flowers" target="_blank"><img src="/!g/web/fanlisting/flowers.gif" alt="flowers fanlisting"></a>
+
+				<a href="http://thirteenthfloor.altervista.org/blackcats" target="_blank"><img src="/!g/web/fanlisting/blackcats.png"></a>
+
+				<a href="http://fan.warmer-climate.net/mushrooms/" target="_blank"><img src="/!g/web/fanlisting/mush50x50.png"></a>
+
+				<a href="http://fan.winterlantern.net/bloodborne/index.php" target="_blank"><img src="/!g/web/fanlisting/bloodborne_50x50_4.png"></a>
+
+				<a href="https://fan.redcrown.net/fallout/" target="_blank"><img src="/!g/web/fanlisting/fallout.png"></a>
+
+				<a href="http://fan.warmer-climate.net/portal2/" target="_blank"><img src="/!g/web/fanlisting/portal2.png"></a>
+
+				<a href="https://hellokitty.i-heart-you.net" target="_blank"><img src="/!g/web/fanlisting/hellokitty50x50_05.gif"></a>
+
+				<a href="http://hellokitty.ravenbeauty.net/chococat" target="_blank"><img src="/!g/web/fanlisting/chococat50x50_1.png" alt="chococat fanlisting"></a>
+
+				<br>
+				<a href="https://allyratworld.com/cafe/rose" target="_blank"><img src="/!g/web/fanlisting/88x31kuromi.png" alt="cafe rose banner"></a>
+
+				<br>
+				<a href="https://mizuki.world/nso/" target="_blank"><img src="/!g/web/fanlisting/nso.png" alt="needy streamer overdose fanlisting" style="max-width: 100%"></a>
+
+				<br>
+				<a href="https://dust.kuchiki.net/" target="_blank"><img src="/!g/web/fanlisting/cats.gif"></a>
+				<br>
+				<img src="/!g/web/fanlisting/cat-moudoku.png" width="20px" alt="pixel art of a grey cat">
+				<span style="font-size: 15px">i am a <a href="https://cliques.moudoku.com/cats" target="_blank">black cat</a></span>
+			</div>
+
+			<div id="pixel" class="comm-box">
+				<a title="kitty friends pixel club" href="https://divergentrays.com/kitty" target="_blank"><img src="/!g/web/cliques/kitty-friends/button.gif" alt="kitty friends button"></a>
+				<br>
+				<img title="by me! - based on the minecraft cat plushie" src="/!g/web/cliques/kitty-friends/doqmeat.png" alt="the mc cat plush but in kitty pixel">
+				<a href="https://mikufan3939.neocities.org" target="_blank"><img title="by meek!" src="/!g/web/cliques/kitty-friends/mikucat.png" alt="mikucat"></a>
+				<a href="https://jeith.neocities.org" target="_blank"><img title="by jeith!" src="!g/web/cliques/kitty-friends/jeith.gif" alt="jeithcat"></a>
+			</div>
+
+			<div id="misc" class="comm-box">
+				<a href="https://discourse.32bit.cafe/" target="_blank"><img src="sites/!g/32bit-cafe.png" alt="32-bit cafe"></a>
+				<hr>
+				<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting/lejlart-space.gif" alt="appledust space mini-clique"></a>
+				<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting/lejlart-pastelcolors.gif" alt="appledust pastel colors mini-clique"></a>
+				<a href="https://www.lejlart.com/apple.html" target="_blank"><img src="/!g/web/fanlisting/lejlart-clouds.gif" alt="appledust clouds mini-clique"></a>
+			</div>
+			<!--	comm end div-->
+		</div>
+
+		<div id="widgets" class="box">
+			<h2>stats</h2>
+			<a href="//clap.fc2.com/post/doqmeat/?url=https%3A%2F%2Fdoqmeat.neocities.org%2F&title=doqmeat%27s+site" target="_blank" title="enjoy my site? give it a clap!"><img src="//clap.fc2.com/images/button/orange/doqmeat?url=https%3A%2F%2Fdoqmeat.neocities.org%2F&amp;lang=en" alt="Web Clap by FC2" style="border: none; border-radius: 10px"></a>
+
+			<br>
 			you are visitor number...
 			<script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39059397&main=1"></script>
 			<noscript><img src="//counter1.fc2.com/counter_img.php?id=39059397&main=1"></noscript>
 
 			<br>
-			<a href="//clap.fc2.com/post/doqmeat/?url=https%3A%2F%2Fdoqmeat.neocities.org%2F&title=doqmeat%27s+site" target="_blank" title="enjoy my site? give it a clap!"><img src="//clap.fc2.com/images/button/orange/doqmeat?url=https%3A%2F%2Fdoqmeat.neocities.org%2F&amp;lang=en" alt="Web Clap by FC2" style="border: none; border-radius: 10px"></a>
 
-			<a href="https://info.flagcounter.com/924j"><img src="https://s11.flagcounter.com/count/924j/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_15/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" width="100%" alt="Flag Counter" border="0"></a>
+			<a href="https://info.flagcounter.com/924j"><img src="https://s11.flagcounter.com/count/924j/bg_FFFFFF/txt_000000/border_CCCCCC/columns_3/maxflags_15/viewers_3/labels_0/pageviews_0/flags_0/percent_0/" width="90%" alt="Flag Counter" border="0"></a>
 		</div>
 
-		<div id="cat" class="box">
-			<img id="catIMG" title="me irl btw" src="/!g/homepage/cat-plush.png" alt="minecraft cat plush">
-		</div>
 
-		<!--		stickers around home-->
-		<img src="/!g/deco/flower1.gif" class="deco" alt="" style="	top: 47.5%;left: 25%">
-		<img src="/!g/div/flower2.gif" id="sticker2" class="deco" alt="" style="top: 1.8%;left: 1%;rotate:-6deg;width: 250px;">
-		<img id="sticker3" class="deco" alt="">
-		<img id="sticker4" class="deco" alt="">
-		<img id="sticker5" class="deco" alt="">
-		<img id="sticker6" class="deco" alt="">
-		<img id="sticker7" class="deco" alt="">
-		<img id="sticker8" class="deco" alt="">
-		<img id="sticker9" class="deco" alt="">
-		<img id="sticker10" class="deco" alt="">
-		<img id="sticker11" class="deco" alt="">
-		<img id="sticker12" class="deco" alt="">
-		<img id="sticker13" class="deco" alt="">
-		<img id="sticker14" class="deco" alt="">
-		<img id="sticker15" class="deco" alt="">
-		<img id="sticker16" class="deco" alt="">
-		<img id="sticker17" class="deco" alt="">
-		<img id="sticker18" class="deco" alt="">
-		<img id="sticker19" class="deco" alt="">
-		<img id="sticker20" class="deco" alt="">
-		<img id="sticker21" class="deco" alt="">
-		<img id="sticker22" class="deco" alt="">
-		<img id="sticker23" class="deco" alt="">
-		<img id="sticker24" class="deco" alt="">
-		<img id="sticker25" class="deco" alt="">
-		<img id="sticker26" class="deco" alt="">
-		<img id="sticker27" class="deco" alt="">
-		<img id="sticker28" class="deco" alt="">
-		<img id="fixed-1" alt="">
-		<img onclick="mizu()" id="mizu" class="deco" alt="popup for mizu shrine">
-		<!--		wrapper end div-->
-	</div>
-
-	<div id="mizu-pop-up">
-		<p>meow! i am the best <a href="/shrines/mizu/index.html">cat</a> in the world! (p≧w≦q)</p>
-	</div>
-
-	<div class="snowflakes">
-		<div class="snowflake"><img src="/!g/pix/nyancat.gif"></div>
-	</div>
-
-	<footer id="foot" class="box">
-		<p>
-			<a href="/notebook/links/credit.html#home">credit for materials used!</a> / homepage v3 since 14.dec.23
-		</p>
-		<p>
-			website coded with lots of love by des <img src="/!g/pix/catheart1.gif" alt=""> on the web since
-			<b>11.apr.23</b> <img src="/!g/pix/catroll.gif" alt=""> hosted on
-			<a class="outlink" href="https://neocities.org/site/doqmeat" target="_blank">neocities</a>
-			<img src="!g/pix/catsurprised.gif">
-		</p>
-		<p>
+		<footer id="foot" class="box">
+			<p><a href="/notebook/links/credit.html#home">credit</a> for materials used / homepage running on v4</p>
+			<p>coded with love by <b>des</b> / on the web since <b>11.apr.24</b> / hosted on <a href="https://neocities.org" target="_blank">neocities</a></p>
 			<a href="https://decolonizepalestine.com/" target="_blank"><img src="/collection/internet-graphics/!g/palestine.gif" alt="free palestine button"></a>
 			<img src="/collection/internet-graphics/!g/best%20viewed.jpg">
 			<img src="/collection/internet-graphics/!g/nop.gif">
@@ -500,41 +365,15 @@ feel free to look around for any help you need :) just don't be THAT person and 
 			<img src="/collection/internet-graphics/!g/antinft.png">
 			<a href="https://yesterweb.org/no-to-web3/" style="background: transparent"><img src="/collection/internet-graphics/!g/yesterweb-saynotoweb3.gif"></a>
 			<a href="http://validator.w3.org/feed/check.cgi?url=https%3A//doqmeat.com/rss.xml" target="_blank"><img src="/notebook/tutorials/rss/valid.png" alt="[Valid RSS]" title="Validate my RSS feed"></a>
-		</p>
-	</footer>
+		</footer>
+		<!--		wrapper end div-->
+	</div>
 
-	<!--	music player -->
-	<audio loop id="music" src="https://files.catbox.moe/9rh0cl.mp3"></audio>
-	<button title="click to play some music! golden (celeste OST) by lena raine" id="music-btn" onclick="playpause()">
-		<img src="/!g/pix/beat-stop.png" alt="music button">
-	</button>
 
-	<!--scripts-->
-	<script>
-		(function titleScroller(text) {
-			document.title = text;
-			setTimeout(function() {
-				titleScroller(text.substr(1) + text.substr(0, 1));
-			}, 500);
-		})("doqmeat homepage ☆⌒(*＾-゜)v☆");
-
-	</script>
-	<script>
-		var mizuPop = document.getElementById("mizu-pop-up");
-
-		function mizu() {
-			if (mizuPop.style.display == "block") {
-				mizuPop.style.display = "none";
-			} else {
-				mizuPop.style.display = "block";
-			}
-		}
-
-	</script>
-	<script src="!f/homepage-v3/last.fm.js"></script>
-	<script src="!f/music-toggle.js"></script>
-	<script src="!f/homepage-v3/mccatdrag.js"></script>
-	<script src="!f/homepage-v3/chatbox.js"></script>
+	<script src="!f/v4/music-player.js"></script>
+	<script src="!f/last.fm.js"></script>
+	<script src="!f/v4/theme.js"></script>
+	<script src="!f/v4/comm-box.js"></script>
 </body>
 
 </html>
