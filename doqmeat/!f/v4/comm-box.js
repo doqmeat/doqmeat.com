@@ -7,11 +7,3 @@ function toggleComm(box) {
 	}
 	clickBox.style.display = "block";
 }
-
-function defaultOpen() {
-	toggleComm('webring');
-	var button = document.getElementById("default-button");
-	button.focus();
-}
-
-window.onload = defaultOpen();
