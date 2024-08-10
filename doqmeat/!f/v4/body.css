@@ -369,11 +369,6 @@ input[type=range]::-moz-range-thumb {
 		height: 390px;
 	}
 
-	#featured-cat img {
-		height: 90%;
-		width: auto;
-	}
-
 	#comm {
 		height: 300px;
 	}
@@ -389,11 +384,6 @@ input[type=range]::-moz-range-thumb {
 
 	#piclog {
 		height: 300px;
-	}
-
-	#piclog img {
-		width: auto;
-		height: 90%;
 	}
 
 	#nav {
