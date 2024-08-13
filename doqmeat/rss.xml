@@ -5,6 +5,13 @@
 		<title>doqmeat</title>
 		<link>https://doqmeat.com</link>
 		<description>des' personal website!</description>
+		
+				<item>
+			<title>13.aug.24 - tropical storm</title>
+			<link>https://doqmeat.com/journal</link>
+			<description>new journal log</description>
+			<pubDate>Tue, 13 Aug 2024 16:11:35 +0000</pubDate>
+		</item>
 
 		<item>
 			<title>09.aug.24 - homepage v4</title>
