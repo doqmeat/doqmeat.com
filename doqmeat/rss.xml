@@ -5,8 +5,15 @@
 		<title>doqmeat</title>
 		<link>https://doqmeat.com</link>
 		<description>des' personal website!</description>
-		
-				<item>
+
+		<item>
+			<title>17.aug.24 - new template</title>
+			<link>https://doqmeat.com/notebook/F2U/codes</link>
+			<description>a new F2U template i did as a fun project + updated my &#x3C;a href=&#x22;https://doqmeat.com/notebook/archive/homepage/&#x22;&#x3E;homepage&#x3C;/a&#x3E; archive where i talk a bit more about v4</description>
+			<pubDate>Sat, 17 Aug 2024 12:25:18 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>13.aug.24 - tropical storm</title>
 			<link>https://doqmeat.com/journal</link>
 			<description>new journal log</description>
