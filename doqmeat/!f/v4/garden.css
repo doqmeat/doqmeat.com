@@ -6,11 +6,17 @@
 	--blue: #4A6686;
 }
 
+::selection {
+	background: var(--green2);
+	color: var(--yellow);
+}
+
 html {
 	scrollbar-color: #cfa688 #e6c88a;
 }
 
 .box {
+	padding: 10px;
 	background-color: var(--green1);
 	border: 1px dashed var(--blue);
 	color: #49523A;
@@ -37,6 +43,7 @@ a {
 }
 
 a:hover {
+	background: var(--green1);
 	color: var(--peach);
 }
 
@@ -60,6 +67,10 @@ hr {
 	text-shadow: var(--green2) 2px 0px 0px, var(--green2) 1.75517px 0.958851px 0px, var(--green2) 1.0806px 1.68294px 0px, var(--green2) 0.141474px 1.99499px 0px, var(--green2) -0.832294px 1.81859px 0px, var(--green2) -1.60229px 1.19694px 0px, var(--green2) -1.97999px 0.28224px 0px, var(--green2) -1.87291px -0.701566px 0px, var(--green2) -1.30729px -1.51361px 0px, var(--green2) -0.421592px -1.95506px 0px, var(--green2) 0.567324px -1.91785px 0px, var(--green2) 1.41734px -1.41108px 0px, var(--green2) 1.92034px -0.558831px 0px;
 }
 
+nav a {
+	border-radius: 20px;
+}
+
 nav a:hover {
 	padding: 2px;
 	letter-spacing: 1px;
@@ -69,6 +80,7 @@ nav a:hover {
 /*currently*/
 
 #current .hl {
+	padding: 0 1px;
 	background: #aeb182;
 	color: var(--green2);
 }
@@ -77,7 +89,7 @@ nav a:hover {
 	text-align: right;
 	color: var(--blue);
 	font-size: .8em;
-	border-top: 1px solid var(--green2);
+	border-top: 2px dashed var(--green2);
 }
 
 /*images*/

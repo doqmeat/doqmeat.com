@@ -9,6 +9,11 @@
 	--pink2: hsla(328, 20%, 56%, 0.9);
 }
 
+::selection {
+	background: var(--pink2);
+	color: white;
+}
+
 html {
 	scrollbar-color: #c58991 #5b6b9c;
 }
@@ -94,7 +99,7 @@ hr {
 
 #current .date {
 	color: var(--yellow);
-	border-top: 1px solid var(--pink);
+	border-top: 3px dotted var(--pink);
 }
 
 /*images*/

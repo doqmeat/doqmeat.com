@@ -185,7 +185,7 @@ footer p {
 }
 
 #s-m-t-tooltip {
-	max-width: 200px;
+	max-width: 400px;
 	text-align: center;
 	z-index: 9999;
 	margin: 30px 15px 7px 12px;
