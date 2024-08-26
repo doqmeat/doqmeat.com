@@ -16,7 +16,6 @@ html {
 }
 
 .box {
-	padding: 10px;
 	background-color: var(--green1);
 	border: 1px dashed var(--blue);
 	color: #49523A;
