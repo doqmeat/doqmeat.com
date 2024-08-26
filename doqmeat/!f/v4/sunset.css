@@ -20,7 +20,7 @@ html {
 
 .box {
 	background-color: var(--blue2);
-	border: 1px solid var(--pink);
+	border: 2px dashed var(--pink);
 	color: white;
 }
 
@@ -179,8 +179,6 @@ p.feed-item-desc:nth-of-type(1) {
 	border: 1px solid var(--pink);
 	background: white;
 }
-
-
 
 /*imood*/
 
