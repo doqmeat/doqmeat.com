@@ -5,7 +5,7 @@
 	--yellow: #fff9ce;
 	--peach: hsla(27, 100%, 85%, 0.9);
 	--pink: hsla(352, 34%, 65%, 0.9);
-	--blue2: hsla(223, 26%, 50%, 0.9);
+	--blue2: rgb(83, 98, 141, 0.9);
 	--pink2: hsla(328, 20%, 56%, 0.9);
 }
 
@@ -100,6 +100,12 @@ hr {
 #current .date {
 	color: var(--yellow);
 	border-top: 3px dotted var(--pink);
+}
+
+/*chatbox*/
+
+#chat {
+	background: rgb(165, 175, 202, 0.8);
 }
 
 /*images*/
