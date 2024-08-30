@@ -23,11 +23,16 @@
 			text-align: center;
 			color: black;
 			font-size: 14px;
+			word-break: keep-all;
 		}
 
 		a {
 			color: var(--blue1);
 			cursor: help;
+		}
+
+		p img{
+vertical-align: middle;
 		}
 
 		a:hover {
