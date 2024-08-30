@@ -7,7 +7,7 @@
 }
 
 body {
-	font-size: 17px;
+	font-size: 18px;
 	font-family: var(--fonts);
 	margin: 0;
 	text-align: center;
@@ -20,8 +20,8 @@ body {
 }
 
 ::selection {
-	background: #fad97c;
-	color: firebrick;
+	background: #ca5e2c;
+	color: white;
 }
 
 h1 {
