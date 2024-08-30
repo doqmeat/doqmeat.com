@@ -1,5 +1,6 @@
 // initiate variables
 let track_name = document.querySelector(".songtitle");
+// let album_cover = document.querySelector(".album-cover");
 
 let playpause_btn = document.querySelector(".playpause-track");
 let next_btn = document.querySelector(".next-track");
@@ -17,19 +18,23 @@ let curr_track = document.getElementById("music");
 
 let track_list = [{
 		name: "放課後、通学路。 (after school, on the way to school) - kinoue64",
-		path: "https://files.catbox.moe/ypbz55.mp3"
+		path: "https://files.catbox.moe/ypbz55.mp3",
+		img:""
 			},
 	{
 		name: "on top of the inaudible white key - siinamota",
-		path: "https://files.catbox.moe/upip62.mp3"
+		path: "https://files.catbox.moe/upip62.mp3",
+		img:""
 			},
 	{
 		name: "溢れてる (overflow) - kinoue64",
 		path: "https://files.catbox.moe/6gbrjt.mp3",
+		img:""
 			},
 	{
 		name: "999 - siinamota",
-		path: "https://files.catbox.moe/na00tp.mp3"
+		path: "https://files.catbox.moe/na00tp.mp3",
+		img: "sepia-record.png"
 			},
 
 		];

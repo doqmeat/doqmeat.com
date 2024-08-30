@@ -176,14 +176,14 @@ p.feed-item-desc:nth-of-type(1) {
 
 #statuscafe-username {
 	font-size: 14px;
+	background:var(--pink2);
 	font-family: morningtea, var(--fonts);
-	border: 1px dashed white;
 	border-bottom: 0px;
 }
 
 #statuscafe-content {
-	background: white;
-	color: var(--blue2);
+	background:var(--blue);
+	color: var(--yellow);
 }
 
 /*tooltip*/

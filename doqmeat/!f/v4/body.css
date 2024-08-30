@@ -63,8 +63,8 @@ select {
 		"header header header"
 		"nav info updates"
 		"nav status currently"
-		"chat pic f-cat"
-		"chat bye comm"
+		"comm pic f-cat"
+		"comm bye chat"
 		"music bye widgets"
 		"foot foot foot";
 	grid-template-columns: 20% 50% 30%;
@@ -117,7 +117,7 @@ nav a {
 
 #chat {
 	grid-area: chat;
-	width: 152%;
+	margin-left: 50px;
 }
 
 #current {
@@ -138,7 +138,7 @@ nav a {
 #comm {
 	grid-area: comm;
 	text-align: center;
-	margin-left: 50px;
+	width: 152%;
 }
 
 #comm button {
