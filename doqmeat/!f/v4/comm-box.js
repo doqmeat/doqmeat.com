@@ -9,7 +9,7 @@ function toggleComm(box) {
 }
 
 function defaultOpen() {
-	toggleComm('webring');
+	toggleComm('listing');
 	var button = document.getElementById("default-button");
 }
 

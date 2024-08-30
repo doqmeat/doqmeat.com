@@ -123,6 +123,10 @@ h3.offsite::before {
 
 /*status cafe*/
 
+#statuscafe {
+	border-radius: 10px;
+}
+
 #statuscafe a {
 	color: var(--yellow);
 	text-decoration: none;
