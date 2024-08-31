@@ -2,7 +2,7 @@
 hello! this is the repository of my personal website, [doqmeat.com](https://doqmeat.com/) !
 
 ## about site
-- i upload my code using deploy to neocities and github desktop following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template).
+- i upload my code using deploy to neocities and git following miss moss's [deploy to neocities template](https://github.com/burned-salmon/deploy-to-neocities-template).
 - tested on firefox. and on chrome sometimes.
 
 ## source code
