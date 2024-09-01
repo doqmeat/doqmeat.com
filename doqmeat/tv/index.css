@@ -13,6 +13,15 @@
 	--green: #DFECBF;
 }
 
+::selection {
+	background: var(--d-blue);
+	color: var(--green);
+}
+
+html {
+	scrollbar-color: #DFECBF #535E7C;
+}
+
 body {
 	font-size: 17px;
 	font-family: var(--fonts);
@@ -51,14 +60,13 @@ header {
 }
 
 h1 {
-	font-family: pink-tape, var(--fonts);
+	font-family: morningtea, var(--fonts);
 }
 
 h3 {
 	margin: 5px;
-	font-family: pink-tape, natsuzemi, var(--fonts);
+	font-family: morningtea, natsuzemi, var(--fonts);
 	word-wrap: break-word;
-	font-size: 15px;
 }
 
 a {
@@ -87,9 +95,9 @@ main {
 
 .show {
 	position: relative;
-	display: inline-block;
+	display: block;
 	height: 298px;
-	width: 200px;
+	width: 400px;
 	margin: 10px;
 	border-radius: 10px;
 	overflow: hidden;
@@ -97,39 +105,28 @@ main {
 	background: var(--green);
 }
 
-.show:hover {
-	width: 400px;
+.cover {
+	width: 45%;
+	float: left;
+	margin: 10px;
+	border-radius: 10px;
 }
 
-.show img {
-	height: 100%;
-}
-
-.hov {
-	background: rgb(229, 184, 209, 0.98);
-	position: absolute;
-	top: 0%;
-	width: 100%;
-	height: 100%;
-	opacity: 0;
-	transition-duration: 0.3s;
-}
-
-.hov:hover {
-	opacity: 1;
+.cover-r {
+	width: 45%;
+	float: right;
+	margin: 10px;
+	border-radius: 10px;
 }
 
 .box {
 	text-align: center;
-	width: 90%;
-	max-height: 90%;
+	width: 100%;
+	height: 100%;
 	overflow: auto;
-	position: absolute;
-	top: 5%;
-	left: 6%;
+	position: relative;
 	padding: 5px;
 	background: rgb(229, 184, 209, 0.98);
-	border-radius: 10px;
 	transition-duration: 0.3s;
 }
 
@@ -140,7 +137,6 @@ main {
 .box p:hover {
 	background: white;
 	border-radius: 10px;
-	padding: 3px;
 }
 
 .status {
@@ -157,13 +153,27 @@ main {
 	font-weight: bold;
 }
 
-main details {
-	background: var(--purple);
-	color: var(--l-blue);
-	padding: 0px 5px;
-	max-width: 500px;
-	margin: auto;
+.box details {
+	background: transparent;
+	color: inherit;
+}
+
+summary {
 	cursor: help;
+}
+
+#lists {
+	margin: auto;
+	max-width: 400px;
+	background-image: url(/!g/bg/whiteline.jpg);
+	background-size: 13px;
+	background-color: #a6d0c8;
+	padding: 10px;
+}
+
+#lists p {
+	margin: 0px;
+	padding: 3px;
 }
 
 footer {
@@ -196,7 +206,7 @@ footer p {
 	padding: 5px;
 	border-radius: 10px;
 	border: 1px dashed var(--green);
-	color: var(--l-blue);
+	color: var(--green);
 	background: var(--berry);
 }
 
