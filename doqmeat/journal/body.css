@@ -1,25 +1,25 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-	--fonts: gaegu-l, ms gothic, arial;
+  --fonts: gaegu-l, ms gothic, arial;
 }
 
 html {
-	scrollbar-color: #e0dcf0 #fffcdc;
+  scrollbar-color: #e0dcf0 #fffcdc;
 }
 
 body {
-	background: url('/journal/!g/bg.gif');
-	word-wrap: break-word;
-	font-size: 17px;
-	line-height: 23px;
-	font-family: var(--fonts);
-	color: black;
-	padding: 0px;
-	margin: 0px;
-	scrollbar-color: #E4A79D #fffcdc;
+  background: url("/journal/!g/bg.gif");
+  word-wrap: break-word;
+  font-size: 17px;
+  line-height: 23px;
+  font-family: var(--fonts);
+  color: black;
+  padding: 0px;
+  margin: 0px;
+  scrollbar-color: #e4a79d #fffcdc;
 }
 
 h1,
@@ -28,155 +28,154 @@ h3,
 h4,
 h5,
 h6 {
-	font-family: gaegu-l, var(--fonts);
-	text-shadow: 1px 1px 1px #b5b5d8;
+  font-family: gaegu-l, var(--fonts);
+  text-shadow: 1px 1px 1px #b5b5d8;
 }
 
 mark {
-	background: #e0dcf0;
+  background: #e0dcf0;
 }
 
 q {
-	font-style: italic;
-	text-shadow: 1px 1px 1px #f6bdcf;
+  font-style: italic;
+  text-shadow: 1px 1px 1px #f6bdcf;
 }
 
 i {
-	text-shadow: 1px 1px 1px #f6bdcf;
+  text-shadow: 1px 1px 1px #f6bdcf;
 }
 
 b {
-	text-shadow: 1px 1px 1px #97b7b6;
+  text-shadow: 1px 1px 1px #97b7b6;
 }
 
 b,
 i {
-	font-family: gaegu-r, var(--fonts);
+  font-family: gaegu-r, var(--fonts);
 }
 
 li {
-	list-style-position: inside;
-	padding: 0 10px;
-	margin: 10px 0;
+  list-style-position: inside;
+  padding: 0 10px;
+  margin: 10px 0;
 }
 
 ul {
-	margin: 0px;
-	padding: 0px 5px 5px 35px;
+  margin: 0px;
+  padding: 0px 5px 5px 35px;
 }
 
 ul li {
-	list-style-image: url('/!g/pix/starblue.gif');
+  list-style-image: url("/!g/pix/starblue.gif");
 }
 
 a {
-	border-radius: 5px;
-	padding: 0px 2px;
-	color: black;
-	background: #FFE481;
-	font-weight: normal;
-	text-decoration: none;
+  border-radius: 5px;
+  padding: 0px 2px;
+  color: black;
+  background: #ffe481;
+  font-weight: normal;
+  text-decoration: none;
+  cursor: help;
 }
 
 a:hover {
-	color: black;
-	text-decoration: underline;
-	cursor: help;
+  color: black;
+  text-decoration: underline;
+  cursor: help;
 }
 
 a:focus {
-	text-decoration: wavy underline;
+  text-decoration: wavy underline;
 }
 
 p {
-	margin: 0 0 10px 0;
-	padding: 5px;
+  margin: 0 0 10px 0;
+  padding: 5px;
 }
 
 p img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 blockquote {
-	font-family: YU gothic UI, var(--fonts);
-	font-size: 16px;
-	font-style: italic;
-	border-left: 2px solid #E4A79D;
-	padding-left: 5px;
+  font-family: YU gothic UI, var(--fonts);
+  font-size: 16px;
+  font-style: italic;
+  border-left: 2px solid #e4a79d;
+  padding-left: 5px;
 }
 
 ::selection {
-	color: black;
-	background-color: #A6DDFF;
+  color: black;
+  background-color: #a6ddff;
 }
 
 summary {
-	cursor: help;
-	padding: 0px 5px;
+  cursor: help;
+  padding: 0px 5px;
 }
 
 .spoiler {
-	background-color: black;
-	color: black;
+  background-color: black;
+  color: black;
 }
 
 .spoiler:hover {
-	background-color: transparent;
+  background-color: transparent;
 }
 
 .f-fix {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 .transp {
-	background: transparent;
+  background: transparent;
 }
 
 .centered {
-	text-align: center;
+  text-align: center;
 }
 
 .outlink:after {
-	content: "↗";
-	padding-left: 3px;
-	vertical-align: text-bottom;
+  content: "↗";
+  padding-left: 3px;
+  vertical-align: text-bottom;
 }
 
 #s-m-t-tooltip {
-	max-width: 200px;
-	font-size: 17px;
-	font-family: gaegu-b, var(--fonts);
-	text-align: center;
-	z-index: 9999;
-	margin: 30px 15px 7px 20px;
-	padding: 5px;
-	border-radius: 10px;
-	background: #b9b6d5;
-	border: 1px dashed white;
-	color: white;
-
+  max-width: 200px;
+  font-size: 17px;
+  font-family: gaegu-b, var(--fonts);
+  text-align: center;
+  z-index: 9999;
+  margin: 30px 15px 7px 20px;
+  padding: 5px;
+  border-radius: 10px;
+  background: #b9b6d5;
+  border: 1px dashed white;
+  color: white;
 }
 
 ::-webkit-scrollbar {
-	width: 8px;
-	height: 8px;
+  width: 8px;
+  height: 8px;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-	background-color: #E4A79D;
-	border-radius: 10px;
+  background-color: #e4a79d;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-	background-color: #E4A79D;
-	border-radius: 10px;
+  background-color: #e4a79d;
+  border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #FFFCDC;
+  background-color: #fffcdc;
 }
 
 * {
-	cursor: url(/journal/!g/cursor-pencil.png),
-		auto !important;
+  cursor: url(/journal/!g/cursor-pencil.png), auto !important;
 }

@@ -1,75 +1,77 @@
 body {
-	background: transparent;
-	-ms-overflow-style: none;
-	scrollbar-width: none;
+  background: transparent;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+a {
+  cursor: help;
 }
 
 ::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 table {
-	background: white;
-	width: 220px;
-	border-radius: 10px;
-	border: 1px solid white;
+  background: white;
+  width: 220px;
+  border-radius: 10px;
+  border: 1px solid white;
 }
 
 td {
-	background: #d3e7b2;
-	border-radius: 7px;
-	box-shadow: 1px 1px 1px white inset, -1px -1px 1px white inset;
-	border: 1px solid #e8e4ef;
+  background: #d3e7b2;
+  border-radius: 7px;
+  box-shadow: 1px 1px 1px white inset, -1px -1px 1px white inset;
+  border: 1px solid #e8e4ef;
 }
 
 .week {
-	font-weight: bold;
-	color: grey;
-	background: #e0def2;
-	border-radius: 7px;
-	text-shadow: 1px 1px 1px white;
+  font-weight: bold;
+  color: grey;
+  background: #e0def2;
+  border-radius: 7px;
+  text-shadow: 1px 1px 1px white;
 }
 
 .today {
-	overflow: hidden;
-	border-radius: 7px;
-	display: block;
-	color: white;
-	text-shadow: 1px 1px 1px black;
+  overflow: hidden;
+  border-radius: 7px;
+  display: block;
+  color: white;
+  text-shadow: 1px 1px 1px black;
 }
 
 .month {
-	background: pink;
-	text-align: center;
+  background: pink;
+  text-align: center;
 }
 
 p {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 td a {
-	display: block;
-	text-shadow: 1px 1px 1px grey;
+  display: block;
+  text-shadow: 1px 1px 1px grey;
 }
 
 td a:hover {
-	background: #ffc0cb;
+  background: #ffc0cb;
 }
 
 td a:focus {
-	background: #e0def2;
+  background: #e0def2;
 }
 
-@media only screen and (max-width:600px) {
-
-	.hide {
-		display: none;
-	}
+@media only screen and (max-width: 600px) {
+  .hide {
+    display: none;
+  }
 }
 
-
-@media only screen and (max-width:213px) {
-	table {
-		width: 100%;
-	}
+@media only screen and (max-width: 213px) {
+  table {
+    width: 100%;
+  }
 }

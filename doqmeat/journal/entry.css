@@ -1,180 +1,184 @@
 * {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :root {
-	--log-bg: url("/notebook/!g/grid-blue.png");
+  --log-bg: url("/notebook/!g/grid-blue.png");
 }
 
 body {
-	font-size: 18px;
-	word-spacing: 8px;
-	line-height: 24px;
-	color: black;
+  font-size: 18px;
+  word-spacing: 8px;
+  line-height: 24px;
+  color: black;
 }
 
 header {
-	padding: 5px;
+  padding: 5px;
 }
 
 p {
-	margin: 20px 10px 20px 12px;
+  margin: 20px 10px 20px 12px;
 }
 
 p:hover {
-	background: white;
+  background: white;
 }
 
 img {
-	vertical-align: middle;
+  vertical-align: middle;
 }
 
 hr {
-	background: url('/journal/!g/leaf.gif');
-	height: 15px;
-	border: 0px;
+  background: url("/journal/!g/leaf.gif");
+  height: 15px;
+  border: 0px;
+}
+
+h2,
+h3,
+h4 {
+  margin: 20px;
 }
 
 #log,
 main {
-	padding: 0px;
-	max-width: 700px;
-	margin: auto;
-	margin-bottom: 10px;
-	scrollbar-color: #E4A79D #fffcdc;
+  padding: 0px;
+  max-width: 700px;
+  margin: auto;
+  margin-bottom: 10px;
+  scrollbar-color: #e4a79d #fffcdc;
 }
 
 article {
-	background: var(--log-bg);
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: fixed;
-	background-size: 10px;
-	border: 1px dashed black;
-	margin-bottom: 30px;
-	padding: 0 0 10px 0;
-
+  background: var(--log-bg);
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  background-size: 10px;
+  border: 1px dashed black;
+  margin-bottom: 30px;
+  padding: 0 0 10px 0;
 }
 
 article:last-child {
-	margin-bottom: 0px;
+  margin-bottom: 0px;
 }
 
 .title {
-	font-family: var(--fonts);
-	float: left;
-	padding-top: 5px;
+  font-family: var(--fonts);
+  float: left;
+  padding-top: 5px;
 }
 
 .date {
-	font-family: spirit, var(--fonts);
-	font-size: 16px;
+  font-family: spirit, var(--fonts);
+  font-size: 16px;
 }
 
 .entry {
-	font-size: 28px;
-	background-size: 50px;
-	border-bottom: 4px double black;
-	text-align: right;
-	font-weight: bold;
-	margin: 5px 0px 15px 0px;
-	padding: 2px 10px;
+  font-size: 28px;
+  background-size: 50px;
+  border-bottom: 4px double black;
+  text-align: right;
+  font-weight: bold;
+  margin: 5px 0px 15px 0px;
+  padding: 2px 10px;
 }
 
 .mini {
-	display: inline-block;
-	line-height: 23px;
-	font-family: gaegu-r, newpenji, var(--fonts);
-	background: url(/!g/bg/h096-2.gif);
-	background-size: 60px;
-	font-size: 17px;
-	border: 1px solid black;
-	margin: 5px 5px;
-	padding: 0px 5px;
-	border-radius: 10px;
+  display: inline-block;
+  line-height: 23px;
+  font-family: gaegu-r, newpenji, var(--fonts);
+  background: url(/!g/bg/h096-2.gif);
+  background-size: 60px;
+  font-size: 17px;
+  border: 1px solid black;
+  margin: 5px 5px;
+  padding: 0px 5px;
+  border-radius: 10px;
 }
 
 .mini > a {
-	background: transparent;
-	text-decoration: underline;
+  background: transparent;
+  text-decoration: underline;
 }
 
 ::before {
-	margin: 5px;
-	vertical-align: text-top;
+  margin: 5px;
+  vertical-align: text-top;
 }
 
 ::after {
-	font-weight: bold;
+  font-weight: bold;
 }
 
 .l::before {
-	content: url(/!g/pix/music%20notes.gif);
+  content: url(/!g/pix/music%20notes.gif);
 }
 
 .l::after {
-	content: "listening to:";
+  content: "listening to:";
 }
 
 .f::before {
-	content: url(/!g/pix/catloaf.gif);
+  content: url(/!g/pix/catloaf.gif);
 }
 
 .f::after {
-	content: "feeling:";
+  content: "feeling:";
 }
 
 .w::before {
-	content: url(/!g/pix/tv.gif);
+  content: url(/!g/pix/tv.gif);
 }
 
 .w::after {
-	content: "watching:";
+  content: "watching:";
 }
 
 .p::before {
-	content: url(/!g/pix/vgs.gif);
+  content: url(/!g/pix/vgs.gif);
 }
 
 .p::after {
-	content: "playing:";
+  content: "playing:";
 }
 
 .e::before {
-	content: url(/!g/pix/cookingpan.gif);
+  content: url(/!g/pix/cookingpan.gif);
 }
 
 .e::after {
-	content: "eating:";
+  content: "eating:";
 }
 
 /* this is for older entries LOL i cant be bothered to fix them*/
 
 p.date {
-	font-size: 27px;
-	background: url(/!g/bg/h056-4.gif);
-	background-size: 50px;
-	border: 4px double black;
-	text-align: right;
-	font-weight: normal;
-	margin: 5px 0px 15px 0px;
-	padding: 0px 10px;
+  font-size: 27px;
+  background: url(/!g/bg/h056-4.gif);
+  background-size: 50px;
+  border: 4px double black;
+  text-align: right;
+  font-weight: normal;
+  margin: 5px 0px 15px 0px;
+  padding: 0px 10px;
 }
 
 /*end*/
 
 @media only screen and (max-width: 800px) {
+  .entry {
+    border-left: 0px;
+    border-right: 0px;
+  }
 
-	.entry {
-		border-left: 0px;
-		border-right: 0px;
-	}
+  .hide {
+    display: none;
+  }
 
-	.hide {
-		display: none;
-	}
-
-	body {
-		background: transparent;
-	}
+  body {
+    background: transparent;
+  }
 }
