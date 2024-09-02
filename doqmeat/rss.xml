@@ -5,8 +5,16 @@
 		<title>doqmeat</title>
 		<link>https://doqmeat.com</link>
 		<description>des' personal website!</description>
+
+				<item>
+			<title>02.sep.24 - listening log</title>
+			<link>https://doqmeat.com/listening-log/2024/summer.html#4</link>
+			<description>listened to &#x3C;i&#x3E;TTYL&#x3C;/i&#x3E; by loossemble!</description>
+			<pubDate>Mon, 02 Sep 2024 16:31:18 -0400</pubDate>
+		</item>
+
 		<item>
-			<title>30.aug.24 - journal log</title>
+			<title>01.sep.24 - journal log</title>
 			<link>https://doqmeat.com/journal</link>
 			<description>new log: from brackets to VSC + a small life update</description>
 			<pubDate>Sun, 01 Sep 2024 22:39:09 -0400</pubDate>
@@ -16,7 +24,7 @@
 			<title>30.aug.24 - featured music + gaming logs</title>
 			<link>https://doqmeat.com/music</link>
 			<description>new featured music on the music page + added &#x3C;i&#x3E;nintendogs + cats&#x3C;/i&#x3E; and a new log to &#x3C;i&#x3E;style savvy trendsetters&#x3C;/i&#x3E; to &#x3C;a href=&#x22;https://doqmeat.com/vgs&#x22;&#x3E;gaming log&#x3C;/a&#x3E;</description>
-			<pubDate>Fri, 30 Aug 2024 23:46:37 +0000</pubDate>
+			<pubDate>Fri, 30 Aug 2024 23:46:37 -0400</pubDate>
 		</item>
 
 		<item>
