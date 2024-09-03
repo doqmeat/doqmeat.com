@@ -1,192 +1,189 @@
 #wrapper {
-	margin: auto;
-	position: relative;
-	display: grid;
-	grid-template-areas:
-		"header header"
-		"sidebar logs"
-		"footer footer";
-	grid-template-columns: 30% 70%;
-	grid-template-rows: auto auto auto;
-	max-width: 1000px;
-	margin-bottom: 10px;
-	margin-top: 10px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar logs"
+    "footer footer";
+  grid-template-columns: 30% 70%;
+  grid-template-rows: auto auto auto;
+  max-width: 1000px;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 #nav {
-	overflow: hidden;
+  overflow: hidden;
 }
 
 #nav a {
-	background: transparent;
-	display: block;
-	margin: 2px 30px;
+  background: transparent;
+  display: block;
+  margin: 2px 30px;
 }
 
 #nav a::before {
-	content: "- "
+  content: "- ";
 }
 
 #nav a:hover::before {
-	content: "↪ "
+  content: "↪ ";
 }
 
 #nav a:focus::before {
-	content: "* "
+  content: "* ";
 }
 
 header {
-	grid-area: header;
-	text-align: center;
+  grid-area: header;
+  text-align: center;
 }
 
 header h1 {
-	font-family: gaegu-b;
-	text-shadow: 1px 1px 1px white;
+  font-family: gaegu-b;
+  text-shadow: 1px 1px 1px white;
 }
 
 aside {
-	grid-area: sidebar;
+  grid-area: sidebar;
 }
 
 #mainframe {
-	grid-area: logs;
-	border: none;
-	width: 100%;
-	height: 100%;
+  grid-area: logs;
+  border: none;
+  width: 100%;
+  height: 100%;
 }
 
 footer {
-	margin: 40px 10px;
-	grid-area: footer;
-	text-align: center;
-	border: 1px dashed black;
-	background: url("/notebook/!g/grid-pink.png");
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: scroll;
-	background-size: 10px;
+  margin: 40px 10px;
+  grid-area: footer;
+  text-align: center;
+  border: 1px dashed black;
+  background: url("/notebook/!g/grid-pink.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: scroll;
+  background-size: 10px;
 }
 
 footer p {
-	line-height: 20px;
-	margin: 0px;
-
+  line-height: 20px;
+  margin: 0px;
 }
 
 aside h3 {
-	margin: 10px 0;
+  margin: 10px 0;
 }
 
 aside h3::before {
-	content: url("/!g/pix/butterfly5.gif");
-	padding-right: 10px;
-	vertical-align: text-top;
+  content: url("/!g/pix/butterfly5.gif");
+  padding-right: 10px;
+  vertical-align: text-top;
 }
 
 #desc h3::before {
-	content: none;
+  content: none;
 }
 
 aside div:nth-child(odd) {
-	background: url("/notebook/!g/grid-yellow2.png");
-	background-size: 10px;
-
+  background: url("/notebook/!g/grid-yellow2.png");
+  background-size: 10px;
 }
 
 aside div:nth-child(even) {
-	background: url("/notebook/!g/grid-pink.png");
-	background-size: 10px;
+  background: url("/notebook/!g/grid-pink.png");
+  background-size: 10px;
 }
 
 aside div {
-	border: 1px dashed black;
-	padding: 10px;
-	margin: 20px;
-	background-position: center;
-	background-repeat: repeat;
-	background-attachment: scroll;
+  border: 1px dashed black;
+  padding: 10px;
+  margin: 20px;
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: scroll;
 }
 
 #desc {
-	background: url("/!g/bg/whiteline.jpg");
-	background-position: bottom;
-	background-repeat: repeat;
-	background-size: 10px;
-	margin-top: 0px;
+  background: url("/!g/bg/whiteline.jpg");
+  background-position: bottom;
+  background-repeat: repeat;
+  background-size: 10px;
+  margin-top: 0px;
 }
 
 #calendar iframe {
-	width: 100%;
-	height: 255px;
-	border: none;
-	scrollbar-width: none;
+  width: 100%;
+  height: 255px;
+  border: none;
+  scrollbar-width: none;
 }
 
 #calendar::-webkit-scrollbar {
-	display: none;
+  display: none;
 }
 
 #sticker {
-	position: fixed;
-	bottom: 5px;
-	right: 15px;
+  position: fixed;
+  bottom: 5px;
+  right: 15px;
 }
 
 #status p {
-	font-size: 10px;
+  font-size: 10px;
 }
 
 #quote {
-	background: url("/!g/bg/yellobg.png");
-	background-position: center;
-	background-repeat: repeat;
-	background-size: 10px;
+  background: url("/!g/bg/yellobg.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-size: 10px;
 }
 
 #home {
-	position: absolute;
-	top: 10px;
-	left: 5px;
+  position: absolute;
+  top: 10px;
+  left: 5px;
 }
 
-#pic a,
 #sticker a,
 #home a {
-	background: transparent;
+  background: transparent;
 }
 
-@media only screen and (max-width:1078px) {
-	#home {
-		display: none;
-	}
+@media only screen and (max-width: 1078px) {
+  #home {
+    display: none;
+  }
 
-	#wrapper {
-		margin: 20px;
-	}
+  #wrapper {
+    margin: 20px;
+  }
 
-	#sticker {
-		display: none;
-	}
+  #sticker {
+    display: none;
+  }
 }
 
-@media only screen and (max-width:600px) {
-	#wrapper {
-		display: block;
-		margin: 20px 0;
-	}
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    display: block;
+    margin: 20px 0;
+  }
 
-	#pic,
-	#quote {
-		display: none;
-	}
+  #pic,
+  #quote {
+    display: none;
+  }
 
-	#mainframe {
-		padding: 20px;
-		height: 600px;
-	}
+  #mainframe {
+    padding: 20px;
+    height: 600px;
+  }
 
-	footer {
-		margin: 20px;
-	}
+  footer {
+    margin: 20px;
+  }
 }
