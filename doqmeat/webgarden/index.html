@@ -17,21 +17,21 @@
 		// <![CDATA[
 		var speed = 500; // speed colours change, 1 second = 1000
 		var glow = 10; // can be set from '0' for no glow, to 10
-		var raincol = new Array("#FD4E8F", "#AF79FA", "#FDF2BE", ); // change the colours if you want to
+		var raincol = new Array("#FD4E8F", "#AF79FA", "#FDF2BE",); // change the colours if you want to
 		var alink = ""; // page to link text to (set to ="" for no link)
 
 		/****************************
-		 *    Rainbow Text Effect    *
-		 *(c)2003-13 mf2fm web-design*
-		 *  http://www.mf2fm.com/rv  *
-		 * DON'T EDIT BELOW THIS BOX *
-		 ****************************/
+			*    Rainbow Text Effect    *
+			*(c)2003-13 mf2fm web-design*
+			*  http://www.mf2fm.com/rv  *
+			* DON'T EDIT BELOW THIS BOX *
+			****************************/
 		var rainbow, raintxt, raincnt = 0;
 
 		function addLoadEvent(funky) {
 			var oldonload = window.onload;
-			if (typeof(oldonload) != 'function') window.onload = funky;
-			else window.onload = function() {
+			if (typeof (oldonload) != 'function') window.onload = funky;
+			else window.onload = function () {
 				if (oldonload) oldonload();
 				funky();
 			}
@@ -51,7 +51,7 @@
 					rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
 					if (alink) {
 						rainbeau.style.cursor = "pointer";
-						rainbeau.onclick = function() {
+						rainbeau.onclick = function () {
 							top.location.href = alink;
 						}
 					}
@@ -144,8 +144,7 @@
 			word-wrap: break-word;
 			font-size: 16px;
 			line-height: 17px;
-			font-family: ms gothic;
-			font-size: 16px;
+			font-family: ms pgothic;
 		}
 
 		p {
@@ -214,7 +213,6 @@
 			font-size: 13px;
 			background: white;
 		}
-
 	</style>
 </head>
 
@@ -223,12 +221,11 @@
 		* {
 			cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat328.ani), url(https://cur.cursors-4u.net/nature/nat-4/nat328.png), auto !important;
 		}
-
 	</style><a href="https://www.cursors-4u.com/cursor/2008/11/21/cute-pink-flower.html" target="_blank" title="Cute Sparkly Pink Flower"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cute Sparkly Pink Flower" style="position:absolute; top: 0px; right: 0px;" /></a>
 
 	<div id="plant">
 		<div class="bg">
-			<p>now approaching...<br><a id="rainbow" class="link" href="" target="_blank">doqmeat.neocities.org</a>
+			<p>now approaching...<br><a id="rainbow" class="link" href="" target="_blank">doqmeat.com</a>
 
 			<p>a personal website with bits and pieces of my life and dedicated to things i love
 
