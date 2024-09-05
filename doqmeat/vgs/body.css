@@ -195,7 +195,9 @@ footer {
   width: 100%;
   padding: 10px;
   text-align: center;
-  border-top: 2px dashed white;
+  border: 2px dashed white;
+  border-left: 0px;
+  border-right: 0px;
   background: #ffe3ff;
 }
 
