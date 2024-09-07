@@ -19,6 +19,11 @@ how to get an img to recognize the :focus thingy in css: https://stackoverflow.c
 	<script src="/!f/tooltip-jquary.js"></script>
 	<script src="/!f/tooltip.js"></script>
 	<!--  end of tooltip shit -->
+	<script src="https://melonking.net/scripts/frame-link.js"></script>
+	<script>
+		titlePrefix = "gaming log - ";
+
+	</script>
 	<style>
 	</style>
 </head>
@@ -34,7 +39,7 @@ how to get an img to recognize the :focus thingy in css: https://stackoverflow.c
 			<img src="/!g/div/balloon.gif">
 		</div>
 		<div id="info">
-			<iframe src="info.html" name="iframe_a" height="500px" width="100%" style="border:none;"></iframe>
+			<iframe id="mainframe" src="info.html" name="iframe_a" height="500px" width="100%" style="border:none;"></iframe>
 		</div>
 		<!-- this is info for small screen-->
 		<div id="back">
@@ -68,11 +73,7 @@ how to get an img to recognize the :focus thingy in css: https://stackoverflow.c
 				</div>
 			</center>
 		</div>
-		<!-- 	template
-		
-	<div class="filterDiv">
-		<a title="game" href="/index.html" target="iframe_a"><img src="jpg" tabindex="0"></a></div>
--->
+
 		<div class="filterDiv finished adv single">
 			<a title="abzu" href="abzu/index.html" target="iframe_a"><img src="abzu/cover.jpg" tabindex="0"></a>
 		</div>

@@ -13,9 +13,9 @@ body {
 /* inline CSS */
 
 #wrapper {
+  margin: 20px 0px 30px 700px;
   position: relative;
-  margin-left: 700px;
-  width: 540px;
+  width: 560px;
 }
 
 #myBtnContainer {
@@ -32,7 +32,6 @@ a {
   box-sizing: border-box;
   width: 100%;
   opacity: 0.7;
-  transition-duration: 0.4s;
 }
 
 .filterDiv img:hover {
@@ -43,23 +42,28 @@ a {
 .filterDiv img:focus {
   opacity: 1;
   border: 1px dashed black;
+  border-radius: 10px;
 }
 
 .filterDiv {
   background: white;
   position: relative;
   overflow: hidden;
-  float: left;
-  color: #ffffff;
   width: 130px;
   height: 130px;
   text-align: center;
-  margin: 2px;
+  margin: 4px 0;
   display: none;
+  transition-duration: 0.4s;
+}
+
+.filterDiv:hover,
+.filterDiv:focus {
+  border-radius: 10px;
 }
 
 .show {
-  display: block;
+  display: inline-block;
 }
 
 .btn {
