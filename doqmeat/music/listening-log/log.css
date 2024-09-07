@@ -241,6 +241,28 @@ footer {
     background: var(--l-pink);
   }
 
+  a {
+    color: var(--pink);
+    background: var(--soft-brown);
+  }
+
+  .log h2 {
+    background: rgb(254, 234, 199);
+    background: linear-gradient(
+      61deg,
+      rgba(254, 234, 199, 1) 0%,
+      rgba(251, 181, 205, 1) 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--l-brown);
+  }
+
+  .title b {
+    -webkit-text-stroke-color: var(--l-brown);
+  }
+
   #wrapperlog {
     margin: 0px;
     margin-top: 30px;
