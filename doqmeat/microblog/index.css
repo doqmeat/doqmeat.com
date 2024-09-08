@@ -193,10 +193,6 @@ main {
 }
 
 button.x {
-  background: white;
-}
-
-.x {
   font-family: inherit;
   border: 1px dashed grey;
   color: inherit;
@@ -204,12 +200,18 @@ button.x {
   padding: 5px;
   line-height: 10px;
   border-radius: 5px;
-  background: var(--blue2);
+  background: white;
   float: right;
 }
 
-.x:hover {
+#info button.x {
+  background: var(--blue2);
+}
+
+#info button.x:hover,
+button.x:hover {
   background: var(--yellow);
+  color: brown;
 }
 
 #info {
