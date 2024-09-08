@@ -11,13 +11,9 @@ html {
 }
 
 body {
-  background: url(!g/bg.png) no-repeat top fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-image: url(/!g/bg/bggrid-transp.png);
+  background-color: rgb(141, 125, 161);
   word-wrap: break-word;
-  background-color: #d5eeb1;
   font-size: 18px;
   line-height: 22px;
   word-spacing: 5px;
@@ -217,12 +213,6 @@ footer {
 
   footer,
   .hide {
-    display: none;
-  }
-}
-
-@media only screen and (max-width: 1000px) {
-  #home {
     display: none;
   }
 }
