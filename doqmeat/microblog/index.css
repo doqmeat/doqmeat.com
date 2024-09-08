@@ -111,7 +111,7 @@ main {
   background: var(--blue2);
   border: 1px solid black;
   position: absolute;
-  bottom: 30px;
+  bottom: 90px;
   right: 250px;
   max-height: 300px;
   overflow: auto;
@@ -312,7 +312,7 @@ article:hover {
     left: 1%;
     bottom: 1%;
     position: fixed;
-    height: 300px;
+    max-height: 300px;
     overflow: auto;
     width: 290px;
     cursor: move;
