@@ -12,7 +12,8 @@ html {
 
 body {
   background: url("/journal/!g/bg.gif");
-  word-wrap: break-word;
+  word-wrap: normal;
+  word-break: keep-all;
   font-size: 17px;
   line-height: 23px;
   font-family: var(--fonts);
@@ -114,6 +115,14 @@ blockquote {
 summary {
   cursor: help;
   padding: 0px 5px;
+}
+
+figure {
+  text-align: center;
+  border: 1px solid #a6ddff;
+  margin: 10px;
+  padding: 10px;
+  background: #f6bdcf;
 }
 
 .spoiler {
