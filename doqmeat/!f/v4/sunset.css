@@ -200,38 +200,3 @@ p.feed-item-desc:nth-of-type(1) {
 	background: white;
 	border-radius: 4px;
 }
-
-/*music player*/
-
-#musicplayer {
-	background: var(--yellow);
-	border: 2px solid var(--pink2);
-	color: var(--pink2);
-}
-
-.songtitle {
-	border-bottom: 2px solid var(--pink2);
-}
-
-i.fas.fa-pause,
-i.fas.fa-play,
-i.fas.fa-forward,
-i.fas.fa-backward {
-	color: var(--purple);
-}
-
-input[type=range]::-webkit-slider-runnable-track {
-	background: var(--purple);
-}
-
-input[type=range]::-webkit-slider-thumb {
-	background: var(--purple);
-}
-
-input[type=range]::-moz-range-track {
-	background: var(--purple);
-}
-
-input[type=range]::-moz-range-thumb {
-	background: var(--pink2);
-}
