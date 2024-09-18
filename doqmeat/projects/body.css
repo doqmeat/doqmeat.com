@@ -83,6 +83,12 @@ footer p {
   margin: 1px;
 }
 
+.outlink::after {
+  content: "↗";
+  padding-left: 2px;
+  vertical-align: text-bottom;
+}
+
 #s-m-t-tooltip {
   background: brown;
   color: white;
