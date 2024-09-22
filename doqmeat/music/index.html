@@ -2,165 +2,182 @@
 <html lang="en">
 
 <head>
-	<!-- coded with love by des :3 meow -->
-	<meta charset="UTF-8">
+ <!-- coded with love by des :3 meow 
+ started reworking music page on 06.sep.24 / finished on 21.sep.24
+ -->
+ <meta charset="UTF-8">
 
-	<title>i luv music</title>
+ <title>i luv music</title>
 
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="icon" type="image/x-icon" href="/music/favicon.gif">
-
-	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-	<link href="body.css" rel="stylesheet" type="text/css" media="all">
-	<link href="index.css" rel="stylesheet" type="text/css" media="all">
-	<!-- tooltip shit -->
-	<script src="https://melonking.net/scripts/frame-link.js"></script>
-	<script>
-		titlePrefix = "music - ";
-
-	</script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="/!f/tooltip-jquary.js"></script>
-	<script src="/!f/tooltip.js"></script>
-	<!--  end of tooltip shit -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/x-icon" href="/music/favicon.gif">
+ <script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
+ <link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+ <link href="body.css" rel="stylesheet" type="text/css" media="all">
+ <link href="index.css" rel="stylesheet" type="text/css" media="all">
+ <!-- tooltip shit -->
+ <script src="https://melonking.net/scripts/frame-link.js"></script>
+ <script>
+  titlePrefix = "music - ";
+ </script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+ <script src="/!f/tooltip-jquary.js"></script>
+ <script src="/!f/tooltip.js"></script>
+ <!--  end of tooltip shit -->
 
 </head>
 
 <body>
-	<div id="wrapper">
-		<!-- header -->
-		<header>
-			<h1>doqmeat's music page</h1>
-		</header>
-		<div id="scroll">
-			<marquee behavior="scroll" onmouseover="this.stop()" onmouseout="this.start()">
-				<b>02.sep.24</b> - new listening log: <i>TTYL</i>
-				/
-				<b>01.sep.24</b> - updated featured song &amp; album
-			</marquee>
-		</div>
+ <div id="wrapper">
+  <header id="header" class="box">
+   <h1>doqmeat's music page</h1>
+  </header>
 
-		<!-- main thing -->
-		<nav class="box">
-			<a href="/">go back home</a>
-			<h3>navigation</h3>
+  <nav id="nav" class="box">
+   <a href="/">go back home</a>
+   <h3>navigation</h3>
 
-			<h4>pages</h4>
-			<a href="songs/index.html">fav artists n genres</a>
-			<a href="fav-albums.html">fav albums</a>
-			<a href="cds.html">CD collection</a>
+   <h4>pages</h4>
+   <a href="songs/index.html">fav artists n genres</a>
+   <a href="fav-albums.html">fav albums</a>
+   <a href="cds.html">CD collection</a>
 
-			<h4>mini-pages</h4>
-			<a href="info.html" target="iframe_a">info</a>
-			<a href="featured.html" target="iframe_a">featured music</a>
-			<a href="listening-log/index.html" target="iframe_a">listening logs</a>
-			<a href="kpop-producers.html" target="iframe_a">fav kpop producers</a>
-			<a href="recaps/index.html" target="iframe_a">yearly recaps</a>
+   <h4>mini-pages</h4>
+   <a href="info.html" target="iframe_a">info</a>
+   <a href="featured.html" target="iframe_a">featured music</a>
+   <a href="listening-log/index.html" target="iframe_a">listening logs</a>
+   <a href="kpop-producers.html" target="iframe_a">fav kpop producers</a>
+   <a href="recaps/index.html" target="iframe_a">yearly recaps</a>
 
-			<h4>other</h4>
-			<a title="blog post" href="/blog/2023/230912-vocaloid.html" target="_blank">my history with vocaloid</a>
+   <h4>other</h4>
+   <a title="blog post" href="/blog/2023/230912-vocaloid.html" target="_blank">my history with vocaloid</a>
 
-			<h4>offsite</h4>
-			<a href="https://rateyourmusic.com/~doqmeat" target="_blank">rate your music</a>
-			<a href="https://www.last.fm/user/lakiitu" target="_blank">last.fm</a>
-			<a href="https://isitbandcampfriday.com/" target="_blank">is it bandcamp friday?</a>
-		</nav>
+   <h4>offsite</h4>
+   <a href="https://rateyourmusic.com/~doqmeat" target="_blank">rate your music</a>
+   <a href="https://www.last.fm/user/lakiitu" target="_blank">last.fm</a>
+   <a href="https://isitbandcampfriday.com/" target="_blank">is it bandcamp friday?</a>
+  </nav>
 
-		<div id="main" class="box">
-			<iframe id="mainframe" src="info.html" height="100%" width="100%" name="iframe_a"></iframe>
-		</div>
+  <main id="frame" class="box">
+   <iframe id="mainframe" src="info.html" height="100%" width="100%" name="iframe_a"></iframe>
+  </main>
 
-		<div id="side" class="box">
-			<div id="player">
-			</div>
-			<!-- desc box-->
-			<div id="img">
-				welcome to my music <br>page! dedicated to<br> everything that <br>i listen to<br> and love <br> <img src="/!g/pix/cat-heart.gif">
-			</div>
-			<!-- 	side end div -->
-		</div>
+  <div id="mv" class="box"><noscript>this box is for music video "ads" but do not fear! it's just screenshots of my favorite music videos :)</noscript></div>
 
-		<!-- others-->
-		<div id="mv">
-			<noscript>this box is for music video "ads" but do not fear! it's just screenshots of my favorite music videos :)</noscript>
-		</div>
+  <div id="music-player" class="box">
+   <div id="musicplayer">
+    <div class="now-playing"></div>
 
-		<div id="log" class="box">
-			<h4>latest log...</h4>
-			<iframe src="listening-log/2024/summer.html" height="100%" width="100%" scrolling="no" name="listening-log"></iframe>
-			<a title="click to open listening log and continue reading!" href="listening-log/2024/summer.html" target="_blank"></a>
-		</div>
+    <div class="track-info">
+     <div class="track-name"></div>
+     <div class="track-artist"></div>
+    </div>
 
-		<div id="featured" class="box">
-			<h4>featured song &amp; album</h4>
-			<div class="song">
-				<b>ナイトホリック</b> - UROMT
-				<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FFLW396UztQ?si=4l8mjEgXavcZHkBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				<p>i actually checked this anime out because of its banger opening by a japanese duo called UROMT but like. it just wasn't what i expected it to be <img src="/!g/pix/skull.gif" alt="skull emoji"> either way, this is still super catchy to me and i've been listening to it so much lately.</p>
-			</div>
-			<div class="lp">
-				<b>sunsound collisions</b> - 2mello
-				<iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2043909309/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://2mellomakes.bandcamp.com/album/sunsound-collisions">Sunsound Collisions by 2 Mello</a></iframe>
-				<p>very nice lo-fi type beat collection of songs by an artist i really like! i'm usually playing this in the bg while doing something else. either way, despite it Just being a collection of sounds, i still find it very worthwhile to listen to. my favorite song from this album is <i>speak with you</i></p>
-			</div>
-			<hr>
+    <div class="controls">
+     <div class="seeking">
+      <div class="current-time">00:00</div>
 
-			<center><small>past featured music can be found <a title="will open on the iframe above!" href="featured.html#" target="iframe_a">here</a></small></center>
-		</div>
+      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
 
-		<!-- is he listening-->
-		<div id="is-he-listening" class="box">
-			<h4>is he listening?</h4>
-			<form method="post" action="https://poll.pollcode.com/18957215">
-				<div style="display:inline-block;padding:0px;width:135px;color:#000000;"><input type="radio" name="answer" value="1" id="answer189572151" style="float:left;" /><label for="answer189572151" style="float:left;width:110px;">yes</label>
-					<div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer189572152" style="float:left;" /><label for="answer189572152" style="float:left;width:110px;">no</label>
-					<div style="clear:both;height:2px;"></div>
-					<div align="center" style="padding:3px;"><input type="submit" value=" Vote "></div>
-				</div>
-			</form>
-			<!-- 		img2 end div -->
-		</div>
-		<div id="last" class="box">
-			<!--	RYM RSS-->
+      <div class="total-duration">0:00</div>
+     </div>
 
-			<h4>listening to...</h4>
-			<a href="https://www.last.fm/user/lakiitu" target="_blank"><img src="https://lastfm-recently-played.vercel.app/api?user=lakiitu" height="auto" width="90%" /></a>
-		</div>
+     <div class="buttons">
+      <div class="prev-track" onclick="prevTrack()"><i class="fas fa-solid fa-backward"></i></div>
 
-		<div id="fun" class="box">
-			<img src="/collection/internet-graphics/!g/matry.gif" alt="matryoshka gumi">
-			<img src="/collection/internet-graphics/!g/orka.gif" alt="matryoshka miku">
-			<br>
-			<a href="https://www.tumblr.com/pileofglass/708541131552669696/made-some-88x31-buttons-for-breakbeat-fans-feel?source=share" target="_blank"><img src="/collection/internet-graphics/!g/breakbeat.gif"></a>
-			<a href="https://www.tumblr.com/cartoonishvendor/710638657066926080/drippin-themed-88x31-buttons-middle-animation-is?source=share" target="_blank"><img src="/collection/internet-graphics/!g/drippin.gif"></a>
-			<img src="/collection/internet-graphics/!g/miku.gif">
-			<a href="https://plasticdino.neocities.org/graphics" target="_blank"><img src="/collection/internet-graphics/!g/loona.gif"></a>
-			<br>
-			<img src="/collection/internet-graphics/!g/ilovethemusic.gif" style="max-width:100%;" alt="i love the music">
-		</div>
+      <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-solid fa-play"></i></div>
 
-		<footer>
-			last updated on 02.sep.24
-			<br>
+      <div class="next-track" onclick="nextTrack()"><i class="fas fa-solid fa-forward"></i></div>
+     </div>
 
-			<b>credit:</b>
-			bg is a scan from <a title="archive.org img link" href="https://archive.org/details/yume-no-manimani-scans/13-page.png" target="_blank">siinamota's yume no manimani</a> album booklet, art by <a title="meisa's website" href="http://hathune39.web.fc2.com/" target="_blank">meisa</a> <span class="emoji1"></span>
+     <div class="volume">
+      <i class="fas fa-volume-up"></i>
+      <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()">
+     </div>
+    </div>
 
-			<a href="https://codepen.io/sadness97/pen/RwKbNWW" target="_blank">webamp player code</a>
-			<br>
-			<a href="/">home</a> <span class="emoji2"></span> <a href="#">top</a>
-		</footer>
-		<!-- wrapper end div -->
-	</div>
+    <audio id="music" src=""></audio>
+   </div>
+   <!-- music player end div -->
+   <!-- do a playlist here with links to the songs -->
+  </div>
 
-	<div id="home">
-		<a title="go back home!" href="/"><img src="/!g/pix/music-note-sozaiya.gif" alt="homepage link"></a>
-	</div>
+  <div id="updates" class="box">
+   <h3>updates</h3>
+   <p><b>21.sep.24</b> - music page revamp!</p>
+   <p><b>02.sep.24</b> - new listening log: <i>TTYL</i></p>
+   <p><b>01.sep.24</b> - updated featured song &amp; album</p>
+  </div>
 
-	<!--	scripts -->
-	<script src="https://unpkg.com/webamp"></script>
-	<script src="webamp.js"></script>
-	<script src="random-mv.js"></script>
+  <div id="log" class="box">
+   <h3>latest log...</h3>
+   <iframe src="listening-log/2024/summer.html" height="100%" width="100%" scrolling="no" name="listening-log"></iframe>
+   <a title="click to open listening log and continue reading!" href="listening-log/2024/summer.html" target="_blank"></a>
+  </div>
+
+  <div id="featured" class="box">
+   <h3>featured song &amp; album</h3>
+   <div class="song">
+    <h4><b>ナイトホリック</b> - UROMT</h4>
+    <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/FFLW396UztQ?si=4l8mjEgXavcZHkBo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>i actually checked this anime out because of its banger opening by a japanese duo called UROMT but like. it just wasn't what i expected it to be <img src="/!g/pix/skull.gif" alt="skull emoji"> either way, this is still super catchy to me and i've been listening to it so much lately.</p>
+   </div>
+   <div class="lp">
+    <h4><b>sunsound collisions</b> - 2mello</h4>
+    <iframe style="border: 0; width: 100%; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=2043909309/size=large/bgcol=ffffff/linkcol=2ebd35/tracklist=false/artwork=small/transparent=true/" seamless><a href="https://2mellomakes.bandcamp.com/album/sunsound-collisions">Sunsound Collisions by 2 Mello</a></iframe>
+    <p>very nice lo-fi type beat collection of songs by an artist i really like! i'm usually playing this in the bg while doing something else. either way, despite it Just being a collection of sounds, i still find it very worthwhile to listen to. my favorite song from this album is <i>speak with you</i></p>
+   </div>
+   <hr>
+
+   <center><small>past featured music can be found <a title="will open on the iframe above!" href="featured.html#" target="iframe_a">here</a></small></center>
+  </div>
+
+  <div id="poll" class="box">
+   <h3>is he listening?</h3>
+   <form method="post" action="https://poll.pollcode.com/18957215">
+    <div style="display:inline-block;padding:0px;width:135px;color:#000000;"><input type="radio" name="answer" value="1" id="answer189572151" style="float:left;" /><label for="answer189572151" style="float:left;width:110px;">yes</label>
+     <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer189572152" style="float:left;" /><label for="answer189572152" style="float:left;width:110px;">no</label>
+     <div style="clear:both;height:2px;"></div>
+     <div align="center" style="padding:3px;"><input type="submit" value=" Vote "></div>
+    </div>
+   </form>
+  </div>
+
+  <div id="widgets" class="box">
+   <h3>listening to...</h3>
+   <a href="https://www.last.fm/user/lakiitu" target="_blank"><img src="https://lastfm-recently-played.vercel.app/api?user=lakiitu" height="auto" width="90%" /></a>
+  </div>
+
+  <div id="graphics" class="box">
+   <img src="https://doqmeat.com/collection/internet-graphics/!g/i_heart_music_stamp_2_by_stampmakerlkj.png" alt="i love music">
+   <img src="https://doqmeat.com/collection/internet-graphics/!g/i-still-buy-cds.png" alt="i still buy CDs">
+   <img src="https://doqmeat.com/collection/internet-graphics/!g/ipod%20repeat.gif" alt="my ipod is always on repeat">
+   <a href="https://www.tumblr.com/pileofglass/708541131552669696/made-some-88x31-buttons-for-breakbeat-fans-feel?source=share" target="_blank"><img src="/collection/internet-graphics/!g/breakbeat.gif"></a>
+   <a href="https://www.tumblr.com/cartoonishvendor/710638657066926080/drippin-themed-88x31-buttons-middle-animation-is?source=share" target="_blank"><img src="/collection/internet-graphics/!g/drippin.gif"></a>
+   <img src="/collection/internet-graphics/!g/miku.gif">
+   <a href="https://plasticdino.neocities.org/graphics" target="_blank"><img src="/collection/internet-graphics/!g/loona.gif"></a>
+   <br>
+   <img src="/collection/internet-graphics/!g/ilovethemusic.gif" style="max-width:100%;" alt="i love the music">
+  </div>
+
+  <footer id="foot" class="box">
+   <img src="/collection/internet-graphics/!g/matry.gif" alt="matryoshka gumi" style="margin:15px 5px" align="left">
+   <img src="/collection/internet-graphics/!g/orka.gif" alt="matryoshka miku" style="margin:15px 5px" align="right">
+   last updated on 21.sep.24
+   <br>
+   <b>credit:</b>
+   bg is a scan from <a title="archive.org img link" href="https://archive.org/details/yume-no-manimani-scans/13-page.png" target="_blank">siinamota's yume no manimani</a> album booklet, art by <a title="meisa's website" href="http://hathune39.web.fc2.com/" target="_blank">meisa</a>
+   <span class="emoji1"></span>
+   music player code by <a href="https://adilene.net/" target="_blank">adilene.net</a>
+
+   <br>
+
+   <span class="emoji2"></span> <a href="#">top</a> <span class="emoji2"></span> <a href="/">home</a> <span class="emoji2"></span> <a href="/sitemap.html">sitemap</a> <span class="emoji2"></span>
+  </footer>
+  <!-- wrapper end div -->
+ </div>
+ <script src="music-player.js"></script>
+ <script src="random-mv.js"></script>
 </body>
 
 </html>
