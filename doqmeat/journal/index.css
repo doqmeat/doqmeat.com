@@ -57,7 +57,7 @@ aside {
 }
 
 footer {
-  margin: 40px 10px;
+  margin: 30px 30px;
   grid-area: footer;
   text-align: center;
   border: 1px dashed black;
@@ -98,9 +98,11 @@ aside div:nth-child(even) {
 }
 
 aside div {
+  border-radius: 10px;
   border: 1px dashed black;
   padding: 10px;
   margin: 20px;
+  margin-left: 0px;
   background-position: center;
   background-repeat: repeat;
   background-attachment: scroll;

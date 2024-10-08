@@ -11,7 +11,10 @@ html {
 }
 
 body {
-  background: url("/journal/!g/bg.gif");
+  background: url("/journal/!g/bg1.png");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: top;
   word-wrap: normal;
   word-break: keep-all;
   font-size: 17px;
