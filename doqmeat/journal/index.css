@@ -4,8 +4,7 @@
   display: grid;
   grid-template-areas:
     "header header"
-    "sidebar logs"
-    "footer footer";
+    "sidebar logs";
   grid-template-columns: 30% 70%;
   grid-template-rows: auto auto auto;
   max-width: 1000px;
@@ -183,6 +182,10 @@ aside div {
   #mainframe {
     padding: 20px;
     height: 600px;
+  }
+
+  aside div {
+    margin: 20px;
   }
 
   footer {

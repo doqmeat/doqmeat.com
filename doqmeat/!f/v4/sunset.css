@@ -175,8 +175,7 @@ p.feed-item-desc:nth-of-type(1) {
 /*status cafe*/
 
 #statuscafe {
-  border-radius: 0 0 10px 10px;
-  border: 1px dashed white;
+  border-radius: 10px;
 }
 
 #statuscafe a {
@@ -185,13 +184,14 @@ p.feed-item-desc:nth-of-type(1) {
 }
 
 #statuscafe-username {
-  font-size: 14px;
+  font-size: 13px;
   background: var(--pink2);
   font-family: morningtea, var(--fonts);
   border-bottom: 0px;
 }
 
 #statuscafe-content {
+  font-size: 18px;
   background: var(--blue);
   color: white;
 }
