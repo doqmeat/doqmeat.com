@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --fonts: nintendo-ds-bios, ms pgothic, arial;
+  --pink: #f7b8c9;
+  --blue: #c3e3e3;
+  --yellow: #fede5e;
+  --green: #c3db90;
+  --dark: #974d67;
+}
+
+html {
+  scrollbar-color: #974d67 #fede5e;
+}
+
+body {
+  margin: 0;
+  font-size: 20px;
+  font-family: var(--fonts);
+  background-color: rgb(241, 237, 251);
+  color: var(--dark);
+  word-spacing: 5px;
+}
+
+::selection {
+  background: var(--dark);
+  color: var(--blue);
+}
+
+h1,
+h2,
+h3 {
+  font-family: bangalore, var(--fonts);
+}
+
+a {
+  cursor: help;
+  background: var(--blue);
+  color: var(--dark);
+  text-decoration: none;
+  border-radius: 3px;
+  padding: 0px 2px;
+}
+
+a:hover {
+  background: var(--pink);
+}
+
+p {
+  margin: 19px 5px;
+}
+
+main {
+  margin: auto;
+  margin-top: 20px;
+  max-width: 1300px;
+}
+
+#intro {
+  padding: 20px;
+}
+
+#clothes {
+  background: url("/!g/div/clothes2.gif");
+  width: 100%;
+  height: 49px;
+  position: fixed;
+  top: 1px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.gallery {
+  text-align: center;
+}
+
+.fit-pic {
+  max-width: 13%;
+  margin: 10px 65px;
+  vertical-align: middle;
+  filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white)
+    drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white)
+    drop-shadow(1px 0px 0 var(--dark)) drop-shadow(0px 1px 0 var(--dark))
+    drop-shadow(1px -1px 0 var(--dark)) drop-shadow(-1px 1px 0 var(--dark));
+}
+
+#acc .fit-pic {
+  max-width: 20%;
+  margin: 5px;
+}
+
+.fit-pic:hover {
+  rotate: 10deg;
+  filter: drop-shadow(2px 0px 0px var(--green))
+    drop-shadow(0px 2px 0px var(--green)) drop-shadow(-2px 0px 0px var(--green))
+    drop-shadow(0px -2px 0px var(--green)) drop-shadow(1px 0px 0 var(--dark))
+    drop-shadow(0px 1px 0 var(--dark)) drop-shadow(1px -1px 0 var(--dark))
+    drop-shadow(-1px 1px 0 var(--dark));
+}
+
+.fit-pic:active,
+.fit-pic:focus {
+  rotate: 0deg;
+  filter: drop-shadow(2px 0px 0px var(--pink))
+    drop-shadow(0px 2px 0px var(--pink)) drop-shadow(-2px 0px 0px var(--pink))
+    drop-shadow(0px -2px 0px var(--pink)) drop-shadow(1px 0px 0 var(--dark))
+    drop-shadow(0px 1px 0 var(--dark)) drop-shadow(1px -1px 0 var(--dark))
+    drop-shadow(-1px 1px 0 var(--dark));
+}
+
+.fit-pic[onclick] {
+  cursor: grab;
+}
+
+.fit-box {
+  cursor: move;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+  background: var(--pink);
+  width: 500px;
+  max-height: 500px;
+  border: 1px solid var(--dark);
+  position: fixed;
+  top: 100px;
+  left: 40%;
+  overflow: auto;
+  display: none;
+}
+
+.close {
+  margin: 0 0 10px 10px;
+  float: right;
+  font-size: 35px;
+  cursor: pointer;
+  color: black;
+}
+
+footer {
+  text-align: center;
+}
+
+footer p {
+  margin: 1px;
+}
+
+#s-m-t-tooltip {
+  max-width: 400px;
+  text-align: center;
+  z-index: 9999;
+  margin: 30px 15px 7px 12px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid var(--dark);
+  background: var(--green);
+}
+
+#caption-box {
+  position: fixed;
+  bottom: 20px;
+  left: 30px;
+  top: auto;
+  width: 90%;
+  max-height: 80%;
+  cursor: auto;
+}
+
+/* Start https://www.cursors-4u.com */
+/* * {
+  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth191.cur), auto !important;
+} End https://www.cursors-4u.com */
+
+@media only screen and (max-width: 800px) {
+  .fit-box {
+    position: fixed;
+    bottom: 20px;
+    left: 30px;
+    top: auto;
+    width: 90%;
+    max-height: 80%;
+  }
+
+  .fit-pic {
+    max-width: 24%;
+    margin: 20px;
+  }
+
+  #acc .fit-pic {
+    max-width: 30%;
+  }
+}
