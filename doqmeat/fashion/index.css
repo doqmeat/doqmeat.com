@@ -21,6 +21,7 @@ body {
   background-color: rgb(241, 237, 251);
   color: var(--dark);
   word-spacing: 5px;
+  line-height: 24px;
 }
 
 ::selection {
@@ -139,6 +140,7 @@ main {
 
 footer {
   text-align: center;
+  margin-bottom: 30px;
 }
 
 footer p {
@@ -188,5 +190,9 @@ footer p {
 
   #acc .fit-pic {
     max-width: 30%;
+  }
+
+  footer {
+    margin-bottom: 100px;
   }
 }
