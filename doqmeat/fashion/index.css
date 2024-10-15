@@ -158,29 +158,21 @@ footer p {
   background: var(--green);
 }
 
-#caption-box {
-  position: fixed;
-  bottom: 20px;
-  left: 30px;
-  top: auto;
-  width: 90%;
-  max-height: 80%;
-  cursor: auto;
-}
-
 /* Start https://www.cursors-4u.com */
 /* * {
   cursor: url(https://cur.cursors-4u.net/others/oth-2/oth191.cur), auto !important;
 } End https://www.cursors-4u.com */
 
 @media only screen and (max-width: 800px) {
-  .fit-box {
+  .fit-box,
+  #caption-box {
     position: fixed;
     bottom: 20px;
     left: 30px;
     top: auto;
-    width: 90%;
+    width: 85%;
     max-height: 80%;
+    cursor: auto;
   }
 
   .fit-pic {
