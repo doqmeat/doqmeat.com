@@ -102,9 +102,9 @@ main {
 .fit-pic:active,
 .fit-pic:focus {
   rotate: 0deg;
-  filter: drop-shadow(2px 0px 0px var(--pink))
-    drop-shadow(0px 2px 0px var(--pink)) drop-shadow(-2px 0px 0px var(--pink))
-    drop-shadow(0px -2px 0px var(--pink)) drop-shadow(1px 0px 0 var(--dark))
+  filter: drop-shadow(2px 0px 0px var(--green))
+    drop-shadow(0px 2px 0px var(--green)) drop-shadow(-2px 0px 0px var(--green))
+    drop-shadow(0px -2px 0px var(--green)) drop-shadow(1px 0px 0 var(--dark))
     drop-shadow(0px 1px 0 var(--dark)) drop-shadow(1px -1px 0 var(--dark))
     drop-shadow(-1px 1px 0 var(--dark));
 }
