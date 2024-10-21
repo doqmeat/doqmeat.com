@@ -68,7 +68,7 @@ select {
     "comm bye widgets"
     "foot foot foot";
   grid-template-columns: 20% 50% 30%;
-  grid-template-rows: 80px 390px 190px 260px 290px 170px;
+  grid-template-rows: 80px 390px 190px 260px 320px 130px;
   gap: 30px;
   padding: 20px 75px 20px 20px;
 }
@@ -125,6 +125,7 @@ nav a {
 #chat {
   grid-area: chat;
   margin-left: 50px;
+  overflow: hidden;
 }
 
 #current {
