@@ -267,16 +267,20 @@ https://coolors.co/e3edff-fff4bf-d1ebcd-ffe3e3-e2d2f0
 	<script>
 		function openTab(tabName) {
 			var i;
-			var tabcontent = document.getElementById(tabName);
-			var otherTabs = document.getElementsByClassName("tabcontent");
+			var tab = document.getElementById(tabName);
+			var otherContent = document.getElementsByClassName("tabcontent");
 			var defaultOpen = document.getElementById("defaultOpen");
-			for (i = 0; i < otherTabs.length; i++) {
-				otherTabs[i].style.display = "none";
+			var buttons = document.getElementsByClassName("tablinks");
+			for (i = 0; i < otherContent.length; i++) {
+				otherContent[i].style.display = "none";
 			}
-			tabcontent.style.display = "block";
+			for (i = 0; i < buttons.length; i++) {
+				buttons[i].classList.remove("active");
+			}
+			tab.style.display = "block";
+			event.currentTarget.className += " active";
 		}
-		defaultOpen.click();
-		defaultOpen.focus();
+		document.getElementById("defaultOpen").click();
 
 	</script>
 </body>
