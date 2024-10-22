@@ -170,7 +170,7 @@ h3.offsite::before {
   border-radius: 4px;
 }
 
-#comm button:focus {
+#comm button.active {
   background: var(--yellow);
   color: var(--green2);
   outline-style: dashed;

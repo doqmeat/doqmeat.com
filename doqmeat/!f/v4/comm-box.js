@@ -1,15 +1,16 @@
 function toggleComm(box) {
   var clickBox = document.getElementById(box);
-  var others = document.getElementsByClassName("comm-box");
-  var i = 0;
-  for (i; i < others.length; i++) {
-    others[i].style.display = "none";
+  var boxes = document.getElementsByClassName("comm-box");
+  var buttons = document.getElementsByClassName("comm-b");
+  var i;
+  for (i = 0; i < boxes.length; i++) {
+    boxes[i].style.display = "none";
+  }
+  for (i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
   }
   clickBox.style.display = "block";
+  event.currentTarget.className += " active";
 }
 
-function defaultOpen() {
-  toggleComm("listing");
-}
-
-window.onload = defaultOpen();
+document.getElementById("default").click();

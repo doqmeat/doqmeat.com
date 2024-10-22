@@ -93,7 +93,7 @@ hr {
   border: 1px solid var(--blue);
 }
 
-#comm button:focus {
+#comm button.active {
   background: white;
   color: var(--pink);
   outline-width: thin;
