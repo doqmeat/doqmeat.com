@@ -121,11 +121,10 @@ summary {
 }
 
 figure {
+  width: auto;
   text-align: center;
-  border: 1px solid #a6ddff;
   margin: 10px;
   padding: 10px;
-  background: #f6bdcf;
 }
 
 .spoiler {
