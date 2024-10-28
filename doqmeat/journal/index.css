@@ -2,12 +2,11 @@
   margin: auto;
   position: relative;
   display: grid;
-  grid-template-areas:
-    "header header"
-    "sidebar logs";
+  grid-template-areas: "sidebar logs";
   grid-template-columns: 30% 70%;
-  grid-template-rows: auto auto auto;
+  grid-template-rows: auto;
   max-width: 1000px;
+  height: 30000px;
   margin-bottom: 10px;
   margin-top: 10px;
 }
@@ -34,16 +33,6 @@
   content: "* ";
 }
 
-header {
-  grid-area: header;
-  text-align: center;
-}
-
-header h1 {
-  font-family: gaegu-b;
-  text-shadow: 1px 1px 1px white;
-}
-
 aside {
   grid-area: sidebar;
 }
@@ -53,23 +42,6 @@ aside {
   border: none;
   width: 100%;
   height: 100%;
-}
-
-footer {
-  margin: 30px 30px;
-  grid-area: footer;
-  text-align: center;
-  border: 1px dashed black;
-  background: url("/notebook/!g/grid-pink.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: scroll;
-  background-size: 10px;
-}
-
-footer p {
-  line-height: 20px;
-  margin: 0px;
 }
 
 aside h3 {
@@ -154,6 +126,11 @@ aside div {
   background: transparent;
 }
 
+#footer {
+  position: sticky;
+  top: 0px;
+}
+
 @media only screen and (max-width: 1078px) {
   #home {
     display: none;
@@ -185,10 +162,6 @@ aside div {
   }
 
   aside div {
-    margin: 20px;
-  }
-
-  footer {
     margin: 20px;
   }
 }
