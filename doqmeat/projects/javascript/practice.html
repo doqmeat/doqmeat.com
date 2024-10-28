@@ -11,12 +11,11 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/!f/tooltip-jquary.js"></script>
 	<script src="/!f/tooltip.js"></script>
-	<title>i'm learning JS</title>
+	<title>javascript</title>
 	<style>
 		textarea {
 			display: block;
-			width: 70%;
-			height: 100%;
+			width: 50%;
 			font-size: 10px;
 			font-family: consolas;
 			margin: auto;
@@ -30,8 +29,16 @@
 </head>
 
 <body>
-	<h1>thoughts and practice zone</h1>
+	<h1>i'm learning JS</h1>
 	<main>
+		<nav></nav>
+		<h2 id="thoughts">thoughts</h2>
+		<p>learned how to remove classes and add them with an event like so:</p>
+		<textarea style="height:90px"> for (i = 0; i < buttons.length; i++) {
+    buttons[i].classList.remove("active");
+  }
+  event.currentTarget.className += " active";</textarea>
+		<p>still need to dig deeper into events because as i was coding this on VSC, i kept getting a warning saying that <code>event</code> was deprecated but then my question was... then how do i do this? </p>
 		<hr>
 		<p>in my compsci class we've been talking about operators like <code>and</code>, <code>or</code>, and <code>not</code> which helped me out a bit when making my <a href="/fashion">fashion</a> page's javascript! in this case i used the <code>or</code> which is written like this <code>||</code> in JS for an if statement so that the mobile/responsive view of the page could be as neat as possible. honestly it was pretty fun to figure that out and get it working. i really need to look more into what <a href="https://developer.mozilla.org/en-US/docs/Web/API/EventTarget" target="_blank">event targets</a> are though.</p>
 		<hr>
@@ -65,10 +72,11 @@
 		<button id="button1">click me to meow</button>
 		<p><a href="files/practice.js">source code</a></p>
 
+		<h2 id="sheet">cheatsheet</h2>
 	</main>
 
 	<footer>
-		last updated: <b>18.oct.24</b>
+		last updated: <b>28.oct.24</b>
 		<br>
 		....... ᓚᘏᗢ .......
 		<br>
