@@ -4,19 +4,26 @@
 
 body {
   background: url("/!g/bg/ritva-1.gif");
-  margin: 10px;
   font-family: gaegu-r, ms pgothic;
   font-size: 18px;
   text-shadow: 2px 2px 3px #ffffff;
 }
 
 h1 {
-  font-family: ;
+  font-family: morningtea;
+  text-align: center;
 }
 
 main {
+  background: rgba(255, 255, 255, 0.612);
   margin: auto;
+  margin-top: -10px;
+  margin-bottom: -10px;
+  padding: 10px;
   max-width: 600px;
+  border: 5px double #dcf2ed;
+  border-top: 0px;
+  border-bottom: 0px;
 }
 
 i {
