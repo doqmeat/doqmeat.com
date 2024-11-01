@@ -18,10 +18,10 @@
 
 <body>
 	<!-- 	info pop up -->
-	<div class="pop-up draggable">
-		<div class="header">read_me.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="pop-up" class="draggable">
+		<div class="header">read_me.txt<img onclick="closeBox('pop-up')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="wrapper-in padding list">
-			<li class="mobile">every window is draggable!</li>
+			<li class="mobile">every window is draggable! reload page to reset.</li>
 			<li class="mobile">best viewed on a 1134px+ screen.</li>
 			<li>this page is inspired by parsley onuma's iyueni and its music video.</li>
 			<li>illustration is by <a href="https://twitter.com/narumeNKR/status/1531955172074631171" target="_blank">narumeNKR</a></li>
@@ -29,8 +29,8 @@
 		</div>
 	</div>
 
-	<div class="secret draggable">
-		<div class="header">secret.zip<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="secret" class="draggable">
+		<div class="header">secret.zip<img onclick="closeBox('secret')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding">
 				<img src="/collection/cats/!g/YOUVEBEENJESTERED.jpg" width="100%">
@@ -38,16 +38,94 @@
 		</div>
 	</div>
 
+	<div id="quiz" class="draggable">
+		<div class="header"><img src="!g/folder.png" class="folder"> quizzes<img onclick="closeBox('quiz')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+		<div class="borderwrap">
+			<div class="wrapper-in padding">
+				<div style="border:1px solid #999;border-radius:6px;padding:6px;background:#fff;color:#000;min-width:200px;max-width:360px;">
+					<style scoped>
+						.resBarOuter {
+							width: 75%;
+							height: 15px;
+							padding: 0;
+							margin: 0;
+							background: #eee;
+							border: 1px solid #000;
+							text-align: left !important;
+							position: relative;
+						}
+
+						.resBarInner {
+							text-indent: -9999px;
+							height: 15px;
+							background: #d02;
+							font-size: 6px;
+							line-height: 6px;
+							margin: 0;
+							padding: 0;
+							position: relative;
+							background-image: linear-gradient(bottom, rgb(221, 0, 33) 40%, rgb(255, 60, 86) 74%, rgb(221, 0, 33) 100%);
+							background-image: -moz-linear-gradient(bottom, rgb(221, 0, 33) 40%, rgb(255, 60, 86) 74%, rgb(221, 0, 33) 100%);
+							background-image: -webkit-linear-gradient(bottom, rgb(221, 0, 33) 40%, rgb(255, 60, 86) 74%, rgb(221, 0, 33) 100%);
+							background-image: -ms-linear-gradient(bottom, rgb(221, 0, 33) 40%, rgb(255, 60, 86) 74%, rgb(221, 0, 33) 100%);
+						}
+
+						.resBarM {
+							width: 35%;
+							float: right;
+							margin-right: 10px;
+						}
+
+						.resRow {
+							color: #000;
+							background: #fff;
+							clear: both;
+							margin: 5px 0;
+						}
+						}
+					</style>
+					<div>What Is Your Gender Expression?</div>
+					<div>Your Result: <strong>Androgynous</strong></div>
+					<div class="resBarOuter">
+						<div class="resBarInner" style="width:76%;">&nbsp;</div>
+					</div>
+					<div style="margin:10px 0 4px;border:none;background:#fff;color:#000;">You are between masculinity and femininity. If you are nonbinary, then you've reached the golden center of expression. You casually float in space beyond Mars and Venus. However, don't assume that you need to be perfectly in the middle of expression to be nonbinary. If you are a man or a woman, most people will be cool with it, except for the most conservative ones. Expect a lot of "are you a boy or are you a girl?" from confused onlookers. Enjoy being yourself.</div>
+					<div class="resRow">
+						<div class="resBarOuter resBarM">
+							<div class="resBarInner" style="width:59%;">&nbsp;</div>
+						</div>Quite Feminine
+					</div>
+					<div class="resRow">
+						<div class="resBarOuter resBarM">
+							<div class="resBarInner" style="width:59%;">&nbsp;</div>
+						</div>Quite Masculine
+					</div>
+					<div class="resRow">
+						<div class="resBarOuter resBarM">
+							<div class="resBarInner" style="width:30%;">&nbsp;</div>
+						</div>Very Feminine
+					</div>
+					<div class="resRow">
+						<div class="resBarOuter resBarM">
+							<div class="resBarInner" style="width:30%;">&nbsp;</div>
+						</div>Very Masculine
+					</div>
+					<div><a style="color: #00f;" href="https://www.gotoquiz.com/what_is_your_gender_expression"><strong>What Is Your Gender Expression?</strong></a></div>
+				</div>
+				<!-- end div for quiz -->
+			</div>
+		</div>
+	</div>
+
 	<!-- 	about me -->
-	<div class="about draggable">
-		<div class="header">webmaster_&amp;_site_info.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="about" class="draggable">
+		<div class="header">webmaster_&amp;_site_info.txt<img onclick="closeBox('about')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding">
 				<p><img title="this is me btw" src="/!g/deco/silly-cat.gif" align="left" style="margin-right:5px;" width="25%">
 					hello everyone! i go by <mark>des</mark> <a title="click for source!" href="https://caitsith.neocities.org/graphics1" target="_blank"><img src="!g/bi.gif" alt="bi pixel flag"><img src="!g/nonbinary.gif" alt="nonbinary pixel flag"></a> and i am <mark>the webmaster of this site!</mark> i'm 24 years old from a small island called puerto rico. i've lived here pretty much my entire life. my first language is spanish though my site is mostly in english. an online habit i guess *shrugs* pero como quiera se pueden comunicar conmigo en cualquiera de los dos idiomas. i'm a little freak<sup>tm</sup> and my pronouns are he / she. i'm currently studying computer science in university! which was kickstarted in 2023 by my interest in coding as i learned more and more about maintaining a personal website.</p>
 
 				<p>（*＾-＾*）this is also me -&gt; <img src="/collection/internet-graphics/!g/silly-blinkie.gif" style="max-width:100%;" alt="silly blinkie :3"></p>
-
 
 				<p><a title="art by bitmapdreams" href="http://lastsecret.net/bitmapdreams/" target="_blank"><img src="/!g/deco/springflowers.gif" width="20%" align="right"></a>i find it extremely difficult to write about who i am. i'm not sure why. i would say i know myself pretty well. but when comes to things like this, i am pretty horrible at it. hopefully you can get an idea of who i am by exploring my site, which i pour a lot of myself and love into <img src="/!g/pix/catroll.gif"> but at the end of the day i just like being silly and having fun.</p>
 
@@ -69,8 +147,8 @@
 	</div>
 
 	<!-- 	me af pics -->
-	<div class="me draggable">
-		<div class="header"><img src="!g/folder.png" class="folder"> me_irl<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="me" class="draggable">
+		<div class="header"><img src="!g/folder.png" class="folder"> me_irl<img onclick="closeBox('me')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in">
 				<marquee direction="left" scrollamount="9" behavior="alternate" onmouseover="this.stop();" onmouseout="this.start();">
@@ -100,13 +178,12 @@
 	</div>
 
 	<!-- 	interests -->
-	<div class="likes draggable">
-		<div class="header">favs.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="likes" class="draggable">
+		<div class="header">favs.txt<img onclick="closeBox('likes')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding list">
 				<h3>general</h3>
 				<li>cats</li>
-				<li>silly animals</li>
 				<li>chocolate milk</li>
 				<li>making lists</li>
 				<li>visual arts</li>
@@ -147,9 +224,8 @@
 	</div>
 
 	<!--
-	 	interests linkes 
 	<div class="dislikes draggable">
-		<div class="header">i_hate_u.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+		<div class="header">i_hate_u.txt<img onclick="closeBox('')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding list">
 				<li>most spicy food...</li>
@@ -163,8 +239,8 @@
 	</div>
 -->
 
-	<div class="nostalgia draggable">
-		<div class="header"><img src="!g/folder.png" class="folder"> nostalgia<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="nostalgia" class="draggable">
+		<div class="header"><img src="!g/folder.png" class="folder"> nostalgia<img onclick="closeBox('nostalgia')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in">
 				<img title="these fucking DOGS" src="!g/nostalgia/the-dog-toys.jpg">
@@ -190,8 +266,8 @@
 	</div>
 
 	<!-- 	fav characters / fav charas -->
-	<div class="charas draggable">
-		<div class="header"><img src="!g/folder.png" class="folder"> fav_characters<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="charas" class="draggable">
+		<div class="header"><img src="!g/folder.png" class="folder"> fav_characters<img onclick="closeBox('charas')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in">
 				<img title="dogmeat from the fallout franchise" src="!g/fav-charas/dogmeat.png" alt="dogmeat">
@@ -216,8 +292,8 @@
 	</div>
 
 	<!-- 	toybox adopted fellas -->
-	<div class="toys draggable">
-		<div class="header"><img src="!g/folder.png" class="folder"> toybox<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="toys" class="draggable">
+		<div class="header"><img src="!g/folder.png" class="folder"> toybox<img onclick="closeBox('toys')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding">
 				<img title="idk where this one is from but if anyone knows, let me know!" src="/!g/deco/gemini.gif">
@@ -283,8 +359,8 @@
 	</div>
 
 	<!-- 	music video -->
-	<div class="mv draggable">
-		<div class="header">iyueni.mp4<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="mv" class="draggable">
+		<div class="header">iyueni.mp4<img onclick="closeBox('mv')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in">
 				<iframe width="100%" height="100%" src="https://www.youtube-nocookie.com/embed/44L09CWyrsU" title="iyueni by parsley onuma" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -293,15 +369,17 @@
 	</div>
 
 	<!-- 	links -->
-	<div class="contact draggable">
-		<div class="header">links.txt<img src="!g/close.jpg" class="himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
+	<div id="contact" class="draggable">
+		<div class="header">links.txt<img onclick="closeBox('contact')" src="!g/close.jpg" alt="close button" class="closebtn himg"><img src="!g/max.jpg" class="himg"><img src="!g/hide.jpg" class="himg"></div>
 		<div class="borderwrap">
 			<div class="wrapper-in padding list">
 				you can find me in other places like...
-				<a title="e-mail" href="mailto:doqmeat@gmail.com"><img src="/!g/pix/mail11a.gif" align="left" style="margin-right:15px;margin-top:5px;margin-left:10px;"></a>
+				<a title="e-mail me!" href="mailto:doqmeat@gmail.com"><img src="/!g/pix/mail11a.gif" align="left" style="margin-right:15px;margin-top:5px;margin-left:10px;"></a>
+				<li><a href="" target="_blank">github</a></li>
 				<li><a title="here til the site gets inevitably nuked" href="https://twitter.com/sepiarecord999" target="_blank">twitter</a></li>
 				<li><a href="https://rateyourmusic.com/~doqmeat" target="_blank">RYM</a></li>
-				<li><a href="https://doqmeats.tumblr.com/" target="_blank">tumblr</a></li>
+				<li><a href="https://doqmeats.tumblr.com/" target="_blank">main tumblr</a></li>
+				<li><a href="https://sepiarecord999.tumblr.com" target="_blank">art tumblr</a></li>
 				<li><a href="https://letterboxd.com/Iakitu/" target="_blank">letterboxd</a></li>
 				<li><a href="https://www.last.fm/user/lakiitu" target="_blank">last.fm</a></li>
 				<li><a href="https://bsky.app/profile/doqmeat.com" target="_blank">bluesky</a></li>
@@ -311,9 +389,10 @@
 	</div>
 
 	<div id="close">
-		<a title="go back to homepage" href="/"><img src="!g/close.jpg"></a>
+		<a title="go back to homepage" href="/"><img src="!g/close.jpg" alt="close button"></a>
 	</div>
 
+	<script src="script.js"></script>
 	<script src="/!f/draggable.js"></script>
 </body>
 
