@@ -112,6 +112,10 @@ p img {
   cursor: help;
 }
 
+hr {
+  border-color: #15197b;
+  border-style: dashed;
+}
 /* contents */
 
 #pop-up {
