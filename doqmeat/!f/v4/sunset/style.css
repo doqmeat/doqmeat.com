@@ -25,7 +25,7 @@ html {
 }
 
 body {
-  background-image: url(sunset/bg1.png), url(/!g/bg/space.gif);
+  background-image: url(bg1.png), url(/!g/bg/space.gif);
   background-repeat: no-repeat, repeat;
   background-size: cover, auto;
   background-position: bottom;
@@ -122,31 +122,31 @@ hr {
 /*images*/
 
 .rss {
-  content: url(sunset/rss.png);
+  content: url(rss.png);
 }
 
 h3.personal::before {
-  content: url(sunset/personal.png);
+  content: url(personal.png);
 }
 
 h3.media::before {
-  content: url(sunset/media.png);
+  content: url(media.png);
 }
 
 h3.misc::before {
-  content: url(sunset/misc.png);
+  content: url(misc.png);
 }
 
 h3.site::before {
-  content: url(sunset/sitely.png);
+  content: url(sitely.png);
 }
 
 h3.offsite::before {
-  content: url(sunset/offsite.png);
+  content: url(offsite.png);
 }
 
 .mc-cat {
-  content: url(sunset/cat.png);
+  content: url(cat.png);
 }
 
 /*rss updates*/
@@ -184,16 +184,16 @@ p.feed-item-desc:nth-of-type(1) {
 }
 
 #statuscafe-username {
-  font-size: 13px;
-  background: var(--pink2);
+  font-size: 14px;
+  background: var(--blue);
   font-family: morningtea, var(--fonts);
   border-bottom: 0px;
 }
 
 #statuscafe-content {
   font-size: 18px;
-  background: var(--blue);
-  color: white;
+  background: #eb96a0;
+  color: var(--yellow);
 }
 
 /*tooltip*/

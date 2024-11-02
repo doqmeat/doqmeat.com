@@ -102,6 +102,7 @@ nav a {
   text-align: center;
   grid-area: f-page;
   width: 152%;
+  height: 80%;
 }
 
 #featured-page img,
@@ -147,6 +148,7 @@ nav a {
   grid-area: comm;
   text-align: center;
   width: 152%;
+  margin-top: -50px;
 }
 
 #comm button {

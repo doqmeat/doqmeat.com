@@ -22,7 +22,7 @@ html {
 }
 
 body {
-  background-image: url(garden/bg.png), url(/!g/bg/ritva-2.gif);
+  background-image: url(bg.png), url(/!g/bg/ritva-2.gif);
   background-repeat: repeat, repeat;
   background-size: 900px, auto;
   background-position: top;
@@ -104,31 +104,31 @@ nav a:hover {
 /*images*/
 
 .rss {
-  content: url(garden/rss.png);
+  content: url(rss.png);
 }
 
 h3.personal::before {
-  content: url(garden/personal.png);
+  content: url(personal.png);
 }
 
 h3.media::before {
-  content: url(garden/media.png);
+  content: url(media.png);
 }
 
 h3.misc::before {
-  content: url(garden/misc.png);
+  content: url(misc.png);
 }
 
 h3.site::before {
-  content: url(garden/site.png);
+  content: url(site.png);
 }
 
 h3.offsite::before {
-  content: url(garden/offsite.png);
+  content: url(offsite.png);
 }
 
 .mc-cat {
-  content: url(garden/cat.png);
+  content: url(cat.png);
 }
 
 /*status cafe*/
@@ -195,5 +195,5 @@ p.feed-item-desc:nth-of-type(1) {
 #s-m-t-tooltip {
   color: var(--blue);
   border: 1px solid var(--green1);
-  background: var(--yellow);
+  background: #f7e2b1;
 }
