@@ -184,16 +184,16 @@ p.feed-item-desc:nth-of-type(1) {
 }
 
 #statuscafe-username {
-  font-size: 14px;
+  font-size: 15px;
   background: var(--blue);
   font-family: morningtea, var(--fonts);
   border-bottom: 0px;
 }
 
 #statuscafe-content {
-  font-size: 18px;
-  background: #eb96a0;
-  color: var(--yellow);
+  font-size: 19px;
+  background: #efc0c6;
+  color: #5b6b9c;
 }
 
 /*tooltip*/
