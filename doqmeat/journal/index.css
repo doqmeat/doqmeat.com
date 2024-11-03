@@ -127,9 +127,12 @@ aside div {
 }
 
 #footer {
+  text-align: center;
+}
+
+#sticky {
   position: sticky;
   top: 0px;
-  text-align: center;
 }
 
 @media only screen and (max-width: 1078px) {
