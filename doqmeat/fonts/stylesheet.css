@@ -217,3 +217,8 @@
   font-family: "mononoki";
   src: url(mononoki.ttf);
 }
+
+@font-face {
+  font-family: "silkscreen";
+  src: url(silkscreen.ttf);
+}
