@@ -1,29 +1,35 @@
 * {
   box-sizing: border-box;
+  cursor: url(/journal/!g/cursor-pencil.png), auto !important;
 }
 
 :root {
-  --fonts: gaegu-l, ms gothic, arial;
+  --fonts: gaegu-l, arial;
+  --r-border: 2px solid #e4a79d;
+  --cream: #fffcdc;
+  --red: #c9525e;
+  --l-red: #e4a79d;
+  --l-blue: #c7d9f8;
+  --green: #d0ff8d;
+  --yellow: #ffe481;
 }
 
 html {
-  scrollbar-color: #e0dcf0 #fffcdc;
+  scrollbar-color: var(--l-red) var(--l-blue);
 }
 
 body {
-  background: url("/journal/!g/bg1.png");
-  background-size: cover;
+  background: url("/!g/bg/patterbg.gif");
   background-attachment: fixed;
-  background-position: top;
-  word-wrap: normal;
-  word-break: keep-all;
-  font-size: 17px;
+  word-wrap: break-word;
+  font-size: 16px;
   line-height: 23px;
   font-family: var(--fonts);
   color: black;
   padding: 0px;
   margin: 0px;
   scrollbar-color: #e4a79d #fffcdc;
+  cursor: url(https://cur.cursors-4u.net/others/oth-5/oth500.cur), auto !important;
 }
 
 h1,
@@ -32,36 +38,23 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: gaegu-l, var(--fonts);
-  text-shadow: 1px 1px 1px #b5b5d8;
+  padding: 5px;
+  font-family: morningtea, gaegu-l, var(--fonts);
+}
+
+i {
+  background: #c7d9f8;
 }
 
 mark {
-  background: #e0dcf0;
-}
-
-q {
-  font-style: italic;
-  text-shadow: 1px 1px 1px #f6bdcf;
-}
-
-i {
-  text-shadow: 1px 1px 1px #f6bdcf;
-}
-
-b {
-  text-shadow: 1px 1px 1px #97b7b6;
-}
-
-b,
-i {
-  font-family: gaegu-r, var(--fonts);
+  background: #ffe481;
 }
 
 li {
+  list-style-image: url("/!g/pix/li19.gif");
+  padding: 10px;
   list-style-position: inside;
-  padding: 0 10px;
-  margin: 10px 0;
+  margin: 5px;
 }
 
 ul {
@@ -69,18 +62,11 @@ ul {
   padding: 0px 5px 5px 35px;
 }
 
-ul li {
-  list-style-image: url("/!g/pix/starblue.gif");
-}
-
 a {
-  border-radius: 5px;
-  padding: 0px 2px;
   color: black;
-  background: #ffe481;
+  background: #d0ff8d;
   font-weight: normal;
   text-decoration: none;
-  cursor: help;
 }
 
 a:hover {
@@ -91,6 +77,10 @@ a:hover {
 
 a:focus {
   text-decoration: wavy underline;
+}
+
+a:active {
+  outline: 0;
 }
 
 p {
@@ -127,6 +117,11 @@ figure {
   padding: 10px;
 }
 
+figcaption {
+  font-size: 15px;
+  line-height: normal;
+}
+
 .spoiler {
   background-color: black;
   color: black;
@@ -149,23 +144,28 @@ figure {
 }
 
 .outlink:after {
-  content: "↗";
+  content: url(/!g/web/materials/outlink2.png);
   padding-left: 3px;
   vertical-align: text-bottom;
 }
 
 #s-m-t-tooltip {
-  max-width: 200px;
-  font-size: 17px;
-  font-family: gaegu-b, var(--fonts);
+  max-width: 300px;
+  font-family: var(--fonts);
   text-align: center;
   z-index: 9999;
-  margin: 30px 15px 7px 20px;
+  margin: 30px 15px 7px 12px;
   padding: 5px;
   border-radius: 10px;
-  background: #b9b6d5;
-  border: 1px dashed white;
-  color: white;
+  border: 2px dashed #c9525e;
+  color: black;
+  background: #f9eab4;
+}
+
+@media only screen and (max-width: 599px) {
+  .hide {
+    display: none;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -185,8 +185,4 @@ figure {
 
 ::-webkit-scrollbar-track {
   background-color: #fffcdc;
-}
-
-* {
-  cursor: url(/journal/!g/cursor-pencil.png), auto !important;
 }

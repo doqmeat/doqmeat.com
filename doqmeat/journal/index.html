@@ -5,8 +5,10 @@
 
 	<!-- 
 coded with love by des!
-
-v3 of journal started on 05.jul.24
+---
+reverted back to v2.5 on 11.nov.24 cus i miss this silly layout
+-----
+js for diabling memos, add credit, add footer, change calendar arrow colors
  -->
 
 	<meta charset="UTF-8">
@@ -14,7 +16,6 @@ v3 of journal started on 05.jul.24
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="description" content="doqmeat's journal logs">
 	<link rel="icon" type="image/x-icon" href="favicon.gif">
-	<script src="https://kit.fontawesome.com/f936906ae0.js" crossorigin="anonymous"></script>
 	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<link href="body.css" rel="stylesheet" type="text/css" media="all">
 	<link href="index.css" rel="stylesheet" type="text/css" media="all">
@@ -23,95 +24,94 @@ v3 of journal started on 05.jul.24
 	<script src="/!f/tooltip-jquary.js"></script>
 	<script src="/!f/tooltip.js"></script>
 	<!--  end of tooltip shit -->
-	<script src="https://melonking.net/scripts/frame-link.js"></script>
-	<script>
-		titlePrefix = "journal - ";
-
-	</script>
 </head>
 
 <body>
-	<div id="wrapper">
 
-		<aside>
-			<div id="desc">
-				<img align="left" src="!g/welcome.gif" width="50%" style="margin:10px;">
-				<h3>welcome to des' journal logs!</h3>
-				<p>in here i will be talking about my life, site stuff, and other misc things.</p>
-			</div>
+	<div id="notepad">
+		<div id="header"></div>
 
-			<div id="calendar">
-				<h3>calendar</h3>
-				<iframe src="2024/calendar.html" scrolling="no"></iframe>
-			</div>
+		<nav>
+			<h1 style="padding:0px;margin-bottom:2px;">des' journal</h1>
+			<p>i write about my life, site stuff, and any other misc things here. <small>i don't proof read what i write in these.</small></p>
+			<details>
+				<summary>2024</summary>
+				<a href="2024/10.html" target="log">october</a>
+				<a href="2024/09.html" target="log">september</a>
+				<a href="2024/08.html" target="log">august</a>
+				<a href="2024/07.html" target="log">july</a>
+				<a href="2024/06.html" target="log">june</a>
+				<a href="2024/05.html" target="log">may</a>
+				<a href="2024/04.html" target="log">april</a>
+				<a href="2024/03.html" target="log">march</a>
+				<a href="2024/02.html" target="log">february</a>
+				<a href="2024/01.html" target="log">january</a>
+			</details>
+			<details>
+				<summary>2023</summary>
+				<a href="2023/12.html" target="log">december</a>
+				<a href="2023/11.html" target="log">november</a>
+				<a href="2023/10.html" target="log">october</a>
+				<a href="2023/09.html" target="log">september</a>
+				<a href="2023/08.html" target="log">august</a>
+				<a href="2023/07.html" target="log">july</a>
+				<a href="2023/06.html" target="log">june</a>
+				<a href="2023/05.html" target="log">may</a>
+				<a href="2023/04.html" target="log">april</a>
+			</details>
 
-			<div id="nav">
-				<img align="right" src="!g/flower-b.gif" style="max-width: 100%;">
-				<h3>logs navigation</h3>
-				<details>
-					<summary>2024</summary>
-					<a href="2023/10.html" target="log">october</a>
-					<a href="2024/09.html" target="log">september</a>
-					<a href="2024/08.html" target="log">august</a>
-					<a href="2024/07.html" target="log">july</a>
-					<a href="2024/06.html" target="log">june</a>
-					<a href="2024/05.html" target="log">may</a>
-					<a href="2024/04.html" target="log">april</a>
-					<a href="2024/03.html" target="log">march</a>
-					<a href="2024/02.html" target="log">february</a>
-					<a href="2024/01.html" target="log">january</a>
-				</details>
-				<details>
-					<summary>2023</summary>
-					<a href="2023/12.html" target="log">december</a>
-					<a href="2023/11.html" target="log">november</a>
-					<a href="2023/10.html" target="log">october</a>
-					<a href="2023/09.html" target="log">september</a>
-					<a href="2023/08.html" target="log">august</a>
-					<a href="2023/07.html" target="log">july</a>
-					<a href="2023/06.html" target="log">june</a>
-					<a href="2023/05.html" target="log">may</a>
-					<a href="2023/04.html" target="log">april</a>
-				</details>
-			</div>
+			<img class="hide" src="/!g/deco/pencil1.gif" style="max-width:100%">
 
-			<div id="notes">
-				<h3>notes</h3>
-				<li>journal running on version 3 since 06.jul.24</li>
-				<li>i often don't proof read what i write in these</li>
-				<p><b>more of my nonsense and writings:</b> <a href="/blog">blog</a> / <a href="/microblog">microblog</a> / <a title="food log!" href="https://moku.blog/user/doqmeat" target="_blank" class="outlink">moku.blog</a></p>
-			</div>
+			<button onclick="closeMemos()">hide memos</button>
 
-			<div id="quote">
-				<p>a chocolate sepia record that is important to me and no one else <br><b> - <a href="https://vocaloidlyrics.fandom.com/wiki/999/Powapowa-P" title="translation credit!">999</a> (siinamota)</b>
-				</p>
-			</div>
+			<p>links: <a href="credit.html" target="log">credit</a> / <a title="food journal" href="https://moku.blog/user/doqmeat" target="_blank"> moku.blog</a></p>
 
-			<div>
-				<h3>credit</h3>
-				<p>pencil cursor from <a href="http://whimsical.heartette.net/" target="_blank">whimsical</a>, deco graphics from <a href="http://sozaioukoku.fc2web.com" target="_blank">sozaioukoku</a>, weather icons from <a href="https://tora7.ciao.jp/" target="_blank">tora7.ciao.jp</a>, iframe links script from <a href="https://forum.melonland.net/index.php?topic=115" target="_blank">melonking</a>, butterfly pixel from <a href="https://sorahana.ciao.jp/" target="_blank">sorahana</a>, body bg from <a href="https://unsplash.com/photos/green-grass-field-during-daytime-cPaGBl8R_1M?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash" target="_blank">unsplash</a>, <a href="/notebook/links/fonts.html" target="_blank">fonts</a> used: gaegu, spirit</p>
-			</div>
 
-			<span id="sticky">
-				<div id="tunes">
-					<h3>tunes</h3>
-					<iframe width="100%" height="200" src="https://www.youtube-nocookie.com/embed/videoseries?si=rcHrYLce1vYnaPwI&amp;list=PLJJj3iCewWn0BFushmrCndv4wvcgPVWWg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-				</div>
+		</nav>
 
-				<div id="footer">
-					<center><img src="https://doqmeat.com/!g/deco/meowsleepu.gif" alt=""></center>
-					<p><a href="#">go to the top</a> - <a href="/">home</a> - <a href="/sitemap">sitemap</a></p>
-				</div>
-			</span>
-		</aside>
-
-		<iframe id="mainframe" name="log" src="2024/10.html"></iframe>
-
+		<main>
+			<iframe id="mainframe" src="2024/10.html" name="log" height="100%" width="100%"></iframe>
+		</main>
 	</div>
 
-	<!-- <div id="sticker"><a href="#" title="scroll to the top!"><img src="!g/pic.gif"></a></div>
+	<div id="tag">
+		<a data-toggle="tooltip" title="go back home" href="/">home</a>
+		<img src="/!g/pix/lc01-icon-bookmark.gif" width="23px">
+	</div>
 
-	<div id="home"><a title="go back home?" href="/"><img src="!g/hanging.gif"></a></div> -->
+	<aside id="memo1" class="memo draggable">
+		<div class="innermemo">
+			<h2>status.cafe</h2>
+			<!-- start sw-rss-feed code -->
+			<script type="text/javascript" src="status-cafe-feed.js"></script>
+			<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+			<span style="font-size:small;">feed powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+		</div>
+	</aside>
+
+	<aside id="memo2" class="memo draggable">
+		<div class="innermemo">
+			<iframe src="2024/calendar.html" id="calendar" scrolling="no"></iframe>
+			<div id="side">
+				a chocolate sepia record that is important to me and no one else <br> <b> - <a href="https://vocaloidlyrics.fandom.com/wiki/999/Powapowa-P" title="translation credit!">999</a> (siinamota)</b>
+			</div>
+		</div>
+	</aside>
+
+	<!-- <aside id="memo3" class="memo draggable">
+		<div class="innermemo">
+		</div>
+	</aside> -->
+
+	<aside id="memo4" class="memo draggable">
+		<div class="innermemo">
+			<iframe width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/videoseries?si=Kfiv3XQ7gEQPclYa&amp;list=PLJJj3iCewWn0BFushmrCndv4wvcgPVWWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</aside>
+
+	<aside id="pen"><img src="!g/tulip.png" width="100%"></aside>
+	<script src="memo.js"></script>
+	<script src="/!f/draggable.js"></script>
 </body>
 
 </html>

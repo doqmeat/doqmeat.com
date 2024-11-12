@@ -2,12 +2,12 @@
   box-sizing: border-box;
 }
 
-:root {
-  --log-bg: url("/notebook/!g/grid-blue.png");
-}
-
 body {
-  font-size: 18px;
+  background: url("/!g/bg/yellobg.png");
+  background-position: center;
+  background-repeat: repeat;
+  background-attachment: fixed;
+  font-size: 20px;
   word-spacing: 8px;
   line-height: 24px;
   color: black;
@@ -17,12 +17,14 @@ header {
   padding: 5px;
 }
 
-p {
-  margin: 20px 10px 20px 12px;
+li {
+  list-style-image: url("/!g/pix/starpink.gif");
+  padding-left: 2px;
+  list-style-position: inside;
 }
 
-p:hover {
-  background: white;
+p {
+  margin: 20px 10px 20px 12px;
 }
 
 img {
@@ -30,15 +32,9 @@ img {
 }
 
 hr {
-  background: url("/journal/!g/leaf.gif");
+  background: url("!g/leaf.gif");
   height: 15px;
   border: 0px;
-}
-
-h2,
-h3,
-h4 {
-  margin: 20px;
 }
 
 #log,
@@ -50,15 +46,21 @@ main {
   scrollbar-color: #e4a79d #fffcdc;
 }
 
+i {
+  background: #c7d9f8;
+}
+
+b,
+strong {
+  background: #e4a79d;
+}
+
+mark {
+  background: #ffe481;
+}
+
 article {
-  background: var(--log-bg);
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-size: 10px;
-  border: 1px dashed black;
   margin-bottom: 30px;
-  padding: 0 0 10px 0;
 }
 
 article:last-child {
@@ -66,20 +68,21 @@ article:last-child {
 }
 
 .title {
-  font-family: var(--fonts);
+  font-family: morningtea, var(--fonts);
   float: left;
   padding-top: 5px;
 }
 
 .date {
-  font-family: spirit, var(--fonts);
+  font-family: morningtea, var(--fonts);
   font-size: 16px;
 }
 
 .entry {
   font-size: 28px;
-  background-size: 50px;
-  border-bottom: 4px double black;
+  background: url(!g/memo-cube.jpg);
+  background-position: center;
+  border: 4px double black;
   text-align: right;
   font-weight: bold;
   margin: 5px 0px 15px 0px;
@@ -89,11 +92,10 @@ article:last-child {
 .mini {
   display: inline-block;
   line-height: 23px;
-  font-family: gaegu-r, newpenji, var(--fonts);
-  background: url(/!g/bg/h096-2.gif);
-  background-size: 60px;
+  font-family: newpenji, var(--fonts);
+  background: url(/!g/bg/picnicclothbg.png);
   font-size: 17px;
-  border: 1px solid black;
+  border: 4px double black;
   margin: 5px 5px;
   padding: 0px 5px;
   border-radius: 10px;
@@ -106,7 +108,7 @@ article:last-child {
 
 ::before {
   margin: 5px;
-  vertical-align: text-top;
+  vertical-align: middle;
 }
 
 ::after {
@@ -161,21 +163,17 @@ p.date {
   background-size: 50px;
   border: 4px double black;
   text-align: right;
-  font-weight: normal;
+  font-weight: bold;
   margin: 5px 0px 15px 0px;
   padding: 0px 10px;
 }
 
 /*end*/
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 599px) {
   .entry {
     border-left: 0px;
     border-right: 0px;
-  }
-
-  .hide {
-    display: none;
   }
 
   body {

@@ -4,16 +4,12 @@ body {
   scrollbar-width: none;
 }
 
-a {
-  cursor: help;
-}
-
 ::-webkit-scrollbar {
   display: none;
 }
 
 table {
-  background: white;
+  background: rgba(254, 255, 169, 0.341);
   width: 220px;
   border-radius: 10px;
   border: 1px solid white;
@@ -34,14 +30,6 @@ td {
   text-shadow: 1px 1px 1px white;
 }
 
-.today {
-  overflow: hidden;
-  border-radius: 7px;
-  display: block;
-  color: white;
-  text-shadow: 1px 1px 1px black;
-}
-
 .month {
   background: pink;
   text-align: center;
@@ -51,7 +39,16 @@ p {
   margin-bottom: 20px;
 }
 
+a {
+  overflow: hidden;
+  cursor: help;
+  padding: 1px;
+  background: #ffc0cb;
+}
+
 td a {
+  padding: 0px;
+  border-radius: 5px;
   display: block;
   text-shadow: 1px 1px 1px grey;
 }

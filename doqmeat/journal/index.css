@@ -1,172 +1,267 @@
-#wrapper {
+#notepad {
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
   position: relative;
   display: grid;
-  grid-template-areas: "sidebar logs";
-  grid-template-columns: 30% 70%;
-  grid-template-rows: auto;
-  max-width: 1000px;
-  height: 30000px;
-  margin-bottom: 10px;
-  margin-top: 10px;
-}
-
-#nav {
+  grid-template-areas:
+    "header header"
+    "margin body";
+  grid-template-rows: 50px 580px;
+  grid-template-columns: 160px 540px;
+  max-width: 700px;
+  border: 1px solid var(--red);
+  border-radius: 10px 10px 0 0;
+  background: url("/!g/bg/yellobg.png");
   overflow: hidden;
 }
 
-#nav a {
-  background: transparent;
-  display: block;
-  margin: 2px 30px;
+#header {
+  position: relative;
+  grid-area: header;
+  background: #c9525e;
+  border-bottom: 2px solid var(--l-red);
 }
 
-#nav a::before {
-  content: "- ";
+nav {
+  text-align: center;
+  font-family: gaegu-l, var(--fonts);
+  padding: 5px;
+  grid-area: margin;
+  border-right: 2px solid var(--l-red);
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-color: #c7d9f8 #e4a79d;
 }
 
-#nav a:hover::before {
-  content: "↪ ";
-}
-
-#nav a:focus::before {
-  content: "* ";
-}
-
-aside {
-  grid-area: sidebar;
-}
-
-#mainframe {
-  grid-area: logs;
-  border: none;
-  width: 100%;
-  height: 100%;
-}
-
-aside h3 {
-  margin: 10px 0;
-}
-
-aside h3::before {
-  content: url("/!g/pix/butterfly5.gif");
-  padding-right: 10px;
-  vertical-align: text-top;
-}
-
-#desc h3::before {
-  content: none;
-}
-
-aside div:nth-child(odd) {
-  background: url("/notebook/!g/grid-yellow2.png");
-  background-size: 10px;
-}
-
-aside div:nth-child(even) {
-  background: url("/notebook/!g/grid-pink.png");
-  background-size: 10px;
-}
-
-aside div {
-  border-radius: 10px;
-  border: 1px dashed black;
-  padding: 10px;
-  margin: 20px;
-  margin-left: 0px;
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: scroll;
-}
-
-#desc {
-  background: url("/!g/bg/whiteline.jpg");
-  background-position: bottom;
-  background-repeat: repeat;
-  background-size: 10px;
-  margin-top: 0px;
-}
-
-#calendar iframe {
-  width: 100%;
-  height: 255px;
-  border: none;
-  scrollbar-width: none;
-}
-
-#calendar::-webkit-scrollbar {
+nav::-webkit-scrollbar {
   display: none;
 }
 
-#sticker {
-  position: fixed;
-  bottom: 5px;
-  right: 15px;
-}
-
-#status p {
-  font-size: 10px;
-}
-
-#quote {
-  background: url("/!g/bg/yellobg.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-size: 10px;
-}
-
-#home {
-  position: absolute;
-  top: 10px;
-  left: 5px;
-}
-
-#sticker a,
-#home a {
-  background: transparent;
-}
-
-#footer {
+h1 {
   text-align: center;
 }
 
-#sticky {
-  position: sticky;
+main {
+  grid-area: body;
+  margin-left: 5px;
+  border-left: 2px solid var(--l-red);
+}
+
+#mainframe {
+  border: none;
+}
+
+#tag {
+  position: fixed;
+  top: -6px;
+  left: 4px;
+  transition-duration: 0.5s;
+}
+
+#tag a {
+  background: transparent;
+  font-weight: bold;
+  font-size: 12px;
+  position: absolute;
+  bottom: 40px;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  rotate: -90deg;
+}
+
+#tag:hover {
   top: 0px;
 }
 
-@media only screen and (max-width: 1078px) {
-  #home {
-    display: none;
-  }
+#musicbox {
+  z-index: 500;
+  background-image: url("/!g/deco/paper.gif");
+  background-size: 220px;
+  background-repeat: no-repeat;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 230px;
+}
 
-  #wrapper {
-    margin: 20px;
-  }
+#musicbox i {
+  background: transparent;
+}
 
-  #sticker {
-    display: none;
+#pen {
+  pointer-events: none;
+  position: fixed;
+  bottom: -90px;
+  right: 340px;
+  width: 100px;
+}
+
+button {
+  background: #c7d9f8;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  font-size: inherit;
+}
+
+button:hover {
+  background: #e4a79d;
+}
+
+.memo {
+  cursor: move;
+  position: fixed;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px 1px var(--l-red);
+  scrollbar-color: #e4a79d #fffcdc;
+}
+
+.memo h2 {
+  text-align: center;
+  margin: 5px;
+  font-size: 16px;
+}
+
+.memo h3 {
+  margin: 5px;
+  font-size: 13px;
+}
+
+#memo1 {
+  text-align: center;
+  top: 50%;
+  right: 2%;
+  line-height: 18px;
+  font-size: 15px;
+  width: 350px;
+  height: 250px;
+  background: url("!g/memo-cloud.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#memo2 {
+  text-align: left;
+  top: 20%;
+  left: 3%;
+  rotate: -3deg;
+  width: 300px;
+  height: 400px;
+  background: url("!g/memo-green.jpg");
+  background-size: cover;
+}
+
+#memo2 #side {
+  font-family: spirit;
+  font-size: 13px;
+  overflow: auto;
+  padding: 2px;
+  position: absolute;
+  width: 100px;
+  height: 185px;
+  bottom: 40px;
+  right: 10px;
+}
+
+#memo3 {
+  top: 67%;
+  left: 10%;
+  rotate: 14deg;
+  padding: 30px 20px;
+  width: 200px;
+  height: 150px;
+  background: url("!g/memo-picnic.jpg");
+  background-size: cover;
+}
+
+#memo4 {
+  top: 8%;
+  right: 5%;
+  rotate: -10deg;
+  width: 300px;
+  height: 290px;
+  background: url("!g/memo-cube.jpg");
+  background-position: top center;
+  background-size: cover;
+}
+
+#calendar {
+  display: block;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  border: none;
+  overflow: hidden;
+  width: 175px;
+  height: 225px;
+}
+
+.innermemo {
+  overflow: auto;
+}
+
+#memo1 .innermemo {
+  overflow: hidden;
+  padding: 10px;
+  margin: 10px 60px 0px 60px;
+  height: 200px;
+}
+
+#memo4 .innermemo {
+  margin: 70px 40px 0px 20px;
+  height: 220px;
+  padding-right: 20px;
+}
+
+.memo a {
+  background: transparent;
+  text-decoration: underline;
+}
+
+.memo a:hover {
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 700px) {
+  #notepad {
+    grid-template-columns: 25% 75%;
   }
 }
 
-@media only screen and (max-width: 600px) {
-  #wrapper {
-    display: block;
-    margin: 20px 0;
-  }
-
-  #pic,
-  #quote,
-  #calendar,
-  #notes {
+@media only screen and (max-width: 500px) {
+  aside {
     display: none;
   }
 
-  #mainframe {
-    padding: 20px;
+  #notepad {
+    display: block;
+    margin-top: 0;
   }
 
-  aside div {
-    margin: 20px;
+  #header {
+    height: 40px;
+  }
+
+  main {
+    height: 600px;
+    border: none;
+    margin: 0px 3%;
+    padding: 10px;
+  }
+
+  details {
+    display: inline-block;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  #journal {
+    border: 6px double var(--l-red);
   }
 }
