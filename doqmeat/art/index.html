@@ -1,209 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<!-- started working on nov 7 -->
+
 <head>
-	<meta charset="UTF-8">
-	<title>arts n crafts</title>
-	<meta name="description" content="doqmeat's art">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="icon" type="image/x-icon" href="/!g/pix/catdraw.gif">
-	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-	<link href="index.css" rel="stylesheet" type="text/css" media="all">
-	<!-- tooltip shit -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
-	<script src="/!f/tooltip-jquary.js"></script>
-	<script src="/!f/tooltip.js"></script>
-	<!--  end of tooltip shit -->
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="icon" type="image/x-icon" href="/!g/pix/catdraw.gif">
+ <link href="body.css" rel="stylesheet">
+ <link href="/fonts/stylesheet.css" rel="stylesheet">
+ <title>my silly art</title>
 </head>
+<!-- keep adding captions to things / new bg -->
 
 <body>
 
-	<!-- 
-	
-	<button class="container"><img src="thumb/"></button>
-		-->
-	<main>
-		<header>
-			<h1>arts &amp; craft</h1>
-			<p>i do a little bit of art on rare occasions.</p>
-		</header>
+ <aside id="sidebar">
+  <h1>doqmeat's silly art</h1>
+  <p>i will also include here some other projects that aren't drawings!</p>
+  <p><b>tools:</b> clip studio paint + HP convertible laptop w/ stylus + chromatek watercolor brush pens</p>
+  <nav>
+   <h3>type</h3>
+   <button id="default" onclick="showCat('box')">all</button>
+   <button onclick="showCat('doodle')">doodle</button>
+   <button onclick="showCat('full')">illustration</button>
+   <button onclick="showCat('journal')">journal</button>
+   <button onclick="showCat('misc')">misc</button>
 
-		<div id="drawings">
-			<h2>drawings</h2>
+   <h3>tools</h3>
+   <button onclick="showCat('digital')">digital</button>
+   <button onclick="showCat('trad')">traditional</button>
+   <button onclick="showCat('watercolor')">watercolor</button>
 
-			<button onclick="showWin('casio')" class="container"><img src="thumb/240520-casio.png"></button>
-			<div id="casio" class="window">
-				<img src="!g/drawings/240520-casio.jpg" width="100%">
-				<p><b>20.may.24</b> - cassiopeia from hit visual novel: if found...</p>
-				<p>made this while bored af studying for my precalculus final.</p>
-				<hr>
-				<p><b>18.oct.24</b> - scanned it and colored it digitally bc i hadn't opened CSP in a while and i miss using it.</p>
-				<img src="!g/drawings/241016-cassiopeia.png" width="100%" alt="cassiopeia but colored">
-			</div>
+   <h3>year</h3>
+   <button onclick="showCat('2020')">2020</button>
+   <button onclick="showCat('2021')">2021</button>
+   <button onclick="showCat('2022')">2022</button>
+   <button onclick="showCat('2023')">2023</button>
+   <button onclick="showCat('2024')">2024</button>
+  </nav>
 
-			<button onclick="showWin('halo2')" class="container"><img src="thumb/221201-halo2.png"></button>
-			<div id="halo2" class="window">
-				<img src="!g/drawings/halo2.jpg" width="100%">
-				<p>08.dec.22 - based off siinamota's halo PV.</p>
-				<iframe width="90%" height="332" src="https://www.youtube.com/embed/WchOJBb--PU" title="【PowapowaP ft. Hatsune Miku】Halo【English subtitles】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-				<p>this is the first of three pieces i want to make based off this song's pv. its one of my favorite songs by siinamota because of how haunting and melancholic it sounds.i wanted to create something that would show how i view what's happening to the protagonist while they are saying these things since the video and song are pretty vague. i also just wanted to caption the feeling of the PV and song. it is one of my favorite songs from siinamota.</p>
-			</div>
+  <hr>
+  <center>
+   <p><a href="#">top</a> / <a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
+   <p>last updated on 11.nov.24</p>
+   <p><b>credit:</b> <a href="/notebook/links/fonts.html">fonts</a> used: momo, basiic</p>
+  </center>
+ </aside>
 
-			<button onclick="showWin('orange')" class="container"><img src="thumb/sketch-orange.png"></button>
-			<div id="orange" class="window">
-				<img src="!g/drawings/sketch-orange.jpg" width="100%">
-				<p>??.??.23 - sketch of a member from orange caramel. i don't know her name, so sorry. the picture was just very charming.</p>
-			</div>
+ <main>
+  <img loading="lazy" id="lucy" src="!g/collage/lucy.jpg" alt="collage of kpop band lucy" class="box journal 2021">
+  <div id="lucy-caption" class="captions">
+   <p>a collage of kpop band lucy done with the inclusions from <i>blue</i></p>
+  </div>
+  <img loading="lazy" src="!g/drawings/oyasumi.jpg" alt="inspired by siinamota's oyasumi" class="box watercolor 2023 trad">
+  <img loading="lazy" src="!g/drawings/241109-doodles.jpg" alt="an assortment of doodles. they are mostly cats" class="box doodle trad 2024" loading="lazy">
+  <img loading="lazy" class="box trad 2023 doodle" src="/vgs/pikmin-4/doodle1.jpg" alt="when i was sick with covid all i could do was draw oatchi">
+  <img loading="lazy" class="box trad doodle 2023" src="/vgs/pikmin-4/doodle2.jpg" alt="when i was sick with covid all i could do was draw oatchi">
+  <img id="halo" loading="lazy" class="box digital full 2022" src="!g/drawings/halo.png" alt="illustration from siinamota's halo">
+  <div id="halo-caption" class="captions">
+   <p>inspired by siinamota's PV of <a href="https://www.youtube.com/watch?v=WchOJBb--PU" target="_blank">halo</a></p>
+  </div>
+  <img loading="lazy" id="hello-kitty" src="!g/drawings/fastfoodworkerhellokitty1.jpg" alt="hello kitty in her mcdonalds uniform" class="box doodle digital 2023">
+  <div id="hello-kitty-caption" class="captions">
 
-			<button onclick="showWin('halo-2')" class="container"><img src="thumb/halo-2.png"></button>
-			<div id="halo-2" class="window">
-				<img src="!g/drawings/halo-2.jpg" width="100%">
-				<p>and another one. based off siinamota's halo</p>
-			</div>
+   <p><b>22.jul.23</b> - guys i have not opened clip studio paint in like 6 months... i've been wanting to draw so badly lately but i just have been so unmotivated
 
-			<button onclick="showWin('junho')" class="container"><img src="thumb/junho.png"></button>
-			<div id="junho" class="window">
-				<img src="!g/drawings/junho.jpg" width="100%">
-				<p>so there's this kpop idol called JUNHO from kpop boy group DRIPPIN...</p>
-			</div>
+   <p>today in particular i was just feeling very anxious. but i remember seeing this pic of a hello kitty plush with a mcdonals uniform and i fell so in love with it.</p>
 
-			<button onclick="showWin('hello')" class="container"><img src="thumb/fast-food-worker-hello.png"></button>
-			<div id="hello" class="window">
-				<img src="!g/drawings/fastfoodworkerhellokitty1.jpg" width="100%">
-				<p>22.jul.23 - a friend of mine found a mcdonald's fast food worker hello kitty plushie and i found it sooooooooo adorable. i had to draw her bringing me my food. and btw <a href="https://www.businessinsider.com/mcdonalds-donating-thousands-meals-idf-israeli-citizens-hamas-attacks-2023" target="_blank" class="outlink">boycott mcdonalds</a> for palestine. </p>
-			</div>
+   <p>so i decided to doodle her!!!! like i didnt have anything in mind for her but i was just feeling so horrible that i thought that maybe drawing this silly ass hello kitty toy would help me calm down. and i will be honest. it really did calm me down.</p>
 
-			<button onclick="showWin('yeah')" class="container"><img src="thumb/yeah.png"></button>
-			<div id="yeah" class="window">
-				<img src="!g/drawings/yeah.jpg" width="100%">
-				<p>used a pic from korean photographer mugung for this one. just messing around with CSP.</p>
-			</div>
+   <p>i guess that i eventually got really focused in the drawing that i just forgot i was feeling anxious (over nothing btw idk whats happening) in the first place</p>
 
-			<button onclick="showWin('minecraft')" class="container"><img src="thumb/minecraft.png"></button>
-			<div id="minecraft" class="window">
-				<img src="!g/drawings/minecraft.png" width="100%">
-				<p>doing fuck all doodling minecraft stuff and those weird mushroom ppl from dark souls. idk i just find them really cute. i love mushrooms.</p>
-			</div>
+   hello kitty is so adorable and wholesome to me. i think she would be the happiest fast food worker in the world. anyway thank you hello kitty</p>
 
-			<button onclick="showWin('power')" class="container"><img src="thumb/pahwah.png"></button>
-			<div id="power" class="window">
-				<img src="!g/drawings/pahwah.jpg" width="100%">
-				<p>some doodles of power and meowy from chainsaw man. they are so badass.</p>
-			</div>
+  </div>
+  <img loading="lazy" src="!g/drawings/hurricane.jpg" alt="an assortment of doodles done with red and blue ink" class="box full trad 2017">
+  <img loading="lazy" src="!g/collage/olivia.jpg" alt="collage of loona's hyeju" class="box journal 2021">
+  <img loading="lazy" src="!g/drawings/thelittleprince.jpg" alt="the little prince and the fox" class="box doodle watercolor trad 2020">
+  <img loading="lazy" src="!g/drawings/halo2.jpg" alt="a person staring off into the sunset" id="halo1part" class="full 2023 box digital">
+  <div id="halo1part-caption" class="captions">
+   <p>08.dec.22 - based off siinamota's halo PV.</p>
+   <iframe width="90%" height="332" src="https://www.youtube.com/embed/WchOJBb--PU" title="【PowapowaP ft. Hatsune Miku】Halo【English subtitles】" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   <p>this is the first of three pieces i want to make based off this song's pv. its one of my favorite songs by siinamota because of how haunting and melancholic it sounds.i wanted to create something that would show how i view what's happening to the protagonist while they are saying these things since the video and song are pretty vague. i also just wanted to caption the feeling of the PV and song. it is one of my favorite songs from siinamota.</p>
+  </div>
+  <img loading="lazy" src="!g/collage/siinamota.jpg" alt="siinamota collage" class="box collage 2022">
+  <img loading="lazy" id="depression-cherry" src="!g/misc/depression-cherry-booklet/1.jpg" class="box misc 2022" alt="depression cherry custom album booklet.">
+  <div id="depression-cherry-caption" class="captions">
+   <p>one day i was bored out of my ass so i make <i>depression cherry</i> a custom made booklet so i could read along the lyrics as the CD plays :) this album includes a booklet but it only has pictures of roses, no lyrics.</p>
+   <p>obviously inspired by the original booklet, and the whole red and rose theming this thing has going on. none of the pictures i used in the making of this are mine and i basically got them from google... all i did was put it all together.</p>
+   <p>you can download the .docx file and print it yourself <a title="dropbox link" href="https://www.dropbox.com/scl/fo/oihls0fyekyp0t1aj2q8g/h?rlkey=3w3xemsxkkndkflxn1bt1wl59&dl=0:" target="_blank" class="outlink">here!</a></p>
+   <p>things used: <a href="https://youtu.be/qEODnWRyfcU" target="_blank" class="outlink">this youtube video</a> on how to make an album booklet, <a href="https://www.photopea.com/" target="_blank">photopea</a>, and ms word for printing and formatting.</p>
+   <img loading="lazy" src="!g/misc/depression-cherry-booklet/2.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
+   <img loading="lazy" src="!g/misc/depression-cherry-booklet/3.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
+   <img loading="lazy" src="!g/misc/depression-cherry-booklet/4.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
+   <img loading="lazy" src="!g/misc/depression-cherry-booklet/5.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
+   <img loading="lazy" src="!g/misc/depression-cherry-booklet/6.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
+  </div>
+  <img loading="lazy" src="!g/drawings/pan4.jpg" alt="pandora doing the jerma pose" class="box doodle digital">
+  <img loading="lazy" src="!g/drawings/mugung 1.jpg" alt="doodle based of a pic by photographer mugung" class="box doodle digital">
+  <img loading="lazy" src="!g/drawings/yeah.jpg" alt="digital painting of a photo by mugung on instagram" class="box doodle digital">
+  <img loading="lazy" src="!g/drawings/minecraft.png" alt="" class="box doodle digital 2022">
+  <img loading="lazy" src="!g/drawings/oneandonly.jpg" alt="journal spread based on one & only by gowon" class="box journal trad full">
+  <img loading="lazy" src="!g/drawings/junho.jpg" alt="i love drawing drippin's junho" class="box doodle trad">
+  <img loading="lazy" src="!g/drawings/iffound.jpg" alt="from visual novel if found..." class="box trad full 2020">
+  <img loading="lazy" src="!g/drawings/pandora2.jpg" alt="pandora from guitar hero doodle" class="box">
+  <img loading="lazy" src="!g/drawings/pandora.jpg" alt="a pandora from guitar hero done with watercolors." class="box trad watercolor full">
+  <img loading="lazy" src="!g/drawings/panocto2.jpg" alt="pandora as an octoling" class="box digital full">
+  <img loading="lazy" class="box full 2022 digital" src="!g/drawings/hyperlightdrifter6thanni.jpg" alt="hyper light drifter anniversary art">
+  <img loading="lazy" class="box journal 2020" src="!g/collage/yukika.jpg" alt="yukika collage made for a fancall that i had with her.">
+  <img loading="lazy" class="box doodle digital 2022" src="!g/drawings/pahwah.jpg" alt="doodles of power and meowy from chainsaw man. i love them.">
+  <img loading="lazy" class="box doodle digital 2024" src="!g/drawings/241016-cassiopeia.png" alt="a cassiopeia colored on CSP.">
+  <img loading="lazy" id="casio" class="box doodle 2024" src="!g/drawings/240520-casio.jpg" alt="doodle of cassiopeia">
+  <img loading="lazy" class="box watercolor 2022 full" src="!g/drawings/sepiarecord.jpg" alt="watercolor painting inspired by sepia record">
+  <img loading="lazy" class="box journal 2020" src="!g/collage/loona.jpg" alt="journal page dedicated to loona">
+ </main>
 
-			<button onclick="showWin('oyasumi')" class="container"><img src="thumb/oyasumi.png"></button>
-			<div id="oyasumi" class="window">
-				<img src="!g/drawings/oyasumi.jpg" width="100%">
-				<p>based off siinamota's oyasumi</p>
-				<p>YOUTUBE HERE</p>
-			</div>
+ <div id="pop-up">
+  <button title="close pop-up!" onclick="closePopUp()">x</button>
+  <img id="pic" loading="lazy" src="" alt="">
+  <div id="popCap"></div>
+ </div>
 
-			<button onclick="showWin('mugung')" class="container"><img src="thumb/mugung-1.png"></button>
-			<div id="mugung" class="window">
-				<img src="!g/drawings/mugung%201.jpg" width="100%">
-				<p>based off a pic from photographer mugung.</p>
-			</div>
-
-			<button onclick="showWin('hurricane')" class="container"><img src="thumb/hurricane.png"></button>
-			<div id="hurricane" class="window">
-				<img src="!g/drawings/hurricane.jpg" width="100%">
-				<p>finished sometime around october 2017</p>
-				<p>did this over the course of two weeks after Puerto Rico got hit with the cat5 hurricane maria during september 2017. this was the result of being without electricity for about 2 weeks. as you can imagine i didn't have much to do everyday so i doodled on this page til there was no space left. or eventually got tired of working on it. actually i think the pens i was using ran out of ink too.</p>
-				<p>honestly i have so much to talk about with this horrible experience but that's for another day.</p>
-			</div>
-
-			<button onclick="showWin('iffound')" class="container"><img src="thumb/iffound.png"></button>
-			<div id="iffound" class="window">
-				<img src="!g/drawings/iffound.jpg" width="100%">
-				<p>done sometime around 2021 for my art journal</p>
-			</div>
-
-			<button onclick="showWin('onenonly')" class="container"><img src="thumb/oneandonly.png"></button>
-			<div id="onenonly" class="window">
-				<img src="!g/drawings/oneandonly.jpg" width="100%">
-				<p>going through a breakup during march 2020 and this music video healed me. i had a few plans for this projects but it basically came out how i wanted :) this one is one of my favorite pieces.</p>
-			</div>
-
-			<button onclick="showWin('sepiarecord')" class="container"><img src="thumb/sepiarecord.png"></button>
-			<div id="sepiarecord" class="window">
-				<img src="!g/drawings/sepiarecord.jpg" width="100%">
-				<p>??.feb.22 - had a lot of fun with this one using my watercolor brushes. thank you siinamota for my life.</p>
-			</div>
-
-			<button onclick="showWin('hld')" class="container"><img src="thumb/drifter.png"></button>
-			<div id="hld" class="window">
-				<img src="!g/drawings/hyperlightdrifter6thanni.jpg" width="100%">
-				<p>for the 6th anniversary of <i>hyper light drifter</i>! one of my fav video games.</p>
-			</div>
-
-			<button onclick="showWin('skrun')" class="container"><img src="thumb/skrunklis.png"></button>
-			<div id="skrun" class="window">
-				<img src="!g/drawings/inscryption%20doodles.jpg" width="100%">
-				<p>skrunklies from inscryption</p>
-			</div>
-
-			<button onclick="showWin('casio-2')" class="container"><img src="thumb/casio-2.png"></button>
-			<div id="casio-2" class="window">
-				<img src="!g/drawings/kasio.jpg" width="100%">
-				<p>another casio...... this one was fun.</p>
-			</div>
-
-			<button onclick="showWin('san')" class="container"><img src="thumb/san.png"></button>
-			<div id="san" class="window">
-				<img src="!g/drawings/sannn.jpg" width="100%">
-				<p>a drawing of ateez' san. i love this album photoshoot.</p>
-			</div>
-
-			<button onclick="showWin('tlp')" class="container"><img src="thumb/thelittleprince.png"></button>
-			<div id="tlp" class="window">
-				<img src="!g/drawings/thelittleprince.jpg" width="100%">
-				<p>the little prince and the fox. my meow meows.</p>
-			</div>
-
-			<button onclick="showWin('tlp-2')" class="container"><img src="thumb/tlpjr.png"></button>
-			<div id="tlp-2" class="window">
-				<img src="!g/drawings/tlp-2.jpg" width="100%">
-				<p>an oldie. guys i love the little prince.</p>
-			</div>
-		</div>
-
-
-		<!--
-		<div id="collage">
-			<h2>collages</h2>
-		</div>
--->
-
-		<div id="misc">
-			<h2>misc</h2>
-			<button onclick="showWin('cherrybooklet')" class="container"><img src="thumb/depression-cherry.png"></button>
-			<div id="cherrybooklet" class="window">
-				<img src="!g/misc/depression-cherry-booklet/1.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
-				<p>one day i was bored out of my ass so i make <i>depression cherry</i> a custom made booklet so i could read along the lyrics as the CD plays :) this album has a booklet but it only has pictures.</p>
-				<p>obviously inspired by the original booklet, and the whole red and rose theming this thing has going on. none of the pictures i used in the making of this are mine and i basically got them from google... all i did was put it all together.</p>
-				<p>you can download the .docx file and print it yourself <a title="dropbox link" href="https://www.dropbox.com/scl/fo/oihls0fyekyp0t1aj2q8g/h?rlkey=3w3xemsxkkndkflxn1bt1wl59&dl=0:" target="_blank" class="outlink">here!</a></p>
-				<p>things used: <a href="https://youtu.be/qEODnWRyfcU" target="_blank" class="outlink">this youtube video</a> on how to make an album booklet, <a href="https://www.photopea.com/" target="_blank">photopea</a>, and ms word for printing and formatting.</p>
-				<img src="!g/misc/depression-cherry-booklet/2.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
-				<img src="!g/misc/depression-cherry-booklet/3.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
-				<img src="!g/misc/depression-cherry-booklet/4.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
-				<img src="!g/misc/depression-cherry-booklet/5.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
-				<img src="!g/misc/depression-cherry-booklet/6.jpg" alt="custom made booklet of beach house' depression cherry" width="100%">
-			</div>
-
-		</div>
-		<footer>
-			<b>last updated on 18.oct.24</b>
-			<br>
-			<b>credit:</b> <a href="/notebook/links/fonts.html">fonts</a> used: gaegu, bangalore, pencil case pixel from <a href="http://whimsical.heartette.net/" target="_blank">whimsical</a>
-			<br>
-			<a href="#">top</a> - <a href="/">home</a> - <a href="/sitemap">map</a>
-		</footer>
-	</main>
-
-	<div id="home"><a href="/"><img title="go back home" src="/!g/deco/pencilbag2b.gif" alt="go back home"></a></div>
-
-	<div id="pagedoll"><a href="#" title="go to the top!"><img src="/!g/deco/stationaty-1.gif"></a></div>
-	<script src="script.js"></script>
+ <script src="script.js"></script>
 </body>
 
 </html>
