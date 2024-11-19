@@ -66,44 +66,6 @@
 
   <div id="mv" class="box"><noscript>this box is for music video "ads" but do not fear! it's just screenshots of my favorite music videos :)</noscript></div>
 
-  <div id="music-player" class="box">
-   <div id="musicplayer">
-    <div class="now-playing"></div>
-
-    <div class="track-info">
-     <div class="track-name"></div>
-     <div class="track-artist"></div>
-    </div>
-
-    <div class="controls">
-     <div class="seeking">
-      <div class="current-time">00:00</div>
-
-      <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
-
-      <div class="total-duration">0:00</div>
-     </div>
-
-     <div class="buttons">
-      <div class="prev-track" onclick="prevTrack()"><i class="fas fa-solid fa-backward"></i></div>
-
-      <div class="playpause-track" onclick="playpauseTrack()"><i class="fas fa-solid fa-play"></i></div>
-
-      <div class="next-track" onclick="nextTrack()"><i class="fas fa-solid fa-forward"></i></div>
-     </div>
-
-     <div class="volume">
-      <i class="fas fa-volume-up"></i>
-      <input type="range" min="1" max="100" value="25" class="volume_slider" onchange="setVolume()">
-     </div>
-    </div>
-
-    <audio id="music" src=""></audio>
-   </div>
-   <!-- music player end div -->
-   <!-- do a playlist here with links to the songs -->
-  </div>
-
   <div id="updates" class="box">
    <h3>updates</h3>
    <p><b>01.nov.24</b> - revived my <a href="playlists.html" target="iframe_a">playlists</a> mini page</p>
@@ -169,12 +131,10 @@
   <footer id="foot" class="box">
    <img src="/collection/internet-graphics/!g/matry.gif" alt="matryoshka gumi" style="margin:15px 5px" align="left">
    <img src="/collection/internet-graphics/!g/orka.gif" alt="matryoshka miku" style="margin:15px 5px" align="right">
-   last updated on 21.sep.24
+   last updated on 19.nov.24
    <br>
    <b>credit:</b>
    bg is a scan from <a title="archive.org img link" href="https://archive.org/details/yume-no-manimani-scans/13-page.png" target="_blank">siinamota's yume no manimani</a> album booklet, art by <a title="meisa's website" href="http://hathune39.web.fc2.com/" target="_blank">meisa</a>
-   <span class="emoji1"></span>
-   music player code by <a href="https://adilene.net/" target="_blank">adilene.net</a>
 
    <br>
 
@@ -182,7 +142,6 @@
   </footer>
   <!-- wrapper end div -->
  </div>
- <script src="music-player.js"></script>
  <script src="random-mv.js"></script>
 </body>
 

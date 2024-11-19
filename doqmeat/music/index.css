@@ -5,9 +5,9 @@
   grid-template-areas:
     "header header header"
     "nav frame log"
-    "nav frame player"
+    "nav frame updates"
     "mv mv mv"
-    "updates featured featured"
+    "featured featured featured"
     "graphics poll widgets"
     "foot foot foot";
   grid-template-columns: 20% 50% 30%;
@@ -93,7 +93,6 @@
 
 #updates {
   grid-area: updates;
-  width: 151%;
   padding: 10px;
   background: white;
 }
@@ -153,7 +152,6 @@
 
 #featured {
   grid-area: featured;
-  margin-left: 100px;
   background: var(--l-brown);
   color: var(--l-yellow);
   padding: 5px;
@@ -195,6 +193,7 @@
 .song,
 .lp {
   display: inline-block;
+  padding: 0px 40px;
   width: 49%;
   vertical-align: top;
 }
