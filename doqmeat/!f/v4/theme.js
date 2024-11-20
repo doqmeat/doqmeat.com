@@ -2,7 +2,7 @@ function pickTheme(value) {
   var sheet = document.getElementsByClassName("theme")[0];
   if (value == null) {
     if (localStorage.getItem("theme") == null) {
-      value = "sunset";
+      value = "icy";
     } else {
       value = localStorage.getItem("theme");
     }
