@@ -1,0 +1,248 @@
+/* https://coolors.co/c0edbf-495d40-c5e8f0-61556c-fccbe0  */
+
+/* working on this theme since 17.nov.24 */
+
+:root {
+  --green: rgb(226, 247, 226);
+  --blue: hsla(191, 59%, 86%, 1);
+  --pink: rgb(238, 190, 211);
+  --d1: #61556c;
+}
+
+::selection {
+  background: var(--d1);
+  color: var(--green);
+}
+
+html {
+  scrollbar-color: var(--blue) var(--pink);
+}
+
+body {
+  font-family: simple, var(--fonts);
+  font-size: 26px;
+  background-image: url(bg.png);
+  background-repeat: no-repeat, repeat;
+  background-blend-mode: lighten;
+  background-size: cover, auto;
+  background-position: bottom;
+  background-attachment: fixed;
+}
+
+.box {
+  line-height: 19px;
+  background-color: rgba(226, 245, 247, 0.688);
+  border: 5px double rgb(196, 227, 196);
+  color: var(--d1);
+}
+
+a {
+  font-weight: normal;
+  color: rgb(76, 76, 100);
+  text-shadow: 1px 1px 5px var(--pink), -1px -1px 5px var(--pink);
+  transition-duration: 0.3s;
+}
+
+a:hover {
+  color: white;
+}
+
+b {
+  color: rgb(215, 166, 187);
+  text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+}
+
+h2,
+h3 {
+  color: black;
+  letter-spacing: 2px;
+  font-family: kakomiA, var(--fonts);
+  text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+}
+
+h4 {
+  font-family: inherit;
+  font-size: 24px;
+}
+
+nav h3 {
+  font-size: 25px;
+  line-height: 30px;
+}
+
+nav a {
+  text-shadow: 1px 1px 5px white, -1px -1px 5px white;
+}
+
+nav a:hover {
+  text-shadow: 1px 1px 5px #61556c, -1px -1px 5px #61556c;
+}
+
+select {
+  background: var(--green);
+  color: var(--d1);
+  border-radius: 5px;
+}
+
+#header {
+  font-family: bm-neko, var(--fonts);
+  letter-spacing: 3px;
+  color: var(--d1);
+  text-shadow: var(--pink) 2px 0px 0px, var(--pink) 1.75517px 0.958851px 0px,
+    var(--pink) 1.0806px 1.68294px 0px, var(--pink) 0.141474px 1.99499px 0px,
+    var(--green) -0.832294px 1.81859px 0px,
+    var(--green) -1.60229px 1.19694px 0px, var(--green) -1.97999px 0.28224px 0px,
+    var(--green) -1.87291px -0.701566px 0px,
+    var(--green) -1.30729px -1.51361px 0px,
+    var(--green) -0.421592px -1.95506px 0px,
+    var(--green) 0.567324px -1.91785px 0px,
+    var(--green) 1.41734px -1.41108px 0px,
+    var(--green) 1.92034px -0.558831px 0px;
+}
+
+hr {
+  border-style: dashed;
+  border-color: var(--yellow);
+}
+
+/* comm box */
+
+#comm button {
+  background: var(--pink);
+  color: white;
+  border-radius: 4px;
+  border: 1px dashed var(--blue);
+}
+
+#comm button.active {
+  background: var(--green);
+  color: var(--d1);
+  outline-width: thin;
+  outline-color: var(--blue);
+  outline-style: dashed;
+}
+
+/*currently*/
+
+#current .hl {
+  letter-spacing: 2px;
+  display: block;
+  margin: 10px 1px;
+  line-height: 5px;
+  background: var(--green);
+  color: var(--d1);
+  text-shadow: 1px 1px 5px var(--pink), -1px -1px 5px var(--pink);
+}
+
+#current .date {
+  border-top: 3px dotted var(--pink);
+}
+
+/*images*/
+
+.rss {
+  content: url(rss.png);
+}
+
+h3.personal::before {
+  content: url(personal.png);
+}
+
+h3.media::before {
+  content: url(media.png);
+}
+
+h3.misc::before {
+  content: url(misc.png);
+}
+
+h3.site::before {
+  content: url(sitely.png);
+}
+
+h3.offsite::before {
+  content: url(offsite.png);
+}
+
+.mc-cat {
+  content: url(cat.png);
+}
+
+/*rss updates*/
+
+#updates h2 small a {
+  font-family: simple;
+  text-decoration: none;
+  text-shadow: none;
+}
+
+#updates h4 a {
+  font-weight: bold;
+  text-shadow: 1px 1px 1px white;
+}
+
+#updates h4 a:hover {
+  color: var(--d1);
+  letter-spacing: 0px;
+  text-shadow: 1px 1px 2px var(--green), -1px -1px 2px var(--green);
+}
+
+#updates h4:nth-of-type(1) a {
+  font-weight: bold;
+  background: var(--pink);
+  line-height: 7px;
+  display: block;
+  text-shadow: 1px 1px 2px var(--green), -1px -1px 2px var(--green);
+}
+
+p.feed-item-desc {
+  margin: 15px 5px 20px 20px;
+}
+
+p.feed-item-desc:nth-of-type(1) {
+  font-weight: bold;
+}
+
+#updates h4 a {
+  font-family: simple;
+  font-size: 23px;
+  text-decoration: none;
+}
+
+/*status cafe*/
+
+#statuscafe {
+  border-radius: 10px;
+}
+
+#statuscafe a {
+  text-decoration: none;
+}
+
+#statuscafe-username {
+  font-size: 23px;
+  background: var(--green);
+  border-bottom: 0px;
+}
+
+#statuscafe-content {
+  font-size: 25px;
+  background: var(--d1);
+  color: white;
+}
+
+/*tooltip*/
+
+#s-m-t-tooltip {
+  color: var(--green);
+  line-height: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--pink);
+  background: var(--d1);
+}
+
+/*imood*/
+
+.imood {
+  border-radius: 4px;
+}
