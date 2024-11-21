@@ -13,6 +13,18 @@ body {
   font-family: var(--fonts);
 }
 
+button {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+select,
+option {
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: gaegu-b, var(--fonts);
+}
+
 .box {
   border-radius: 10px;
   padding: 10px;
@@ -50,7 +62,6 @@ details summary {
 
 select {
   float: left;
-  font-family: ms pgothic, var(--fonts);
   border: none;
 }
 
@@ -152,7 +163,6 @@ nav a {
 }
 
 #comm button {
-  font-family: ms pgothic, arial;
   font-size: 15px;
   border: none;
   background: transparent;

@@ -52,10 +52,19 @@ b {
   text-shadow: 1px 1px 5px white, -1px -1px 5px white;
 }
 
+i {
+  color: var(--green);
+  text-shadow: 1px 1px 5px #61556c, -1px -1px 5px #61556c;
+}
+
+button {
+  font-family: ;
+}
+
 h2,
 h3 {
-  color: black;
-  letter-spacing: 2px;
+  color: rgb(130, 124, 124);
+  letter-spacing: 3px;
   font-family: kakomiA, var(--fonts);
   text-shadow: 1px 1px 5px white, -1px -1px 5px white;
 }
@@ -84,6 +93,11 @@ select {
   border-radius: 5px;
 }
 
+hr {
+  border-style: dashed;
+  border-color: var(--pink);
+}
+
 #header {
   font-family: bm-neko, var(--fonts);
   letter-spacing: 3px;
@@ -100,14 +114,12 @@ select {
     var(--green) 1.92034px -0.558831px 0px;
 }
 
-hr {
-  border-style: dashed;
-  border-color: var(--yellow);
-}
-
 /* comm box */
 
 #comm button {
+  font-family: nintendo-ds-bios;
+  font-size: 16px;
+  letter-spacing: 1px;
   background: var(--pink);
   color: white;
   border-radius: 4px;
@@ -125,9 +137,11 @@ hr {
 /*currently*/
 
 #current .hl {
+  font-family: bangalore;
+  font-size: 15px;
   letter-spacing: 2px;
   display: block;
-  margin: 10px 1px;
+  margin: 15px 1px;
   line-height: 5px;
   background: var(--green);
   color: var(--d1);
@@ -178,6 +192,7 @@ h3.offsite::before {
 
 #updates h4 a {
   font-weight: bold;
+  text-decoration: none;
   text-shadow: 1px 1px 1px white;
 }
 
@@ -193,6 +208,7 @@ h3.offsite::before {
   line-height: 7px;
   display: block;
   text-shadow: 1px 1px 2px var(--green), -1px -1px 2px var(--green);
+  text-decoration: wavy underline;
 }
 
 p.feed-item-desc {
@@ -206,7 +222,6 @@ p.feed-item-desc:nth-of-type(1) {
 #updates h4 a {
   font-family: simple;
   font-size: 23px;
-  text-decoration: none;
 }
 
 /*status cafe*/
