@@ -36,7 +36,12 @@ td {
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 30px;
+}
+
+p a {
+  border-radius: 5px;
+  padding: 1px 3px;
 }
 
 a {
