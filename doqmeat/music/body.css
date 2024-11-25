@@ -121,6 +121,16 @@ blockquote {
   font-style: italic;
 }
 
+figure {
+  text-align: center;
+}
+
+hr {
+  border-color: #4d3c3c;
+  border-style: double;
+  border-width: 3px;
+}
+
 .spoiler {
   padding: 0px 5px;
   color: var(--soft-brown);
