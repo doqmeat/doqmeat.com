@@ -146,11 +146,8 @@ a {
 }
 
 #back a {
-  text-decoration: underline;
-}
-
-#back a:hover {
   color: var(--bg);
+  text-decoration: underline;
 }
 
 @media only screen and (max-width: 1240px) {
