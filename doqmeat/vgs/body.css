@@ -4,21 +4,28 @@
 
 :root {
   --fonts: ms pgothic, gaegu-l, arial;
+  --bg: #f5c6da;
+  --ac1: #966cdf;
+  --ac2: #5893d4;
+  --ac3: #f273b0;
+  --dark: #4f2336;
 }
 
 html {
-  scrollbar-color: #b18bb1 #d5eeb1;
+  scrollbar-color: var(--dark) var(--ac2);
 }
 
 body {
-  background-image: url(/!g/bg/bggrid-transp.png);
-  background-color: rgb(196, 179, 217);
+  background-image: url(!g/bg.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom;
   word-wrap: break-word;
   font-size: 18px;
   line-height: 22px;
   word-spacing: 5px;
   font-family: var(--fonts);
-  color: black;
+  color: var(--dark);
   margin: 0px;
 }
 
@@ -41,21 +48,25 @@ h6 {
 }
 
 i {
-  background: #c7d9f8;
+  background: var(--ac1);
 }
 
 mark {
-  background: #d0ff8d;
+  background: var(--ac3);
+  color: var(--dark);
+  text-shadow: 1px 1px 1px var(--bg);
+  border-radius: 2px;
 }
 
 a {
-  color: #34636f;
+  color: var(--ac2);
   font-weight: bold;
   text-decoration: underline;
+  text-shadow: 1px 1px 2px white;
 }
 
 a:hover {
-  color: black;
+  color: var(--dark);
   text-decoration: dotted underline;
   cursor: help;
 }
@@ -83,13 +94,9 @@ p img {
   vertical-align: middle;
 }
 
-mark {
-  background: white;
-}
-
 ::selection {
-  color: black;
-  background-color: #d69987;
+  color: var(--ac1);
+  background-color: var(--dark);
 }
 
 summary {
@@ -100,7 +107,7 @@ summary {
 
 blockquote {
   margin: 1em 40px;
-  border-left: 2px dotted black;
+  border-left: 2px dotted var(--dark);
   padding-left: 5px;
 }
 
@@ -119,22 +126,23 @@ figure {
   margin: 30px 15px 7px 12px;
   padding: 5px;
   border-radius: 10px;
-  border: 1px dashed black;
-  color: black;
-  background: white;
+  border: 1px dashed var(--dark);
+  color: var(--dark);
+  background: var(--ac2);
+  text-shadow: 1px 1px 1px var(--bg);
 }
 
 /*content*/
 
 #iframepc,
 main {
-  background: #ffe3ff;
+  background: var(--bg);
   padding: 10px;
   max-width: 600px;
   margin: auto;
   margin-top: 30px;
   margin-bottom: 30px;
-  border: 2px dashed white;
+  border: 2px dashed var(--ac1);
   border-radius: 10px;
 }
 
@@ -166,8 +174,8 @@ main {
 }
 
 .spoiler {
-  background-color: black;
-  color: black;
+  background-color: var(--dark);
+  color: var(--dark);
 }
 
 .spoiler:hover {
@@ -192,15 +200,16 @@ footer {
   width: 100%;
   padding: 10px;
   text-align: center;
-  border: 2px dashed white;
+  border: 2px dashed var(--ac2);
   border-left: 0px;
   border-right: 0px;
-  background: #ffe3ff;
+  border-bottom: 0px;
+  background: var(--bg);
 }
 
 @media only screen and (max-width: 599px) {
   body {
-    background: #ffe3ff;
+    background: var(--bg);
   }
 
   #iframepc,

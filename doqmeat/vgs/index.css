@@ -1,9 +1,5 @@
 /* body css */
 body {
-  background-size: 10px;
-  font-size: 16px;
-  line-height: 20px;
-  font-family: yoster;
   margin: 0px;
 }
 
@@ -27,27 +23,25 @@ body {
 a {
   font-weight: normal;
   text-decoration: none;
-  color: black;
 }
 
-.filterDiv img {
+.thumb img {
   box-sizing: border-box;
   width: 100%;
   opacity: 0.7;
 }
 
-.filterDiv img:hover {
+.thumb img:hover {
   opacity: 1;
   cursor: cell;
 }
 
-.filterDiv img:focus {
+.thumb img:focus {
   opacity: 1;
   border: 1px dashed black;
-  border-radius: 10px;
 }
 
-.filterDiv {
+.thumb {
   background: white;
   position: relative;
   overflow: hidden;
@@ -59,9 +53,7 @@ a {
   transition-duration: 0.4s;
 }
 
-.filterDiv:hover,
-.filterDiv:focus,
-.filterDiv:active {
+.thumb:hover {
   border-radius: 10px;
 }
 
@@ -74,27 +66,29 @@ a {
   font-family: yoster;
   text-align: center;
   vertical-align: middle;
-  background: #cee8f3;
-  color: black;
+  background: var(--ac3);
+  color: var(--dark);
   margin: 4px -1px;
   padding: 2px 3px;
   cursor: help;
-  border: 3px outset #e1d1f0;
+  border: 3px outset var(--ac3);
 }
 
 .btn.g {
-  background: #fdd8f5;
+  background: var(--ac2);
+  border-color: var(--ac2);
 }
 
 .btn:hover {
-  background: #fdf8c3;
-  border: 3px inset #e1d1f0;
+  background: var(--bg);
+  border-color: var(--bg);
 }
 
 .btn.active {
-  background-color: #cbf6de;
-  color: black;
-  border: 3px inset #e1d1f0;
+  color: var(--bg);
+  background-color: var(--ac1);
+  border-color: var(--ac1);
+  border-style: inset;
 }
 
 #infowrapper {
@@ -106,11 +100,11 @@ a {
 }
 
 #info {
-  background: #ffe3ff;
+  background: var(--bg);
   height: 500px;
   width: 550px;
   border-radius: 20px;
-  border: 2px dashed white;
+  border: 1px dashed var(--ac3);
   overflow: hidden;
 }
 
@@ -135,35 +129,28 @@ a {
   left: 50%;
   top: 1%;
 }
-#home {
-  z-index: 1;
-}
-#home a {
-  position: fixed;
-  cursor: pointer;
-  left: -70px;
-  top: 5px;
-}
 
 #back {
   text-align: center;
   padding: 5px;
   font-size: 13px;
   border-radius: 20px;
-  border: 2px dashed white;
+  border: 1px dashed var(--ac1);
   position: relative;
-  background: #cee8f3;
+  color: var(--bg);
+  background: var(--dark);
   width: 300px;
   margin: auto;
   margin-top: 15px;
   margin-bottom: 20px;
 }
 
-#top {
-  z-index: 1;
-  position: fixed;
-  bottom: 10px;
-  right: -20px;
+#back a {
+  text-decoration: underline;
+}
+
+#back a:hover {
+  color: var(--bg);
 }
 
 @media only screen and (max-width: 1240px) {
@@ -183,12 +170,5 @@ a {
     margin-top: 10px;
     top: 0;
     left: 0;
-  }
-
-  #pagedoll2,
-  #pagedoll,
-  #top,
-  #home {
-    display: none;
   }
 }
