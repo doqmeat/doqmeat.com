@@ -70,6 +70,8 @@ article:last-child {
 .title {
   font-family: morningtea, var(--fonts);
   float: left;
+  color: #d16565;
+  text-shadow: 1px 1px 4px #ffffff;
   padding-top: 5px;
 }
 
