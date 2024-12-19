@@ -118,6 +118,10 @@ figure {
   font-size: 15px;
 }
 
+figure img {
+  max-width: 100%;
+}
+
 #s-m-t-tooltip {
   max-width: 200px;
   font-family: yoster;
@@ -192,6 +196,16 @@ main {
 }
 
 .cover {
+  float: right;
+  margin: 10px;
+}
+
+.left {
+  float: left;
+  margin: 10px;
+}
+
+.right {
   float: right;
   margin: 10px;
 }
