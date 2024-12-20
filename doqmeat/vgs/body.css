@@ -16,7 +16,7 @@ html {
 }
 
 body {
-  background-image: url(!g/bg.png);
+  background-image: url(!f/bg.png);
   background-size: cover;
   background-attachment: fixed;
   background-position: bottom;
