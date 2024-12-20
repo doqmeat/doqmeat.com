@@ -5,9 +5,9 @@
 :root {
   --fonts: ms pgothic, gaegu-l, arial;
   --bg: #f5c6da;
-  --ac1: #966cdf;
+  --ac1: #b9a0e4;
   --ac2: #5893d4;
-  --ac3: #f273b0;
+  --ac3: #e08bb4;
   --dark: #4f2336;
 }
 
@@ -48,11 +48,14 @@ h6 {
 }
 
 i {
+  padding: 0px 2px;
+  border-radius: 2px;
   background: var(--ac1);
 }
 
 mark {
   background: var(--ac3);
+  padding: 0px 2px;
   color: var(--dark);
   text-shadow: 1px 1px 1px var(--bg);
   border-radius: 2px;
