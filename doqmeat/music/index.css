@@ -426,6 +426,16 @@ input[type="range"]::-moz-range-thumb {
     margin-left: 0;
   }
 
+  #featured div {
+    display: block;
+    width: 100%;
+    padding: 3px 0px;
+  }
+
+  .lp {
+    border-top: 1px dashed var(--l-yellow);
+  }
+
   #poll {
     height: 300px;
   }

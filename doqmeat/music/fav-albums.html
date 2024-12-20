@@ -603,12 +603,14 @@ https://www.w3schools.com/howto/howto_js_filter_elements.asp
 		// modal window js
 
 		let closeDiv = document.getElementsByClassName("close");
+		let body = document.querySelector("body");
 		for (var i = 0; i < closeDiv.length; i++) {
 			var closeDivClick = closeDiv[i];
 			closeDivClick.onclick = function () {
 				var modals = document.getElementsByClassName("modal");
 				for (var i = 0; i < modals.length; i++) {
 					modals[i].style.display = "none";
+					body.style.overflow = "scroll";
 				}
 			}
 		}
@@ -616,6 +618,7 @@ https://www.w3schools.com/howto/howto_js_filter_elements.asp
 		function popup(album) {
 			var lps = document.getElementById(album);
 			lps.style.display = "block";
+			body.style.overflow = "hidden";
 		}
 
 		// tags buttons filter from here https://www.w3schools.com/howto/howto_js_filter_elements.asp
