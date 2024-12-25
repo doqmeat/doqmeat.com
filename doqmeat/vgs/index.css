@@ -169,3 +169,31 @@ a {
     left: 0;
   }
 }
+
+@media only screen and (max-width: 599px) {
+  #pagedoll,
+  #pagedoll2 {
+    display: none;
+  }
+
+  #info {
+    border: none;
+    width: 95%;
+  }
+
+  #infowrapper {
+    width: 100%;
+    padding: 10px;
+  }
+
+  #back {
+    font-size: inherit;
+    width: 95%;
+    margin: 20px 10px;
+  }
+
+  #wrapper {
+    text-align: center;
+    width: 90%;
+  }
+}
