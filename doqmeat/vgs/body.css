@@ -213,6 +213,10 @@ main {
   margin: 10px;
 }
 
+.max {
+  max-width: 100%;
+}
+
 footer {
   width: 100%;
   padding: 10px;
