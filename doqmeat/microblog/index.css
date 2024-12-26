@@ -161,6 +161,46 @@ main {
   padding: 0px 5px;
 }
 
+#address-bar button {
+  cursor: help;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  background: none;
+  border: none;
+  color: hsla(212, 46%, 52%, 1);
+}
+
+#home button {
+  width: 150px;
+  background-color: transparent;
+  border: 1px solid var(--pink);
+  padding: 10px;
+  cursor: pointer;
+}
+
+#home button:hover {
+  background-color: var(--pink);
+}
+
+.year {
+  display: block;
+  font-weight: bold;
+  letter-spacing: 2px;
+  padding: 5px 0px;
+}
+
+#home button img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+  filter: grayscale(50%);
+}
+
+#home button img:hover {
+  filter: grayscale(0%);
+}
+
 #address {
   font-weight: normal;
   font-size: 16px;

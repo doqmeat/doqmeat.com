@@ -28,187 +28,207 @@
 
 	<main>
 		<div id="bar"> _ □ X</div>
-		<div id="address-bar">← → ↻ <a href="/">⌂</a><span id="address">https://doqmeat.com/microblog</span></div>
+		<div id="address-bar">← → ↻ <button onclick="goHome()">⌂</button><span id="address">https://doqmeat.com/microblog</span></div>
 
 		<div id="blog">
+			<section id="home">
+				<p>choose the year you want to view!</p>
+				<!-- <button onclick="goToYear('y2025')">
+					<img src="" alt="2025 button thumbnail"> 2025</button> -->
+				<button onclick="goToYear('y2024')">
+					<span class="year">2024</span>
+					<img src="!g/241117-steve.jpeg" alt="2024 button thumbnail">
+					<br>
+					<span id="logs2024">total logs: </span></button>
+			</section>
+			<section id="y2025">
+				<article>hi this is the 2025 section. you're a bit early to the party...</article>
+			</section>
+			<section id="y2024">
+				<article id="2412259pm">
+					<p><b>25.dec.24 - 9pm</b> it did not work... sigh... will be returning the wired controller soon. i'm gonna have to save up a bit before i can send it <a href="https://www.ebay.com/itm/152743633313" target="_blank" class="outlink">away</a>...</p>
+				</article>
+				<article id="24122512am">
+					<p><b>25.dec.24 - 12am</b> the wired PS4 controller i bought through ebay arrived today so i will find out if i have a chance to use my PS4 without spending more than $100+ to fix it TODAY!</p>
+				</article>
 
-			<article id="241221">
-				<p><b>21.dec.24 - 8pm</b> i find it kinda sad that haven't been able to really do much with my <a href="/music/listening-log/index.html">listening log</a> this year. i overall don't really mind that anything that i do on this website requires a lot of time to format since this this all raw HTML. but there was something i wish i could change that with, it would probably be with my listening log. i wish it was easier to log stuff in there now that i am pretty busy with my life. i don't know if i should let go of the high standars that i hold my listening log to (write extensive paragraphs as to why i liked something) or just go with a more casual mindset of just highlights and a sentence or 2 of what i liked. but idk. honestly i just wish i had a bit more of time for music in general. i miss listening to lots of new stuff on a monthly basis. maybe that should be a goal of mine for next year. get in the groove of listening to more new music. i'll probably change the listening log to be a yearly page instead of doing it by seasons</p>
-			</article>
+				<article id="241221">
+					<p><b>21.dec.24 - 8pm</b> i find it kinda sad that haven't been able to really do much with my <a href="/music/listening-log/index.html">listening log</a> this year. i overall don't really mind that anything that i do on this website requires a lot of time to format since this this all raw HTML. but there was something i wish i could change that with, it would probably be with my listening log. i wish it was easier to log stuff in there now that i am pretty busy with my life. i don't know if i should let go of the high standars that i hold my listening log to (write extensive paragraphs as to why i liked something) or just go with a more casual mindset of just highlights and a sentence or 2 of what i liked. but idk. honestly i just wish i had a bit more of time for music in general. i miss listening to lots of new stuff on a monthly basis. maybe that should be a goal of mine for next year. get in the groove of listening to more new music. i'll probably change the listening log to be a yearly page instead of doing it by seasons</p>
+				</article>
 
-			<article id="241211-5pm">
-				<p><b>11.dec.24 - 5pm</b> today was my last day of classes for this semester! the time passed by pretty quickly this time. i've been trying to revive my PS4 these days. will probably write a log about that soon. jesus christ.</p>
-			</article>
+				<article id="241211-5pm">
+					<p><b>11.dec.24 - 5pm</b> today was my last day of classes for this semester! the time passed by pretty quickly this time. i've been trying to revive my PS4 these days. will probably write a log about that soon. jesus christ.</p>
+				</article>
 
-			<article>
-				<p><b>04.dec.24 - 2am</b> i've been feeling so drained lately. i wonder if it's the mental illness<sup>tm</sup>. talking with new people and just overall interacting with others has felt more exhausting than ever before as of late. i wish i could interact with people as easily as others can. i've been feeling so strange lately. i really wonder why its so difficult for me to do such a simple thing.</p>
-			</article>
+				<article>
+					<p><b>04.dec.24 - 2am</b> i've been feeling so drained lately. i wonder if it's the mental illness<sup>tm</sup>. talking with new people and just overall interacting with others has felt more exhausting than ever before as of late. i wish i could interact with people as easily as others can. i've been feeling so strange lately. i really wonder why its so difficult for me to do such a simple thing.</p>
+				</article>
 
-			<article>
-				<p><b>28.nov.24 - 2am</b> one day i will learn about how to add pagination to things. but that day is not today. if i ever learn it though, i will be implementing it to this very page.</p>
-			</article>
+				<article>
+					<p><b>28.nov.24 - 2am</b> one day i will learn about how to add pagination to things. but that day is not today. if i ever learn it though, i will be implementing it to this very page.</p>
+				</article>
 
-			<article>
-				<p><b>24.nov.24 - 12am</b> i'm so excited for <b>billlie</b>'s concert!!!! i'm gonna be bringing my 3DS so i won't be bored while waiting for the doors to open + i wanna record a bit of the concert with it. <img src="/!g/pix/catdance1.gif" alt=""></p>
-			</article>
+				<article>
+					<p><b>24.nov.24 - 12am</b> i'm so excited for <b>billlie</b>'s concert!!!! i'm gonna be bringing my 3DS so i won't be bored while waiting for the doors to open + i wanna record a bit of the concert with it. <img src="/!g/pix/catdance1.gif" alt=""></p>
+				</article>
 
-			<article>
-				<p><b>17.nov.24</b> i've been so busy lately but i can't wait to talk about my new kitten, <b>steve minecraft</b>, in a future journal log !! now i have 2 sons. <button onclick="showPic('!g/241117-steve.jpeg','a black cat in a ball','black cats LOVE me... also hes so cuteful')">steve.jpg</button></p>
-			</article>
+				<article>
+					<p><b>17.nov.24</b> i've been so busy lately but i can't wait to talk about my new kitten, <b>steve minecraft</b>, in a future journal log !! now i have 2 sons. <button onclick="showPic('!g/241117-steve.jpeg','a black cat in a ball','black cats LOVE me... also hes so cuteful')">steve.jpg</button></p>
+				</article>
 
-			<article>
-				<p><b>06.nov.24 - 1am</b> <u>good news</u>: i replaced my laptop's fans and now they are working perfectly <img src="/!g/pix/heart4.png" alt=""> <u>bad news</u>: the US and PR elections. double whammy. i am coping with <b>webfishing</b>.</p>
-			</article>
+				<article>
+					<p><b>06.nov.24 - 1am</b> <u>good news</u>: i replaced my laptop's fans and now they are working perfectly <img src="/!g/pix/heart4.png" alt=""> <u>bad news</u>: the US and PR elections. double whammy. i am coping with <b>webfishing</b>.</p>
+				</article>
 
-			<article>
-				<p><b>01.nov.24 - 12am</b> scary github... <button onclick="showPic('!g/241101-github.png','screenshot of those github squares','yes i update my site a lot we know')">github.png</button></p>
-			</article>
+				<article>
+					<p><b>01.nov.24 - 12am</b> scary github... <button onclick="showPic('!g/241101-github.png','screenshot of those github squares','yes i update my site a lot we know')">github.png</button></p>
+				</article>
 
-			<article id="241030-5pm">
-				<p><b>30.oct.24 - 5pm</b> there was a comic book fair at my uni and lots of artists had tables so i kind of did a bit of a haul! links to artists: <a href=="https://skullcrabs.com/" target="_blank">skullcrabs</a>, <a href="https://pyoint.carrd.co/" target="_blank">pyoint</a>, <a href="https://camillereck.com" target="_blank">camille reck</a> <small>i'm missing two artists but i forgot to get their socials SORRY...</small> <br><button onclick="showPic('!g/241030-angel.jpg','keychain of angel from csm','ANGEL MEOW MEOW.... hes one of my fav characters of chainsaw man. artist: skullcrabs')">angel.jpg</button> <button onclick="showPic('!g/241030-power.jpg','enamel pin of power','ANOTHER MEOW MEOW from chainsaw man... ')">power.jpg</button> <button onclick="showPic('!g/241030-totebag.jpg','orange kitty totebag','i fell so in love with this tote bag oh my goddddd i love the colors so much. artist: pyoint')">totebag.jpg</button> <button onclick="showPic('!g/241030-puter.jpg','keychain of a computer','puter...')">puter.jpg</button> <button onclick="showPic('!g/241030-earrings.jpg','handmade cat earrings','i love silly earrings a lot so i had to get these! artist: camille reck')">earrings.jpg</button></p>
+				<article id="241030-5pm">
+					<p><b>30.oct.24 - 5pm</b> there was a comic book fair at my uni and lots of artists had tables so i kind of did a bit of a haul! links to artists: <a href=="https://skullcrabs.com/" target="_blank">skullcrabs</a>, <a href="https://pyoint.carrd.co/" target="_blank">pyoint</a>, <a href="https://camillereck.com" target="_blank">camille reck</a> <small>i'm missing two artists but i forgot to get their socials SORRY...</small> <br><button onclick="showPic('!g/241030-angel.jpg','keychain of angel from csm','ANGEL MEOW MEOW.... hes one of my fav characters of chainsaw man. artist: skullcrabs')">angel.jpg</button> <button onclick="showPic('!g/241030-power.jpg','enamel pin of power','ANOTHER MEOW MEOW from chainsaw man... ')">power.jpg</button> <button onclick="showPic('!g/241030-totebag.jpg','orange kitty totebag','i fell so in love with this tote bag oh my goddddd i love the colors so much. artist: pyoint')">totebag.jpg</button> <button onclick="showPic('!g/241030-puter.jpg','keychain of a computer','puter...')">puter.jpg</button> <button onclick="showPic('!g/241030-earrings.jpg','handmade cat earrings','i love silly earrings a lot so i had to get these! artist: camille reck')">earrings.jpg</button></p>
 
-			</article>
+				</article>
 
-			<article>
-				<p id="241030"><b>30.oct.24 - 12am</b> woke up today to a laggy af laptop and when i restart it i get an error that my FANS are not working properly...... <img src="/!g/pix/emote1scared.gif" alt=""> opened my laptop up, 1 out of the 2 fans was so so so dusty... i cleaned it up, plug it out and in but it doesn't spin while the other one does. ordered some replacement fans which i hope will fix the fans issue. and i also found out that my laptop was being super slow because the CPU was capping itself at 0.20 ghz... i'm guessing it somehow knows theres an issue with the fans and it's capping itself on purpose so it doesn't get cooked. the weird thing is that my laptop has been WAYYY hotter before and the CPU has never capped itself. but i guess this is a bit different? this laptop was pretty expensive ($1k, for my standards) and its about to be 3 years old next march so i feel like if it kicks the bucket this early, i might actually sob <img src="/!g/pix/emote1crying.gif" alt=""> i have an external mini fan blowing cool air to the back of the laptop and the CPU hasn't capped itself yet. so at least i know <b>it is</b> related to the fans.</p>
-			</article>
-			<article>
-				<p><b>27.oct.24 - 10pm</b> okay i drew for a little bit but the entire time i kept feeling like it was a waste of my time... sign... maybe i gotta try other methods of drawing</p>
-			</article>
-			<article>
-				<p><b>27.oct.24 - 1pm</b> i need to keep drawing</p>
-			</article>
-			<article>
-				<p><b>25.oct.24 - 10pm</b> recently bought some wireless headphones so i could upgrade from the $8 earbuds that i use on a daily basis and i am so obsessed with them!!! i got a <i>JBL tune 720bt</i> and i honestly recommend them if you want some quality and comfy bluetooth headphones. the color is my absolute favorite and i also adore that it comes with an aux cord so you can still use it with things that don't have bluetooth. <button onclick="showPic('!g/241025-box.png','box of the headphones', 'also the battery on these are crazy good...')">box.png</button> <button onclick="showPic('!g/241025-aux.png', 'headphones and 3DS','headphones connected to the aux cord so i can listen to the HD sounds of my 3DS')">aux.png</button> <button onclick="showPic('!g/241025-on-me-head.png', 'my face with the headphones on', 'i think i look so cute with them on. i really like that they arent insanely big but are comfortable enough for my ears.')">on-me-head.png</button></p>
-			</article>
-			<article>
-				<p><b>18.oct.24 - 1pm</b> it makes me feel like a genius whenever i use whatever i've learned for python in my compsci class and apply it to my site's javascript.</p>
-			</article>
-			<article>
-				<p><b>09.oct.24 - 11am</b> still waiting for <i>look back</i> to get screenings in my theater... but other than that, i've been doing just fine! not much happening atm. i've been working on my fashion page and i love how it's looking so far! here's a sneak peek <button onclick="showPic('!g/241009-fashion.jpg','fashion page preview', 'need to take pics of my fav items and accesories')">fashion.jpg</button></p>
-			</article>
-			<article id="240914">
-				<p><b>14.sep.24 - 1am</b> if <i>look back</i> won't be screening in my country, i think i will kill myself.</p>
-			</article>
-			<article id="240910">
-				<p><b>10.sep.24 - 7pm</b> i have a tiny plot in front of my apartment and today i bought some plants for it! <button onclick="showPic('!g/240910-garden.png','a little garden', 'i forgot the names of the plants... lmk if YOU know!')">240910-garden.png</button></p>
-			</article>
-			<article id="240908">
-				<p><b>08.sep.24 - 12am</b> me and my mom always find a way to talk about my grandma. we joke about the things she would say to us if she was still here. we really miss her. i really miss her.</p>
-			</article>
-			<article>
-				<p><b>06.sep.24 - 2pm</b> i'm so excited to play <a href="/vgs/cato/index.html">cato</a> !!! <button onclick="showPic('!g/240906-cato.png','cato downloading on steam','ive already played 2 demos for this games and i loved them so much! im super hyped')">240906-cato.png</button></p>
-			</article>
+				<article>
+					<p id="241030"><b>30.oct.24 - 12am</b> woke up today to a laggy af laptop and when i restart it i get an error that my FANS are not working properly...... <img src="/!g/pix/emote1scared.gif" alt=""> opened my laptop up, 1 out of the 2 fans was so so so dusty... i cleaned it up, plug it out and in but it doesn't spin while the other one does. ordered some replacement fans which i hope will fix the fans issue. and i also found out that my laptop was being super slow because the CPU was capping itself at 0.20 ghz... i'm guessing it somehow knows theres an issue with the fans and it's capping itself on purpose so it doesn't get cooked. the weird thing is that my laptop has been WAYYY hotter before and the CPU has never capped itself. but i guess this is a bit different? this laptop was pretty expensive ($1k, for my standards) and its about to be 3 years old next march so i feel like if it kicks the bucket this early, i might actually sob <img src="/!g/pix/emote1crying.gif" alt=""> i have an external mini fan blowing cool air to the back of the laptop and the CPU hasn't capped itself yet. so at least i know <b>it is</b> related to the fans.</p>
+				</article>
+				<article>
+					<p><b>27.oct.24 - 10pm</b> okay i drew for a little bit but the entire time i kept feeling like it was a waste of my time... sign... maybe i gotta try other methods of drawing</p>
+				</article>
+				<article>
+					<p><b>27.oct.24 - 1pm</b> i need to keep drawing</p>
+				</article>
+				<article>
+					<p><b>25.oct.24 - 10pm</b> recently bought some wireless headphones so i could upgrade from the $8 earbuds that i use on a daily basis and i am so obsessed with them!!! i got a <i>JBL tune 720bt</i> and i honestly recommend them if you want some quality and comfy bluetooth headphones. the color is my absolute favorite and i also adore that it comes with an aux cord so you can still use it with things that don't have bluetooth. <button onclick="showPic('!g/241025-box.png','box of the headphones', 'also the battery on these are crazy good...')">box.png</button> <button onclick="showPic('!g/241025-aux.png', 'headphones and 3DS','headphones connected to the aux cord so i can listen to the HD sounds of my 3DS')">aux.png</button> <button onclick="showPic('!g/241025-on-me-head.png', 'my face with the headphones on', 'i think i look so cute with them on. i really like that they arent insanely big but are comfortable enough for my ears.')">on-me-head.png</button></p>
+				</article>
+				<article>
+					<p><b>18.oct.24 - 1pm</b> it makes me feel like a genius whenever i use whatever i've learned for python in my compsci class and apply it to my site's javascript.</p>
+				</article>
+				<article>
+					<p><b>09.oct.24 - 11am</b> still waiting for <i>look back</i> to get screenings in my theater... but other than that, i've been doing just fine! not much happening atm. i've been working on my fashion page and i love how it's looking so far! here's a sneak peek <button onclick="showPic('!g/241009-fashion.jpg','fashion page preview', 'need to take pics of my fav items and accesories')">fashion.jpg</button></p>
+				</article>
+				<article id="240914">
+					<p><b>14.sep.24 - 1am</b> if <i>look back</i> won't be screening in my country, i think i will kill myself.</p>
+				</article>
+				<article id="240910">
+					<p><b>10.sep.24 - 7pm</b> i have a tiny plot in front of my apartment and today i bought some plants for it! <button onclick="showPic('!g/240910-garden.png','a little garden', 'i forgot the names of the plants... lmk if YOU know!')">240910-garden.png</button></p>
+				</article>
+				<article id="240908">
+					<p><b>08.sep.24 - 12am</b> me and my mom always find a way to talk about my grandma. we joke about the things she would say to us if she was still here. we really miss her. i really miss her.</p>
+				</article>
+				<article>
+					<p><b>06.sep.24 - 2pm</b> i'm so excited to play <a href="/vgs/cato/index.html">cato</a> !!! <button onclick="showPic('!g/240906-cato.png','cato downloading on steam','ive already played 2 demos for this games and i loved them so much! im super hyped')">240906-cato.png</button></p>
+				</article>
 
-			<article id="240906">
-				<p><b>06.sep.24 - 12pm</b> thank you to my neighbor for giving me her wifi password <img src="/!g/pix/emote1lov.gif" alt=""> now doing web stuff won't be as annoying.</p>
-			</article>
-			<article id="240830">
-				<p><b>30.aug.24 - 3pm</b> - just added a new featured song n album to my <a href="/music">music</a> page! i really miss doing those in-depth <small>or at least somewhat</small> logs of new albums and EPs i'd listen to for my <a href="/music/listening-log/index.html">listening log</a> :( there's a lot of things i'm not able to spend that much time on because you know. i have a life now. but listening to new music and being able to extensively talk about it is something that i really miss from my days of unlimited free time. i also wish it didn't take me so long to write coherent paragraphs. i'm very insecure about my writing. <img src="/!g/pix/emote1emba.gif"></p>
-			</article>
+				<article id="240906">
+					<p><b>06.sep.24 - 12pm</b> thank you to my neighbor for giving me her wifi password <img src="/!g/pix/emote1lov.gif" alt=""> now doing web stuff won't be as annoying.</p>
+				</article>
+				<article id="240830">
+					<p><b>30.aug.24 - 3pm</b> - just added a new featured song n album to my <a href="/music">music</a> page! i really miss doing those in-depth <small>or at least somewhat</small> logs of new albums and EPs i'd listen to for my <a href="/music/listening-log/index.html">listening log</a> :( there's a lot of things i'm not able to spend that much time on because you know. i have a life now. but listening to new music and being able to extensively talk about it is something that i really miss from my days of unlimited free time. i also wish it didn't take me so long to write coherent paragraphs. i'm very insecure about my writing. <img src="/!g/pix/emote1emba.gif"></p>
+				</article>
 
-			<article id="240829">
-				<p><b>29.aug.24 - 12am</b> been learning a bit more and more about python as i go to my compsci class. very basic stuff though. learned how to use my terminal to do python too. not really sure how ppl would prefer (or how it is more convenient?) to code something on a terminal instead of an editor but idk! prof also showed us an online <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" class="outlink">compiler</a> we can use, though i think i will stick to my buddy brackets as an editor and use my git bash to display the output.</p>
-				<p>which btw, talking about my terminal... i was wondering if there was a way to customize a bit more in-depth how terminals look and it finds out that there actually <i>is</i> a way of doing it! i downloaded <a href="https://ohmyposh.dev/" target="_blank" class="outlink">oh my posh</a> and it works wonderfully on my git bash. i will admit it took me a good second to understand how to set it up but i think it was relatively easy. <button onclick="showPic('!g/240829-bash.jpg','screenshot of my git bash','theres a ton of cool themes but this neko one caught my attention because of the layout. i loved the thought of a little cat speaking to me. another cool thing is that you can also customize these themes however you want. so i added a little GUP! in there because lately i have been pretty obsessed with saying that out loud. in reference of that swimming cat of course.')">!g/240829-bash.jpg</button></p>
-			</article>
-			<article id="240825">
-				<p><b>25.aug.24 - 9pm</b> i've noticed my chatbox and overall site followers has had some sort of influx lately and i was like woah i wonder where all of these ppl are coming from, and then when i click on the <i>websites</i> tab on neocities i am the very 3rd site in there <small>(well used to be cus it updated)</small> <img src="/!g/pix/catsob.gif"> but either way that makes a lot of sense.</p>
-			</article>
+				<article id="240829">
+					<p><b>29.aug.24 - 12am</b> been learning a bit more and more about python as i go to my compsci class. very basic stuff though. learned how to use my terminal to do python too. not really sure how ppl would prefer (or how it is more convenient?) to code something on a terminal instead of an editor but idk! prof also showed us an online <a href="https://www.programiz.com/python-programming/online-compiler/" target="_blank" class="outlink">compiler</a> we can use, though i think i will stick to my buddy brackets as an editor and use my git bash to display the output.</p>
+					<p>which btw, talking about my terminal... i was wondering if there was a way to customize a bit more in-depth how terminals look and it finds out that there actually <i>is</i> a way of doing it! i downloaded <a href="https://ohmyposh.dev/" target="_blank" class="outlink">oh my posh</a> and it works wonderfully on my git bash. i will admit it took me a good second to understand how to set it up but i think it was relatively easy. <button onclick="showPic('!g/240829-bash.jpg','screenshot of my git bash','theres a ton of cool themes but this neko one caught my attention because of the layout. i loved the thought of a little cat speaking to me. another cool thing is that you can also customize these themes however you want. so i added a little GUP! in there because lately i have been pretty obsessed with saying that out loud. in reference of that swimming cat of course.')">!g/240829-bash.jpg</button></p>
+				</article>
+				<article id="240825">
+					<p><b>25.aug.24 - 9pm</b> i've noticed my chatbox and overall site followers has had some sort of influx lately and i was like woah i wonder where all of these ppl are coming from, and then when i click on the <i>websites</i> tab on neocities i am the very 3rd site in there <small>(well used to be cus it updated)</small> <img src="/!g/pix/catsob.gif"> but either way that makes a lot of sense.</p>
+				</article>
 
-			<article id="240809">
-				<p><b>09.aug.24 - 11pm</b> the start of my 2nd semester @ uni is getting near! i will be taking 2 classes: <i>introduction to computer science</i> and <i>precalculus 2</i>. i am overall pretty excited, especially bc i'll be taking my first compsci class! of course, i'm also a bit nervous... but i know i'll be okay. i miss using the train.</p>
-			</article>
+				<article id="240809">
+					<p><b>09.aug.24 - 11pm</b> the start of my 2nd semester @ uni is getting near! i will be taking 2 classes: <i>introduction to computer science</i> and <i>precalculus 2</i>. i am overall pretty excited, especially bc i'll be taking my first compsci class! of course, i'm also a bit nervous... but i know i'll be okay. i miss using the train.</p>
+				</article>
 
-			<article>
-				<p><b>04.aug.24 - 10pm</b> i kinda wanna redo my homepage so i've been working on that, but i'm not sure what exactly to do with it!! i know i would like to make it a bit lighter for those with slow connections (like me) and i wanna move my fanlistings and webrings into a separate page too. i might go for something a bit more minimalist? not sure but i would also like to mess around with colors and have different themes for it. we will see!</p>
-			</article>
+				<article>
+					<p><b>04.aug.24 - 10pm</b> i kinda wanna redo my homepage so i've been working on that, but i'm not sure what exactly to do with it!! i know i would like to make it a bit lighter for those with slow connections (like me) and i wanna move my fanlistings and webrings into a separate page too. i might go for something a bit more minimalist? not sure but i would also like to mess around with colors and have different themes for it. we will see!</p>
+				</article>
 
-			<article>
-				<p><b>31.jul.24 - 3pm</b> did a bit of javascript stuff today! learned how to use <code>localStorage</code> and implemented it on my <a href="/blog">blog</a> for the light / dark theme switcher. took me a bit bc the result would end up being <code>null</code> if it was your first time visiting that page so i just simply did a <i>if null do "light theme"</i> and it worked so that's going to be like that until i can learn to do it another way. i also figured i could rewrite the random music ad script on my <a href="/music">music</a> page in a more coherent and efficent way than the one shown from the template i took. <button onclick="showPic('!g/240731-js.jpg','screenshot of code editor','like look at this mess')">!g/240731-js.jpg</button></p>
-			</article>
-			<article>
-				<p><b>29.jul.24 - 6pm</b> personally i think retail / customer service should be mandatory for everyone so people KNOW what its like.</p>
-			</article>
+				<article>
+					<p><b>31.jul.24 - 3pm</b> did a bit of javascript stuff today! learned how to use <code>localStorage</code> and implemented it on my <a href="/blog">blog</a> for the light / dark theme switcher. took me a bit bc the result would end up being <code>null</code> if it was your first time visiting that page so i just simply did a <i>if null do "light theme"</i> and it worked so that's going to be like that until i can learn to do it another way. i also figured i could rewrite the random music ad script on my <a href="/music">music</a> page in a more coherent and efficent way than the one shown from the template i took. <button onclick="showPic('!g/240731-js.jpg','screenshot of code editor','like look at this mess')">!g/240731-js.jpg</button></p>
+				</article>
+				<article>
+					<p><b>29.jul.24 - 6pm</b> personally i think retail / customer service should be mandatory for everyone so people KNOW what its like.</p>
+				</article>
 
-			<article>
-				<p><b>27.jul.24</b> i don't think i am strong enough to listen to every homestuck soundtrack volume but oh my god.... some of these songs are <b>STILL</b> so fucking good.... i might talk about my favorite ones one day in my music page. tears in my eyes listening to some of these. also, the music page lowkey needs a rework... i still like the theme but i need to make into a grid instead of using inline-blocks</p>
-			</article>
+				<article>
+					<p><b>27.jul.24</b> i don't think i am strong enough to listen to every homestuck soundtrack volume but oh my god.... some of these songs are <b>STILL</b> so fucking good.... i might talk about my favorite ones one day in my music page. tears in my eyes listening to some of these. also, the music page lowkey needs a rework... i still like the theme but i need to make into a grid instead of using inline-blocks</p>
+				</article>
 
-			<article>
-				<p><b>23.jul.24 - 1pm</b> after fighting for my life for the past 3 months filling out job applications i finally <b>got a job!!!!!</b> jesus, it was about damn time!!! i'm very happy because i really needed this. <small>who doesn't in this economy...</small> i hope i'll do good here :) i'll be getting some celebratory ice cream tomorrow <img src="/!g/pix/dumy.gif" alt="emoji">
-				</p>
-			</article>
+				<article>
+					<p><b>23.jul.24 - 1pm</b> after fighting for my life for the past 3 months filling out job applications i finally <b>got a job!!!!!</b> jesus, it was about damn time!!! i'm very happy because i really needed this. <small>who doesn't in this economy...</small> i hope i'll do good here :) i'll be getting some celebratory ice cream tomorrow <img src="/!g/pix/dumy.gif" alt="emoji">
+					</p>
+				</article>
 
-			<article>
-				<p><b>20.jul.24 - 11am</b> nothing fills me with more hatred and anger for this government than waking up without power on the sunniest day ever. need a lot of people to rot in hell right now.</p>
-			</article>
-			<article>
-				<p><b>17.jul.24 - 1am</b> walked for 4 miles yesterday! i need to get myself some nice walking sneakers because all i got are <i>vans</i> and now my feet kinda hurt like crazyyy. but i'm glad i was able to to that! i hope to do it more frequently since i don't have much to do these day. saw some very pretty flowers. <button onclick="showPic('/photobook/!g/240716.jpg','green plant with little lilac flowers','they were so small and cute')">/photobook/!g/240716.jpg</button></p>
-			</article>
-			<article>
-				<p><b>10.jul.24 - 10am</b> recently downloaded <a href="https://getwacup.com/" target="_blank" class="outlink">WACUP</a> after itunes pissing me off so many times <small>asking me to log in every 30 mins...</small> anyways, my music player is looking sick AF <button onclick="showPic('!g/240710-musicplayer.jpg','WACUP player','my WACUP player... so cute')">240710-musicplayer.jpg</button></p>
-			</article>
+				<article>
+					<p><b>20.jul.24 - 11am</b> nothing fills me with more hatred and anger for this government than waking up without power on the sunniest day ever. need a lot of people to rot in hell right now.</p>
+				</article>
+				<article>
+					<p><b>17.jul.24 - 1am</b> walked for 4 miles yesterday! i need to get myself some nice walking sneakers because all i got are <i>vans</i> and now my feet kinda hurt like crazyyy. but i'm glad i was able to to that! i hope to do it more frequently since i don't have much to do these day. saw some very pretty flowers. <button onclick="showPic('/photobook/!g/240716.jpg','green plant with little lilac flowers','they were so small and cute')">/photobook/!g/240716.jpg</button></p>
+				</article>
+				<article>
+					<p><b>10.jul.24 - 10am</b> recently downloaded <a href="https://getwacup.com/" target="_blank" class="outlink">WACUP</a> after itunes pissing me off so many times <small>asking me to log in every 30 mins...</small> anyways, my music player is looking sick AF <button onclick="showPic('!g/240710-musicplayer.jpg','WACUP player','my WACUP player... so cute')">240710-musicplayer.jpg</button></p>
+				</article>
 
-			<article>
-				<p><b>08.jul.24 - 7pm</b> just messed aroung a little bit with <a href="https://www.11ty.dev/" target="_blank" class="outlink">eleventy</a> for a bit thanks to this <a href="https://whiona.weblog.lol/2023/10/my-neocities-workflow:-using-eleventy-and-the-cli-to-speed-up-development" title="My Neocities workflow: using Eleventy and the CLI to speed up development by Whiona" target="_blank" class="outlink">guide</a> by <a href="https://whiona.me/" target="_blank" class="outlink">whiona.me</a>. i can see it coming in pretty handy for some cases, but i think <small>as mentioned in the guide!</small> i won't be getting much use of it since i like to add minor decorations and such to pages where <i>i could</i> use it like my <a href="/vgs">gaming log</a>, <a href="/blog">blog</a>, and <a href="/journal">journal</a>. but either way it's cool that i learned something new.</p>
-			</article>
+				<article>
+					<p><b>08.jul.24 - 7pm</b> just messed aroung a little bit with <a href="https://www.11ty.dev/" target="_blank" class="outlink">eleventy</a> for a bit thanks to this <a href="https://whiona.weblog.lol/2023/10/my-neocities-workflow:-using-eleventy-and-the-cli-to-speed-up-development" title="My Neocities workflow: using Eleventy and the CLI to speed up development by Whiona" target="_blank" class="outlink">guide</a> by <a href="https://whiona.me/" target="_blank" class="outlink">whiona.me</a>. i can see it coming in pretty handy for some cases, but i think <small>as mentioned in the guide!</small> i won't be getting much use of it since i like to add minor decorations and such to pages where <i>i could</i> use it like my <a href="/vgs">gaming log</a>, <a href="/blog">blog</a>, and <a href="/journal">journal</a>. but either way it's cool that i learned something new.</p>
+				</article>
 
-			<article>
-				<p><b>08.jul.24 - 12pm</b> wishing more sites i liked had an RSS feed i could subscribe to... i'm thinking of doing a tutorial of sorts though i just made one yesterday <img src="/!g/pix/emote1cofa.gif" alt=""></p>
-			</article>
+				<article>
+					<p><b>08.jul.24 - 12pm</b> wishing more sites i liked had an RSS feed i could subscribe to... i'm thinking of doing a tutorial of sorts though i just made one yesterday <img src="/!g/pix/emote1cofa.gif" alt=""></p>
+				</article>
 
-			<article>
-				<p><b>07.jul.24 - 4am</b> caught up with csm... fujimoto you are going to hell 😂</p>
-			</article>
+				<article>
+					<p><b>07.jul.24 - 4am</b> caught up with csm... fujimoto you are going to hell 😂</p>
+				</article>
 
-			<article>
-				<p><b>07.jul.24 - 2am</b> wow adding a RSS feed for my website's updates was so easy... wish i had done this sooner LOL. also <i>maxxxine</i> was kinda just okay. awks</p>
-			</article>
+				<article>
+					<p><b>07.jul.24 - 2am</b> wow adding a RSS feed for my website's updates was so easy... wish i had done this sooner LOL. also <i>maxxxine</i> was kinda just okay. awks</p>
+				</article>
 
-			<article>
-				<p><b>05.jul.24 - 2am</b> possible rework of my journal page might be incoming.... kinda want a change of scenery! also, i will be watching <i>maxxxine</i> later today!!! very excited to see how this trilogy is going to conclude...</p>
-			</article>
+				<article>
+					<p><b>05.jul.24 - 2am</b> possible rework of my journal page might be incoming.... kinda want a change of scenery! also, i will be watching <i>maxxxine</i> later today!!! very excited to see how this trilogy is going to conclude...</p>
+				</article>
 
-			<article>
-				<p><b>02.jul.24 - 4pm</b> this is as good as life gets <button onclick="showPic('!g/240702-kaiba-room.png', 'picture of my room with kaiba playing in the background' , 'watching kaiba in my cozy room')">240702-kaiba-room.png</button></p>
-			</article>
+				<article>
+					<p><b>02.jul.24 - 4pm</b> this is as good as life gets <button onclick="showPic('!g/240702-kaiba-room.png', 'picture of my room with kaiba playing in the background' , 'watching kaiba in my cozy room')">240702-kaiba-room.png</button></p>
+				</article>
 
-			<article>
-				<p><b>25.jun.24 - 11pm</b> washing machines that lock their lids should not exist. also i kinda have my halloween outfit ready... he he he</p>
-			</article>
+				<article>
+					<p><b>25.jun.24 - 11pm</b> washing machines that lock their lids should not exist. also i kinda have my halloween outfit ready... he he he</p>
+				</article>
 
-			<article>
-				<p><b>19.jun.24 - 11pm</b> installed ruby and i've been messing with the neocities CLI. this shit is crazy. it does the job without me having to use github so there's that. but using a different terminal rather than git bash is a very minor annoyance. been also trying to create a git hook as shown <a href="https://neocities.org/cli" target="_blank">here</a> but i can't exactly get it to work. argggg. another day then.</p>
-			</article>
+				<article>
+					<p><b>19.jun.24 - 11pm</b> installed ruby and i've been messing with the neocities CLI. this shit is crazy. it does the job without me having to use github so there's that. but using a different terminal rather than git bash is a very minor annoyance. been also trying to create a git hook as shown <a href="https://neocities.org/cli" target="_blank">here</a> but i can't exactly get it to work. argggg. another day then.</p>
+				</article>
 
-			<article>
-				<p><b>19.jun.24 - 7pm</b> the neocities profile red notification really only be working whenever the fuck it wants.</p>
-			</article>
+				<article>
+					<p><b>19.jun.24 - 7pm</b> the neocities profile red notification really only be working whenever the fuck it wants.</p>
+				</article>
 
-			<article>
-				<p><b>19.jun.24 - 12am</b> find it a bit funny how i be writing these during literally 12 - 1am but anyways. spent a good chuck of yesterday trying to figure out git bash and you know what? this is actually pretty simple LOL... and it has been pretty useful too compared to <i>github desktop</i>! so i'm glad i finally understand that.</p>
-			</article>
+				<article>
+					<p><b>19.jun.24 - 12am</b> find it a bit funny how i be writing these during literally 12 - 1am but anyways. spent a good chuck of yesterday trying to figure out git bash and you know what? this is actually pretty simple LOL... and it has been pretty useful too compared to <i>github desktop</i>! so i'm glad i finally understand that.</p>
+				</article>
 
-			<article>
-				<p><b>15.jun.24 - 1pm</b> made some media log pages because notion is barely usable for meee. i think having them here will be better.</p>
-			</article>
+				<article>
+					<p><b>15.jun.24 - 1pm</b> made some media log pages because notion is barely usable for meee. i think having them here will be better.</p>
+				</article>
 
-			<article>
-				<p><b>13.jun.24 - 1am:</b> i went to goodwill the other day and i bought 1) the least <small>(sarcasm)</small> outdated book on how to make a website published in 2004 and 2) a guide to cats published in 1983. <button onclick="showPic('!g/240613-books.png' , 'books' , 'books from goodwill. they were like 4 dollars usd in total.')">240613-books.png</button></p>
-			</article>
+				<article>
+					<p><b>13.jun.24 - 1am:</b> i went to goodwill the other day and i bought 1) the least <small>(sarcasm)</small> outdated book on how to make a website published in 2004 and 2) a guide to cats published in 1983. <button onclick="showPic('!g/240613-books.png' , 'books' , 'books from goodwill. they were like 4 dollars usd in total.')">240613-books.png</button></p>
+				</article>
 
-			<article>
-				<p><b>12.jun.24 - 1am:</b> javascript be kicking my ass but i am slowly learning things I THINK!</p>
-			</article>
+				<article>
+					<p><b>12.jun.24 - 1am:</b> javascript be kicking my ass but i am slowly learning things I THINK!</p>
+				</article>
 
-			<article>
-				<p><b>10.jun.24 - 12am:</b> my mom in her knitting phase so she made me some slippers. they are so warm and soft! <button onclick="showPic('!g/240610-slippers.png' , 'slippers', 'they are super cozy')">240610-slippers.png</button></p>
-			</article>
+				<article>
+					<p><b>10.jun.24 - 12am:</b> my mom in her knitting phase so she made me some slippers. they are so warm and soft! <button onclick="showPic('!g/240610-slippers.png' , 'slippers', 'they are super cozy')">240610-slippers.png</button></p>
+				</article>
 
-			<article>
-				<p><b>09.jun.24 - 12am:</b> i've had this page on my draft for like 2 months or something! i thought about using it for my fc2 microblog but i've kind of just stopped using that... i want something simple so i can update it though the github app on my phone so i think this will do!</p>
-			</article>
-
+				<article>
+					<p><b>09.jun.24 - 12am:</b> i've had this page on my draft for like 2 months or something! i thought about using it for my fc2 microblog but i've kind of just stopped using that... i want something simple so i can update it though the github app on my phone so i think this will do!</p>
+				</article>
+			</section>
 		</div>
 
 		<div class="draggable" id="picture-win">
@@ -226,6 +246,7 @@
 	</a>
 
 	<script src="picture.js"></script>
+	<script src="script.js"></script>
 	<script src="/!f/draggable.js"></script>
 </body>
 
