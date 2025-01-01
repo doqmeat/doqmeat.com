@@ -117,6 +117,10 @@ figure {
   padding: 10px;
 }
 
+figure img {
+  max-width: 100%;
+}
+
 figcaption {
   font-size: 15px;
   line-height: normal;

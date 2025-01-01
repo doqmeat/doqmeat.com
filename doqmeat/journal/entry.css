@@ -91,6 +91,16 @@ article:last-child {
   padding: 2px 10px;
 }
 
+.left {
+  margin: 10px;
+  float: left;
+}
+
+.right {
+  margin: 10px;
+  float: right;
+}
+
 .mini {
   display: inline-block;
   line-height: 23px;
