@@ -7,6 +7,13 @@
 		<description>des' personal website!</description>
 
 		<item>
+			<title>01.jan.25 - journal log</title>
+			<link>https://doqmeat.com/journal</link>
+			<description>journal log about what i've been up to during my sickly december adventure and the holidays.</description>
+			<pubDate>Wed, 01 Jan 2025 17:00:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>19.dec.24 - gaming log: hardware</title>
 			<link>https://doqmeat.com/vgs/hardware</link>
 			<description>made a subpage for consoles i have and the story behind them + changed featured cat on homepage to a jolly one + added a &#x3C;a href=&#x22;/scrapbook/2024#review&#x22;&#x3E;year in review&#x3C;/a&#x3E; page on my 2024 scrapbook</description>
