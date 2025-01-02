@@ -1,16 +1,6 @@
 :root {
-  --d-border: 2px solid #b4c46a;
-  --l-border: 2px solid #b4c46a;
-  --green: #b4c46a;
-  --white: #ececec;
-}
-
-body {
-  background: url(bg1.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  --d-border: 2px solid var(--l-brown);
+  --l-border: 2px solid var(--yellow);
 }
 
 hr {
@@ -30,45 +20,12 @@ p:hover {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 22px;
+  -webkit-text-stroke-color: var(--brown);
 }
 
 h2 {
   font-size: 18px;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  background: rgb(180, 196, 106);
-  background: linear-gradient(
-    129deg,
-    rgba(180, 196, 106, 1) 0%,
-    rgba(236, 236, 236, 1) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--brown);
-}
-
-a {
-  background: var(--green);
-  color: var(--brown);
-}
-
-.log h3 {
-  font-size: 15px;
-  background: #cfb9b4;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--brown);
-}
-
-.log h4 {
-  font-size: 10px;
 }
 
 #wrapperlog {
@@ -96,17 +53,9 @@ side {
   margin-right: 30px;
 }
 
-figure {
-  text-align: center;
-}
-
-figcaption {
-  font-size: 14px;
-}
-
 .content {
-  background: var(--white);
-  color: var(--brown);
+  background: var(--l-brown);
+  color: var(--l-yellow);
   word-spacing: var(--spacing);
   width: 290px;
   margin-top: 20px;
@@ -147,16 +96,29 @@ main {
 }
 
 .title b {
-  background: var(--white);
+  background: rgb(230, 187, 187);
+  background: linear-gradient(
+    90deg,
+    rgba(230, 187, 187, 1) 0%,
+    rgba(249, 255, 209, 1) 26%,
+    rgba(216, 255, 209, 1) 52%,
+    rgba(209, 241, 255, 1) 76%,
+    rgba(244, 209, 255, 1) 100%
+  );
   text-shadow: none;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--brown);
+  -webkit-text-stroke-color: var(--l-brown);
 }
 
 iframe {
   width: 100%;
+}
+
+.cover {
+  float: left;
+  margin: 10px;
 }
 
 .log {
@@ -166,10 +128,6 @@ iframe {
   padding: 10px;
   border: var(--d-border);
   margin-top: 20px;
-}
-
-.log [align] {
-  margin: 10px;
 }
 
 .info {
@@ -199,28 +157,6 @@ footer {
   bottom: 10px;
 }
 
-.lp {
-  background: #d7e8c7;
-}
-
-.ep {
-  background: #d2ece1;
-}
-
-.track,
-.single {
-  background: #e6d1c2;
-}
-
-.misc,
-.ost {
-  background: #f7ffd1;
-}
-
-.post {
-  background: var(--white);
-}
-
 @media only screen and (max-width: 940px) {
   #wrapperlog {
     width: 100%;
@@ -241,34 +177,14 @@ footer {
     background: var(--l-pink);
   }
 
-  a {
-    color: var(--pink);
-    background: var(--soft-brown);
-  }
-
-  .log h2 {
-    background: rgb(254, 234, 199);
-    background: linear-gradient(
-      61deg,
-      rgba(254, 234, 199, 1) 0%,
-      rgba(251, 181, 205, 1) 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--l-brown);
-  }
-
-  .title b {
-    -webkit-text-stroke-color: var(--l-brown);
-  }
-
   #wrapperlog {
     margin: 0px;
     margin-top: 30px;
   }
 
-  h2 {
+  h2,
+  h3,
+  h4 {
     margin: 0px;
     padding: 0px;
     font-size: 10px;
@@ -279,13 +195,11 @@ footer {
   header,
   .info,
   iframe,
-  #top,
-  .log h3 {
+  #top {
     display: none;
   }
 
   .log {
-    background: transparent;
     border: 0px;
     border-bottom: var(--d-border);
   }
@@ -295,16 +209,4 @@ footer {
     border: 0px;
     border-radius: 0px;
   }
-}
-
-#s-m-t-tooltip {
-  max-width: 400px;
-  text-align: center;
-  z-index: 9999;
-  margin: 30px 15px 7px 12px;
-  padding: 5px;
-  border-radius: 5px;
-  border: 2px dashed var(--brown);
-  color: var(--brown);
-  background-color: var(--green);
 }
