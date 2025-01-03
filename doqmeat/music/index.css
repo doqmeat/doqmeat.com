@@ -4,7 +4,7 @@
   display: grid;
   grid-template-areas:
     "header header header"
-    "nav frame log"
+    "nav frame updates"
     "nav frame updates"
     "mv mv mv"
     "featured featured featured"
