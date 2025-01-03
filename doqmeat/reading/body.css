@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/!g/bg/whiteline.jpg");
+  background-size: 10px;
+  margin: 0px;
+  font-family: gaegu-r, arial;
+  font-size: 18px;
+}
+
+h1 {
+  text-align: center;
+}
+
+main,
+footer {
+  margin: auto;
+  max-width: 700px;
+}
+
+footer {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main {
+  padding: 10px;
+}
+
+details {
+  display: inline;
+}
+
+details img {
+  width: 48%;
+}
+
+summary {
+  display: inline;
+  cursor: help;
+}
