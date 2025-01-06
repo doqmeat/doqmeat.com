@@ -15,8 +15,12 @@ function goToYear(year) {
   yearSelected.style.display = "block";
 }
 
-let logNum = document.querySelectorAll("#y2024 article");
-let log = document.getElementById("logs2024");
-log.innerText = "total logs: " + logNum.length;
+let logNum24 = document.querySelectorAll("#y2024 article");
+let log24 = document.getElementById("logs2024");
+log24.innerText = "total logs: " + logNum24.length;
+// i will eventually find a way of how to loop this? so i don't have to write the same code over and over again
+let logNum25 = document.querySelectorAll("#y2025 article");
+let log25 = document.getElementById("logs2025");
+log25.innerText = "total logs: " + logNum25.length;
 
-goToYear("y2024");
+goToYear("y2025");
