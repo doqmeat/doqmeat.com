@@ -74,12 +74,11 @@ select {
     "header header header"
     "nav info updates"
     "nav status currently"
-    "f-page pic f-cat"
     "comm bye chat"
-    "comm bye widgets"
+    "pic bye widgets"
     "foot foot foot";
   grid-template-columns: 20% 50% 30%;
-  grid-template-rows: 80px 390px 190px 260px 320px 130px;
+  grid-template-rows: 80px 390px 190px 320px 230px;
   gap: 30px;
   padding: 20px 75px 20px 20px;
 }
@@ -125,8 +124,7 @@ nav a {
 #piclog {
   text-align: center;
   grid-area: pic;
-  width: 70%;
-  margin-left: 100px;
+  width: 152%;
 }
 
 #status {
@@ -159,7 +157,6 @@ nav a {
   grid-area: comm;
   text-align: center;
   width: 152%;
-  margin-top: -50px;
 }
 
 #comm button {
