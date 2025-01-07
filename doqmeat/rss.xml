@@ -7,6 +7,14 @@
 		<description>des' personal website!</description>
 
 		<item>
+			<title>07.jan.25 - gaming log + minor homepage update</title>
+			<link>https://doqmeat.com/</link>
+			<description>added logs for &#x3C;a href=&#x22;/vgs/games/kirby-planet-robobot/index.html&#x22;&#x3E;kirby planet robobot&#x3C;/a&#x3E; and &#x3C;a href=&#x22;/vgs/games/style-savvy-styling-star/index.html&#x22;&#x3E;styling star&#x3C;/a&#x3E; + minor update to homepage so clean cache if it looks funky!
+			</description>
+			<pubDate>Tue, 07 Jan 2025 17:00:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>03.jan.25 - reading and tv log</title>
 			<link>https://doqmeat.com/reading</link>
 			<description>added some more CSS to &#x3C;a href=&#x22;/reading&#x22;&#x3E;/reading&#x3C;/a&#x3E;, organized it a bit and added some more screenshots + added &#x3C;i&#x3E;madoka magica + rebellion&#x3C;/i&#x3E; to &#x3C;a href=&#x22;/tv&#x22;&#x3E;tv log&#x3C;/a&#x3E;</description>
