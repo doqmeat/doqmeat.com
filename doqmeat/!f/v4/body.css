@@ -108,15 +108,6 @@ nav a {
   grid-area: info;
 }
 
-#featured-page {
-  text-align: center;
-  grid-area: f-page;
-  width: 152%;
-  height: 80%;
-}
-
-#featured-page img,
-#featured-cat img,
 #piclog img {
   border-radius: 10px;
 }
@@ -145,12 +136,6 @@ nav a {
 
 #current p {
   margin: 10px;
-}
-
-#featured-cat {
-  grid-area: f-cat;
-  text-align: center;
-  margin-left: -55px;
 }
 
 #comm {
@@ -252,11 +237,10 @@ footer p {
 @media only screen and (max-width: 1100px) {
   #chat,
   #outro,
-  #featured-page,
+  ,
   #widgets,
   #comm,
   #piclog,
-  #featured-cat,
   #current,
   #updates,
   #nav {
@@ -273,11 +257,9 @@ footer p {
 @media only screen and (max-width: 760px) {
   #chat,
   #outro,
-  #featured-page,
   #widgets,
   #comm,
   #piclog,
-  #featured-cat,
   #current,
   #updates,
   #nav {
@@ -294,7 +276,6 @@ footer p {
     text-align: center;
   }
 
-  #featured-cat,
   #featured-page {
     max-height: 390px;
   }
