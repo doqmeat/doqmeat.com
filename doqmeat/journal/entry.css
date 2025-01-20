@@ -23,7 +23,8 @@ li {
   list-style-position: inside;
 }
 
-p {
+p,
+details {
   margin: 20px 10px 20px 12px;
 }
 
