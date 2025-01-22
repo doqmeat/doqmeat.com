@@ -234,6 +234,12 @@ footer {
   padding: 0px 2px;
 }
 
+.outlink::after {
+  content: "↗";
+  padding-left: 2px;
+  vertical-align: text-bottom;
+}
+
 #s-m-t-tooltip {
   max-width: 400px;
   font-family: var(--fonts);

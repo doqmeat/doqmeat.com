@@ -146,9 +146,9 @@ figcaption {
   text-align: center;
 }
 
-.outlink:after {
-  content: url(/!g/web/materials/outlink2.png);
-  padding-left: 3px;
+.outlink::after {
+  content: "↗";
+  padding-left: 2px;
   vertical-align: text-bottom;
 }
 
