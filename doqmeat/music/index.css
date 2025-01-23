@@ -4,14 +4,14 @@
   display: grid;
   grid-template-areas:
     "header header header"
+    "nav frame widgets"
     "nav frame updates"
-    "nav frame updates"
-    "mv mv mv"
     "featured featured featured"
-    "graphics poll widgets"
+    "mv mv mv"
+    "graphics poll recc"
     "foot foot foot";
   grid-template-columns: 20% 50% 30%;
-  grid-template-rows: 200px 260px 230px 150px 280px 250px auto;
+  grid-template-rows: 200px 260px 230px 280px 150px 250px auto;
   gap: 10px;
   padding: 5px 30px 5px 5px;
   margin-bottom: 30px;
@@ -22,6 +22,10 @@
   overflow: auto;
   position: relative;
   border-radius: 10px;
+}
+
+h3 {
+  font-size: 14px;
 }
 
 #header {
@@ -233,6 +237,48 @@
   grid-area: graphics;
   background: var(--pink);
   text-align: center;
+}
+
+#recc {
+  grid-area: recc;
+  text-align: center;
+  background: var(--l-yellow);
+}
+
+/* form css */
+
+form {
+  margin: auto;
+  width: 90%;
+}
+
+textarea#message,
+form input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: 1px solid var(--soft-brown);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+}
+
+#name {
+  width: 90%;
+}
+
+#email {
+  width: 90%;
+}
+
+#submit {
+  background: var(--l-pink);
+  color: var(--l-brown);
+  cursor: pointer;
+}
+
+textarea#message {
+  width: 90%;
 }
 
 #foot {
