@@ -7,8 +7,8 @@ body {
   background-position: center;
   background-repeat: repeat;
   background-attachment: fixed;
-  font-size: 20px;
-  word-spacing: 8px;
+  font-size: 18px;
+  word-spacing: 3px;
   line-height: 24px;
   color: black;
 }

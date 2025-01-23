@@ -25,7 +25,7 @@
 
 nav {
   text-align: center;
-  font-family: gaegu-l, var(--fonts);
+  font-family: var(--fonts);
   padding: 5px;
   grid-area: margin;
   border-right: 2px solid var(--l-red);
