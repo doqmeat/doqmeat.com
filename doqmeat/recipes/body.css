@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+
+hr {
+  border: none;
+  text-align: center;
+}
+
+hr::after {
+  content: "✦•┈๑⋅⋯ ⋯⋅๑┈•✦ ✦•┈๑⋅⋯ ⋯⋅๑┈•✦ ✦•┈๑⋅⋯ ⋯⋅๑┈•✦";
+}
