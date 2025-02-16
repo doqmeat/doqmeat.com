@@ -38,12 +38,17 @@ main {
   padding: 10px;
 }
 
+figure {
+  text-align: center;
+  border: 1px dashed rgb(239, 117, 117);
+}
+
 details {
   display: inline;
   background: rgba(163, 201, 240, 0.415);
 }
 
-details > summary {
+li details > summary {
   list-style-type: "+";
 }
 
@@ -51,12 +56,11 @@ details[open] {
   padding: 10px;
 }
 
-details[open] > summary {
+li details[open] > summary {
   list-style-type: "-";
 }
 
 details img {
-  width: 48%;
   vertical-align: middle;
 }
 
