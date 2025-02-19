@@ -222,3 +222,8 @@
   font-family: "silkscreen";
   src: url(silkscreen.ttf);
 }
+
+@font-face {
+  font-family: "pixelhandwriting";
+  src: url(BasicHandwriting.ttf);
+}
