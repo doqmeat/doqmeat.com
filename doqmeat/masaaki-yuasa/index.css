@@ -1,76 +1,122 @@
 :root {
-  --blue: #1553D8;
-  --yellow: #FFF98E;
-	--green: #87CA21;
-	--orange: #F6A90D;
-	--purple: #CC19EC;
+  --blue: #1553d8;
+  --yellow: #fff98e;
+  --green: #87ca21;
+  --orange: #f6a90d;
+  --purple: #cc19ec;
 }
 
-body{
-background:url(/!g/bg/whiteline2.jpg);
-background-position:top;
-background-size:35px;
-font-family:ms pgothic;
-font-size:17px;
-line-height:25.7px;
+body {
+  background: url(/!g/bg/whiteline2.jpg);
+  background-position: top;
+  background-size: 35px;
+  font-family: ms pgothic;
+  font-size: 17px;
+  line-height: 25.7px;
 }
 
-::selection{
-  background:var(--purple);
-  color:white;}
+::selection {
+  background: var(--purple);
+  color: white;
+}
 
-a{background:var(--green);color:black;}
-a:hover{text-decoration:none;}
-summary{display:inline;}
+a {
+  background: var(--green);
+  color: black;
+}
+a:hover {
+  text-decoration: none;
+}
 
-.comment{background:var(--yellow);}
-.spoiler{background:var(--blue);color:var(--blue);padding:0px 2px;}
-.spoiler:hover{background:var(--orange);color:black;}
+summary {
+  display: inline;
+}
 
-p{margin:0px;}
+.comment,
+details p {
+  background: var(--yellow);
+}
 
-#wrapper{
-max-width:700px;}
+details p {
+  display: inline;
+}
 
-h1,h2,h3,h4,h5,h6{
-padding-top:4px;
-margin:0px;
-font-weight:normal;
-font-family:newpenji,ms pgothic}
+.spoiler {
+  background: var(--blue);
+  color: var(--blue);
+  padding: 0px 2px;
+}
+.spoiler:hover {
+  background: var(--orange);
+  color: black;
+}
 
-li{
-display:block;
-list-style-position:inside;
-padding-left:5px;
-line-height:26.7px;}
+p {
+  margin: 0px;
+}
 
-.yes:before{padding-right:10px;content: url('/!g/pix/checkyes.png');}
-.dot:before{padding-right:10px;content: url('/!g/pix/checkdots.png');}
-.no:before{padding-right:10px;content: url('/!g/pix/checkno.png');}
+#wrapper {
+  max-width: 700px;
+}
 
-#corner{
-position:fixed;
-bottom:-1px;
-right:-1px;
-z-index:-1;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding-top: 4px;
+  margin: 0px;
+  font-weight: normal;
+  font-family: newpenji, ms pgothic;
+}
+
+li {
+  display: block;
+  list-style-position: inside;
+  padding-left: 5px;
+  line-height: 26.7px;
+}
+
+.yes:before {
+  padding-right: 10px;
+  content: url("/!g/pix/checkyes.png");
+}
+.dot:before {
+  padding-right: 10px;
+  content: url("/!g/pix/checkdots.png");
+}
+.no:before {
+  padding-right: 10px;
+  content: url("/!g/pix/checkno.png");
+}
+
+#corner {
+  position: fixed;
+  bottom: -1px;
+  right: -1px;
+  z-index: -1;
 }
 
 #s-m-t-tooltip {
-	max-width: 200px;
-	text-align: center;
-	z-index: 9999;
-	margin: 30px 15px 7px 12px;
-	padding: 5px;
-	border-radius: 10px;
-	border: 1px dashed white;
-	color:white;
-	background:var(--purple);
+  max-width: 200px;
+  text-align: center;
+  z-index: 9999;
+  margin: 30px 15px 7px 12px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px dashed white;
+  color: white;
+  background: var(--purple);
 }
 
 @media only screen and (max-width: 1000px) {
-	#corner{
-		display:none;
-	}
+  #corner {
+    display: none;
+  }
 }
 
-/* Start https://www.cursors-4u.com */ * {cursor: url(https://cur.cursors-4u.net/others/oth-2/oth200.cur), auto !important;} /* End https://www.cursors-4u.com */
+/* Start https://www.cursors-4u.com */
+* {
+  cursor: url(https://cur.cursors-4u.net/others/oth-2/oth200.cur), auto !important;
+} /* End https://www.cursors-4u.com */
