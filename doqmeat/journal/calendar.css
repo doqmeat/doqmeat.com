@@ -2,6 +2,7 @@ body {
   background: transparent;
   -ms-overflow-style: none;
   scrollbar-width: none;
+  text-align: center;
 }
 
 ::-webkit-scrollbar {
@@ -13,6 +14,7 @@ table {
   width: 220px;
   border-radius: 10px;
   border: 1px solid white;
+  margin: auto;
 }
 
 td {
