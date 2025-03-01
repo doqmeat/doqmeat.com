@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom">
 
 	<channel>
 		<title>doqmeat</title>
 		<link>https://doqmeat.com</link>
 		<description>des' personal website!</description>
-  <atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
-						<item>
+		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>01.mar.25 - a lot happening</title>
+			<link>https://doqmeat.com/</link>
+			<description>
+new &#x3C;a href=&#x22;/journal&#x22;&#x3E;journal log&#x3C;/a&#x3E; about my latest uni happenings + changed &#x3C;a href=&#x22;/music/featured.html&#x22;&#x3E;featured song &#x26; album&#x3C;/a&#x3E; on music homepage
+			</description>
+			<pubDate>Sun, 01 Mar 2025 01:50:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>16.feb.25 - scrapbook</title>
 			<link>https://doqmeat.com/scrapbook/2025</link>
 			<description>
@@ -15,7 +26,7 @@
 			<pubDate>Sun, 16 Feb 2025 17:00:00 -0400</pubDate>
 		</item>
 
-				<item>
+		<item>
 			<title>08.feb.25 - music post</title>
 			<link>https://doqmeat.com/music/listening-log/2025#1</link>
 			<description>
