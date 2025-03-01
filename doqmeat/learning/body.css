@@ -39,13 +39,13 @@ li {
 }
 
 code {
-  font-family: consolas;
+  font-family: mononoki, consolas;
   background: black;
   color: white;
   font-size: 14px;
   border: 1px solid #6a5c3e;
   border-radius: 10px;
-  padding: 0 5px;
+  padding: 2px 5px;
 }
 
 a {
