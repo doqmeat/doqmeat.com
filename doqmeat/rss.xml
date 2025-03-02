@@ -10,9 +10,18 @@
 
 		<item>
 			<title>01.mar.25 - a lot happening</title>
+			<link>https://doqmeat.com/journal/2025/03</link>
+			<description>
+new &#x3C;a href=&#x22;/journal&#x22;&#x3E;journal log&#x3C;/a&#x3E; about my latest uni happenings &#x3C;small&#x3E;(forgot to update my gitignore, SORRY)&#x3C;/small&#x3E;
+			</description>
+			<pubDate>Sat, 01 Mar 2025 22:50:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>01.mar.25 - featured song n album</title>
 			<link>https://doqmeat.com/</link>
 			<description>
-new &#x3C;a href=&#x22;/journal&#x22;&#x3E;journal log&#x3C;/a&#x3E; about my latest uni happenings + changed &#x3C;a href=&#x22;/music/featured.html&#x22;&#x3E;featured song &#x26; album&#x3C;/a&#x3E; on music homepage
+ changed &#x3C;a href=&#x22;/music/featured.html&#x22;&#x3E;featured song &#x26; album&#x3C;/a&#x3E; on music homepage
 			</description>
 			<pubDate>Sat, 01 Mar 2025 01:50:00 -0400</pubDate>
 		</item>
