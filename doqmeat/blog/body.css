@@ -2,22 +2,32 @@
   box-sizing: border-box;
 }
 
+html {
+  scrollbar-color: var(--acc) var(--text);
+}
+
 :root {
-  --fonts: ms pgothic, gaegu-l, arial;
+  --fonts: basiic, arial;
 }
 
 body {
+  color: var(--text);
   word-wrap: break-word;
   margin: 0;
   font-size: 19px;
   line-height: 25px;
-  word-spacing: 5px;
+  word-spacing: 2px;
   font-family: var(--fonts);
 }
 
 li {
   padding-left: 2px;
   list-style-position: inside;
+}
+
+a {
+  background: var(--acc);
+  color: var(--text);
 }
 
 h1 {
@@ -129,6 +139,14 @@ blockquote {
   background-color: transparent;
 }
 
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
 .centered {
   text-align: center;
 }
@@ -146,6 +164,7 @@ blockquote {
 /*class toggle button */
 
 #toggle {
+  color: var(--text);
   vertical-align: middle;
   font-family: ms gothic;
   font-size: 20px;
@@ -172,6 +191,14 @@ footer {
   margin: auto;
   border-style: dashed;
   border-width: 2px;
+  background: var(--bg);
+  border-color: var(--text);
+}
+
+blockquote {
+  margin: 1em 40px;
+  border-left: 2px solid var(--acc);
+  padding-left: 5px;
 }
 
 header {
@@ -196,6 +223,8 @@ footer {
 }
 
 nav {
+  background: var(--bg);
+  border-color: var(--text);
   position: fixed;
   font-size: 15px;
   width: 240px;
@@ -214,11 +243,6 @@ nav:hover {
   bottom: 1px;
 }
 
-nav a {
-  background: transparent;
-  text-decoration: none;
-}
-
 nav ul {
   padding-left: 15px;
   margin: 5px 0px;
@@ -229,6 +253,9 @@ nav h5 {
 }
 
 nav a {
+  color: var(--text);
+  background: transparent;
+  text-decoration: none;
   cursor: cell;
   transition-duration: 0.3s;
 }
@@ -236,8 +263,6 @@ nav a {
 nav a:hover {
   text-decoration: wavy underline;
 }
-
-/* black and white classes options */
 
 .date {
   font-family: spirit, var(--fonts);
@@ -249,6 +274,9 @@ nav a:hover {
 /* tooltip */
 
 #s-m-t-tooltip {
+  color: var(--bg);
+  border: 1px dashed var(--bg);
+  background: var(--text);
   max-width: 200px;
   font-family: var(--fonts);
   text-align: center;

@@ -11,8 +11,6 @@ function toggleTheme() {
   }
 }
 
-window.onload = checkTheme();
-
 function checkTheme() {
   var sheet = document.getElementsByClassName("theme")[0];
   var localTheme = localStorage.getItem("themeBlog");
@@ -21,3 +19,5 @@ function checkTheme() {
     sheet.setAttribute("href", "/blog/light.css");
   }
 }
+
+checkTheme();

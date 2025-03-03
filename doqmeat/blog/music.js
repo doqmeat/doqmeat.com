@@ -2,10 +2,7 @@
 
 let player = document.getElementById("music"); //the audio id
 let btn = document.getElementById("music-btn"); //the button id
-let isPlaying = false; //set to false because it is not playing yet
-
-console.log(isPlaying);
-console.log(!isPlaying);
+let isPlaying = false; //set to false because it is not playing yet when you load the page
 
 function playpause() {
   if (isPlaying) {

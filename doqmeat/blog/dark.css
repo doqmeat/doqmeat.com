@@ -1,65 +1,27 @@
 :root {
-	--bg: rgb(68, 68, 68, 0.96);
-	--text: #F0F4E1;
-	--acc: #645067;
+  --bg: rgb(68, 68, 68, 0.96);
+  --text: #f0f4e1;
+  --acc: #645067;
 }
 
 .outlink:after {
-	content: url(/!g/web/materials/outlink1.png);
-}
-
-body {
-	color: var(--text);
+  content: url(/!g/web/materials/outlink1.png);
 }
 
 li {
-	list-style-image: url('/!g/pix/sorahana-butterfly-pinkmm.gif');
+  list-style-image: url("/!g/pix/sorahana-butterfly-pinkmm.gif");
 }
 
 i,
 em {
-	background: #4B5899;
+  background: #4b5899;
 }
 
 b,
 strong {
-	background: #8F4A4A;
+  background: #8f4a4a;
 }
 
 mark {
-	background: #596D36;
-	color: var(--text);
-}
-
-a {
-	background: var(--acc);
-	color: var(--text);
-}
-
-main,
-header,
-footer,
-nav {
-	background: var(--bg);
-	border-color: var(--text);
-}
-
-blockquote {
-	margin: 1em 40px;
-	border-left: 2px solid var(--acc);
-	padding-left: 5px;
-}
-
-nav a {
-	color: var(--text);
-}
-
-#toggle {
-	color: var(--text);
-}
-
-#s-m-t-tooltip {
-	color: var(--bg);
-	border: 1px dashed var(--bg);
-	background: var(--text);
+  background: #596d36;
 }
