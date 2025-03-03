@@ -841,12 +841,14 @@ footer.box {
     overflow: auto;
     margin: 15px 10%;
     background: transparent;
-    box-shadow: 0px 0px 0px 0px var(--pink);
+    box-shadow: 0px 0px 0px 0px var(--pink) inset;
+    border: 0px;
   }
 
   #rss .inner {
     overflow: auto;
     height: auto;
+    border: 0px;
   }
 
   nav {
