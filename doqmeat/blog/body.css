@@ -14,7 +14,7 @@ body {
   color: var(--text);
   word-wrap: break-word;
   margin: 0;
-  font-size: 19px;
+  font-size: 18px;
   line-height: 25px;
   word-spacing: 2px;
   font-family: var(--fonts);
@@ -217,6 +217,7 @@ main {
 }
 
 footer {
+  font-size: 14px;
   position: relative;
   text-align: center;
   padding: 5px;
