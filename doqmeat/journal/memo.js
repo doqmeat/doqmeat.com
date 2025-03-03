@@ -1,5 +1,6 @@
 let memos = document.getElementsByClassName("memo");
 let button = document.querySelector("nav button");
+let winSize = window.matchMedia("(max-width:1300px)");
 
 function closeMemos() {
   for (i = 0; i < memos.length; i++) {
@@ -12,4 +13,9 @@ function closeMemos() {
       button.innerHTML = "show memos";
     }
   }
+}
+
+// if screen is small enough, hide memos by default
+if (winSize.matches) {
+  closeMemos();
 }
