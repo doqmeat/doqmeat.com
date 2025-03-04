@@ -167,16 +167,16 @@ button:hover {
   right: 10px;
 }
 
-/* #memo3 {
+#memo3 {
   top: 67%;
   left: 10%;
   rotate: 14deg;
   padding: 30px 20px;
-  width: 200px;
-  height: 150px;
+  width: 250px;
+  height: 170px;
   background: url("!g/memo-picnic.jpg");
   background-size: cover;
-} */
+}
 
 #memo4 {
   top: 8%;
