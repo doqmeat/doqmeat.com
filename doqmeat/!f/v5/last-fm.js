@@ -8,6 +8,8 @@ let album = document.querySelector("#album");
 let songL = document.querySelector("#song-link");
 let listeningP = document.querySelector("#listening");
 
+// https://maxpixels.moe/resources/lastfm-widget/
+
 fetch(url)
   .then(function (response) {
     return response.json();
@@ -26,7 +28,7 @@ fetch(url)
     songL.title = "listen to " + trackName + " by " + artist + " on last.fm";
 
     // in case there's no album info
-    if (albumCover == "") {
+    if (!albumName) {
       album.innerHTML = "<span>album cover not available<br>(´•︵•`)</span>";
       albumName = "N/A";
     } else {
