@@ -82,9 +82,11 @@ const quotes = [
 	},
 ];
 
-let random = Math.floor(Math.random() * quotes.length); // generate random number using the length of the array
+// generate random number using the length of the array
+// Math.floor round numbers up to convert them into integers
+let random = Math.floor(Math.random() * quotes.length);
 
-let randomQ = quotes[random];
+let randomQ = quotes[random]; //access an object in the array
 
 let memoDiv = document.querySelector("#memo3 .innermemo");
 
