@@ -1,3 +1,5 @@
+// script for random quote on refresh
+
 const quotes = [
 	{
 		text: "a chocolate sepia record that is important to me and no one else",
@@ -82,13 +84,15 @@ const quotes = [
 	},
 ];
 
+// last updated 09.mar.25
+
 // generate random number using the length of the array
 // Math.floor round numbers up to convert them into integers
 let random = Math.floor(Math.random() * quotes.length);
 
 let randomQ = quotes[random]; //access an object in the array
 
-let memoDiv = document.querySelector("#memo3 .innermemo");
+let memoDiv = document.querySelector("#memo3 .innermemo"); // the quote will go to this div
 
 memoDiv.innerHTML = "<p>" + randomQ.text + "</p>";
 
