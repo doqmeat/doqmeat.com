@@ -510,10 +510,6 @@ span.title a {
 	text-align: center;
 }
 
-.notepad-boxes p {
-	margin: 0px;
-}
-
 .notepad-boxes#now .date {
 	border-top: 2px dashed rgb(157, 134, 134);
 	font-size: 13px;
@@ -528,10 +524,6 @@ span.title a {
 	text-align: left;
 	line-height: 23px;
 	padding-bottom: 30px;
-}
-
-.notepad-boxes#now h3 {
-	margin: 0px;
 }
 
 .notepad-boxes#now span.title {
