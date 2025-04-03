@@ -1,26 +1,49 @@
-let home = document.getElementById("home");
-let sections = document.querySelectorAll("#blog section");
+/*
+last edited: 03.apr.25
+*/
+
+let sections = document.querySelectorAll("#blog section"); // gets all year sections
+
+const date = new Date(); // get date
+let current_year = date.getFullYear(); // gets current year!
+
+// shows selection of years
 function goHome() {
-  for (i = 0; i < sections.length; i++) {
-    sections[i].style.display = "none";
-  }
-  home.style.display = "block";
+	let home = document.getElementById("home");
+	for (i = 0; i < sections.length; i++) {
+		sections[i].style.display = "none";
+	}
+	home.style.display = "block";
 }
 
+// input: year!!
+// shows current year articles
 function goToYear(year) {
-  let yearSelected = document.getElementById(year);
-  for (i = 0; i < sections.length; i++) {
-    sections[i].style.display = "none";
-  }
-  yearSelected.style.display = "block";
+	let yearSelected = "y" + year; // i will not be blogging at 2100 i can assure you that
+	let yearSection = document.getElementById(yearSelected); // get year section
+	for (i = 0; i < sections.length; i++) {
+		// loops the different year sections
+		sections[i].style.display = "none"; // hides them
+	}
+	yearSection.style.display = "block"; // shows
 }
 
-let logNum24 = document.querySelectorAll("#y2024 article");
-let log24 = document.getElementById("logs2024");
-log24.innerText = "total logs: " + logNum24.length;
-// i will eventually find a way of how to loop this? so i don't have to write the same code over and over again
-let logNum25 = document.querySelectorAll("#y2025 article");
-let log25 = document.getElementById("logs2025");
-log25.innerText = "total logs: " + logNum25.length;
+goToYear(current_year); // loads the page on the current year
 
-goToYear("y2025");
+// shows the total of logs i've made
+function totalLog(year) {
+	let articles = "#y" + year + " article";
+	let articlesSelected = document.querySelectorAll(articles);
+	let currentSpan = "logs" + year;
+	let currentSpanSelected = document.getElementById(currentSpan);
+	currentSpanSelected.innerText = "total logs: " + articlesSelected.length;
+}
+
+// i will eventually find a way of how to loop this? so i don't have to write the same code over and over again... every year??
+// edit: i did it!!!!
+
+for (let i = 2024; i <= current_year; i++) {
+	// loops from 2024 til current year
+	i = i.toString(); // converts i to string
+	totalLog(i); // calls function
+}
