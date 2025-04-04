@@ -33,5 +33,22 @@ function showBox(boxID) {
 	event.currentTarget.className += " active";
 }
 
+function chatPopup() {
+	let messageRead = localStorage.getItem("messageRead");
+	if (messageRead === "false" || messageRead == null) {
+		if (
+			confirm(
+				"rules:\n\n\t1) spam and rude messages get deleted (ˉ▽ˉ；)...\n\n\t2) for any serious inquiries, send via e-mail\n\n\t3) thank you all for the nice messages (o゜▽゜)o☆ have fun!\n\npress 'OK' to agree with the rules."
+			)
+		) {
+			localStorage.setItem("messageRead", true);
+		} else {
+			window.location.replace("/collection/cats/!g/sideeye.jpg");
+			localStorage.setItem("messageRead", false);
+		}
+	}
+	console.log(messageRead);
+}
+
 piclogWidth();
 document.getElementById("default").click();
