@@ -17,7 +17,8 @@ function closeMemos() {
 
 for (i = 0; i < memos.length; i++) {
 	let memoClick = memos[i];
-	memoClick.onclick = function (posindex) {
+	// changes the z-index of the memos as you click on them
+	memoClick.onclick = function () {
 		let memoID = document.getElementById(this.id);
 		memoID.style.zIndex = i++;
 		console.log(memoID.style.zIndex);

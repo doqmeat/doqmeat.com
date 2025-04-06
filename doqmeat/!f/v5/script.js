@@ -1,16 +1,19 @@
-// changes position and width depending on the ratio of the img inside of it :p
+// changes position and width of the element depending on the ratio of the img inside of it :p
 function piclogWidth() {
 	let piclog = document.getElementById("piclog");
 	let image = document.querySelector("#piclog img");
 	let tape = document.querySelector("#tape");
 	if (image.naturalWidth > image.naturalHeight) {
+		// if width is bigger than height
 		tape.style.left = "30%";
 		piclog.style.width = "300px";
 		piclog.style.height = "295px";
 	} else if (image.naturalWidth == image.naturalHeight) {
+		// if its a 1:1 ratio
 		piclog.style.width = "260px";
 		piclog.style.height = "299px";
 	} else {
+		// if height is bigger than width
 		piclog.style.width = "250px";
 		piclog.style.height = "360px";
 	}
@@ -47,7 +50,6 @@ function chatPopup() {
 			localStorage.setItem("messageRead", false);
 		}
 	}
-	console.log(messageRead);
 }
 
 piclogWidth();
