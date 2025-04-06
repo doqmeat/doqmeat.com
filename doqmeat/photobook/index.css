@@ -14,6 +14,10 @@ body {
 	scrollbar-color: #e4cad2 #fbedb8;
 }
 
+html {
+	scrollbar-color: rgb(112, 170, 89) #fcfabd;
+}
+
 ::selection {
 	background: #fffac4;
 	color: black;
@@ -37,7 +41,7 @@ button {
 }
 
 header {
-	background: #f27688;
+	background: #f08696;
 	position: relative;
 	margin: auto;
 	margin-top: 20px;
@@ -85,11 +89,6 @@ a:hover {
 	transition-duration: 0.3s;
 	overflow-x: hidden;
 	overflow-y: scroll;
-}
-
-.pic:hover {
-	-webkit-box-shadow: -1px 1px 26px 5px rgba(255, 255, 255, 0.53);
-	box-shadow: -1px 1px 26px 5px rgba(255, 255, 255, 0.53);
 }
 
 .digi {
@@ -195,6 +194,10 @@ footer {
 
 footer img {
 	vertical-align: top;
+}
+
+summary {
+	cursor: help;
 }
 
 details p {
