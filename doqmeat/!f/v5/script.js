@@ -19,6 +19,9 @@ function piclogWidth() {
 	}
 }
 
+// checks for piclog width on page load
+piclogWidth();
+
 // the different sections of the notepad
 function showBox(boxID) {
 	let box = document.getElementById(boxID);
@@ -35,6 +38,9 @@ function showBox(boxID) {
 	box.style.display = "block";
 	event.currentTarget.className += " active";
 }
+
+// clicks the default tab on the notepad
+document.getElementById("default").click();
 
 // when clicking the 'chatbox' tab, this popup will appear asking you if you agree with the rules
 function chatPopup() {
@@ -56,9 +62,3 @@ function chatPopup() {
 		}
 	} // else nothing happens
 }
-
-// checks for piclog width on page load
-piclogWidth();
-
-// clicks the default tab on the notepad
-document.getElementById("default").click();
