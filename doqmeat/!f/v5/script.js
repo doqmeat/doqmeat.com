@@ -36,21 +36,29 @@ function showBox(boxID) {
 	event.currentTarget.className += " active";
 }
 
+// when clicking the 'chatbox' tab, this popup will appear asking you if you agree with the rules
 function chatPopup() {
-	let messageRead = localStorage.getItem("messageRead");
-	if (messageRead === "false" || messageRead == null) {
+	let messageRead = localStorage.getItem("messageRead"); // so it doesn't ask you every time
+	// if messageRead is false or null
+	if (messageRead == "false" || messageRead == null) {
+		// the popup will appear
 		if (
 			confirm(
-				"rules:\n\n\t1) spam and rude messages get deleted (ˉ▽ˉ；)...\n\n\t2) for any serious inquiries, send via e-mail\n\n\t3) thank you all for the nice messages (o゜▽゜)o☆ have fun!\n\npress 'OK' to agree with the rules."
+				"rules & notes:\n\n\t1) spam and rude messages get deleted (ˉ▽ˉ；)...\n\n\t2) for any serious inquiries, send via e-mail\n\n\t3) thank you all for the nice messages (o゜▽゜)o☆ have fun!\n\npress 'OK' to agree with the rules."
 			)
 		) {
+			// if the user clicks OK...
 			localStorage.setItem("messageRead", true);
 		} else {
+			// if the user clicks cancel they will get redirected to a side eye from a chinese cat
 			window.location.replace("/collection/cats/!g/sideeye.jpg");
 			localStorage.setItem("messageRead", false);
 		}
-	}
+	} // else nothing happens
 }
 
+// checks for piclog width on page load
 piclogWidth();
+
+// clicks the default tab on the notepad
 document.getElementById("default").click();
