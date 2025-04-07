@@ -50,6 +50,7 @@ function chatPopup(choice = "none") {
 	// the pop up will display if the localstorage is false or null
 	if (agree === "false" || agree === null) {
 		chatbox.style.display = "none";
+		// i LOVE switch statements
 		switch (choice) {
 			case "none":
 				dialogBox.showModal();
@@ -66,6 +67,7 @@ function chatPopup(choice = "none") {
 			case "close":
 				dialogBox.close();
 				localStorage.setItem("messageAgree", false);
+				break;
 		}
 	} else {
 		// the popup won't appear and you'll get access to the chat
