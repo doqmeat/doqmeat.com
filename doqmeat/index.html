@@ -13,7 +13,7 @@ finished on 02.mar.25 -->
 	<link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
 	<link rel="icon" type="image/x-icon" href="/!g/pix/dumy.gif">
 	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
-	<link href="!f/v5/body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="!f/v5/body.css?0407" rel="stylesheet" type="text/css" media="all">
 	<!-- tooltip shit -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="/!f/tooltip-jquary.js"></script>
@@ -308,7 +308,7 @@ finished on 02.mar.25 -->
 				</section>
 				<section class="notepad-boxes" id="chat">
 					<h3>chatbox</h3>
-					<iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="86%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+					<iframe id="chatbox-frame" src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="86%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
 				</section>
 				<!-- notepad wrapper end div -->
 			</section>
@@ -332,8 +332,21 @@ finished on 02.mar.25 -->
 		<!-- wrapper end -->
 	</div>
 
+	<dialog>
+		<button id="close-dialog" onclick="chatPopup('close')">X</button>
+		<h3>chatbox rules &amp; notes:</h3>
+		<ol>
+			<li>spam and rude messages get deleted (ˉ▽ˉ；)...</li>
+			<li>you can send any serious inquiries via e-mail</li>
+			<li>thank you all for the nice messages!</li>
+			<li>(o゜▽゜)o☆ have fun</li>
+		</ol>
+		<button id="dialog-agree" onclick="chatPopup('okay')">okay, i agree!</button>
+		<button id="dialog-disagree" onclick="chatPopup('nope')">no, i don't agree...</button>
+	</dialog>
+
 	<script src="https://status.cafe/current-status.js?name=doqmeat" defer></script>
-	<script src="!f/v5/script.js"></script>
+	<script src="!f/v5/script.js?0407"></script>
 	<script src="!f/v5/last-fm.js"></script>
 </body>
 

@@ -69,6 +69,55 @@ a {
 	overflow: auto;
 }
 
+dialog {
+	color: inherit;
+	border: 2px dashed;
+	background: white;
+}
+
+dialog::backdrop {
+	background: rgba(0, 0, 0, 0.525);
+}
+
+dialog button {
+	color: black;
+	cursor: help;
+	font-family: inherit;
+	text-align: right;
+	background: transparent;
+	border: none;
+	margin: 0px 15px;
+	font-size: inherit;
+	border-radius: 10px;
+}
+
+#close-dialog {
+	color: #d05874;
+	font-size: 25px;
+	float: right;
+}
+
+#dialog-disagree {
+	color: white;
+	background: var(--red);
+	float: right;
+}
+#dialog-disagree:hover {
+	background: white;
+	color: var(--red);
+}
+#dialog-agree {
+	float: left;
+	color: white;
+	background-color: #76ae76;
+}
+
+#dialog-agree:hover {
+	float: left;
+	background: white;
+	color: #76ae76;
+}
+
 header {
 	background-size: cover;
 	background-position: top;

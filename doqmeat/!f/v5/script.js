@@ -43,22 +43,32 @@ function showBox(boxID) {
 document.getElementById("default").click();
 
 // when clicking the 'chatbox' tab, this popup will appear asking you if you agree with the rules
-function chatPopup() {
-	let messageRead = localStorage.getItem("messageRead"); // so it doesn't ask you every time
-	// if messageRead is false or null
-	if (messageRead == "false" || messageRead == null) {
-		// the popup will appear
-		if (
-			confirm(
-				"rules & notes:\n\n\t1) spam and rude messages get deleted (ˉ▽ˉ；)...\n\n\t2) for any serious inquiries, send via e-mail\n\n\t3) thank you all for the nice messages (o゜▽゜)o☆ have fun!\n\npress 'OK' to agree with the rules."
-			)
-		) {
-			// if the user clicks OK...
-			localStorage.setItem("messageRead", true);
-		} else {
-			// if the user clicks cancel they will get redirected to a side eye from a chinese cat
-			window.location.replace("/collection/cats/!g/sideeye.jpg");
-			localStorage.setItem("messageRead", false);
+function chatPopup(choice = "none") {
+	let agree = localStorage.getItem("messageAgree"); // so it doesn't ask you every time
+	let chatbox = document.getElementById("chatbox-frame");
+	let dialogBox = document.querySelector("dialog");
+	// the pop up will display if the localstorage is false or null
+	if (agree === "false" || agree === null) {
+		chatbox.style.display = "none";
+		switch (choice) {
+			case "none":
+				dialogBox.showModal();
+				break;
+			case "okay":
+				dialogBox.close();
+				chatbox.style.display = "block";
+				localStorage.setItem("messageAgree", true);
+				break;
+			case "nope":
+				localStorage.setItem("messageAgree", false);
+				window.location.replace("/collection/cats/!g/sideeye.jpg");
+				break;
+			case "close":
+				dialogBox.close();
+				localStorage.setItem("messageAgree", false);
 		}
-	} // else nothing happens
+	} else {
+		// the popup won't appear and you'll get access to the chat
+		chatbox.style.display = "block";
+	}
 }
