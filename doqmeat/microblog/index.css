@@ -219,9 +219,11 @@ main {
 	border-radius: 10px;
 }
 
-.icon {
+button.icon {
 	position: absolute;
 	width: 70px;
+	background: transparent;
+	border: none;
 }
 
 #puter {

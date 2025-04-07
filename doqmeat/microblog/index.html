@@ -15,8 +15,7 @@
 </head>
 
 <body>
-	<div id="mouse" onclick="toggleclick('info')" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></div>
-
+	<button id="mouse" onclick="toggleclick('info')" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></button>
 	<div id="info">
 		<button onclick="toggleclick('info')" class="x hide">x</button>
 		<p>des' microblog. made for smaller thoughts i want to share.</p>
@@ -306,10 +305,9 @@
 		</div>
 	</main>
 
-
-	<a title="click to go back to homepage" href="/">
-		<div id="puter" class="icon"><img src="puter.png" alt="computer icon"><br><span>homepage</span></div>
-	</a>
+	<button id="puter" class="icon">
+		<a title="click to go back to homepage" href="/"><img src="puter.png" alt="computer icon"><br><span>homepage</span></a>
+	</button>
 
 	<script src="picture.js"></script>
 	<script src="script.js"></script>
