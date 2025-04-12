@@ -1,195 +1,199 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background: url("/!g/bg/yellobg.png");
-  background-position: center;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  font-size: 18px;
-  word-spacing: 3px;
-  line-height: 24px;
-  color: black;
+	background: url("/!g/bg/yellobg.png");
+	background-position: center;
+	background-repeat: repeat;
+	background-attachment: fixed;
+	font-size: 18px;
+	word-spacing: 3px;
+	line-height: 24px;
+	color: black;
+}
+
+h3 {
+	margin: 5px;
 }
 
 header {
-  padding: 5px;
+	padding: 5px;
 }
 
 li {
-  list-style-image: url("/!g/pix/starpink.gif");
-  padding-left: 2px;
-  list-style-position: inside;
+	list-style-image: url("/!g/pix/starpink.gif");
+	padding-left: 2px;
+	list-style-position: inside;
 }
 
 p,
 details {
-  margin: 20px 10px 20px 12px;
+	margin: 20px 10px 20px 12px;
 }
 
 img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 hr {
-  background: url("!g/leaf.gif");
-  height: 15px;
-  border: 0px;
+	background: url("!g/leaf.gif");
+	height: 15px;
+	border: 0px;
 }
 
 #log,
 main {
-  padding: 0px;
-  max-width: 700px;
-  margin: auto;
-  margin-bottom: 10px;
-  scrollbar-color: #e4a79d #fffcdc;
+	padding: 0px;
+	max-width: 700px;
+	margin: auto;
+	margin-bottom: 10px;
+	scrollbar-color: #e4a79d #fffcdc;
 }
 
 i {
-  background: #c7d9f8;
+	background: #c7d9f8;
 }
 
 b,
 strong {
-  background: #e4a79d;
+	background: #e4a79d;
 }
 
 mark {
-  background: #ffe481;
+	background: #ffe481;
 }
 
 article {
-  margin-bottom: 30px;
+	margin-bottom: 30px;
 }
 
 article:last-child {
-  margin-bottom: 0px;
+	margin-bottom: 0px;
 }
 
 .title {
-  font-family: morningtea, var(--fonts);
-  float: left;
-  color: #586d94;
-  text-shadow: 1px 1px 4px #ffffff;
-  padding-top: 5px;
+	font-family: morningtea, var(--fonts);
+	float: left;
+	color: #586d94;
+	text-shadow: 1px 1px 4px #ffffff;
+	padding-top: 5px;
 }
 
 .date {
-  font-family: morningtea, var(--fonts);
-  font-size: 16px;
+	font-family: morningtea, var(--fonts);
+	font-size: 16px;
 }
 
 .entry {
-  font-size: 28px;
-  background: url(!g/memo-cube.jpg);
-  background-position: center;
-  border: 4px double black;
-  text-align: right;
-  font-weight: bold;
-  margin: 5px 0px 15px 0px;
-  padding: 2px 10px;
+	font-size: 28px;
+	background: url(!g/memo-cube.jpg);
+	background-position: center;
+	border: 4px double black;
+	text-align: right;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+	padding: 2px 10px;
 }
 
 .left {
-  margin: 10px;
-  float: left;
+	margin: 10px;
+	float: left;
 }
 
 .right {
-  margin: 10px;
-  float: right;
+	margin: 10px;
+	float: right;
 }
 
 .mini {
-  display: inline-block;
-  line-height: 23px;
-  font-family: newpenji, var(--fonts);
-  background: url(/!g/bg/picnicclothbg.png);
-  font-size: 17px;
-  border: 4px double black;
-  margin: 5px 5px;
-  padding: 0px 5px;
-  border-radius: 10px;
+	display: inline-block;
+	line-height: 23px;
+	font-family: newpenji, var(--fonts);
+	background: url(/!g/bg/picnicclothbg.png);
+	font-size: 17px;
+	border: 4px double black;
+	margin: 5px 5px;
+	padding: 0px 5px;
+	border-radius: 10px;
 }
 
 .mini > a {
-  background: transparent;
-  text-decoration: underline;
+	background: transparent;
+	text-decoration: underline;
 }
 
 ::before {
-  margin: 5px;
-  vertical-align: middle;
+	margin: 5px;
+	vertical-align: middle;
 }
 
 ::after {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .l::before {
-  content: url(/!g/pix/music%20notes.gif);
+	content: url(/!g/pix/music%20notes.gif);
 }
 
 .l::after {
-  content: "listening to:";
+	content: "listening to:";
 }
 
 .f::before {
-  content: url(/!g/pix/catloaf.gif);
+	content: url(/!g/pix/catloaf.gif);
 }
 
 .f::after {
-  content: "feeling:";
+	content: "feeling:";
 }
 
 .w::before {
-  content: url(/!g/pix/tv.gif);
+	content: url(/!g/pix/tv.gif);
 }
 
 .w::after {
-  content: "watching:";
+	content: "watching:";
 }
 
 .p::before {
-  content: url(/!g/pix/vgs.gif);
+	content: url(/!g/pix/vgs.gif);
 }
 
 .p::after {
-  content: "playing:";
+	content: "playing:";
 }
 
 .e::before {
-  content: url(/!g/pix/cookingpan.gif);
+	content: url(/!g/pix/cookingpan.gif);
 }
 
 .e::after {
-  content: "eating:";
+	content: "eating:";
 }
 
 /* this is for older entries LOL i cant be bothered to fix them*/
 
 p.date {
-  font-size: 27px;
-  background: url(/!g/bg/h056-4.gif);
-  background-size: 50px;
-  border: 4px double black;
-  text-align: right;
-  font-weight: bold;
-  margin: 5px 0px 15px 0px;
-  padding: 0px 10px;
+	font-size: 27px;
+	background: url(/!g/bg/h056-4.gif);
+	background-size: 50px;
+	border: 4px double black;
+	text-align: right;
+	font-weight: bold;
+	margin: 5px 0px 15px 0px;
+	padding: 0px 10px;
 }
 
 /*end*/
 
 @media only screen and (max-width: 599px) {
-  .entry {
-    border-left: 0px;
-    border-right: 0px;
-  }
+	.entry {
+		border-left: 0px;
+		border-right: 0px;
+	}
 
-  body {
-    background: transparent;
-  }
+	body {
+		background: transparent;
+	}
 }
