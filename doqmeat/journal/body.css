@@ -1,34 +1,34 @@
 * {
-  box-sizing: border-box;
-  cursor: url(/journal/!g/cursor-pencil.png), auto !important;
+	box-sizing: border-box;
+	cursor: url(/journal/!g/cursor-pencil.png), auto !important;
 }
 
 :root {
-  --fonts: gaegu-r, arial;
-  --r-border: 2px solid #e4a79d;
-  --cream: #fffcdc;
-  --red: #c9525e;
-  --l-red: #e4a79d;
-  --l-blue: #c7d9f8;
-  --green: #d0ff8d;
-  --yellow: #ffe481;
+	--fonts: gaegu-r, arial;
+	--r-border: 2px solid #e4a79d;
+	--cream: #fffcdc;
+	--red: #c9525e;
+	--l-red: #e4a79d;
+	--l-blue: #c7d9f8;
+	--green: #d0ff8d;
+	--yellow: #ffe481;
 }
 
 html {
-  scrollbar-color: var(--l-red) var(--l-blue);
+	scrollbar-color: var(--l-red) var(--l-blue);
 }
 
 body {
-  background: url("/!g/bg/patterbg.gif");
-  background-attachment: fixed;
-  word-wrap: break-word;
-  font-size: 16px;
-  line-height: 23px;
-  font-family: var(--fonts);
-  color: black;
-  padding: 0px;
-  margin: 0px;
-  scrollbar-color: #e4a79d #fffcdc;
+	background: url("/!g/bg/patterbg.gif");
+	background-attachment: fixed;
+	word-wrap: break-word;
+	font-size: 16px;
+	line-height: 23px;
+	font-family: var(--fonts);
+	color: black;
+	padding: 0px;
+	margin: 0px;
+	scrollbar-color: #e4a79d #fffcdc;
 }
 
 h1,
@@ -37,155 +37,166 @@ h3,
 h4,
 h5,
 h6 {
-  padding: 5px;
-  font-family: morningtea, gaegu-l, var(--fonts);
+	padding: 5px;
+	font-family: morningtea, gaegu-l, var(--fonts);
 }
 
 i {
-  background: #c7d9f8;
+	background: #c7d9f8;
 }
 
 mark {
-  background: #ffe481;
+	background: #ffe481;
 }
 
 li {
-  list-style-image: url("/!g/pix/li19.gif");
-  padding: 10px;
-  list-style-position: inside;
-  margin: 5px;
+	list-style-image: url("/!g/pix/li19.gif");
+	padding: 10px;
+	list-style-position: inside;
+	margin: 5px;
 }
 
 ul {
-  margin: 0px;
-  padding: 0px 5px 5px 35px;
+	margin: 0px;
+	padding: 0px 5px 5px 35px;
 }
 
 a {
-  color: black;
-  background: #d0ff8d;
-  font-weight: normal;
-  text-decoration: none;
+	color: black;
+	background: #d0ff8d;
+	font-weight: normal;
+	text-decoration: none;
 }
 
 a:hover {
-  color: black;
-  text-decoration: underline;
-  cursor: help;
+	color: black;
+	text-decoration: underline;
+	cursor: help;
 }
 
 a:focus {
-  text-decoration: wavy underline;
+	text-decoration: wavy underline;
 }
 
 a:active {
-  outline: 0;
+	outline: 0;
 }
 
 p {
-  margin: 0 0 10px 0;
-  padding: 5px;
+	margin: 0 0 10px 0;
+	padding: 5px;
 }
 
 p img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 blockquote {
-  font-family: YU gothic UI, var(--fonts);
-  font-size: 16px;
-  font-style: italic;
-  border-left: 2px solid #e4a79d;
-  padding-left: 5px;
+	font-family: YU gothic UI, var(--fonts);
+	font-size: 16px;
+	font-style: italic;
+	border-left: 2px solid #e4a79d;
+	padding-left: 5px;
 }
 
 ::selection {
-  color: black;
-  background-color: #a6ddff;
+	color: black;
+	background-color: #a6ddff;
 }
 
 summary {
-  cursor: help;
-  padding: 0px 5px;
+	cursor: help;
+	padding: 0px 5px;
 }
 
 figure {
-  width: auto;
-  text-align: center;
-  margin: 10px;
-  padding: 10px;
-}
-
-figure img {
-  max-width: 100%;
+	position: relative;
+	border: 2px dashed #c9525e;
+	background: rgba(255, 255, 255, 0.699);
+	border-radius: 5px;
+	width: auto;
+	text-align: center;
+	margin: 15px 10px 10px 10px;
+	padding: 10px;
+	& img {
+		max-width: 100%;
+	}
+	&::after {
+		content: url("/!g/deco/washitape4.png");
+		opacity: 0.9;
+		position: absolute;
+		top: -20px;
+		left: 30%;
+	}
 }
 
 figcaption {
-  font-size: 15px;
-  line-height: normal;
+	padding: 10px;
+	font-size: 15px;
+	line-height: normal;
 }
 
 .spoiler {
-  background-color: black;
-  color: black;
+	background-color: black;
+	color: black;
 }
 
 .spoiler:hover {
-  background-color: transparent;
+	background-color: transparent;
 }
 
 .f-fix {
-  overflow: hidden;
+	overflow: hidden;
 }
 
 .transp {
-  background: transparent;
+	background: transparent;
 }
 
 .centered {
-  text-align: center;
+	text-align: center;
 }
 
 .outlink::after {
-  content: "↗";
-  padding-left: 2px;
-  vertical-align: text-bottom;
+	content: "↗";
+	padding-left: 2px;
+	vertical-align: text-bottom;
 }
 
 #s-m-t-tooltip {
-  max-width: 300px;
-  font-family: var(--fonts);
-  text-align: center;
-  z-index: 9999;
-  margin: 30px 15px 7px 12px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 2px dashed #c9525e;
-  color: black;
-  background: #f9eab4;
+	max-width: 300px;
+	font-family: var(--fonts);
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 2px dashed #c9525e;
+	color: black;
+	background: #f9eab4;
 }
 
 @media only screen and (max-width: 599px) {
-  .hide {
-    display: none;
-  }
+	.hide {
+		display: none;
+	}
 }
 
 ::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
+	width: 8px;
+	height: 8px;
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-  background-color: #e4a79d;
-  border-radius: 10px;
+	background-color: #e4a79d;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-  background-color: #e4a79d;
-  border-radius: 10px;
+	background-color: #e4a79d;
+	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-track {
-  background-color: #fffcdc;
+	background-color: #fffcdc;
 }
