@@ -1,162 +1,162 @@
 /* https://coolors.co/a6d0c8-535e7c-764c7f-bb95af-e5b8d1-d24f9c-2a4365-dfecbf */
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  --fonts: gaegu-r, ms gothic, arial;
-  --wrapper: 900px;
-  --l-blue: #a6d0c8;
-  --d-blue: #535e7c;
-  --purple: #764c7f;
-  --berry: #d24f9c;
-  --green: #dfecbf;
+	--fonts: gaegu-r, ms gothic, arial;
+	--wrapper: 900px;
+	--l-blue: #a6d0c8;
+	--d-blue: #535e7c;
+	--purple: #764c7f;
+	--berry: #d24f9c;
+	--green: #dfecbf;
 }
 
 ::selection {
-  background: var(--d-blue);
-  color: var(--green);
+	background: var(--d-blue);
+	color: var(--green);
 }
 
 html {
-  scrollbar-color: #dfecbf #535e7c;
+	scrollbar-color: #dfecbf #535e7c;
 }
 
 body {
-  font-size: 17px;
-  font-family: var(--fonts);
-  background: url(bg.png);
-  background-size: cover;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  color: var(--d-blue);
-  margin-bottom: 50px;
+	font-size: 17px;
+	font-family: var(--fonts);
+	background: url(bg.png);
+	background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	color: var(--d-blue);
+	margin-bottom: 50px;
 }
 
 main,
 footer,
 header {
-  padding: 10px;
-  margin: auto;
-  max-width: var(--wrapper);
+	padding: 10px;
+	margin: auto;
+	max-width: var(--wrapper);
 }
 
 header,
 footer {
-  text-align: center;
-  background: var(--green);
-  max-width: 800px;
-  border-radius: 20px;
-  border: 2px dashed var(--d-blue);
+	text-align: center;
+	background: var(--green);
+	max-width: 800px;
+	border-radius: 20px;
+	border: 2px dashed var(--d-blue);
 }
 
 header {
-  margin-top: 50px;
-  max-width: 500px;
+	margin-top: 50px;
+	max-width: 500px;
 }
 
 h1 {
-  font-family: morningtea, var(--fonts);
+	font-family: morningtea, var(--fonts);
 }
 
 h2 {
-  margin: 5px;
-  font-size: 22px;
-  font-family: morningtea, natsuzemi, var(--fonts);
+	margin: 5px;
+	font-size: 22px;
+	font-family: morningtea, natsuzemi, var(--fonts);
 }
 
 a {
-  color: #535e7c;
-  font-weight: bold;
-  background: var(--green);
-  cursor: help;
+	color: #535e7c;
+	font-weight: bold;
+	background: var(--green);
+	cursor: help;
 }
 
 blockquote {
-  font-style: italic;
-  padding-left: 10px;
-  border-left: 5px double #2a4365;
+	font-style: italic;
+	padding-left: 10px;
+	border-left: 5px double #2a4365;
 }
 
 a:hover {
-  color: #e5b8d1;
-  background: #535e7c;
+	color: #e5b8d1;
+	background: #535e7c;
 }
 
 .spoiler {
-  background: #764c7f;
-  color: #764c7f;
+	background: #764c7f;
+	color: #764c7f;
 }
 
 .spoiler:hover {
-  background: white;
-  border: 1px solid #764c7f;
-  color: inherit;
+	background: white;
+	border: 1px solid #764c7f;
+	color: inherit;
 }
 
 #wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 40px;
 }
 
 main {
-  max-width: 1300px;
+	max-width: 1300px;
 }
 
 .show {
-  position: relative;
-  display: block;
-  height: 298px;
-  width: 400px;
-  margin: 10px;
-  border-radius: 10px;
-  overflow: hidden;
-  border: 4px ridge var(--l-blue);
-  background: var(--green);
+	position: relative;
+	display: block;
+	height: 298px;
+	width: 400px;
+	margin: 10px;
+	border-radius: 10px;
+	overflow: hidden;
+	border: 4px ridge var(--l-blue);
+	background: var(--green);
 }
 
 .cover {
-  width: 45%;
-  float: left;
-  margin: 10px;
-  border-radius: 10px;
+	width: 45%;
+	float: left;
+	margin: 10px;
+	border-radius: 10px;
 }
 
 .cover-r {
-  width: 45%;
-  float: right;
-  margin: 10px;
-  border-radius: 10px;
+	width: 45%;
+	float: right;
+	margin: 10px;
+	border-radius: 10px;
 }
 
 .box {
-  text-align: center;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  position: relative;
-  padding: 5px;
-  background: rgb(229, 184, 209, 0.98);
-  transition-duration: 0.3s;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	position: relative;
+	padding: 5px;
+	background: rgb(229, 184, 209, 0.98);
+	transition-duration: 0.3s;
 }
 
 .box p {
-  margin: 10px;
+	margin: 10px;
 }
 
 .box p:hover {
-  background: white;
-  border-radius: 10px;
+	background: white;
+	border-radius: 10px;
 }
 
-.status {
+/* .status {
   background: var(--l-blue);
   border: 1px dashed #2a4365;
   display: inline-block;
@@ -168,73 +168,73 @@ main {
 .status:before {
   content: "status: ";
   font-weight: bold;
-}
+} */
 
 .box details {
-  background: transparent;
-  color: inherit;
+	background: transparent;
+	color: inherit;
 }
 
 summary {
-  cursor: help;
+	cursor: help;
 }
 
 #lists {
-  margin: auto;
-  max-width: 400px;
-  background-image: url(/!g/bg/whiteline.jpg);
-  background-size: 13px;
-  background-color: #a6d0c8;
-  padding: 10px;
+	margin: auto;
+	max-width: 400px;
+	background-image: url(/!g/bg/whiteline.jpg);
+	background-size: 13px;
+	background-color: #a6d0c8;
+	padding: 10px;
 }
 
 #lists p {
-  margin: 0px;
-  padding: 3px;
+	margin: 0px;
+	padding: 3px;
 }
 
 footer {
-  padding: 5px;
-  max-width: 700px;
-  margin-top: 50px;
+	padding: 5px;
+	max-width: 700px;
+	margin-top: 50px;
 }
 
 footer p {
-  margin: 3px 0px;
+	margin: 3px 0px;
 }
 
 #home {
-  position: fixed;
-  top: 10px;
-  left: 10px;
+	position: fixed;
+	top: 10px;
+	left: 10px;
 }
 
 #home a {
-  background: transparent;
+	background: transparent;
 }
 
 #s-m-t-tooltip {
-  max-width: 200px;
-  text-align: center;
-  font-size: 15px;
-  word-spacing: 8px;
-  z-index: 9999;
-  margin: 30px 15px 7px 12px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px dashed var(--green);
-  color: var(--green);
-  background: var(--berry);
+	max-width: 200px;
+	text-align: center;
+	font-size: 15px;
+	word-spacing: 8px;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed var(--green);
+	color: var(--green);
+	background: var(--berry);
 }
 
 @media only screen and (max-width: 1128px) {
-  main {
-    max-width: 890px;
-  }
+	main {
+		max-width: 890px;
+	}
 }
 
 @media only screen and (max-width: 870px) {
-  main {
-    max-width: 679px;
-  }
+	main {
+		max-width: 679px;
+	}
 }
