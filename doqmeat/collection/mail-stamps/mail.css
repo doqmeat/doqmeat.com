@@ -13,12 +13,11 @@ body {
 }
 
 :root {
-	--red: #FF6471;
-	--blue: #5D96FF;
-	--cream: #FFF4EE;
+	--red: #ff6471;
+	--blue: #5d96ff;
+	--cream: #fff4ee;
 	--fonts: simple, ms pgothic, arial;
 }
-
 
 a {
 	color: var(--red);
@@ -101,7 +100,7 @@ footer {
 	text-align: center;
 	z-index: 9999;
 	margin: 30px 15px 7px 12px;
-	padding: 3px;
+	padding: 6px;
 	border-radius: 10px;
 	border: 3px ridge var(--blue);
 	background: var(--cream);
