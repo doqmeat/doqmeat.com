@@ -17,6 +17,27 @@ coded with love by des
   <script src="/!f/tooltip.js"></script>
   <script src="/!f/tooltip-jquary.js"></script>
   <!--  end of tooltip shit -->
+  <style>
+    button {
+      background: var(--l-blue);
+      font-family: inherit;
+      font-size: 17px;
+      border: none;
+      border-radius: 10px;
+      padding: 0px 7px;
+      margin: 3px 1px;
+    }
+
+    button:hover {
+      cursor: help;
+      box-shadow: #e4a79d 4px 2px 2px;
+    }
+
+    button:focus,
+    button:active {
+      background: #e4a79d;
+    }
+  </style>
 </head>
 
 <body>
@@ -25,17 +46,30 @@ coded with love by des
       <small><a href="index.html" target="_parent">out of frame? click here!</a></small>
     </header>
     <h2>log archive</h2>
+    <p>total logs written: <span id="amountLogs"></span></p>
     <!-- 
     tags:
     - life : my overall life
-     - interests : overall pasttimes / hobbies
-     - gaming : video game talk
     - pets : anything about my pets! can be about steve or mizu
-    - music : music talk
     - uni : anything school related
     - tech : technology related
+         - interests : overall pasttimes / hobbies
+     - music : music talk
+      - gaming : video game talk
     - coding: anything that has to do with coding including my site, other stuff
      -->
+    <h3>tags:</h3>
+    <button onclick="showLog('')">all</button>
+    <button onclick="showLog('life')">life</button>
+    <button onclick="showLog('interests')">interests</button>
+    <button onclick="showLog('pets')">pets</button>
+    <button onclick="showLog('uni')">uni</button>
+    <button onclick="showLog('tech')">tech</button>
+    <button onclick="showLog('coding')">coding</button>
+    <button onclick="showLog('site')">site</button>
+    <button onclick="showLog('music')">music</button>
+    <button onclick="showLog('gaming')">gaming</button>
+    <li class="tech interests">01.jun.25 - <a href="2025/06.html#1">my beautiful madoka discs</a></li>
     <li class="life uni">26.may.25 - <a href="2025/05.html#26">recap of uni semester + summer plans</a></li>
     <li class="pets">20.apr.25 - <a href="2025/04.html#20">walking steve minecraft outside</a></li>
     <li class="life coding">11.apr.25 - <a href="2025/04.html#11">this is like the equivalent of someone not talking for a week and then talking for 5 hours straight.</a></li>
@@ -81,7 +115,7 @@ coded with love by des
     <li class="life">28.oct.23 - <a href="2023/10.html#28">five nights at frederick's</a></li>
     <li class="reading life">22.oct.23 - <a href="2023/10.html#22">sick n reading</a></li>
     <li class="site">21.oct.23 - <a href="2023/10.html#21">journal format</a></li>
-    <li class="tv life">11.oct.23 - <a href="2023/10.html#11">horror</a></li>
+    <li class="interests life">11.oct.23 - <a href="2023/10.html#11">horror</a></li>
     <li class="life">03.oct.24 - <a href="2023/10.html#3">interview</a></li>
     <li class="life uni">01.oct.23 - <a href="2023/10.html#1">old friend + going back to uni? + OCTOBER!</a></li>
     <li class="life">23.sep.23 - <a href="2023/09.html#23">mini update</a></li>
@@ -108,6 +142,8 @@ coded with love by des
 
 
   </main>
+
+  <script src="tags.js"></script>
 </body>
 
 </html>

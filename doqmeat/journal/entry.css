@@ -172,6 +172,14 @@ article:last-child {
 	content: "eating:";
 }
 
+.t::before {
+	content: url(/!g/pix/puter.gif);
+}
+
+.t::after {
+	content: "tags:";
+}
+
 /* this is for older entries LOL i cant be bothered to fix them*/
 
 p.date {
