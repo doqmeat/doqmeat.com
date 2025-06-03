@@ -416,7 +416,7 @@ main#intro .inner {
 	color: white;
 	padding: 5px;
 	scrollbar-color: rgb(39, 36, 36) rgb(39, 36, 36);
-	word-break: break-all;
+	word-break: keep-all;
 }
 
 .up,
