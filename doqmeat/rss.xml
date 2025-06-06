@@ -8,6 +8,14 @@
 		<description>des' personal website!</description>
 		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
 
+
+		<item>
+			<title>06.jun.25 - JS sony walkman mp3 player</title>
+			<link>https://doqmeat.com/notebook/F2U/codes#walkman</link>
+			<description>finished a new F2U code! this time it's javascript music player themed after a sony walkman mp3 player from 2008.</description>
+			<pubDate>Fri, 6 June 2025 05:00:00 -0400</pubDate>
+		</item>
+
 		<item>
 			<title>01.jun.25 - my beautiful madoka discs</title>
 			<link>https://doqmeat.com/journal</link>
