@@ -2,6 +2,10 @@
 	box-sizing: border-box;
 }
 
+html {
+	scrollbar-color: rgb(112, 170, 89) #fcfabd;
+}
+
 body {
 	margin: 0px;
 	background: lightgoldenrodyellow;
@@ -14,8 +18,14 @@ body {
 	scrollbar-color: #e4cad2 #fbedb8;
 }
 
-html {
-	scrollbar-color: rgb(112, 170, 89) #fcfabd;
+header {
+	background: #f08696;
+	position: relative;
+	margin: auto;
+	margin-top: 20px;
+	padding: 10px;
+	max-width: 900px;
+	border: 6px ridge #fffac4;
 }
 
 ::selection {
@@ -32,22 +42,13 @@ html {
 }
 
 button {
+	cursor: help;
 	color: lightblue;
 	text-shadow: 1px 1px 1px white;
 	border: none;
 	background: transparent;
 	font-family: var(--fonts);
 	font-size: inherit;
-}
-
-header {
-	background: #f08696;
-	position: relative;
-	margin: auto;
-	margin-top: 20px;
-	padding: 10px;
-	max-width: 900px;
-	border: 6px ridge #fffac4;
 }
 
 h1 {
@@ -62,13 +63,16 @@ h1 {
 }
 
 main {
+	padding: 30px 30px;
 	margin: auto;
-	display: flex;
-	flex-wrap: wrap;
-	overflow: visible;
+	display: block;
+	position: relative;
 	text-align: center;
-	max-width: 1300px;
+	width: 95%;
+	height: 100%;
 	line-height: 0px;
+	column-count: 4;
+	column-gap: 20px;
 }
 
 a {
@@ -84,7 +88,8 @@ a:hover {
 	background: white;
 	position: relative;
 	display: block;
-	margin: 20px 10px;
+	width: 100%;
+	margin: 20px 0px;
 	max-height: 420px;
 	transition-duration: 0.3s;
 	overflow-x: hidden;
