@@ -73,22 +73,20 @@ dialog {
 	color: inherit;
 	border: 2px dashed;
 	background: white;
-}
-
-dialog::backdrop {
-	background: rgba(0, 0, 0, 0.525);
-}
-
-dialog button {
-	color: black;
-	cursor: help;
-	font-family: inherit;
-	text-align: right;
-	background: transparent;
-	border: none;
-	margin: 0px 15px;
-	font-size: inherit;
-	border-radius: 10px;
+	dialog::backdrop {
+		background: rgba(0, 0, 0, 0.525);
+	}
+	button {
+		color: black;
+		cursor: help;
+		font-family: inherit;
+		text-align: right;
+		background: transparent;
+		border: none;
+		margin: 0px 15px;
+		font-size: inherit;
+		border-radius: 10px;
+	}
 }
 
 #close-dialog {
@@ -102,10 +100,12 @@ dialog button {
 	background: var(--red);
 	float: right;
 }
+
 #dialog-disagree:hover {
 	background: white;
 	color: var(--red);
 }
+
 #dialog-agree {
 	float: left;
 	color: white;
@@ -121,42 +121,37 @@ dialog button {
 header {
 	background-size: cover;
 	background-position: top;
-	/* border: 1px solid black; */
 	grid-area: header;
 	text-align: center;
 	transition-duration: 0.5s;
-}
-
-header h1 {
-	background: linear-gradient(to right, #ffca92, #9bbcff, #ffa3d1, #9bff9b);
-	background-clip: border-box;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	line-height: normal;
-	margin: 0px;
-	font-weight: normal;
-	font-size: 55px;
-	font-family: bm-neko;
-	letter-spacing: 5px;
-	word-spacing: 5px;
-	transition-duration: 1s;
-}
-
-header h1:hover {
-	background: linear-gradient(to left, #ffca92, #9bbcff, #ffa3d1, #9bff9b);
-	background-clip: border-box;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-header p {
-	transition-duration: 0.4s;
-	letter-spacing: 3px;
-}
-
-header p:hover {
-	font-weight: bold;
-	word-spacing: 4px;
+	h1 {
+		background: linear-gradient(to right, #ffca92, #9bbcff, #ffa3d1, #9bff9b);
+		background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		line-height: normal;
+		margin: 0px;
+		font-weight: normal;
+		font-size: 55px;
+		font-family: bm-neko;
+		letter-spacing: 5px;
+		word-spacing: 5px;
+		transition-duration: 1s;
+	}
+	h1:hover {
+		background: linear-gradient(to left, #ffca92, #9bbcff, #ffa3d1, #9bff9b);
+		background-clip: border-box;
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+	p {
+		transition-duration: 0.4s;
+		letter-spacing: 3px;
+	}
+	p:hover {
+		font-weight: bold;
+		word-spacing: 4px;
+	}
 }
 
 main#intro {
@@ -205,86 +200,85 @@ main#intro .inner {
 	overflow: hidden;
 	scrollbar-color: rgb(176, 217, 230) white;
 	transition-duration: 0.5s;
-}
+	#rss:hover {
+		background-position: bottom;
+	}
 
-#rss:hover {
-	background-position: bottom;
-}
+	h3.feed-title {
+		display: none;
+	}
 
-#rss h3.feed-title {
-	display: none;
-}
+	a {
+		text-decoration: none;
+		color: rgb(218, 124, 144);
+	}
 
-#rss a {
-	text-decoration: none;
-	color: rgb(218, 124, 144);
-}
+	.feed-item-title {
+		font-size: 19px;
+		margin: 5px 0px;
+	}
 
-#rss .feed-item-title {
-	font-size: 19px;
-	margin: 5px 0px;
-}
+	.feed-item-desc {
+		font-size: 17px;
+		line-height: normal;
+		font-family: gaegu-r;
+	}
 
-#rss .feed-item-desc {
-	font-size: 17px;
-	line-height: normal;
-	font-family: gaegu-r;
-}
+	.feed-item-desc a {
+		text-decoration: underline;
+	}
 
-#rss .feed-item-desc a {
-	text-decoration: underline;
-}
+	.feed-item-desc a:hover {
+		text-decoration: line-through;
+	}
 
-#rss .feed-item-desc a:hover {
-	text-decoration: line-through;
-}
+	.feed-item-title {
+		font-size: 13px;
+		text-align: center;
+	}
+	.feed-item-title a::before {
+		vertical-align: middle;
+		content: url("assets/flower-big-pink.gif");
+		padding-right: 6px;
+	}
 
-#rss .feed-item-title {
-	font-size: 13px;
-	text-align: center;
-}
-#rss .feed-item-title a::before {
-	vertical-align: middle;
-	content: url("assets/flower-big-pink.gif");
-	padding-right: 6px;
-}
+	.feed-item-title:nth-of-type(1) a {
+		color: rgba(103, 126, 110, 0.815);
+	}
 
-#rss .feed-item-title:nth-of-type(1) a {
-	color: rgba(103, 126, 110, 0.815);
-}
+	.feed-item-title a:hover {
+		text-decoration: line-through;
+	}
 
-#rss .feed-item-title a:hover {
-	text-decoration: line-through;
-}
+	.feed-item-title:nth-of-type(1) a::before {
+		vertical-align: middle;
+		content: url("assets/twinkle.gif");
+		padding-right: 6px;
+	}
 
-#rss .feed-item-title:nth-of-type(1) a::before {
-	vertical-align: middle;
-	content: url("assets/twinkle.gif");
-	padding-right: 6px;
-}
+	.feed-item-desc:nth-of-type(1) {
+		border: 4px ridge rgba(191, 212, 192, 0.712);
+		border-radius: 10px;
+		padding: 10px;
+		background: rgba(255, 255, 255, 0.726);
+	}
 
-#rss .feed-item-desc:nth-of-type(1) {
-	border: 4px ridge rgba(191, 212, 192, 0.712);
-	border-radius: 10px;
-	padding: 10px;
-	background: rgba(255, 255, 255, 0.726);
-}
+	.feed-item-desc:nth-of-type(1) a {
+		color: rgb(131, 131, 189);
+	}
 
-#rss .feed-item-desc:nth-of-type(1) a {
-	color: rgb(131, 131, 189);
-}
+	h3 {
+		margin: 0px;
+		letter-spacing: 2px;
+		text-align: center;
+		margin-top: -20px;
+		margin-bottom: 5px;
+	}
 
-#rss h3 {
-	margin: 0px;
-	letter-spacing: 2px;
-	text-align: center;
-	margin-top: -20px;
-	margin-bottom: 5px;
-}
-
-#rss .inner {
-	overflow: auto;
-	height: 100%;
+	.inner {
+		overflow: auto;
+		height: 100%;
+	}
 }
 
 /* make this the wrapper and inside have tape! */
@@ -452,16 +446,6 @@ main#intro .inner {
 .pause {
 	font-size: 10px;
 	color: white;
-}
-
-.sony {
-	font-family: simple;
-	letter-spacing: 3px;
-	color: white;
-	position: absolute;
-	left: 78px;
-	top: 8px;
-	font-size: 18px;
 }
 
 #song {
