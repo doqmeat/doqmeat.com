@@ -35,6 +35,30 @@ details {
 	font-size: 15px;
 }
 
+#goals details {
+	font-size: unset;
+	background: none;
+	p {
+		margin: 0px;
+		padding: 0 0 0 30px;
+	}
+	p::before {
+		content: "⤷ ";
+	}
+	summary {
+		font-family: unset;
+	}
+	summary.pending {
+		list-style-image: url(/!g/pix/checkdots.png);
+	}
+	summary.done {
+		list-style-image: url(/!g/pix/checkyes.png);
+	}
+	summary.not_done {
+		list-style-image: url(/!g/pix/checkno.png);
+	}
+}
+
 b {
 	font-weight: normal;
 	font-family: gaegu-b, var(--fonts);
@@ -145,7 +169,12 @@ header.page {
 	float: left;
 }
 
-.left.pin::after {
+.left:hover {
+	rotate: -2deg;
+}
+
+/* wanna make a better drawing for the push pin */
+/* .left.pin::after {
 	content: url("/!g/deco/pin.png");
 	position: absolute;
 	top: -8%;
@@ -158,11 +187,7 @@ header.page {
 	position: absolute;
 	top: -9%;
 	rotate: 10deg;
-}
-
-.left:hover {
-	rotate: -2deg;
-}
+} */
 
 .right {
 	rotate: -2deg;

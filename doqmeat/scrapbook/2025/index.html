@@ -20,16 +20,6 @@
       -o-background-size: cover;
       background-size: cover;
     }
-
-    .inner {
-      margin: 0px;
-      padding: 0 0 0 30px;
-      background: #f4e9f6a1
-    }
-
-    .inner::before {
-      content: "⤷ ";
-    }
   </style>
 </head>
 
@@ -51,40 +41,54 @@
     </center>
   </header>
 
-  <article class="page">
-    <!-- have the details of the goals collapse... -->
-    <h2 id="goals" style="background:#d7c4d9">goals for 2025</h2>
-    <input type="checkbox">
-    <label>receive student aid.</label>
-    <br>
-    <input type="checkbox">
-    <label>do more cooking recipes.</label>
-    <p class="inner">will be listing all of the new recipes that i tried AND TASTED GOOD here!</p>
-    <p class="inner"><a href="/recipes/sandwiches-de-mezcla.html">sandwiches de mezcla</a></p>
-    <p class="inner">ham soup</p>
-    <br>
-    <input type="checkbox">
-    <label>learn how to use static site generators like 11ty.</label>
-    <br>
-    <input type="checkbox" checked>
-    <label>keep learning and practicing javascript!</label>
-    <br>
-    <input type="checkbox">
-    <label>learn anything backend related</label>
-    <br>
-    <input type="checkbox">
-    <label>survive.</label>
-    <br>
-    <input type="checkbox">
-    <label><s>get my first tattoo.</s></label>
-    <p class="inner">currently saving up for this! <s>still need to find the exact place and the tattoo i wanna get.</s></p>
-    <p class="inner"><s>found a place recommended by a friend! it had a couple of artists and they all have very unique art styles.</s></p>
-    <p class="inner"><s>i'm gonna be real... i do not think i'll be able to save money for a tattoo but i let's see how the year goes....</s></p>
-    <p class="inner">i got some money but i spent it on something else..... will get a tattoo next year! i should honestly think of what i want in the mean time.</p>
-    <input type="checkbox">
-    <label>listen to new music <i>at least</i> once per week!</label>
-    <p class="inner"><a href="https://rateyourmusic.com/list/doqmeat/2025-log/" target="_blank" class="outlink">RYM list</a></p>
-    <p class="inner">failing <b>badly</b> at this but thanks to an app i found, i'm lowkey back.</p>
+  <article id="goals" class="page">
+    <h2 style="background:#d7c4d9">goals for 2025</h2>
+
+    <details>
+      <summary class="pending">receive student aid.</summary>
+      <p>yup!</p>
+    </details>
+
+    <details>
+      <summary class="pending">do more cooking recipes.</summary>
+      <p>will be listing all of the new recipes that i tried AND TASTED GOOD here!</p>
+      <p><a href="/recipes/sandwiches-de-mezcla.html">sandwiches de mezcla</a></p>
+      <p>ham soup</p>
+    </details>
+
+    <details>
+      <summary class="pending">learn how to use static site generators like 11ty.</summary>
+      <p>would love to implement it on my <a href="/journal/index.html">journal</a> and <a href="/vgs/index.html">gaming</a> pages.</p>
+    </details>
+
+    <details>
+      <summary class="done">keep learning and practicing javascript!</summary>
+      <p>been getting the hang of it a little bit!</p>
+    </details>
+
+
+    <details>
+      <summary class="pending">learn anything backend related</summary>
+      <p>SHOULD BE achieveable eventually, though right now i am learning from a <a href="https://roadmap.sh/" target="_blank">frontend</a> roadmap so this might be a bit far away for now.</p>
+    </details>
+
+    <details>
+      <summary class="pending">survive.</summary>
+      <p>self explanatory</p>
+    </details>
+
+    <details>
+      <summary class="not_done">get my first tattoo.</summary>
+      <p>currently saving up for this! <s>still need to find the exact place and the tattoo i wanna get.</s></p>
+      <p><s>found a place recommended by a friend! it had a couple of artists and they all have very unique art styles.</s></p>
+      <p><s>i'm gonna be real... i do not think i'll be able to save money for a tattoo but i let's see how the year goes....</s></p>
+      <p>i got some money but i spent it on something else..... will get a tattoo next year! i should honestly think of what i want in the mean time.</p>
+    </details>
+    <details>
+      <summary class="pending">listen to new music <i>at least</i> once per week!</summary>
+      <p><a href="https://rateyourmusic.com/list/doqmeat/2025-log/" target="_blank" class="outlink">RYM list</a></p>
+      <p>failing <b>badly</b> at this but thanks to an app i found, i'm lowkey back.</p>
+    </details>
   </article>
 
   <article class="page">
@@ -352,7 +356,7 @@
     <br>
     <a href="#">top</a> / <a href="/scrapbook">scrapbook</a> / <a href="/">home</a> / <a href="/sitemap">sitemap</a>
     <br>
-    <b>credit:</b> body bg from <a title="the link 404's but this is where i got the pic from..." href="https://unsplash.com/photos/night-sky-photo-aI1tDC8PaLMh">Unsplash</a>
+    <b>credit:</b> body bg from <a title="the link 404's but this is where i got the pic from..." href="https://unsplash.com/photos/night-sky-photo-aI1tDC8PaLMh">Unsplash</a> / checkboxes pixels from <a href="https://sleepysprout.neocities.org/" target="_blank">sleepysprout</a>
   </footer>
   <script src="../chars.js"></script>
 </body>
