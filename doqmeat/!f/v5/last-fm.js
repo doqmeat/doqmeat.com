@@ -2,11 +2,13 @@
 
 let url = "https://lastfm-last-played.biancarosa.com.br/lakiitu/latest-song";
 let song = document.querySelector("#song");
+let artistname = document.querySelector("#artist");
+let albumname = document.querySelector("#albumname");
 let album = document.querySelector("#album");
 let songL = document.querySelector("#song-link");
 let listeningP = document.querySelector("#listening");
 
-// https://maxpixels.moe/resources/lastfm-widget/
+// https://maxpixels.moe/resources/lastfm-widget/ for more info and reference
 
 fetch(url)
 	.then(function (response) {
@@ -33,12 +35,7 @@ fetch(url)
 			album.innerHTML = '<img src="' + albumCover + '">';
 		}
 
-		song.innerHTML =
-			'<span class="icons">🎵</span> ' +
-			trackName +
-			"<br>" +
-			'<span class="icons">👤</span> ' +
-			artist +
-			'<br> <span class="icons">🖼️</span> ' +
-			albumName;
+		song.textContent += trackName;
+		artistname.textContent += artist;
+		albumname.textContent += albumName;
 	});

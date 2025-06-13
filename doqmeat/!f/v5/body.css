@@ -353,6 +353,10 @@ main#intro .inner {
 	transition-duration: 0.5s;
 }
 
+#album {
+	text-align: center;
+}
+
 #album span {
 	display: inline-block;
 	background: white;
@@ -365,6 +369,12 @@ main#intro .inner {
 #music:hover {
 	rotate: 0deg;
 	box-shadow: none;
+}
+
+#song,
+#artist,
+#albumname {
+	text-align: left;
 }
 
 .icons {
@@ -446,10 +456,6 @@ main#intro .inner {
 .pause {
 	font-size: 10px;
 	color: white;
-}
-
-#song {
-	text-align: left;
 }
 
 #screen p {
