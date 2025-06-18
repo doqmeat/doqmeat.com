@@ -49,16 +49,13 @@ mark {
 	background: #ffe481;
 }
 
-li {
-	list-style-image: url("/!g/pix/li19.gif");
-	padding: 10px;
-	list-style-position: inside;
-	margin: 5px;
-}
-
-ul {
+ul,
+ol {
 	margin: 0px;
 	padding: 0px 5px 5px 35px;
+	li {
+		list-style-position: inside;
+	}
 }
 
 a {
