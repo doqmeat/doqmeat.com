@@ -723,6 +723,14 @@ aside.deco {
 	pointer-events: all;
 }
 
+#sticker9 {
+	z-index: 10;
+	top: 430px;
+	left: -200px;
+	pointer-events: all;
+	rotate: 5deg;
+}
+
 nav.box {
 	border: none;
 	grid-area: navi;
