@@ -179,13 +179,32 @@ summary {
 	cursor: help;
 }
 
-#lists {
+aside {
+	display: block;
 	margin: auto;
+	max-width: 850px;
+}
+
+#lists,
+#letterboxd-rss {
+	vertical-align: top;
+	display: inline-block;
+	margin: 0px 10px;
+	overflow: auto;
 	max-width: 400px;
+	height: 400px;
 	background-image: url(/!g/bg/whiteline.jpg);
 	background-size: 13px;
 	background-color: #a6d0c8;
 	padding: 10px;
+	.feed-title {
+		display: none;
+	}
+	img {
+		display: block;
+		margin: auto;
+		width: 50%;
+	}
 }
 
 #lists p {
