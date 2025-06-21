@@ -256,4 +256,12 @@ footer p {
 	main {
 		max-width: 679px;
 	}
+
+	aside {
+		max-width: 400px;
+		#letterboxd-rss,
+		#lists {
+			margin: 20px 0px;
+		}
+	}
 }
