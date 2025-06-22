@@ -28,10 +28,36 @@
 		<!-- 	header end div -->
 	</header>
 
-
 	<div id="container">
 		<!-- 			column 1 -->
+
+		<!-- template
+
+					<div class="cd"><img src="" alt="cover for ???">
+				<div class="hov">
+					<div class="caption">
+						<h3>title - artist</h3>
+						<p><span class="fav"></span></p>
+						<a class="i" href="" target="_blank"><img src="" alt=""></a>
+						<p><span class="date"> ???/span></p>
+					</div>
+				</div>
+			</div>
+		 -->
 		<div class="column">
+
+			<div class="cd"><img src="../!g/fav-albums/11100011.jpg" alt="cover for 11100011 by asian glow">
+				<div class="hov">
+					<div class="caption">
+						<h3>11100011 - asian glow</h3>
+						<!-- <p><span class="fav"></span></p> -->
+						<p>this album was love at first listen. i love it so very very much.</p>
+						<p>the CD version has 3 demo tracks and oh my GOD is the demo track for <i>camel8strike</i> so fucking gorgeous with its violin jesus.......</p>
+						<p><span class="placeholder"></span></p>
+						<p><span class="date"> 21.jun.25</span></p>
+					</div>
+				</div>
+			</div>
 
 			<div class="cd"><img src="pics/yeule-serotonin-cover.jpg" alt="cover for serotonin II by yeule">
 				<div class="hov">
@@ -419,7 +445,7 @@
 	<div id="home"><a class="i" title="go back to music page" href="/music"><img src="/!g/deco/cd.gif"></a></div>
 
 	<footer>
-		imgs on this page have been scanned by me unless stated otherwise! <img src="/!g/pix/musicnote1.gif"> <b>last updated on 29.may.25</b>
+		imgs on this page have been scanned by me unless stated otherwise! <img src="/!g/pix/musicnote1.gif"> <b>last updated on 22.jun.25</b>
 		<br>
 		<b>credit:</b> background is from yukika's soul lady photobook! / <a href="/notebook/links/fonts.html">fonts</a> used: natsuzemi, gaegu, spirit
 		<br>
@@ -427,7 +453,7 @@
 	</footer>
 
 	<script>
-	// shows amount of albums i have!
+		// shows amount of albums i have!
 		const cds = document.getElementsByClassName("cd");
 		const cdString = "i currently have " + cds.length + " albums!";
 		const cdP = document.getElementById("cdsOwned");
