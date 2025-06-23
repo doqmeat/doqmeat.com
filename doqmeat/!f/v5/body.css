@@ -73,9 +73,11 @@ dialog {
 	color: inherit;
 	border: 2px dashed;
 	background: white;
+
 	dialog::backdrop {
 		background: rgba(0, 0, 0, 0.525);
 	}
+
 	button {
 		color: black;
 		cursor: help;
@@ -124,6 +126,7 @@ header {
 	grid-area: header;
 	text-align: center;
 	transition-duration: 0.5s;
+
 	h1 {
 		background: linear-gradient(to right, #ffca92, #9bbcff, #ffa3d1, #9bff9b);
 		background-clip: border-box;
@@ -138,19 +141,12 @@ header {
 		word-spacing: 5px;
 		transition-duration: 1s;
 	}
+
 	h1:hover {
 		background: linear-gradient(to left, #ffca92, #9bbcff, #ffa3d1, #9bff9b);
 		background-clip: border-box;
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
-	}
-	p {
-		transition-duration: 0.4s;
-		letter-spacing: 3px;
-	}
-	p:hover {
-		font-weight: bold;
-		word-spacing: 4px;
 	}
 }
 
@@ -161,7 +157,6 @@ main#intro {
 	background-image: url(assets/memo-pink.jpg);
 	background-color: rgb(255, 255, 255);
 	background-size: cover;
-
 	grid-area: intro;
 	border: 2px solid rgb(249, 194, 203);
 	line-height: 26px;
@@ -309,6 +304,11 @@ main#intro .inner {
 	padding: 0px;
 	box-shadow: 5px 5px 1px 1px #59595989;
 	transition-duration: 0.5s;
+
+	img {
+		width: 100%;
+		border-radius: 10px;
+	}
 }
 
 #piclog:hover {
@@ -321,11 +321,6 @@ main#intro .inner {
 	left: 20%;
 	position: absolute;
 	pointer-events: none;
-}
-
-#piclog img {
-	width: 100%;
-	border-radius: 10px;
 }
 
 #music {
@@ -351,125 +346,116 @@ main#intro .inner {
 	height: 400px;
 	box-shadow: -5px 5px 1px 1px #32283c38;
 	transition-duration: 0.5s;
-}
 
-#album {
-	text-align: center;
-}
+	#album {
+		text-align: center;
 
-#album span {
-	display: inline-block;
-	background: white;
-	color: black;
-	border: 1px solid white;
-	width: 80px;
-	height: 80px;
+		img {
+			width: 70%;
+		}
+	}
+
+	#song,
+	#artist,
+	#albumname {
+		text-align: left;
+	}
+
+	.icons {
+		font-size: 10px;
+		text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #ffffff;
+	}
+
+	.circle {
+		pointer-events: none;
+		position: absolute;
+		border-radius: 50%;
+		border: 1px solid rgb(67, 58, 98);
+	}
+
+	.small {
+		width: 50px;
+		height: 50px;
+		top: 288px;
+		left: 72px;
+	}
+
+	.big {
+		top: 252px;
+		left: 37px;
+		width: 121px;
+		height: 121px;
+	}
+
+	#screen {
+		background: rgb(39, 36, 36);
+		text-align: center;
+		margin: auto;
+		margin-top: 10px;
+		width: 180px;
+		height: 230px;
+		border: 20px solid black;
+		border-top-width: 30px;
+		border-bottom-width: 30px;
+		border-radius: 20px;
+		font-size: 12px;
+		line-height: 16px;
+		overflow: auto;
+		color: white;
+		padding: 5px;
+		scrollbar-color: rgb(39, 36, 36) rgb(39, 36, 36);
+		word-break: keep-all;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.up,
+	.down {
+		text-align: center;
+	}
+
+	.left,
+	.right,
+	.up,
+	.down {
+		font-size: 12px;
+	}
+	.left {
+		padding-right: 21px;
+	}
+
+	.right {
+		padding-left: 21px;
+	}
+
+	.play-pause {
+		text-align: center;
+		line-height: 15px;
+	}
+
+	.play {
+		vertical-align: text-bottom;
+		font-size: 14px;
+		color: white;
+	}
+
+	.pause {
+		font-size: 10px;
+		color: white;
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
 }
 
 #music:hover {
 	rotate: 0deg;
 	box-shadow: none;
-}
-
-#song,
-#artist,
-#albumname {
-	text-align: left;
-}
-
-.icons {
-	font-size: 10px;
-	text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #ffffff;
-}
-
-.circle {
-	pointer-events: none;
-	position: absolute;
-	border-radius: 50%;
-	border: 1px solid rgb(67, 58, 98);
-}
-
-.small {
-	width: 50px;
-	height: 50px;
-	top: 288px;
-	left: 72px;
-}
-
-.big {
-	top: 252px;
-	left: 37px;
-	width: 121px;
-	height: 121px;
-}
-
-#screen {
-	background: rgb(39, 36, 36);
-	text-align: center;
-	margin: auto;
-	margin-top: 10px;
-	width: 180px;
-	height: 230px;
-	border: 20px solid black;
-	border-top-width: 30px;
-	border-bottom-width: 30px;
-	border-radius: 20px;
-	font-size: 12px;
-	line-height: 16px;
-	overflow: auto;
-	color: white;
-	padding: 5px;
-	scrollbar-color: rgb(39, 36, 36) rgb(39, 36, 36);
-	word-break: keep-all;
-}
-
-.up,
-.down {
-	text-align: center;
-}
-
-.left,
-.right,
-.up,
-.down {
-	font-size: 12px;
-}
-.left {
-	padding-right: 21px;
-}
-
-.right {
-	padding-left: 21px;
-}
-
-.play-pause {
-	text-align: center;
-	line-height: 15px;
-}
-
-.play {
-	vertical-align: text-bottom;
-	font-size: 14px;
-	color: white;
-}
-
-.pause {
-	font-size: 10px;
-	color: white;
-}
-
-#screen p {
-	margin: 0;
-	padding: 0;
-}
-
-#music a {
-	color: inherit;
-	text-decoration: none;
-}
-
-#screen img {
-	width: 70%;
 }
 
 #status {
@@ -541,19 +527,35 @@ span.title a {
 	padding: 15px;
 	display: none;
 	transition-duration: 0.5s;
+
+	h3 {
+		font-size: 25px;
+		margin: 10px 0px;
+		text-align: center;
+	}
 }
 
-.notepad-boxes h3 {
-	font-size: 25px;
-	margin: 10px 0px;
-	text-align: center;
-}
+.notepad-boxes#now {
+	.date {
+		border-top: 2px dashed rgb(157, 134, 134);
+		font-size: 13px;
+		text-align: center;
+		margin-top: 15px;
+	}
 
-.notepad-boxes#now .date {
-	border-top: 2px dashed rgb(157, 134, 134);
-	font-size: 13px;
-	text-align: center;
-	margin-top: 15px;
+	p:hover span.title::before {
+		content: "╰┈➤ ";
+	}
+
+	span.title {
+		display: block;
+		font-family: pixelhandwriting;
+		margin-bottom: 10px;
+		font-size: 17px;
+		line-height: 3px;
+		text-shadow: 1px 1px 0px white, -1px -1px 0px white;
+		transition-duration: 0.6s;
+	}
 }
 
 .notepad-boxes#now,
@@ -563,16 +565,6 @@ span.title a {
 	text-align: left;
 	line-height: 23px;
 	padding-bottom: 30px;
-}
-
-.notepad-boxes#now span.title {
-	display: block;
-	font-family: pixelhandwriting;
-	margin-bottom: 10px;
-	font-size: 17px;
-	line-height: 3px;
-	text-shadow: 1px 1px 0px white, -1px -1px 0px white;
-	transition-duration: 0.6s;
 }
 
 p:nth-of-type(4n + 1) span.title:first-child {
@@ -591,72 +583,68 @@ p:nth-of-type(4n + 4) span.title:first-child {
 	background: #c2eacd;
 }
 
-.notepad-boxes#now p:hover span.title::before {
-	content: "╰┈➤ ";
-}
-
 #tabs {
 	z-index: 1;
 	position: absolute;
 	top: 10px;
 	left: 300px;
-}
 
-#tabs button {
-	background: var(--d-blue);
-	cursor: help;
-	display: block;
-	font-size: 15px;
-	width: 90px;
-	border: 1px solid white;
-	font-family: inherit;
-	padding: 2px 12px 2px 25px;
-	margin: 10px 0px;
-	text-align: left;
-	transition-duration: 0.2s;
-}
+	button {
+		background: var(--d-blue);
+		cursor: help;
+		display: block;
+		font-size: 15px;
+		width: 90px;
+		border: 1px solid white;
+		font-family: inherit;
+		padding: 2px 12px 2px 25px;
+		margin: 10px 0px;
+		text-align: left;
+		transition-duration: 0.2s;
+	}
 
-#tabs button:nth-of-type(4n + 1) {
-	background: rgb(246, 241, 147);
-}
+	button:nth-of-type(4n + 1) {
+		background: rgb(246, 241, 147);
+	}
 
-#tabs button:nth-of-type(4n + 2) {
-	background: rgb(249, 184, 215);
-}
+	button:nth-of-type(4n + 2) {
+		background: rgb(249, 184, 215);
+	}
 
-#tabs button:nth-of-type(4n + 3) {
-	background: #c2e2ea;
-}
+	button:nth-of-type(4n + 3) {
+		background: #c2e2ea;
+	}
 
-#tabs button:nth-of-type(4n + 4) {
-	background: #c2eacd;
-}
+	button:nth-of-type(4n + 4) {
+		background: #c2eacd;
+	}
 
-#tabs button.active:nth-of-type(3n + 3) {
-	color: #c2e2ea;
-	background: black;
-}
+	button.active:nth-of-type(3n + 3) {
+		color: #c2e2ea;
+		background: black;
+	}
 
-#tabs button.active:nth-of-type(3n + 2) {
-	color: rgb(249, 184, 215);
-	background: black;
-}
+	button.active:nth-of-type(3n + 2) {
+		color: rgb(249, 184, 215);
+		background: black;
+	}
 
-#tabs button.active:nth-of-type(3n + 1) {
-	color: rgb(246, 241, 147);
-	background: black;
-}
+	button.active:nth-of-type(3n + 1) {
+		color: rgb(246, 241, 147);
+		background: black;
+	}
 
-#tabs button.active:nth-of-type(4n + 4) {
-	color: #c2eacd;
-	background: black;
-}
+	button.active:nth-of-type(4n + 4) {
+		color: #c2eacd;
+		background: black;
+	}
 
-#tabs button:hover,
-#tabs button.active {
-	margin-left: 17px;
-	text-align: right;
-	width: 90px;
+	button:hover,
+	button.active {
+		margin-left: 17px;
+		text-align: right;
+		width: 90px;
+	}
 }
 
 /* stickers / decorations */
@@ -735,58 +723,58 @@ nav.box {
 	border: none;
 	grid-area: navi;
 	overflow: auto;
-}
 
-.p::before {
-	content: url("assets/pink.gif");
-}
+	h3 {
+		letter-spacing: 5px;
+		text-align: center;
+		margin: 25px 10px 25px 0px;
+	}
 
-.p:hover::before {
-	content: url("assets/pink-f.gif");
-}
+	a {
+		font-weight: normal;
+		font-size: 20px;
+		margin: 5px 0px;
+		text-decoration: none;
+		color: inherit;
+		display: block;
+		transition-duration: 0.3s;
+	}
 
-.m::before {
-	content: url("assets/green.gif");
-}
+	a:hover {
+		padding: 5px 0px;
+	}
 
-.m:hover::before {
-	content: url("assets/green-f.gif");
-}
+	.p::before {
+		content: url("assets/pink.gif");
+	}
 
-.o::before {
-	content: url("assets/yellow.gif");
-}
+	.p:hover::before {
+		content: url("assets/pink-f.gif");
+	}
 
-.o:hover::before {
-	content: url("assets/yellow-f.gif");
-}
+	.m::before {
+		content: url("assets/green.gif");
+	}
 
-.s::before {
-	content: url("assets/blue.gif");
-}
+	.m:hover::before {
+		content: url("assets/green-f.gif");
+	}
 
-.s:hover::before {
-	content: url("assets/blue-f.gif");
-}
+	.o::before {
+		content: url("assets/yellow.gif");
+	}
 
-nav h3 {
-	letter-spacing: 5px;
-	text-align: center;
-	margin: 25px 10px 25px 0px;
-}
+	.o:hover::before {
+		content: url("assets/yellow-f.gif");
+	}
 
-nav a {
-	font-weight: normal;
-	font-size: 20px;
-	margin: 5px 0px;
-	text-decoration: none;
-	color: inherit;
-	display: block;
-	transition-duration: 0.3s;
-}
+	.s::before {
+		content: url("assets/blue.gif");
+	}
 
-nav a:hover {
-	padding: 5px 0px;
+	.s:hover::before {
+		content: url("assets/blue-f.gif");
+	}
 }
 
 footer.box {
