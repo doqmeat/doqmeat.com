@@ -74,10 +74,6 @@ dialog {
 	border: 2px dashed;
 	background: white;
 
-	dialog::backdrop {
-		background: rgba(0, 0, 0, 0.525);
-	}
-
 	button {
 		color: black;
 		cursor: help;
@@ -89,6 +85,10 @@ dialog {
 		font-size: inherit;
 		border-radius: 10px;
 	}
+}
+
+dialog::backdrop {
+	background: rgba(0, 0, 0, 0.525);
 }
 
 #close-dialog {
@@ -783,23 +783,6 @@ footer.box {
 	grid-area: footer;
 }
 
-.pagedoll {
-	z-index: 10;
-	pointer-events: none;
-}
-
-#left {
-	position: fixed;
-	bottom: -10px;
-	left: 0px;
-}
-
-#right {
-	position: fixed;
-	right: 0px;
-	bottom: -10px;
-}
-
 #s-m-t-tooltip {
 	background: rgb(244, 236, 255);
 	border-radius: 10px;
@@ -849,7 +832,6 @@ footer.box {
 		rotate: 0deg;
 		width: auto;
 		height: auto;
-
 		margin: 15px 0px;
 	}
 
@@ -859,15 +841,15 @@ footer.box {
 		border: 0px;
 		padding: 20px;
 		height: 100%;
+
+		.inner {
+			margin: 0px;
+			height: 100%;
+		}
 	}
 
 	main#intro:hover {
 		box-shadow: 0px 0px 0px 0px var(--pink);
-	}
-
-	main#intro .inner {
-		margin: 0px;
-		height: 100%;
 	}
 
 	section#rss {
@@ -878,43 +860,44 @@ footer.box {
 		background: transparent;
 		box-shadow: 0px 0px 0px 0px var(--pink) inset;
 		border: 0px;
+
+		.inner {
+			overflow: auto;
+			height: auto;
+			border: 0px;
+		}
 	}
 
-	#rss .inner {
-		overflow: auto;
-		height: auto;
-		border: 0px;
-	}
-
-	nav {
+	nav.box {
 		text-align: center;
-	}
 
-	nav h3 {
-		margin: 4px 0;
-	}
+		h3 {
+			margin: 4px 0;
+		}
 
-	nav a {
-		display: inline-block;
-	}
+		a {
+			display: inline-block;
+		}
 
-	nav a:hover {
-		padding: 0;
+		a:hover {
+			padding: 0;
+		}
 	}
 
 	#tabs {
 		text-align: center;
 		margin: 3px;
 		padding: 20px;
-	}
-	#tabs button,
-	#tabs button:hover,
-	#tabs button.active {
-		display: inline-block;
-		padding: 2px 6px;
-		margin: 5px 0px;
-		width: auto;
-		border-radius: 12px;
+
+		button,
+		button:hover,
+		button.active {
+			display: inline-block;
+			padding: 2px 6px;
+			margin: 5px 0px;
+			width: auto;
+			border-radius: 12px;
+		}
 	}
 
 	aside#piclog,

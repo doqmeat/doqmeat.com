@@ -1,32 +1,32 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 :root {
-  --fonts: ms pgothic, gaegu-l, arial;
-  --bg: #f5c6da;
-  --ac1: #b9a0e4;
-  --ac2: #5893d4;
-  --ac3: #e08bb4;
-  --dark: #4f2336;
+	--fonts: ms pgothic, gaegu-l, arial;
+	--bg: #f5c6da;
+	--ac1: #b9a0e4;
+	--ac2: #5893d4;
+	--ac3: #e08bb4;
+	--dark: #4f2336;
 }
 
 html {
-  scrollbar-color: var(--dark) var(--ac2);
+	scrollbar-color: var(--dark) var(--ac2);
 }
 
 body {
-  background-image: url(!f/bg.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: bottom;
-  word-wrap: break-word;
-  font-size: 18px;
-  line-height: 22px;
-  word-spacing: 5px;
-  font-family: var(--fonts);
-  color: var(--dark);
-  margin: 0px;
+	background-image: url(!f/bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: bottom;
+	word-wrap: break-word;
+	font-size: 18px;
+	line-height: 22px;
+	word-spacing: 5px;
+	font-family: var(--fonts);
+	color: var(--dark);
+	margin: 0px;
 }
 
 h1,
@@ -35,234 +35,235 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: yoster, var(--fonts);
-  letter-spacing: 3px;
-  line-height: normal;
+	font-family: yoster, var(--fonts);
+	letter-spacing: 3px;
+	line-height: normal;
 }
 
 h3,
 h4,
 h5,
 h6 {
-  text-align: center;
+	text-align: center;
 }
 
 i {
-  padding: 0px 2px;
-  border-radius: 2px;
-  background: var(--ac1);
+	padding: 0px 2px;
+	border-radius: 2px;
+	background: var(--ac1);
 }
 
 mark {
-  background: var(--ac3);
-  padding: 0px 2px;
-  color: var(--dark);
-  text-shadow: 1px 1px 1px var(--bg);
-  border-radius: 2px;
+	background: var(--ac3);
+	padding: 0px 2px;
+	color: var(--dark);
+	text-shadow: 1px 1px 1px var(--bg);
+	border-radius: 2px;
 }
 
 a {
-  color: var(--ac2);
-  font-weight: bold;
-  text-decoration: underline;
-  text-shadow: 1px 1px 2px white;
+	color: var(--ac2);
+	font-weight: bold;
+	text-decoration: underline;
+	text-shadow: 1px 1px 2px white;
 }
 
 a:hover {
-  color: var(--dark);
-  text-decoration: dotted underline;
-  cursor: help;
+	color: var(--dark);
+	text-decoration: dotted underline;
+	cursor: help;
 }
 
 a:focus,
 a:active {
-  outline: 0px;
+	outline: 0px;
 }
 
 li {
-  list-style-position: inside;
+	list-style-position: inside;
 }
 
 hr {
-  background: url(/!g/div/clover.png);
-  height: 23px;
-  border: none;
+	background: url(/!g/div/clover.png);
+	height: 23px;
+	border: none;
 }
 
 p {
-  margin: 15px 0 15px 0;
+	margin: 15px 0 15px 0;
 }
 
 p img {
-  vertical-align: middle;
+	vertical-align: middle;
 }
 
 ::selection {
-  color: var(--ac1);
-  background-color: var(--dark);
+	color: var(--ac1);
+	background-color: var(--dark);
 }
 
 summary {
-  padding-left: 10px;
-  padding: 5px;
-  cursor: help;
+	padding-left: 10px;
+	padding: 5px;
+	cursor: help;
 }
 
 blockquote {
-  margin: 1em 40px;
-  border-left: 2px dotted var(--dark);
-  padding-left: 5px;
+	margin: 1em 40px;
+	border-left: 2px dotted var(--dark);
+	padding-left: 5px;
 }
 
 figure {
-  padding: 0;
-  margin: 10px;
-  text-align: center;
-  font-size: 15px;
+	padding: 0;
+	margin: 10px;
+	text-align: center;
+	font-size: 15px;
 }
 
 figure img {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 #s-m-t-tooltip {
-  max-width: 200px;
-  font-family: yoster;
-  text-align: center;
-  z-index: 9999;
-  margin: 30px 15px 7px 12px;
-  padding: 5px;
-  border-radius: 10px;
-  border: 1px dashed var(--dark);
-  color: var(--dark);
-  background: var(--ac2);
-  text-shadow: 1px 1px 1px var(--bg);
+	max-width: 200px;
+	font-family: yoster;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed var(--dark);
+	color: var(--dark);
+	background: var(--ac2);
+	text-shadow: 1px 1px 1px var(--bg);
 }
 
 /*content*/
 
 #iframepc,
 main {
-  background: var(--bg);
-  padding: 10px;
-  max-width: 600px;
-  margin: auto;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border: 2px dashed var(--ac1);
-  border-radius: 10px;
+	background: var(--bg);
+	padding: 10px;
+	max-width: 600px;
+	margin: auto;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	border: 2px dashed var(--ac1);
+	border-radius: 10px;
 }
 
 .centered {
-  text-align: center;
+	text-align: center;
 }
 
 .outlink:after {
-  content: url(/!g/web/materials/outlink2.png);
-  padding-left: 3px;
-  vertical-align: text-bottom;
+	content: url(/!g/web/materials/outlink2.png);
+	padding-left: 3px;
+	vertical-align: text-bottom;
 }
 
 .info {
-  text-align: right;
-  font-size: 16px;
+	text-align: right;
+	font-size: 16px;
+	margin: 3px 0px;
 }
 
 #home {
-  top: 5px;
-  left: 5px;
-  position: fixed;
+	top: 5px;
+	left: 5px;
+	position: fixed;
 }
 
 #corner {
-  position: fixed;
-  right: 5px;
-  bottom: 5px;
+	position: fixed;
+	right: 5px;
+	bottom: 5px;
 }
 
 .spoiler {
-  background-color: var(--dark);
-  color: var(--dark);
+	background-color: var(--dark);
+	color: var(--dark);
 }
 
 .spoiler:hover {
-  background-color: lightyellow;
+	background-color: lightyellow;
 }
 
 .date {
-  font-weight: bold;
+	font-weight: bold;
 }
 
 .date::after {
-  content: " -";
-  padding-right: 10px;
+	content: " -";
+	padding-right: 10px;
 }
 
 .cover {
-  float: right;
-  margin: 10px;
+	float: right;
+	margin: 10px;
 }
 
 .left {
-  float: left;
-  margin: 10px;
+	float: left;
+	margin: 10px;
 }
 
 .right {
-  float: right;
-  margin: 10px;
+	float: right;
+	margin: 10px;
 }
 
 .max {
-  max-width: 100%;
+	max-width: 100%;
 }
 
 footer {
-  width: 100%;
-  padding: 10px;
-  text-align: center;
-  border: 2px dashed var(--ac2);
-  border-left: 0px;
-  border-right: 0px;
-  border-bottom: 0px;
-  background: var(--bg);
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	border: 2px dashed var(--ac2);
+	border-left: 0px;
+	border-right: 0px;
+	border-bottom: 0px;
+	background: var(--bg);
 }
 
 @media only screen and (max-width: 599px) {
-  body {
-    background: var(--bg);
-  }
+	body {
+		background: var(--bg);
+	}
 
-  #iframepc,
-  main {
-    border: none;
-    margin: 0px 0px 0px 0px;
-    border-radius: 0px;
-    padding-bottom: 30px;
-  }
+	#iframepc,
+	main {
+		border: none;
+		margin: 0px 0px 0px 0px;
+		border-radius: 0px;
+		padding-bottom: 30px;
+	}
 
-  footer,
-  .hide {
-    display: none;
-  }
+	footer,
+	.hide {
+		display: none;
+	}
 }
 
 /*fonts and cursor*/
 
 @font-face {
-  font-family: "basiic";
-  src: url(/fonts/basiic.ttf);
+	font-family: "basiic";
+	src: url(/fonts/basiic.ttf);
 }
 
 @font-face {
-  font-family: "yoster";
-  src: url(/fonts/yoster.ttf);
+	font-family: "yoster";
+	src: url(/fonts/yoster.ttf);
 }
 
 /* Start https://www.cursors-4u.com */
 * {
-  cursor: url(https://cur.cursors-4u.net/games/gam-1/gam14.ani),
-    url(https://cur.cursors-4u.net/games/gam-1/gam14.png), auto !important;
+	cursor: url(https://cur.cursors-4u.net/games/gam-1/gam14.ani),
+		url(https://cur.cursors-4u.net/games/gam-1/gam14.png), auto !important;
 }
 
 /* End https://www.cursors-4u.com */
