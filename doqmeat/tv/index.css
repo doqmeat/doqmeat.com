@@ -156,20 +156,6 @@ main {
 	border-radius: 10px;
 }
 
-/* .status {
-  background: var(--l-blue);
-  border: 1px dashed #2a4365;
-  display: inline-block;
-  padding: 3px;
-  border-radius: 10px;
-  font-style: oblique;
-}
-
-.status:before {
-  content: "status: ";
-  font-weight: bold;
-} */
-
 .box details {
 	background: transparent;
 	color: inherit;
@@ -187,6 +173,7 @@ aside {
 
 #lists,
 #letterboxd-rss {
+	border-radius: 10px;
 	vertical-align: top;
 	display: inline-block;
 	margin: 0px 10px;
@@ -197,13 +184,21 @@ aside {
 	background-size: 13px;
 	background-color: #a6d0c8;
 	padding: 10px;
+
 	.feed-title {
 		display: none;
 	}
+
 	img {
 		display: block;
 		margin: auto;
 		width: 50%;
+		filter: saturate(0.6);
+		transition-duration: 1s;
+	}
+
+	img:hover {
+		filter: saturate(1);
 	}
 }
 
