@@ -26,7 +26,8 @@
 		}
 
 		main,
-		footer {
+		footer,
+		nav.is-pinned {
 			background: #b74056;
 			color: white;
 		}
@@ -46,13 +47,14 @@
 <body>
 	<main>
 		<h2>style savvy trendsetters</h2>
+		<nav class="info"><b>navigation: </b> <a href="#logs">logs</a> / <a href="#screenshots">screenshots:</a> <a href="#mine">mine</a> - <a href="#others">others</a></nav>
 		<img src="js-boxart.png" width="40%" alt="japanese box art" class="cover">
 		<div class="info"><b>status: </b> finished</div>
 		<div class="info"><b>release date: </b> september 27, 2012</div>
 		<div class="info"><b>developer: </b> syn sophia</div>
 		<div class="info"><b>genre/type: </b> fashion, simulator</div>
 
-		<h3>logs</h3>
+		<h3 id="logs">logs</h3>
 		<p>
 			<span class="date">30.aug.24</span> after 41 hours of playing this game,
 			i finally saw the credits roll
@@ -132,9 +134,9 @@
 			<img src="/!g/pix/gaycat.gif" style="max-width: 90%" />
 		</p>
 
-		<h3>screenshots</h3>
+		<h3 id="screenshots">screenshots</h3>
 		<center>
-			<h4>my character</h4>
+			<h4 id="mine">my character</h4>
 			<figure> <img src="241224.JPG" style="max-width:100%;">
 				<figcaption>me irl</figcaption>
 			</figure>
@@ -153,7 +155,7 @@
 			</figure>
 			<img src="240603%20(3).jpg" style="max-width: 90%" />
 			<img src="240603%20(2).jpg" style="max-width: 90%" />
-			<h4>others</h4>
+			<h4 id="others">others</h4>
 			<img src="240617%20(1).JPG" style="max-width: 90%" />
 			<img src="240617%20(2).JPG" style="max-width: 90%" />
 		</center>
@@ -161,6 +163,7 @@
 	<footer>
 		<a href="/">home</a> / <a href="/vgs">gaming log</a> / <a href="#">top</a>
 	</footer>
+	<script src="../../sticky.js"></script>
 </body>
 
 </html>

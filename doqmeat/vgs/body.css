@@ -79,7 +79,14 @@ a:active {
 	outline: 0px;
 }
 
+.outlink:after {
+	content: url(/!g/web/materials/outlink2.png);
+	padding-left: 3px;
+	vertical-align: text-bottom;
+}
+
 li {
+	margin: 10px 0px;
 	list-style-position: inside;
 }
 
@@ -125,21 +132,7 @@ figure img {
 	max-width: 100%;
 }
 
-#s-m-t-tooltip {
-	max-width: 200px;
-	font-family: yoster;
-	text-align: center;
-	z-index: 9999;
-	margin: 30px 15px 7px 12px;
-	padding: 5px;
-	border-radius: 10px;
-	border: 1px dashed var(--dark);
-	color: var(--dark);
-	background: var(--ac2);
-	text-shadow: 1px 1px 1px var(--bg);
-}
-
-/*content*/
+/* entries content */
 
 #iframepc,
 main {
@@ -153,26 +146,21 @@ main {
 	border-radius: 10px;
 }
 
-.centered {
-	text-align: center;
+nav {
+	padding: 3px;
+	position: sticky;
+	top: -1px;
 }
 
-.outlink:after {
-	content: url(/!g/web/materials/outlink2.png);
-	padding-left: 3px;
-	vertical-align: text-bottom;
+nav.is-pinned {
+	background: var(--bg);
+	border-bottom: 2px dashed var(--ac1);
 }
 
 .info {
 	text-align: right;
 	font-size: 16px;
 	margin: 3px 0px;
-}
-
-#home {
-	top: 5px;
-	left: 5px;
-	position: fixed;
 }
 
 #corner {
@@ -214,7 +202,11 @@ main {
 	margin: 10px;
 }
 
-.max {
+img.screenshot {
+	width: 100%;
+}
+
+img.max {
 	max-width: 100%;
 }
 
@@ -227,6 +219,20 @@ footer {
 	border-right: 0px;
 	border-bottom: 0px;
 	background: var(--bg);
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	font-family: yoster;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px dashed var(--dark);
+	color: var(--dark);
+	background: var(--ac2);
+	text-shadow: 1px 1px 1px var(--bg);
 }
 
 @media only screen and (max-width: 599px) {
