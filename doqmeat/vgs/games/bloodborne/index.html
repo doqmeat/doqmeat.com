@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>bloodborne</title>
 	<link rel="icon" type="image/x-icon" href="/vgs/favicon.gif">
-	<link href="/vgs/body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/vgs/body.css?0625" rel="stylesheet" type="text/css" media="all">
 	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<!-- tooltip shit -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
@@ -24,8 +24,9 @@
 		}
 
 		main,
-		footer {
-			background: #4b3269d0;
+		footer,
+		header {
+			background: #4b3269e3;
 			color: white;
 
 			a {
@@ -49,15 +50,18 @@
 				height: auto;
 				border-bottom: 1px dashed white;
 			}
+
+			nav.is-pinned {
+				background: rgb(75, 50, 105);
+			}
 		}
 	</style>
 </head>
 
 <body>
-
-	<main>
+	<main class="small_layout">
 		<h2>bloodborne</h2>
-		<img title="my hunter: blaze" src="fit-charred-hunter.png" width="30%" style="float:left" alt="my hunter wearing the charred hunter fit">
+		<p class="info"><b>status: </b>not finished</p>
 		<p class="info"><b>release date: </b> mar 24, 2015</div>
 		<p class="info"><b>developer: </b> from software</div>
 		<p class="info"><b>genre/type: </b> action adventure, rpg, horror</div>
@@ -65,8 +69,8 @@
 			<a href="https://www.bloodborne-wiki.com" target="_blank">bloodborne-wiki</a>,
 			<a title="archive.org pdf" href="https://archive.org/details/bloodborne-collectors-edition-guide/mode/2up" target="_blank">strategy guide</a>,
 			<a title="archive.org pdf" href="https://archive.org/details/artbook-Bloodborne_Official_Artworks/mode/2up" target="_blank">artbook</a>
-			</div>
-		<nav class="info"><b>navigation:</b> <a href="#logs">logs</a><a title="click me to go to the first log!" href="#log1">*</a>, <a href="#favs">favs</a>, <a href="#screenshots">screenshots</a>, <a href="#videos">videos</a></nav>
+		</p>
+		<nav class="info"><b>navigation:</b> <a href="#logs">logs</a> / <a href="#favs">favs things</a> / <a href="#screenshots">screenshots</a> / <a href="#videos">videos</a></nav>
 		<br>
 		<h3 id="logs">logs</h3>
 		<p><b>24.jun.25</b> the moment arrived. honestly eileen's fight was MUCH harder than i had anticipated. took me a good couple of tries til i could kill her. like i even had to stop fighting her in order to farm vials and bullets which was starting to annoy me a little bit so i said fuck it and asked my girlfriend how to get to the <a href="https://www.youtube.com/watch?v=oRzYb3Xx_HM" target="_blank" class="outlink">infamous cummmfpk chalice dungeon</a> in order to farm echoes for vials and bullets. and my god. does this change everything. but i'm pretty much sticking to using the farmed echoes for shop purchases. because i feel like otherwise it would take away from the challenge of the game if i use it to level up my character. anyway, rest in peace, eileen. you will be missed. she must be one of the hardest hunters you fight in game because WOW.</p>
@@ -133,15 +137,21 @@
 		<p id="log1"><span class="date">08.jul.23</span>been playing bloodborne recently and YEAH its pretty scary (for someone like me) but it is so fun!!!!! i had given this game a try back when it was free for ps+ in 2018 and i did like it but every time i died i felt horrible so i stopped playing it LKFJDLj but since i got ps+ again i decided to give it a try once more. and i think this time it hit me. my girlfriend has also been helping me out giving me tips and tricks throught my journey YAY!<br>i have much more to write about this game but soon i will be publishing an in-depth blog post about bloodborne and my experience with it so please stay tuned for that!
 
 		<h3 id="favs">favorites</h3>
-		<p><b>weapons:</b> hunter axe, kirkhammer</p>
-		<p><b>outfits:</b></p>
+		<h4>weapons</h4>
+		<ol>
+			<li><b>hunter axe</b> - been there since day 1. i just really love the range on this thing.</li>
+			<li><b>kirkhammer</b> - with a strength build i decided to give the kirkhammer a try and i ended up really liking it. i mostly use the sword though... haven't used it a lot transformed. i feel like at that point i might as well use my axe. but i like the sword when fighting fast enemies.</li>
+		</ol>
+		<h4>outfits</h4>
 		<center>
-			<img title="cainhurst armor" src="outfit-cainhurst.png" alt="cainhurst armor" width="30%">
-			<img title="the doll set" src="outfit-doll.png" alt="the doll clothes" width="30%">
-			<img title="knight's set" src="outfit-knight.png" alt="knight's set" width="30%">
+			<img title="charred hunter fit" src="fit-charred-hunter.png" width="40%" alt="my hunter wearing the charred hunter fit">
+			<img title="the doll set" src="outfit-doll.png" alt="the doll clothes" width="40%">
+			<br>
+			<img title="cainhurst armor" src="outfit-cainhurst.png" alt="cainhurst armor" width="40%">
+			<img title="knight's set" src="outfit-knight.png" alt="knight's set" width="40%">
 		</center>
 
-		<h4 id="screenshots">misc screenshots</h4>
+		<h4 id="screenshots">screenshots</h4>
 		<center>
 			<img title="this is my hunter :3 i was so happy when i found this fit. THE hunter fit" src="myhunter.jpg" width="100%">
 			<img title="me and the bestie" src="meandbestie.jpg" width="100%">
@@ -149,7 +159,7 @@
 			<img title="me and the 2nd bestie" src="meandnum2bestie.jpg" width="100%">
 			<img title="made me laugh so much" src="alreadydeadbb.jpg" width="60%">
 		</center>
-		<h4 id="videos">misc videos</h4>
+		<h4 id="videos">videos</h4>
 		<video id="video" width="100%" controls>
 			<source src="https://files.catbox.moe/onmg6v.mp4" type="video/mp4">
 		</video>
@@ -159,6 +169,7 @@
 	</main>
 
 	<footer><a href="/">home</a> / <a href="/vgs">gaming log</a> / <a href="#">top</a></footer>
+	<script src="../../sticky.js"></script>
 
 </body>
 
