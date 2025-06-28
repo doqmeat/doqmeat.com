@@ -1,10 +1,10 @@
 :root {
 	/* https://coolors.co/fc8888-3c89d1-f6e266-e4e9f1 */
-	--red: #FC8E8E;
-	--blue: #5BA0E0;
-	--yellow: #FFF3A8;
+	--red: #fc8e8e;
+	--blue: #5ba0e0;
+	--yellow: #fff3a8;
 	--white: #e5eaf2;
-	--green: #BCC88F;
+	--green: #bcc88f;
 	--fonts: ms gothic, gaegu-r, natsuzemi, basiic, arial;
 }
 
@@ -13,11 +13,11 @@
 }
 
 html {
-	scrollbar-color: #BCC88F #5BA0E0;
+	scrollbar-color: #bcc88f #5ba0e0;
 }
 
 body {
-	background: url("!g/bg/ikiru.png") no-repeat center center fixed;
+	background: url("ikiru.png") no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -29,7 +29,7 @@ body {
 	color: black;
 	text-shadow: 1px 1px 5px white;
 	margin: 0px;
-	scrollbar-color: #e5eaf2 #5BA0E0;
+	scrollbar-color: #e5eaf2 #5ba0e0;
 }
 
 a {
@@ -52,7 +52,7 @@ i {
 
 mark {
 	color: white;
-	background: #CA5251;
+	background: #ca5251;
 	padding: 1px 2px;
 }
 
@@ -90,7 +90,7 @@ header {
 }
 
 header a {
-	color: #EF5757;
+	color: #ef5757;
 }
 
 header p {
@@ -189,7 +189,7 @@ h2 {
 	position: relative;
 	box-sizing: border-box;
 	background-color: black;
-	background-image: url(/music/!g/bg/trppbg.png);
+	background-image: url(trppbg.png);
 	background-position: center;
 	background-size: 800px;
 	margin: auto;
@@ -201,11 +201,11 @@ h2 {
 	border-radius: 10px;
 	border: 2px dashed black;
 	max-width: 600px;
-	box-shadow: 0 6px 30px 10px rgba(0, 0, 0, 0.9), 0 6px 20px 0 rgba(0, 0, 0, 0.9);
+	box-shadow: 0 6px 30px 10px rgba(0, 0, 0, 0.9),
+		0 6px 20px 0 rgba(0, 0, 0, 0.9);
 	animation-name: animatetop;
 	animation-duration: 0.4s;
 }
-
 
 /*
 @-webkit-keyframes animatetop {
@@ -293,11 +293,11 @@ h2 {
 }
 
 footer b {
-	color: var(--red)
+	color: var(--red);
 }
 
 footer a {
-	color: var(--blue)
+	color: var(--blue);
 }
 
 footer {
