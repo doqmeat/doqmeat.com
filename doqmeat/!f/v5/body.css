@@ -655,6 +655,15 @@ aside.deco {
 	image-rendering: pixelated;
 }
 
+#sticker2,
+#sticker3,
+#sticker6,
+#sticker7,
+#sticker8,
+#sticker9 {
+	pointer-events: all;
+}
+
 #sticker1 {
 	z-index: 10;
 	top: 190px;
@@ -672,7 +681,6 @@ aside.deco {
 }
 
 #sticker3 {
-	pointer-events: all;
 	z-index: 8;
 	top: 10px;
 	right: 10px;
@@ -694,28 +702,24 @@ aside.deco {
 	z-index: 10;
 	top: 670px;
 	left: 300px;
-	pointer-events: all;
 }
 
 #sticker7 {
 	z-index: 10;
 	top: 0px;
 	left: 30px;
-	pointer-events: all;
 }
 
 #sticker8 {
 	z-index: 10;
 	top: 500px;
 	left: -180px;
-	pointer-events: all;
 }
 
 #sticker9 {
 	z-index: 10;
 	top: 430px;
 	left: -200px;
-	pointer-events: all;
 	rotate: 5deg;
 }
 
@@ -784,17 +788,19 @@ footer.box {
 }
 
 #s-m-t-tooltip {
-	background: rgb(244, 236, 255);
+	background: white;
+	background-size: 50px;
+	text-shadow: 1px 1px 1px rgb(187, 210, 241), -1px -1px 1px rgb(187, 210, 241);
 	border-radius: 10px;
 	color: rgb(0, 0, 0);
-	font-family: var(--fonts);
-	font-size: 16px;
-	border: 2px dashed rgb(148, 176, 232);
+	font-family: gaegu-l, var(--fonts);
+	font-size: 18px;
+	border: 4px double rgb(148, 176, 232);
 	max-width: 400px;
 	text-align: center;
 	z-index: 9999;
 	margin: 30px 15px 7px 12px;
-	padding: 5px;
+	padding: 10px;
 	word-break: normal;
 }
 
