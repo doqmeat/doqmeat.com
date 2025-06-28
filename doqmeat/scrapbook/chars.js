@@ -7,6 +7,7 @@ let replacement = pageBody // /g means it will change each pattern it finds inst
 	.replace(/::finished::/g, "✔")
 	.replace(/::ongoing::/g, "□")
 	.replace(/::dropped::/g, "✘")
+	.replace(/::one star::/g, "★☆☆☆☆")
 	.replace(/::two stars::/g, "★★☆☆☆")
 	.replace(/::three stars::/g, "★★★☆☆")
 	.replace(/::four stars::/g, "★★★★☆")
