@@ -536,6 +536,10 @@ span.title a {
 }
 
 .notepad-boxes#now {
+	a {
+		color: unset;
+		text-decoration: underline wavy;
+	}
 	.date {
 		border-top: 2px dashed rgb(157, 134, 134);
 		font-size: 13px;
@@ -561,10 +565,8 @@ span.title a {
 .notepad-boxes#now,
 .notepad-boxes#chat {
 	background: rgba(255, 254, 249, 0.647);
-	padding-top: 1px;
 	text-align: left;
 	line-height: 23px;
-	padding-bottom: 30px;
 }
 
 p:nth-of-type(4n + 1) span.title:first-child {
