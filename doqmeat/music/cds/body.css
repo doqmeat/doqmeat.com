@@ -1,3 +1,5 @@
+/* for the spinning cds: https://codepen.io/doqmeat/pen/gbpJNRr?editors=1100 */
+
 * {
 	box-sizing: border-box;
 }
@@ -49,10 +51,6 @@ a:hover {
 	background: transparent;
 }
 
-.caption a img {
-	width: 100%;
-}
-
 h1 {
 	font-family: spirit, var(--fonts);
 	font-size: 30px;
@@ -73,32 +71,34 @@ header {
 }
 
 #container {
-	max-width: 1200px;
+	max-width: 1350px;
 	margin: auto;
-	display: flex;
+	margin-bottom: 20px;
+	column-count: 4;
+	column-gap: 20px;
 	line-height: 0px;
-}
-
-.column {
-	flex: 100%;
 }
 
 .cd {
 	position: relative;
 	display: block;
-	margin: 20px 10px;
 	overflow: hidden;
+	margin: 20px 0px;
 	border: 2px solid var(--grey);
 	border-radius: 5px;
 	transition-duration: 0.5s;
+
+	img {
+		width: 100%;
+	}
 }
 
 .cd:hover {
 	box-shadow: 3px 2px 5px black;
 }
 
-.cd img {
-	width: 100%;
+.cd.disk {
+	border: none;
 }
 
 .hov {
@@ -132,20 +132,20 @@ header {
 	border-radius: 10px;
 	border: 4px ridge var(--brown-d);
 	transition-duration: 0.3s;
-}
-
-.caption p {
-	margin: 5px 0px;
-}
-
-.caption p:hover {
-	background: var(--brown);
-	color: var(--cream);
-}
-
-.caption img {
-	vertical-align: middle;
-	width: auto;
+	a img {
+		width: 100%;
+	}
+	p {
+		margin: 5px 0px;
+	}
+	p:hover {
+		background: var(--brown);
+		color: var(--cream);
+	}
+	img {
+		vertical-align: middle;
+		width: auto;
+	}
 }
 
 h3 {
@@ -198,11 +198,10 @@ h3 {
 	border-radius: 10px;
 	border: 2px dashed var(--cream);
 	margin-bottom: 50px;
-}
-
-#lost h2 {
-	font-family: spirit, var(--fonts);
-	font-size: 19px;
+	h2 {
+		font-family: spirit, var(--fonts);
+		font-size: 19px;
+	}
 }
 
 footer {
@@ -245,4 +244,23 @@ footer {
 
 ::-webkit-scrollbar-track {
 	background: var(--cream);
+}
+
+@media only screen and (max-width: 1200px) {
+	#container {
+		padding: 30px;
+		column-count: 3;
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	#container {
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	#container {
+		column-count: 1;
+	}
 }
