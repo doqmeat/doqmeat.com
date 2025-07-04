@@ -25,7 +25,7 @@ html {
 body {
 	font-size: 17px;
 	font-family: var(--fonts);
-	background: url(bg.png);
+	background: url(assets/bg.png);
 	background-size: cover;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -129,13 +129,6 @@ main {
 	border-radius: 10px;
 }
 
-.cover-r {
-	width: 45%;
-	float: right;
-	margin: 10px;
-	border-radius: 10px;
-}
-
 .box {
 	text-align: center;
 	width: 100%;
@@ -169,6 +162,34 @@ aside {
 	display: block;
 	margin: auto;
 	max-width: 850px;
+}
+
+#blu-ray {
+	position: relative;
+	background: #2a4365;
+	color: #a6d0c8;
+	padding: 20px;
+	border-radius: 5px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	border: 2px dashed #dfecbf;
+	.pagedoll {
+		filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white)
+			drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white);
+		position: absolute;
+		top: -90px;
+		max-width: 80%;
+	}
+	.wrapper {
+		overflow-y: hidden;
+		overflow-x: auto;
+		text-align: center;
+		white-space: nowrap;
+		img {
+			vertical-align: middle;
+			max-width: 200px;
+		}
+	}
 }
 
 #lists,
