@@ -9,6 +9,13 @@
 		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
 
 		<item>
+			<title>04.jul.25 - blu-rays</title>
+			<link>https://doqmeat.com/tv#blu-ray</link>
+			<description>added a section for owned blu-rays on my tv log page! also happy birthday to my grandma &#x3C;img src=&#x22;/!g/pix/heart-cat1.gif&#x22; alt=&#x22;cat heart emoji&#x22;&#x3E;</description>
+			<pubDate>Fri, 20 June 2025 >>:00:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>20.jun.25 - bloodborne log</title>
 			<link>https://doqmeat.com/vgs/games/bloodborne/index.html</link>
 			<description>new bloodborne log with a new look on its page! + added an RSS feed widget for my letterboxd acc on my &#x3C;a href=&#x22;/tv&#x22;&#x3E;tv log&#x3C;/a&#x3E;</description>
