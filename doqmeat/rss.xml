@@ -9,10 +9,17 @@
 		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
 
 		<item>
+			<title>06.jul.25 - my 5th sickening of the year</title>
+			<link>https://doqmeat.com/journal</link>
+			<description>wrote a new journal log abt me being sick again and what i've been up to + added a spinning CD whenever you hover over an album on my &#x3C;a href=&#x22;/music/cds/index.html&#x22;&#x3E;CD collection&#x3C;/a&#x3E; page. will probably rework the whole page at point in the future... but for now this will do!</description>
+			<pubDate>Sun, 06 July 2025 17:00:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>04.jul.25 - blu-rays</title>
 			<link>https://doqmeat.com/tv#blu-ray</link>
 			<description>added a section for owned blu-rays on my tv log page! also happy birthday to my grandma &#x3C;img src=&#x22;/!g/pix/heart-cat1.gif&#x22; alt=&#x22;cat heart emoji&#x22;&#x3E;</description>
-			<pubDate>Fri, 20 June 2025 >>:00:00 -0400</pubDate>
+			<pubDate>Fri, 04 July 2025 00:00:00 -0400</pubDate>
 		</item>
 
 		<item>
