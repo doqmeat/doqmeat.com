@@ -113,12 +113,12 @@ figure {
 	border-radius: 5px;
 	width: auto;
 	text-align: center;
-	margin: 15px 10px 10px 10px;
+	margin: 20px 10px 20px 10px;
 	padding: 10px;
-	& img {
+	img {
 		max-width: 100%;
 	}
-	&::after {
+	::after {
 		content: url("/!g/deco/washitape4.png");
 		opacity: 0.9;
 		position: absolute;
