@@ -1,22 +1,22 @@
 body {
-	background: url(/notebook/!g/grid-yellow2.png);
+	background: url(/notebook/!g/grid-blue.png);
 }
 
 li {
-	list-style-image: url('/!g/pix/ball_s_13.gif');
+	list-style-image: url("/!g/pix/ball_s_16.gif");
 }
 
 a:hover,
 a:focus {
-	color: #FFF4BF;
+	color: #b4d7ff;
 }
 
 mark {
-	background: #FFF4BF;
+	background-color: #b4d7ff;
 }
 
 ::selection {
-	background-color: #FFF4BF;
+	background-color: #b4d7ff;
 }
 
 #s-m-t-tooltip {
@@ -28,5 +28,5 @@ mark {
 	border-radius: 10px;
 	border: 1px solid black;
 	color: black;
-	background-color: #FFF4BF;
+	background-color: #b4d7ff;
 }
