@@ -1,123 +1,124 @@
-    html {
-    	cursor: cell;
-    }
+html {
+	cursor: cell;
+}
 
-    body {
-    	margin: 0px;
-    	word-wrap: break-word;
-    	font-size: 19px;
-    	line-height: 25px;
-    	letter-spacing: 0px;
-    	word-spacing: 4px;
-    	font-family: ms pgothic, basiic, arial;
-    	color: black;
-    }
+body {
+	margin: 0px;
+	word-wrap: break-word;
+	font-size: 19px;
+	line-height: 25px;
+	letter-spacing: 0px;
+	word-spacing: 4px;
+	font-family: ms pgothic, basiic, arial;
+	color: black;
+}
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-    	font-family: newpenji;
-    	font-weight: normal;
-    	line-height: normal;
-    	margin: 30px 0px;
-    }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: newpenji;
+	font-weight: normal;
+	line-height: normal;
+	margin: 30px 0px;
+}
 
-    p {
-    	transition-duration: 0.5s
-    }
+p {
+	transition-duration: 0.5s;
+}
 
-    p:hover {
-    	background: white;
-    }
+p:hover {
+	background: white;
+}
 
-    li {
-    	list-style-position: inside;
-    	padding-left: 2px;
-    }
+li {
+	list-style-position: inside;
+	padding-left: 2px;
+}
 
-    ul {
-    	margin: 1em 0;
-    	padding: 0 0 0 40px;
-    }
+ul {
+	margin: 1em 0;
+	padding: 0 0 0 40px;
+}
 
-    a {
-    	color: black;
-    	font-weight: bold;
-    	text-decoration: underline;
-    	transition-duration: 0.3s;
-    	cursor: help;
-    }
+a {
+	color: black;
+	font-weight: bold;
+	text-decoration: underline;
+	transition-duration: 0.3s;
+	cursor: help;
+}
 
-    a:hover,
-    a:focus {
-    	letter-spacing: 2px;
-    	filter: drop-shadow(1px 0px 0px black) drop-shadow(0px 1px 0px black) drop-shadow(0px -1px 0px black) drop-shadow(-1px 0px 0px black);
-    }
+a:hover,
+a:focus {
+	letter-spacing: 2px;
+	filter: drop-shadow(1px 0px 0px black) drop-shadow(0px 1px 0px black)
+		drop-shadow(0px -1px 0px black) drop-shadow(-1px 0px 0px black);
+}
 
-    a:hover {
-    	text-decoration: none;
-    }
+a:hover {
+	text-decoration: none;
+}
 
-    a:focus {
-    	text-decoration: wavy underline;
-    }
+a:focus {
+	text-decoration: wavy underline;
+}
 
-    a:active {
-    	outline: 0
-    }
+a:active {
+	outline: 0;
+}
 
-    ::selection {
-    	color: black;
-    }
+::selection {
+	color: black;
+}
 
-    details {
-    	cursor: help;
-    }
+details {
+	cursor: help;
+}
 
-    .outlink:after {
-    	content: url(/!g/web/materials/outlink2.png);
-    	padding-left: 3px;
-    	vertical-align: top;
-    }
+.outlink:after {
+	content: url(/!g/web/materials/outlink2.png);
+	padding-left: 3px;
+	vertical-align: top;
+}
 
-    .centered {
-    	text-align: center;
-    }
+.centered {
+	text-align: center;
+}
 
-    #wrapper,
-    main {
-    	padding: 3px 15px 5px 35px;
-    	max-width: 600px;
-    	margin: auto;
-    }
+#wrapper,
+main {
+	padding: 3px 15px 5px 35px;
+	max-width: 600px;
+	margin: auto;
+}
 
-    @media only screen and (max-width: 599px) {
-    	.hide {
-    		display: none;
-    	}
-    }
+@media only screen and (max-width: 599px) {
+	.hide {
+		display: none;
+	}
+}
 
-    ::-webkit-scrollbar {
-    	width: 8px;
-    	height: 8px;
-    }
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
 
-    ::-webkit-scrollbar-thumb:vertical {
-    	background: white;
-    	border: 1px solid black;
-    	border-radius: 10px;
-    }
+::-webkit-scrollbar-thumb:vertical {
+	background: white;
+	border: 1px solid black;
+	border-radius: 10px;
+}
 
-    ::-webkit-scrollbar-thumb:horizontal {
-    	background: white;
-    	border: 1px solid black;
-    	border-radius: 10px;
-    }
+::-webkit-scrollbar-thumb:horizontal {
+	background: white;
+	border: 1px solid black;
+	border-radius: 10px;
+}
 
-    ::-webkit-scrollbar-track {
-    	border-radius: 10px;
-    	background: transparent;
-    }
+::-webkit-scrollbar-track {
+	border-radius: 10px;
+	background: transparent;
+}
