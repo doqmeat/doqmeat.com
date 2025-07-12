@@ -4,7 +4,7 @@
 	--bg-color: #ffdfa9;
 	--mainbg-color: #fff;
 	--border-color: #fa7d7d;
-	--accent-color: #fff6a7;
+	--accent-color: #fbcb9d;
 }
 
 * {
@@ -28,8 +28,7 @@ body {
 	min-height: 100%;
 	left: 0;
 	top: 0;
-	background-image: url("assets/bg.png");
-	background-size: cover;
+	background-image: url("assets/bg.gif");
 	background-position: top;
 	opacity: 0.14;
 	filter: saturate(1.5);
@@ -175,7 +174,7 @@ main {
 }
 
 section {
-	height: 640px;
+	height: 500px;
 	overflow: hidden;
 	width: 100%;
 	margin: 15px;
