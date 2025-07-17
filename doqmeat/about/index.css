@@ -346,7 +346,7 @@ body::before {
 	background: linear-gradient(rgba(12, 5, 15, 0) 10%, #00000025 90%);
 	background-size: 100% 2px;
 	pointer-events: none;
-	z-index: 1;
+	z-index: 99999;
 }
 
 #s-m-t-tooltip {
