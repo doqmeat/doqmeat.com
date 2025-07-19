@@ -11,7 +11,7 @@ body {
 	background: lightgoldenrodyellow;
 	background-image: url(/!g/bg/h096-2.gif);
 	font-family: ms pgothic, basiic, arial;
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 20px;
 	text-align: center;
 	word-wrap: break-word;
@@ -33,18 +33,10 @@ header {
 	color: black;
 }
 
-#cam-pics {
-	display: none;
-}
-
-#cam-pics img {
-	max-width: 100%;
-}
-
 button {
 	cursor: help;
 	color: lightblue;
-	text-shadow: 1px 1px 1px white;
+	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.297);
 	border: none;
 	background: transparent;
 	font-family: var(--fonts);
@@ -94,9 +86,23 @@ a:hover {
 	transition-duration: 0.3s;
 	overflow-x: hidden;
 	overflow-y: scroll;
+
+	img {
+		width: 100%;
+	}
+
+	img:first-of-type {
+		border-top-right-radius: 10px;
+		border-top-left-radius: 10px;
+	}
+
+	img:last-of-type {
+		border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px;
+	}
 }
 
-.digi {
+.phone {
 	border: 7px solid transparent;
 	padding: 4px;
 	border-image: url("/!g/border/greenlaceborde.png") 8 round;
@@ -114,37 +120,20 @@ a:hover {
 	-moz-border-image: url("/!g/border/bluelaceborde.png") 8 round;
 }
 
-.pic img {
-	width: 100%;
+.finepix {
+	border: 7px solid transparent;
+	padding: 4px;
+	border-image: url("/!g/border/purplelaceborder.png") 8 round;
+	-webkit-border-image: url("/!g/border/purplelaceborder.png") 8 round;
+	-o-border-image: url("/!g/border/purplelaceborder.png") 8 round;
+	-moz-border-image: url("/!g/border/purplelaceborder.png") 8 round;
 }
 
-.caption img {
-	width: auto;
-}
-
-.pic img:first-child {
-	border-radius: 10px 10px 0 0;
-}
-
-.film {
+.instax {
 	border-radius: 10px;
 	border: 10px solid white;
 	box-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
 	border-bottom-width: 4rem;
-}
-
-.caption {
-	position: absolute;
-	padding: 10px;
-	background: white;
-	line-height: 20px;
-	max-height: 50%;
-	width: 80%;
-	overflow: auto;
-	top: 25%;
-	border-radius: 20px;
-	border: 2px dotted #88d49e;
-	left: 10%;
 }
 
 .hov {
@@ -160,9 +149,22 @@ a:hover {
 	opacity: 1;
 }
 
-.column {
-	flex: 20%;
-	max-width: 40%;
+.caption {
+	position: absolute;
+	padding: 10px;
+	background: white;
+	line-height: 20px;
+	max-height: 50%;
+	width: 80%;
+	overflow: auto;
+	top: 25%;
+	border-radius: 20px;
+	border: 2px dotted #88d49e;
+	left: 10%;
+
+	img {
+		width: auto;
+	}
 }
 
 #p1 {
@@ -195,19 +197,29 @@ footer {
 	line-height: 20px;
 	padding: 5px;
 	border-top: 2px dashed black;
-}
-
-footer img {
-	vertical-align: top;
+	img {
+		vertical-align: top;
+	}
 }
 
 summary {
 	cursor: help;
 }
 
-details p {
-	display: inline-block;
-	margin: 0 5px;
+details.border-legend {
+	p {
+		display: inline-block;
+		margin: 0 5px;
+		background: white;
+	}
+}
+
+/* shows instax cam */
+#cam-pics {
+	display: none;
+	img {
+		max-width: 100%;
+	}
 }
 
 #s-m-t-tooltip {
@@ -222,4 +234,16 @@ details p {
 	color: #a98379;
 	border: 8px solid white;
 	border-bottom-width: 23px;
+}
+
+@media only screen and (max-width: 880px) {
+	main {
+		column-count: 2;
+	}
+}
+
+@media only screen and (max-width: 545px) {
+	main {
+		column-count: 1;
+	}
 }
