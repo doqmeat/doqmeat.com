@@ -15,8 +15,32 @@
 </head>
 
 <body>
-	<button id="mouse" onclick="toggleclick('info')" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></button>
-	<div id="info">
+
+	<div id="notes" class="bubble">
+		<button onclick="toggleclick('notes')" class="x hide">x</button>
+		<p>notes i write that might get updated with time.</p>
+		<ol>
+			<li onclick="toggleNote('note-1')">things i'm frequently saying "there's nothing better in life than..." in my head</li>
+		</ol>
+	</div>
+
+	<div id="notepad" class="draggable">
+		<small></small>
+		<button onclick="toggleclick('notepad')" class="x">x</button>
+		<div id="note-1" class="notes">
+			<h3>things i'm frequently saying "there's nothing better in life than..." in my head</h3>
+			<ul>
+				<li>butter toast</li>
+				<li>a nice cup of hot chocolate</li>
+				<li>being kissed</li>
+				<li>eating breakfast</li>
+				<li>taking a nap alongside your cat</li>
+			</ul>
+			<small>last updated on <b>23.jul.25</b></small>
+		</div>
+	</div>
+
+	<div id="info" class="bubble">
 		<button onclick="toggleclick('info')" class="x hide">x</button>
 		<p>des' microblog. made for smaller thoughts i want to share.</p>
 
@@ -341,10 +365,14 @@
 			<span id="picture-title"></span>
 			<button onclick="toggleclick('picture-win')" class="x">x</button>
 			<br>
-			<a id="pic-link" title="open IMG in a new tab" href="" target="_blank"><img id="picture" src="" alt=""></a>
+			<a id="pic-link" title="open IMG in a new tab" href="" target="_blank"><img id="picture"></a>
 			<p id="picture-caption"></p>
 		</div>
 	</main>
+
+	<button id="folder" class="icon" onclick="toggleclick('notes')"><img src="folder-closed.png" alt="folder closed"><br><span>notes</span></button>
+
+	<button id="mouse" onclick="toggleclick('info')" class="icon"><img src="mouse.png" alt="mouse icon"><br><span>info</span></button>
 
 	<button id="puter" class="icon">
 		<a title="click to go back to homepage" href="/"><img src="puter.png" alt="computer icon"><br><span>homepage</span></a>

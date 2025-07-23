@@ -54,6 +54,35 @@ i {
 button {
 	font-family: inherit;
 	color: inherit;
+
+	&.x {
+		font-family: inherit;
+		border: 1px dashed grey;
+		color: inherit;
+		font-size: 18px;
+		padding: 5px;
+		line-height: 10px;
+		border-radius: 5px;
+		float: right;
+		background: var(--blue2);
+
+		&:hover {
+			background: var(--yellow);
+			color: brown;
+		}
+	}
+
+	&.icon {
+		position: absolute;
+		width: 70px;
+		background: transparent;
+		border: none;
+
+		span {
+			background: white;
+			padding: 2px;
+		}
+	}
 }
 
 main {
@@ -85,28 +114,28 @@ main {
 	border: none;
 	overflow: auto;
 	padding: 10px;
-}
 
-#blog img {
-	max-width: 100%;
-}
+	img {
+		max-width: 100%;
+	}
 
-#blog button {
-	border: 1px solid grey;
-	padding: 2px;
-	border-radius: 5px;
-	background: var(--blue2);
-}
+	button {
+		border: 1px solid grey;
+		padding: 2px;
+		border-radius: 5px;
+		background: var(--blue2);
+	}
 
-#blog button:hover {
-	background: var(--yellow);
-	border-color: var(--blue);
-}
+	button:hover {
+		background: var(--yellow);
+		border-color: var(--blue);
+	}
 
-#blog button:focus {
-	border-color: var(--blue2);
-	background: var(--pink);
-	color: white;
+	button:focus {
+		border-color: var(--blue2);
+		background: var(--pink);
+		color: white;
+	}
 }
 
 #picture-win {
@@ -121,6 +150,10 @@ main {
 	overflow: auto;
 	width: 290px;
 	cursor: move;
+
+	.x {
+		margin: 4px;
+	}
 }
 
 #picture {
@@ -135,10 +168,6 @@ main {
 	display: inline-block;
 	margin-top: 5px;
 	text-shadow: 1px 1px 3px white;
-}
-
-#picture-win .x {
-	margin: 4px;
 }
 
 #bar {
@@ -163,28 +192,41 @@ main {
 	text-align: left;
 	font-size: 18px;
 	padding: 0px 5px;
+
+	button {
+		cursor: help;
+		font-size: inherit;
+		font-family: inherit;
+		font-weight: inherit;
+		background: none;
+		border: none;
+		color: hsla(212, 46%, 52%, 1);
+	}
 }
 
-#address-bar button {
-	cursor: help;
-	font-size: inherit;
-	font-family: inherit;
-	font-weight: inherit;
-	background: none;
-	border: none;
-	color: hsla(212, 46%, 52%, 1);
-}
+#home {
+	button {
+		width: 150px;
+		background-color: transparent;
+		border: 1px solid var(--pink);
+		padding: 10px;
+		cursor: pointer;
 
-#home button {
-	width: 150px;
-	background-color: transparent;
-	border: 1px solid var(--pink);
-	padding: 10px;
-	cursor: pointer;
-}
+		&:hover {
+			background-color: var(--pink);
+		}
 
-#home button:hover {
-	background-color: var(--pink);
+		img {
+			display: block;
+			width: 100%;
+			border-radius: 10px;
+			filter: grayscale(50%);
+
+			&:hover {
+				filter: grayscale(0%);
+			}
+		}
+	}
 }
 
 .year {
@@ -192,17 +234,6 @@ main {
 	font-weight: bold;
 	letter-spacing: 2px;
 	padding: 5px 0px;
-}
-
-#home button img {
-	display: block;
-	width: 100%;
-	border-radius: 10px;
-	filter: grayscale(50%);
-}
-
-#home button img:hover {
-	filter: grayscale(0%);
 }
 
 #address {
@@ -219,78 +250,92 @@ main {
 	border-radius: 10px;
 }
 
-button.icon {
+.icon {
+	cursor: cell;
+
+	&#puter {
+		top: 10px;
+		left: 10px;
+	}
+
+	&#mouse {
+		bottom: 30px;
+		left: 70px;
+	}
+
+	&#folder {
+		top: 20px;
+		right: 100px;
+	}
+}
+
+#notepad {
+	display: none;
 	position: absolute;
-	width: 70px;
-	background: transparent;
-	border: none;
-}
-
-#puter {
-	top: 10px;
-	left: 10px;
-	cursor: cell;
-}
-
-#mouse {
-	bottom: 30px;
-	left: 70px;
-	cursor: cell;
-}
-
-button.x {
-	font-family: inherit;
-	border: 1px dashed grey;
-	color: inherit;
-	font-size: 18px;
-	padding: 5px;
-	line-height: 10px;
-	border-radius: 5px;
+	text-align: left;
+	padding: 10px;
+	width: 400px;
+	height: 400px;
+	overflow: auto;
+	top: 200px;
+	left: 300px;
 	background: white;
-	float: right;
+	border-radius: 10px;
+
+	button.x {
+		background: white;
+		color: #4b81bd;
+
+		&:hover {
+			color: white;
+			background: #4b81bd;
+		}
+	}
 }
 
-#info button.x {
-	background: var(--blue2);
-}
-
-#info button.x:hover,
-button.x:hover {
-	background: var(--yellow);
-	color: brown;
-}
-
-#info {
+.bubble {
 	display: none;
 	text-align: left;
 	position: absolute;
-	bottom: 100px;
-	left: 30px;
-	background: #6f5994;
-	color: white;
 	max-width: 190px;
+	max-height: 300px;
 	padding: 10px;
 	border-radius: 10px;
+	background: #6f5994;
+	color: white;
+	overflow: auto;
+	border: 1px solid var(--blue1);
+
+	p {
+		margin: 10px 0px;
+	}
+
+	a {
+		color: black;
+		background: lightyellow;
+		padding: 0px 3px;
+	}
+
+	a:hover {
+		color: #dcf0c2;
+		background: #e992f7;
+	}
 }
 
-#info p {
-	margin: 10px 0px;
+#notes {
+	top: 110px;
+	right: 100px;
+	li {
+		cursor: pointer;
+		&:hover {
+			text-decoration: line-through;
+		}
+	}
 }
 
-#info a {
-	color: black;
-	background: lightyellow;
-	padding: 0px 3px;
-}
-
-#info a:hover {
-	color: #dcf0c2;
-	background: #e992f7;
-}
-
-.icon span {
-	background: rgb(249, 251, 242, 0.7);
-	padding: 1px;
+#info {
+	bottom: 100px;
+	left: 30px;
 }
 
 footer {
@@ -352,7 +397,8 @@ article:hover {
 		display: block;
 	}
 
-	#mouse {
+	#mouse,
+	#folder {
 		display: none;
 	}
 
@@ -366,15 +412,29 @@ article:hover {
 		cursor: move;
 	}
 
-	#info {
+	#info,
+	#notes {
 		max-width: 600px;
 		margin: 20px 10px;
 		top: 0px;
+		right: 0;
 		left: 0px;
 		bottom: 0px;
 		position: relative;
 		display: block;
 		text-align: center;
+	}
+
+	#notepad {
+		top: 0px;
+		right: 0;
+		left: 0px;
+		bottom: 0px;
+		position: relative;
+		width: auto;
+		max-width: 600px;
+		height: auto;
+		margin: 20px 10px;
 	}
 
 	#address {
