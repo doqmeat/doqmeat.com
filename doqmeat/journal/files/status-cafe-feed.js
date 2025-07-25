@@ -10,7 +10,7 @@
 				rssfeed_font_size = "10";
 				rssfeed_font_face = "";
 				rssfeed_border = "on";
-				rssfeed_css_url = "https://doqmeat.com/journal/status-cafe.css";
+				rssfeed_css_url = "https://doqmeat.com/journal/files/status-cafe.css";
 				rssfeed_title = "off";
 				rssfeed_title_name = "";
 				rssfeed_title_bgcolor = "#3366ff";

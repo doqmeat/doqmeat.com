@@ -1,8 +1,6 @@
 // tag filters for archive
 
 const allLogs = document.getElementsByTagName("li");
-const amountSpan = document.getElementById("amountLogs");
-amountSpan.innerHTML = allLogs.length;
 function showLog(tag) {
 	// wrapping this in an if statement idgaf
 	if (tag == "") {

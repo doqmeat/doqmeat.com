@@ -21,7 +21,9 @@ header {
 	padding: 5px;
 }
 
-ol {
+ol,
+ul {
+	margin: 15px;
 	::marker {
 		color: var(--red);
 		font-weight: bold;
@@ -30,12 +32,10 @@ ol {
 
 ol li {
 	list-style-type: decimal-leading-zero;
-	margin: 15px 0px;
 }
 
 ul li {
-	list-style-image: url("/!g/pix/starpink.gif");
-	padding-left: 2px;
+	list-style-type: disc;
 }
 
 p,

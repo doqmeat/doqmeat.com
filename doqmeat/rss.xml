@@ -9,6 +9,13 @@
 		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
 
 		<item>
+			<title>25.jul.25 - to be seen</title>
+			<link>https://doqmeat.com/journal</link>
+			<description>new journal log</description>
+			<pubDate>Fri, 25 July 2025 00:00:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>17.jul.25 - minor updates!</title>
 			<link>https://doqmeat.com/</link>
 			<description>new &#x3C;a href=&#x22;/music&#x22;&#x3E;featured music&#x3C;/a&#x3E; + added a new quiz result to my &#x3C;a href=&#x22;/about&#x22;&#x3E;about&#x3C;/a&#x3E; page + seperated my resources and sitely stuff into two pages! now the &#x3C;a href=&#x22;/notebook&#x22;&#x3E;notebook&#x3C;/a&#x3E; will remain for resources and for F2U stuff i make, so i made a new page for &#x3C;a href=&#x22;/info&#x22;&#x3E;site info and archives&#x3C;/a&#x3E; + i am no longer sick YAY!</description>
