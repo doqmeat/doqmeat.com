@@ -207,7 +207,9 @@ header.page {
 	background: url("/notebook/!g/grid-blue.png");
 	border-radius: 10px;
 	overflow: auto;
-	text-shadow: 1px 1px 2px white;
+	h2 {
+		text-shadow: 1px 1px 2px white;
+	}
 }
 
 li summary::after {
