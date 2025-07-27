@@ -137,7 +137,6 @@ h5 {
 	word-spacing: 6px;
 }
 
-
 h3 {
 	font-size: 30px;
 	line-height: 36px;
@@ -156,7 +155,6 @@ h3:hover {
 	-webkit-text-stroke-width: 1px;
 }
 
-
 footer {
 	padding: 10px;
 	background: var(--dark);
@@ -167,6 +165,12 @@ footer {
 	margin-bottom: 20px;
 	border: 2px solid var(--l-brown);
 	border-radius: 0px 0px 10px 10px;
+}
+
+.albums-wrapper {
+	img {
+		width: 200px;
+	}
 }
 
 .song {
