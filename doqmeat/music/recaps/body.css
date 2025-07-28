@@ -4,6 +4,17 @@
 
 :root {
 	--fonts: ms pgothic, nanum-r, arial;
+	--gradient1: rgb(157, 117, 145);
+	--gradient2: linear-gradient(
+		90deg,
+		rgba(157, 117, 145, 1) 0%,
+		rgba(121, 150, 185, 1) 100%
+	);
+	--dark: #4d3c3c;
+	--light: #fff5e4;
+	--1: #fbb5cd;
+	--2: #9d8a78;
+	--3: #feeac7;
 }
 
 body {
@@ -14,6 +25,11 @@ body {
 	word-spacing: 2px;
 	font-size: 18px;
 	color: var(--dark);
+	background: url(../!g/index/yume.png) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
 }
 
 main {
@@ -21,7 +37,7 @@ main {
 	max-width: 700px;
 	margin: auto;
 	padding: 5px 10px 10px 10px;
-	border: 2px solid var(--light);
+	border: 2px solid var(--2);
 	border-top: none;
 	border-bottom: none;
 }
@@ -29,11 +45,16 @@ main {
 a {
 	text-decoration: none;
 	padding: 0px 5px;
-	color: var(--dark);
-	background: var(--3);
+	color: var(--1);
+	background: var(--dark);
 	font-weight: bold;
 	border-radius: 5px;
 	cursor: help;
+
+	&:hover {
+		color: var(--dark);
+		background: var(--light);
+	}
 }
 
 ::selection {
@@ -43,11 +64,6 @@ a {
 
 h3::selection {
 	background: var(--bright);
-}
-
-a:hover {
-	color: var(--dark);
-	background: var(--light);
 }
 
 b {
@@ -66,32 +82,12 @@ mark {
 	background: var(--light);
 }
 
-li {
-	list-style-position: inside;
-	transition-duration: 0.3s;
-	margin-bottom: 15px;
-}
-
-li:hover {
-	background: white;
-	border-radius: 10px;
-	padding: 5px;
-	border: 2px dashed var(--1);
-}
-
 p {
 	transition-duration: 0.3s;
-}
 
-p img {
-	vertical-align: middle;
-}
-
-p:hover {
-	background: white;
-	padding: 3px;
-	border-radius: 10px;
-	border: 2px solid var(--3);
+	img {
+		vertical-align: middle;
+	}
 }
 
 summary {
@@ -122,8 +118,7 @@ blockquote {
 }
 
 h1 {
-	font-family: katto;
-	font-size: 50px;
+	font-family: natsuzemi;
 	line-height: normal;
 	text-align: center;
 }
@@ -155,6 +150,31 @@ h3:hover {
 	-webkit-text-stroke-width: 1px;
 }
 
+details {
+	transition-duration: 0.3s;
+	margin-bottom: 15px;
+	margin: 0;
+	padding: 5px;
+
+	summary::marker {
+		content: "⤷ ";
+	}
+
+	&[open] > summary::marker {
+		content: "♫ ";
+	}
+
+	p {
+		margin: 0;
+		padding: 5px;
+		padding-left: 10px;
+		color: var(--light);
+		background: var(--dark);
+		border: 1px solid var(--2);
+		transition-duration: 0.5s;
+	}
+}
+
 footer {
 	padding: 10px;
 	background: var(--dark);
@@ -168,7 +188,14 @@ footer {
 }
 
 .albums-wrapper {
+	text-align: center;
+	a {
+		display: inline-block;
+		background: unset;
+		padding: 0;
+	}
 	img {
+		display: inline;
 		width: 200px;
 	}
 }
@@ -205,7 +232,7 @@ footer {
 	margin: 30px 15px 7px 12px;
 	padding: 5px;
 	border-radius: 5px;
-	border: 5px double var(--2);
+	border: 5px double var(--1);
 	color: var(--light);
 	background-color: var(--dark);
 }
