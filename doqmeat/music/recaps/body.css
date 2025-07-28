@@ -236,3 +236,9 @@ footer {
 	color: var(--light);
 	background-color: var(--dark);
 }
+
+@media only screen and (max-width: 510px) {
+	footer {
+		margin-bottom: 0;
+	}
+}
