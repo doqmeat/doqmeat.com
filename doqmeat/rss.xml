@@ -9,6 +9,13 @@
 		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
 
 		<item>
+			<title>12.jul.25 - summer vacation tripp</title>
+			<link>https://doqmeat.com/blog/2025/summer-trip</link>
+			<description>wrote a blog post about my trip to florida! + updated &#x3C;a href=&#x22;/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E; and &#x3C;a href=&#x22;/scrapbook/2025/&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;</description>
+			<pubDate>Tue, 12 August 2025 17:00:00 -0400</pubDate>
+		</item>
+
+		<item>
 			<title>28.jul.25 - 2024 music recap</title>
 			<link>https://doqmeat.com/music/recaps/2024/index.html</link>
 			<description>6 months later i finally had the motivation to do this RAH!</description>
