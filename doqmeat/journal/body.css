@@ -45,8 +45,17 @@ i {
 	background: #c7d9f8;
 }
 
+b,
+strong {
+	background: #e4a79d;
+}
+
 mark {
 	background: #ffe481;
+
+	b {
+		background: transparent;
+	}
 }
 
 ul,
@@ -112,6 +121,12 @@ figure {
 	text-align: center;
 	margin: 20px 10px 20px 10px;
 	padding: 10px;
+	&.f-fix {
+		overflow: auto;
+		::after {
+			content: none;
+		}
+	}
 	img {
 		max-width: 100%;
 	}
@@ -137,10 +152,6 @@ figcaption {
 
 .spoiler:hover {
 	background-color: transparent;
-}
-
-.f-fix {
-	overflow: hidden;
 }
 
 .transp {

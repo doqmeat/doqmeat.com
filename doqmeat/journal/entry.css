@@ -62,19 +62,6 @@ main {
 	scrollbar-color: #e4a79d #fffcdc;
 }
 
-i {
-	background: #c7d9f8;
-}
-
-b,
-strong {
-	background: #e4a79d;
-}
-
-mark {
-	background: #ffe481;
-}
-
 article {
 	margin-bottom: 30px;
 }
