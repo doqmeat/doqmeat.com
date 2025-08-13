@@ -212,20 +212,24 @@ header.page {
 	}
 }
 
-li summary::after {
-	content: url("/!g/pix/msgbbl.gif");
-}
-
-li details,
-li summary {
-	vertical-align: bottom;
+li details {
 	display: inline;
+	vertical-align: bottom;
 	padding: 1px;
 	border-radius: 4px;
 	background: var(--yellow);
 	margin-bottom: 3px;
 	font-size: 17px;
-	overflow: hidden;
+	overflow: auto;
+	&[open] {
+		display: block;
+	}
+	summary {
+		list-style-type: "+";
+	}
+	&[open] > summary {
+		list-style-type: "-";
+	}
 }
 
 li.played {
