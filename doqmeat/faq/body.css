@@ -1,67 +1,55 @@
 * {
-  box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
-  background: url("/!g/bg/ritva-1.gif");
-  font-family: gaegu-r, ms pgothic;
-  font-size: 18px;
-  text-shadow: 2px 2px 3px #ffffff;
+	background: url("/!g/bg/ritva-1.gif");
+	font-family: gaegu-r, ms pgothic, arial;
+	font-size: 19px;
+	text-shadow: 2px 2px 3px #ffffff;
 }
 
 h1 {
-  font-family: morningtea;
-  text-align: center;
+	font-family: morningtea;
+	text-align: center;
 }
 
 main {
-  background: rgba(255, 255, 255, 0.612);
-  margin: auto;
-  margin-top: -10px;
-  margin-bottom: -10px;
-  padding: 10px;
-  max-width: 600px;
-  border: 5px double #dcf2ed;
-  border-top: 0px;
-  border-bottom: 0px;
+	max-height: 100%;
+	background: rgba(255, 255, 255, 0.612);
+	margin: auto;
+	margin-top: -10px;
+	margin-bottom: -10px;
+	padding: 10px;
+	max-width: 600px;
+	border: 5px double #dcf2ed;
+	border-top: 0px;
+	border-bottom: 0px;
+}
+
+summary {
+	cursor: help;
+	font-style: italic;
 }
 
 i {
-  color: rgb(84, 112, 157);
-}
-
-a {
-  color: rgb(217, 221, 249);
-  background: rgb(88, 61, 61);
-  padding: 1px;
-  text-decoration: none;
-  border-radius: 5px;
-  text-shadow: none;
-}
-.q {
-  font-style: italic;
-  background: url("q.gif");
-  background-size: 400px;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 120px;
-  line-height: 16px;
-  padding: 15px 220px 120px 140px;
-  border-radius: 10px;
-  font-size: 15px;
+	color: rgb(84, 112, 157);
 }
 
 footer {
-  text-align: center;
+	padding-top: 30px;
+	text-align: center;
 }
 
-@media only screen and (max-width: 540px) {
-  .q {
-    background: white;
-    padding: 5px;
-    height: auto;
-    text-align: right;
-    font-size: inherit;
-    border: 1px solid black;
-  }
+#s-m-t-tooltip {
+	background: black;
+	color: white;
+	max-width: 200px;
+	font-family: var(--fonts);
+	text-align: center;
+	font-size: 16px;
+	border-radius: 10px;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
 }
