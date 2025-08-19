@@ -59,12 +59,12 @@ button {
 		font-family: inherit;
 		border: 1px dashed grey;
 		color: inherit;
-		font-size: 18px;
+		font-size: 16px;
 		padding: 5px;
 		line-height: 10px;
 		border-radius: 5px;
 		float: right;
-		background: var(--blue2);
+		background: var(--pink);
 
 		&:hover {
 			background: var(--yellow);
