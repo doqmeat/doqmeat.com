@@ -1,6 +1,9 @@
 piclogWidth();
 changeBackgroundColor();
 
+// hides the notice that tells you to turn on JS
+document.getElementById("notepad-notice").style.display = "none";
+
 // use: change body background color depending on the month!
 function changeBackgroundColor() {
 	let body = document.querySelector("body"); // target homepage body
@@ -78,15 +81,24 @@ function showBox(boxID) {
 	for (i = 0; i < allBoxes.length; i++) {
 		allBoxes[i].style.display = "none";
 	}
+
 	for (i = 0; i < tabs.length; i++) {
 		tabs[i].classList.remove("active");
 	}
+
+	for (i = 0; i < tabs.length; i++) {
+		tabs[i].addEventListener("click", function () {
+			this.classList.add("active");
+		});
+	}
+
 	box.style.display = "block";
-	event.currentTarget.className += " active";
 }
 
-// clicks the default tab on the notepad by default on reload
+// clicks the default tab on the notepad by default on load
 document.getElementById("default").click();
+// and activates active class
+document.getElementById("default").classList.add("active");
 
 // use: when clicking the 'chatbox' tab, this popup will appear asking you if you agree with the rules
 function chatPopup(choice = "none") {
