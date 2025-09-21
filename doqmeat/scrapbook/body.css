@@ -213,7 +213,7 @@ header.page {
 }
 
 li details {
-	display: inline;
+	display: inline-block;
 	vertical-align: bottom;
 	padding: 1px;
 	border-radius: 4px;
