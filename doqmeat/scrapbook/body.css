@@ -244,6 +244,10 @@ li.read {
 	list-style-image: url("/!g/pix/book3.gif");
 }
 
+li.music {
+	list-style-image: url("/!g/pix/mp3.gif");
+}
+
 footer {
 	margin-top: 50px;
 	padding: 10px;
