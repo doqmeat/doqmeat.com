@@ -24,16 +24,14 @@ for (i = 0; i < boxes.length; i++) {
 		container.style.overflow = "hidden";
 		popUp.style.display = "block";
 		// img width
-		if (this.naturalWidth > this.naturalHeight) {
+		if (this.naturalWidth < 500) {
+			picture.style.maxWidth = "100%";
+		} else if (this.naturalWidth > this.naturalHeight) {
 			picture.style.width = "70%";
 		} else {
 			picture.style.width = "50%";
 		}
-		if (!this.id) {
-			// checks if img has an id.
-			return;
-		} else {
-			// if it has an id...
+		if (this.id) {
 			let postCap = document.getElementById(this.id + "-caption");
 			altCaption.innerHTML = postCap.innerHTML; // injects the div under the pic
 		}

@@ -18,7 +18,6 @@ body {
 	margin: 0px;
 	background-image: url("/notebook/!g/grid-mustard.png");
 	background-size: 10px;
-	background-color: #cabbe6;
 }
 
 ::selection {
@@ -119,6 +118,9 @@ main {
 	width: 100%;
 	height: 100%;
 	overflow: auto;
+	img {
+		max-width: 100%;
+	}
 }
 
 #popCap {
