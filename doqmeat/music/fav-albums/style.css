@@ -5,7 +5,7 @@
 	--yellow: #fff3a8;
 	--white: #e5eaf2;
 	--green: #bcc88f;
-	--fonts: ms gothic, gaegu-r, natsuzemi, basiic, arial;
+	--fonts: ms pgothic, gaegu-r, natsuzemi, basiic, arial;
 }
 
 * {
@@ -23,7 +23,7 @@ body {
 	-o-background-size: cover;
 	background-size: cover;
 	font-family: var(--fonts);
-	font-size: 16px;
+	font-size: 18px;
 	line-height: 23px;
 	word-spacing: 5px;
 	color: black;
@@ -191,7 +191,7 @@ h2 {
 	background-color: black;
 	background-image: url(trppbg.png);
 	background-position: center;
-	background-size: 800px;
+	background-size: 900px;
 	margin: auto;
 	margin-top: 50px;
 	margin-bottom: 50px;
