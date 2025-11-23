@@ -21,7 +21,6 @@ for (i = 0; i < memos.length; i++) {
 	memoClick.onclick = function () {
 		let memoID = document.getElementById(this.id);
 		memoID.style.zIndex = i++;
-		console.log(memoID.style.zIndex);
 	};
 }
 

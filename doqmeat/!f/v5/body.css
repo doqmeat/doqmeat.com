@@ -581,7 +581,7 @@ p:nth-of-type(4n + 3) span.title:first-child {
 	background: #c2e2ea;
 }
 
-p:nth-of-type(4n + 4) span.title:first-child {
+p:nth-of-type(4n + 0) span.title:first-child {
 	background: #c2eacd;
 }
 
@@ -617,7 +617,7 @@ p:nth-of-type(4n + 4) span.title:first-child {
 		background: #c2e2ea;
 	}
 
-	button:nth-of-type(4n + 4) {
+	button:nth-of-type(4n + 0) {
 		background: #c2eacd;
 	}
 
@@ -636,7 +636,7 @@ p:nth-of-type(4n + 4) span.title:first-child {
 		background: black;
 	}
 
-	button.active:nth-of-type(4n + 4) {
+	button.active:nth-of-type(4n + 0) {
 		color: #c2eacd;
 		background: black;
 	}

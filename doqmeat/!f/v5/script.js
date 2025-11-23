@@ -1,8 +1,7 @@
-piclogWidth();
-changeBackgroundColor();
-
-// hides the notice that tells you to turn on JS
-document.getElementById("notepad-notice").style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+	piclogWidth();
+	changeBackgroundColor();
+});
 
 // use: change body background color depending on the month!
 function changeBackgroundColor() {
@@ -88,13 +87,15 @@ function showBox(boxID) {
 
 	for (i = 0; i < tabs.length; i++) {
 		tabs[i].addEventListener("click", function () {
+			// can't use arrow functions here bc of the this
 			this.classList.add("active");
 		});
 	}
 
 	box.style.display = "block";
 }
-
+// hides the notice that tells you to turn on JS
+document.getElementById("notepad-notice").style.display = "none";
 // clicks the default tab on the notepad by default on load
 document.getElementById("default").click();
 // and activates active class
