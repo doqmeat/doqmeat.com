@@ -3,4 +3,7 @@
 /doqmeat/music/homestuck-ost.html
 /doqmeat/music/mp3-player/
 /doqmeat/vgs/games/infinity-nikki/test-files/
-/doqmeat/journal/2025/10.html
+.eleventy.js
+.eleventyignore
+/doqmeat/collection/picrews/
+
