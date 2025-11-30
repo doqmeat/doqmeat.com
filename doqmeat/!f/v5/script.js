@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", () => {
-	piclogWidth();
-	changeBackgroundColor();
-});
-
 // use: change body background color depending on the month!
 function changeBackgroundColor() {
 	let body = document.querySelector("body"); // target homepage body
@@ -58,7 +53,7 @@ function piclogWidth() {
 		// if width is bigger than height
 		tape.style.left = "30%";
 		piclog.style.width = "300px";
-		piclog.style.height = "295px";
+		piclog.style.height = "auto";
 	} else if (image.naturalWidth == image.naturalHeight) {
 		// if its a 1:1 ratio
 		piclog.style.width = "260px";
@@ -133,3 +128,8 @@ function chatPopup(choice = "none") {
 		chatbox.style.display = "block";
 	}
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+	piclogWidth();
+	changeBackgroundColor();
+});
