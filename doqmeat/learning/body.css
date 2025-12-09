@@ -11,7 +11,7 @@ html {
 }
 
 body {
-	font-size: 14px;
+	font-size: 0.9rem;
 	font-family: var(--fonts);
 	margin: 0;
 	text-align: center;
@@ -28,6 +28,13 @@ body {
 hr {
 	border: none;
 	border-bottom: 2px dashed #ca5e2c;
+}
+
+figure {
+	border: 2px dashed #fad97c;
+	background: #a84e24;
+	color: #f3e5bf;
+	padding: 5px;
 }
 
 h1 {
@@ -60,7 +67,8 @@ a {
 }
 
 mark {
-	background: #d0ffd5;
+	background: #feffd0;
+	padding: 1px;
 }
 
 a:hover {
@@ -79,6 +87,15 @@ main {
 	padding: 10px;
 	overflow: auto;
 	border-radius: 20px;
+}
+
+textarea {
+	display: block;
+	width: 50%;
+	font-size: 0.9em;
+	font-family: inherit;
+	margin: auto;
+	margin-top: 10px;
 }
 
 main,

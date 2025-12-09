@@ -13,15 +13,6 @@
 	<script src="/!f/tooltip.js"></script>
 	<title>JS logs n thoughts</title>
 	<style>
-		textarea {
-			display: block;
-			width: 50%;
-			font-size: 10px;
-			font-family: consolas;
-			margin: auto;
-			margin-top: 10px;
-		}
-
 		p img {
 			max-height: 273px;
 		}
@@ -37,16 +28,22 @@
 	<main>
 		<h2 id="thoughts">my thoughts as i learn</h2>
 		<p>it's kind of crazy how much my uni classes have helped me so much with my progress in JS. and it's all thanks to C++. thank you C++! i think C++ is pretty cool but this isn't about her, this is about JS. i think my overall use / knowledge of JS has increased quite a bit but i still need some tips and stuff on how to structure my JS code better. i think right now one of my biggest milestones have been getting a better understanding of how the <code>eventListeners</code> work. i mostly used them on a page i made for me and my gf's 4th anniversary (which if i ever upload, it will be as a template or something) and another page where you have to make 2 fish kiss. i wanted to make these pages as interactive as possible while also having to make them simple because of FINALS and uni projects i haven't finished.</p>
-		<img src="!g/251207-helena-site.jpg" alt="a screenshot of the first page, it has two envelopes. one i opened and there's a blank page displaying.">
+		<figure>
+			<img src="!g/251207-helena-site.jpg" alt="a screenshot of the first page, it has two envelopes. one i opened and there's a blank page displaying.">
+			<figcaption>screenshot of the main page where you have to click on letters and it will reveal different stuff</figcaption>
+		</figure>
 		<p>i wanted something like having a bunch of letters scattered across the page and have my gf open them. when you click an envelope a little sound effect will appear which i know will make her smile. originally i wanted it to be a bunch of letters and while trying to figure it how i could get the different sound effects on different envelopes i was thinking to myself <q>damn if only i could do <a title="(visual example of what nth-of-type does)" href="https://codepen.io/doqmeat/pen/ByajzJZ?editors=1100" target="_blank" rel="noopener noreferrer">nth-of-type</a> on JS...</q> <b>AND THEN IT FUCKING HIT ME</b>.</p>
 		<p>at the moment my current <i>computer science</i> related classes that i'm taking this semester are <i>discrete math</i> and <i>data structures</i>. i love you data structures but this isn't about you either. everything is about <b>discrete math</b>. you see... during discrete math when we started talking about the <b>algorithm of division</b>, i was often seen this syntax: <mark>n = DQ + R</mark>, n being some number, D being the divisor, Q being the quotient, and R being the remainder after dividing. when i got to this part of the class i started noticing that THAT syntax was pretty similar to the one i use in CSS for <code>:nth-of-type</code>. for example. if i have a bunch of HTML elements and i wanted to make every 2 elements different colors, then i'd do so with <wbr> <code>element:nth-of-type(2n + 0)</code> and <code>element:nth-of-type(2n + 1)</code> and at the time i didn't really get how it works but i just knew that it worked. fast-forward a little bit and now we are talking about the remainder of when you do a division, called the <b>modulo operation</b> aka this thing <code>%</code> in various programming languages. and by this point it was when it clicked. when you divide something by 2 (as i did in my example), for every number it will only have two options for the remainder (aka mod). <code>N (N being any number) % 2</code> will only output either 0 or 1, it will only output <bold>2</bold> different numbers! 0 and 1! and if you do <code>N % 30</code> this will only be able to output 30 different numbers! from 0 all the way to 29. and that's when this realization hit me.</p>
 		<p>what <code>element:nth-of-type(An + B)</code> does is that is taking the amount of elements and doing a mod operation on them so each element can have a <b>repeating</b> pattern, the number of times that the pattern will repeat is being decided by <b>A</b>, if A = 4, then you can have <b>up to four</b> different <b>B</b>'s so the pattern can follow. because it can ONLY have 2 options! <b>BECAUSE OF THE ALGORITHM OF DIVISION. I LOVE LIFE.</b> this meant that it was taking the amount of elements (n) and doing a modulus operation on them with whatever A you had to determine the pattern, in other words: n % A = B.</p>
 		<p>SO back to my original problem: i have an array of sound effects that i wanted to use on my array of envelopes, so different sounds would play whenever you clicked on a different envelope. by thinking about nth-of-type, i was able to conclude that all i needed to to was calculate the current envelope element i was clicking and do a mod operation with the amount of sound effects i had on the array. i made a function for this so the math ended up looking like this: <code>playSFX(envelope_index % sfx.length)</code>. this would get me either 0 or 1, which are the indexes i need to access each of the elements in the array sfx.</p>
 		<p style="font-size:2rem;line-height:normal">damn discrete math is kinda fucking cool.</p>
-		<img src="!g/251207-fishlove.jpg" alt="screenshot of the fish love next to some javascript code">
+		<figure>
+			<img src="!g/251207-fishlove.jpg" alt="screenshot of the fish love next to some javascript code">
+			<figcaption>screenshot of another page where you have to make 2 fish kiss.</figcaption>
+		</figure>
 		<p>then the next page titled <i>fish love</i> is exactly about that. trying to make 2 fish kiss... using extensive use of <code>eventListeners</code> for the drag and drop. the base code for the draggable elements is from <a href="https://stackoverflow.com/questions/14695933/draggable-div-with-classname" target="_blank" rel="noopener noreferrer">stackoverflow</a>! and i did a lot of minor tweaks for it to work for what i needed it to. i think it was pretty cool that once i got the fish moving my next step was <q>okay and now how do we know they are kissing?</q> <u>basic math baby!</u> or at least i'm pretty sure it is... either way i wasnt born for math so i still had to take out a paper and pen and start drawing the grid and the fish boxes so i could see what had to be done and it birthed this AWESOME function that checks if the fish are kissing.</p>
 		<textarea style="height:100px">
-		function checkKiss() {
+function checkKiss() {
 	let fish1Area = fishLeft.offsetLeft + fishLeft.offsetWidth;
 	let fishX = fish1Area - fishRight.offsetLeft;
 	let fishY = Math.abs(fishLeft.offsetTop - fishRight.offsetTop);
