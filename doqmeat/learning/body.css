@@ -35,6 +35,12 @@ figure {
 	background: #a84e24;
 	color: #f3e5bf;
 	padding: 5px;
+	a {
+		color: #fad97c;
+		&:hover {
+			background: #ca5e2c;
+		}
+	}
 }
 
 h1 {
