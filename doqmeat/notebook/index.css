@@ -297,7 +297,6 @@ button {
 	padding: 10px 0px 30px 0px;
 	background-color: inherit;
 	font-family: newpenji, ms pgothic;
-	border: none;
 	cursor: help;
 	font-size: 19px;
 	transition-duration: 0.5s;
@@ -342,13 +341,18 @@ button {
 }
 
 .info-b {
-	right: -20px;
+	right: -300px;
 	background: #e2d2f0;
 }
 
 .tut-b {
 	right: -160px;
 	background: #e3edff;
+}
+
+.fun-b {
+	right: -20px;
+	background: #ffe3e3;
 }
 
 .tabcontent {
