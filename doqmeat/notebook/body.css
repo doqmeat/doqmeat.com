@@ -33,6 +33,10 @@ p:hover {
 	background: white;
 }
 
+ol li {
+	list-style-type: decimal-leading-zero;
+}
+
 li {
 	list-style-position: inside;
 	padding-left: 2px;
