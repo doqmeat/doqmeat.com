@@ -35,11 +35,27 @@ p:hover {
 
 ol li {
 	list-style-type: decimal-leading-zero;
+	&::marker {
+		font-weight: bold;
+	}
+}
+
+textarea {
+	font-family: mononoki;
+	font-size: 0.8rem;
 }
 
 li {
-	list-style-position: inside;
 	padding-left: 2px;
+}
+
+code {
+	font-family: mononoki;
+	font-size: 1rem;
+	background: rgb(41, 41, 41);
+	color: white;
+	padding: 0 2px;
+	border-radius: 2px;
 }
 
 ul {

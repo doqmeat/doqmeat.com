@@ -1,22 +1,29 @@
+:root {
+	--accent: #d1ebcd;
+}
 body {
 	background: url("/notebook/!g/grid-green2.png");
 }
 
-li {
+ul li {
 	list-style-image: url("/!g/pix/ball_s_15.gif");
 }
 
 a:hover,
 a:focus {
-	color: #d1ebcd;
+	color: var(--accent);
+}
+
+code {
+	color: var(--accent);
 }
 
 mark {
-	background: #d1ebcd;
+	background: var(--accent);
 }
 
 ::selection {
-	background-color: #d1ebcd;
+	background-color: var(--accent);
 }
 
 #s-m-t-tooltip {
@@ -28,5 +35,5 @@ mark {
 	border-radius: 10px;
 	border: 1px solid black;
 	color: black;
-	background-color: #d1ebcd;
+	background-color: var(--accent);
 }

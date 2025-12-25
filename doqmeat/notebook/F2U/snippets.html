@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>code snippets</title>
+  <link rel="icon" type="image/x-icon" href="../favicon.gif">
+  <link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../body.css" rel="stylesheet" type="text/css" media="all">
+  <link href="../css/green.css" rel="stylesheet" type="text/css" media="all">
+  <!-- tooltip shit -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="/!f/tooltip-jquary.js"></script>
+  <script src="/!f/tooltip.js"></script>
+  <!--  end of tooltip shit -->
+
+  <style>
+    .rainbow:hover {
+      letter-spacing: 0px;
+      filter: none;
+      animation-name: rainbowLink;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes rainbowLink {
+      0% {
+        color: #d593ff;
+      }
+
+      20% {
+        color: #00c3fe;
+      }
+
+      40% {
+        color: #8ef77b;
+      }
+
+      60% {
+        color: #f9d56a;
+      }
+
+      80% {
+        color: #fea17f;
+      }
+
+      100% {
+        color: #ff76b1;
+      }
+    }
+
+    .rainbowDark:hover {
+      letter-spacing: 0px;
+      filter: none;
+      animation-name: rainbowLinkD;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes rainbowLinkD {
+      0% {
+        color: #9669b1;
+      }
+
+      20% {
+        color: #3794b0;
+      }
+
+      40% {
+        color: #49a739;
+      }
+
+      60% {
+        color: #a88726;
+      }
+
+      80% {
+        color: #c6651c;
+      }
+
+      100% {
+        color: #ac2d38;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main>
+    <p class="hide"><small><a href="/" target="_parent">home</a> &gt; <a href="/notebook" target="_parent">notebook</a> &gt; F2U &gt;</small></p>
+    <center>
+      <h1>code snippets</h1>
+    </center>
+
+    <h2>rules</h2>
+
+    <ul>
+      <li>you are allowed to edit, modify, and use these codes to your hearts content.</li>
+      <li><b>credit is not mandatory</b> at all!!! you can always link back to my site as a thank you though <img src="/!g/pix/heart2.gif" alt="heart emoji"></li>
+    </ul>
+
+    <h2 class="rainbowDark" id="rainbow-on-hover">rainbow on hover</h2>
+    <p>i've been thinking about this theme i used to have on tumblr when i was in my teens and it had an option for the links to display the colors of the rainbow on hover. when i check the source code for the rainbow links it turns out that it was some <a href="https://static.tumblr.com/jn17x0j/2Zvltn7mc/rainbow_links.txt" target="_blank">very old JavaScript code</a> doing the changes which makes sense. the <a title="tumblr post" class="rainbow" href="https://tomkirk.tumblr.com/post/111438113129/qdq-l-u-n-g-s-code" target="_blank">tumblr theme</a> released around feb 2015 and <a class="rainbow" href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference/Properties/animation" target="_blank">CSS animations</a> became widely available around september 2015.</p>
+    <p class="example">and so i made my own version using CSS animations and <a class="rainbowDark" href="#">this is the result</a>!</p>
+    <h4>instructions</h4>
+    <ol>
+      <li>copy-paste either code snippet on a CSS file <small>(or internal style, fuck it bro it's your life)</small></li>
+      <div style="background:black;padding:10px;border:1px solid black;color:white;">
+        <details>
+          <summary class="rainbow">code snippet for lighter rainbow</summary>
+          <textarea style="width:100%;height:500px;">
+    .rainbow:hover {
+      letter-spacing: 0px;
+      filter: none;
+      animation-name: rainbow;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-timing-function: ease-in-out;
+    }
+    
+    @keyframes rainbow {
+      0% {
+        color: #d593ff;
+      }
+
+      20% {
+        color: #00c3fe;
+      }
+
+      40% {
+        color: #8ef77b;
+      }
+
+      60% {
+        color: #f9d56a;
+      }
+
+      80% {
+        color: #fea17f;
+      }
+
+      100% {
+        color: #ff76b1;
+      }
+    }
+        </textarea>
+        </details>
+      </div>
+
+      <div style="background:white;padding:10px;border:1px solid white;color:black;">
+        <details>
+          <summary class="rainbowDark">code snippet for darker rainbow</summary>
+          <textarea style="width:100%;height:500px;">
+     .rainbowDark:hover {
+      letter-spacing: 0px;
+      filter: none;
+      animation-name: rainbowLinkD;
+      animation-duration: 1.8s;
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes rainbowLinkD {
+      0% {
+        color: #9669b1;
+      }
+
+      20% {
+        color: #3794b0;
+      }
+
+      40% {
+        color: #49a739;
+      }
+
+      60% {
+        color: #a88726;
+      }
+
+      80% {
+        color: #c6651c;
+      }
+
+      100% {
+        color: #ac2d38;
+      }
+    }
+        </textarea>
+        </details>
+      </div>
+      <li>apply the class name to whatever element you want the rainbow effect on hover. <mark><b>TIP:</b> for links you can just do <code>a:hover</code> instead of <code>.[CLASSNAME]:hover</code> for the CSS selector</mark></li>
+    </ol>
+
+
+  </main>
+</body>
+
+</html>
