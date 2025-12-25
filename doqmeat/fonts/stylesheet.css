@@ -232,3 +232,13 @@
 	font-family: "dot gothic";
 	src: url(DotGothic16-Regular.ttf);
 }
+
+@font-face {
+	font-family: "klee one reg";
+	src: url(KleeOne-Regular.ttf);
+}
+
+@font-face {
+	font-family: "klee one bold";
+	src: url(KleeOne-SemiBold.ttf);
+}
