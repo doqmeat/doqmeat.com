@@ -236,8 +236,13 @@ li.played {
 	list-style-image: url("/!g/pix/vgs.gif");
 }
 
-li.watched {
+li.watched,
+li.tv {
 	list-style-image: url("/!g/pix/tv.gif");
+}
+
+li.movie {
+	list-style-image: url("/!g/pix/cat-watching-tv.gif");
 }
 
 li.read {
