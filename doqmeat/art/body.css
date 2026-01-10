@@ -78,6 +78,10 @@ hr {
 	color: var(--red);
 }
 
+details summary {
+	cursor: help;
+}
+
 img.box {
 	background: var(--yellow);
 	cursor: zoom-in;

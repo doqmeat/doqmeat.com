@@ -101,10 +101,8 @@ footer {
 }
 header {
 	border-bottom: 1px dotted var(--border-color);
-	height: 240px;
-	background-image: url("assets/header.png");
-	background-position: center;
-	background-size: cover;
+	height: 60px;
+	background: var(--link-color);
 }
 
 header {
@@ -181,9 +179,20 @@ section {
 
 	.box {
 		overflow: auto;
-		height: 640px;
+		height: 500px;
 		border: 1px dashed var(--border-color);
 		padding: 30px;
+		margin-bottom: 10px;
+	}
+}
+
+#rss {
+	h3 {
+		display: none;
+	}
+	h4 {
+		font-size: 1rem;
+		font-family: inherit;
 	}
 }
 
@@ -225,7 +234,7 @@ section {
 
 	section {
 		width: 95%;
-		height: auto;
+		height: 525px;
 		padding: 15px;
 		margin: 15px auto;
 	}
