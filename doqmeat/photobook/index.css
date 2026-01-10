@@ -19,7 +19,7 @@ body {
 }
 
 header {
-	background: #f08696;
+	background: #f595a3;
 	position: relative;
 	margin: auto;
 	margin-top: 20px;
@@ -35,7 +35,7 @@ header {
 
 button {
 	cursor: help;
-	color: lightblue;
+	color: rgb(52, 100, 116);
 	text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.297);
 	border: none;
 	background: transparent;
@@ -103,37 +103,18 @@ a:hover {
 }
 
 .phone {
-	border: 7px solid transparent;
-	padding: 4px;
-	border-image: url("/!g/border/greenlaceborde.png") 8 round;
-	-webkit-border-image: url("/!g/border/greenlaceborde.png") 8 round;
-	-o-border-image: url("/!g/border/greenlaceborde.png") 8 round;
-	-moz-border-image: url("/!g/border/greenlaceborde.png") 8 round;
+	border: 5px ridge #c3e6cd;
+	border-radius: 15px;
 }
 
 .ds {
-	border: 7px solid transparent;
-	padding: 4px;
-	border-image: url("/!g/border/bluelaceborde.png") 8 round;
-	-webkit-border-image: url("/!g/border/bluelaceborde.png") 8 round;
-	-o-border-image: url("/!g/border/bluelaceborde.png") 8 round;
-	-moz-border-image: url("/!g/border/bluelaceborde.png") 8 round;
-}
-
-.finepix {
-	border: 7px solid transparent;
-	padding: 4px;
-	border-image: url("/!g/border/purplelaceborder.png") 8 round;
-	-webkit-border-image: url("/!g/border/purplelaceborder.png") 8 round;
-	-o-border-image: url("/!g/border/purplelaceborder.png") 8 round;
-	-moz-border-image: url("/!g/border/purplelaceborder.png") 8 round;
+	border: 5px ridge #c3e6cd;
+	border-radius: 15px;
 }
 
 .instax {
-	border-radius: 10px;
-	border: 10px solid white;
-	box-shadow: 1px 1px 1px grey, -1px -1px 1px grey;
-	border-bottom-width: 4rem;
+	border: 5px ridge #c3e6cd;
+	border-radius: 15px;
 }
 
 .hov {
