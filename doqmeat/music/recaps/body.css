@@ -90,12 +90,6 @@ p {
 	}
 }
 
-summary {
-	padding-left: 10px;
-	padding: 5px;
-	cursor: help;
-}
-
 blockquote {
 	border-left: 2px dashed var(--2);
 	padding-left: 10px;
@@ -105,10 +99,9 @@ blockquote {
 	padding: 0px 5px;
 	color: var(--3);
 	background: var(--3);
-}
-
-.spoiler:hover {
-	color: var(--light);
+	&:hover {
+		color: var(--dark);
+	}
 }
 
 .emoji2:after {
@@ -133,21 +126,9 @@ h5 {
 }
 
 h3 {
-	font-size: 30px;
-	line-height: 36px;
-	word-spacing: 0px;
-	background: var(--gradient1);
-	background: var(--gradient2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-webkit-text-stroke-width: 0.4px;
-	-webkit-text-stroke-color: var(--dark);
-	transition-duration: 0.5s;
-}
-
-h3:hover {
-	letter-spacing: 5px;
-	-webkit-text-stroke-width: 1px;
+	border-bottom: 4px double var(--1);
+	line-height: 2em;
+	margin: 0 20px;
 }
 
 details {
@@ -155,6 +136,12 @@ details {
 	margin-bottom: 15px;
 	margin: 0;
 	padding: 5px;
+
+	summary {
+		padding-left: 10px;
+		padding: 5px;
+		cursor: help;
+	}
 
 	summary::marker {
 		content: "⤷ ";
@@ -172,6 +159,13 @@ details {
 		background: var(--dark);
 		border: 1px solid var(--2);
 		transition-duration: 0.5s;
+	}
+
+	iframe {
+		display: block;
+		margin: auto;
+		width: 100%;
+		height: 200px;
 	}
 }
 
@@ -202,6 +196,19 @@ footer {
 
 .song {
 	overflow: hidden;
+	p {
+		margin: 15px;
+	}
+	img {
+		margin: 20px;
+		max-width: 150px;
+	}
+	&:nth-of-type(2n + 0) img {
+		float: left;
+	}
+	&:nth-of-type(2n + 1) img {
+		float: right;
+	}
 }
 
 .cover {
