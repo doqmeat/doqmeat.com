@@ -1,8 +1,9 @@
 /*
-last edited: 03.apr.25
+last edited: 16.jan.26
 */
 
-let sections = document.querySelectorAll("#blog section"); // gets all year sections
+const sections = document.querySelectorAll("#blog section"); // gets all year sections
+const url = document.getElementById("address");
 
 const date = new Date(); // get date
 let current_year = date.getFullYear(); // gets current year!
@@ -14,6 +15,7 @@ function goHome() {
 		sections[i].style.display = "none";
 	}
 	home.style.display = "block";
+	url.textContent = "https://doqmeat.com/microblog/menu";
 }
 
 // input: year!!
@@ -26,6 +28,7 @@ function goToYear(year) {
 		sections[i].style.display = "none"; // hides them
 	}
 	yearSection.style.display = "block"; // shows
+	url.textContent = "https://doqmeat.com/microblog/" + year;
 }
 
 goToYear(current_year); // loads the page on the current year
@@ -43,7 +46,6 @@ function totalLog(year) {
 // edit: i did it!!!!
 
 for (let i = 2024; i <= current_year; i++) {
-	// loops from 2024 til current year
 	i = i.toString(); // converts i to string
 	totalLog(i); // calls function
 }
