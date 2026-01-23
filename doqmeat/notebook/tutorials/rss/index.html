@@ -65,7 +65,7 @@
 <body>
 
 	<main>
-		<p class="hide"><small><a href="/" target="_parent">home</a> &gt; <a href="/notebook" target="_parent">notebook</a> &gt; tutorials &gt;</small>
+		<p class="hide"><small><a href="/" target="_parent">home</a> &gt; <a href="/notebook" target="_parent">notebook</a> &gt; tutorials &gt;</small></p>
 		<h1>RSS feeds</h1>
 		<h4>table of contents: </h4>
 		<nav>
@@ -78,26 +78,30 @@
 
 		<h2 id="intro">intro</h2>
 
-		<p>while the neocities activity feed sort of gets the job done at keeping you updated with other sites, there are other ways of getting updates from websites right to your doorstep. with this method, you can also see updates from sites that have their profiles disabled, or aren't <b>hosted</b> into neocities!</p>
+		<p>while the neocities activity feed sort of gets the job done at keeping you updated with other sites, there are other ways of getting updates from websites right to your doorstep. with this method, you can also see updates from sites that have RSS feeds available and have their profiles disabled, or aren't <b>hosted</b> on neocities!</p>
 		<p>from the <b>perspective of a webmaster</b>, an <mark>RSS feed</mark> is also way more customizable and reliable than whatever the neocities activity feed decides to show on your profile. this is also a great way of keeping up to date with sites without feeling obligated to check the neocities activity feed on a daily basis.</p>
-		<p><mark>RSS feeds</mark> are also called <mark>web feeds</mark>. these are usually files such as .rss .xml .atom and there's probably more that i either forgot or haven't personally seen used.</p>
-		<p>here are some sites that provide more info on RSS feeds: <a href="https://aboutfeeds.com/" target="_blank" class="outlink">aboutfeeds.com</a>, <a href="https://en.wikipedia.org/wiki/RSS" target="_blank" class="outlink">wikipedia</a></p>
-		<p><mark>in this guide i'll be showing you how you can see RSS feeds from <i>other</i> sites and how to set up your own for your site</mark>! </p>
-		<p><u>note 1</u>: this stuff is super easy to set up with some google searches and looking at other peoples' RSS feeds. you probably do not need this guide, but i still went out of my way to write all of this to show you how this works and how easy it is to set up alongside some tips. i'd like to see more sites make use of this tbh!</p>
+		<p><mark>RSS feeds</mark> are also called <mark>web feeds</mark>. these are usually files such as .rss, .xml, or .atom </p>
+		<p>more reading about RSS: <a href="https://aboutfeeds.com/" target="_blank" class="outlink">aboutfeeds.com</a>, <a href="https://en.wikipedia.org/wiki/RSS" target="_blank" class="outlink">wikipedia</a></p>
+		<p><mark>in this guide i'll be showing you how to <i>read</i> RSS feeds from sites and how to <i>make</i> your own for your site</mark>! </p>
 
 		<h2 id="reader">RSS feed readers</h2>
 		<p>i believe it would be easier to start with how you can <u>view and recieve updates from other sites</u> via an <mark>RSS reader</mark>. but, if you just wanna know how to set up your own, you're free to skip this and go directly to the RSS feed <a href="#setup">setup</a>.</p>
-		<p>you can have an RSS reader as an extension for your browser, an app on your phone, a newsletter via e-mail, or a widget on your website.</p>
-		<p>for this guide, i will be using a browser extension. you will want search for an <b>rss reader</b> on your browser's extension library. i am pretty sure any will do the job! i use <b>feedbro</b> on <a href="https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/" target="_blank" class="outlink">firefox</a> and it is also available for <a href="https://chromewebstore.google.com/detail/feedbro/mefgmmbdailogpfhfblcnnjfmnpnmdfa?hl=en" target="_blank" class="outlink">chrome</a>.</p>
+		<p>you can have an RSS reader as an extension for your browser, an app on your phone, a newsletter via e-mail, or a widget on your website. here's some you can use:</p>
+		<ul>
+			<li><a href="https://artemis.jamesg.blog/" target="_blank">artemis</a> - web-based</li>
+			<li>feedbro - browser extension on <a href="https://addons.mozilla.org/en-US/firefox/addon/feedbroreader/" target="_blank" class="outlink">firefox</a> and <a href="https://chromewebstore.google.com/detail/feedbro/mefgmmbdailogpfhfblcnnjfmnpnmdfa?hl=en" target="_blank" class="outlink">chrome</a></li>
+			<li><a href="https://feeder.co/" target="_blank">feeder</a> - web-based, app available</li>
+		</ul>
+		<p>for this guide, i will be using <b>feedbro</b>: a browser extension. the process of adding a feed to your reader is quite simple, you don't need to use the same one i'm using!</p>
 		<p>once you have a <b>reader</b> installed, we can go look for some <mark>web feeds</mark> to add to the reader!</p>
-		<p>if you've been around some websites you might have seen a link with the name <b>RSS feed</b> with this icon <img src="/!g/web/materials/rss-icon.png" width="15" alt="RSS icon"> or this badge <img src="/!g/web/materials/rss.png" alt="RSS badge"> these will get you the <b>link for their web feed</b>. </p>
+		<p>if you've been around some websites you might have seen a link with the name <b>RSS feed</b> with this icon <img src="/!g/web/materials/rss-icon.png" width="15" alt="RSS icon"> or this badge <img src="/!g/web/materials/rss.png" alt="RSS badge">. these will get you the <b>link for their web feed</b>. clicking on them will get you the link to their feeds! </p>
 		<hr>
-		<p><u>note 1</u>: depending on browser settings, when clicking these links your browser might download the file instead of opening the code on your browser. if this happends, just right-click on the link and click <i>copy</i>.</p>
+		<p><u>note 1</u>: depending on browser settings, when clicking these links your browser might download the file instead of opening the code on your browser. if this happens, just right-click on the link and click <i>copy</i>.</p>
 		<hr>
-		<p>once you have copied the feed link from a website, you will add it to your reader. the reader will show you a certain amount of updates + any new ones from here on out.</p>
+		<p>once you have copied the feed link from a website, you will add it to your reader. the reader will show you a certain amount of updates and any new ones from here on out.</p>
 
 		<details>
-			<summary>here's a picture in case you need some more help!</summary>
+			<summary>adding RSS feeds in <b>feedbro</b></summary>
 			<img src="reader-2.jpg" width="100%">
 			<p>you can also change all of these settings + give it a custom title. pretty handy!</p>
 		</details>
@@ -116,10 +120,18 @@
 		<title>title of your RSS feed. can just be your site's name</title>
 		<link>https://YOUR-URL</link>
 		<description>description of your site</description>
+		<webMaster>OPTIONAL-YOUR-CONTACT-EMAIL@SITE.com (YOUR NAME)</webMaster>
+
+		<item>
+			<title>title of the update 2</title>
+			<link>https://URL-OF-THE-UPDATE2</link>
+			<description>this is a description of the update</description>
+			<pubDate>Tue, 09 Jul 2024 15:00:00 -0400</pubDate>
+		</item>
 
 		<item>
 			<title>title of the update 1</title>
-			<link>https://URL-OF-THE-UPDATE2</link>
+			<link>https://URL-OF-THE-UPDATE1</link>
 			<description>this is a description of the update</description>
 			<pubDate>Tue, 09 Jul 2024 15:00:00 -0400</pubDate>
 		</item>
@@ -128,14 +140,13 @@
 </rss>
 </textarea>
 		<p>this will be the template you will use for it. this template has what is required for an RSS feed to function. here are some other <a href="https://www.w3schools.com/xml/xml_rss.asp" target="_blank" class="outlink">optional tags</a> you can also use on your feed, for now i will only work with what's required.</p>
-		<p>go ahead put your info into the template provided. as you will noticed <mark>anything <b>inside</b> an <code>item</code> tag refers to an <b>entry</b></mark>. each time you want to make a new <b>entry</b>, you have to use that same code!</p>
-		<p>here's an example: <img src="template-2.jpg" width="100%"></p>
+		<p>go ahead put your info into the template provided. as you will notice: <mark>anything <b>inside</b> an <code>item</code> tag refers to an <b>entry</b></mark>. each time you want to make a new <b>entry</b>, you have to use that same code!</p>
+		<h3>tips</h3>
+		<p><mark><code>pubDate</code> in-depth</mark>: the date of each <code>item</code> is the <code>pubDate</code> aka <i>published date</i>. it has to be formatted as shown in the code or <u>you will get an error</u>. the time of the <code>item</code> <code>pubDate</code> is configured using your time zone. my time zone is GMT -4 which why you see a <code>-0400</code> in there. you can search yours on <a href="https://greenwichmeantime.com/" target="_blank">here</a>.</p>
+		<blockquote>example: if you're in eastern standard time, then you can just input <code>Tue, 09 Jul 2024 15:00:00 EST</code>.</blockquote>
+		<p>you can also use this <a href="https://timestampgenerator.com/" target="_blank" class="outlink">time stamp generator</a> to generate your <code>pubDate</code>, just make sure to copy paste the one that says <i>RFC</i></p>
 		<hr>
-		<p><u>note 1</u>: the date of each <code>item</code> is the <code>pubDate</code> aka <i>published date</i>. it has to be formatted as shown in the code or you will get an error. the time of the <code>item</code> <code>pubDate</code> is configured using your timezone. you'll have to check your time zone in order to put the correct value! my time zone is GMT -4 which why you see a <code>-0400</code> in there.</p>
-		<blockquote>example: if you're in eastern standard time, then you can just input <code>Tue, 09 Jul 2024 15:00:00 EST</code> in the <code>pubDate</code>.</blockquote>
-		<p><u>edit 1</u>: you can also use this <a href="https://timestampgenerator.com/" target="_blank" class="outlink">time stamp generator</a> to generate your <code>pubDate</code>, just make sure to copy paste the one that says <i>RFC</i></p>
-		<hr>
-		<p><u>note 2</u>: you can display HTML code in your <code>rss.xml</code> but not the way you are probably thinking of.</p>
+		<p><mark>displaying HTML code on RSS feed</mark>: you can display HTML code in your <code>rss.xml</code> but not the way you are probably thinking of.</p>
 		<p>for example: let's say you want to include a link in the <code>description</code> of an <code>item</code>. instead of writing <code>&lt;a href=&quot;URL&quot;&gt;LINK&lt;/a&gt;</code> you instead have to do it with <a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank" class="outlink">HTML entities</a>, like so:</p>
 		<ul>
 			<li>&lt;a href=&quot;URL&quot;&gt;LINK&lt;/a&gt; = <xmp>&lt;a href=&quot;URL&quot;&gt;LINK&lt;/a&gt;</xmp>
@@ -202,7 +213,7 @@
 		<h2 id="end">conclusion</h2>
 		<p>i think RSS feeds are nice and i want more people to use them. i hope you learned something from this! if this inspired you to make an RSS feed then YAY! if this did not inspired you to make one, then that it also okay, but at least i tried.</p>
 		<hr>
-		<p class="date">published on 12.jul.24 / last updated on 13.jul.24 / <a href="#">go to the top?</a></p>
+		<p class="date">published on 12.jul.24 / last updated on 23.jan.26 / <a href="#">go to the top?</a></p>
 	</main>
 </body>
 
