@@ -56,7 +56,8 @@ footer {
 
 header {
 	margin-top: 50px;
-	max-width: 500px;
+	max-width: 700px;
+	margin-bottom: 15px;
 }
 
 h1 {
@@ -67,6 +68,18 @@ h2 {
 	margin: 5px;
 	font-size: 22px;
 	font-family: morningtea, natsuzemi, var(--fonts);
+}
+
+h2#mini-reviews {
+	text-align: center;
+	display: block;
+	margin: auto;
+	width: fit-content;
+	padding: 10px;
+	border-radius: 10px;
+	background: var(--l-blue);
+	color: var(--purple);
+	border: 4px ridge #e5b8d1;
 }
 
 a {
@@ -202,6 +215,7 @@ aside {
 	max-width: 400px;
 	height: 400px;
 	background-image: url(/!g/bg/whiteline.jpg);
+	background-attachment: local;
 	background-size: 13px;
 	background-color: #a6d0c8;
 	padding: 10px;
