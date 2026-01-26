@@ -5,8 +5,10 @@
 	<channel>
 		<title>doqmeat</title>
 		<link>https://doqmeat.com</link>
-		<description>des' personal website!</description>
-		<atom:link href="http://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+		<description>des' digital journal updates</description>
+		<language>en-us</language>
+		<webMaster>meow@doqmeat.com (des)</webMaster>
+		<atom:link href="https://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
 		<item>
 			<title>19.jan.26 - answering 100 questions about being a webmaster</title>
 			<link>https://doqmeat.com/music/recaps/2025</link>
