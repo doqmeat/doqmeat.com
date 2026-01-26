@@ -33,6 +33,12 @@ li {
 	list-style-position: inside;
 }
 
+blockquote {
+	border-left: 4px solid var(--darkblue);
+	margin: 5px;
+	padding-left: 10px;
+}
+
 a {
 	color: var(--hotpink);
 	font-weight: bold;
