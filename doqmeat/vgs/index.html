@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!-- 
+coded with love by des
+-->
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>video games</title>
+	<link rel="icon" type="image/x-icon" href="/vgs/favicon.gif">
+	<link href="body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="index.css" rel="stylesheet" type="text/css" media="all">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+	<script src="https://melonking.net/scripts/frame-link.js"></script>
+	<script>
+		titlePrefix = "gaming log - ";
+	</script>
+</head>
+
+<body>
+	<div id="infowrapper">
+		<div id="info">
+			<iframe id="mainframe" src="info.html" name="log" height="100%" width="100%" style="border:none;"></iframe>
+		</div>
+		<!-- this is info for small screen-->
+		<div id="back">
+			<a href="info.html" target="log">back to info</a> / <a href="/">home</a> / <a href="/sitemap.html">sitemap</a>
+		</div>
+	</div>
+	<!-- main box -->
+	<div id="wrapper">
+		<div id="myBtnContainer">
+			<center>
+				<button class="btn active" onclick="filterSelection('all')">show all</button>
+				<button class="btn" onclick="filterSelection('fav')">favs</button>
+				<button class="btn g" onclick="filterSelection('horror')">horror</button>
+				<button class="btn g" onclick="filterSelection('adv')">adventure</button>
+				<button class="btn g" onclick="filterSelection('action')">action</button>
+				<button class="btn g" onclick="filterSelection('shooter')">shooter</button>
+				<button class="btn g" onclick="filterSelection('puzzle')">puzzle</button>
+				<button class="btn g" onclick="filterSelection('plat')">platformer</button>
+				<button class="btn g" onclick="filterSelection('rpg')">role playing</button>
+				<button class="btn g" onclick="filterSelection('sim')">simulation</button>
+				<button class="btn g" onclick="filterSelection('vn')">visual novel</button>
+				<button class="btn g" onclick="filterSelection('cat')">cats</button>
+				<button class="btn g" onclick="filterSelection('rhythm')">rhythm</button>
+				<button class="btn g" onclick="filterSelection('online')">online</button>
+
+			</center>
+		</div>
+
+		<div class="thumb finished adv">
+			<a title="abzu" href="games/abzu/index.html" target="log"><img src="games/abzu/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished sim">
+			<a title="animal crossing new horizons" href="games/acnh/index.html" target="log"><img src="games/acnh/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished">
+			<a title="balatro" href="games/balatro/index.html" target="log"><img src="games/balatro/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb notdone cat puzzle">
+			<a title="a little to the left" href="games/a-little-to-the-left/index.html" target="log"><img src="games/a-little-to-the-left/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished vn">
+			<a title="a new life" href="games/a-new-life/index.html" target="log"><img src="games/a-new-life/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished action adv">
+			<a title="bastion" href="games/bastion/index.html" target="log"><img src="games/bastion/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb toplay action">
+			<a title="bayonetta origins: cereza and the lost demon" href="games/bayonetta-origins/index.html" target="log"><img src="games/bayonetta-origins/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb adv action notdone currently horror">
+			<a title="bloodborne" href="games/bloodborne/index.html" target="log"><img src="games/bloodborne/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb">
+			<a title="breath of the wild" href="games/botw/index.html" target="log"><img src="games/botw/cover.jpg" tabindex="0" alt="botw"></a>
+		</div>
+		<div class="thumb fav finished adv platformer">
+			<a title="bound" href="games/bound/index.html" target="log"><img src="games/bound/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished adv">
+			<a title="bugsnax" href="games/bugsnax/index.html" target="log"><img src="games/bugsnax/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb cat platformer currently puzzle">
+			<a title="cato: buttered cat" href="games/cato/index.html" target="log"><img src="games/cato/cover.jpg" alt="cato" tabindex="0"></a>
+		</div>
+		<div class="thumb cat rpg adventure">
+			<a title="cattails" href="games/cattails/index.html" target="log"><img src="games/cattails/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished platformer">
+			<a title="celeste" href="games/celeste/index.html" target="log"><img src="games/celeste/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished puzzle">
+			<a title="cloud gardens" href="games/cloud-gardens/index.html" target="log"><img src="games/cloud-gardens/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished rpg">
+			<a title="dragon age inquisition" href="games/dai/index.html" target="log"><img src="games/dai/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb notdone adventure">
+			<a title="the dog island" href="games/dog-island/index.html" target="log"><img src="games/dog-island/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished fav rpg action">
+			<a title="fallout" href="games/fallout-1/index.html" target="log"><img src="games/fallout-1/cover.jpg" alt="fallout" tabindex="0"></a>
+		</div>
+		<div class="thumb currently notdone action shooter rpg">
+			<a title="fallout new vegas" href="games/fallout-new-vegas/index.html" target="log"><img src="games/fallout-new-vegas/cover.jpg" tabindex="0" alt="fallout new vegas"></a>
+		</div>
+		<div class="thumb fav action finished">
+			<a title="fallout 4" href="games/fallout-4/index.html" target="log"><img src="games/fallout-4/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished sim">
+			<a title="fashion dreamer" href="games/fashion-dreamer/index.html" target="log"><img src="games/fashion-dreamer/cover1.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb horror adventure">
+			<a title="fatum betula" href="games/fatum-betula/index.html" target="log"><img src="games/fatum-betula/cover.jpg" tabindex="0" alt="fatum betula"></a>
+		</div>
+		<div class="thumb online action">
+			<a title="fortnite" href="games/fortnite/index.html" target="log"><img src="games/fortnite/fortnite.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished adventure plat">
+			<a title="gris" href="games/gris/index.html" target="log"><img src="games/gris/cover.jpg" tabindex="0" alt="gris"></a>
+		</div>
+		<div class="thumb fav finished action">
+			<a title="hyper light drifer" href="games/hld/index.html" target="log"><img src="games/hld/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished adventure plat action">
+			<a title="hollow knight" href="games/hollow-knight/index.html" target="log"><img src="games/hollow-knight/cover.jpg" tabindex="0" alt="hollow knight"></a>
+		</div>
+		<div class="thumb fav finished vn">
+			<a title="if found..." href="games/if-found/index.html" target="log"><img src="games/if-found/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished vn">
+			<a title="infamous first light" href="games/infamous-1st-light/index.html" target="log"><img src="games/infamous-1st-light/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished action">
+			<a title="infamous second son" href="games/infamous-2nd-son/index.html" target="log"><img src="games/infamous-2nd-son/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb currently online">
+			<a title="infinity nikki" href="games/infinity-nikki/index.html" target="log"><img src="games/infinity-nikki/cover.jpg" tabindex="0" alt="infinity nikki page link"></a>
+		</div>
+		<div class="thumb cat fav adv finished">
+			<a title="journey" href="games/journey/index.html" target="log"><img src="games/journey/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished platformer">
+			<a title="kirby planet robobot" href="games/kirby-planet-robobot/index.html" target="log"><img src="games/kirby-planet-robobot/cover.jpg" alt="kirby planet robobot" tabindex="0"></a>
+		</div>
+		<div class="thumb finished vn horror">
+			<a title="milk inside a bag of milk inside a bag of milk" href="games/milk-inside/index.html" target="log"><img src="games/milk-inside/cover.jpg" tabindex="0" alt="milk inside a bag of milk inside a bag of milk"></a>
+		</div>
+		<div class="thumb fav notdone">
+			<a title="minecraft" href="games/minecraft/index.html" target="log"><img src="games/minecraft/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished vn">
+			<a title="needy streamer overload" href="games/needy-streamer/index.html" target="log"><img src="games/needy-streamer/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb cat adv toplay"><a href="games/neko-odyssey" title="neko odyssey" target="log"><img src="games/neko-odyssey/cover.jpg" alt="neko odyssey" tabindex="0"></a></div>
+		<div class="thumb fav finished cat">
+			<a title="night in the woods" href="games/nitw/index.html" target="log"><img src="games/nitw/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb sim finished">
+			<a title="nintendogs + cats" href="games/nintendogs-cats/index.html" target="log"><img src="games/nintendogs-cats/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb notdone vn horror">
+			<a title="paranormasight" href="games/paranormasight/index.html" target="log"><img src="games/paranormasight/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished adventure">
+			<a title="pikmin 4" href="games/pikmin-4/index.html" target="log"><img src="games/pikmin-4/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav finished">
+			<a title="portal 2" href="games/portal-2/index.html" target="log"><img src="games/portal-2/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb rhythm vn">
+			<a title="project sekai" href="games/prsk/index.html" target="log"><img src="games/prsk/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished horror adventure">
+			<a title="rental" href="games/rental/index.html" target="log"><img src="games/rental/cover.jpg" tabindex="0" alt="rental"></a>
+		</div>
+		<div class="thumb fav finished action adv">
+			<a title="solar ash" href="games/solar-ash/index.html" target="log"><img src="games/solar-ash/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb fav notdone platformer">
+			<a title="sonic rush" href="games/sonic-rush/index.html" target="log"><img src="games/sonic-rush/cover.png" tabindex="0"></a>
+		</div>
+		<div class="thumb shooter notdone">
+			<a title="splatoon 2" href="games/splatoon-2/index.html" target="log"><img src="games/splatoon-2/cover.jpg" tabindex="0" alt="splatoon 2"></a>
+		</div>
+		<div class="thumb finished sim">
+			<a title="sticky business" href="games/sticky-business/index.html" target="log"><img src="games/sticky-business/cover.png" tabindex="0"></a>
+		</div>
+		<div class="thumb cat fav finished adv">
+			<a title="stray" href="games/stray/index.html" target="log"><img src="games/stray/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb sim finished fav">
+			<a title="style savvy: trendsetters" href="games/style-savvy-trendsetters/index.html" target="log"><img src="games/style-savvy-trendsetters/cover.png" tabindex="0"></a>
+		</div>
+		<div class="thumb sim currently notdone">
+			<a title="style savvy: fashion forward" href="games/style-savvy-fashion-forward/index.html" target="log"><img src="games/style-savvy-fashion-forward/cover.bmp" alt="style savvy fashion forward" tabindex="0"></a>
+		</div>
+		<div class="thumb sim currently notdone">
+			<a title="style savvy: styling star" href="games/style-savvy-styling-star/index.html" target="log"><img src="games/style-savvy-styling-star/cover.png" alt="style savvy styling star" tabindex="0"></a>
+		</div>
+		<div class="thumb finished puzzle">
+			<a title="unpacking" href="games/unpacking/index.html" target="log"><img src="games/unpacking/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb finished action shooter">
+			<a title="watch dogs 2" href="games/watch-dogs-2/index.html" target="log"><img src="games/watch-dogs-2/cover.jpg" tabindex="0"></a>
+		</div>
+		<div class="thumb vn finished">
+			<a title="we know the devil" href="games/we-know-the-devil/index.html" target="log"><img src="games/we-know-the-devil/cover.png" tabindex="0" alt="we know the devil"></a>
+		</div>
+		<div class="thumb">
+			<a title="window garden" href="games/window-garden/index.html" target="log"><img src="games/window-garden/cover.jpg" tabindex="0" alt="window garden"></a>
+		</div>
+		<!-- 	wrapper end div -->
+	</div>
+	<script src="!f/filter.js"></script>
+</body>
+
+</html>

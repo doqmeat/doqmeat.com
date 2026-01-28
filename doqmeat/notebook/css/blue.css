@@ -1,0 +1,32 @@
+body {
+	background: url(/notebook/!g/grid-blue.png);
+}
+
+li {
+	list-style-image: url("/!g/pix/ball_s_16.gif");
+}
+
+a:hover,
+a:focus {
+	color: #b4d7ff;
+}
+
+mark {
+	background-color: #b4d7ff;
+}
+
+::selection {
+	background-color: #b4d7ff;
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	border: 1px solid black;
+	color: black;
+	background-color: #b4d7ff;
+}

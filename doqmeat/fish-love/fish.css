@@ -1,0 +1,93 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(assets/fish-bg.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	font-family: papyrus, ms pgothic, arial;
+}
+
+a {
+	color: blue;
+}
+
+button {
+	font-family: inherit;
+	float: right;
+	width: 20px;
+	height: 20px;
+	font-weight: bold;
+	padding: 0;
+	border: 1px solid black;
+	border-radius: 5px;
+	margin: 5px;
+	&#info-open {
+		cursor: pointer;
+		border: none;
+		background: transparent;
+		position: fixed;
+		display: block;
+		bottom: 10px;
+		right: 10px;
+		width: 50px;
+		height: 50px;
+	}
+}
+
+dialog#kiss {
+	font-size: 20px;
+	background: rgb(249, 205, 213);
+	border: 2px dashed rgb(150, 150, 207);
+}
+
+dialog#info {
+	background: rgb(204, 231, 243);
+	border: 1px solid rgb(152, 85, 152);
+	font-family: ms pgothic, arial;
+	font-size: 1em;
+	padding: 10px;
+	p {
+		margin: 5px 0;
+		padding: 0;
+	}
+	&::backdrop {
+		background-color: rgba(165, 191, 197, 0.536);
+	}
+}
+
+h1 {
+	text-align: center;
+	font-size: 3rem;
+	color: rgb(58, 72, 94);
+}
+
+fish {
+	cursor: grab;
+	pointer-events: stroke;
+	position: absolute;
+	display: inline-block;
+	&:active {
+		cursor: grabbing;
+	}
+	&:first-of-type {
+		background-image: url(assets/fish-left.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 300px;
+		height: 200px;
+		top: 270px;
+		left: 20px;
+	}
+	&:last-of-type {
+		background-image: url(assets/fish-right.png);
+		background-size: contain;
+		background-repeat: no-repeat;
+		width: 290px;
+		height: 200px;
+		top: 270px;
+		right: 20px;
+	}
+}
