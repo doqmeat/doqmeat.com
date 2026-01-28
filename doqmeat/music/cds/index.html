@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- coded with love by des. 
+-->
+
+<head>
+	<meta charset="UTF-8">
+	<title>CDs</title>
+	<link rel="icon" type="image/x-icon" href="/!g/pix/cd.gif">
+	<link href="body.css?07" rel="stylesheet" type="text/css" media="all">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+</head>
+
+<!-- missing declan and fever p2 cd but thats for another day -->
+
+<body>
+
+	<header>
+		<h1>CD collection</h1>
+
+		<p> <img src="/!g/deco/dj.gif" align="right"> aka my <b>album shelf</b>! nothing better in life than opening an album and playing the CD as you look through the booklet. the little things...</p>
+		<p id="cdsOwned"></p>
+		<p><small>for my digital collection feel free to look at my <a href="https://bandcamp.com/lakitu" target="_blank">bandcamp</a> profile.</small></p>
+		<!-- 	header end div -->
+	</header>
+
+	<!-- template
+
+					<div class="cd"><img src="" alt="cover for ???">
+				<div class="hov">
+					<div class="caption">
+						<h3>title - artist</h3>
+						<p><span class="fav"></span></p>
+						<a class="i" href="" target="_blank"><img src="" alt=""></a>
+						<p><span class="date"> ???/span></p>
+					</div>
+				</div>
+			</div>
+		 -->
+
+	<div id="container">
+
+
+		<div class="cd disk">
+			<img src="/tv/blu-rays/pmmm-the-movie.jpg" alt="cover for PMMM the movie" class="cover">
+			<img class="disk-spin" src="pics/pmmm-the-movie.png" alt="cd for puella magi madoka magica the movie : part 1 & 2 OST">
+			<div class="hov">
+				<div class="caption">
+					<h3>puella magi madoka magica the movie OST</h3>
+					<p>another set of madoka blu-rays bought, this time it was for the 1st and 2nd movie which also included a CD for the OST.</p>
+					<p>i think the rebellion OST has a tiny bit more of OOMPH than this but it is still a great addition to my library of albums.</p>
+					<p><span class="date"> 03.jul.25</span></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cd">
+			<img class="disk-spin" src="pics/11100011-cd.png">
+			<img class="cover" src="pics/11100011.jpg" alt="cover for 11100011 by asian glow">
+			<div class="hov">
+				<div class="caption">
+					<h3>11100011 - asian glow</h3>
+					<p><span class="fav"></span></p>
+					<p>this album was love at first listen. i love it so very very much.</p>
+					<p>the CD version has 3 demo tracks and oh my GOD is the demo track for <i>camel8strike</i> so fucking gorgeous with its violin jesus.......</p>
+					<p><span class="date"> 21.jun.25</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/yeule-serotonin-cd.png" alt="serotonin II cd" class="disk-spin">
+			<img class="cover" src="pics/yeule-serotonin-cover.jpg" alt="cover for serotonin II by yeule">
+			<div class="hov">
+				<div class="caption">
+					<h3>serotonin II - yeule</h3>
+					<p><span class="fav"></span></p>
+					<p>managed to get this super cheap on ebay lets fucking GOOOOOOOOOOOO</p>
+					<a class="i" href="pics/yeule-serotonin-page1.jpg" target="_blank"><img src="pics/yeule-serotonin-page1.jpg" alt="album booklet page of yeule's serotonin II"></a>
+					<a class="i" href="pics/yeule-serotonin-page2.jpg" target="_blank"><img src="pics/yeule-serotonin-page2.jpg" alt="album booklet page of yeule's serotonin II"></a>
+					<p>love this album so much it's so pretty!!!</p>
+					<p><span class="date"> 18.nov.23</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img class="disk-spin" src="pics/trpp-cd.png">
+			<img class="cover" src="pics/trpp-trpp.jpg" alt="jewel case cover for TRPP">
+			<div class="hov">
+				<div class="caption">
+					<h3>TRPP - TRPP</h3>
+					<p><span class="fav"></span></p>
+					<p>one of my fav dreampop / shoegaze albums &lt;3</p>
+					<p>and also the most expensive one on this collection (as of writing this) from the shipping alone <img src="/!g/pix/catscared.gif"></p>
+					<a class="i" href="pics/trpp-cd.png" target="_blank"><img src="pics/trpp-cd.png"></a>
+					<a class="i" href="pics/trpp-trpp-booklet.jpg" target="_blank"><img src="pics/trpp-trpp-booklet.jpg"></a>
+					<a class="i" href="pics/trpp-trpp-back.jpg" target="_blank"><img src="pics/trpp-trpp-back.jpg"></a>
+					<p><span class="date"> 28.apr.22</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/oohyo-silence.png" alt="oohyo silence cd" class="disk-spin">
+			<img class="cover" src="pics/oohyo-silence.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>silence - oohyo</h3>
+					<p><span class="fav"></span></p>
+					<p><span class="date"> 08.jan.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img class="cover" src="pics/declanmckenna-wdytatc.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>what do you think about the car? - declan mckenna</h3>
+					<p><span class="date"> 18.oct.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/oohyo-city-cd.png" alt="far from the madding city cd" class="disk-spin">
+			<img class="cover" src="pics/oohyo-madding.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>성난 도시로부터 멀리 (far from the madding city) - oohyo</h3>
+					<p><span class="fav"></span></p>
+					<a class="i" href="pics/oohyo-madding-booklet.jpg" target="_blank"><img src="pics/oohyo-madding-booklet.jpg" style="width:100%"></a>
+					<p><span class="date"> 26.dec.20</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/beach-house-depression-cherry-cd.png" alt="depression cherry cd" class="disk-spin">
+			<img class="cover" src="pics/beachhouse-cherry.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>depression cherry - beach house</h3>
+					<p><span class="fav"></span></p>
+					<p>this album includes a lyric-less booklet so i made a custom one which you can view <a href="../mini-pages/depression-cherry-booklet.html" target="_blank">here!</a></p>
+					<p><span class="date"> 21.dec.20</span> </p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/yukika-soul-lady-cd.png" alt="soul lady cd" class="disk-spin">
+			<img class="cover" src="pics/yukika-soullady.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>서울여자 (soul lady) - yukika </h3>
+					<p><span class="fav"></span></p>
+					<p>one of the best albums ever made. extremely in love with its design.</p>
+					<a class="i" href="pics/yukika-soullady-tracks.jpg" target="_blank"><img src="pics/yukika-soullady-tracks.jpg"></a>
+					<a class="i" href="pics/yukika-soullady-pitapet2.jpg" target="_blank"><img src="pics/yukika-soullady-pitapet2.jpg"></a>
+					<a class="i" href="pics/yukika-soullady-bunnylamp.jpg" target="_blank"><img src="pics/yukika-soullady-bunnylamp.jpg"></a>
+					<figure>
+						<a class="i" href="pics/yukika-soullady-passport.jpg" target="_blank"><img src="pics/yukika-soullady-passport.jpg"></a>
+						<figcaption>i made an <a href="https://doqmeat.github.io/HTML-templates/yukika/" target="_blank" class="outlink">html template</a> based on this super cute passport inclusion!</figcaption>
+					</figure>
+					<p><span class="date"></span> 19.nov.20</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/12-loona-cd.png" alt="cd for 12:00" class="disk-spin">
+			<img class="cover" src="pics/loona-1200.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>12:00 - loona</h3>
+					<p>fun album tbh. def one of the better ones from loona post XX</p>
+					<p><span class="ver"> c</span></p>
+					<p><span class="date"> 23.oct.20</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd disk">
+			<img src="pics/rebellion-cd.png" alt="CD for rebellion OST" class="disk-spin">
+			<img class="cover" src="/tv/blu-rays/rebellion.jpg" alt="CD for rebellion OST">
+			<div class="hov">
+				<div class="caption">
+					<h3>puella magi madoka magica the movie : rebellion OST</h3>
+					<p>was included in the limited edition bluray of rebellion! awesome!</p>
+					<p><span class="date"> 29.may.25</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/siinamota-setsuna-cd.png" alt="alterour setsuna pop cd" class="disk-spin">
+			<img class="cover" src="pics/setsunapop%20(1).jpg" alt="cover for alterour setsuna pop">
+			<div class="hov">
+				<div class="caption">
+					<h3>アルターワー・セツナポップ / alterour setsuna pop - siinamota</h3>
+					<p>got this for meee as a treat for my birthday!</p>
+					<a class="i" href="pics/setsunapop%20(3).jpg" target="_blank"><img src="pics/setsunapop%20(3).jpg"></a>
+					<p>when you take out the CD a small siinamota is revealed in the background...</p>
+					<a class="i" href="pics/setsunapop%20(4).jpg" target="_blank"><img src="pics/setsunapop%20(4).jpg"></a>
+					<a class="i" href="pics/setsunapop%20(5).jpg" target="_blank"><img src="pics/setsunapop%20(5).jpg"></a>
+					<p>because of this purchase i noticed that the different illustrations in here (drawn by <a href="https://www.pixiv.net/en/users/5105537" target="_blank">meisa</a>) all form 1 picture when put together.</p>
+					<a class="i" href="pics/setsuna-pop-meisa.jpg" target="_blank"><img src="pics/setsuna-pop-meisa.jpg"></a>
+					<p>i had seen pictures of the <a title="archive.org" href="https://archive.org/details/setsuna-pop-limited-ed" target="_blank" class="outlink">scans</a> of this album before and yet i never noticed this. pretty neat!</p>
+					<p><span class="ver"> regular</span></p>
+					<p><span class="date"> 27.may.24</span></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cd">
+			<img src="pics/siinamota-ikiru-cd.png" alt="ikiru cd" class="disk-spin">
+			<img class="cover" src="https://siinamota.doqmeat.com/_files/scans/ikiru/jewel-case-frontcover.jpg" alt="ikiru album cover">
+			<div class="hov">
+				<div class="caption">
+					<h3>生きる (ikiru) - siinamota</h3>
+					<p><span class="fav"></span></p>
+					<a class="i" href="https://siinamota.doqmeat.com/_files/scans/ikiru/p5.jpg" target="_blank"><img src="https://siinamota.doqmeat.com/_files/scans/ikiru/p5.jpg" alt="ikiru album scan"></a>
+					<p><span class="ver"> regular</span></p>
+					<p><span class="date"> 22.feb.22</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/siinamota-yume-no-manimani-cd.png" alt="" class="disk-spin">
+			<img class="cover" src="pics/siinamota-yumenomanimani.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>夢のまにまに (yume no manimani) - siinamota</h3>
+					<p><span class="fav"></span></p>
+					<a class="i" href="https://siinamota.doqmeat.com/scans/!g/yume-no-manimani/p5.jpg" target="_blank"><img src="https://siinamota.doqmeat.com/scans/!g/yume-no-manimani/p5.jpg"></a>
+					<a class="i" href="https://siinamota.doqmeat.com/scans/!g/yume-no-manimani/p10.jpg" target="_blank"><img src="https://siinamota.doqmeat.com/scans/!g/yume-no-manimani/p10.jpg"></a>
+					<p><span class="ver"> 2019 reissue</span></p>
+					<p><span class="date"> 01.jun.22</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/beach-house-teen-dream-cd.png" alt="" class="disk-spin">
+			<img class="cover" src="pics/beachhouse-teendream.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>teen dream - beach house</h3>
+					<p>so melancholic and lovely...</p>
+					<a class="i" href="pics/beachhouse-teendream-inside.jpg" target="_blank"><img src="pics/beachhouse-teendream-inside.jpg"></a>
+					<p><span class="ver"> cd + dvd</span></p>
+					<p><span class="date"> 13.oct.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/yukika-timeabout-cd.png" alt="timeabout, cd" class="disk-spin">
+			<img class="cover" src="pics/yukika-timeabout.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>timeabout, - yukika</h3>
+					<p><span class="ver"> time light</span></p>
+					<p>missing her... super cute EP though!</p>
+					<p><span class="date"> 23.apr.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/ateez-treasure-ep3-cd.png" alt="treasure ep. 3 one to all cd" class="disk-spin">
+			<img class="cover" src="pics/ateez-treasure-ep3.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3> treasure ep. 3 one to all - ateez</h3>
+					<p><i>utopia</i> carried.</p>
+					<p><span class="ver"> wave</span></p>
+					<p><span class="date"> 15.jul.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/enhypen-carnival-cd.png" alt="border : carnival" class="disk-spin">
+			<img class="cover" src="pics/enhypen-border-carnival-book.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>border : carnival - enhypen</h3>
+					<p>the intro and the title track of this album are SO so so phenomenal. the rest is ok :)</p>
+					<p>there's a guy on top a bunch of french fries in a pic for the photobook.</p>
+					<a class="i" href="pics/enhypen-border-carnival-book-page2.jpg" target="_blank"><img src="pics/enhypen-border-carnival-book-page2.jpg"></a>
+					<p>i wonder how many bags of french fries this took.</p>
+					<p>here's how the actual packaging looks</p>
+					<a class="i" href="pics/enhypen-border-carnival.jpg" target="_blank"><img src="pics/enhypen-border-carnival.jpg"></a>
+					<p><span class="ver"> hype</span></p>
+					<p><span class="date"> 26.jun.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/kokegane-no-uta-cd.png" alt="kokegane no uta cd" class="disk-spin">
+			<img class="cover" src="pics/kokegane.jpg" alt="kokegane no uta album cover">
+			<div class="hov">
+				<div class="caption">
+					<h3>コケガネのうた / kokegane no uta - siinamota</h3>
+					<p><span class="fav"></span></p>
+					<p>the 2nd birthday gift i got for myself :3 the first was the alterour setsuna pop CD!</p>
+					<p>i've seen ppl reselling this album for more than $100 usd so i am SO happy i was able to get it through cdjapan for less than that!! i love this EP from siinamota so much.</p>
+					<a class="i" href="pics/kokegane-back.jpg" target="_blank"><img src="pics/kokegane-back.jpg"></a>
+					<p>also this album has such an amazing art featured in it's jewel case and booklet... since then i've been following the artist, <a href="https://twitter.com/tocomomomo" target="_blank" class="outlink">momoc</a>, on social media.</p>
+					<a class="i" href="pics/kokegane-1.jpg" target="_blank"><img src="pics/kokegane-1.jpg" alt="album scan"></a>
+
+					<p><span class="date"> 29.may.24</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/drippin-villain-theend-cd.png" alt="villain : the end cd" class="disk-spin">
+			<img class="cover" src="pics/drippin-theend.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>villain : the end - drippin</h3>
+					<p><span class="fav"></span></p>
+					<a class="i" href="pics/drippin-theend2.jpg" target="_blank"><img src="pics/drippin-theend2.jpg"></a>
+					<p><span class="ver"> x</span></p>
+					<p><span class="date"> 21.feb.23</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/txt-dream-chapter-cd.png" alt="the dream chapter : eternity cd" class="disk-spin">
+			<img class="cover" src="pics/txt-dreamchapter-eternity.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>the dream chapter : eternity - tomorrow x together</h3>
+					<p>it would be a perfect EP if it wasn't for 1 (one) song. otherwise, <i>fairy of shampoo</i> is still one of the best tracks in their discography.</p>
+					<a class="i" href="pics/txt-dreamchapter-eternity-booklet2.jpg" target="_blank"><img src="pics/txt-dreamchapter-eternity-booklet2.jpg" style="width: 100%"></a>
+					<p><span class="ver"> starboard</span></p>
+					<p><span class="date"> 01.jun.22</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/lucy-childhood-cd.png" alt="" class="disk-spin">
+			<img class="cover" src="pics/lucy-childhood.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>childhood - lucy</h3>
+					<p>lucy's first full-length album!!! very happy with this one.</p>
+					<p><span class="date"> 21.aug.22</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/oohyo-adventure-cd.png" alt="adventure cd" class="disk-spin">
+			<img class="cover" src="pics/oohyo-adventure.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>adventure - oohyo</h3>
+					<a class="i" href="pics/oohyo-adventure-booklet.jpg" target="_blank"><img src="pics/oohyo-adventure-booklet.jpg"></a>
+					<p><span class="date"> 20.aug.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/loona-and-cd.png" alt="and cd" class="disk-spin">
+			<img class="cover" src="pics/loona-&.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>&amp; - loona</h3>
+					<p>this album made me stop pre-ordering albums from kpop groups bc this was mid as hell. sorry loona (its not their fault lets all blame bbc)</p>
+					<p><span class="ver"> d</span></p>
+					<p><span class="date"> 15.jul.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/ateez-fever-ep3-cd.png" alt="fever ep3 cd" class="disk-spin">
+			<img class="cover" src="pics/ateez-fever-p3.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>zero : fever part 3 - ateez</h3>
+					<p>a pre-order that i quickly for got about... no comment.</p>
+					<p><span class="ver"> diary</span></p>
+					<p><span class="date"> 15.jul.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/drippin-villain-cd.png" alt="" class="disk-spin">
+			<img class="cover" src="pics/drippin-villain-book.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>villain - drippin</h3>
+					<p>got this when i was starting to get to know drippin :3 <i>villain</i> is very funky and <i>switch</i> is just a masterpiece.</p>
+					<p>the rest of the EP is a bit forgettable though, so i didn't include it on my favorites</p>
+					<a class="i" href="pics/drippin-villain.jpg" target="_blank"><img src="pics/drippin-villain.jpg"></a>
+					<p><span class="ver"> a</span></p>
+					<p><span class="date"> 05.apr.22</span></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cd">
+			<img src="pics/yoasobi-book2-cd.png" alt="cd for the book 2" class="disk-spin">
+			<img class="cover" src="pics/yoasobi-book2.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>the book 2 - yoasobi</h3>
+					<p>christmas gift from my mom! thanks mom.</p>
+					<p>music wise, it's pretty alright! with a exclamation point!</p>
+					<p>i love the art featured in this. it really is like a little storybook. so cute.</p>
+					<a class="i" href="pics/yoasobi-book2-booklet3.jpg" target="_blank"><img src="pics/yoasobi-book2-booklet3.jpg"></a>
+					<a class="i" href="pics/yoasobi-book2-booklet2.jpg" target="_blank"><img src="pics/yoasobi-book2-booklet2.jpg"></a>
+					<a class="i" href="pics/yoasobi-book2-booklet1.jpg" target="_blank"><img src="pics/yoasobi-book2-booklet1.jpg"></a>
+					<p><span class="ver"> limited edition</span></p>
+					<p><span class="date"> 07.dec.21</span></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cd">
+			<img class="cover" src="pics/enhypen-dimension-dilemma.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>dimension : dilemma - enhypen</h3>
+					<p>this would be on my fav albums expect i really dislike 1 (ONE) song. but other than that, this is my favorite release from them.</p>
+					<p><span class="ver"> charybdis</span></p>
+					<p><span class="date"> 17.dec.21</span></p>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="cd">
+			<img src="pics/lucy-blue-cd.png" alt="blue cd" class="disk-spin">
+			<img class="cover" src="pics/lucy-blue-book.jpg" alt="blue photobook cover">
+			<div class="hov">
+				<div class="caption">
+					<h3>blue - lucy</h3>
+					<p>my 2nd fav EP from lucy meow meows &lt;3</p>
+					<p>christmas gift from my dad!</p>
+					<p><span class="date"> 20.dec.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd"><img src="pics/ateez-fever-p2.jpg">
+			<div class="hov">
+				<div class="caption">
+					<h3>zero : fever part 2 - ateez</h3>
+					<p>bought this super cheap from ebay and the only reason why i got this album is because of it's photobook.... i only like 1 song from the album itself <img src="/!g/pix/bored-cat.gif"> BUT!!!! it contains one of my fav photoshoots. i love the colors a whole lot and the set as well. i think its so creative!</p>
+					<a class="i" href="pics/ateez-fever-p2-book-page1.jpg" target="_blank"><img src="pics/ateez-fever-p2-book-page1.jpg" style="width:100%"></a>
+					<a class="i" href="pics/ateez-fever-p2-book-page2.jpg" target="_blank"><img src="pics/ateez-fever-p2-book-page2.jpg" style="width:100%"></a>
+					<a class="i" href="pics/ateez-fever-p2-book-page3.jpg" target="_blank"><img src="pics/ateez-fever-p2-book-page3.jpg" style="width:100%"></a>
+					<a class="i" href="pics/ateez-fever-p2-book-page4.jpg" target="_blank"><img src="pics/ateez-fever-p2-book-page4.jpg" style="width:100%"></a>
+					<p><span class="ver"> z</span></p>
+					<p><span class="date"> 12.nov.21</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="cd">
+			<img src="pics/am-cd.png" alt="AM cd" class="disk-spin">
+			<img class="cover" src="pics/arcticmonkeys-am.jpg" alt="am album cover">
+			<div class="hov">
+				<div class="caption">
+					<h3>AM - arctic monkeys</h3>
+					<p><span class="fav"></span></p>
+					<p>a classic what can i even say</p>
+					<p><span class="date"> 31.mar.21</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- container end div -->
+	</div>
+
+	<div id="lost">
+		<h2><img src="/!g/pix/wing1.gif" alt=""> lost in the mail <img src="/!g/pix/wing2.gif" alt=""></h2>
+		<h3>kinoue64's 空​間​、​事​情​、​時​間​、​事​象​。(space, circumstances, time, and events.)</h3>
+		<p>purchased limited edition on 08.nov.23</p>
+		<p>last seen in NY</p>
+	</div>
+
+	<div id="home"><a class="i" title="go back to music page" href="/music"><img src="/!g/deco/cd.gif"></a></div>
+
+	<footer>
+		imgs on this page have been scanned by me unless stated otherwise! <img src="/!g/pix/musicnote1.gif"> <b>last updated on 06.jul.25</b>
+		<br>
+		<b>credit:</b> background is from yukika's soul lady photobook! / <a href="/notebook/resources/fonts.html">fonts</a> used: natsuzemi, gaegu, spirit
+		<br>
+		<b>known bugs:</b> <a href="https://github.com/doqmeat/doqmeat.com/issues/71" target="_blank">chrome only issue</a>
+		<br>
+		<a href="#">top</a> <img src="/!g/pix/musicnote1.gif"> <a href="/">home</a> <img src="/!g/pix/musicnote1.gif"> <a href="/music">music</a> <img src="/!g/pix/musicnote1.gif"> <a href="fav-albums.html">fav albums</a> <img src="/!g/pix/musicnote1.gif"> <a href="/collection/index.html">collection</a> <img src="/!g/pix/musicnote1.gif"> <a href="/sitemap">sitemap</a>
+	</footer>
+
+	<script>
+		// shows amount of albums i have!
+		const cds = document.getElementsByClassName("cd");
+		const cdString = "i currently have " + cds.length + " albums!";
+		const cdP = document.getElementById("cdsOwned");
+		cdP.innerHTML = cdString;
+	</script>
+</body>
+
+</html>
+
+</html>

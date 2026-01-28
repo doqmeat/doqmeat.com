@@ -1,0 +1,38 @@
+		body {
+			background: url('/notebook/!g/grid-blue.png');
+		}
+
+		h1 {
+			font-size: 50px;
+			margin-bottom: 40px;
+			text-decoration: none;
+			transition-duration: 0.5s;
+		}
+
+		h1:hover {
+			letter-spacing: 10px;
+		}
+
+		.page {
+			margin-top: 150px;
+			max-width: 550px;
+			background: transparent;
+			border: none;
+		}
+
+		footer {
+			background: transparent;
+			border: none;
+			margin-top: 0px;
+		}
+
+		#home {
+			position: fixed;
+			top: 10px;
+			left: 10px;
+		}
+
+		#home a {
+			background: transparent;
+			padding: 0px;
+		}

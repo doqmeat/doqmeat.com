@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+	<!-- 
+coded with love by des!
+---
+reverted back to v2.5 on 11.nov.24 cus i miss this silly layout
+ -->
+
+	<meta charset="UTF-8">
+	<title>journal</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="doqmeat's journal logs">
+	<link rel="icon" type="image/x-icon" href="favicon.gif">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<link href="body.css" rel="stylesheet" type="text/css" media="all">
+	<link href="files/index.css" rel="stylesheet" type="text/css" media="all">
+	<!-- tooltip shit -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<!--  end of tooltip shit -->
+	<script src="https://melonking.net/scripts/frame-link.js"></script>
+	<script>
+		titlePrefix = "journal 📝 ";
+	</script>
+</head>
+
+<body>
+
+	<div id="notepad">
+		<div id="header"></div>
+
+		<nav>
+			<h1 style="padding:0px;margin-bottom:2px;">des' journal</h1>
+			<p>i write about my life, site stuff, and any other misc things here. <small>i don't proof read what i write in these.</small> <br> <a href="archive.html" target="log">archive</a> - <a href="credit.html" target="log">credit</a></p>
+			<img class="hide" src="/!g/deco/pencil1.gif" style="max-width:100%">
+
+			<p><a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
+
+			<button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+
+		</nav>
+
+		<main>
+			<iframe id="mainframe" src="2026/01.html" name="log" height="100%" width="100%"></iframe>
+		</main>
+	</div>
+
+	<div id="tag">
+		<a data-toggle="tooltip" title="go back home" href="/">home</a>
+		<img src="/!g/pix/lc01-icon-bookmark.gif" width="23px">
+	</div>
+
+	<aside id="memo1" class="memo draggable">
+		<div class="innermemo">
+			<h2>status.cafe</h2>
+			<!-- start sw-rss-feed code -->
+			<script type="text/javascript" src="files/status-cafe-feed.js"></script>
+			<script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+			<span style="font-size:small;">feed powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+		</div>
+	</aside>
+
+	<aside id="memo3" class="memo draggable">
+		<div class="innermemo">
+		</div>
+	</aside>
+
+	<aside id="memo2" class="memo draggable">
+		<iframe name="calendar_frame" src="2026/calendar.html" id="calendar" scrolling="no"></iframe>
+	</aside>
+
+	<aside id="memo4" class="memo draggable">
+		<div class="innermemo">
+			<iframe width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/videoseries?si=Kfiv3XQ7gEQPclYa&amp;list=PLJJj3iCewWn0BFushmrCndv4wvcgPVWWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+		</div>
+	</aside>
+
+	<aside id="pen"><img src="!g/tulip.png" width="100%"></aside>
+	<script src="files/quotes.js"></script>
+	<script src="files/memo.js"></script>
+	<script src="/!f/draggable.js"></script>
+</body>
+
+</html>

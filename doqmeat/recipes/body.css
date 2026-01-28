@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: url("/!g/bg/baking.png");
+  font-family: ms pgothic, arial;
+  font-size: 18px;
+}
+
+main {
+  border-radius: 10px;
+  background: url("/!g/bg/bggrid-transp.png");
+  background-color: rgb(254, 249, 220);
+  max-width: 600px;
+  margin: auto;
+  padding: 10px;
+}
+
+hr {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  border: none;
+  text-align: center;
+}
+
+hr::after {
+  content: "✦•┈๑⋅⋯ ⋯⋅๑┈•✦ ✦•┈๑⋅⋯ ⋯⋅๑┈•✦ ✦•┈๑⋅⋯ ⋯⋅๑┈•✦";
+}
+
+footer {
+  text-align: center;
+}

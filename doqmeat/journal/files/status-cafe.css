@@ -1,0 +1,80 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	word-wrap: break-word;
+	font-size: 14px;
+	line-height: 21px;
+	font-family: gaegu-l, ms gothic, arial;
+	color: black;
+	scrollbar-color: #E4A79D #fffcdc;
+}
+
+a {
+	color: black;
+	background: #FFE481;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	color: black;
+	text-decoration: underline;
+	cursor: help;
+}
+
+a:focus {
+	text-decoration: wavy underline;
+}
+
+p {
+	margin: 0 0 10px 0;
+	padding: 5px;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+::selection {
+	color: black;
+	background-color: #A6DDFF;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #E4A79D;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+	background-color: #C7D9F8;
+	border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: transparent;
+}
+
+.description {
+	overflow: hidden;
+}
+
+.title {
+	overflow: hidden;
+}
+
+.pubDt {
+	font-style: italic;
+	font-size: 11px;
+	float: right;
+	padding-right: 3px;
+}
+
+@font-face {
+	font-family: 'gaegu-l';
+	src: url(https://doqmeat.com/fonts/Gaegu-Light.ttf)
+}

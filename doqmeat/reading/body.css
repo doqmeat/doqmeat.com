@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background: url("/!g/bg/whiteline.jpg");
+	background-size: 10px;
+	margin: 0px;
+	font-family: gaegu-r, arial;
+	font-size: 18px;
+}
+
+h1 {
+	text-align: center;
+}
+
+h2,
+h3 {
+	background: rgba(243, 228, 164, 0.736);
+}
+
+a {
+	color: rgb(173, 121, 121);
+}
+
+main,
+footer {
+	margin: auto;
+	max-width: 700px;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+main {
+	padding: 10px;
+}
+
+figure {
+	text-align: center;
+	border: 1px dashed rgb(239, 117, 117);
+}
+
+details {
+	display: inline-block;
+	background: rgba(163, 201, 240, 0.415);
+}
+
+li details > summary {
+	list-style-type: "+";
+}
+
+details[open] {
+	padding: 10px;
+}
+
+li details[open] > summary {
+	list-style-type: "-";
+}
+
+details img {
+	vertical-align: middle;
+}
+
+summary {
+	cursor: help;
+	color: rgb(215, 116, 116);
+}
+
+#s-m-t-tooltip {
+	max-width: 200px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 10px;
+	color: inherit;
+	background: rgb(233, 168, 168);
+}

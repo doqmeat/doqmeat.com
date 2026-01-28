@@ -1,0 +1,296 @@
+:root {
+	--fonts: gaegu-l, ms pgothic, arial;
+	--blue: #8dd1f1;
+	--pink: #ecbad0;
+	--yellow: #faf2be;
+	--green: #a6d898;
+	--black: #4c4c4c;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scrollbar-color: #8dd1f1 #4c4c4c;
+}
+
+body {
+	font-family: var(--fonts);
+	font-size: 18px;
+	margin: 0px;
+	color: var(--black);
+}
+
+li {
+	list-style-position: inside;
+}
+
+summary {
+	cursor: help;
+	font-family: gaegu-b, var(--fonts);
+}
+
+details {
+	font-size: 15px;
+}
+
+#goals details {
+	font-size: unset;
+	background: none;
+	p {
+		margin: 0px;
+		padding: 0 0 0 30px;
+	}
+	p::before {
+		content: "⤷ ";
+	}
+	summary {
+		font-family: unset;
+	}
+	summary.pending {
+		list-style-image: url(/!g/pix/checkdots.png);
+	}
+	summary.done {
+		list-style-image: url(/!g/pix/checkyes.png);
+	}
+	summary.not_done {
+		list-style-image: url(/!g/pix/checkno.png);
+	}
+}
+
+b {
+	font-weight: normal;
+	font-family: gaegu-b, var(--fonts);
+}
+
+p img {
+	vertical-align: top;
+}
+
+a {
+	cursor: help;
+	font-family: gaegu-b, var(--fonts);
+	color: var(--black);
+	background: var(--blue);
+	border-radius: 4px;
+	padding: 0px 2px;
+	text-decoration: none;
+}
+
+a:hover {
+	background: var(--green);
+}
+
+::selection {
+	background: var(--yellow);
+}
+
+mark {
+	background: var(--yellow);
+	padding: 0px 2px;
+}
+
+h1 {
+	margin: 10px;
+	font-family: newpenji, var(--fonts);
+	background: rgb(236, 186, 208);
+	background: linear-gradient(
+		90deg,
+		rgba(236, 186, 208, 1) 26%,
+		rgba(201, 220, 146, 1) 51%,
+		rgba(141, 209, 241, 1) 72%
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	-webkit-text-stroke-width: 0px;
+	-webkit-text-stroke-color: black;
+	text-decoration: wavy underline;
+	text-decoration-color: var(--yellow);
+	font-weight: normal;
+	letter-spacing: 5px;
+	text-align: center;
+	text-shadow: none;
+}
+
+h2 {
+	padding: 0px 10px 0 0;
+	margin: 15px 20px 15px 20px;
+	height: 14px;
+	line-height: 0px;
+	border-radius: 2px;
+	background: var(--yellow);
+	font-family: garden-cursive, var(--fonts);
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 40px;
+	text-align: right;
+}
+
+h3 {
+	padding: 0px 10px 0 10px;
+	margin: 5px 50% 5px 10%;
+	height: 25px;
+	border-radius: 10px;
+	background: var(--green);
+	border: 1px solid var(--black);
+	font-family: newpenji, var(--fonts);
+	font-weight: normal;
+	letter-spacing: 1px;
+	font-size: 20px;
+}
+
+header.page {
+	max-width: 500px;
+}
+
+.contents a {
+	background: var(--yellow);
+}
+
+.scrap-img {
+	width: 23%;
+	padding: 10px;
+	background: white;
+	margin: 10px;
+	border: 2px solid var(--green);
+	border-radius: 3px;
+	line-height: 0px;
+	transition-duration: 0.5s;
+}
+
+.scrap-img img {
+	width: 100%;
+	border-radius: 2px 10px;
+}
+
+.left {
+	rotate: 2deg;
+	float: left;
+}
+
+.left:hover {
+	rotate: -2deg;
+}
+
+/* wanna make a better drawing for the push pin */
+/* .left.pin::after {
+	content: url("/!g/deco/pin.png");
+	position: absolute;
+	top: -8%;
+	left: -6%;
+	rotate: -90deg;
+}
+
+.right.pin::after {
+	content: url("/!g/deco/pin.png");
+	position: absolute;
+	top: -9%;
+	rotate: 10deg;
+} */
+
+.right {
+	rotate: -2deg;
+	float: right;
+}
+
+.right:hover {
+	rotate: 2deg;
+}
+
+.page {
+	margin: auto;
+	margin-top: 40px;
+	max-width: 800px;
+	border: 1px solid lightblue;
+	padding: 15px;
+	background: url("/notebook/!g/grid-blue.png");
+	border-radius: 10px;
+	overflow: auto;
+	h2 {
+		text-shadow: 1px 1px 2px white;
+	}
+}
+
+li details {
+	display: inline-block;
+	vertical-align: bottom;
+	padding: 1px;
+	border-radius: 4px;
+	background: var(--yellow);
+	margin-bottom: 3px;
+	font-size: 17px;
+	overflow: auto;
+	&[open] {
+		display: block;
+	}
+	summary {
+		list-style-type: "+";
+	}
+	&[open] > summary {
+		list-style-type: "-";
+	}
+}
+
+li.played {
+	list-style-image: url("/!g/pix/vgs.gif");
+}
+
+li.watched,
+li.tv {
+	list-style-image: url("/!g/pix/tv.gif");
+}
+
+li.movie {
+	list-style-image: url("/!g/pix/cat-watching-tv.gif");
+}
+
+li.read {
+	list-style-image: url("/!g/pix/book3.gif");
+}
+
+li.music {
+	list-style-image: url("/!g/pix/mp3.gif");
+}
+
+footer {
+	margin-top: 50px;
+	padding: 10px;
+	text-align: center;
+	border: 1px solid lightpink;
+	background: url("/notebook/!g/grid-pink.png");
+}
+
+.spoiler {
+	background: white;
+	color: white;
+	text-shadow: none;
+}
+
+.spoiler:hover {
+	background: white;
+	color: inherit;
+	text-shadow: 1px 1px 1px white;
+	border: 1px solid white;
+	padding: 0px 2px;
+}
+
+.outlink::after {
+	content: "↗";
+	padding-left: 2px;
+	vertical-align: text-bottom;
+}
+
+#s-m-t-tooltip {
+	max-width: 400px;
+	font-family: var(--fonts);
+	font-weight: bold;
+	text-shadow: 1px 1px 1px white;
+	text-align: center;
+	z-index: 999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border: 1px solid white;
+	border-radius: 10px;
+	background: var(--pink);
+}

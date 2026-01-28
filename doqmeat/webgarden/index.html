@@ -1,0 +1,252 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<!-- coded with love by des  -->
+	<meta charset="UTF-8">
+	<title>webgarden pot</title>
+	<link rel="icon" type="image/x-icon" href="favicon.gif">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="/!f/tooltip-jquary.js"></script>
+	<script src="/!f/tooltip.js"></script>
+	<script type="text/javascript">
+		// rainbow link code----------------------------------------
+
+		// <![CDATA[
+		var speed = 500; // speed colours change, 1 second = 1000
+		var glow = 10; // can be set from '0' for no glow, to 10
+		var raincol = new Array("#FD4E8F", "#AF79FA", "#FDF2BE",); // change the colours if you want to
+		var alink = ""; // page to link text to (set to ="" for no link)
+
+		/****************************
+			*    Rainbow Text Effect    *
+			*(c)2003-13 mf2fm web-design*
+			*  http://www.mf2fm.com/rv  *
+			* DON'T EDIT BELOW THIS BOX *
+			****************************/
+		var rainbow, raintxt, raincnt = 0;
+
+		function addLoadEvent(funky) {
+			var oldonload = window.onload;
+			if (typeof (oldonload) != 'function') window.onload = funky;
+			else window.onload = function () {
+				if (oldonload) oldonload();
+				funky();
+			}
+		}
+
+		addLoadEvent(regenbogen);
+
+		function regenbogen() {
+			if (document.getElementById) {
+				var i, rainbeau;
+				rainbow = document.getElementById("rainbow");
+				raintxt = rainbow.firstChild.nodeValue;
+				while (rainbow.childNodes.length) rainbow.removeChild(rainbow.childNodes[0]);
+				for (i = 0; i < raintxt.length; i++) {
+					rainbeau = document.createElement("span");
+					rainbeau.setAttribute("id", "rain" + i);
+					rainbeau.appendChild(document.createTextNode(raintxt.charAt(i)));
+					if (alink) {
+						rainbeau.style.cursor = "pointer";
+						rainbeau.onclick = function () {
+							top.location.href = alink;
+						}
+					}
+					rainbow.appendChild(rainbeau);
+				}
+				rainbow = setInterval("raining()", speed);
+			}
+		}
+
+		function raining() {
+			var i, c;
+			for (i = 0; i < raintxt.length; i++) {
+				c = raincol[(i + raincnt) % raincol.length];
+				document.getElementById("rain" + i).style.color = c;
+				if (glow) document.getElementById("rain" + i).style.textShadow = c + " 0px 0px " + glow + "px";
+			}
+			raincnt++;
+		}
+		// ]]>
+
+	</script>
+	<style>
+		html,
+		body,
+		div,
+		span,
+		applet,
+		object,
+		iframe,
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		p,
+		blockquote,
+		pre,
+		a,
+		abbr,
+		acronym,
+		address,
+		big,
+		cite,
+		code,
+		del,
+		dfn,
+		em,
+		font,
+		img,
+		ins,
+		kbd,
+		q,
+		s,
+		samp,
+		small,
+		strike,
+		strong,
+		sub,
+		sup,
+		tt,
+		var,
+		b,
+		u,
+		i,
+		center,
+		dl,
+		dt,
+		dd,
+		ol,
+		ul,
+		li,
+		fieldset,
+		form,
+		label,
+		legend,
+		caption {
+			margin: 0;
+			padding: 0;
+			border: 0;
+			outline: 0;
+			font-size: 100%;
+			vertical-align: baseline;
+			background: transparent;
+		}
+
+		body {
+			overflow: hidden;
+			background: #FDF2BE;
+			word-wrap: break-word;
+			font-size: 16px;
+			line-height: 17px;
+			font-family: ms pgothic;
+		}
+
+		p {
+			padding-bottom: 7px;
+		}
+
+		.link {
+			font-weight: normal;
+			font-size: 18px;
+			letter-spacing: 0px;
+			text-decoration: none;
+		}
+
+		.link:hover {
+			letter-spacing: 0px;
+		}
+
+		#plant {
+			box-sizing: border-box;
+			color: black;
+			background: url(airplane.gif);
+			background-size: cover;
+			width: 250px;
+			height: 250px;
+			overflow: hidden;
+			text-align: center;
+		}
+
+		.bg img {
+			vertical-align: bottom;
+		}
+
+		.bg {
+			padding: 5px;
+			box-sizing: border-box;
+			margin: auto;
+			margin-top: 5px;
+			width: 240px;
+			height: 240px;
+			overflow: hidden;
+			border: 1px dashed white;
+			background: rgb(255, 255, 255);
+			background: linear-gradient(90deg, rgba(255, 255, 255, 0.5237744756105567) 0%, rgba(255, 255, 255, 0.5517856800923495) 100%);
+		}
+
+		.link2 {
+			letter-spacing: 3px;
+			transition-duration: 0.5s;
+			text-decoration: none;
+			font-weight: normal;
+		}
+
+		.link2:hover {
+			letter-spacing: 0;
+		}
+
+		/* tooltip link hover */
+
+		#s-m-t-tooltip {
+			max-width: 200px;
+			z-index: 9999;
+			margin: 30px 15px 7px 12px;
+			padding: 5px;
+			border-radius: 10px;
+			border: 1px dashed black;
+			font-size: 13px;
+			background: white;
+		}
+	</style>
+</head>
+
+<body>
+	<style type="text/css">
+		* {
+			cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat328.ani), url(https://cur.cursors-4u.net/nature/nat-4/nat328.png), auto !important;
+		}
+	</style><a href="https://www.cursors-4u.com/cursor/2008/11/21/cute-pink-flower.html" target="_blank" title="Cute Sparkly Pink Flower"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Cute Sparkly Pink Flower" style="position:absolute; top: 0px; right: 0px;" /></a>
+
+	<div id="plant">
+		<div class="bg">
+			<p>now approaching...<br><a id="rainbow" class="link" href="" target="_blank">doqmeat.com</a>
+
+			<p>a personal website with bits and pieces of my life and dedicated to things i love
+
+			<p><img src="/!g/pix/stars1.gif"><img src="/!g/pix/wing1.gif"><span style="letter-spacing:2px;">(=^･ω･^=)</span><img src="/!g/pix/wing2.gif"><img src="/!g/pix/stars1.gif">
+
+			<p><a title="home" class="link2" href="/" target="_blank">come on in</a>!</p>
+
+			<a title="shrines" href="/shrines" target="_blank"><img src="/!g/pix/cateepyy.gif" style="position:absolute;top:190px;left:40px;"></a>
+
+			<a title="music" href="/music" target="_blank"><img src="/!g/deco/flower6.gif" style="position:absolute;top:190px;left:90px;"></a>
+
+			<a title="journal" href="/journal" target="_blank"><img src="/!g/deco/catbee.gif" style="position:absolute;top:140px;left:160px;"></a>
+
+			<a title="blog" href="/blog" target="_blank"><img src="/!g/pix/cathead.gif"></a>
+
+			<a title="about me and my site!" href="/about" target="_blank"><img src="/!g/pix/catloaf.gif" style="position:absolute;top:215px;left:200px;"></a>
+
+		</div>
+		<!-- plant end div -->
+	</div>
+
+</body>
+
+</html>

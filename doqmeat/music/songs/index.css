@@ -1,0 +1,156 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--bg: rgb(255, 255, 255, 1);
+	--fonts: ms pgothic, natsuzemi, nanum-b, arial;
+	--blue: hsla(169, 16%, 54%, 1);
+	--blue-2: hsla(141, 26%, 64%, 1);
+	--l-green: hsla(78, 44%, 81%, 1);
+	--red: hsla(13, 68%, 63%, 1);
+	--yellow-green: hsla(51, 37%, 52%, 1);
+	--brown: hsla(20, 23%, 35%, 1);
+	--yellow: hsla(39, 64%, 67%, 1);
+}
+
+body {
+	font-family: var(--fonts);
+	font-size: 18px;
+	margin: 0px;
+	background: url(bg.png);
+	background-position: bottom;
+	background-repeat: repeat-x;
+	background-size: 500px;
+	background-attachment: fixed;
+	scrollbar-color: #ac9e61 #ffffff;
+	color: var(--brown);
+}
+
+#music-player {
+	position: absolute;
+	width: 400px;
+	left: 700px;
+	top: 100px;
+	margin: 0px;
+	z-index: 1;
+	background: var(--bg);
+	padding: 5px;
+}
+
+footer {
+	text-align: right;
+	position: absolute;
+	width: 400px;
+	left: 700px;
+	top: 525px;
+	background: var(--bg);
+	padding: 5px;
+	z-index: 2;
+}
+
+#iframe-player {
+	display: block;
+	margin: auto;
+	width: 100%;
+	height: 200px;
+	border: none;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: -5px 5px 10px var(--red), 5px -5px 10px var(--red);
+	;
+}
+
+h1 {
+	margin: 0;
+}
+
+h1, h2,
+h3 {
+	color: var(--blue);
+	font-family: morningtea;
+}
+
+main {
+	background: var(--bg);
+	width: 100%;
+	max-width: 600px;
+	height: 600px;
+	overflow: auto;
+	padding: 10px;
+}
+
+li {
+	list-style-position: inside;
+}
+
+li a:before {
+	content: url(/!g/pix/li3.gif);
+	padding-right: 5px;
+}
+
+
+a {
+	color: var(--blue-2);
+	text-shadow: 1px 1px 1px var(--l-green);
+}
+
+a:hover {
+	color: var(--red);
+}
+
+a:focus {
+	color: var(--red);
+}
+
+mark {
+	padding: 0px 5px;
+	background: var(--blue-2);
+	color: var(--l-green)
+}
+
+.emoji {
+	content: url(/!g/pix/1leaf.png);
+}
+
+#pagedoll {
+	z-index: -1;
+	pointer-events: none;
+	width: 350px;
+	position: fixed;
+	bottom: -10px;
+	right: 1px;
+}
+
+#s-m-t-tooltip {
+	max-width: 300px;
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	border-radius: 5px;
+	border: 5px double var(--red);
+	color: var(--brown);
+	background-color: var(--l-green);
+}
+
+@media only screen and (max-width:600px){
+	body{
+		background:white;
+		margin:10px;
+	}
+	#music-player,footer,main{
+		position: relative;
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		max-width:100%;
+		width:100%;
+		height:auto;
+	}
+	
+	#pagedoll{
+		display:none;
+	}
+}
