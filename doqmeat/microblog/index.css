@@ -359,7 +359,8 @@ article:hover {
 	border-radius: 10px;
 }
 
-.outlink::after {
+.outlink::after,
+a[href*="https"]::after {
 	content: "↗";
 	padding-left: 2px;
 	vertical-align: text-bottom;
