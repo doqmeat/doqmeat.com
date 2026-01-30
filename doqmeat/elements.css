@@ -35,16 +35,42 @@
 
 /* Style for your post box (must start with ".post-box") */
 .post-box {
-	background-color: #fff2cc;
-	border: 4px solid #ecbfa6;
+	background-image: url(https://doqmeat.nekoweb.org/doqmeat.com/!g/web/site-box-bg.png);
+	background-size: contain;
+	background-color: white;
+	border: 0;
 	padding: 15px;
+	font-size: 17px;
 	border-radius: 5px;
-	color: #634c53;
+	color: #ab3a22;
 	font-weight: normal;
 }
 
+.post-box p.post-description {
+	background-color: rgba(255, 255, 255, 0.9);
+	border-radius: 10px;
+	padding: 10px;
+}
+
+.post-box span.post-author,
+.post-box span.post-date {
+	font-weight: bold;
+	color: black;
+	text-shadow:
+		1px 1px 4px white,
+		1px 1px 4px white,
+		-1px -1px 4px white,
+		-1px -1px 4px white;
+}
+
 .post-box .post-title {
-	font-size: 18px;
+	color: #ab3a22;
+	text-shadow:
+		1px 1px 4px white,
+		1px 1px 4px white,
+		-1px -1px 4px white,
+		-1px -1px 4px white;
+	font-size: 20px;
 	font-weight: bold;
 	margin-top: 10px;
 	margin-bottom: 0px;
