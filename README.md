@@ -4,7 +4,7 @@ hello! this is the repository of my personal website, [doqmeat.com](https://doqm
 ## about site
 - i upload my code using deploy to neocities and git following miss moss's [deploy2nekoweb](https://deploy.nekoweb.org/)
 - tested on firefox, on a desktop. and on chrome and mobile sometimes
-- hosted on [nekoweb](https://nekoweb), previosly hosted on [neocities](https://neocities)
+- hosted on [nekoweb](https://nekoweb.org), previosly hosted on [neocities](https://neocities.org)
 - this massive site is all hand-coded HTML #freak
 
 ## source code
