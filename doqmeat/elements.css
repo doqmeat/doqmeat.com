@@ -1,0 +1,51 @@
+.site-box {
+	text-align: center;
+	background-color: #c2e2ea;
+	background-size: cover;
+	background-image: url(https://doqmeat.nekoweb.org/doqmeat.nekoweb.org/!g/web/site-box-bg.png);
+	color: #ab3a22;
+	font-size: 17px;
+	border-radius: 10px;
+}
+.site-box img.screenshot {
+	opacity: 0;
+}
+.site-box .sitefeature {
+	background-image: url(https://doqmeat.nekoweb.org/doqmeat.nekoweb.org/!g/web/site-box-cat.png);
+	background-position: center;
+	background-color: transparent;
+	border: 0;
+	background-repeat: no-repeat;
+	opacity: 1;
+}
+
+.site-box > a > p {
+	color: #ab3a22;
+	text-shadow:
+		1px 1px 4px white,
+		1px 1px 4px white,
+		-1px -1px 4px white,
+		-1px -1px 4px white;
+	font-weight: bold;
+	font-size: 20px;
+}
+.site-box > a > span {
+	opacity: 0;
+}
+
+/* Style for your post box (must start with ".post-box") */
+.post-box {
+	background-color: #fff2cc;
+	border: 4px solid #ecbfa6;
+	padding: 15px;
+	border-radius: 5px;
+	color: #634c53;
+	font-weight: normal;
+}
+
+.post-box .post-title {
+	font-size: 18px;
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
