@@ -35,27 +35,37 @@
 
 /* Style for your post box (must start with ".post-box") */
 .post-box {
-	background-image: url(https://doqmeat.nekoweb.org/doqmeat.com/!g/web/site-box-bg.png);
-	background-size: contain;
+	font-family:
+		ms pgothic,
+		arial;
+	background-image: url(https://doqmeat.nekoweb.org/doqmeat.com/!g/bg/whiteline2.jpg);
+	background-position: top;
 	background-color: white;
 	border: 0;
 	padding: 15px;
 	font-size: 17px;
 	border-radius: 5px;
-	color: #ab3a22;
+	color: #37478c;
 	font-weight: normal;
 }
 
 .post-box p.post-description {
-	background-color: rgba(255, 255, 255, 0.9);
-	border-radius: 10px;
-	padding: 10px;
+	padding: 0 30px;
+	font-size: 1.1em;
+}
+
+.post-box .post-title::before {
+	content: "✏";
 }
 
 .post-box span.post-author,
-.post-box span.post-date {
+.post-box span.post-date,
+.post-box span.noreset.post-dot {
+	font-size: 0.7em;
+	margin: 0 5px;
+	padding: 0;
+	float: right;
 	font-weight: bold;
-	color: black;
 	text-shadow:
 		1px 1px 4px white,
 		1px 1px 4px white,
@@ -63,8 +73,24 @@
 		-1px -1px 4px white;
 }
 
+.post-box span.post-author::before {
+	content: "by ";
+	padding-left: 10px;
+}
+.post-box span.post-author::after {
+	content: "⏾⋆.˚";
+	padding-left: 10px;
+	vertical-align: top;
+}
+
+.post-box span.noreset.post-dot,
+.post-box span.post-date {
+	display: none;
+	opacity: 0;
+}
+
 .post-box .post-title {
-	color: #ab3a22;
+	letter-spacing: 2px;
 	text-shadow:
 		1px 1px 4px white,
 		1px 1px 4px white,
@@ -72,6 +98,5 @@
 		-1px -1px 4px white;
 	font-size: 20px;
 	font-weight: bold;
-	margin-top: 10px;
-	margin-bottom: 0px;
+	margin-left: 30px;
 }
