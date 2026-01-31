@@ -20,7 +20,7 @@ html {
 }
 
 body {
-	background-image: url(assets/bg.png);
+	background-image: url(/info/assets/bg.png);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom;
@@ -216,5 +216,15 @@ nav {
 		&::before {
 			content: "-";
 		}
+	}
+}
+
+#buttons {
+	padding: 10px;
+	img {
+		mix-blend-mode: normal;
+	}
+	a::after {
+		content: none;
 	}
 }
