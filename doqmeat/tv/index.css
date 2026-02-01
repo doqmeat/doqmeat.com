@@ -70,7 +70,7 @@ h2 {
 	font-family: morningtea, natsuzemi, var(--fonts);
 }
 
-h2#mini-reviews {
+h2#logs {
 	text-align: center;
 	display: block;
 	margin: auto;
@@ -151,6 +151,14 @@ main {
 	padding: 5px;
 	background: rgb(229, 184, 209, 0.98);
 	transition-duration: 0.3s;
+	ol,
+	ul {
+		margin: 5px;
+		padding: 0;
+	}
+	li {
+		list-style-position: inside;
+	}
 }
 
 .box p {
@@ -177,7 +185,7 @@ aside {
 	max-width: 850px;
 }
 
-#blu-ray {
+#disks {
 	position: relative;
 	background: #2a4365;
 	color: #a6d0c8;

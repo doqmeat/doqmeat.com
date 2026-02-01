@@ -95,7 +95,9 @@ p img {
 }
 
 blockquote {
-	font-family: YU gothic UI, var(--fonts);
+	font-family:
+		YU gothic UI,
+		var(--fonts);
 	font-size: 16px;
 	font-style: italic;
 	border-left: 2px solid #e4a79d;
@@ -162,7 +164,8 @@ figcaption {
 	text-align: center;
 }
 
-.outlink::after {
+.outlink::after,
+a[href*="https"]::after {
 	content: "↗";
 	padding-left: 2px;
 	vertical-align: text-bottom;

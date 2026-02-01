@@ -9,6 +9,15 @@
 		<language>en-us</language>
 		<webMaster>meow@doqmeat.com (des)</webMaster>
 		<atom:link href="https://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>01.feb.26 - now hosting on nekoweb!</title>
+			<link>https://doqmeat.com/journal/2026/02.html#1</link>
+			<description>new journal log about my move from neocities to nekoweb + reworked and gave a new look to &#x3C;a href=&#x22;https://doqmeat.com/info&#x22;&#x3E;info&#x3C;/a&#x3E; </description>
+			<guid>250201</guid>
+			<pubDate>Sun, 1 Feb 2026 15:00:00 -0400</pubDate>
+		</item>
+
 		<item>
 			<title>19.jan.26 - answering 100 questions about being a webmaster</title>
 			<link>https://doqmeat.com/blog/2026/webmaster-questions</link>
