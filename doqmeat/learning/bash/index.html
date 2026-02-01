@@ -14,9 +14,9 @@
 </head>
 
 <body>
-	<h1>bash reference sheet</h1>
+	<h1>terminal reference sheet</h1>
 	<main>
-		<p>but mainly the ones i know how to use / taken note of. take in mind that i use <a href="https://git-scm.com/" target="_blank" class="outlink">git bash for windows</a> so some stuff might be different for you. i'm new to all this so i've explained some things from how i understand them. feel free to e-mail me if i got something wrong <img src="/!g/pix/catsob.gif" alt="cat crying"></p>
+		<p>i only ever use <b>bash</b> on my terminals because using powershell makes me want to kill myself. i use <a href="https://git-scm.com/" target="_blank" class="outlink">git bash</a> for windows alongside bash in WSL ubuntu. <br>i'm new to all this so i've explained some things from how i understand them. feel free to e-mail me if i got something wrong though <img src="/!g/pix/catsob.gif" alt="cat crying"></p>
 		<h2>overall</h2>
 		<ul>
 			<li><code>clear</code> - clears the terminal screen.</li>
@@ -37,30 +37,46 @@
 			<li><code>cp [filename1] [newfile]</code> - copies a files. you can also achieve the same with <code>cat &lt;[filename1]&gt; [newfile]</code></li>
 			<li><code>find -name '*[search]*'</code> - searches for files with that word.</li>
 			<li><code>sudo</code> - run things as a superuser</li>
-			<li><code>notepad [filename]</code> - opens file on notepad</li>
-			<li><code>rm -rf .git</code> - deletes the .git folder</li>
+			<li><code>winget</code> - package manager for windows</li>
+			<li><code>CTRL</code> + <code>c</code> lets you quit / terminate anything that's happening on your terminal</li>
+			<li><code>wc [filename]</code> - gives you the amount if lines, words, and bytes a file has</li>
 
 
 		</ul>
-		<h3>notes</h3>
+		<h2>editors</h2>
+		<ul>
+			<li><code>nano [filename]</code> - opens the file in the terminal with nano! should already be in your terminal</li>
+			<li><code>notepad [filename]</code> - opens file on notepad</li>
+		</ul>
+		<h2>notes</h2>
 		<ol>
-			<li>you can use logical operators like <code>&&</code> (AND) and <code>||</code> (OR). not really sure in what case i would use OR, but i use AND frequently for executing multiple commands at once.</li>
+			<li>you can use logical operators like <code>&&</code> (AND) and <code>||</code> (OR). not really sure in what case i would use OR, but i use <code>&&</code> frequently for executing multiple commands at once.</li>
 			<li>you can hit <code>tab</code> and the terminal will (try to) autocomplete where ever directory or file you want to go.</li>
 			<li>when typing a file that has an ! you need to escape it using the backslash. if i have a folder called <b>!g/</b> then you would write <code>\!g/</code> on the terminal.</li>
 			<li>files with spaces need to be closed with single or double quotes like this <code>'folder 1'</code></li>
 			<li>use <code>q</code> to quit some scripts</li>
 			<li><code>&gt;&gt;</code> this is an append. <code>|</code> this is a pipe</li>
-			<li>under <code>~/.profile</code> you can set up variables for paths you frequently use.<a href="path-shortcuts.jpg" target="_blank">img of my .profile</a>, you can use them in the terminal as variables using this <code>$</code> symbol. example: <code>cd $DOQMEAT</code></li>
+			<li>under <code>~/.profile</code>, <code>~/.bashrc</code>, or <code>~/.bash_profile</code> you can set up variables for paths you frequently use. <a href="shortcuts.jpg" target="_blank">img of my .profile</a>, you can use them in the terminal as variables using this <code>$</code> symbol. example: <code>cd $DOQMEAT</code> will take me to the path i assigned the variable "DOQMEAT" to.</li>
+			<li>i love customizing my terminal with <a href="https://ohmyposh.dev/" target="_blank">oh-my-posh</a>. here's how my <a href="gitbash.jpg" target="_blank">git bash</a> looks like</li>
 		</ol>
 
-		<h2>git</h2>
-
+		<h2>programs</h2>
+		<p>you have to download this stuff in order to use them!</p>
+		<ul>
+			<li><code>tldr [command]</code> - gives you briefs explanations of what that command does</li>
+		</ul>
+		<h3>node.js / npm</h3>
+		<ul>
+			<li><code>npx http-server -o [filepath]</code> - local http server for you to preview your site! <code>-o</code> opens the browsers upon executing the command</li>
+		</ul>
+		<h3>git</h3>
 		<ul>
 			<li><code>git help</code> - help for git commands.</li>
 			<li><code>git init</code> - initializes a repo</li>
 			<li><code>git status</code> - list changes</li>
 			<li><code>git restore [filename]</code> - restores a file</li>
 			<li><code>git add [files] [dirs]</code> - things to stage for a <code>git commit</code>. you can also use <code>git add -p</code> and it will ask you to yes or no every change before adding it. you can also do <code>git add .</code> to add all changes made to that current directory.</li>
+			<li><code>git diff [filename]</code> - shows you the changes of that file</li>
 			<li><code>git commit -m "[your message here!]"</code> - commits changes while also adding a message to them.</li>
 			<li><code>git push</code> - pushes the code out there.</li>
 			<li><code>git fetch</code> - fetches code.</li>
@@ -68,6 +84,7 @@
 			<li><code>git diff --stat --cached [remote/branch]</code> - shows you commits that are about to be pushed. remote/branch is usually <code>origin/main</code> for me.</li>
 			<li><code>git show</code> - show changes made</li>
 			<li><code>git log</code> - previous commits</li>
+			<li><code>rm -rf .git</code> - deletes the .git folder, if you don't want git in your directory then do this.</li>
 
 		</ul>
 	</main>
@@ -75,7 +92,7 @@
 	<footer>
 		....... ᓚᘏᗢ .......
 		<br>
-		<b>last updated on: 06.apr.25</b>
+		<b>last updated on: 01.feb.26</b>
 		<br>
 		<a href="../index.html">learning</a> / <a href="/">home</a> / <a href="#">top</a>
 	</footer>

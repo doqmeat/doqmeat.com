@@ -116,6 +116,7 @@ main {
 
 	h2 {
 		border-bottom: 1px dashed var(--pink);
+		margin: 10px;
 		&::after {
 			content: " ᯓ★";
 			line-height: 10px;
