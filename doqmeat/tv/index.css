@@ -60,14 +60,15 @@ header {
 	margin-bottom: 15px;
 }
 
-h1 {
+h1,
+h2,
+h3,
+h4 {
 	font-family: morningtea, var(--fonts);
 }
 
 h2 {
 	margin: 5px;
-	font-size: 22px;
-	font-family: morningtea, natsuzemi, var(--fonts);
 }
 
 h2#logs {
@@ -123,7 +124,7 @@ main {
 	max-width: 1300px;
 }
 
-.show {
+.log {
 	position: relative;
 	display: block;
 	height: 298px;
@@ -133,6 +134,39 @@ main {
 	overflow: hidden;
 	border: 4px ridge var(--l-blue);
 	background: var(--green);
+	h3 {
+		margin: 5px;
+		padding: 5px;
+		text-decoration-line: underline;
+		text-underline-offset: -10px;
+		text-decoration-thickness: 6px;
+		text-decoration-skip-ink: none;
+		text-decoration-color: var(--l-blue);
+	}
+	h4 {
+		border-bottom: 1px dashed var(--d-blue);
+		text-align: left;
+		margin: 0 10px;
+		padding: 0;
+	}
+}
+
+dl {
+	text-align: left;
+	dt {
+		text-decoration-line: underline;
+		text-underline-offset: -10px;
+		text-decoration-thickness: 0.9em;
+		text-decoration-skip-ink: none;
+		text-decoration-color: whitesmoke;
+	}
+	dd {
+		padding: 5px 5px 5px 30px;
+		margin: 0;
+		&::before {
+			content: "🗪 ";
+		}
+	}
 }
 
 .cover {
