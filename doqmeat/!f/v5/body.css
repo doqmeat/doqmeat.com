@@ -101,23 +101,21 @@ dialog::backdrop {
 	color: white;
 	background: var(--red);
 	float: right;
-}
-
-#dialog-disagree:hover {
-	background: white;
-	color: var(--red);
+	&:hover {
+		background: white;
+		color: var(--red);
+	}
 }
 
 #dialog-agree {
 	float: left;
 	color: white;
 	background-color: #76ae76;
-}
-
-#dialog-agree:hover {
-	float: left;
-	background: white;
-	color: #76ae76;
+	&:hover {
+		float: left;
+		background: white;
+		color: #76ae76;
+	}
 }
 
 header {
@@ -195,7 +193,7 @@ main#intro .inner {
 	overflow: hidden;
 	scrollbar-color: rgb(176, 217, 230) white;
 	transition-duration: 0.5s;
-	#rss:hover {
+	&:hover {
 		background-position: bottom;
 	}
 
@@ -363,7 +361,9 @@ main#intro .inner {
 
 	.icons {
 		font-size: 10px;
-		text-shadow: 1px 1px 2px #ffffff, -1px -1px 2px #ffffff;
+		text-shadow:
+			1px 1px 2px #ffffff,
+			-1px -1px 2px #ffffff;
 	}
 
 	.circle {
@@ -557,7 +557,9 @@ span.title a {
 		margin-bottom: 10px;
 		font-size: 17px;
 		line-height: 3px;
-		text-shadow: 1px 1px 0px white, -1px -1px 0px white;
+		text-shadow:
+			1px 1px 0px white,
+			-1px -1px 0px white;
 		transition-duration: 0.6s;
 	}
 }
@@ -792,7 +794,9 @@ footer.box {
 #s-m-t-tooltip {
 	background: white;
 	background-size: 50px;
-	text-shadow: 1px 1px 1px rgb(187, 210, 241), -1px -1px 1px rgb(187, 210, 241);
+	text-shadow:
+		1px 1px 1px rgb(187, 210, 241),
+		-1px -1px 1px rgb(187, 210, 241);
 	border-radius: 10px;
 	color: rgb(0, 0, 0);
 	font-family: gaegu-l, var(--fonts);
@@ -804,6 +808,11 @@ footer.box {
 	margin: 30px 15px 7px 12px;
 	padding: 10px;
 	word-break: normal;
+}
+
+#webfish-pmoring {
+	width: auto;
+	margin: 10px 3px;
 }
 
 @media screen and (max-width: 1040px) {
