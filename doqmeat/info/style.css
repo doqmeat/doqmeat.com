@@ -20,12 +20,12 @@ html {
 }
 
 body {
+	font-size: 16px;
 	background-image: url(/info/assets/bg.png);
 	background-attachment: fixed;
 	background-size: cover;
 	background-position: bottom;
 	word-spacing: 4px;
-	font-size: 1.1rem;
 	font-family:
 		mononoki,
 		arial,
@@ -126,13 +126,20 @@ main {
 	h3 {
 		color: var(--light-blue);
 		margin-left: 30px;
+		&::before {
+			font-size: 25px;
+			content: "↪";
+			margin-right: 10px;
+			vertical-align: middle;
+		}
 	}
-
-	h3::before {
-		font-size: 25px;
-		content: "↪";
-		margin-right: 10px;
-		vertical-align: middle;
+	li {
+		list-style-position: outside;
+		margin: 5px 0;
+		&::marker {
+			content: "✦︎ ";
+			font-size: 0.6rem;
+		}
 	}
 }
 
@@ -183,6 +190,7 @@ nav {
 		margin-top: 5px;
 	}
 	li {
+		padding: 0 9px;
 		transition-duration: 0.5s;
 		a {
 			color: var(--dark);
@@ -227,5 +235,69 @@ nav {
 	}
 	a::after {
 		content: none;
+	}
+}
+
+#s-m-t-tooltip {
+	background: var(--yellow);
+	color: var(--bg);
+	text-align: center;
+	z-index: 9999;
+	margin: 30px 15px 7px 12px;
+	padding: 5px;
+	font-family: mononoki;
+	max-width: 300px;
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 900px) {
+	body {
+		margin: 20px;
+	}
+
+	div.wrapper {
+		width: 100%;
+		height: auto;
+		grid-template-areas:
+			"header header"
+			"nav nav"
+			"main main"
+			"footer footer";
+		grid-template-columns: 4fr 1fr;
+		grid-template-rows: auto;
+	}
+
+	nav {
+		background: var(--dark);
+		color: var(--bg);
+		text-align: center;
+		border-left: 0;
+		border-bottom: 1px solid var(--dark);
+		padding-bottom: 10px;
+		h2 {
+			margin-bottom: 10px;
+		}
+		h3 {
+			display: none;
+			margin: 0;
+			padding: 0;
+		}
+		ul {
+			display: inline;
+			margin: 0;
+			padding: 0;
+			li {
+				padding: 5px;
+				display: inline;
+				&:before {
+					content: "⋆";
+				}
+				a {
+					color: var(--bg);
+					margin: 5px;
+					padding: 0;
+				}
+			}
+		}
 	}
 }
