@@ -80,6 +80,10 @@ p img {
 	background: #15197b;
 	height: 18px;
 	border: 1px inset black;
+
+	img.closebtn:hover {
+		mix-blend-mode: darken;
+	}
 }
 
 .himg {
