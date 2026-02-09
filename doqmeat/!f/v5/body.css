@@ -815,6 +815,21 @@ footer.box {
 	margin: 10px 3px;
 }
 
+#gradientring {
+	padding: 10px;
+	border-radius: 10px;
+	background: #c2c8ed;
+	background: linear-gradient(
+		90deg,
+		rgba(194, 200, 237, 1) 0%,
+		rgba(255, 208, 235, 1) 39%,
+		rgba(255, 228, 153, 1) 100%
+	);
+	a {
+		color: var(--d-blue);
+		text-decoration: none;
+	}
+}
 @media screen and (max-width: 1040px) {
 	#wrapper {
 		display: block;
