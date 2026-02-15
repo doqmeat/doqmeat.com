@@ -1,13 +1,13 @@
 /doqmeat/.vscode/
 
+# work in progress
 /doqmeat/garden/
 /doqmeat/shrines/steve/
-/doqmeat/music/homestuck-ost.html
-/doqmeat/music/mp3-player/
 /doqmeat/vgs/games/infinity-nikki/test-files/
-/doqmeat/photobook/remake/
+/doqmeat/photobook-rework/
 /doqmeat/music/playlists/
-
 /doqmeat/notebook-rework/
-/doqmeat/info/test.html
 /doqmeat/journal-rework/
+
+# template pages
+/doqmeat/info/test.html
