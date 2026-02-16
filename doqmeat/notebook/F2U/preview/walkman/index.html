@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- dont's use this code as a template, download from the source code! https://tangled.org/doqmeat.com/js-walkman-mp3-player -->
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/x-icon" href="favicon.gif">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS walkman mp3 player</title>
+  <!-- body stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- for customizable tooltips -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="/!f/tooltip-jquary.js"></script>
+  <script src="/!f/tooltip.js"></script>
+
+  <style>
+    /* mp3 player wrapper. everything is nested in here just to be extra careful and not mess with other elements you might have */
+    #walkman-mp3-player {
+      box-sizing: border-box;
+      position: relative;
+      font-family: arial, nerdfont;
+      display: block;
+      padding-top: 1px;
+      background: rgb(232, 84, 84);
+      border-top: 1px;
+      border-right: 0px;
+      margin: 20px auto;
+      color: rgb(153, 57, 57);
+      font-size: 21px;
+      line-height: 31px;
+      width: 200px;
+      height: 430px;
+      box-shadow: inset 2px -4px 10px #7e2222;
+      transition-duration: 0.5s;
+      border-radius: 10px;
+      overflow: hidden;
+
+      /* so every element has the same box-sizing */
+      * {
+        box-sizing: border-box;
+      }
+
+      /* album cover */
+      #album {
+        background: white;
+        color: black;
+        border: 1px solid white;
+        width: 40%;
+        margin: 0 0 0 5px;
+      }
+
+      /* 1/? tracks playing */
+      #now-playing {
+        display: inline-block;
+        position: absolute;
+        float: right;
+        margin-top: 30%;
+        margin-left: 40%;
+      }
+
+      /* line below album cover */
+      hr {
+        margin: 1px 0px;
+        padding: 0px;
+      }
+
+      /* controls grid */
+      #controls {
+        background: #ba3f3f;
+        position: relative;
+        display: grid;
+        border: 2px solid rgb(213, 213, 213);
+        width: 63%;
+        height: 30%;
+        margin: auto;
+        margin-top: 10px;
+        grid-template-columns: 33% 33% 33%;
+        grid-template-rows: 33% 33% 33%;
+        padding: 0px;
+        border-radius: 50%;
+      }
+
+      /* buttons in controls CSS */
+      #controls button {
+        cursor: pointer;
+        font-family: nerdfont, arial;
+        font-size: 13px;
+        background: inherit;
+        border: none;
+        border-radius: 50%;
+        color: #692222;
+        margin: 0px;
+        text-shadow: 2px -1px 2px rgba(225, 212, 212, 0.815);
+      }
+
+      /* since these buttons don't do anything, they have a 'blocked' cursor */
+      #controls button.down {
+        cursor: not-allowed;
+      }
+
+      /* the two mini curcle buttons */
+      button#playlist-btn,
+      button#current-song-btn {
+        position: relative;
+        border: 1px solid rgb(213, 213, 213);
+        background: #ba3f3f;
+        color: white;
+        font-size: 10px;
+        text-align: center;
+        border-radius: 50%;
+        z-index: 20;
+      }
+
+      /* play pause button */
+      button#play-pause {
+        color: white;
+        border: 1px solid rgb(39, 11, 11);
+        border-radius: 50%;
+        font-size: 14px;
+      }
+
+      /* screen wrapper */
+      #screen {
+        position: relative;
+        background: rgb(39, 36, 36);
+        text-align: left;
+        margin: auto;
+        width: 100%;
+        height: 63%;
+        border: 20px solid black;
+        border-top-width: 30px;
+        border-bottom-width: 30px;
+        font-size: 10px;
+        letter-spacing: 1px;
+        line-height: 13px;
+        overflow: hidden;
+        color: white;
+        scrollbar-color: rgb(173, 173, 173) transparent;
+      }
+
+      /* screen class (for playlist and currently playing song)*/
+      .screen {
+        position: relative;
+        overflow: auto;
+        height: 83.4%;
+      }
+
+      /* playlist songs listing */
+      #playlist button {
+        color: white;
+        text-align: left;
+        display: block;
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        background: transparent;
+        font-family: inherit;
+        font-size: inherit;
+        border: 1px solid transparent;
+        /* this is here so it doesn't move when hovered */
+      }
+
+      #playlist button:hover {
+        cursor: pointer;
+        background: #fdaa03;
+        background: linear-gradient(360deg,
+            rgba(253, 170, 3, 1) 0%,
+            rgba(255, 217, 140, 1) 91%);
+        color: black;
+        border: 1px solid #f79501;
+      }
+
+      /* button text */
+      #playlist button span {
+        margin: 4px 4px;
+        display: inline-block;
+        vertical-align: middle;
+        width: 70%;
+        font-size: 10px;
+        line-height: 13px;
+      }
+
+      /* button album cover */
+      #playlist button img {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 0px;
+        width: 30px;
+        border: 1px solid grey;
+        margin: 4px 4px;
+      }
+
+      /* currently playing screen music info */
+      p.info {
+        margin: 4px 4px;
+        padding: 0;
+      }
+
+      /* icons  */
+      .icon {
+        color: rgb(173, 174, 176);
+        font-size: 12px;
+      }
+
+      #top-bar {
+        background: #454343;
+        background: linear-gradient(360deg,
+            rgb(108, 108, 108) 0%,
+            rgb(71, 71, 71) 100%);
+        width: 100%;
+        text-align: center;
+        font-size: 9px;
+        padding: 1px;
+        margin: 0px;
+      }
+
+      #bottom-bar {
+        background: #454343;
+        background: linear-gradient(360deg,
+            rgb(29, 28, 28) 0%,
+            rgb(149, 149, 149) 100%);
+        width: 100%;
+        font-size: 9px;
+        line-height: 0px;
+        padding: 0px;
+        margin: 0px;
+      }
+
+      /* current song playing in playlist screen */
+      #bottom-bar #current {
+        display: inline;
+      }
+
+      /* current time of song */
+      #bottom-bar span {
+        display: inline-block;
+        padding: 7px;
+      }
+
+      /* emoji that a song is playing */
+      span#current-song-emoji {
+        font-size: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+
+      /* scrolling name of current song playing */
+      span#current-song-playing {
+        display: inline-block;
+        padding: 0px;
+        width: 80px;
+        line-height: 10px;
+      }
+
+      /* playing status icon in the bar */
+      #playing-status {
+        font-size: 13px;
+        padding-left: 5px;
+        color: rgb(217, 217, 217);
+      }
+
+      /* battery icon in the bar */
+      #battery {
+        font-family: nerdfont;
+        padding-top: 10px;
+        padding-right: 4px;
+        font-size: 13px;
+        float: right;
+      }
+
+      /* song progress bar */
+      .track-progress {
+        accent-color: rgb(96, 155, 226);
+        -webkit-appearance: none;
+        cursor: help;
+        width: 100%;
+        height: 4px;
+        padding: 0px;
+        margin: 0px;
+        background: #454343;
+        background: linear-gradient(360deg,
+            rgb(68, 68, 68) 0%,
+            rgb(129, 129, 129) 100%);
+        border-bottom: 1px solid black;
+      }
+
+      /* song progress bar - thumb */
+      /* chrome */
+      .track-progress::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 4px;
+        width: 2px;
+        background: rgb(96, 155, 226);
+        cursor: pointer;
+        border: none;
+        border-radius: 0px;
+      }
+
+      /* firefox */
+      .track-progress::-moz-range-thumb {
+        height: 2.6px;
+        width: 2px;
+        background: rgb(96, 155, 226);
+        cursor: pointer;
+        border: none;
+        border-radius: 0px;
+      }
+
+      /* song progress - bar progress */
+      /* only on firefox */
+      .track-progress::-moz-range-progress {
+        background: rgb(96, 155, 226);
+      }
+    }
+
+    /* tooltip custom css */
+    #s-m-t-tooltip {
+      background: rgb(0, 0, 0);
+      border-radius: 2px;
+      font-family: arial;
+      font-size: 11px;
+      color: rgb(238, 215, 215);
+      border: 1px solid rgb(6, 6, 6);
+      max-width: 400px;
+      text-align: center;
+      z-index: 9999;
+      margin: 30px 15px 7px 12px;
+      padding: 5px;
+    }
+
+    /* nerdfonts */
+    @font-face {
+      font-family: "nerdfont";
+      src: url(symbolsnerdfont.ttf);
+    }
+
+    /* you can remove these, they are so the whole page looks nicer */
+
+    body {
+      font-family: ms pgothic;
+      background: linear-gradient(204deg,
+          rgb(239, 161, 161) 0%,
+          rgba(255, 227, 179, 1) 100%);
+      max-width: 400px;
+      margin: auto;
+      height: 100vh;
+      font-size: 18px;
+
+      a {
+        color: rgb(68, 68, 186);
+      }
+
+      #text {
+        background: rgb(255, 255, 255);
+        border-radius: 10px;
+        padding: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="walkman-mp3-player">
+    <div id="screen">
+      <!-- top bar info-->
+      <div id="top-bar">
+        <span id="current-screen">Music</span>
+      </div>
+      <!-- playlist screen -->
+      <div id="playlist" class="screen"></div>
+      <!-- song currently playing screen -->
+      <div id="current-song" class="screen">
+        <p class="info"><span class="icon">󰝚</span> <span id="song">song</span></p>
+        <img id="album" alt="album cover">
+        <p id="now-playing">1/?</p>
+        <hr>
+        <p class="info"><span class="icon"></span> <span id="artist">artist</span></p>
+        <p class="info"><span class="icon"></span> <span id="album-title">album title</span></p>
+        <p class="info"><span class="icon">󰌳</span> <span id="genre">genre</span></p>
+        <p class="info"><span class="icon"></span> <span id="year">year</span></p>
+        <!-- end of current song screen -->
+      </div>
+      <!-- bottom bar -->
+      <div id="bottom-bar">
+        <input type="range" min="1" max="100" value="0" class="track-progress" onchange="seekTo()">
+        <span id="playing-status"></span>
+        <span id="current-time">00:00</span>
+        <div id="current">
+          <span id="current-song-emoji"></span>
+          <span id="current-song-playing">current song playing</span>
+        </div>
+        <span id="battery"></span>
+      </div>
+    </div>
+    <!-- grid controls -->
+    <div id="controls">
+      <button title="playlist screen" id="playlist-btn" onclick="showPlaylist()">menu</button>
+      <button class="up" title="search current song on youtube" onclick="youtubeSearch()"></button>
+      <button title="currently playing song screen" id="current-song-btn" onclick="showCurrentSong()">music</button>
+
+      <button title="previous track" onclick="prevTrack()" id="left"></button>
+      <button onclick="playpauseTrack()" id="play-pause">󰐎</button>
+      <button title="next track" onclick="nextTrack()" class="right"></button>
+
+      <span class="space"></span>
+      <button class="down"></button>
+      <span class="space"></span>
+    </div>
+  </div>
+
+  <!-- credit and resources -->
+  <!-- you can remove this -->
+  <div id="text">
+    <p>coded by <a href="https://doqmeat.com">doqmeat</a> / <a href="https://tangled.org/doqmeat.com/js-walkman-mp3-player">source code</a> for info / <a href="https://vgen.co/doqmeat/product/js-walkman-mp3-player/6c9efad3-53ae-462e-8b70-5cc67b933a05" target="_blank">download</a></p>
+    <p>credits: built using sayantanm19's <a href="https://github.com/sayantanm19/js-music-player" target="_blank">js-music-player</a>, <a href="https://www.nerdfonts.com/" target="_blank">nerdfonts</a>, <a href="https://manos.malihu.gr/style-my-tooltips-jquery-plugin/" target="_blank">Style-my-tooltips jQuery plugin</a>.</p>
+  </div>
+
+  <!-- javascript file source -->
+  <script>
+    /*
+  built with https://github.com/sayantanm19/js-music-player
+  edited by doqmeat for js walkman mp3 player
+  */
+
+    // song info
+    let track_name = document.querySelector("#song");
+    let track_artist = document.querySelector("#artist");
+    let album_title = document.querySelector("#album-title");
+    let album_cover = document.querySelector("#album");
+    let genre = document.querySelector("#genre");
+    let year = document.querySelector("#year");
+
+    // currently playing screen
+    let track_progress = document.querySelector(".track-progress"); // blue progress slider
+    let curr_time = document.querySelector("#current-time"); // 00:00
+    let playing_status = document.querySelector("#playing-status"); //  or 󰐊
+    let now_playing = document.querySelector("#now-playing"); // 1/? tracks
+
+    // playlist screen
+    let current_song_playing = document.querySelector("#current-song-playing"); // current song name scrolling
+    let current_song_div = document.querySelector("#current"); // targets the div of current song playing
+
+    // screens
+    let top_bar = document.querySelector("#current-screen");
+    let currently_screen = document.querySelector("#current-song");
+    let playlist_screen = document.querySelector("#playlist");
+
+    let track_index = 0;
+    let isPlaying = false;
+    let updateTimer;
+
+    // Create new audio element
+    let curr_track = document.createElement("audio");
+
+    // add your playlist here!
+    let track_list = [
+      {
+        name: "Camel8strike",
+        artist: "Asian Glow",
+        album: "11100011", // name of album
+        genre: "Shoegaze",
+        year: "2025", // year song was released
+        image: "11100011.jpeg", // album cover path
+        path: "https://files.catbox.moe/jfmagx.mp3", // mp3 audio path
+      },
+      {
+        name: "Cyber Space 2-1: Slice & Sway",
+        artist: "SEGA SOUND TEAM",
+        album: "Sonic Frontiers Original Soundtrack Stillness & Motion",
+        genre: "Drum n Bass",
+        year: "2022",
+        image: "sonic-frontiers-ost.jpg",
+        path: "https://files.catbox.moe/rgotfj.mp3",
+      },
+      {
+        name: "溢れてる",
+        artist: "kinoue64",
+        album: "あなただけに聴いてほしい",
+        genre: "Rock",
+        year: "2023",
+        image: "kinoue64-album1.jpg",
+        path: "https://files.catbox.moe/6gbrjt.mp3",
+      },
+    ];
+
+    // playlist screen stays hidden on load
+    playlist_screen.style.display = "none";
+    current_song_div.style.display = "none";
+
+    // use : creates the song listings for playlist screen
+    function playlistMenu() {
+      for (i = 0; i < track_list.length; i++) {
+        playlist_screen.innerHTML +=
+          "<button onclick='playlistSelection(" +
+          i +
+          ")'><img src='" +
+          track_list[i].image +
+          "' alt='album cover for" +
+          track_list[i].name +
+          "'><span>" +
+          track_list[i].name +
+          "</span></button>";
+      }
+    }
+
+    // loads playlist menu once
+    playlistMenu();
+
+    function loadTrack(index) {
+      track_index = index; // stores current index
+
+      clearInterval(updateTimer);
+      resetValues(); // resets song progress
+      curr_track.src = track_list[index].path;
+      curr_track.load();
+
+      album_cover.src = track_list[index].image;
+      track_name.textContent = track_list[index].name;
+      track_artist.textContent = track_list[index].artist;
+      album_title.textContent = track_list[index].album;
+      genre.textContent = track_list[index].genre;
+      year.textContent = track_list[index].year;
+
+      now_playing.textContent = index + 1 + "/" + track_list.length;
+
+      // update current song name on bottom bar in playlist screen
+      current_song_playing.innerHTML =
+        "<marquee direction='left' scrollamount='3' behavior='scroll'>" +
+        track_list[index].name +
+        "</marquee>";
+
+      updateTimer = setInterval(seekUpdate, 1000);
+
+      // jumps to next track once it ends
+      curr_track.addEventListener("ended", nextTrack);
+    }
+
+    function resetValues() {
+      curr_time.textContent = "00:00";
+      track_progress.value = 0;
+    }
+
+    // Load the first track in the tracklist
+    loadTrack(track_index);
+
+    // use : shows the playlist screen
+    function showPlaylist() {
+      top_bar.textContent = "Playlist";
+      currently_screen.style.display = "none"; // hides currently playing
+      playlist_screen.style.display = "block"; // shows playlist
+      // shows current song playing if there is one playing
+      if (!isPlaying) current_song_div.style.display = "none";
+      else current_song_div.style.display = "inline";
+      curr_time.style.display = "none"; // hides bottom bar timer
+    }
+
+    // input : selected song index
+    // use : plays selected song and shows currently playing screen
+    function playlistSelection(index) {
+      loadTrack(index);
+      playTrack();
+      current_song_div.style.display = "inline"; // current song playing shows
+    }
+
+    // use: shows the current playing song screen
+    function showCurrentSong() {
+      top_bar.textContent = "Music";
+      currently_screen.style.display = "block";
+      playlist_screen.style.display = "none";
+      current_song_div.style.display = "none";
+      curr_time.style.display = "inline-block";
+    }
+
+    // play-pause button fuction on click
+    function playpauseTrack() {
+      if (!isPlaying) playTrack();
+      else pauseTrack();
+    }
+
+    // use : when track is playing
+    function playTrack() {
+      curr_track.play();
+      isPlaying = true;
+      playing_status.textContent = "󰐊";
+      playing_status.style.color = "rgb(35, 236, 35)";
+      // shows current song playing if the playlist screen is showing
+      if (playlist_screen.style.display == "block")
+        current_song_div.style.display = "inline";
+    }
+
+    // use : when track is paused
+    function pauseTrack() {
+      curr_track.pause();
+      isPlaying = false;
+      playing_status.textContent = "";
+      playing_status.style.color = "rgb(217, 217, 217)";
+      current_song_div.style.display = "none"; // always hides current song playing
+    }
+
+    // use : skips to next track
+    function nextTrack() {
+      if (track_index < track_list.length - 1) track_index++;
+      else track_index = 0;
+      loadTrack(track_index);
+      playTrack();
+    }
+
+    // use : skips to prev track
+    function prevTrack() {
+      // check if its the first track in playlist
+      if (track_index > 0) track_index--;
+      // if not, it updates to the index of the last track
+      else track_index = track_list.length - 1;
+      loadTrack(track_index);
+      playTrack();
+    }
+
+    // use : song progress slider function
+    function seekTo() {
+      let seekto = curr_track.duration * (track_progress.value / 100);
+      curr_track.currentTime = seekto;
+    }
+
+    // use : updates current timer
+    function seekUpdate() {
+      let seekPosition = 0;
+
+      if (!isNaN(curr_track.duration)) {
+        seekPosition = curr_track.currentTime * (100 / curr_track.duration);
+
+        track_progress.value = seekPosition;
+
+        let currentMinutes = Math.floor(curr_track.currentTime / 60);
+        let currentSeconds = Math.floor(
+          curr_track.currentTime - currentMinutes * 60,
+        );
+        let durationMinutes = Math.floor(curr_track.duration / 60);
+        let durationSeconds = Math.floor(
+          curr_track.duration - durationMinutes * 60,
+        );
+
+        if (currentSeconds < 10) {
+          currentSeconds = "0" + currentSeconds;
+        }
+        if (durationSeconds < 10) {
+          durationSeconds = "0" + durationSeconds;
+        }
+        if (currentMinutes < 10) {
+          currentMinutes = "0" + currentMinutes;
+        }
+        if (durationMinutes < 10) {
+          durationMinutes = "0" + durationMinutes;
+        }
+
+        curr_time.textContent = currentMinutes + ":" + currentSeconds;
+      }
+    }
+
+    // use : searched the current song playing on youtube
+    function youtubeSearch() {
+      let searchString =
+        "https://www.youtube.com/results?search_query=" +
+        track_list[track_index].name +
+        "+" +
+        track_list[track_index].artist;
+      window.open(searchString, "_blank");
+    }
+
+    // console.table(track_list[track_index].name);
+
+  </script>
+</body>
+
+</html>
