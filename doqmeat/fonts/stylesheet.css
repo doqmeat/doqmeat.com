@@ -242,3 +242,13 @@
 	font-family: "klee one bold";
 	src: url(KleeOne-SemiBold.ttf);
 }
+
+@font-face {
+	font-family: "toshiba";
+	src: url(Web437_ToshibaSat_8x14.woff);
+}
+
+@font-face {
+	font-family: "yuromoji";
+	src: url(yurumoji.ttf);
+}
