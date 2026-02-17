@@ -23,6 +23,7 @@
 }
 
 .site-box > a > p:after {
+	pointer-events: none;
 	transition-duration: 1s;
 	position: absolute;
 	z-index: 5;
