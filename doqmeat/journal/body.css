@@ -85,6 +85,16 @@ a:active {
 	outline: 0;
 }
 
+code {
+	font-family: mononoki, monospace;
+	font-size: 0.9em;
+	padding: 0px 4px;
+	border-radius: 3px 0;
+	color: rgb(241, 242, 255);
+	background: rgb(45, 46, 64);
+	border: 1px solid var(--l-blue);
+}
+
 p {
 	margin: 0 0 10px 0;
 	padding: 5px;
