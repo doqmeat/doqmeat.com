@@ -20,6 +20,9 @@ you're free to take whatever you need from my site, but please refrain from taki
 	<link rel="icon" type="image/x-icon" href="!g/pix/silly-cat.gif">
 	<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css" media="all">
 	<link href="!f/v5/body.css?0628" rel="stylesheet" type="text/css" media="all">
+	<!-- pagefind -->
+	<link href="!f/v5/pagefind.css" rel="stylesheet">
+	<script src="/pagefind/pagefind-ui.js"></script>
 	<!-- tooltip shit -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
 	<script src="!f/tooltip-jquary.js"></script>
@@ -129,6 +132,7 @@ you're free to take whatever you need from my site, but please refrain from taki
 				<button onclick="showBox('pixel')">pixel</button>
 				<button onclick="showBox('chat'),chatPopup()">chatbox</button>
 				<button onclick="showBox('stats')">stats</button>
+				<button onclick="showBox('search-box')">search</button>
 			</div>
 			<!-- notepad decorations -->
 			<aside id="sticker5" class="deco"><img src="/!g/deco/kittywalk.gif" alt=""></aside>
@@ -328,6 +332,15 @@ you're free to take whatever you need from my site, but please refrain from taki
 				<section class="notepad-boxes" id="chat">
 					<h3>chatbox</h3>
 					<iframe id="chatbox-frame" src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="86%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+				</section>
+				<section class="notepad-boxes" id="search-box">
+					<p>search for anything on my site!</p>
+					<div id="search"></div>
+					<script>
+						window.addEventListener('DOMContentLoaded', (event) => {
+							new PagefindUI({ element: "#search", showSubResults: true });
+						});
+					</script>
 				</section>
 				<!-- notepad wrapper end div -->
 			</section>

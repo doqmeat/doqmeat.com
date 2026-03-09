@@ -503,7 +503,7 @@ span.title a {
 #notepad {
 	position: relative;
 	z-index: 2;
-	background-image: url(/!g/bg/rainbow-notepad.gif);
+	background: white;
 	background-size: 80px;
 	border-radius: 10px;
 	border: 3px solid rgb(255, 255, 255);
