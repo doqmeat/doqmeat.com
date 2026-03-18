@@ -75,16 +75,21 @@ const quotes = [
 		author: "siinamota",
 		link: "https://www.youtube.com/watch?v=7sKs7INaEoA",
 	},
-
 	{
 		text: "Even though I like so much about you, I don't know anything about you.",
 		source: "stoy.",
 		author: "siinamota",
 		link: "https://youtu.be/oJq3rbZkQ5g",
 	},
+	{
+		text: "I write entirely to find out what I'm thinking, what I'm looking at, what I see and what it means.",
+		source: "Why I Write",
+		author: "Joan Didion",
+		link: "https://lithub.com/joan-didion-why-i-write/",
+	},
 ];
 
-// last updated 09.mar.25
+// last updated 17.mar.26
 
 // generate random number using the length of the array
 // Math.floor round numbers up to convert them into integers
