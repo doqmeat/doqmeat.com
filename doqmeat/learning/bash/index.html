@@ -24,7 +24,7 @@
 			<li><code>cd [dirname]</code> - moves where you are. <code>cd -</code> gets you to the directory you were previously at.</li>
 			<li><code>mkdir [dirname]</code> - makes a directory / folder.</li>
 			<li><code>exit</code> - exit terminal.</li>
-			<li><code>history</code> - gives you a history of your inputs.</li>
+			<li><code>history</code> - gives you a history of your inputs. <b>tip:</b> you can use a command again by typing an ! and the line number directly by it.</li>
 			<li><code>help</code> - more info.</li>
 			<li><code>start [filename]</code> - opens a file.</li>
 			<li><code>mv [source file] [destination directory or renaming]</code> - for renaming / moving files</li>
@@ -51,14 +51,18 @@
 			<li><code>nano [filename]</code> - opens the file in the terminal with nano! should already be in your terminal</li>
 			<li><code>notepad [filename]</code> - opens file on notepad</li>
 		</ul>
+		<h2>operators</h2>
+		<ul>
+			<li><code>&&</code> - logical and. it will execute two or more commands at once. i use this combo a lot when compiling and running C++ programs: <code>gcc -o main file.cpp && ./main</code></li>
+			<li><code>|</code> - <u>pipe</u>. it will what's on the left as <b>input</b> and feed it to whatever command is on the right.</li>
+			<li><code>&gt;</code> - output redirection. mostly use it to save terminal outputs on a txt file: <code>git status &gt; git-status.txt</code></li>
+			<li><code>&gt;&gt;</code> output append. same as above but instead of overwriting a file, it <b>appends</b> to the file</li>
+		</ul>
 		<h2>notes</h2>
 		<ol>
-			<li>you can use logical operators like <code>&&</code> (AND) and <code>||</code> (OR). not really sure in what case i would use OR, but i use <code>&&</code> frequently for executing multiple commands at once.</li>
-			<li>you can hit <code>tab</code> and the terminal will (try to) autocomplete where ever directory or file you want to go.</li>
-			<li>when typing a file that has an ! you need to escape it using the backslash. if i have a folder called <b>!g/</b> then you would write <code>\!g/</code> on the terminal.</li>
+			<li>when using ! in file or directory names, bash needs to escape it using the backslash. if i have a folder called <b>!g/</b> then you would write <code>\!g/</code> on the terminal.</li>
 			<li>files with spaces need to be closed with single or double quotes like this <code>'folder 1'</code></li>
 			<li>use <code>q</code> to quit some scripts</li>
-			<li><code>&gt;&gt;</code> this is an append. <code>|</code> this is a pipe</li>
 			<li>under <code>~/.profile</code>, <code>~/.bashrc</code>, or <code>~/.bash_profile</code> you can set up variables for paths you frequently use. <a href="shortcuts.jpg" target="_blank">img of my .profile</a>, you can use them in the terminal as variables using this <code>$</code> symbol. example: <code>cd $DOQMEAT</code> will take me to the path i assigned the variable "DOQMEAT" to.</li>
 			<li>i love customizing my terminal with <a href="https://ohmyposh.dev/" target="_blank">oh-my-posh</a>. here's how my <a href="gitbash.jpg" target="_blank">git bash</a> looks like</li>
 		</ol>
