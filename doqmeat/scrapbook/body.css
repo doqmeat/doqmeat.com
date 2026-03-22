@@ -12,6 +12,7 @@
 }
 
 html {
+	scroll-behavior: smooth;
 	scrollbar-color: #8dd1f1 #4c4c4c;
 }
 
