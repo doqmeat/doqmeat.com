@@ -1,6 +1,9 @@
 body {
 	background: url(bg-sora1_2.gif) fixed;
-	font-family: newpenji, ms gothic, arial;
+	font-family:
+		newpenji,
+		ms gothic,
+		arial;
 	word-wrap: break-word;
 	color: black;
 	text-align: center;
@@ -9,12 +12,25 @@ body {
 	margin: 0px;
 }
 
+button {
+	font-family: inherit;
+	color: #80503d;
+	font-size: 0.9em;
+	background: #ccf1ff;
+	border: 1px solid #80503d;
+	border-radius: 10px;
+	&:hover {
+		background: #80503d;
+		color: #ccf1ff;
+	}
+}
+
 p img {
 	vertical-align: middle;
 }
 
 a {
-	color: #80503D;
+	color: #80503d;
 }
 
 a:hover {
@@ -24,7 +40,7 @@ a:hover {
 
 ::selection {
 	color: black;
-	background-color: #D0FF8D;
+	background-color: #d0ff8d;
 }
 
 textarea {
@@ -52,22 +68,20 @@ textarea {
 
 .box {
 	max-width: 850px;
-	background: #FFFBE3;
+	background: #fffbe3;
 	position: relative;
 	margin: auto;
 	margin-top: 30px;
 	margin-bottom: 0px;
 	padding: 5px;
-	border: 1px solid #80503D;
+	border: 1px solid #80503d;
 	border-radius: 10px;
 }
-
 
 #c {
 	margin-top: 50px;
 	margin-bottom: 110px;
 }
-
 
 .footer {
 	background: url(/!g/div/bgk_shita1.gif);
@@ -85,7 +99,6 @@ textarea {
 	left: 5px;
 }
 
-
 #s-m-t-tooltip {
 	max-width: 200px;
 	font-family: newpenji;
@@ -95,7 +108,7 @@ textarea {
 	margin: 30px 15px 7px 12px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 1px solid #80503D;
-	color: #80503D;
-	background: #FFFBE3;
+	border: 1px solid #80503d;
+	color: #80503d;
+	background: #fffbe3;
 }
