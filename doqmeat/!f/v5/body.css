@@ -138,6 +138,7 @@ header {
 		letter-spacing: 5px;
 		word-spacing: 5px;
 		transition-duration: 1s;
+		filter: drop-shadow(2px 2px 4px white) drop-shadow(-2px -2px 4px white);
 	}
 
 	h1:hover {
