@@ -9,7 +9,11 @@
 /doqmeat/notebook-rework/
 /doqmeat/journal-rework/
 /doqmeat/joined/
-11ty-doqmeat/
 
 # template pages
 /doqmeat/info/test.html
+
+# 11ty
+/11ty-doqmeat/node_modules
+/11ty-doqmeat/_files/
+/11ty-doqmeat/_site/
