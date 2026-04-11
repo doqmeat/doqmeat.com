@@ -1,6 +1,7 @@
 # doqmeat.com
 hello! this is the repository of my personal website, [doqmeat.com](https://doqmeat.com/)
 
+11.apr.26: currently working on using 11ty! it will take me a while though...
 ## about site
 - i upload my code using deploy to neocities and git following miss moss's [deploy2nekoweb](https://deploy.nekoweb.org/)
 - tested on firefox, on a desktop. and on chrome and mobile sometimes
