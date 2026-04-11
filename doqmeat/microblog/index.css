@@ -54,6 +54,7 @@ i {
 button {
 	font-family: inherit;
 	color: inherit;
+	margin: 2px 0;
 
 	&.x {
 		font-family: inherit;

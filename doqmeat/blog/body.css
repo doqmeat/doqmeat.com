@@ -16,7 +16,6 @@ body {
 	margin: 0;
 	font-size: 18px;
 	line-height: 25px;
-	word-spacing: 2px;
 	font-family: var(--fonts);
 }
 
@@ -187,12 +186,12 @@ blockquote {
 
 /*class toggle button */
 
-#toggle {
+#toggle,
+button {
 	color: var(--text);
 	vertical-align: middle;
-	font-family: ms gothic;
-	font-size: 20px;
-	width: 30px;
+	font-family: inherit;
+	font-size: 0.9em;
 	z-index: 1;
 	position: relative;
 	float: right;
