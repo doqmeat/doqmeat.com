@@ -61,19 +61,15 @@ h1 {
 }
 
 #container {
-	display: flex;
-	line-height: 0px;
+	column-count: 4;
 }
 
 #container img {
 	position: relative;
 	display: block;
-	width: 83%;
-	margin: 15px;
-}
-
-.column {
-	flex: 100%;
+	max-width: 100%;
+	height: auto;
+	padding: 10px 5px;
 }
 
 footer {
@@ -108,4 +104,10 @@ footer {
 
 .img {
 	border-bottom: 0;
+}
+
+@media only screen and (max-width: 500px) {
+	#container {
+		column-count: 2;
+	}
 }

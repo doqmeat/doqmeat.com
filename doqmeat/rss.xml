@@ -9,6 +9,15 @@
 		<language>en-us</language>
 		<webMaster>meow@doqmeat.com (des)</webMaster>
 		<atom:link href="https://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>30.apr.26 - 2 new stamps</title>
+			<link>https://doqmeat.com/collection/mail-stamps</link>
+			<description>on my stamp collection!</description>
+			<guid isPermaLink="false">260430</guid>
+			<pubDate>Thu, 30 Apr 2026 19:23:00 -0400</pubDate>
+		</item>
+
 		<item>
 			<title>13.apr.26 - neverway</title>
 			<link>https://doqmeat.com/vgs/games/neverway</link>
@@ -16,6 +25,7 @@
 			<guid isPermaLink="false">260413</guid>
 			<pubDate>Mon, 13 Apr 2026 20:23:00 -0400</pubDate>
 		</item>
+
 		<item>
 			<title>11.apr.26 - how my website changed my life</title>
 			<link>https://doqmeat.com/blog/2026/website-3rd-anniversary</link>
