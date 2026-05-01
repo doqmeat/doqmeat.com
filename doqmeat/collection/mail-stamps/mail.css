@@ -15,7 +15,7 @@ body {
 :root {
 	--red: #ff6471;
 	--blue: #5d96ff;
-	--cream: #fff4ee;
+	--cream: #fdfdfd;
 	--fonts: simple, ms pgothic, arial;
 }
 
@@ -77,6 +77,7 @@ footer {
 	background: rgb(255, 244, 238, 0.86);
 	padding: 5px;
 	border-top: 4px ridge var(--red);
+	padding-bottom: 15px;
 }
 
 #home {
@@ -107,6 +108,13 @@ footer {
 }
 
 @media only screen and (max-width: 500px) {
+	#wrapper {
+		margin: 15px;
+	}
+	#sticker1,
+	#home {
+		display: none;
+	}
 	#container {
 		column-count: 2;
 	}
