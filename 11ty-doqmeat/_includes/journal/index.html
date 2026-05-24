@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <h1 style="padding:0px;margin-bottom:2px;">des' journal</h1>
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="archive.html">archive</a></li>
+        <li><a href="credit.html">credit</a></li>
+      </ul>
+      <p>memos are draggable!</p>
+      <p>last updated on: <b>{{ page.date | postDate }}</b></p>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>custom</h3>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <main>
+      {% block pad %}
+      <h2 class="entry"><span class="title">this is a title</span> <span class="date">01.feb.26</span> </h2>
+      <ul>
+        <li>use localStorage for memo hide/show</li>
+        <li>have notepad on the left</li>
+        <li>pencil cursor react with links</li>
+        <li>have footer on a loose piece of paper</li>
+      </ul>
+      <ol>
+        <li>this</li>
+        <li>is</li>
+        <li>an ordered list</li>
+      </ol>
+      <p><a href="#">this is a link</a></p>
+      <p><a href="https://">this is an outlink</a></p>
+      <p><b>bolded</b> text, <i>italics</i> text, <mark>highlighted</mark> text</p>
+      <details>
+        <summary>summary</summary> details go here!
+      </details>
+      <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff eat the rubberband. Hunt anything slap kitten brother with paw for missing until dinner time, or plan steps for world domination so hiss and stare at nothing then run suddenly away, dismember a mouse and then regurgitate parts of it on the family room floor and i bet my nine lives on you-oooo-ooo-hooo. Love blinks and purr purr purr purr yawn destroy couch as revenge but eat an easter feather as if it were a bird then burp victoriously, but tender but curl into a furry donut for Gate keepers of hell. Taco cat backwards spells taco cat. Sit in a box for hours pooping rainbow while flying in a toasted bread costume in space but run as fast as i can into another room for no reason or pet me pet me pet me pet me, bite, scratch, why are you petting me but purr. Kitty.</p>
+
+      <p>Flop over i vomit in the bed in the middle of the night purr when being pet yet swat turds around the house so leave dead animals as gifts, so spend six hours per day washing, but still have a crusty butthole. Weigh eight pounds but take up a full-size bed the cat was chasing the mouse yet who's the baby. Leave hair on owner's clothes pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now experiences short bursts of poo-phoria after going to the loo and disappear for four days and return home with an expensive injury; bite the vet step on your keyboard while you're gaming and then turn in a circle yet making bread on the bathrobe this is the day . Slap owner's face at 5am until human fills food dish friends are not food but bawl under human beds, but hide at bottom of staircase to trip human for get suspicious of own shadow then go play with toilette paper, loved it, hated it, loved it, hated it. Poop on couch. There's a forty year old lady there let us feast eat a rug and furry furry hairs everywhere oh no human coming lie on counter don't get off counter.</p>
+
+      <figure>
+        <img src="/_files/pages/journal/assets/memo-cube.jpg" alt="memo">
+        <figcaption>memo...</figcaption>
+      </figure>
+      {% endblock %}
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+      <h2>status.cafe</h2>
+      <!-- start sw-rss-feed code -->
+      <script type="text/javascript" src="/_files/pages/journal/status-cafe-feed.js"></script>
+      <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+      <span style="font-size:small;">feed powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    {% block memo %}
+    <p>block for memo</p>
+    {% endblock %}
+  </aside>
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <iframe width="100%" height="200px" src="https://www.youtube-nocookie.com/embed/videoseries?si=Kfiv3XQ7gEQPclYa&amp;list=PLJJj3iCewWn0BFushmrCndv4wvcgPVWWg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

@@ -3,6 +3,9 @@ const { DateTime } = require("luxon");
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerPassthroughCopyBehavior("copy");
 
+	// Forces Eleventy to merge tag arrays together instead of overwriting them
+	// eleventyConfig.setDataDeepMerge(true);
+
 	eleventyConfig.addPassthroughCopy("_files");
 
 	// This will stop the default behaviour of foo.html being turned into foo/index.html
@@ -18,9 +21,4 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		return DateTime.fromJSDate(dateObj).toFormat("dd.MMM.yy");
 	});
-
-	return {
-		// This makes sure HTML files use Nunjucks
-		htmlTemplateEngine: "njk",
-	};
 };

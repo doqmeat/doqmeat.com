@@ -1,0 +1,28 @@
+---json
+{
+"pagination": {
+"data": "collections",
+"size": 1,
+"alias": "tag",
+"filter": ["all", "subpage"]
+},
+"permalink": "/journal/tags/{{ tag | slugify }}.html"
+}
+---
+<!-- THIS FUCKING WORKS -->
+{% layout "journal/index.html" %}
+{% block pad %}
+<h1>Tagged: "{{ tag }}"</h1>
+
+<ul class="tagged-entries">
+  <!-- Loop through only the entries that belong to the current tag -->
+  {% for e in collections[tag] reversed %}
+  <li>
+    <span class="date">{{ e.data.page.date | postDate }}</span> -
+    <a href="{{ e.url }}">{{ e.data.title }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<p><a href="/journal/">← Back to journal</a></p>
+{% endblock %}

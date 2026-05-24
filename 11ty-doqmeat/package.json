@@ -4,7 +4,8 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy && npx pagefind --site _site",
-    "serve": "npx @11ty/eleventy --serve"
+    "serve": "npx @11ty/eleventy --serve",
+    "incr": "npx @11ty/eleventy --serve --incremental"
   },
   "license": "ISC",
   "type": "commonjs",
