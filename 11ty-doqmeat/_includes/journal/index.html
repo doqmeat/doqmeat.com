@@ -10,10 +10,10 @@ working on it on 11ty since 23.may.26
  -->
 
   <meta charset="UTF-8">
-  <title>{{ title }}</title>
+  <title>{% if title != "journal" %}journal - {% endif%} {{ title }}{{ dynamic_title }}</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="doqmeat's journal logs">
-  <link rel="icon" type="image/x-icon" href="assets/favicon.gif">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
   <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
 </head>
 
@@ -22,48 +22,35 @@ working on it on 11ty since 23.may.26
     <div id="header"></div>
 
     <nav>
-      <h1 style="padding:0px;margin-bottom:2px;">des' journal</h1>
+      <h1>des' notepad</h1>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
       <h3>navigation</h3>
       <ul>
-        <li><a href="archive.html">archive</a></li>
-        <li><a href="credit.html">credit</a></li>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
       </ul>
-      <p>memos are draggable!</p>
       <p>last updated on: <b>{{ page.date | postDate }}</b></p>
-      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
-      <h3>custom</h3>
       <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
     </nav>
 
+    <!-- variable for string of tags -->
+    {% assign allTags = tags | join: "," %}
     <main>
+      {% if title != "journal" %} <h2 {% if allTags contains "log" %}class="log" {% endif %}>{{ title }}{{ dynamic_title }}</h2> {% endif %}
+      <!-- if log post -->
+      {% if allTags contains "log" %}
+      <p class="date">「{{ page.date | postDate }}」</p>
+      {% endif %}
+
       {% block pad %}
-      <h2 class="entry"><span class="title">this is a title</span> <span class="date">01.feb.26</span> </h2>
-      <ul>
-        <li>use localStorage for memo hide/show</li>
-        <li>have notepad on the left</li>
-        <li>pencil cursor react with links</li>
-        <li>have footer on a loose piece of paper</li>
-      </ul>
-      <ol>
-        <li>this</li>
-        <li>is</li>
-        <li>an ordered list</li>
-      </ol>
-      <p><a href="#">this is a link</a></p>
-      <p><a href="https://">this is an outlink</a></p>
-      <p><b>bolded</b> text, <i>italics</i> text, <mark>highlighted</mark> text</p>
-      <details>
-        <summary>summary</summary> details go here!
-      </details>
-      <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff eat the rubberband. Hunt anything slap kitten brother with paw for missing until dinner time, or plan steps for world domination so hiss and stare at nothing then run suddenly away, dismember a mouse and then regurgitate parts of it on the family room floor and i bet my nine lives on you-oooo-ooo-hooo. Love blinks and purr purr purr purr yawn destroy couch as revenge but eat an easter feather as if it were a bird then burp victoriously, but tender but curl into a furry donut for Gate keepers of hell. Taco cat backwards spells taco cat. Sit in a box for hours pooping rainbow while flying in a toasted bread costume in space but run as fast as i can into another room for no reason or pet me pet me pet me pet me, bite, scratch, why are you petting me but purr. Kitty.</p>
-
-      <p>Flop over i vomit in the bed in the middle of the night purr when being pet yet swat turds around the house so leave dead animals as gifts, so spend six hours per day washing, but still have a crusty butthole. Weigh eight pounds but take up a full-size bed the cat was chasing the mouse yet who's the baby. Leave hair on owner's clothes pet right here, no not there, here, no fool, right here that other cat smells funny you should really give me all the treats because i smell the best and omg you finally got the right spot and i love you right now experiences short bursts of poo-phoria after going to the loo and disappear for four days and return home with an expensive injury; bite the vet step on your keyboard while you're gaming and then turn in a circle yet making bread on the bathrobe this is the day . Slap owner's face at 5am until human fills food dish friends are not food but bawl under human beds, but hide at bottom of staircase to trip human for get suspicious of own shadow then go play with toilette paper, loved it, hated it, loved it, hated it. Poop on couch. There's a forty year old lady there let us feast eat a rug and furry furry hairs everywhere oh no human coming lie on counter don't get off counter.</p>
-
-      <figure>
-        <img src="/_files/pages/journal/assets/memo-cube.jpg" alt="memo">
-        <figcaption>memo...</figcaption>
-      </figure>
+      pad
       {% endblock %}
+
+      {% if allTags contains "log" %}
+      <!-- here goes next and prev logic -->
+      {% endif %}
+      <hr>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
     </main>
   </div>
 
@@ -89,9 +76,37 @@ working on it on 11ty since 23.may.26
   </aside>
 
   <aside id="memo2" class="memo draggable">
-    {% block memo %}
-    <p>block for memo</p>
-    {% endblock %}
+    <div class="innermemo">
+      {% unless allTags contains "log" %}
+      <h3>tag cloud</h3>
+      <ul>
+        {% for tag in collections.journalTags %}
+        <li>
+          <a href="tags/{{ tag | slugify }}.html">#{{ tag }}</a> - {{ collections[tag].size }} {% if collections[tag].size == 1 %} log {% else %} logs {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+      {% endunless %}
+      <!-- status list for journal logs -->
+      {% if allTags contains "log" %}
+      <h3>right now...</h3>
+      <ul>
+        {% if feeling %}
+        <li class="feeling">{{ feeling }}</li>{% endif %}
+        {% if listening %}
+        <li class="listening">{{ listening }}</li>{% endif %}
+        {% if watching %}
+        <li class="watching">{{ watching }}</li>{% endif %}
+        {% if playing %}
+        <li class="playing">{{ playing }}</li>{% endif %}
+        <li class="tags">{% for tag in tags %}{% if tag != "log" %} #<a href="/journal/tags/{{ tag }}">{{ tag }}</a>{% endif %}{% endfor %}</li>
+      </ul>
+      <!-- log end if -->
+      {% endif %}
+
+      {% block memo2 %}
+      {% endblock %}
+    </div>
   </aside>
 
   <aside id="memo4" class="memo draggable">

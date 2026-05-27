@@ -1,20 +1,27 @@
 ---
 title: journal
-head_desc: journal homepage
-tags: ["index","meow"]
+tags: ["subpage"]
 ---
 {% layout "journal/index.html" %}
 
 {% block pad %}
 <h2>welcome to my notepad!</h2>
-<p>i write about my lifee, site stuff, and any other misc things here. <small>i don't proof read what i write in these.</small></p>
-<ol reversed>
-  {% for e in collections.entry reversed %}
-  {% unless e.data.tags contains "subpage" %}
-  <li><span class="date">{{ e.data.page.date | postDate }}</span> - <a href="{{ e.url }}">{{ e.data.title }}</a> - <span class="desc">{{ e.data.head_desc }}</span> -{% for tag in e.data.tags %}<span class="tag-badge"> #{{ tag }}</span>{% endfor %}
+<p>i kinda write about anything that might be interesting here. small life lessons, updates and such. <small>i don't proof read what i write in these most of the time.</small></p>
+<ul>
+  {% for e in collections.log reversed %}
+  <li><a title="tagged with{% for tag in e.data.tags %}{% unless tag == 'log' %} #{{ tag }}{% endunless %}{% endfor %}" href="{{ e.url }}">{{ e.data.title }}</a> - <span class="date">{{ e.data.page.date | postDate }}</span>
   </li>
-  {% endunless %}
   {% endfor %}
-</ol>
+</ul>
 
+<form id="webmention-form" action="https://webmention.io/doqmeat.com/webmention" method="POST">
+  <label for="webmention-form">send me webmentions through this form!</label>
+
+  <input id="webmention-source" type="url" autocomplete="url" required="" pattern="^https?:\/\/(.*)" name="source" placeholder="URL/Permalink of your article" class="error" aria-invalid="true" />
+
+  <input id="webmention-submit" type="submit" name="submit" value="Ping me!" />
+
+  <input id="webmention-format" type="hidden" name="format" value="html" />
+  <input id="webmention-target" type="hidden" name="target" value="https://doqmeat.com/journal" />
+</form>
 {% endblock %}

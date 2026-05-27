@@ -1,21 +1,22 @@
 ---json
 {
 "pagination": {
-"data": "collections",
+"data": "collections.journalTags",
 "size": 1,
 "alias": "tag",
 "filter": ["all", "subpage"]
+},
+"eleventyComputed": {
+"dynamic_title": "logs with #{{ tag | slugify }}"
 },
 "permalink": "/journal/tags/{{ tag | slugify }}.html"
 }
 ---
 <!-- THIS FUCKING WORKS -->
 {% layout "journal/index.html" %}
-{% block pad %}
-<h1>Tagged: "{{ tag }}"</h1>
 
-<ul class="tagged-entries">
-  <!-- Loop through only the entries that belong to the current tag -->
+{% block pad %}
+<ul>
   {% for e in collections[tag] reversed %}
   <li>
     <span class="date">{{ e.data.page.date | postDate }}</span> -
@@ -24,5 +25,4 @@
   {% endfor %}
 </ul>
 
-<p><a href="/journal/">← Back to journal</a></p>
 {% endblock %}

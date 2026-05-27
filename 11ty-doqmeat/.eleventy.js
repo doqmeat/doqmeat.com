@@ -1,4 +1,5 @@
 const { DateTime } = require("luxon");
+const tagCloud = require("eleventy-plugin-tag-cloud");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerPassthroughCopyBehavior("copy");
@@ -19,6 +20,35 @@ module.exports = function (eleventyConfig) {
 
 	// custom page.date ----- {{ page.date | postDate }}
 	eleventyConfig.addFilter("postDate", (dateObj) => {
-		return DateTime.fromJSDate(dateObj).toFormat("dd.MMM.yy");
+		let dateString = DateTime.fromJSDate(dateObj)
+			.setZone("utc")
+			.toFormat("dd.MMM.yy");
+		return dateString.toLowerCase();
 	});
+
+	// Generates a list of unique tags found ONLY inside the journal folder
+	eleventyConfig.addCollection("journalTags", function (collectionApi) {
+		const journal = collectionApi.getFilteredByGlob("journal/**");
+		const tagSet = new Set();
+		// for each item in that folder
+		journal.forEach((item) => {
+			if (item.data.tags) {
+				//checks if it's an array
+				const tags = Array.isArray(item.data.tags)
+					? item.data.tags
+					: [item.data.tags];
+				tags.forEach((tag) => {
+					// i don't want these ones
+					if (!["all", "log", "subpage"].includes(tag)) {
+						tagSet.add(tag);
+					}
+				});
+			}
+		});
+		// returns an array from the tags collected
+		return Array.from(tagSet);
+	});
+
+	// tag cloud
+	eleventyConfig.addFilter("tagCloud", tagCloud);
 };
