@@ -19,6 +19,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 	// custom page.date ----- {{ page.date | postDate }}
+	// example: 01.may.26
 	eleventyConfig.addFilter("postDate", (dateObj) => {
 		let dateString = DateTime.fromJSDate(dateObj)
 			.setZone("utc")
@@ -26,10 +27,19 @@ module.exports = function (eleventyConfig) {
 		return dateString.toLowerCase();
 	});
 
+	// custom page.date ----- {{ page.date | postFullDate }}
+	// example: 2026-05-01
+	eleventyConfig.addFilter("postFullDate", (dateObj) => {
+		let dateString = DateTime.fromJSDate(dateObj)
+			.setZone("utc")
+			.toFormat("yyyy-MM-dd");
+		return dateString;
+	});
+
 	// Generates a list of unique tags found ONLY inside the journal folder
-	eleventyConfig.addCollection("journalTags", function (collectionApi) {
+	eleventyConfig.addCollection("journalTags", (collectionApi) => {
 		const journal = collectionApi.getFilteredByGlob("journal/**");
-		const tagSet = new Set();
+		const tagSet = new Set(); // its a set so there's no repetition in the tags
 		// for each item in that folder
 		journal.forEach((item) => {
 			if (item.data.tags) {

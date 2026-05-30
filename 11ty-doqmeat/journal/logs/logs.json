@@ -1,3 +1,4 @@
 {
-  "tags":"log"
+  "tags":"log",
+  "permalink":"/journal/{{ page.fileSlug }}.html"
 }
