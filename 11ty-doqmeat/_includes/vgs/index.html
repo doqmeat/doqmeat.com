@@ -7,16 +7,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
-  <meta name="description" content="des' corner on the interwebs!">
+  <meta name="description" content="des video game journal">
   <link rel="icon" type="image/x-icon" href="/_files/assets/pix/silly-cat.gif">
   <link rel="stylesheet" href="/_files/pages/vgs/body.css">
 </head>
 
 <body>
-  <main class="info">
-    <h1>{{ title }}</h1>
-    {{ content }}
-  </main>
+  <div id="wrapper">
+    <sidebar>
+      <h1>{{ title }}</h1>
+      <aside id="box1">
+        {% block box1 %}
+        <p>box 1</p>
+        {% endblock %}
+      </aside>
+      <img id="pagedoll" src="/_files/pages/vgs/drifter-pagedoll.png" alt="">
+      <hr id="l-1">
+      <aside id="box2">
+        {% block box2 %}
+        <p>box 2</p>
+        {% endblock %}
+      </aside>
+      <hr id="l-2">
+      <aside id="box3">
+        {% block box3 %}
+        <p>box 3</p>
+        {% endblock %}
+      </aside>
+      <hr id="l-3">
+      <aside id="box4">
+        <p>go back <a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
+      </aside>
+    </sidebar>
+
+    <main>
+      {% block main %}
+      <p>main block</p>
+      {% endblock %}
+    </main>
+    <!-- end wrapper div -->
+  </div>
 
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>

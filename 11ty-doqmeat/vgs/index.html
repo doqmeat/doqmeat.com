@@ -1,12 +1,68 @@
 ---
 title: gaming log
 ---
+{% layout "vgs/index.html" %}
 
-WIP!
-<!-- hai this is my gaming log. yay!
+{% block box1 %}
+<p>sharing my thoughts, progress, and screenshots of video games i've played! spoilers will be hidden!</p>
+<p>here's my backloggd acc for a comprehensive list of everything i've played / completed / want to play / etc!</p>
+<p>to get a sense of what stuff i like, here's 10 video games i could play forever</p>
+{% endblock %}
 
-{% for game in collections.game_log %}
-<li class="{% for tag in game.data.tags %}{{ tag }} {% endfor %}"><a title="{{ game.data.title }}" href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" width="100px" alt="{{ game.data.title }} link button"></a></li>
-{% else %}
-<li>This would display if the 'item' collection were empty</li>
-{% endfor %} -->
+{% block box2 %}
+<h3>highlighted entries</h3>
+<ul>
+  <li>latest added:</li>
+  <li>latest updated:</li>
+</ul>
+{% endblock %}
+
+{% block box3 %}
+<h3>add me! <button>?</button></h3>
+<ul>
+  <li>steam</li>
+  <li>pretendo: </li>
+  <li>PSN: </li>
+  <li>switch: </li>
+</ul>
+{% endblock %}
+
+
+{% block main %}
+<section>
+  <h2>video game entries</h2>
+  <h3>filters</h3>
+  <div id="filters"><button>button 1</button> <button>button 2</button> <button>button 3</button> <button>button 4</button></div>
+  <div class="wrapper-vgs">
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <a href="abzu.html"><img src="/_files/pages/vgs/games/abzu/cover.jpg" alt="abzu log page"><span>
+        <title>abzu</title>
+      </span></a>
+    <!-- vgs wrapper end div -->
+  </div>
+  <!-- content box end div -->
+</section>
+
+<hr>
+
+<section>
+  <p>hai</p>
+</section>
+{% endblock %}

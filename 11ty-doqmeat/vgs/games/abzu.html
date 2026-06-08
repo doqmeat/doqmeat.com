@@ -1,14 +1,48 @@
----
-title: abzu
-release_date: aug 2, 2016
-developer: giant squid
-genre: adventure
-tags: ["adventure","finished"]
-status: finished
+---json
+{
+"title": "abzu",
+"tags": ["adventure","finished"],
+"release_date": "2016-08-02",
+"published_date": "2023-05-01",
+"dev": "giant squid",
+"genre": "adventure",
+"status": "finished"
+}
 ---
 
-<p>played it when it was free on ps+, pretty nice little indie game! relaxing as well.
-<h4>screenshots</h4>
-<img src="/_files/pages/vgs/games/abzu/abzu1.jpg" width="100%" alt="screenshot of abzu">
-<img src="/_files/pages/vgs/games/abzu/abzu2.jpg" width="100%" alt="screenshot of abzu">
-<img src="/_files/pages/vgs/games/abzu/abzu3.jpg" width="100%" alt="screenshot of abzu">
+{% layout "vgs/index.html" %}
+
+{% block box1 %}
+<p><b>release date:</b> {{ release_date | string2fulldate }}</p>
+<p><b>dev:</b> {{ dev }} </p>
+<p><b>genre:</b> {{ genre }}</p>
+<p><b>status:</b> {{ status }}</p>
+{% endblock %}
+
+{% block box2 %}
+<h3>sections</h3>
+<ul>
+  <li>logs</li>
+  <li>screenshots</li>
+</ul>
+{% endblock %}
+
+{% block box3 %}
+<p>page published on: <b>{{ published_date | string2date }}</b></p>
+<p>last updated on: <b>{{ page.date | postDate }}</b></p>
+{% endblock %}
+
+
+{% block main %}
+<section id="logs">
+  <h3>logs</h3>
+  <p>logs will go here!</p>
+  <!-- content box end div -->
+</section>
+
+<hr>
+
+<section id="screenshots">
+  <p>and screenshots will go here</p>
+</section>
+{% endblock %}

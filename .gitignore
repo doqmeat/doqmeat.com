@@ -17,3 +17,5 @@
 /11ty-doqmeat/node_modules
 /11ty-doqmeat/_files/
 /11ty-doqmeat/_site/
+/11ty-doqmeat/package.json
+/11ty-doqmeat/package-lock.json

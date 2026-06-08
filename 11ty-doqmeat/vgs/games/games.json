@@ -1,4 +1,4 @@
 {
-  "layout":"vgs/index.html",
-  "tags":"game_log"
+  "tags":"game_log",
+  "permalink":"/vgs/{{ page.fileSlug }}.html"
 }
