@@ -86,6 +86,14 @@ module.exports = function (eleventyConfig) {
 		return dateString;
 	});
 
+	// for vgs
+	// input: string of form /vgs/GAME.html
+	// output: GAME
+	eleventyConfig.addFilter("vgsCover", (path) => {
+		// this will return the game folder minus the .html
+		return path.slice(5, -5);
+	});
+
 	// Generates a list of unique tags found ONLY inside the journal folder
 	eleventyConfig.addCollection("journalTags", (collectionApi) => {
 		const journal = collectionApi.getFilteredByGlob("journal/**");
@@ -109,6 +117,6 @@ module.exports = function (eleventyConfig) {
 		return Array.from(tagSet);
 	});
 
-	// tag cloud
+	// tag cloud. not using atm
 	eleventyConfig.addFilter("tagCloud", tagCloud);
 };
