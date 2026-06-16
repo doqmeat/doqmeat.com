@@ -1,5 +1,4 @@
 const { DateTime } = require("luxon");
-const tagCloud = require("eleventy-plugin-tag-cloud");
 
 module.exports = function (eleventyConfig) {
 	eleventyConfig.setServerPassthroughCopyBehavior("copy");
@@ -116,7 +115,4 @@ module.exports = function (eleventyConfig) {
 		// returns an array from the tags collected
 		return Array.from(tagSet);
 	});
-
-	// tag cloud. not using atm
-	eleventyConfig.addFilter("tagCloud", tagCloud);
 };

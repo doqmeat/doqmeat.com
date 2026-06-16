@@ -7,14 +7,5 @@
     "incr": "npx @11ty/eleventy --serve --incremental",
     "local": "npx live-server _site/"
   },
-  "license": "ISC",
-  "type": "commonjs",
-  "devDependencies": {
-    "@11ty/eleventy": "^3.1.5",
-    "tippy.js": "^6.3.7"
-  },
-  "dependencies": {
-    "eleventy-plugin-tag-cloud": "^0.7.0",
-    "live-server": "^1.2.2"
-  }
+  "type": "commonjs"
 }
