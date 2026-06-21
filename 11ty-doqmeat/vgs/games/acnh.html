@@ -1,18 +1,44 @@
+---json
+{
+"title": "animal crossing new horizons",
+"tags": ["sim","finished"],
+"release_date": "?",
+"published_date": "2023-05-01",
+"dev": "nintendo",
+"genre": "sim",
+"status": "finished"
+}
 ---
-title: animal crossing new horizons
-release_date: mar 20, 2020
-developer: nintendo
-genre: simulation
-status: finished
----
-<p>the main reason i bought my switch (besides wanting to be ablt to play games on my comfy bed) which is very funny because after putting in 500 hours into this game i kinda hate it! no offense. but i had fun in those 500 hours
 
-<h4>screenshots</h4>
-<img src="/_files/pages/vgs/games/acnh/acnh6.jpg" width="100%">
-<img src="/_files/pages/vgs/games/acnh/acnh1.jpg" width="100%">
-<img title="this made me laugh so much" src="/_files/pages/vgs/games/acnh/acnh2.jpg" width="100%">
-<img src="/_files/pages/vgs/games/acnh/acnh3.jpg" width="100%">
-<img src="/_files/pages/vgs/games/acnh/acnh4.jpg" width="100%">
-<img src="/_files/pages/vgs/games/acnh/acnh5.jpg" width="100%">
-<img src="/_files/pages/vgs/games/acnh/acnh7.jpg" width="100%">
-<img src="/_files/pages/vgs/games/acnh/acnh8.jpg" width="100%">
+{% layout "vgs/index.html" %}
+
+{% block box2 %}
+<h3>sections</h3>
+<ul>
+  <li><a href="#logs">logs</a></li>
+  <li><a href="#screenshots">screenshots</a></li>
+</ul>
+{% endblock %}
+
+
+{% block main %}
+<section id="logs">
+  <h3>logs</h3>
+  <p>the main reason i bought my switch (besides wanting to be ablt to play games on my comfy bed) which is very funny because after putting in 500 hours into this game i kinda hate it! no offense. but i had fun in those 500 hours</p>
+  <!-- content box end div -->
+</section>
+
+<hr>
+
+<section id="screenshots">
+  <h3>screenshots</h3>
+  <img src="/_files/pages/vgs/games/acnh/acnh6.jpg" width="100%">
+  <img src="/_files/pages/vgs/games/acnh/acnh1.jpg" width="100%">
+  <img title="this made me laugh so much" src="/_files/pages/vgs/games/acnh/acnh2.jpg" width="100%">
+  <img src="/_files/pages/vgs/games/acnh/acnh3.jpg" width="100%">
+  <img src="/_files/pages/vgs/games/acnh/acnh4.jpg" width="100%">
+  <img src="/_files/pages/vgs/games/acnh/acnh5.jpg" width="100%">
+  <img src="/_files/pages/vgs/games/acnh/acnh7.jpg" width="100%">
+  <img src="/_files/pages/vgs/games/acnh/acnh8.jpg" width="100%">
+</section>
+{% endblock %}

@@ -85,14 +85,6 @@ module.exports = function (eleventyConfig) {
 		return dateString;
 	});
 
-	// for vgs
-	// input: string of form /vgs/GAME.html
-	// output: GAME
-	eleventyConfig.addFilter("vgsCover", (path) => {
-		// this will return the game folder minus the .html
-		return path.slice(5, -5);
-	});
-
 	// Generates a list of unique tags found ONLY inside the journal folder
 	eleventyConfig.addCollection("journalTags", (collectionApi) => {
 		const journal = collectionApi.getFilteredByGlob("journal/**");
@@ -107,6 +99,29 @@ module.exports = function (eleventyConfig) {
 				tags.forEach((tag) => {
 					// i don't want these ones
 					if (!["all", "log", "subpage"].includes(tag)) {
+						tagSet.add(tag);
+					}
+				});
+			}
+		});
+		// returns an array from the tags collected
+		return Array.from(tagSet);
+	});
+
+	// Generates a list of unique tags found ONLY inside the vgs/games folder
+	eleventyConfig.addCollection("gamelogTags", (collectionApi) => {
+		const gamelog = collectionApi.getFilteredByGlob("vgs/games/**");
+		const tagSet = new Set(); // its a set so there's no repetition in the tags
+		// for each item in that folder
+		gamelog.forEach((item) => {
+			if (item.data.tags) {
+				//checks if it's an array
+				const tags = Array.isArray(item.data.tags)
+					? item.data.tags
+					: [item.data.tags];
+				tags.forEach((tag) => {
+					// i don't want these ones
+					if (!["all", "gamelog"].includes(tag)) {
 						tagSet.add(tag);
 					}
 				});

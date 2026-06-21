@@ -1,4 +1,4 @@
 {
-  "tags":"game_log",
+  "tags":"gamelog",
   "permalink":"/vgs/{{ page.fileSlug }}.html"
 }

@@ -8,11 +8,11 @@ tags: subpage
 <section>
   <h2>video game entries</h2>
   <h3>filters</h3>
-  <div id="filters"><button>button 1</button> <button>button 2</button> <button>button 3</button> <button>button 4</button></div>
+  <!-- make js filter for tags -->
+  <div id="filters">{% for tag in collections.gamelogTags %}<button>{{ tag }}</button> {% endfor %}</div>
   <div class="wrapper-vgs">
-    {% for game in collections.game_log %}
-    <!-- make 11ty functions so we can put the url for the pic without the folder or extension -->
-    <a href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.url | vgsCover }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
+    {% for game in collections.gamelog %}
+    <a class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
         <title>{{ game.data.title }}</title>
       </span></a>
     {% endfor %}

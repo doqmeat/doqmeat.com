@@ -23,7 +23,9 @@
         <p>here's my backloggd acc for a comprehensive list of everything i've played / completed / want to play / etc!</p>
         <p>to get a sense of what stuff i like, here's 10 video games i could play forever</p>
         {% endif %}
-        {% if allTags contains "game_log" %}
+        {% if allTags contains "gamelog" %}
+
+        <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/cover.jpg" alt="{{ page.title }} game cover" class="gamelog_cover">
         <p><b>release date:</b> {{ release_date | string2fulldate }}</p>
         <p><b>dev:</b> {{ dev }} </p>
         <p><b>genre:</b> {{ genre }}</p>
@@ -32,48 +34,51 @@
         {% block box1 %}
         {% endblock %}
       </aside>
-      <img id="pagedoll" src="/_files/pages/vgs/drifter-pagedoll.png" alt="">
-      <hr id="l-1">
-      <aside id="box2">
-        {% if allTags contains "subpage" %}
-        <h3>highlighted entries</h3>
-        <ul>
-          <li>latest added:</li>
-          <li>latest updated:</li>
-        </ul>
-        {% endif %}
+      <wrapper id="sticky-wrap">
+        <img id="pagedoll" src="/_files/pages/vgs/drifter-pagedoll.png" alt="">
+        <hr id="l-1">
+        <aside id="box2">
+          {% if allTags contains "subpage" %}
+          <h3>highlighted entries</h3>
+          <ul>
+            <li>latest added:</li>
+            <li>latest updated:</li>
+          </ul>
+          {% endif %}
 
-        {% block box2 %}
-        {% endblock %}
-      </aside>
-      <hr id="l-2">
-      <aside id="box3">
+          {% block box2 %}
+          {% endblock %}
+        </aside>
+        <hr id="l-2">
+        <aside id="box3">
 
-        {% if allTags contains "subpage" %}
-        <h3>add me! <button>?</button></h3>
-        <ul>
-          <li>steam: <a href="https://steamcommunity.com/id/lakiitu/" target="_blank">lakiitu</a></li>
-          <li>pretendo: 5427-1045-8513</li>
-          <li>PSN: doqmeat</li>
-          <li>switch: 3336-0516-7511</li>
-        </ul>
-        {% endif %}
+          {% if allTags contains "subpage" %}
+          <h3>add me! <button>?</button></h3>
+          <ul>
+            <li>steam: <a href="https://steamcommunity.com/id/lakiitu/" target="_blank">lakiitu</a></li>
+            <li>pretendo: 5427-1045-8513</li>
+            <li>PSN: doqmeat</li>
+            <li>switch: 3336-0516-7511</li>
+          </ul>
+          {% endif %}
 
-        {% if allTags contains "game_log" %}
-        <p>page published on: <b>{{ published_date | string2date }}</b></p>
-        <p>last updated on: <b>{{ page.date | postDate }}</b></p>
-        {% endif %}
+          {% if allTags contains "gamelog" %}
+          <p>page published on: <b>{{ published_date | string2date }}</b></p>
+          <p>last updated on: <b>{{ page.date | postDate }}</b></p>
+          {% endif %}
 
-        {% block box3 %}
-        {% endblock %}
-      </aside>
-      <hr id="l-3">
-      <aside id="box4">
-        {% if allTags contains "subpage" %}
-        <p>last updated on: <b>{{ page.date | postDate }}</b></p>
-        {% endif %}
-        <p>go back to {% if title != "gaming log" %} <a href="/vgs">index</a> / {% endif %}<a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
-      </aside>
+          {% block box3 %}
+          {% endblock %}
+        </aside>
+        <hr id="l-3">
+        <aside id="box4">
+          {% if allTags contains "subpage" %}
+          <p>last updated on: <b>{{ page.date | postDate }}</b></p>
+          {% endif %}
+          <p>go back to {% if title != "gaming log" %} <a href="/vgs">vgs index</a> / {% endif %}<a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
+          <p>scroll to <a href="#">top</a></p>
+        </aside>
+      </wrapper>
     </sidebar>
 
     <main>
