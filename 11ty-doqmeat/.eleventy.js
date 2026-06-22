@@ -26,6 +26,36 @@ module.exports = function (eleventyConfig) {
 		return dateString.toLowerCase();
 	});
 
+	// girl i am tired
+	eleventyConfig.addFilter("gamepics", (dir) => {
+		return "/_files/pages/vgs/games/" + dir + "/";
+	});
+
+	// unslug a string {{ string-yup | unSlugify }}
+	// output: "string yup"
+	eleventyConfig.addFilter("unSlugify", (str) => {
+		return str.replace("-", " ");
+	});
+
+	// custom page.date ----- {{ page.date | postWrittenDate }}
+	// example: 01 august 2026 / used for vgs release dates
+	eleventyConfig.addFilter("postWrittenDate", (dateObj) => {
+		let dateString = DateTime.fromJSDate(dateObj)
+			.setZone("utc")
+			.toFormat("dd MMMM yyyy")
+			.toLowerCase();
+		return dateString;
+	});
+
+	// custom page.date ----- {{ page.date | postFullDate }}
+	// example: 2026-05-01 / used for calendar
+	eleventyConfig.addFilter("postFullDate", (dateObj) => {
+		let dateString = DateTime.fromJSDate(dateObj)
+			.setZone("utc")
+			.toFormat("yyyy-MM-dd");
+		return dateString;
+	});
+
 	// {{ string "yyyy-mm-dd" | string2date }}
 	// returns dd.mon.yy
 	eleventyConfig.addFilter("string2date", (dateString) => {
@@ -76,13 +106,17 @@ module.exports = function (eleventyConfig) {
 		return day + " " + month + " " + year;
 	});
 
-	// custom page.date ----- {{ page.date | postFullDate }}
-	// example: 2026-05-01
-	eleventyConfig.addFilter("postFullDate", (dateObj) => {
-		let dateString = DateTime.fromJSDate(dateObj)
-			.setZone("utc")
-			.toFormat("yyyy-MM-dd");
-		return dateString;
+	// gamelog but ordered by published date
+	eleventyConfig.addCollection("gamelogPublishedDate", (collectionApi) => {
+		let gamelogs = collectionApi
+			.getFilteredByTags("gamelog")
+			.sort((item1, item2) => {
+				return (
+					item1.data.published_date.getTime() -
+					item2.data.published_date.getTime()
+				);
+			});
+		return gamelogs;
 	});
 
 	// Generates a list of unique tags found ONLY inside the journal folder
@@ -111,16 +145,13 @@ module.exports = function (eleventyConfig) {
 	// Generates a list of unique tags found ONLY inside the vgs/games folder
 	eleventyConfig.addCollection("gamelogTags", (collectionApi) => {
 		const gamelog = collectionApi.getFilteredByGlob("vgs/games/**");
-		const tagSet = new Set(); // its a set so there's no repetition in the tags
-		// for each item in that folder
+		const tagSet = new Set();
 		gamelog.forEach((item) => {
 			if (item.data.tags) {
-				//checks if it's an array
 				const tags = Array.isArray(item.data.tags)
 					? item.data.tags
 					: [item.data.tags];
 				tags.forEach((tag) => {
-					// i don't want these ones
 					if (!["all", "gamelog"].includes(tag)) {
 						tagSet.add(tag);
 					}

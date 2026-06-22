@@ -1,0 +1,37 @@
+---
+title: bastion
+tags: ["action","finished"]
+release_date: 2011-07-20
+published_date: 2023-05-01
+dev: supergiant games
+genre: action rpg
+status: finished
+---
+
+{% layout "vgs/index.html" %}
+
+{% block box2 %}
+<h3>sections</h3>
+<ul>
+  <li><a href="#logs">logs</a></li>
+  <li><a href="#screenshots">screenshots</a></li>
+</ul>
+{% endblock %}
+
+
+{% block main %}
+<section id="logs">
+  <h3>logs</h3>
+  <p>lovely game me thinks. very pretty and nice soundtrack</p>
+</section>
+
+<hr>
+
+<section id="screenshots">
+  <h3>screenshots</h3>
+  <img src="{{ page.fileSlug | gamepics }}bastion1.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bastion2.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bastion3.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bastion4.jpg" width="100%">
+</section>
+{% endblock %}

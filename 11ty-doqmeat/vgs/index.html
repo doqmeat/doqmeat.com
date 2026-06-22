@@ -13,10 +13,10 @@ title: gaming log
   </ul>
   <h2>game logs</h2>
   <!-- make js filter for tags -->
-  <div id="filters">{% for tag in collections.gamelogTags %}<button>{{ tag }}</button> {% endfor %}</div>
+  <div id="filters"><button onclick="toggleGames('all')">all</button> {% for tag in collections.gamelogTags %}<button onclick="toggleGames('{{ tag }}')">{{ tag | unSlugify }}</button> {% endfor %}</div>
   <div class="wrapper-vgs">
     {% for game in collections.gamelog %}
-    <a title='tagged with: {% for tag in game.data.tags %} {% unless tag == "gamelog" %}{{ tag }}{% unless forloop.last == true %},{% endunless %}{% endunless %}{% endfor %}' class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
+    <a title='status: {{ game.data.status }}' class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
         <title>{{ game.data.title }}</title>
       </span></a>
     {% endfor %}

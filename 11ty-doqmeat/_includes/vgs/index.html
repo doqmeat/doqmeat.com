@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <meta name="description" content="des video game journal">
-  <link rel="icon" type="image/x-icon" href="/_files/assets/pix/silly-cat.gif">
+  <link rel="icon" type="image/x-icon" href="/_files/assets/pix/gayming.gif">
   <link rel="stylesheet" href="/_files/pages/vgs/body.css">
 </head>
 
@@ -19,17 +19,15 @@
       {% assign allTags = tags | join: "," %}
       <aside id="box1">
         {% if allTags contains "gamelog" %}
-
         <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/cover.jpg" alt="{{ page.title }} game cover" class="gamelog_cover">
         <!-- make full date filter -->
-        <p><b>release date:</b> {{ release_date | postDate }}</p>
+        <p><b>release date:</b> {{ release_date | postWrittenDate }}</p>
         <p><b>dev:</b> {{ dev }} </p>
         <p><b>genre:</b> {{ genre }}</p>
         <p><b>status:</b> {{ status }}</p>
         {% else %}
         <p>sharing my thoughts, progress, and screenshots of video games i've played! spoilers will be hidden!</p>
-        <p>here's my backloggd acc for a comprehensive list of everything i've played / completed / want to play / etc!</p>
-        <p>to get a sense of what stuff i like, here's 10 video games i could play forever</p>
+        <p>here's my <a href="https://backloggd.com/u/doqmeat/" target="_blank">backloggd</a> for a comprehensive list of everything i've played / completed / want to play / etc!</p>
         {% endif %}
         {% block box1 %}
         {% endblock %}
@@ -41,10 +39,10 @@
 
           {% block box2 %}
           {% unless allTags contains "gamelog" %}
-          <h3>highlighted entries</h3>
+          <h3>latest logs</h3>
           <ul>
-            <li>latest added:</li>
-            <li>latest updated:</li>
+            <li>page added: {% for log in collections.gamelogPublishedDate reversed %}<a href="{{ log.url }}">{{ log.data.title }}</a>{% break %}{% endfor %}</li>
+            <li>page updated: {% for log in collections.gamelog reversed %}<a href="{{ log.url }}">{{ log.data.title }}</a>{% break %}{% endfor %}</li>
           </ul>
           {% endunless %}
           {% endblock %}
@@ -53,7 +51,7 @@
         <aside id="box3">
 
           {% if page.url == "/vgs/" %}
-          <h3>add me! <button>?</button></h3>
+          <h3>add me! <button onclick="togglePopUp()">?</button></h3>
           <ul>
             <li>steam: <a href="https://steamcommunity.com/id/lakiitu/" target="_blank">lakiitu</a></li>
             <li>pretendo: 5427-1045-8513</li>
@@ -85,11 +83,16 @@
       {% endblock %}
     </main>
     <!-- end wrapper div -->
+    <dialog id="gaming-socials">
+      <p>if you are adding me to any of these, please send me a message or an <a href="{{ siteInfo.email }}">e-mail</a> to me know who you are! i don't accept requests from people i don't know :p</p>
+      <button onclick="togglePopUp()">got it!</button>
+    </dialog>
   </div>
 
   <script src="https://unpkg.com/@popperjs/core@2"></script>
   <script src="https://unpkg.com/tippy.js@6"></script>
   <script src="/_files/js/tooltip.js"></script>
+  <script src="/_files/pages/vgs/index.js"></script>
 </body>
 
 </html>
