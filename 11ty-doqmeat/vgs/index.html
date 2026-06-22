@@ -1,18 +1,22 @@
 ---
 title: gaming log
-tags: subpage
 ---
 {% layout "vgs/index.html" %}
 
 {% block main %}
 <section>
-  <h2>video game entries</h2>
-  <h3>filters</h3>
+  <h2>subpages</h2>
+  <ul>
+    {% for p in collections.vgs-subpage %}
+    <li><a href="{{ p.url }}">{{ p.data.title }}</a></li>
+    {% endfor %}
+  </ul>
+  <h2>game logs</h2>
   <!-- make js filter for tags -->
   <div id="filters">{% for tag in collections.gamelogTags %}<button>{{ tag }}</button> {% endfor %}</div>
   <div class="wrapper-vgs">
     {% for game in collections.gamelog %}
-    <a class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
+    <a title='tagged with: {% for tag in game.data.tags %} {% unless tag == "gamelog" %}{{ tag }}{% unless forloop.last == true %},{% endunless %}{% endunless %}{% endfor %}' class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
         <title>{{ game.data.title }}</title>
       </span></a>
     {% endfor %}

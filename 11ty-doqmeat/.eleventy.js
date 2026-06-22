@@ -1,7 +1,7 @@
 const { DateTime } = require("luxon");
 
 module.exports = function (eleventyConfig) {
-	eleventyConfig.setServerPassthroughCopyBehavior("copy");
+	// eleventyConfig.setServerPassthroughCopyBehavior("copy");
 
 	// Forces Eleventy to merge tag arrays together instead of overwriting them
 	// eleventyConfig.setDataDeepMerge(true);

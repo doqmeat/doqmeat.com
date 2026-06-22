@@ -18,18 +18,18 @@
       <h1>{{ title }}</h1>
       {% assign allTags = tags | join: "," %}
       <aside id="box1">
-        {% if allTags contains "subpage" %}
-        <p>sharing my thoughts, progress, and screenshots of video games i've played! spoilers will be hidden!</p>
-        <p>here's my backloggd acc for a comprehensive list of everything i've played / completed / want to play / etc!</p>
-        <p>to get a sense of what stuff i like, here's 10 video games i could play forever</p>
-        {% endif %}
         {% if allTags contains "gamelog" %}
 
         <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/cover.jpg" alt="{{ page.title }} game cover" class="gamelog_cover">
-        <p><b>release date:</b> {{ release_date | string2fulldate }}</p>
+        <!-- make full date filter -->
+        <p><b>release date:</b> {{ release_date | postDate }}</p>
         <p><b>dev:</b> {{ dev }} </p>
         <p><b>genre:</b> {{ genre }}</p>
         <p><b>status:</b> {{ status }}</p>
+        {% else %}
+        <p>sharing my thoughts, progress, and screenshots of video games i've played! spoilers will be hidden!</p>
+        <p>here's my backloggd acc for a comprehensive list of everything i've played / completed / want to play / etc!</p>
+        <p>to get a sense of what stuff i like, here's 10 video games i could play forever</p>
         {% endif %}
         {% block box1 %}
         {% endblock %}
@@ -38,21 +38,21 @@
         <img id="pagedoll" src="/_files/pages/vgs/drifter-pagedoll.png" alt="">
         <hr id="l-1">
         <aside id="box2">
-          {% if allTags contains "subpage" %}
+
+          {% block box2 %}
+          {% unless allTags contains "gamelog" %}
           <h3>highlighted entries</h3>
           <ul>
             <li>latest added:</li>
             <li>latest updated:</li>
           </ul>
-          {% endif %}
-
-          {% block box2 %}
+          {% endunless %}
           {% endblock %}
         </aside>
         <hr id="l-2">
         <aside id="box3">
 
-          {% if allTags contains "subpage" %}
+          {% if page.url == "/vgs/" %}
           <h3>add me! <button>?</button></h3>
           <ul>
             <li>steam: <a href="https://steamcommunity.com/id/lakiitu/" target="_blank">lakiitu</a></li>
@@ -60,10 +60,8 @@
             <li>PSN: doqmeat</li>
             <li>switch: 3336-0516-7511</li>
           </ul>
-          {% endif %}
-
-          {% if allTags contains "gamelog" %}
-          <p>page published on: <b>{{ published_date | string2date }}</b></p>
+          {% else %}
+          <p>page published on: <b>{{ published_date | postDate }}</b></p>
           <p>last updated on: <b>{{ page.date | postDate }}</b></p>
           {% endif %}
 
@@ -72,10 +70,10 @@
         </aside>
         <hr id="l-3">
         <aside id="box4">
-          {% if allTags contains "subpage" %}
+          {% if page.url == "/vgs/" %}
           <p>last updated on: <b>{{ page.date | postDate }}</b></p>
           {% endif %}
-          <p>go back to {% if title != "gaming log" %} <a href="/vgs">vgs index</a> / {% endif %}<a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
+          <p>go back to {% if page.url != "/vgs/" %} <a href="/vgs">vgs index</a> / {% endif %}<a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
           <p>scroll to <a href="#">top</a></p>
         </aside>
       </wrapper>

@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npx @11ty/eleventy && npx pagefind --site _site",
-    "incr": "npx @11ty/eleventy --serve --incremental",
+    "incr": "npx @11ty/eleventy --serve --incremental && start https://localhost:8080",
     "local": "npx live-server _site/"
   },
   "type": "commonjs"
