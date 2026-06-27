@@ -21,7 +21,7 @@
         {% if allTags contains "gamelog" %}
         <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/cover.jpg" alt="{{ page.title }} game cover" class="gamelog_cover">
         <!-- make full date filter -->
-        <p><b>release date:</b> {{ release_date | postWrittenDate }}</p>
+        <p><b>release date:</b> {{ release_date | date:"%d %B %Y","UCT" | downcase }}</p>
         <p><b>dev:</b> {{ dev }} </p>
         <p><b>genre:</b> {{ genre }}</p>
         <p><b>status:</b> {{ status }}</p>
@@ -38,13 +38,11 @@
         <aside id="box2">
 
           {% block box2 %}
-          {% unless allTags contains "gamelog" %}
           <h3>latest logs</h3>
           <ul>
-            <li>page added: {% for log in collections.gamelogPublishedDate reversed %}<a href="{{ log.url }}">{{ log.data.title }}</a>{% break %}{% endfor %}</li>
-            <li>page updated: {% for log in collections.gamelog reversed %}<a href="{{ log.url }}">{{ log.data.title }}</a>{% break %}{% endfor %}</li>
+            <li>added: {% for log in collections.gamelogPublishedDate reversed %}<a title="added on {{ log.date | shortDate }}" href="{{ log.url }}">{{ log.data.title }}</a>{% if forloop.index0 == 1 %}{% break %}{% else %}, {% endif %}{% endfor %}</li>
+            <li>updated: {% for log in collections.gamelog reversed %}<a title="updated on {{ log.date | shortDate }}" href="{{ log.url }}">{{ log.data.title }}</a>{% if forloop.index0 == 3 %}{% break %}{% else %}, {% endif %}{% endfor %}</li>
           </ul>
-          {% endunless %}
           {% endblock %}
         </aside>
         <hr id="l-2">
@@ -59,8 +57,8 @@
             <li>switch: 3336-0516-7511</li>
           </ul>
           {% else %}
-          <p>page published on: <b>{{ published_date | postDate }}</b></p>
-          <p>last updated on: <b>{{ page.date | postDate }}</b></p>
+          <p>page published on: <b>{{ published_date | shortDate }}</b></p>
+          <p>last updated on: <b>{{ page.date | shortDate }}</b></p>
           {% endif %}
 
           {% block box3 %}
@@ -69,10 +67,9 @@
         <hr id="l-3">
         <aside id="box4">
           {% if page.url == "/vgs/" %}
-          <p>last updated on: <b>{{ page.date | postDate }}</b></p>
+          <p>last updated on: <b>{{ page.date | shortDate }}</b></p>
           {% endif %}
-          <p>go back to {% if page.url != "/vgs/" %} <a href="/vgs">vgs index</a> / {% endif %}<a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
-          <p>scroll to <a href="#">top</a></p>
+          <p>go back to {% if page.url != "/vgs/" %} <a title="scroll to the top of the page!" href="#">top</a> / <a href="/vgs">vgs</a> / {% endif %}<a href="/">home</a> / <a href="/sitemap">sitemap</a></p>
         </aside>
       </wrapper>
     </sidebar>
@@ -84,7 +81,7 @@
     </main>
     <!-- end wrapper div -->
     <dialog id="gaming-socials">
-      <p>if you are adding me to any of these, please send me a message or an <a href="{{ siteInfo.email }}">e-mail</a> to me know who you are! i don't accept requests from people i don't know :p</p>
+      <p>if you are adding me to any of these, please send me a message or an <a href="mailto:{{ siteInfo.email }}">e-mail</a> to me know who you are! i don't accept requests from people i don't know :p</p>
       <button onclick="togglePopUp()">got it!</button>
     </dialog>
   </div>

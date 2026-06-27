@@ -31,7 +31,7 @@ working on it on 11ty since 23.may.26
         <li><a href="/journal/archive.html">archive</a></li>
         <li><a href="/journal/credit.html">credits</a></li>
       </ul>
-      <p>last updated on: <b>{{ page.date | postDate }}</b></p>
+      <p>last updated on: <b>{{ page.date | shortDate }}</b></p>
       <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
     </nav>
 
@@ -41,7 +41,7 @@ working on it on 11ty since 23.may.26
       {% if title != "journal" %} <h2 {% if allTags contains "log" %}class="log" {% endif %}>{{ title }}{{ dynamic_title }}</h2> {% endif %}
       <!-- if log post -->
       {% if allTags contains "log" %}
-      <p class="date">「{{ page.date | postDate }}」</p>
+      <p class="date">「{{ page.date | shortDate }}」</p>
       {% endif %}
 
       {% block pad %}

@@ -17,15 +17,6 @@ module.exports = function (eleventyConfig) {
 	// shortcode for year {% year %} --- not using it rn
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
-	// custom page.date ----- {{ page.date | postDate }}
-	// example: 01.may.26
-	eleventyConfig.addFilter("postDate", (dateObj) => {
-		let dateString = DateTime.fromJSDate(dateObj)
-			.setZone("utc")
-			.toFormat("dd.MMM.yy");
-		return dateString.toLowerCase();
-	});
-
 	// girl i am tired
 	eleventyConfig.addFilter("gamepics", (dir) => {
 		return "/_files/pages/vgs/games/" + dir + "/";
@@ -34,25 +25,25 @@ module.exports = function (eleventyConfig) {
 	// unslug a string {{ string-yup | unSlugify }}
 	// output: "string yup"
 	eleventyConfig.addFilter("unSlugify", (str) => {
-		return str.replace("-", " ");
+		const regexPattern = /[-_]/g;
+		return str.replace(regexPattern, " ");
 	});
 
-	// custom page.date ----- {{ page.date | postWrittenDate }}
-	// example: 01 august 2026 / used for vgs release dates
-	eleventyConfig.addFilter("postWrittenDate", (dateObj) => {
+	// custom page.date ----- {{ page.date | shortDate }}
+	// example: 01.may.26
+	eleventyConfig.addFilter("shortDate", (dateObj) => {
 		let dateString = DateTime.fromJSDate(dateObj)
 			.setZone("utc")
-			.toFormat("dd MMMM yyyy")
-			.toLowerCase();
-		return dateString;
+			.toFormat("dd.MMM.yy");
+		return dateString.toLowerCase();
 	});
 
-	// custom page.date ----- {{ page.date | postFullDate }}
-	// example: 2026-05-01 / used for calendar
-	eleventyConfig.addFilter("postFullDate", (dateObj) => {
+	// custom page.date ----- {{ page.date | shortISODate }}
+	// example: 260501
+	eleventyConfig.addFilter("shortISODate", (dateObj) => {
 		let dateString = DateTime.fromJSDate(dateObj)
 			.setZone("utc")
-			.toFormat("yyyy-MM-dd");
+			.toFormat("dd.MM.yy");
 		return dateString;
 	});
 

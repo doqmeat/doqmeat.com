@@ -14,7 +14,7 @@ const calendarConfig = {
 // this replaces events
 const logPosts = {
   {% for log in collections.log %}
-    "{{ log.date | postFullDate }}": {
+    "{{ log.date | date:"%Y-%m-%d","UCT" }}": {
       "text": "{{ log.data.title | escape }}",
       "url": "{{ log.url }}"
     }{% unless forloop.last %},{% endunless %}

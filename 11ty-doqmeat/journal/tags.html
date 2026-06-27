@@ -19,7 +19,7 @@
 <ul>
   {% for e in collections[tag] reversed %}
   <li>
-    <span class="date">{{ e.data.page.date | postDate }}</span> -
+    <span class="date">{{ e.data.page.date | shortDate }}</span> -
     <a href="{{ e.url }}">{{ e.data.title }}</a>
   </li>
   {% endfor %}

@@ -9,7 +9,7 @@ tags: ["subpage"]
 <p>there is a total of {{ log_size }} written logs in this journal!</p>
 <ul>
   {% for e in collections.log reversed %}
-  <li><a title="tagged with{% for tag in e.data.tags %}{% unless tag == 'log' %} #{{ tag }}{% endunless %}{% endfor %}" href="{{ e.url }}">{{ e.data.title }}</a> - <span class="date">{{ e.data.page.date | postDate }}</span>
+  <li><a title="tagged with{% for tag in e.data.tags %}{% unless tag == 'log' %} #{{ tag }}{% endunless %}{% endfor %}" href="{{ e.url }}">{{ e.data.title }}</a> - <span class="date">{{ e.data.page.date | shortDate }}</span>
   </li>
   {% endfor %}
 </ul>
