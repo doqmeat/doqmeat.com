@@ -13,4 +13,4 @@ jobs:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'doqmeat.com'
           nekoweb-username: 'doqmeat'
-          directory: 'doqmeat'
+          directory: '11ty-doqmeat/_site'
