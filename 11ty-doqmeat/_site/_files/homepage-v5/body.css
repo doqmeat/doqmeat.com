@@ -1,0 +1,212 @@
+@import url(../css/style.css);
+
+:root {
+	--fonts: gaegu-r, ms pgothic, arial;
+	--accent: rgb(102, 109, 206);
+}
+
+html {
+	scrollbar-color: var(--accent) white;
+}
+
+body {
+	background-color: rgb(245, 244, 240);
+	margin: 50px 0;
+	color: #4f3b24;
+	font-size: 18px;
+	word-spacing: 3px;
+	font-family: var(--fonts);
+}
+
+h1,
+h2,
+h3 {
+	font-family:
+		dot gothic,
+		var(--gothic);
+	letter-spacing: 2px;
+}
+
+a {
+	color: var(--accent);
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+main {
+	display: flow-root;
+	& > p {
+		margin: auto 15px;
+	}
+	h3.title {
+		border-bottom: 2px dashed var(--accent);
+		line-height: 5px;
+		text-shadow:
+			1px 1px 0px white,
+			-1px -1px 0px white;
+	}
+}
+
+wrapper {
+	margin: auto;
+	display: block;
+	max-width: 700px;
+}
+
+#music {
+	margin: 20px;
+	float: right;
+	border-radius: 10px;
+	font-family: gaegu-r, arial;
+	padding: 0;
+	background: radial-gradient(
+		circle,
+		rgba(185, 60, 66, 1) 72%,
+		rgba(125, 34, 35, 1) 100%
+	);
+	border: 2px solid #1e1d1f;
+	border-top: 1px;
+	border-right: 0px;
+	color: rgb(52, 52, 53);
+	rotate: 5deg;
+	font-size: 21px;
+	line-height: 31px;
+	width: 200px;
+	height: 400px;
+	box-shadow: -5px 5px 1px 1px #32283c38;
+	transition-duration: 0.5s;
+
+	/* this is from the style css */
+	a[href^="https://"]::after {
+		content: none;
+	}
+
+	#album {
+		text-align: center;
+
+		img {
+			width: 70%;
+		}
+	}
+
+	#song,
+	#artist,
+	#albumname {
+		text-align: left;
+	}
+
+	.icons {
+		font-size: 10px;
+		text-shadow:
+			1px 1px 2px #ffffff,
+			-1px -1px 2px #ffffff;
+	}
+
+	.circle {
+		pointer-events: none;
+		position: absolute;
+		border-radius: 50%;
+		border: 1px solid rgb(67, 58, 98);
+	}
+
+	.small {
+		width: 50px;
+		height: 50px;
+		top: 288px;
+		left: 72px;
+	}
+
+	.big {
+		top: 252px;
+		left: 37px;
+		width: 121px;
+		height: 121px;
+	}
+
+	#screen {
+		background: rgb(39, 36, 36);
+		text-align: center;
+		margin: auto;
+		margin-top: 10px;
+		width: 180px;
+		height: 230px;
+		border: 20px solid black;
+		border-top-width: 30px;
+		border-bottom-width: 30px;
+		border-radius: 20px;
+		font-size: 12px;
+		line-height: 16px;
+		overflow: auto;
+		color: white;
+		padding: 5px;
+		scrollbar-color: rgb(39, 36, 36) rgb(39, 36, 36);
+		word-break: keep-all;
+
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+
+	.up,
+	.down {
+		text-align: center;
+	}
+
+	.left,
+	.right,
+	.up,
+	.down {
+		font-size: 12px;
+	}
+	.left {
+		padding-right: 21px;
+	}
+
+	.right {
+		padding-left: 21px;
+	}
+
+	.play-pause {
+		text-align: center;
+		line-height: 15px;
+	}
+
+	.play {
+		vertical-align: text-bottom;
+		font-size: 14px;
+		color: rgb(165, 163, 163);
+	}
+
+	.pause {
+		font-size: 10px;
+		color: rgb(165, 163, 163);
+	}
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	&:hover {
+		rotate: 0deg;
+		box-shadow: none;
+	}
+}
+
+footer.box {
+	border: none;
+	text-align: center;
+	grid-area: footer;
+}
+
+@media screen and (max-width: 700px) {
+	#music {
+		display: none;
+	}
+	body {
+		margin: 0;
+		padding: 20px;
+	}
+}

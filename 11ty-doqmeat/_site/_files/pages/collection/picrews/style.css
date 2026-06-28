@@ -1,0 +1,107 @@
+* {
+	box-sizing: border-box;
+	transition-duration: 0.2s;
+}
+
+:root {
+	--font: silkscreen, ms pgothic, arial;
+}
+
+body {
+	font-family: var(--font);
+	color: rgb(71, 71, 71);
+	background: #000000;
+	font-size: 0.9rem;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #ff76b1;
+}
+
+h1 {
+	color: #d593ff;
+}
+
+header {
+	color: #00c3fe;
+}
+
+header,
+footer {
+	max-width: 700px;
+	margin: auto;
+	text-align: center;
+	a:hover {
+		animation-name: rainbowLink;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-fill-mode: none;
+		animation-timing-function: ease-in-out;
+	}
+}
+
+footer {
+	color: #f9d56a;
+}
+
+/* palette for the rainbow https://coolors.co/ff76b1-fea17f-f9d56a-8ef77b-00c3fe-d593ff  */
+@keyframes rainbowLink {
+	0% {
+		color: #d593ff;
+	}
+	20% {
+		color: #00c3fe;
+	}
+	40% {
+		color: #8ef77b;
+	}
+	60% {
+		color: #f9d56a;
+	}
+	80% {
+		color: #fea17f;
+	}
+	100% {
+		color: #ff76b1;
+	}
+}
+
+main {
+	padding: 10px 0;
+	margin: auto;
+	max-width: 1450px;
+	text-align: center;
+	pic {
+		position: relative;
+		display: inline-block;
+		margin: 10px;
+		width: 200px;
+		height: 200px;
+		border-radius: 10px;
+		overflow: hidden;
+		a {
+			color: black;
+		}
+		img {
+			height: 100%;
+		}
+		p {
+			background: #000000cd;
+			color: #8ef77b;
+			opacity: 0;
+			margin: 0;
+			overflow: auto;
+			display: block;
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0px;
+			padding: 10px;
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+}

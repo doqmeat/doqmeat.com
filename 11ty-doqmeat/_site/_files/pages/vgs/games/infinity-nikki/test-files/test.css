@@ -1,0 +1,29 @@
+* {
+	position: relative;
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+main {
+	margin: 20px;
+	border: 1px solid gold;
+	max-width: 1400px;
+	height: 600px;
+	overflow: auto;
+}
+
+/* need to change this to flex */
+#album {
+	column-count: 3;
+	div.pic {
+		width: 70%;
+		border: 1px dashed red;
+
+		img {
+			width: 100%;
+		}
+	}
+}

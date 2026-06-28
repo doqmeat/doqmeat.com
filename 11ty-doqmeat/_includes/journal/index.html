@@ -23,7 +23,7 @@ working on it on 11ty since 23.may.26
     <div id="header"></div>
 
     <nav>
-      <h1>des' notepad</h1>
+      <span class="title">des' notepad</span>
       <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
       <h3>navigation</h3>
       <ul>
@@ -38,7 +38,7 @@ working on it on 11ty since 23.may.26
     <!-- variable for string of tags -->
     {% assign allTags = tags | join: "," %}
     <main>
-      {% if title != "journal" %} <h2 {% if allTags contains "log" %}class="log" {% endif %}>{{ title }}{{ dynamic_title }}</h2> {% endif %}
+      {% if title != "journal" %} <h1 {% if allTags contains "log" %}class="log" {% endif %}>{{ title }}{{ dynamic_title }}</h1> {% endif %}
       <!-- if log post -->
       {% if allTags contains "log" %}
       <p class="date">「{{ page.date | shortDate }}」</p>

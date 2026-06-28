@@ -1,0 +1,41 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: gaegu-l, arial;
+	background-color: blanchedalmond;
+	margin: 0px;
+}
+
+li {
+	list-style-position: inside;
+}
+
+header,
+main,
+nav,
+footer {
+	margin: auto;
+	border: 1px solid pink;
+	max-width: 850px;
+}
+
+main {
+	padding: 10px;
+	font-size: 1.2rem;
+}
+
+#pic-wrapper {
+	column-count: 3;
+	column-gap: 10px;
+	img {
+		display: inline-block;
+		width: 100%;
+		height: auto;
+	}
+}
+
+footer {
+	text-align: center;
+}

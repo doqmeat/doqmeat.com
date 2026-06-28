@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>journal -  to be seen</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <span class="title">des' notepad</span>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/archive.html">archive</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
+      </ul>
+      <p>last updated on: <b>25.jul.25</b></p>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <!-- variable for string of tags -->
+    
+    <main>
+       <h1 class="log" >to be seen</h1> 
+      <!-- if log post -->
+      
+      <p class="date">「25.jul.25」</p>
+      
+
+      
+<p>i think it's kinda funny how i have this website that is being Seen by A Lot of people and yet... i'm also a little bit scared of being seen at the same time. today as i was punching out, my manager told me that i am pretty invisible to her. she didn't even tell me that as a bad thing or anything. she just said that when i'm on the clock she barely notices i'm there. and you know, it's not like i'm fucking around doing whatever. i am doing my job. i thought the comment was kinda funny, we both laughed after all. but it still made me think about me and this shyness and anxiousness that i feel just from existing and being ... me.</p>
+<p>it's not debilitating but it's something that i feel frequently. i'm always working through it, always pushing myself to do something that is quite simple and yet kinda scary to me. <img src="/_files/assets/pix/catscared.gif" alt="scared cat emoji"> despite feeling this way at times, i know i'm making progress and i'm happy for that. i would have missed out on so many things if i had kept being in my comfort zone. so that's something i always tend to remember whenever i feel a little bit scared to be out there.</p>
+<p>despite what my manager said, i know i'm not really invisible. my friends see me and notice me. my peers see me and notice my work. and a lot of people on the internet see what i project into these HTML files and talk to me about what that means to them.</p>
+<p>i'm scared of being seen and yet it makes me incredibly happy when someone notices me. i hope eventually i won't be <small>so</small> scared of silly things like this. that would be so awesome. here's to being weird and off-putting. <img src="/_files/assets/pix/tora-cat-holdingsunflower.gif"> thank you to the people that have noticed me.</p>
+
+
+      
+      <!-- here goes next and prev logic -->
+      
+      <hr>
+      <p><small>any replies or comments are welcome on my <a href="mailto:meow@doqmeat.com" target="_blank">e-mail</a> or <button onclick="chatMemo()">chatbox</button> :3</small></p>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+      <h2>status.cafe</h2>
+      <!-- start sw-rss-feed code -->
+      <script type="text/javascript" src="/_files/pages/journal/status-cafe-feed.js"></script>
+      <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+      <span style="font-size:small;">feed powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    <div class="innermemo">
+      
+      <!-- status list for journal logs -->
+      
+      <h3>right now...</h3>
+      <ul>
+        
+        <li class="feeling">tired</li>
+        
+        <li class="listening">the fan and crickets and coquies and whatever creature is outside</li>
+        
+        
+        <li class="playing">infinity nikki</li>
+        <li class="tags"> #<a href="/journal/tags/life">life</a></li>
+      </ul>
+      <!-- log end if -->
+      
+
+      
+      
+    </div>
+  </aside>
+
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <h3>logs & events calendar</h3>
+      <div id="calendar-nav"></div>
+      <div id="calendar"></div>
+    </div>
+  </aside>
+
+  <aside id="memo5" class="draggable">
+    <button onclick="chatMemo()" style="float:right;margin:20px;">close chat memo</button>
+    <div class="innermemo">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="/journal/dynamic-calendar.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

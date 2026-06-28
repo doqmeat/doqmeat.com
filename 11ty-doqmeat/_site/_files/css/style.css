@@ -1,0 +1,56 @@
+@import url(../fonts/stylesheet.css);
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+:root {
+	--fonts: ms pgothic, arial;
+	--tt-bg: rgb(59, 50, 50);
+	--tt-color: rgb(233, 201, 162);
+}
+
+html {
+	min-height: 100vh;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: rgb(22, 29, 77);
+	font-size: 16px;
+	font-family: var(--fonts);
+	min-height: 100vh;
+}
+
+a[href^="https://"]::after {
+	content: " ↗";
+	font-size: 0.83rem;
+	vertical-align: text-top;
+}
+
+code {
+	font-family: mononoki, consolas, monospace;
+	font-size: 0.8em;
+	background: rgb(49, 53, 82);
+	color: rgb(244, 244, 244);
+}
+
+summary,
+button {
+	cursor: help;
+}
+
+.tippy-box[data-theme~="des"] {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+	background-color: var(--tt-bg);
+	color: var(--tt-color);
+}
+
+.tippy-box[data-theme~="des"][data-placement^="top"] > .tippy-arrow::before,
+.tippy-box[data-theme~="des"][data-placement^="bottom"] > .tippy-arrow::before {
+	color: var(--tt-bg);
+}

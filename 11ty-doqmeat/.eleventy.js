@@ -12,7 +12,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
 	// default date format
-	eleventyConfig.addGlobalData("date", "git Last Modified");
+	eleventyConfig.addGlobalData("date", "Last Modified");
 
 	// shortcode for year {% year %} --- not using it rn
 	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);

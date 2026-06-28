@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+
+	<channel>
+		<title>doqmeat</title>
+		<link>https://doqmeat.com</link>
+		<description>des' digital journal updates</description>
+		<language>en-us</language>
+		<webMaster>meow@doqmeat.com (des)</webMaster>
+		<atom:link href="https://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+
+
+    <item>
+			<title>28.jun.26 - doqmeat.com is being reworked!</title>
+			<link>https://doqmeat.com/</link>
+			<description>
+i am currently reworking doqmeat.com, there are some pages currently available which i will be linking on the index page but it will take me a while to finish the whole thing. fun fact: this site has 4k files! in the meantime, i&#39;ve set up an archive over at &lt;a href=&#34;https://archive.doqmeat.com&#34;&gt;archive.doqmeat.com&lt;/a&gt; in case anyone needs it!</description>
+			<guid isPermaLink="false">28.06.26</guid>
+			<pubDate>Sun, 28 Jun 2026 12:00:00 -0400</pubDate>
+		</item>
+
+
+	</channel>
+</rss>

@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>journal -  computer architecture is kicking my ass</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <span class="title">des' notepad</span>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/archive.html">archive</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
+      </ul>
+      <p>last updated on: <b>20.feb.26</b></p>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <!-- variable for string of tags -->
+    
+    <main>
+       <h1 class="log" >computer architecture is kicking my ass</h1> 
+      <!-- if log post -->
+      
+      <p class="date">「20.feb.26」</p>
+      
+
+      
+<p>i am at the point of my degree where im learning some bullshit! but the bullshit is interesting and fun. even if it isn't related to my future career goals (not like i can get picky...) i still find it cool to be learning this stuff in computer science. right now i'm currently taking <b>computer architecture</b> and that class has been such a humbling experience so far. from signed binary numbers, two's compliment floating points, to basically learning assembly and having to recreate that code but in C... i am getting a little bit scared. but i really do feel like i have a Decent understanding of everything. i just need to practice more.</p>
+<p>there was a quiz 1 week ago where we had to translate assembly code into C from my uni's server. from the 20 minutes that lasted the quiz, i think i used 16 minutes fighting for my life with the long and complicated password they give us and with the <code>scp</code>, <i>secure copy protocol</i> command on the terminal. i got a 0 at the end of the day because last minute i figured out that the reason it wasn't finding the path on my local computer was because i was forgetting to include the <code>~/[rest of my path]</code> in my path FUCK EVERYTHING! i'm not really that upset though. it's just really funny some of the things that happen to me.</p>
+<p>yesterday i took my first exam for architecture and if i get a fucking <i>D</i> on that exam it will be a miracle. the i felt like i studied plenty for that exam but i am still missing some key stuff. honestly the only part i'm pissed about was a part that was worth 30pts and it was something that the professor had discussed for like a minute in class and that's it. i left it blank because i simply just had NO idea what to even write on that part. but the rest was on me, at least mostly. i did the rest of the exam but thinking about it afterwards, there was a couple of stuff i did wrong. funnily enough, the part where i was the most confident in was the translating assembly code to C part. but i think this is because i read that chapter of the book EXTENSIVELY... but i didn't do that for the rest of the topics. i learned my lesson here. oh look at that, the grade just got uploaded and i indeed got a 60/100 <img src="/!g/pix/annoyed-cat.gif" alt="annoyed cat emoji"> and you know what? i did get the assembly to C part fucking perfect.</p>
+<p>overall, i can achieve anything i want forever. despite this being my lowest grade ever in a uni exam, i don't really feel like i have no clue of what's going on in the class. so i think i just have to lock in a little bit more in the next coming days and try my best.</p>
+<p>because of my classes requiring me to use my uni's server to do some of my coding work, now i've been having the experience of coding directly from the terminal using <code>nano</code>... it's honestly okay. but i miss highlighting stuff with my mouse, search and replace, etc. i'm probably gonna start learning how to use <code>vim</code> in the future but not now. i'm happy with my buddy nano. i'm kind of writing this bc i'm procrastinating working on the <b>architecture</b> data lab which i just read though the instructions and it looks so complicated... <img src="/!g/pix/catscared.gif" alt="scared cat emoji"> i've been very busy studying + working on web commissions on my free time, though i always try to have a little time (like the time i'm spending right now) to work on my stuff or play something with my friends during the week. always remember to have a little fun in life. i will now work on the data labb.</p>
+
+
+      
+      <!-- here goes next and prev logic -->
+      
+      <hr>
+      <p><small>any replies or comments are welcome on my <a href="mailto:meow@doqmeat.com" target="_blank">e-mail</a> or <button onclick="chatMemo()">chatbox</button> :3</small></p>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+      <h2>status.cafe</h2>
+      <!-- start sw-rss-feed code -->
+      <script type="text/javascript" src="/_files/pages/journal/status-cafe-feed.js"></script>
+      <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+      <span style="font-size:small;">feed powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    <div class="innermemo">
+      
+      <!-- status list for journal logs -->
+      
+      <h3>right now...</h3>
+      <ul>
+        
+        <li class="feeling">kind of ass but it's because i have a stuffed nose</li>
+        
+        <li class="listening"><a title='youtube link' href='https://youtu.be/5LrLW-T7D-w?si=dxnQtGMqbi2T5shB' target='_blank'>미행 (그림자: Shadow)</a> by f(x)</li>
+        
+        
+        <li class="tags"> #<a href="/journal/tags/uni">uni</a></li>
+      </ul>
+      <!-- log end if -->
+      
+
+      
+      
+    </div>
+  </aside>
+
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <h3>logs & events calendar</h3>
+      <div id="calendar-nav"></div>
+      <div id="calendar"></div>
+    </div>
+  </aside>
+
+  <aside id="memo5" class="draggable">
+    <button onclick="chatMemo()" style="float:right;margin:20px;">close chat memo</button>
+    <div class="innermemo">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="/journal/dynamic-calendar.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,699 @@
+@import url(../../css/style.css);
+
+* {
+	cursor: url(assets/cursor-pencil-1.png), auto !important;
+}
+
+:root {
+	--fonts: gaegu-r, arial;
+	--r-border: 2px solid #e4a79d;
+	--text: #13223e;
+	--cream: #fffcdc;
+	--red: #c9525e;
+	--l-red: #e4a79d;
+	--l-blue: #c7d9f8;
+	--green: #d0ff8d;
+	--green-d: #71891a;
+	--yellow: #ffe481;
+	--blue: #586d94;
+}
+
+html {
+	scrollbar-color: var(--l-red) var(--l-blue);
+}
+
+body {
+	background: url("../../assets/bg/patterbg.gif");
+	background-attachment: fixed;
+	word-wrap: break-word;
+	font-size: 16px;
+	line-height: 23px;
+	font-family: var(--fonts);
+	color: var(--text);
+	padding: 0px;
+	margin: 0px;
+	scrollbar-color: #e4a79d #fffcdc;
+}
+
+code {
+	font-family: mononoki, monospace;
+}
+
+hr {
+	height: 100px;
+	border: 0px;
+	background: url("../../assets/div/cat.gif");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+}
+
+li::marker {
+	color: var(--blue);
+}
+
+ul.logs {
+	a {
+		transition-duration: 0.5s;
+		background: transparent;
+		text-decoration: underline;
+		text-decoration-color: var(--yellow);
+		text-decoration-thickness: 3px;
+		text-decoration-skip-ink: none;
+		text-underline-offset: 0px;
+		&:hover {
+			text-decoration-thickness: 10px;
+			text-underline-offset: -10px;
+		}
+	}
+
+	li {
+		margin: 5px;
+		&::marker {
+			content: "~ ";
+		}
+	}
+	li.newest {
+		&::before {
+			content: url(../../assets/pix/new1.gif);
+		}
+	}
+}
+
+ol {
+	list-style-type: decimal-leading-zero;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	line-height: normal;
+	padding: 5px;
+	font-family: morningtea, gaegu-l, var(--fonts);
+}
+
+h1 {
+	font-size: 1.5em;
+	color: var(--blue);
+}
+
+h2 {
+	color: var(--red);
+}
+
+h3 {
+	color: var(--green-d);
+}
+
+i {
+	background: #c7d9f8;
+}
+
+b,
+strong {
+	background: #e4a79d;
+}
+
+mark {
+	background: #ffe481;
+
+	b {
+		background: transparent;
+	}
+}
+
+ul,
+ol {
+	margin: 0px;
+	padding: 0px 5px 5px 35px;
+}
+
+a {
+	color: black;
+	background: #d0ff8d;
+	font-weight: normal;
+	text-decoration: none;
+	&:hover {
+		color: black;
+		text-decoration: underline;
+		cursor: help;
+	}
+	&:focus {
+		text-decoration: wavy underline;
+	}
+	&:active {
+		outline: 0;
+	}
+}
+
+p {
+	margin: 0 0 10px 0;
+	padding: 5px;
+}
+
+p img {
+	vertical-align: middle;
+}
+
+blockquote {
+	font-family:
+		YU gothic UI,
+		var(--fonts);
+	font-size: 16px;
+	font-style: italic;
+	border-left: 2px solid #e4a79d;
+	padding-left: 5px;
+}
+
+::selection {
+	color: black;
+	background-color: #a6ddff;
+}
+
+summary {
+	cursor: help;
+	padding: 0px 5px;
+}
+
+figure {
+	position: relative;
+	border: 2px dashed #c9525e;
+	background: rgba(255, 255, 255, 0.699);
+	border-radius: 5px;
+	width: auto;
+	text-align: center;
+	margin: 20px 10px 20px 10px;
+	padding: 10px;
+	&.f-fix {
+		overflow: auto;
+		::after {
+			content: none;
+		}
+	}
+	img {
+		max-width: 100%;
+	}
+	::after {
+		content: url("../../assets/deco/washitape4.png");
+		opacity: 0.9;
+		position: absolute;
+		top: -20px;
+		left: 30%;
+	}
+}
+
+figcaption {
+	padding: 10px;
+	font-size: 15px;
+	line-height: normal;
+}
+
+/* mods */
+img.left {
+	float: left;
+	margin: 10px;
+}
+img.right {
+	float: right;
+	margin: 10px;
+}
+a.top {
+	color: #e14226;
+	background: transparent;
+}
+
+p.date {
+	display: block;
+	width: fit-content;
+	margin: 5px;
+	margin-left: auto;
+	padding: 0px;
+	background: var(--yellow);
+	text-align: right;
+}
+
+h2.log {
+	margin-bottom: 0;
+}
+
+.spoiler {
+	background-color: black;
+	color: black;
+}
+
+.spoiler:hover {
+	background-color: transparent;
+}
+
+.transp {
+	background: transparent;
+}
+
+.centered {
+	text-align: center;
+}
+
+@media only screen and (max-width: 599px) {
+	.hide {
+		display: none;
+	}
+}
+
+#notepad {
+	margin: 20px auto 20px 40px;
+	position: relative;
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"margin body";
+	grid-template-rows: 50px auto;
+	grid-template-columns: 1fr 3.5fr;
+	max-width: 700px;
+	min-height: 90vh;
+	border: 1px solid var(--red);
+	border-radius: 10px 10px 5px 5px;
+	background: url("../../assets/bg/yellobg.png");
+	overflow: hidden;
+}
+
+#header {
+	position: relative;
+	grid-area: header;
+	background: #c9525e;
+	border-bottom: 2px solid var(--l-red);
+}
+
+nav {
+	text-align: center;
+	font-family: var(--fonts);
+	padding: 5px;
+	grid-area: margin;
+	border-right: 2px solid var(--l-red);
+	overflow: auto;
+	scroll-behavior: smooth;
+	scrollbar-color: #c7d9f8 #e4a79d;
+
+	ul {
+		margin: 20px 0;
+		text-align: left;
+	}
+
+	span.title {
+		font-weight: bold;
+		padding: 5px;
+		font-family: morningtea, gaegu-l, var(--fonts);
+		display: block;
+		margin: 5px;
+		color: var(--blue);
+		font-size: 1.5em;
+	}
+
+	h3 {
+		margin: 0;
+	}
+}
+
+main {
+	font-size: 1.15em;
+	padding: 10px;
+	grid-area: body;
+	margin-left: 5px;
+	border-left: 2px solid var(--l-red);
+}
+
+#tag {
+	position: fixed;
+	top: -6px;
+	left: 4px;
+	transition-duration: 0.5s;
+	a {
+		background: transparent;
+		font-weight: bold;
+		font-size: 12px;
+		position: absolute;
+		bottom: 40px;
+		left: 40%;
+		transform: translate(-50%, -50%);
+		-ms-transform: translate(-50%, -50%);
+		rotate: -90deg;
+	}
+	&:hover {
+		top: 0px;
+	}
+}
+
+#pen {
+	pointer-events: none;
+	position: fixed;
+	bottom: -90px;
+	left: 710px;
+	width: 100px;
+}
+
+button {
+	background: #c7d9f8;
+	border: none;
+	border-radius: 10px;
+	font-family: inherit;
+	font-size: inherit;
+}
+
+button:hover {
+	background: #e4a79d;
+}
+
+.memo {
+	cursor: move;
+	position: fixed;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px 1px var(--l-red);
+	scrollbar-color: #e4a79d #fffcdc;
+	a {
+		color: var(--blue);
+		background: transparent;
+		text-decoration: underline;
+		&:hover {
+			text-decoration: line-through;
+		}
+	}
+	h2 {
+		text-align: center;
+		margin: 5px;
+		font-size: 16px;
+	}
+	h3 {
+		margin: 5px;
+		font-size: 13px;
+	}
+}
+
+#memo1 {
+	text-align: center;
+	top: 5%;
+	right: 2%;
+	line-height: 18px;
+	font-size: 15px;
+	width: 350px;
+	height: 250px;
+	background: url("assets/memo-cloud.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	.innermemo {
+		overflow: hidden;
+		padding: 10px;
+		margin: 10px 60px 0px 60px;
+		height: 200px;
+	}
+}
+
+#memo2 {
+	text-align: left;
+	top: 38%;
+	right: 27%;
+	rotate: 3deg;
+	width: 300px;
+	height: 400px;
+	background: url("assets/memo-green.jpg");
+	background-size: cover;
+	.innermemo {
+		padding: 10px;
+		height: 50%;
+		margin-top: calc(400px / 2.3);
+
+		h3 {
+			text-align: center;
+		}
+
+		::before {
+			display: inline-block;
+			background: var(--blue);
+			margin-right: 1ch;
+			padding: 0 0.5ch;
+			border-radius: 10px;
+			color: var(--cream);
+		}
+
+		.listening::before {
+			content: "listening";
+		}
+
+		.feeling::before {
+			content: "mood";
+		}
+
+		.playing::before {
+			content: "playing";
+		}
+
+		.reading::before {
+			content: "reading";
+		}
+
+		.watching::before {
+			content: "watching";
+		}
+
+		.tags::before {
+			content: "tags";
+		}
+	}
+}
+
+#memo3 {
+	top: 7%;
+	right: 28%;
+	rotate: -5deg;
+	padding: 40px 20px;
+	width: 290px;
+	height: 190px;
+	background: url("assets/memo-picnic.jpg");
+	background-size: cover;
+	.innermemo {
+		margin-top: 5px;
+		font-family: spirit, var(--fonts);
+		font-size: 13px;
+		height: 100px;
+	}
+	p {
+		margin: 0;
+		&.source {
+			text-align: right;
+		}
+	}
+}
+
+#memo4 {
+	top: 45%;
+	right: 3%;
+	rotate: -5deg;
+	width: 300px;
+	height: 310px;
+	background: url("assets/memo-cube.jpg");
+	background-position: top center;
+	background-size: cover;
+	overflow: visible;
+	.innermemo {
+		overflow: visible;
+		margin: 70px 40px 0px 20px;
+		height: 220px;
+		padding-right: 20px;
+	}
+	a[href*="https"]::after {
+		content: none;
+	}
+}
+
+#memo5 {
+	/* default memo class */
+	cursor: move;
+	position: fixed;
+	overflow: hidden;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px 1px var(--l-red);
+	scrollbar-color: #e4a79d #fffcdc;
+	/* memo 5 */
+	display: none;
+	text-align: left;
+	top: 10%;
+	right: 34%;
+	rotate: 7deg;
+	width: 400px;
+	height: 500px;
+	background: url("assets/memo-diner.jpg");
+	background-size: cover;
+	.innermemo {
+		background: #fbe6efc5;
+		overflow: hidden;
+		padding: 10px;
+		height: 48%;
+		margin-top: calc(500px / 1.9);
+	}
+}
+
+.innermemo {
+	overflow: auto;
+}
+
+/* calendar */
+
+/* Calendar Navigation */
+#calendar-nav {
+	background: #efb2d5;
+	color: var(--text);
+	font-weight: bold;
+	text-transform: lowercase;
+	letter-spacing: 1px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0;
+}
+
+#calendar-nav button {
+	background: transparent;
+	border: 0;
+	color: inherit;
+	font-size: 8pt;
+	cursor: pointer;
+}
+
+#calendar-title {
+	text-align: center;
+	display: block;
+	width: 100%;
+}
+
+/* Calendar Grid */
+#calendar {
+	display: grid;
+	width: 100%;
+	grid-template-columns: repeat(7, 1fr);
+}
+
+/* Weekday Header */
+.weekday {
+	background: #f6eebb;
+	font-weight: bold;
+	padding: 0px;
+	text-transform: uppercase;
+	margin-bottom: 2px;
+	text-align: center;
+}
+
+/* Day Cells */
+.day {
+	display: flex;
+	border-radius: 4px;
+	background: #d3e7b2;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 1px;
+	text-align: center;
+
+	&.log {
+		background: #ecb268;
+	}
+
+	a {
+		color: var(--text);
+		font-weight: bold;
+		background: transparent;
+		border-radius: 4px;
+	}
+}
+
+.current-day {
+	font-weight: bold;
+	background: var(--yellow);
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.adjacent-month {
+	opacity: 0.4;
+}
+
+.number-container {
+	display: flex;
+	align-items: center;
+	gap: 0px;
+}
+
+/* Event Icons and Tooltips */
+.event-icon {
+	cursor: help;
+	position: relative;
+	color: inherit;
+	text-decoration: none;
+}
+
+.tooltip {
+	display: none;
+	position: absolute;
+	left: 20px;
+	background: var(--text);
+	color: #fff;
+	padding: 5px 10px;
+	white-space: nowrap;
+	border-radius: 3px;
+	z-index: 9999;
+}
+
+.event-icon:hover .tooltip {
+	display: block;
+}
+
+@media only screen and (max-width: 1300px) {
+	#pen {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	#notepad {
+		grid-template-columns: 25% 75%;
+	}
+}
+
+@media only screen and (max-width: 500px) {
+	aside {
+		display: none;
+	}
+
+	#notepad {
+		display: block;
+		margin-top: 0;
+	}
+
+	#header {
+		height: 40px;
+	}
+
+	main {
+		height: 600px;
+		border: none;
+		margin: 0px 3%;
+		padding: 10px;
+	}
+
+	details {
+		display: inline-block;
+	}
+
+	.hide {
+		display: none;
+	}
+
+	#journal {
+		border: 6px double var(--l-red);
+	}
+}

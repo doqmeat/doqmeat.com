@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>journal -  a lot happening</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <span class="title">des' notepad</span>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/archive.html">archive</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
+      </ul>
+      <p>last updated on: <b>01.mar.25</b></p>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <!-- variable for string of tags -->
+    
+    <main>
+       <h1 class="log" >a lot happening</h1> 
+      <!-- if log post -->
+      
+      <p class="date">「01.mar.25」</p>
+      
+
+      
+<p>this week felt like a finals week. been studying my ass off for 2 exams that i literally JUST got out of. my <i>intro to programming</i> exam was on thursday and my <i>calculus</i> exam was on friday. i am pretty confident in both of them!</p>
+<p>though i definitely poured so so many hours of study into that calculus one. actually just the class in general. i am so lucky that my current professor has videos of his classes available online because he just goes so fucking fast!!! i am always catching up with his classes at the end of the end. which i guess it kinda pays off since its just more practice that i get. but i just like making sure that i'm actually understanding what's going on. math is something that i literally have to give my everything to in order to get a good grade. but i guess it makes sense as someone who still does math with their fingers. my basic math levels are lowkey on the floor. and basically my only strength is that i just like to study. i am hoping for a B in my calculus test.</p>
+<p>at least my intro to programming exam is in the bag though. i might have some stuff wrong. mostly related to what the RAM does compared to the CPU. girl i forgor. my javascript knowledge really is carrying this class as well. i sometimes put notes on my notebook asking <q>hmm i wonder if there's something like this in JS</q>. i really like the class as well my professor. her vibes are great. and she's super friendly too. i got a 9.5/10 on a quiz and she drew a smiley face on my paper :) i feel like i'm in elementary school.</p>
+<p>talking about computer science, there has been some activities being held by compsci students for people who wanted to learn how to use text editors, the terminal, and git. i went to these mostly because, despite knowing a good amount of most of these things, i'm pretty new to all of this. there's always a good chance i might learn something new. and i did! during the git activity on friday, i used my personal acc for the activity since that's the one i have connected to git. and one of the guys put on screen my whole ass github profile which led me to be outed as someone who already knew (almost) everything they were covering. <img src="/_files/assets/pix/catsob.gif" alt=""> i guess i was a bit embarrassed because of how silly profile looks. the guy was kinda surprised anyway and basically <q>oh you already know all of this stuff, neat!</q>. when that was over, another guy came up to me saying that he got super curious about my profile and visited it along side my site saying that it was really cool <img src="/_files/assets/pix/catsurprised.gif" alt=""> they were all very nice and talked to me for a bit which i appreciate. i really gotta get braver at talking to people. after that, it made me realize all of the opportunities that growing this site has led me to.</p>
+<p>oh good lord it's march. anyways. i'm still working on version 5 of the homepage. i've been having so much fun coding it. it's pretty much done but i wanna release it once i finish the CSS media queries so it looks ok on smaller screens and mobile. i really can't wait to finish it!!! do expect it pretty soon :3 i hope everyone is doing well.</p>
+
+
+      
+      <!-- here goes next and prev logic -->
+      
+      <hr>
+      <p><small>any replies or comments are welcome on my <a href="mailto:meow@doqmeat.com" target="_blank">e-mail</a> or <button onclick="chatMemo()">chatbox</button> :3</small></p>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+      <h2>status.cafe</h2>
+      <!-- start sw-rss-feed code -->
+      <script type="text/javascript" src="/_files/pages/journal/status-cafe-feed.js"></script>
+      <script type="text/javascript" src="//feed.surfing-waves.com/js/rss-feed.js"></script>
+      <span style="font-size:small;">feed powered by <a href="https://surfing-waves.com" rel="noopener" target="_blank">Surfing Waves</a></span>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    <div class="innermemo">
+      
+      <!-- status list for journal logs -->
+      
+      <h3>right now...</h3>
+      <ul>
+        
+        <li class="feeling">sleepy</li>
+        
+        
+        
+        <li class="tags"> #<a href="/journal/tags/life">life</a> #<a href="/journal/tags/uni">uni</a></li>
+      </ul>
+      <!-- log end if -->
+      
+
+      
+      
+    </div>
+  </aside>
+
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <h3>logs & events calendar</h3>
+      <div id="calendar-nav"></div>
+      <div id="calendar"></div>
+    </div>
+  </aside>
+
+  <aside id="memo5" class="draggable">
+    <button onclick="chatMemo()" style="float:right;margin:20px;">close chat memo</button>
+    <div class="innermemo">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="/journal/dynamic-calendar.js"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+  <script src="https://unpkg.com/tippy.js@6"></script>
+  <script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

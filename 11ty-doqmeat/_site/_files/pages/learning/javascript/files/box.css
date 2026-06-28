@@ -1,0 +1,41 @@
+#box {
+	box-sizing: content-box;
+	margin: 5px;
+}
+
+.dark {
+	background: black;
+	color: white;
+	font-family: morningtea;
+	font-size: 13px;
+}
+
+.dark p {
+	margin: 2px;
+}
+
+.dark a {
+	text-decoration: wavy underline;
+	color: lightblue;
+}
+
+.dark mark {
+	background: lightyellow;
+	padding: 2px;
+}
+
+.cat{
+	background: url(/!g/bg/tora-thinkin.gif);
+	background-size:80px;
+	color:black;
+	font-family:newpenji;
+}
+
+.cat a {
+	font-weight: bold;
+color:black;
+}
+
+.cat mark{
+	background:lightgreen;
+}
