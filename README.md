@@ -1,12 +1,14 @@
 # doqmeat.com
 hello! this is the repository of my personal website, [doqmeat.com](https://doqmeat.com/)
 
-11.apr.26: currently working on using 11ty! it will take me a while though...
+currently working on using 11ty! it will take me a while to get eveything here
+
 ## about site
-- i upload my code using deploy to neocities and git following miss moss's [deploy2nekoweb](https://deploy.nekoweb.org/)
-- tested on firefox, on a desktop. and on chrome and mobile sometimes
+- deployed to **nekoweb** using [deploy2nekoweb](https://deploy.nekoweb.org/)
+- tested on firefox, on a desktop. and on chrome and mobile sometimes.
 - hosted on [nekoweb](https://nekoweb.org), previosly hosted on [neocities](https://neocities.org)
-- this massive site is all hand-coded HTML #freak
+- this massive site is all hand-coded HTML #freak 
+- well now [11ty](https://11ty.dev) helps out with this though.
 
 ## source code
 - i learned how to code HTML and CSS by looking at other people's code and <b>playing around with it offline</b>, you're welcome to do that with mine! i also learned by going to sites like w3schools, using HTML templates, and the likes.
