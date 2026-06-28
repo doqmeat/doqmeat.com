@@ -24,11 +24,8 @@ fetch(url)
 		// insert thingies into HTML
 
 		songL.href = trackLink;
-		songL.setAttribute(
-			"title",
-			"listen to " + trackName + " by " + artist + " on last.fm",
-		);
-		// songL.title ="listen to " + trackName + " by " + artist + " on last.fm";
+
+		songL.title = "listen to " + trackName + " by " + artist + " on last.fm";
 
 		// in case there's no album info
 		if (!albumName) {

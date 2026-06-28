@@ -16,6 +16,8 @@
 	--green-d: #71891a;
 	--yellow: #ffe481;
 	--blue: #586d94;
+	--tt-bg: var(--cream);
+	--tt-color: var(--blue);
 }
 
 html {
@@ -250,6 +252,16 @@ h2.log {
 
 .transp {
 	background: transparent;
+}
+
+.left {
+	margin: 10px;
+	float: left;
+}
+
+.right {
+	margin: 10px;
+	float: right;
 }
 
 .centered {
@@ -503,8 +515,119 @@ button:hover {
 		height: 220px;
 		padding-right: 20px;
 	}
+
 	a[href*="https"]::after {
 		content: none;
+	}
+
+	#calendar-nav {
+		background: #efb2d5;
+		color: var(--text);
+		font-weight: bold;
+		text-transform: lowercase;
+		letter-spacing: 1px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0;
+	}
+
+	#calendar-nav button {
+		background: transparent;
+		border: 0;
+		color: inherit;
+		font-size: 8pt;
+		cursor: pointer;
+	}
+
+	#calendar-title {
+		text-align: center;
+		display: block;
+		width: 100%;
+	}
+
+	/* Calendar Grid */
+	#calendar {
+		display: grid;
+		width: 100%;
+		grid-template-columns: repeat(7, 1fr);
+	}
+
+	/* Weekday Header */
+	.weekday {
+		background: #f6eebb;
+		font-weight: bold;
+		padding: 0px;
+		text-transform: uppercase;
+		margin-bottom: 2px;
+		text-align: center;
+	}
+
+	/* Day Cells */
+	.day {
+		display: flex;
+		border-radius: 4px;
+		background: #d3e7b2;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		box-sizing: border-box;
+		padding: 0;
+		margin: 1px;
+		text-align: center;
+
+		&.log {
+			background: #ecb268;
+		}
+
+		a {
+			color: var(--text);
+			font-weight: bold;
+			background: transparent;
+			border-radius: 4px;
+		}
+	}
+
+	.current-day {
+		font-weight: bold;
+		background: var(--yellow);
+		border: 1px solid #ccc;
+		border-radius: 4px;
+		box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+	}
+
+	.adjacent-month {
+		opacity: 0.4;
+	}
+
+	.number-container {
+		display: flex;
+		align-items: center;
+		gap: 0px;
+	}
+
+	/* Event Icons and Tooltips */
+	.event-icon {
+		cursor: help;
+		position: relative;
+		color: inherit;
+		text-decoration: none;
+	}
+
+	.tooltip {
+		display: none;
+		position: absolute;
+		left: 20px;
+		background: var(--text);
+		color: #fff;
+		padding: 5px 10px;
+		white-space: nowrap;
+		border-radius: 3px;
+		z-index: 9999;
+	}
+
+	.event-icon:hover .tooltip {
+		display: block;
 	}
 }
 
@@ -541,119 +664,11 @@ button:hover {
 
 /* calendar */
 
-/* Calendar Navigation */
-#calendar-nav {
-	background: #efb2d5;
-	color: var(--text);
-	font-weight: bold;
-	text-transform: lowercase;
-	letter-spacing: 1px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 0;
-}
-
-#calendar-nav button {
-	background: transparent;
-	border: 0;
-	color: inherit;
-	font-size: 8pt;
-	cursor: pointer;
-}
-
-#calendar-title {
-	text-align: center;
-	display: block;
-	width: 100%;
-}
-
-/* Calendar Grid */
-#calendar {
-	display: grid;
-	width: 100%;
-	grid-template-columns: repeat(7, 1fr);
-}
-
-/* Weekday Header */
-.weekday {
-	background: #f6eebb;
-	font-weight: bold;
-	padding: 0px;
-	text-transform: uppercase;
-	margin-bottom: 2px;
-	text-align: center;
-}
-
-/* Day Cells */
-.day {
-	display: flex;
-	border-radius: 4px;
-	background: #d3e7b2;
-	justify-content: center;
-	align-items: center;
-	position: relative;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 1px;
-	text-align: center;
-
-	&.log {
-		background: #ecb268;
-	}
-
-	a {
-		color: var(--text);
-		font-weight: bold;
-		background: transparent;
-		border-radius: 4px;
-	}
-}
-
-.current-day {
-	font-weight: bold;
-	background: var(--yellow);
-	border: 1px solid #ccc;
-	border-radius: 4px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-}
-
-.adjacent-month {
-	opacity: 0.4;
-}
-
-.number-container {
-	display: flex;
-	align-items: center;
-	gap: 0px;
-}
-
-/* Event Icons and Tooltips */
-.event-icon {
-	cursor: help;
-	position: relative;
-	color: inherit;
-	text-decoration: none;
-}
-
-.tooltip {
-	display: none;
-	position: absolute;
-	left: 20px;
-	background: var(--text);
-	color: #fff;
-	padding: 5px 10px;
-	white-space: nowrap;
-	border-radius: 3px;
-	z-index: 9999;
-}
-
-.event-icon:hover .tooltip {
-	display: block;
-}
+/* stuff */
 
 @media only screen and (max-width: 1300px) {
-	#pen {
+	#pen,
+	aside {
 		display: none;
 	}
 }
@@ -664,14 +679,10 @@ button:hover {
 	}
 }
 
-@media only screen and (max-width: 500px) {
-	aside {
-		display: none;
-	}
-
+@media only screen and (max-width: 600px) {
 	#notepad {
 		display: block;
-		margin-top: 0;
+		margin: 0;
 	}
 
 	#header {
@@ -679,9 +690,7 @@ button:hover {
 	}
 
 	main {
-		height: 600px;
-		border: none;
-		margin: 0px 3%;
+		border: 0;
 		padding: 10px;
 	}
 

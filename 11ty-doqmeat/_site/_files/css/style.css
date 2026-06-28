@@ -30,6 +30,10 @@ a[href^="https://"]::after {
 	vertical-align: text-top;
 }
 
+a.no-arrow[href^="https://"]::after {
+	content: none;
+}
+
 code {
 	font-family: mononoki, consolas, monospace;
 	font-size: 0.8em;
@@ -40,6 +44,15 @@ code {
 summary,
 button {
 	cursor: help;
+}
+
+details {
+	padding: 10px;
+	border: 1px solid var(--tt-bg);
+}
+
+details > p {
+	margin: 10px;
 }
 
 .tippy-box[data-theme~="des"] {

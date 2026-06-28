@@ -1,8 +1,10 @@
 @import url(../css/style.css);
 
 :root {
-	--fonts: gaegu-r, ms pgothic, arial;
-	--accent: rgb(102, 109, 206);
+	--fonts: dot gothic, ms pgothic, arial;
+	--accent: rgb(85, 72, 183);
+	--tt-bg: rgb(85, 72, 183);
+	--tt-color: rgb(255, 255, 255);
 }
 
 html {
@@ -13,7 +15,7 @@ body {
 	background-color: rgb(245, 244, 240);
 	margin: 50px 0;
 	color: #4f3b24;
-	font-size: 18px;
+	font-size: 15px;
 	word-spacing: 3px;
 	font-family: var(--fonts);
 }
@@ -37,7 +39,7 @@ a {
 main {
 	display: flow-root;
 	& > p {
-		margin: auto 15px;
+		margin: 15px;
 	}
 	h3.title {
 		border-bottom: 2px dashed var(--accent);
@@ -58,12 +60,12 @@ wrapper {
 	margin: 20px;
 	float: right;
 	border-radius: 10px;
-	font-family: gaegu-r, arial;
+	font-family: arial;
 	padding: 0;
 	background: radial-gradient(
 		circle,
-		rgba(185, 60, 66, 1) 72%,
-		rgba(125, 34, 35, 1) 100%
+		rgb(187, 77, 82) 72%,
+		rgb(149, 57, 59) 100%
 	);
 	border: 2px solid #1e1d1f;
 	border-top: 1px;
@@ -125,6 +127,8 @@ wrapper {
 	}
 
 	#screen {
+		font-family: var(--fonts);
+		font-size: 0.5em;
 		background: rgb(39, 36, 36);
 		text-align: center;
 		margin: auto;
@@ -135,7 +139,6 @@ wrapper {
 		border-top-width: 30px;
 		border-bottom-width: 30px;
 		border-radius: 20px;
-		font-size: 12px;
 		line-height: 16px;
 		overflow: auto;
 		color: white;
@@ -176,12 +179,12 @@ wrapper {
 	.play {
 		vertical-align: text-bottom;
 		font-size: 14px;
-		color: rgb(165, 163, 163);
+		color: rgb(221, 221, 221);
 	}
 
 	.pause {
 		font-size: 10px;
-		color: rgb(165, 163, 163);
+		color: rgb(221, 221, 221);
 	}
 
 	a {

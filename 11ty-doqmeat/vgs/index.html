@@ -16,7 +16,7 @@ title: gaming log
   <div id="filters"><button onclick="toggleGames('all')">all</button> {% for tag in collections.gamelogTags %}<button onclick="toggleGames('{{ tag }}')">{{ tag | unSlugify }}</button> {% endfor %}</div>
   <div class="wrapper-vgs">
     {% for game in collections.gamelog %}
-    <a title='status: {{ game.data.status }}' class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
+    <a class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
         <title>{{ game.data.title }}</title>
       </span></a>
     {% endfor %}

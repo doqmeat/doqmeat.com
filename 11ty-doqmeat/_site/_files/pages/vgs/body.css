@@ -9,6 +9,8 @@
 	--grape: #824972;
 	--purple: #504b6c;
 	--green: #6db58d;
+	--tt-bg: var(--cyan);
+	--tt-color: var(--pink);
 }
 
 html {
@@ -17,7 +19,7 @@ html {
 
 body {
 	font-family: nintendo-ds-bios, var(--fonts);
-	font-size: 20px;
+	font-size: 21px;
 	color: var(--text);
 	background: var(--purple);
 	background-image: url(/_files/pages/vgs/altie.png);
@@ -131,11 +133,11 @@ main {
 		height: 120px;
 		margin: -10px 0;
 		border: 0px;
-		border-right: 1px dashed var(--text);
+		border-right: 4px solid var(--text);
 	}
 	section > hr {
 		border: 0;
-		border-top: 4px solid var(--text);
+		border-top: 1px dashed var(--text);
 	}
 	section {
 		background: var(--bg);

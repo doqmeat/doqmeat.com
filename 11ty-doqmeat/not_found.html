@@ -1,8 +1,14 @@
 ---
 layout: homepage.html
 ---
-<wrapper>
-  <h1>404 page not found</h1>
-  <p>the page you're looking for is probably in the <a href="https://archive.doqmeat.com">archive</a></p>
-  <p><a href="/">home</a></p>
-</wrapper>
+<h1>404 ~ page not found</h1>
+<p>site is being reworked! there are many broken and missing links :p</p>
+<p>do you want to go to <a class="link" href="">archive.doqmeat.com</a> instead?</p>
+<p>if not, you can always go <a href="/">home</a></p>
+<script>
+  const doqmeat = document.querySelector("a.link");
+  const path = window.location.pathname;
+
+  doqmeat.href = "https://archive.doqmeat.com" + path;
+  doqmeat.innerText += path;
+</script>

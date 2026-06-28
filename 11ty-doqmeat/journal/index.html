@@ -8,7 +8,7 @@ tags: ["subpage"]
 <h1>welcome to my notepad!</h1>
 <p>i kinda write about anything that might be interesting here. small life lessons, updates and such. <small>i don't proof read what i write in these most of the time.</small></p>
 <ul class="logs">
-  {% for e in collections.log reversed %}{% if forloop.index0 <= 6 %} <li {% if forloop.index0==0 %}class="newest" {% endif %}><a title="tagged with{% for tag in e.data.tags %}{% unless tag == 'log' %} #{{ tag }}{% endunless %}{% endfor %}" href="{{ e.url }}">{{ e.data.title }}</a> - <span class="date">{{ e.data.page.date | shortDate }}</span></li>{% endif %}{% endfor %}
+  {% for e in collections.log reversed %}{% if forloop.index0 <= 6 %} <li {% if forloop.index0==0 %}class="newest" {% endif %}><a href="{{ e.url }}">{{ e.data.title }}</a> - <span class="date">{{ e.data.page.date | shortDate }}</span></li>{% endif %}{% endfor %}
 </ul>
 <p>visit the <a href="archive.html">archive</a> to view all logs.</p>
 {% endblock %}

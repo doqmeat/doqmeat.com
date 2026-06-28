@@ -99,6 +99,11 @@ const logPosts = {
     "2026-02-20": {
       "text": "computer architecture is kicking my ass",
       "url": "/journal/260220.html"
+    },
+  
+    "2026-06-28": {
+      "text": "re-touching everything around here + life update",
+      "url": "/journal/260628.html"
     }
   
 };
@@ -207,8 +212,6 @@ function buildCalendar(date) {
 				iconSpan.title = event.text;
 			}
 
-			const tooltip = createElement("span", event.text, "tooltip");
-      iconSpan.appendChild(tooltip);
       container.appendChild(iconSpan);
 		} else {
 			container.textContent = day;

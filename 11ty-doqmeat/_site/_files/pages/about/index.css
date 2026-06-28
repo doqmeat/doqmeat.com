@@ -11,6 +11,10 @@
 	--tt-color: var(--whiteish);
 }
 
+html {
+	scrollbar-color: #15197b #fe88fa;
+}
+
 body {
 	background: url(iyueni.png) no-repeat center center fixed;
 	-webkit-background-size: cover;
@@ -25,7 +29,10 @@ body {
 	margin: 0px;
 	font-family: nintendo-ds-bios;
 	color: black;
-	scrollbar-color: #15197b #fe88fa;
+}
+
+a[href^="https://"]::after {
+	content: none;
 }
 
 li {

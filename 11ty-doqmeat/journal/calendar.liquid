@@ -125,8 +125,6 @@ function buildCalendar(date) {
 				iconSpan.title = event.text;
 			}
 
-			const tooltip = createElement("span", event.text, "tooltip");
-      iconSpan.appendChild(tooltip);
       container.appendChild(iconSpan);
 		} else {
 			container.textContent = day;
