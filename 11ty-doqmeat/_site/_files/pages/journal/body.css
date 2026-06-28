@@ -16,8 +16,8 @@
 	--green-d: #71891a;
 	--yellow: #ffe481;
 	--blue: #586d94;
-	--tt-bg: var(--cream);
-	--tt-color: var(--blue);
+	--tt-bg: var(--blue);
+	--tt-color: var(--cream);
 }
 
 html {
@@ -57,6 +57,7 @@ li::marker {
 ul.logs {
 	a {
 		transition-duration: 0.5s;
+		font-weight: inherit;
 		background: transparent;
 		text-decoration: underline;
 		text-decoration-color: var(--yellow);
@@ -75,7 +76,9 @@ ul.logs {
 			content: "~ ";
 		}
 	}
+
 	li.newest {
+		font-weight: bold;
 		&::before {
 			content: url(../../assets/pix/new1.gif);
 		}
@@ -205,12 +208,12 @@ figure {
 		top: -20px;
 		left: 30%;
 	}
-}
 
-figcaption {
-	padding: 10px;
-	font-size: 15px;
-	line-height: normal;
+	figcaption {
+		padding: 10px;
+		font-size: 15px;
+		line-height: normal;
+	}
 }
 
 /* mods */
@@ -266,12 +269,6 @@ h2.log {
 
 .centered {
 	text-align: center;
-}
-
-@media only screen and (max-width: 599px) {
-	.hide {
-		display: none;
-	}
 }
 
 #notepad {
@@ -662,10 +659,6 @@ button:hover {
 	overflow: auto;
 }
 
-/* calendar */
-
-/* stuff */
-
 @media only screen and (max-width: 1300px) {
 	#pen,
 	aside {
@@ -680,6 +673,9 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
+	.hide {
+		display: none;
+	}
 	#notepad {
 		display: block;
 		margin: 0;

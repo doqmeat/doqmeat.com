@@ -253,4 +253,3 @@ function changeMonth(offset) {
 
 // Show the calendar on page load
 buildCalendar(currentDate);
-console.table(logPosts);

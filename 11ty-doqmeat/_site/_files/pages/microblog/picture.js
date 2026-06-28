@@ -8,7 +8,7 @@ function showPic(img, text, caption) {
 	link.href = img;
 	pic.src = img;
 	pic.alt = text;
-	picTitle.innerText = img;
+	picTitle.innerText = img.replace("/_files/pages/microblog/imgs/", "");
 	picCaption.innerText = caption;
 	picDiv.style.display = "block";
 }
