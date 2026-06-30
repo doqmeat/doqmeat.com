@@ -1,17 +1,1 @@
-/doqmeat/.vscode/
-
-# work in progress
-/doqmeat/garden/
-/doqmeat/shrines/steve/
-/doqmeat/vgs/games/infinity-nikki/test-files/
-/doqmeat/photobook-rework/
-/doqmeat/music/playlists/
-/doqmeat/notebook-rework/
-/doqmeat/journal-rework/
-/doqmeat/joined/
-
-# template pages
-/doqmeat/info/test.html
-
-# 11ty
 /11ty-doqmeat/_files/

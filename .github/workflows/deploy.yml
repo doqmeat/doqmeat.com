@@ -6,11 +6,11 @@ jobs:
     name: deploy2nekoweb
     steps:
       - name: Checkout
-        uses: actions/checkout@v4        
+        uses: actions/checkout@v4
       - name: deploy2nekoweb
         uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-domain: 'doqmeat.com'
           nekoweb-username: 'doqmeat'
-          directory: '11ty-doqmeat/_site'
+          directory: '_site'

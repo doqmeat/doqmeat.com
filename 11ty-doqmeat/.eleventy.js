@@ -152,4 +152,10 @@ module.exports = function (eleventyConfig) {
 		// returns an array from the tags collected
 		return Array.from(tagSet);
 	});
+
+	return {
+		dir: {
+			output: "../_site",
+		},
+	};
 };
