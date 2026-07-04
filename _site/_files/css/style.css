@@ -27,7 +27,7 @@ body {
 a[href^="https://"]::after {
 	content: " ↗";
 	font-size: 0.83rem;
-	vertical-align: text-top;
+	vertical-align: super;
 }
 
 a.no-arrow[href^="https://"]::after {

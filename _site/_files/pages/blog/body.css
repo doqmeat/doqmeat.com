@@ -1,6 +1,4 @@
-* {
-	box-sizing: border-box;
-}
+@import url(../../css/style.css);
 
 html {
 	scrollbar-color: var(--acc) var(--text);
@@ -176,12 +174,6 @@ blockquote {
 
 .f-fix {
 	overflow: hidden;
-}
-
-.outlink::after {
-	content: "↗";
-	padding-left: 2px;
-	vertical-align: text-bottom;
 }
 
 /*class toggle button */

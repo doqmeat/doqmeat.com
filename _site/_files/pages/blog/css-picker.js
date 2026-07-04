@@ -5,14 +5,14 @@ var sheet = document.getElementsByClassName("theme")[0];
 console.log(fontImg);
 
 function toggleTheme(theme = localStorage.getItem("themeBlog")) {
-	if (theme == "/blog/light.css") {
-		sheet.setAttribute("href", "/blog/dark.css");
-		fontImg.src = "/blog/font-dark.png";
-		localStorage.setItem("themeBlog", "/blog/dark.css");
+	if (theme == "/_files/pages/blog/light.css") {
+		sheet.setAttribute("href", "/_files/pages/blog/dark.css");
+		fontImg.src = "/_files/pages/blog/assets/font-dark.png";
+		localStorage.setItem("themeBlog", "/_files/pages/blog/dark.css");
 	} else {
-		sheet.setAttribute("href", "/blog/light.css");
-		fontImg.src = "/blog/font-light.png";
-		localStorage.setItem("themeBlog", "/blog/light.css");
+		sheet.setAttribute("href", "/_files/pages/blog/light.css");
+		fontImg.src = "/_files/pages/blog/assets/font-light.png";
+		localStorage.setItem("themeBlog", "/_files/pages/blog/light.css");
 	}
 }
 
@@ -20,10 +20,11 @@ function checkTheme() {
 	let sheet = document.getElementsByClassName("theme")[0];
 	let localTheme = localStorage.getItem("themeBlog");
 	if (!localTheme) {
-		sheet.setAttribute("href", "/blog/light.css");
+		sheet.setAttribute("href", "/_files/pages/blog/light.css");
 	} else {
 		sheet.setAttribute("href", localTheme);
-		if (localTheme == "/blog/dark.css") fontImg.src = "/blog/font-dark.png";
+		if (localTheme == "/_files/pages/blog/dark.css")
+			fontImg.src = "/_files/pages/blog/assets/font-dark.png";
 	}
 }
 

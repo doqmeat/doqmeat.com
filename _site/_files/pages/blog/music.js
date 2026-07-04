@@ -5,27 +5,27 @@ let btn = document.getElementById("music-btn"); //the button id
 let isPlaying = false; //set to false because it is not playing yet when you load the page
 
 function playpause() {
-  if (isPlaying) {
-    // if isPlaying == false... then do pause()
-    pause();
-  } else {
-    play();
-  } //if isPlaying == true, then do play() which plays the music
+	if (isPlaying) {
+		// if isPlaying == false... then do pause()
+		pause();
+	} else {
+		play();
+	} //if isPlaying == true, then do play() which plays the music
 }
 
 function play() {
-  player.play(); //play the music
-  isPlaying = true; //set to true because the music is playing
-  btn.innerHTML = '<img src="/!g/pix/beat.gif">'; //change the git to play
+	player.play(); //play the music
+	isPlaying = true; //set to true because the music is playing
+	btn.innerHTML = '<img src="/_files/assets/pix/beat.gif">'; //change the git to play
 }
 
 function pause() {
-  player.pause(); //pause the music
-  isPlaying = false; //set to false because the music is not playing
-  btn.innerHTML = '<img src="/!g/pix/beat-stop.png">'; //change img to beat stop
+	player.pause(); //pause the music
+	isPlaying = false; //set to false because the music is not playing
+	btn.innerHTML = '<img src="/_files/assets/pix/beat-stop.png">'; //change img to beat stop
 }
 
 player.onended = function () {
-  isPlaying = false; //the song has ended, isPlaying is false
-  btn.innerHTML = '<img src="/!g/pix/beat-stop.png">'; //change the img to beat stop
+	isPlaying = false; //the song has ended, isPlaying is false
+	btn.innerHTML = '<img src="/_files/assets/pix/beat-stop.png">'; //change the img to beat stop
 };
