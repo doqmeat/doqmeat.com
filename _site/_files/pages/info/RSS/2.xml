@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+	xmlns:atom="http://www.w3.org/2005/Atom">
+
+	<channel>
+		<title>doqmeat</title>
+		<link>https://doqmeat.com</link>
+		<description>des' digital journal updates</description>
+		<language>en-us</language>
+		<webMaster>meow@doqmeat.com (des)</webMaster>
+		<atom:link href="https://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+
+		<item>
+			<title>01.may.26 - 2 new stamps</title>
+			<link>https://doqmeat.com/collection/mail-stamps</link>
+			<description>on my stamp collection!</description>
+			<guid isPermaLink="false">260430</guid>
+			<pubDate>Fri, 1 May 2026 19:23:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>13.apr.26 - neverway</title>
+			<link>https://doqmeat.com/vgs/games/neverway</link>
+			<description>played the neverway prologue and added it to my gaming log along with some screenshots!</description>
+			<guid isPermaLink="false">260413</guid>
+			<pubDate>Mon, 13 Apr 2026 20:23:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>11.apr.26 - how my website changed my life</title>
+			<link>https://doqmeat.com/blog/2026/website-3rd-anniversary</link>
+			<description>edit: fixed the link! it's my website's 3rd anniversary! i wrote a blog post detailing the way this website had helped me out with my life + updated my &#x3C;a href=&#x22;https://doqmeat.com/microblog#260411&#x22;&#x3E;microblog&#x3C;/a&#x3E; with pics from a convention i went as &#x3C;i&#x3E;angel devil&#x3C;/i&#x3E; + updated my &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2026&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;</description>
+			<guid isPermaLink="false">260412</guid>
+			<pubDate>Sat, 11 Apr 2026 14:23:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>20.feb.26 - computer architecture is kicking my ass</title>
+			<link>https://doqmeat.com/journal/2026/02.html#20</link>
+			<description>my 2nd year computer science student ramblings of the month</description>
+			<guid isPermaLink="false">260220</guid>
+			<pubDate>Fri, 20 Feb 2026 14:40:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>15.feb.26 - minor updates here and there!</title>
+			<link>https://doqmeat.com/</link>
+			<description>finished reading a manga called &#x3C;a href=&#x22;https://doqmeat.com/reading#i-wanna-be-your-girl&#x22;&#x3E;i wanna be your girl&#x3C;/a&#x3E; + updated the featured &#x3C;a href=&#x22;https://doqmeat.com/music&#x22;&#x3E;music&#x3C;/a&#x3E; section + new february page on my &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2026#feb&#x22;&#x3E;scrapbook&#x3C;/a&#x3E; </description>
+			<guid isPermaLink="false">260215</guid>
+			<pubDate>Sun, 15 Feb 2026 19:00:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>01.feb.26 - now hosting on nekoweb!</title>
+			<link>https://doqmeat.com/journal/2026/02.html#1</link>
+			<description>new journal log about my move from neocities to nekoweb + reworked and gave a new look to &#x3C;a href=&#x22;https://doqmeat.com/info&#x22;&#x3E;info&#x3C;/a&#x3E; </description>
+			<guid isPermaLink="false">260201</guid>
+			<pubDate>Sun, 1 Feb 2026 15:00:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>19.jan.26 - answering 100 questions about being a webmaster</title>
+			<link>https://doqmeat.com/blog/2026/webmaster-questions</link>
+			<description>had a bit of free time so i answered 100 questions about making this website, being a webmaster, and that sort of fun stuff.</description>
+			<guid isPermaLink="false">260119</guid>
+			<pubDate>Mon, 19 Jan 2026 22:00:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>15.jan.26 - 2025 music recap</title>
+			<link>https://doqmeat.com/music/recaps/2025</link>
+			<description>new music recap talking about my fav music from 2025 and stuff i discovered that year!</description>
+			<guid isPermaLink="false">260115</guid>
+			<pubDate>Thu, 15 Jan 2026 14:30:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>10.jan.26 - new journal log + other minor updates!</title>
+			<link>https://doqmeat.com/</link>
+			<description>added a new &#x3C;a href=&#x22;https://doqmeat.com/journal&#x22;&#x3E;journal&#x3C;/a&#x3E; log reflecting on 2025 + finished my &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2025#review&#x22;&#x3E;2025 scrapbook&#x3C;/a&#x3E; and added some highlights of the year + various minor updates throughout pages such as: &#x3C;a href=&#x22;https://doqmeat.com/art&#x22;&#x3E;art&#x3C;/a&#x3E;, &#x3C;a href=&#x22;https://doqmeat.com/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E;, and &#x3C;a href=&#x22;https://doqmeat.com/fashion&#x22;&#x3E;fashion&#x3C;/a&#x3E; &#x3C;img src=&#x22;https://doqmeat.com/!g/pix/silly-cat.gif&#x22; alt=&#x22;cat emoji nodding&#x22;&#x3E;</description>
+			<guid isPermaLink="false">260110</guid>
+			<pubDate>Sat, 10 Jan 2026 17:00:00 -0400</pubDate>
+		</item>
+
+	</channel>
+
+</rss>

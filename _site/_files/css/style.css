@@ -11,8 +11,9 @@
 	--tt-color: rgb(233, 201, 162);
 }
 
-html {
-	min-height: 100vh;
+html,
+body {
+	max-height: 100vh;
 }
 
 body {
@@ -48,7 +49,6 @@ button {
 
 details {
 	padding: 10px;
-	border: 1px solid var(--tt-bg);
 }
 
 details > p {

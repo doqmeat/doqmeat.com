@@ -1,4 +1,4 @@
-//    code from here: https://github.com/biancarosa/lastfm-last-played
+// code from here: https://github.com/biancarosa/lastfm-last-played
 
 let url = "https://lastfm-last-played.biancarosa.com.br/lakiitu/latest-song";
 let song = document.querySelector("#song");

@@ -20,6 +20,10 @@ body {
 	font-family: var(--fonts);
 }
 
+details {
+	border: 1px solid var(--tt-bg);
+}
+
 h1,
 h2,
 h3 {

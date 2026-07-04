@@ -1,0 +1,569 @@
+<!-- RSS feed from jul 2024 - jan 2026 -->
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+
+  <channel>
+    <title>doqmeat</title>
+    <link>https://doqmeat.com</link>
+    <description>des' digital journal updates</description>
+    <language>en-us</language>
+    <webMaster>meow@doqmeat.com (des)</webMaster>
+    <atom:link href="https://doqmeat.com/rss.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>19.jan.26 - answering 100 questions about being a webmaster</title>
+      <link>https://doqmeat.com/blog/2026/webmaster-questions</link>
+      <description>had a bit of free time so i answered 100 questions about making this website, being a webmaster, and that sort of fun stuff.</description>
+      <pubDate>Mon, 19 Jan 2026 22:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>15.jan.26 - 2025 music recap</title>
+      <link>https://doqmeat.com/music/recaps/2025</link>
+      <description>new music recap talking about my fav music from 2025 and stuff i discovered that year!</description>
+      <pubDate>Thu, 15 Jan 2026 14:30:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>10.jan.26 - new journal log + other minor updates!</title>
+      <link>https://doqmeat.com/</link>
+      <description>added a new &#x3C;a href=&#x22;https://doqmeat.com/journal&#x22;&#x3E;journal&#x3C;/a&#x3E; log reflecting on 2025 + finished my &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2025#review&#x22;&#x3E;2025 scrapbook&#x3C;/a&#x3E; and added some highlights of the year + various minor updates throughout pages such as: &#x3C;a href=&#x22;https://doqmeat.com/art&#x22;&#x3E;art&#x3C;/a&#x3E;, &#x3C;a href=&#x22;https://doqmeat.com/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E;, and &#x3C;a href=&#x22;https://doqmeat.com/fashion&#x22;&#x3E;fashion&#x3C;/a&#x3E; &#x3C;img src=&#x22;https://doqmeat.com/!g/pix/silly-cat.gif&#x22; alt=&#x22;cat emoji nodding&#x22;&#x3E;</description>
+      <pubDate>Sat, 10 Jan 2026 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>25.dec.25 - picrews collection + code snippet page</title>
+      <link>https://doqmeat.com/collection/picrews</link>
+      <description>FINALLY made my picrews collection page! doing this page made me realize i have made 78 picrews.... i really do love doing those. it came with my love for fashion games + new &#x3C;a href=&#x22;https://doqmeat.com/notebook/F2U/snippets.html&#x22;&#x3E;code snippets&#x3C;/a&#x3E; page where i share how i made the rainbow links on hover! &#x3C;b&#x3E;happy holidays&#x3C;/b&#x3E; everyone!</description>
+      <pubDate>Thu, 25 Dec 2025 02:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>18.dec.25 - winter break starts!</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>my thoughts on this uni semester classes and the start of my winter break!</description>
+      <pubDate>Thu, 18 Dec 2025 22:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>11.dec.25 - fish love</title>
+      <link>https://doqmeat.com/fish-love</link>
+      <description>made a silly page about fish kissing for the 4th anniversary of me and my girlfriend &#x3C;a href=&#x22;https://doqmeat.com/!g/pix/kiss-cat2.gif&#x22; alt=&#x22;cats kissing&#x22;&#x3E;</description>
+      <pubDate>Thu, 11 Dec 2025 16:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>07.dec.25 - updated learning in public!</title>
+      <link>https://doqmeat.com/learning/javascript/thoughts</link>
+      <description>big update on my JavaScript thoughts page! talked a bit about the process of building the &#x3C;a href=&#x22;https://doqmeat.github.io/js-walkman-mp3-player/&#x22; target=&#x22;_blank&#x22; rel=&#x22;noopener noreferrer&#x22;&#x3E;walkman mp3 player&#x3C;/a&#x3E;, a silly anniversary gift i'm currently doing for my girlfriend &#x3C;small&#x3E;(will upload at a later time)&#x3C;/small&#x3E;, and a ramble about how awesome the algorithm of division is.</description>
+      <pubDate>Sun, 7 Dec 2025 13:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>28.nov.25 - minor updates</title>
+      <link>https://doqmeat.com/</link>
+      <description>made some updates throughout various pages: &#x3C;a href=&#x22;/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E; and &#x3C;a href=&#x22;/scrapbook/2025/&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;. have a couple of ideas for some pages but i will have to grind out finals first. i REALLY wanna get an A in discrete math.</description>
+      <pubDate>Sat, 29 Nov 2025 02:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>17.nov.25 - error ep</title>
+      <link>https://doqmeat.com/music/fav-albums</link>
+      <description>added a new album to my favs: &#x3C;i&#x3E;error ep&#x3C;/i&#x3E; by uki3 / ewe + uploaded a doodle to my &#x3C;a href=&#x22;/art&#x22;&#x3E;art&#x3C;/a&#x3E; page</description>
+      <pubDate>Mon, 17 Nov 2025 02:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>15.nov.25 - connection</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log + i also wrote about my experience doing the &#x3C;a href=&#x22;https://desteny.me/posts/css-workshop/&#x22;&#x3E;CSS workshop&#x3C;/a&#x3E; but that is on another site of mine :p</description>
+      <pubDate>Sat, 15 Nov 2025 20:30:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>14.oct.25 - scrapbook</title>
+      <link>https://doqmeat.com/scrapbook/2025</link>
+      <description>updated my scrapbook and &#x3C;a href=&#x22;https://doqmeat.com/fashion&#x22;&#x3E;fashion page&#x3C;/a&#x3E; with a new fit</description>
+      <pubDate>Tue, 14 Oct 2025 22:30:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>08.sep.25 - my 4th uni semester</title>
+      <link>https://doqmeat.com/journal/2025/09.html#8</link>
+      <description>journal log about my new semester :3 + updated &#x3C;a href=&#x22;https://doqmeat.com/music/mini-pages/featured.html&#x22;&#x3E;featured music&#x3C;/a&#x3E; page</description>
+      <pubDate>Tue, 9 Sep 2025 20:51:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>12.aug.25 - florida trip</title>
+      <link>https://doqmeat.com/blog/2025/summer-trip/index.html</link>
+      <description>wrote a blog post about my summer vacation trip! + updated &#x3C;a href=&#x22;/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E; and &#x3C;a href=&#x22;/scrapbook/2025/&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;</description>
+      <pubDate>Tue, 12 Aug 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>28.jul.25 - 2024 music recap</title>
+      <link>https://doqmeat.com/music/recaps/2024/index.html</link>
+      <description>6 months later i finally had the motivation to do this RAH!</description>
+      <pubDate>Mon, 28 Jul 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>25.jul.25 - to be seen</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log + new pic in &#x3C;a href=&#x22;/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E; + updated july&#x27;s page on my &#x3C;a href=&#x22;/scrapbook/2025&#x22;&#x3E;scrapbook&#x3C;/a&#x3E; and my &#x3C;a href=&#x22;/learning&#x22;&#x3E;learning in public&#x3C;/a&#x3E; page, specially the JS section :3</description>
+      <pubDate>Fri, 25 Jul 2025 00:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>17.jul.25 - minor updates!</title>
+      <link>https://doqmeat.com/</link>
+      <description>new &#x3C;a href=&#x22;/music&#x22;&#x3E;featured music&#x3C;/a&#x3E; + added a new quiz result to my &#x3C;a href=&#x22;/about&#x22;&#x3E;about&#x3C;/a&#x3E; page + seperated my resources and sitely stuff into two pages! now the &#x3C;a href=&#x22;/notebook&#x22;&#x3E;notebook&#x3C;/a&#x3E; will remain for resources and for F2U stuff i make, so i made a new page for &#x3C;a href=&#x22;/info&#x22;&#x3E;site info and archives&#x3C;/a&#x3E; + i am no longer sick YAY!</description>
+      <pubDate>Thu, 17 Jul 2025 00:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>06.jul.25 - my 5th sickening of the year</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>wrote a new journal log abt me being sick again and what i've been up to + added a spinning CD whenever you hover over an album on my &#x3C;a href=&#x22;/music/cds/index.html&#x22;&#x3E;CD collection&#x3C;/a&#x3E; page. will probably rework the whole page at point in the future... but for now this will do!</description>
+      <pubDate>Sun, 06 Jul 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>04.jul.25 - blu-rays</title>
+      <link>https://doqmeat.com/tv#blu-ray</link>
+      <description>added a section for owned blu-rays on my tv log page! also happy birthday to my grandma &#x3C;img src=&#x22;/!g/pix/heart-cat1.gif&#x22; alt=&#x22;cat heart emoji&#x22;&#x3E;</description>
+      <pubDate>Fri, 04 Jul 2025 00:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>20.jun.25 - bloodborne log</title>
+      <link>https://doqmeat.com/vgs/games/bloodborne/index.html</link>
+      <description>new bloodborne log with a new look on its page! + added an RSS feed widget for my letterboxd acc on my &#x3C;a href=&#x22;/tv&#x22;&#x3E;tv log&#x3C;/a&#x3E;</description>
+      <pubDate>Fri, 20 Jun 2025 22:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>18.jun.25 - PS5 thoughts</title>
+      <link>https://doqmeat.com/journal/</link>
+      <description>wrote some thoughts on my PS5 after having it for a month because i noticed were pissing me off about it.</description>
+      <pubDate>Wed, 18 Jun 2025 05:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>06.jun.25 - JS sony walkman mp3 player</title>
+      <link>https://doqmeat.com/notebook/F2U/codes#walkman</link>
+      <description>finished a new F2U code! this time it's javascript music player themed after a sony walkman mp3 player from 2008.</description>
+      <pubDate>Fri, 6 Jun 2025 05:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>01.jun.25 - my beautiful madoka discs</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log about my some madoka blu-rays i've bought + created a &#x3C;a href=&#x22;https://backloggd.com/u/doqmeat/&#x22;&#x3E;backloggd&#x3C;/a&#x3E; account to use alongside my &#x3C;a href=&#x22;/vgs&#x22;&#x3E;gaming log&#x3C;/a&#x3E; here!</description>
+      <pubDate>Sun, 1 Jun 2025 14:30:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>26.may.25 - recap of uni semester + summer plans</title>
+      <link>https://doqmeat.com/journal/2025/05.html</link>
+      <description>hai everyone!! been a while since i&#x27;ve been able to properly update my site. wrote a new &#x3C;a href=&#x22;/journal/2025/05.html&#x22;&#x3E;journal log&#x3C;/a&#x3E; about these past 5 months and my plans for the summer. updated &#x3C;a href=&#x22;/vgs&#x22;&#x3E;vgs&#x3C;/a&#x3E; with a new &#x3C;a href=&#x22;/vgs/games/bloodborne&#x22;&#x3E;bloodborne&#x3C;/a&#x3E; log and made a page for &#x3C;a href=&#x22;/vgs/games/infinity-nikki&#x22;&#x3E;infinity nikki&#x3C;/a&#x3E;. updated may page for my &#x3C;a href=&#x22;/scrapbook/2025&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;. new featured song(s!) &#x26; album on &#x3C;a href=&#x22;/music&#x22;&#x3E;music&#x3C;/a&#x3E; page.</description>
+      <pubDate>Mon, 26 May 2025 01:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>20.apr.25 - walking steve minecraft outside</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log about my experience walking my cat with a harness outside!</description>
+      <pubDate>Sun, 20 Apr 2025 14:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>11.apr.25 - doqmeat.com 2 year anniversary!</title>
+      <link>https://doqmeat.com/</link>
+      <description>happy birthday to my site! &#x3C;img src=&#x22;/!g/pix/festiveba.gif&#x22; alt=&#x22;birthday emoji&#x22;&#x3E; wrote a &#x3C;a href=&#x22;/journal&#x22;&#x3E;journal log&#x3C;/a&#x3E; about what i&#x27;ve been up to as of late. through out the months i&#x27;ve also been doing small updates to the homepage, &#x3C;a href=&#x22;/fashion&#x22;&#x3E;fashion&#x3C;/a&#x3E;, &#x3C;a href=&#x22;/scrapbook/2025/&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;, &#x3C;a href=&#x22;/photobook&#x22;&#x3E;photobook&#x3C;/a&#x3E;, and my &#x3C;a href=&#x22;/microblog&#x22;&#x3E;microblog&#x3C;/a&#x3E;</description>
+      <pubDate>Fri, 11 Apr 2025 23:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>08.mar.25 - i need to let go of spotify</title>
+      <link>https://doqmeat.com/journal/2025/03#8</link>
+      <description>new journal log about listening to music.</description>
+      <pubDate>Sat, 08 Mar 2025 12:10:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>02.mar.25 - v5 homepage</title>
+      <link>https://doqmeat.com/journal/2025/03#1</link>
+      <description>
+finally finished the new version of the homepage! talked about the making of this on my &#x3C;a href=&#x22;/notebook/archive/homepage/index.html&#x22;&#x3E;notebook&#x3C;/a&#x3E;!
+      </description>
+      <pubDate>Sun, 02 Mar 2025 15:10:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>01.mar.25 - a lot happening</title>
+      <link>https://doqmeat.com/journal/2025/03#1</link>
+      <description>
+new journal log about my latest uni happenings &#x3C;small&#x3E;(forgot to update my gitignore, SORRY)&#x3C;/small&#x3E;
+      </description>
+      <pubDate>Sat, 01 Mar 2025 22:50:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>01.mar.25 - featured song n album</title>
+      <link>https://doqmeat.com/</link>
+      <description>
+ changed &#x3C;a href=&#x22;/music/featured.html&#x22;&#x3E;featured song &#x26; album&#x3C;/a&#x3E; on music homepage
+      </description>
+      <pubDate>Sat, 01 Mar 2025 01:50:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>16.feb.25 - scrapbook</title>
+      <link>https://doqmeat.com/scrapbook/2025</link>
+      <description>
+			&#x3C;a href=&#x22;/scrapbook/2025#feb&#x22;&#x3E;scrapbook&#x3C;/a&#x3E; updated + added a new recipe under &#x3C;a href=&#x22;/scrapbook/2025#goals&#x22;&#x3E;goals&#x3C;/a&#x3E;! + finished reading &#x3C;a href=&#x22;/reading#wraith-arc&#x22;&#x3E;pmmm: wraith arc&#x3C;/a&#x3E;
+      </description>
+      <pubDate>Sun, 16 Feb 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>08.feb.25 - music post</title>
+      <link>https://doqmeat.com/music/listening-log/2025#1</link>
+      <description>
+			new music post about bad bunny's latest album + added new featured song n album to music homepage :p
+      </description>
+      <pubDate>Sat, 08 Feb 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>23.jan.25 - 2nd year of uni</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log + i have a new &#x3C;a href=&#x22;https://doqmeat.atabook.org&#x22;&#x3E;guestbook&#x3C;/a&#x3E;
+      </description>
+      <pubDate>Thu, 23 Jan 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>20.jan.25 - winter break wrap-up</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log :3 + minor updates to &#x3C;a href=&#x22;/scrapbook/2025/index.html&#x22;&#x3E;scrapbook&#x3C;/a&#x3E; and &#x3C;a href=&#x22;/music/kpop-producers.html&#x22;&#x3E;kpop producers&#x3C;/a&#x3E; page
+      </description>
+      <pubDate>Mon, 20 Jan 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>17.jan.25 - fallout new vegas log</title>
+      <link>https://doqmeat.com/vgs/games/fallout-new-vegas</link>
+      <description>finished new vegas' dead money dlc + updated &#x3C;a href=&#x22;/scrapbook/2025&#x22;&#x3E;scrapbook&#x3C;/a&#x3E; a bit! + new featured song and album on &#x3C;a href=&#x22;/music&#x22;&#x3E;music index&#x3C;/a&#x3E;
+      </description>
+      <pubDate>Fri, 17 Jan 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>07.jan.25 - gaming log + minor homepage update</title>
+      <link>https://doqmeat.com/</link>
+      <description>added logs for &#x3C;a href=&#x22;/vgs/games/kirby-planet-robobot/index.html&#x22;&#x3E;kirby planet robobot&#x3C;/a&#x3E; and &#x3C;a href=&#x22;/vgs/games/style-savvy-styling-star/index.html&#x22;&#x3E;styling star&#x3C;/a&#x3E; + minor update to homepage so clean cache if it looks funky!
+      </description>
+      <pubDate>Tue, 07 Jan 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>03.jan.25 - reading and tv log</title>
+      <link>https://doqmeat.com/reading</link>
+      <description>added some more CSS to &#x3C;a href=&#x22;/reading&#x22;&#x3E;/reading&#x3C;/a&#x3E;, organized it a bit and added some more screenshots + added &#x3C;i&#x3E;madoka magica + rebellion&#x3C;/i&#x3E; to &#x3C;a href=&#x22;/tv&#x22;&#x3E;tv log&#x3C;/a&#x3E;</description>
+      <pubDate>Fri, 03 Jan 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>01.jan.25 - journal log</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>journal log about what i've been up to during my sickly december adventure and the holidays.</description>
+      <pubDate>Wed, 01 Jan 2025 17:00:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>19.dec.24 - gaming log: hardware</title>
+      <link>https://doqmeat.com/vgs/hardware</link>
+      <description>made a subpage for consoles i have and the story behind them + changed featured cat on homepage to a jolly one + added a &#x3C;a href=&#x22;/scrapbook/2024#review&#x22;&#x3E;year in review&#x3C;/a&#x3E; page on my 2024 scrapbook</description>
+      <pubDate>Thu, 19 Dec 2024 20:54:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>17.dec.24 - 1st year of uni done!</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>journal log about me being FREE from this uni semester! + updated my &#x3C;a href=&#x22;/scrapbook/2024&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;</description>
+      <pubDate>Tue, 17 Dec 2024 16:45:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>25.nov.24 - billlie concert</title>
+      <link>https://doqmeat.com/music/concerts/index.html</link>
+      <description>added pics, videos, and my fav performances of the billlie concert.</description>
+      <pubDate>Mon, 25 Nov 2024 12:45:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>23.nov.24 - my pet: steve</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log about my new pet cat + tiny update on my laptop.</description>
+      <pubDate>Sat, 23 Nov 2024 02:00:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>20.nov.24 - icy theme</title>
+      <link>https://doqmeat.com/</link>
+      <description>homepage has a new theme called icy :3</description>
+      <pubDate>Wed, 20 Nov 2024 17:00:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>16.nov.24 - art v4 +</title>
+      <link>https://doqmeat.com/art</link>
+      <description>reworked my art page layout + new featured song and album on &#x3C;a href=&#x22;/music&#x22;&#x3E;music page&#x3C;/a&#x3E;!</description>
+      <pubDate>Sat, 16 Nov 2024 14:00:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>10.nov.24 - joe pera talks with you</title>
+      <link>https://doqmeat.com/tv</link>
+      <description>added &#x3C;i&#x3E;joe pera talks with you&#x3C;/i&#x3E; to my tv log</description>
+      <pubDate>Sun, 10 Nov 2024 19:00:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>31.oct.24 - happy halloween!</title>
+      <link>https://doqmeat.com/journal/2024/10.html#31</link>
+      <description>journal log about halloween and my costume this year! + &#x3C;a href=&#x22;/scrapbook/2024&#x22;&#x3E;scrapbook&#x3C;/a&#x3E; october page completed + set up a gaming log &#x3C;a href=&#x22;/vgs/spreadsheet.html&#x22;&#x3E;spreadsheet&#x3C;/a&#x3E; page</description>
+      <pubDate>Thu, 31 Oct 2024 11:57:20 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>29.oct.24 - FAQ</title>
+      <link>https://doqmeat.com/faq</link>
+      <description>been noticing i get a lot of similar e-mails regarding some topics so i made a FAQ page!</description>
+      <pubDate>Tue, 29 Oct 2024 11:46:47 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>25.oct.24 - journal log</title>
+      <link>https://doqmeat.com/journal/2024/10.html#25</link>
+      <description>my experience at the premiere of &#x3C;i&#x3E;look back&#x3C;/i&#x3E;</description>
+      <pubDate>Fri, 25 Oct 2024 19:21:47 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>21.oct.24 - listening log</title>
+      <link>https://doqmeat.com/music/listening-log/2024/fall.html</link>
+      <description>2 new listening log entries! &#x3C;i&#x3E;crystal castles&#x3C;/i&#x3E; + &#x3C;i&#x3E;MG ultra&#x3C;/i&#x3E;</description>
+      <pubDate>Mon, 21 Oct 2024 22:21:47 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>19.oct.24 - listening log</title>
+      <link>https://doqmeat.com/music/listening-log/2024/fall.html#3</link>
+      <description>listening log of magdalena bay's &#x3C;i&#x3E;imaginal disk&#x3C;/i&#x3E; + new featured song and album in &#x3C;a href=&#x22;https://doqmeat.com/music&#x22;&#x3E;music&#x3C;/a&#x3E; index</description>
+      <pubDate>Sat, 19 Oct 2024 14:48:47 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>16.oct.24 - fashion page</title>
+      <link>https://doqmeat.com/fashion</link>
+      <description>did a page for my favorite outfits and accessories!</description>
+      <pubDate>Wed, 16 Oct 2024 11:06:47 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>05.oct.24 - fall listening log</title>
+      <link>https://doqmeat.com/music/listening-log/2024/fall.html#1</link>
+      <description>debuting fall's listening log with tripleS &#x3C;i&#x3E;assemble24&#x3C;/i&#x3E;</description>
+      <pubDate>Sat, 05 Oct 2024 00:01:17 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>27.sep.24 - new journal log</title>
+      <link>https://doqmeat.com/journal/?z=/journal/2024/09</link>
+      <description>talk a bit about my plants, university, and my partner</description>
+      <pubDate>Fri, 27 Sep 2024 21:36:17 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>21.sep.24 - revamped music page</title>
+      <link>https://doqmeat.com/music/index.html</link>
+      <description>pretty much the same except with minor changes, the major change was converting the layout into a grid one!</description>
+      <pubDate>Sat, 21 Sep 2024 23:36:25 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>14.sep.24 - new plushie</title>
+      <link>https://doqmeat.com/collection/plushies/index.html</link>
+      <description>been meaning to add a new plushie i've had for a while!</description>
+      <pubDate>Mon, 16 Sep 2024 20:42:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>14.sep.24 - gardening era</title>
+      <link>https://doqmeat.com/journal/?z=/journal/2024/09</link>
+      <description>new journal log about my little garden + updated &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2024/index.html#sep&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;</description>
+      <pubDate>Sat, 14 Sep 2024 00:06:05 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>06.sep.24 - cato log</title>
+      <link>https://doqmeat.com/vgs/cato/</link>
+      <description>been playing &#x3C;i&#x3E;cato&#x3C;/i&#x3E; recently! so much fun</description>
+      <pubDate>Sat, 07 Sep 2024 23:47:21 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>06.sep.24 - scrapbook</title>
+      <link>https://doqmeat.com/scrapbook/2024#aug</link>
+      <description>updated august section of scrapbook and started september</description>
+      <pubDate>Fri, 06 Sep 2024 13:42:25 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>03.sep.24 - gaming log</title>
+      <link>https://doqmeat.com/vgs/style-savvy-styling-star/index.html</link>
+      <description>added &#x3C;i&#x3E;style savvy: styling star&#x3C;/i&#x3E; to gaming log!</description>
+      <pubDate>Tue, 03 Sep 2024 22:35:36 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>02.sep.24 - listening log</title>
+      <link>https://doqmeat.com/music/listening-log/2024/summer.html#4</link>
+      <description>listened to &#x3C;i&#x3E;TTYL&#x3C;/i&#x3E; by loossemble!</description>
+      <pubDate>Mon, 02 Sep 2024 16:31:18 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>01.sep.24 - journal log</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new log: from brackets to VSC + a small life update</description>
+      <pubDate>Sun, 01 Sep 2024 22:39:09 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>30.aug.24 - featured music + gaming logs</title>
+      <link>https://doqmeat.com/music</link>
+      <description>new featured music on the music page + added &#x3C;i&#x3E;nintendogs + cats&#x3C;/i&#x3E; and a new log to &#x3C;i&#x3E;style savvy trendsetters&#x3C;/i&#x3E; to &#x3C;a href=&#x22;https://doqmeat.com/vgs&#x22;&#x3E;gaming log&#x3C;/a&#x3E;</description>
+      <pubDate>Fri, 30 Aug 2024 23:46:37 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>22.aug.24 - storm update + compsci class</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log + updated scrapbook &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2024#aug&#x22;&#x3E;august&#x3C;/a&#x3E; section</description>
+      <pubDate>Thu, 22 Aug 2024 18:50:40 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>17.aug.24 - new template</title>
+      <link>https://doqmeat.com/notebook/F2U/codes</link>
+      <description>a new F2U template i did as a fun project + updated my &#x3C;a href=&#x22;https://doqmeat.com/notebook/archive/homepage/&#x22;&#x3E;homepage&#x3C;/a&#x3E; archive where i talk a bit more about v4</description>
+      <pubDate>Sat, 17 Aug 2024 12:25:18 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>13.aug.24 - tropical storm</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>new journal log</description>
+      <pubDate>Tue, 13 Aug 2024 16:11:35 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>09.aug.24 - homepage v4</title>
+      <link>https://doqmeat.com/</link>
+      <description>a brand new homepage look :3 + updated &#x3C;a href=&#x22;https://doqmeat.com/scrapbook/2024#jul&#x22;&#x3E;scrapbook&#x3C;/a&#x3E;</description>
+      <pubDate>Fri, 09 Aug 2024 20:48:22 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>31.jul.24 - employment era</title>
+      <link>https://doqmeat.com/journal/2024/07.html#31</link>
+      <description>new journal log!</description>
+      <pubDate>Wed, 31 Jul 2024 22:28:36 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>30.jul.24 - listening log</title>
+      <link>https://doqmeat.com/music</link>
+      <description>listened to
+				&#x3C;a href=&#x22;https://doqmeat.com/music/listening-log/2024/summer.html#3&#x22;&#x3E;homestuck vol. 1-4&#x3C;/a&#x3E; + updated featured songs in the
+				&#x3C;a href=&#x22;https://doqmeat.com/music&#x22;&#x3E;index&#x3C;/a&#x3E; recently</description>
+      <pubDate>Tue, 30 Jul 2024 19:46:47 +0000</pubDate>
+    </item>
+
+    <item>
+      <title>24.jul.24 - gaming logs</title>
+      <link>https://doqmeat.com/vgs</link>
+      <description>head FULL of fallout + i tried out a new demo for a game called &#x3C;i&#x3E;neko odyssey&#x3C;/i&#x3E;</description>
+      <pubDate>Wed, 24 Jul 2024 23:39:06 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>16.jul.24 - music player</title>
+      <link>https://doqmeat.com/music/songs</link>
+      <description>made a new page for my music page! it's basically my &#x3C;i&#x3E;playlists&#x3C;/i&#x3E; and &#x3C;i&#x3E;fav artists n genres&#x3C;/i&#x3E; pages but together. and with it's own page CSS.</description>
+      <pubDate>Tue, 16 Jul 2024 22:56:06 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>15.jul.24 - journal log</title>
+      <link>https://doqmeat.com/journal/2024/07.html#15</link>
+      <description>new log: &#x3C;a href=&#x22;https://doqmeat.com/journal/?z=%2Fjournal%2F2024%2F07&#x22;&#x3E;interview update&#x3C;/a&#x3E; + listened to &#x3C;a href=&#x22;https://doqmeat.com/music/listening-log/2024/summer.html#2&#x22;&#x3E;seabed eden&#x3C;/a&#x3E;</description>
+      <pubDate>Mon, 15 Jul 2024 00:22:50 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>14.jul.24 - joined my first pixel clique!</title>
+      <link>https://doqmeat.com/</link>
+      <description>after wanting to join one for a while, i finally made a pixel for &#x3C;a href=&#x22;https://divergentrays.com/kitty&#x22; target=&#x22;_blank&#x22;&#x3E;kitty friends pixel club&#x3C;/a&#x3E;. inspired by the beloved minecraft cat plushie on my site &#x3C;img src=&#x22;https://doqmeat.com/!g/web/cliques/kitty-friends/doqmeat.png&#x22; alt=&#x22;kitty pixel&#x22;&#x3E; :3 very happy with how it turned out too! + new &#x3C;a href=&#x22;https://doqmeat.com/vgs/fallout-new-vegas/index.html&#x22;&#x3E;fallout new vegas&#x3C;/a&#x3E; log</description>
+      <pubDate>Sun, 14 Jul 2024 00:17:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>12.jul.24 - RSS feed tutorial</title>
+      <link>https://doqmeat.com/notebook/tutorials/rss/index.html</link>
+      <description>added a tutorial tab to the &lt;a href=&quot;https://doqmeat.com/notebook&quot;&gt;notebook&lt;/a&gt; page! wrote a guide on &lt;a href=&quot;https://doqmeat.com/notebook/tutorials/rss/index.html&quot;&gt;RSS feeds&lt;/a&gt;</description>
+      <pubDate>Fri, 12 Jul 2024 22:49:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>09.jul.24 - gaming log</title>
+      <link>https://doqmeat.com/vgs</link>
+      <description>added &lt;i&gt;cato: buttered cat&lt;/i&gt; to gaming log!</description>
+      <pubDate>Tue, 09 Jul 2024 15:04:00 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>08.jul.24 - tv log updated</title>
+      <link>https://doqmeat.com/tv</link>
+      <description>added twin peaks and my thoughts on it so far</description>
+      <pubDate>Mon, 08 Jul 2024 18:48:50 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>06.jul.24 - journal v3</title>
+      <link>https://doqmeat.com/journal</link>
+      <description>updated my journal layout to v3 + new log + oh hey now there's an RSS feed!</description>
+      <pubDate>Sat, 06 Jul 2024 16:48:50 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>04.jul.24 - new blog post</title>
+      <link>https://doqmeat.com/blog/2024/grandma</link>
+      <description>blog post for my grandma's b-day</description>
+      <pubDate>Thu, 04 Jul 2024 16:48:50 -0400</pubDate>
+    </item>
+
+    <item>
+      <title>03.jul.24 - new art page layout</title>
+      <link>https://doqmeat.com/art</link>
+      <description>after months the art page finally has CSS! + new &lt;a href=&quot;https://doqmeat.com/music/listening-log/2024/summer#1&quot;&gt;listening log&lt;/a&gt;: daoko's slash-&amp;-burn</description>
+      <pubDate>Wed, 03 Jul 2024 16:48:50 -0400</pubDate>
+    </item>
+  </channel>
+
+</rss>
