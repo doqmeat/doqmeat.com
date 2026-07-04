@@ -17,20 +17,21 @@ you're free to take whatever you need from my site, but please refrain from taki
   <title>{{ title }}</title>
   <link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
   <link rel="icon" type="image/x-icon" href="/_files/assets/pix/flower-purple.gif">
-  <link href="/_files/homepage/body.css" rel="stylesheet" type="text/css" media="all">
+  <link href="/_files/css/plain.css" rel="stylesheet" type="text/css" media="all">
   <!-- pagefind -->
-  <!-- <link href="/_files/css/pagefind.css" rel="stylesheet">
-  <script src="/pagefind/pagefind-ui.js"></script> -->
+  {% if page.url == "/search/" %}
+  <link href="/_files/css/pagefind.css" rel="stylesheet">
+  <script src="/pagefind/pagefind-ui.js"></script>
+  {% endif %}
 </head>
 
 <body>
-  <!-- <script>NekoType = "ghost"</script> -->
   <wrapper>
     {{ content }}
   </wrapper>
 
   {% if page.url == "/" %}
-  <script src="/_files/homepage/last-fm.js"></script>
+  <script src="/_files/js/last-fm.js"></script>
   <script src="https://status.cafe/current-status.js?name=doqmeat" defer></script>
   {% endif %}
   {% include "_tooltip.html" %}
