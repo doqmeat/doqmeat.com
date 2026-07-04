@@ -1,0 +1,19 @@
+---
+title: blog
+css: index.css
+---
+{% layout "blog/index.html" %}
+
+{% block content %}
+<p>logs focused on specific topics that go a little more in-depth...</p>
+<center><img src="/_files/assets/div/clover.png" style="max-width:100%;" alt="diveder graphic"></center>
+<ul>
+  {% for post in collections.blog_posts reversed %}
+  <li>{{ post.date | shortDate }} - <a href="{{ post.url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>
+{% endblock %}
+
+{% block footer %}
+<b>credit:</b> <a href="/notebook/resources/fonts.html">fonts</a> used: basiic, spirit / <a href="https://www.pexels.com/photo/selective-focus-photo-of-blue-and-white-flowers-field-51548/" target="_blank">bg img</a> by Freddie Ramm from pexels / list icons: light mode from <a href="https://sleepysprout.neocities.org/index1" target="_blank">sleepysprout</a>, dark mode from <a href="http://sorahana.ciao.jp/" target="_blank">sorahana</a> / <a href="https://www.geeksforgeeks.org/how-to-switch-between-multiple-css-stylesheets-using-javascript/">stylesheet switcher</a> code / <a href="https://www.tumblr.com/compassionately/688695677850714112/1999-neocities-layout-by-me-emotion-preview?source=share" target="_blank">JS audio button</a> code from this template!
+{% endblock %}

@@ -18,7 +18,7 @@
 			<title>{{ item.date | shortDate }} - {{ item.data.title }}</title>
 			<link>https://doqmeat.com/{{ item.data.link }}</link>
 			<description>{{ item.content | xml_escape }}</description>
-			<guid isPermaLink="false">{{ item.date | shortISODate }}</guid>
+			<guid isPermaLink="false">{{ item.date | ISODate }}</guid>
 			<pubDate>{{ item.date | date:"%a, %e %b %Y","UCT" }} 12:00:00 -0400</pubDate>
 		</item>
 {% endfor %}

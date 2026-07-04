@@ -38,12 +38,12 @@ module.exports = function (eleventyConfig) {
 		return dateString.toLowerCase();
 	});
 
-	// custom page.date ----- {{ page.date | shortISODate }}
+	// custom page.date ----- {{ page.date | ISODate }}
 	// example: 260501
-	eleventyConfig.addFilter("shortISODate", (dateObj) => {
+	eleventyConfig.addFilter("ISODate", (dateObj) => {
 		let dateString = DateTime.fromJSDate(dateObj)
 			.setZone("utc")
-			.toFormat("dd.MM.yy");
+			.toFormat("yyMMdd");
 		return dateString;
 	});
 

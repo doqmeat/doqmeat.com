@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang="en">
+{% comment %} liquid variables {% endcomment %}
+{% assign allTags = tags | join: "," %}
+{% assign isBlogIndex = page.url == "/blog/" %}
+{% assign isPost = allTags contains "blog_post" %}
+
+<head>
+  <!-- 
+coded with love by des
+ -->
+  <meta charset="UTF-8">
+  <title>{{ title }}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% if isBlogIndex %}
+  <link rel="icon" type="image/x-icon" href="/_files/pages/blog/assets/favicon.gif">
+  {% else %}
+  <link rel="icon" type="image/x-icon" href="{{ favicon }}">{% endif %}
+  <link href="/_files/pages/blog/body.css" rel="stylesheet" type="text/css" media="all">
+  <link class="theme" href="/_files/pages/blog/light.css" rel="stylesheet" type="text/css" media="all">
+  {% if isBlogIndex %}
+  <link class="theme" href="/_files/pages/blog/index.css" rel="stylesheet" type="text/css" media="all">
+  {% else %}
+  <link href="/_files/pages/blog/{{ page.date | date:'%Y' }}/{{ page.fileSlug }}/extra.css" rel="stylesheet" type="text/css" media="all">{% endif %}
+</head>
+
+<body>
+  <header>
+    <small><a href="/">home</a> {% if isPost %}/ <a href="/blog">blog</a>{% endif %} / <a href="#">top</a></small>
+    <button onclick="switchFont()"><img title="switch fonts" id="font-btn" width="23px" src="/_files/pages/blog/assets/font-light.png" alt="font switch button"></button>
+    <button onclick="toggleTheme()" id="toggle" title="toggle between light and dark mode!">☀</button>
+    {% if music %}
+    <audio id="music" src="{{ music }}"></audio>
+    <button title="click to play some music! hunter's dream by ryan amon" id="music-btn" onclick="playpause()">
+      <img src="/_files/assets/pix/beat-stop.png">
+    </button>
+    {% endif %}
+  </header>
+
+  <main>
+    {% block nav %}
+    {% endblock %}
+
+    <h1>{{ title }}</h1>
+    {% block content %}
+    {% endblock %}
+  </main>
+
+  <footer>
+    {% if allTags contains "blog_post" %}<p class="date">written with love by des, {{ page.date | shortDate }}</p>{% endif %}
+    {% block footer %}
+    {% endblock %}
+  </footer>
+
+  <script src="/_files/pages/blog/css-picker.js"></script>
+  <script src="/_files/pages/blog/font.js"></script>
+  {% include "_tooltip.html" %}
+</body>
+
+</html>
