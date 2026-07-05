@@ -1,0 +1,30 @@
+.grid {
+	text-align: center;
+	position: relative;
+}
+
+.pic {
+	width: 48.5%;
+	margin: 5px;
+}
+
+.pic img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+caption-space {
+	display: block;
+	padding: 5px;
+}
+
+li p {
+	margin-left: 10px;
+}
+
+@media screen and (max-width: 700px) {
+	.pic {
+		width: 100%;
+	}
+}
