@@ -22,7 +22,7 @@ body {
 	font-size: 21px;
 	color: var(--text);
 	background: var(--purple);
-	background-image: url(/_files/pages/vgs/altie.png);
+	background-image: url(/_files/pages/vgs/assets/altie2.png);
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
@@ -103,7 +103,7 @@ button {
 
 /* wrapper for the whole page */
 div#wrapper {
-	background: rgba(33, 29, 32, 0.592);
+	/* background: rgba(33, 29, 32, 0.592); */
 	display: flex;
 	flex-wrap: wrap;
 }
