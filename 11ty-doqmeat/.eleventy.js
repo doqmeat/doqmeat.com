@@ -101,12 +101,27 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addCollection("gamelogPublishedDate", (collectionApi) => {
 		let gamelogs = collectionApi
 			.getFilteredByTags("gamelog")
-			.sort((item1, item2) => {
-				return (
+			.sort(
+				(item1, item2) =>
 					item1.data.published_date.getTime() -
-					item2.data.published_date.getTime()
-				);
-			});
+					item2.data.published_date.getTime(),
+			);
+		return gamelogs;
+	});
+
+	// gamelog but ordered by file name
+	eleventyConfig.addCollection("gamelogFiles", (collectionApi) => {
+		let gamelogs = collectionApi.getFilteredByTags("gamelog").sort((a, b) => {
+			let file1 = a.page.fileSlug;
+			let file2 = b.page.fileSlug;
+			if (file1 < file2) {
+				return -1;
+			} else if (file1 > file2) {
+				return 1;
+			} else {
+				return 0;
+			}
+		});
 		return gamelogs;
 	});
 

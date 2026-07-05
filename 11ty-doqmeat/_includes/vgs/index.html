@@ -33,14 +33,14 @@
         {% endblock %}
       </aside>
       <wrapper id="sticky-wrap">
-        <img id="pagedoll" src="/_files/pages/vgs/drifter-pagedoll.png" alt="">
+        <img id="pagedoll" src="/_files/pages/vgs/assets/drifter-pagedoll.png" alt="">
         <hr id="l-1">
         <aside id="box2">
 
           {% block box2 %}
           <h3>latest logs</h3>
           <ul>
-            <li>added: {% for log in collections.gamelogPublishedDate reversed %}<a title="added on {{ log.date | shortDate }}" href="{{ log.url }}">{{ log.data.title }}</a>{% if forloop.index0 == 1 %}{% break %}{% else %}, {% endif %}{% endfor %}</li>
+            <li>added: {% for log in collections.gamelogPublishedDate reversed %}<a title="added on {{ log.data.published_date | shortDate }}" href="{{ log.url }}">{{ log.data.title }}</a>{% if forloop.index0 == 1 %}{% break %}{% else %}, {% endif %}{% endfor %}</li>
             <li>updated: {% for log in collections.gamelog reversed %}<a title="updated on {{ log.date | shortDate }}" href="{{ log.url }}">{{ log.data.title }}</a>{% if forloop.index0 == 3 %}{% break %}{% else %}, {% endif %}{% endfor %}</li>
           </ul>
           {% endblock %}

@@ -12,11 +12,12 @@ title: gaming log
     {% endfor %}
   </ul>
   <h2>game logs</h2>
+  <p>click on any of the covers to go to their respective pages!</p>
   <!-- make js filter for tags -->
-  <div id="filters"><button onclick="toggleGames('all')">all</button> {% for tag in collections.gamelogTags %}<button onclick="toggleGames('{{ tag }}')">{{ tag | unSlugify }}</button> {% endfor %}</div>
+  <div id="filters"><button onclick="toggleGames('all')">all</button> {% for tag in collections.gamelogTags %}<button onclick="toggleGames('{{ tag | slugify }}')">{{ tag | unSlugify }}</button> {% endfor %}</div>
   <div class="wrapper-vgs">
-    {% for game in collections.gamelog %}
-    <a class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
+    {% for game in collections.gamelogFiles %}
+    <a class='{% for tag in game.data.tags %} {% unless tag == " gamelog" %} {{ tag | slugify }} {% endunless %} {% endfor %}' href="{{ game.url }}"><img src="/_files/pages/vgs/games/{{ game.fileSlug }}/cover.jpg" alt="{{ game.data.title }} log page"><span>
         <title>{{ game.data.title }}</title>
       </span></a>
     {% endfor %}
