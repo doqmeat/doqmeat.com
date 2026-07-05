@@ -47,56 +47,6 @@ module.exports = function (eleventyConfig) {
 		return dateString;
 	});
 
-	// {{ string "yyyy-mm-dd" | string2date }}
-	// returns dd.mon.yy
-	eleventyConfig.addFilter("string2date", (dateString) => {
-		const months = [
-			"jan",
-			"feb",
-			"mar",
-			"apr",
-			"may",
-			"jun",
-			"jul",
-			"aug",
-			"sep",
-			"oct",
-			"nov",
-			"dec",
-		];
-		let year = dateString.slice(2, 4); // returns the last 2 digits of the year
-		let monthIndex = parseInt(dateString.slice(5, 7), 10) - 1;
-		// returns the month - 1 to get the index of the month
-		let month = months[monthIndex];
-		let day = dateString.slice(8);
-		return day + "." + month + "." + year;
-	});
-
-	// {{ string "yyyy-mm-dd" | string2fulldate }}
-	// returns day month year
-	eleventyConfig.addFilter("string2fulldate", (dateString) => {
-		const months = [
-			"january",
-			"february",
-			"march",
-			"april",
-			"may",
-			"june",
-			"july",
-			"august",
-			"september",
-			"october",
-			"november",
-			"december",
-		];
-		let year = dateString.slice(0, 4); // returns the last 2 digits of the year
-		let monthIndex = parseInt(dateString.slice(5, 7), 10) - 1;
-		// returns the month - 1 to get the index of the month
-		let month = months[monthIndex];
-		let day = dateString.slice(8);
-		return day + " " + month + " " + year;
-	});
-
 	// gamelog but ordered by published date
 	eleventyConfig.addCollection("gamelogPublishedDate", (collectionApi) => {
 		let gamelogs = collectionApi

@@ -1,0 +1,38 @@
+<a href="/scrapbook">back to scrapbook index</a>
+<h1>{{ title }} scrapbook</h1>
+<nav>
+  {% for page in yearPages %}
+  <a href="#{{ page.date | date:'%b','UTC' }}">{{ page.data.title}}</a>
+  {% endfor %}
+</nav>
+<details>
+  <summary>key legend</summary>
+  □ = ongoing / ✘ = dropped / ✔ = completed / ⟳ = repeat
+  <br>
+  ★☆☆☆☆ = did not like / ★★☆☆☆ = eh? / ★★★☆☆ = its okay / ★★★★☆ = enjoyable / ★★★★★ = perfect
+  <ul>
+    <li class="tv">show / anime</li>
+    <li class="movie">movies</li>
+    <li class="played">video games</li>
+    <li class="music">music</li>
+    <li class="read">books / manga</li>
+  </ul>
+</details>
+{% for page in yearPages reversed %}
+<h2 id="{{ page.date | date:'%b','UTC' }}">{{ page.data.title }}</h2>
+{{ page.content }}
+{% unless forloop.last %}
+<hr>{% endunless %}
+{% endfor %}
+<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+<script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+<script>
+  const grid = document.querySelector('.grid');
+  imagesLoaded(grid, function () {
+    new Masonry(grid, {
+      itemSelector: '.pic',
+      columnWidth: '.pic',
+      gutter: 0
+    });
+  });
+</script>
