@@ -357,3 +357,20 @@ dialog {
 		background-color: var(--bg);
 	}
 }
+
+@media screen and (max-width: 1300px) {
+	div#wrapper {
+		display: block;
+	}
+
+	sidebar,
+	main {
+		width: 90vw;
+		margin: auto;
+		padding: 0px;
+	}
+
+	.gamelog_cover {
+		max-width: 120px;
+	}
+}

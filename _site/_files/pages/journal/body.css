@@ -673,12 +673,14 @@ button:hover {
 }
 
 @media only screen and (max-width: 600px) {
-	.hide {
+	.hide,
+	#tag {
 		display: none;
 	}
 	#notepad {
 		display: block;
 		margin: 0;
+		border-radius: 0px;
 	}
 
 	#header {
@@ -700,5 +702,19 @@ button:hover {
 
 	#journal {
 		border: 6px double var(--l-red);
+	}
+
+	nav ul {
+		text-align: center;
+		padding: 0px;
+		margin: 0px;
+		display: block;
+		li {
+			display: inline-block;
+		}
+		li + li::before {
+			content: "✎ ";
+			color: var(--blue);
+		}
 	}
 }
