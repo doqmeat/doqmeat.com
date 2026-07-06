@@ -2,9 +2,8 @@
 <html lang="en">
 
 <!-- coded by des ✩₊˚.⋆☾⋆⁺₊✧
-meowwwwww
-working on v5 since 26.jan.25 
-finished on 02.mar.25 
+plain layout for WIP pages :p
+04.jul.26
 
 ----
 
@@ -16,7 +15,7 @@ you're free to take whatever you need from my site, but please refrain from taki
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>2026</title>
   <link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
-  <link rel="icon" type="image/x-icon" href="/_files/assets/pix/flower-purple.gif">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/scrapbook/favicon.gif">
   <link href="/_files/css/plain.css" rel="stylesheet" type="text/css" media="all">
   
   <link href="/_files/css/scrapbook.css" rel="stylesheet" type="text/css" media="all">
@@ -74,7 +73,7 @@ you're free to take whatever you need from my site, but please refrain from taki
 
 <h2 id="Jun">june</h2>
 <h3>highlights</h3>
-<p>celebrated my b-day with friends, ice cream cake, and a hacked wii u! / been rollerskating frequently / got a new job offer / quit my fuckass retail job</p>
+<p>celebrated my b-day with friends, ice cream cake, and a hacked wii u! / been rollerskating frequently / got a new job offer / quit my fuckass retail job / decided to rework my site from the ground up!</p>
 <h3>media</h3>
 <ul>
   <li class="played">taiko no tatsujin (wii u version) / ★★★★☆</li>
@@ -86,6 +85,9 @@ you're free to take whatever you need from my site, but please refrain from taki
   <li class="movie">tekkonkinkreet / ★★★★☆</li>
   <li class="played">silksong / □</li>
   <li class="played">deltarune (chapter 1) / ✔ / ★★★★☆</li>
+  <li class="read">grimm's fairy tales / □ / ★★★★★
+    <p>i fuck with this so heavy</p>
+  </li>
 </ul>
 <h3>gallery</h3>
 <div class="grid">
@@ -115,7 +117,7 @@ you're free to take whatever you need from my site, but please refrain from taki
 
 <h2 id="Apr">april</h2>
 <h3>highlights</h3>
-<p>finished my first <a href="https://vgen.co/doqmeat" target="_blank">vgen</a> web commission for <a href="https://cu77lefish.ink" target="_blank">cu77lefish.ink</a> / went to comic con as angel devil! <a href="/microblog#260411" target="_blank">microblog post</a> / participated on my uni's strike & protests / went back to rollerskating and bought new rollerskates!</p>
+<p>finished my first <a href="https://vgen.co/doqmeat" target="_blank">vgen</a> web commission for <a href="https://cu77lefish.ink" target="_blank">cu77lefish.ink</a> / went to comic con as angel devil! <a href="/microblog#260411" target="_blank">microblog post</a> / went back to rollerskating and bought new rollerskates!</p>
 <h3>media</h3>
 <ul>
   <li class="movie">ikiru / ★★★★★</li>
@@ -125,24 +127,44 @@ you're free to take whatever you need from my site, but please refrain from taki
   <li class="movie">the drama / ★★★★☆ </li>
   <li class="movie">project hail mary / ★★★★★ </li>
 </ul>
-<h3>gallery (WIP)</h3>
+<h3>gallery</h3>
+<div class="grid">
+  <div class="pic">
+    <img src="/_files/pages/scrapbook/2026/0401-skates.png" alt="new green rollerskates">
+    <caption-space>my new rollerskates!</caption-space>
+  </div>
+  <div class="pic">
+    <img src="/_files/pages/microblog/imgs/260410-angel-devil.png" alt="me as angel devil">
+    <caption-space>i loved this cosplay so muchh it was so fun</caption-space>
+  </div>
+  <div class="pic">
+    <img src="/_files/pages/scrapbook/2026/0411-voca-rave.gif" alt="me dancing at a vocaloid rave" width="80%">
+    <caption-space>the vocaloid rave was so fucking fun</caption-space>
+  </div>
+  <div class="pic">
+    <img src="/_files/pages/scrapbook/2026/0411-uni-strike.png" alt="protest signs">
+    <caption-space>some protest signs at my uni</caption-space>
+  </div>
+</div>
 
 
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script>
-  const grid = document.querySelector('.grid');
-  imagesLoaded(grid, function () {
-    new Masonry(grid, {
-      itemSelector: '.pic',
-      columnWidth: '.pic',
-      gutter: 0
+  const grid = document.querySelectorAll('.grid');
+  grid.forEach(gridDisplay => {
+    imagesLoaded(gridDisplay, function () {
+      new Masonry(gridDisplay, {
+        itemSelector: '.pic',
+        columnWidth: '.pic',
+        gutter: 0
+      });
     });
   });
 </script></main>
     <footer>
       
-      <p><b>last updated on 05.jul.26</b></p>
+      <p><b>last updated on 06.jul.26</b></p>
       <p><a href="javascript:history.back()">go back</a> / <a href="/">homepage</a> / <a href="#">top</a></p>
       
     </footer>

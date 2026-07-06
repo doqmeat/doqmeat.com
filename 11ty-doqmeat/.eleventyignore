@@ -3,3 +3,6 @@ vgs/games/template.html
 blog/posts/template.html
 vgs/games/infinity-nikki/test/
 scrapbook/page-template.html
+node_modules/
+package-lock.json
+package.json

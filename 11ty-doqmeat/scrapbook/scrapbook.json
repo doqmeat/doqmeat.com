@@ -1,4 +1,5 @@
 {
   "layout":"plain.html",
-  "extra_css":"css/scrapbook.css"
+  "extra_css":"css/scrapbook.css",
+  "favicon":"pages/scrapbook/favicon.gif"
 }

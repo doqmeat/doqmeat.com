@@ -2,9 +2,13 @@
   "name": "doqmeat.com",
   "version": "5.5.0",
   "scripts": {
-    "delete":"rm -rf ../_site",
+    "delete": "rm -rf ../_site",
     "build": "npx @11ty/eleventy && npx pagefind --site ../_site",
     "incr": "npx @11ty/eleventy --serve --incremental"
   },
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "pagefind": "^1.5.2"
+  }
 }

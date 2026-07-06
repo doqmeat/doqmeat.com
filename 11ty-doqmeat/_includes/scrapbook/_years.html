@@ -27,12 +27,14 @@
 <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
 <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
 <script>
-  const grid = document.querySelector('.grid');
-  imagesLoaded(grid, function () {
-    new Masonry(grid, {
-      itemSelector: '.pic',
-      columnWidth: '.pic',
-      gutter: 0
+  const grid = document.querySelectorAll('.grid');
+  grid.forEach(gridDisplay => {
+    imagesLoaded(gridDisplay, function () {
+      new Masonry(gridDisplay, {
+        itemSelector: '.pic',
+        columnWidth: '.pic',
+        gutter: 0
+      });
     });
   });
 </script>
