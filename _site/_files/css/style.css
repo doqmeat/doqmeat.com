@@ -17,6 +17,7 @@ body {
 	color: rgb(22, 29, 77);
 	font-size: 16px;
 	font-family: var(--fonts);
+	min-height: 100vh;
 }
 
 a[href^="https://"]::after {
