@@ -1,0 +1,193 @@
+---
+title: button wall
+layout: plain.html
+extra_css: css/sites.css
+extra_js: pages/sites/random-button.js
+---
+<h1>button wall</h1>
+<p>here's my button and code if you'd like to link back to me ☆⌒(*＾-゜)v and remember to save them to your own site!</p>
+<img title="made in 20.apr.23" src="/_files/assets/web/buttons/doqmeat.png" alt="doqmeat button">
+<img title="made in 22.jun.24" src="/_files/assets/web/buttons/doqmeat-2.png" alt="doqmeat button">
+<small>another button is coming soon!</small>
+<p>don't know where to start? <button onclick="randomSite()">click me to go to a random site!</button></p>
+<h2>personal websites</h2>
+<p>a collection of sites from the indie web i've gathered and like visiting from time to time!</p>
+<div id="button-wall">
+  {% for site in button_wall %}
+  <a {% if site.desc !='' %}title="{{ site.desc }}" {% elsif site.name !='' %}title="{{ site.name }}" {% endif %} href="{{ site.link }}" target="_blank"><img src="/_files/pages/sites/imgs/{{ site.img }}" width="88px" height="31px" alt="{{ site.name }}"></a>
+  {% endfor %}
+</div>
+<h2>sites without buttons</h2>
+<p>(<a href="mailto:{{ siteInfo.email }}" target="_blank">e-mail me</a> if you do have one!)</p>
+<p>
+  <a href="https://dogsprite.neocities.org/" target="_blank">dogsprite</a> /
+  <a href="https://pelagiczones.neocities.org/" target="_blank">pelagiczones</a> /
+  <a href="https://yaebee.neocities.org/" target="_blank">yaebee</a> /
+  <a href="https://cyclopamine.neocities.org/" target="_blank">cyclopamine</a> /
+  <a href="https://vianamana.neocities.org/" target="_blank">vianamana</a> /
+  <a href="https://nicolesworld.neocities.org" target="_blank">nicolesworld</a> /
+  <a href="https://juneish.neocities.org/" target="_blank">juneish</a> /
+  <a href="https://neustadt.fr/" target="_blank">neustadt.fr</a> /
+  <a href="https://kiyuyu.nekoweb.org/" target="_blank">kiyuyu</a> /
+  <a title="web art... i love their stuff!! a massive inspiration to me and what i want to use the internet for" href="https://chia.design" target="_blank">chia.design</a> /
+  <a href="https://thalita.dev" target="_blank">thalita.dev</a> /
+  <a href="https://xobyte.org/" target="_blank">xobyte</a> /
+  <a href="https://gilest.org/index.html" target="_blank">gilest.org</a> /
+  <a href="https://smile4anything.com/" target="_blank">smile4anything</a> /
+  <a href="http://peepo.neocities.org" target="_blank">peepo</a> /
+  <a href="https://l0r3z.net" target="_blank">l0rez</a> /
+  <a href="https://catmothcrow.neocities.org/" target="_blank">catmothcrow</a> /
+  <a href="https://jessiechannel.neocities.org/" target="_blank">jessiechannel</a> /
+  <a href="https://jackieis.online/" target="_blank">jackieis.online</a> /
+  <a href="https://kiaroou.neocities.org" target="_blank">kiaroo</a> /
+  <a href="https://litter.leaflet.pub/" target="_blank">litter.leaflet.pub</a> /
+  <a href="https://stau.space/" target="_blank" title="my friend and uni classmate!">stau.space</a>
+</p>
+
+<h4 id="art">art / music</h4>
+<div class="neo">
+  <a title="bye2 - breakbeat artist" href="https://bye2.co.uk/" target="_blank"><img src="/_files/pages/sites/imgs/bye2.png"></a>
+  <a href="https://arunyi.art" target="_blank"><img src="/_files/pages/sites/imgs/arunyi.gif"></a>
+  <a href="https://cherubiims.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/cherubiims.gif"></a>
+  <a href="http://lastsecret.net/bitmapdreams/" target="_blank"><img src="/_files/pages/sites/imgs/bitmapdreams.gif"></a>
+  <a href="https://www.amelia.sg/ametarium/" target="_blank"><img src="/_files/pages/sites/imgs/ametarium.gif"></a>
+  <a title="kobayashi yumiko's postcard shop" href="https://wadouraku.co.jp/SHOP/837454/list.html" target="_blank"><img src="/_files/pages/sites/imgs/wadouraku.co.jp-yumiko-kobayashi.jpg"></a>
+  <a href="http://berry.heartette.net/" target="_blank"><img src="/_files/pages/sites/imgs/berry.heartette.gif"></a>
+  <a title="lily - cute site of an artists i follow!" href="https://mothcub.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/mothcub.gif"></a>
+  <a href="https://14-4ml.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/14-4ml.gif" alt="14-4ml"></a>
+  <a href="https://puppyluv.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/puppyluv.png" alt="puppyluv"></a>
+  <a href="https://xixxii.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/xixxii.gif" alt="xixxii"></a>
+  <a href="https://mooncandy.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/mooncandy.gif" alt="mooncandy"></a>
+  <a href="https://k0nfette.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/k0nfette.gif" alt="k0nfette"></a>
+  <a href="https://lucida.to/" target="_blank"><img src="/_files/pages/sites/imgs/lucida.png" alt="lucida"></a>
+  <a href="https://www.proteidaes.com/" target="_blank" rel="noopener noreferrer"><img src="/_files/pages/sites/imgs/proteidaes.png" alt="proteidaes"></a>
+</div>
+
+<p><a href="https://www.ippotsk.com/" target="_blank">ippotsk.com</a></p>
+
+<div class="banner">
+  <a title="meisa - japanese artists that has worked with one of my fav vocaloid producers: siinamota!" href="http://hathune39.web.fc2.com/" target="_blank"><img src="/_files/pages/sites/imgs/hathune.gif"></a>
+  <a title="Tokucina / 彩音ちな - gorgeous oil pastel art! one of my many art inspirations" href="http://tokeisou.client.jp/" target="_blank"><img src="/_files/pages/sites/imgs/tokeisou.client.jp.jpg"></a>
+</div>
+
+<h4 id="resources">resources / graphics</h4>
+<div class="neo">
+  <a title="has an INSANE library of free and CUTE stuff you can use on your site! from bgs, pixels, bullets, layouts, etc!" href="https://foollovers.com" target="_blank"><img src="/_files/pages/sites/imgs/foolloversbanner.gif"></a>
+  <a title="an archive by cinni where they archive old websites! very good for finding previously lost graphics!" href="https://archive.cinni.net/index.php" target="_blank"><img src="/_files/pages/sites/imgs/cutiearchive.gif"></a>
+  <a title="old web gifs" href="https://99gifshop.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/99gifshop.png"></a>
+  <a title="graphic collection" href="https://tomomi.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/tomomi.gif"></a>
+  <a title="another insane graphics collection, has tons of dividers" href="http://jasminnie.weebly.com" target="_blank"><img src="/_files/pages/sites/imgs/jasminnie.png"></a>
+  <a title="kawaiiness.net, cute site w/ resources, pixels, etc" href="https://web.archive.org/web/20231017222637/https://kawaiiness.net/home.php" target="_blank"><img src="/_files/pages/sites/imgs/kawaiiness.net.gif"></a>
+  <a title="pixel collection" href="https://lostsozai.tumblr.com" target="_blank"><img src="/_files/pages/sites/imgs/lostsozai.gif"></a>
+  <a title="pixel archive, has tons of favicons" href="https://pixelsafari.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/pixelsafari.gif"></a>
+  <a title="sozaioukoku / tons of web materials! mostly use their patterned bgs" href="http://sozaioukoku.fc2web.com/index.html" target="_blank"><img src="/_files/pages/sites/imgs/sozaioukoku.gif"></a>
+  <a title="collection of graphics for your site" href="https://graphic.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/graphic.png" target="_blank"></a>
+  <a title="pixel f2U web materials" href="http://sorahana.ciao.jp/" target="_blank"><img src="/_files/pages/sites/imgs/sorahana.ciao.jp.gif"></a>
+  <a title="super cute pixels" href="http://whimsical.heartette.net" target="_blank"><img src="/_files/pages/sites/imgs/whimsical.gif"></a>
+  <a title="site codes and templates" href="https://templaterr.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/templaterr1.png"></a>
+  <a title="nuko emoticons!" href="https://nukocities.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/nukocities.gif"></a>
+  <a href="https://nukochannel.neocities.org/" title="these little cat emojis and stickers" target="_blank"><img src="/_files/pages/sites/imgs/nukochannel.gif" alt="nukochannel"></a>
+  <a title="tumblr blog with pixels, cute bgs, etc" href="http://engrampixel.tumblr.com" target="_blank"><img src="http://media.tumblr.com/tumblr_m5106aHKT11qid2nw.gif"></a>
+  <a title="pixels and toybox" href="https://sleepysprout.neocities.org/index1" target="_blank"><img src="/_files/pages/sites/imgs/sleepysprout.png"></a>
+  <a title="pixel adoptables, bgs, div boxes" href="https://www.lejlart.com/apple.html" target="_blank"><img src="/_files/pages/sites/imgs/appledust.gif"></a>
+  <a title="cute pixel web materials" href="http://makipooh.chu.jp/apupu/top.html" target="_blank"><img src="/_files/pages/sites/imgs/apupu.gif"></a>
+  <a title="TONS web materials!" href="http://sozaiya405.chu.jp/" target="_blank"><img src="/_files/pages/sites/imgs/sozaiya405.gif"></a>
+  <a title="make your own dream room!" href="https://dreamroom.uwu.ai" target="_blank"><img src="/_files/pages/sites/imgs/dreamroom.gif"></a>
+  <a title="web materials!" href="https://fancyparts.com/index.html" target="_blank"><img src="/_files/pages/sites/imgs/fancyparts.gif"></a>
+  <a title="have a pet on your site" href="https://gifypet.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/gifypet.gif"></a>
+  <a title="make your own blinkie, blinkie archive" href="https://blinkies.cafe" target="_blank"><img src="/_files/pages/sites/imgs/blinkiesCafe.gif"></a>
+  <a href="https://scripted.neocities.org" target="_blank"><img src="https://scripted.neocities.org/SCRIPTED-BUTTON.gif" title="lots of cool codes for your site"></a>
+  <a title="site codes and templates" href="https://templaterr.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/templaterr1.png"></a>
+  <a href="https://strawberry-gashes.neocities.org" title="strawberry gashes ♥" target="0"><img src="/_files/pages/sites/imgs/strawberry-gashes.gif"></a>
+  <a title="cute and colorful site that offers free materials!" href="https://sweetcharm.net/" target="_blank"><img src="/_files/pages/sites/imgs/sweetcharm.gif" alt="sweetcharm"></a>
+  <a title="has cute CAT themed FC2 blog templates, materials, and lots more! they also have linked other resource sites!" href="http://tora7.ciao.jp/" target="_blank"><img src="/_files/pages/sites/imgs/tora7.gif" alt="tora7"></a>
+  <a title="catstuff" href="https://user.xmission.com/~emailbox/catstuff.htm" target="_blank"><img src="/_files/pages/sites/imgs/catstuff-xmission.gif"></a>
+  <a title="F2U icons n pixels" href="http://www.nagai.net/icon-kan/index.html" target="_blank"><img src="/_files/pages/sites/imgs/nagai-net.gif" alt="nagai"></a>
+  <a title="pixels for adoptions" href="https://mooncandy.toys/" target="_blank"><img src="/_files/pages/sites/imgs/mooncandy.gif"></a>
+  <a href="https://loveberry.nekoweb.org/" target="_blank"><img src="/_files/pages/sites/imgs/loveberry.gif" alt="loveberry"></a>
+</div>
+
+<a title="archived site - cute pixel sets" href="https://web.archive.org/web/20021030170809/http://graphicgard.topcities.com/Hydrangea.html"><img src="/_files/pages/sites/imgs/hydrangea-topcities.gif" width="90px"></a>
+<a title="portuguese blog i found with tons but TONS of gifs, pixels, bgs, etc" href="https://cantinhoencantado.blogs.sapo.pt" target="_blank"><img src="/_files/pages/sites/imgs/cantinhoencantado.gif" width="90px"></a>
+<a title="lots of cute old graphics" href="https://web.archive.org/web/20081228002347/http://ritvasgallery.com/files0/fallflowers.htm" target="_blank"><img src="/_files/pages/sites/imgs/ritvasgallery.gif" alt="ritva's gallery"></a>
+
+<p><a title="good resources for people who are new to making websites!" href="https://sadgrl.online/" target="_blank">sadgrl.online</a></p>
+
+<h4 id="fansite">fansites / wikis</h4>
+<a title="siinamota fansite owned by me!" href="https://siinamota.doqmeat.com" target="_blank"><img src="https://siinamota.doqmeat.com/_files/buttons/siinamotafansite88x31.png" alt="siinamota fansite"></a>
+<a title="fansite for kpop group billlie" href="https://billlielove.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/billlielove.webp" alt="billlielove"></a>
+<a href="https://read-nekojiru.neocities.org/"><img src="/_files/pages/sites/imgs/read-nekojiru.gif" alt="read-nekojiru"></a>
+<a href="https://frutigeraeroarchive.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/frutigeraeroarchive.png" alt="frutigeraeroarchive"></a>
+
+<h4 id="fun">for fun / experiences / misc</h4>
+<div class="neo">
+  <a href="https://momg.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/momg.gif"></a>
+  <a title="hallowdaze" href="https://hallowdaze.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/hallowdaze.gif"></a>
+  <a title="space bar" href="https://space-bar.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/space-bar.jpg"></a>
+  <a title="japanese postcard shop site! has a ton of beautiful illustrations by different artists" href="https://wadouraku.co.jp" target="_blank"><img src="/_files/pages/sites/imgs/wadouraku.gif"></a>
+  <a href="https://vibes.fish/" target="_blank"><img src="/_files/pages/sites/imgs/vibes.fish.gif" alt="vibes.fish"></a>
+</div>
+
+<div class="banner">
+  <a title="pucci's world - a site dedicated to the webmaster's cats! so cute" href="https://puccisworld.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/pucci.gif"></a>
+</div>
+
+<p><a href="https://www.horg.com/" target="_blank">horg.com</a> /
+  <a href="https://how-i-experience-web-today.com/" target="_blank">how i experience web today</a> /
+  <a href="https://ifeelsomuchsha.me/" target="_blank">ifeelsomuchsh.me</a> /
+  <a href="https://thehtml.review" target="_blank">thehtml.review</a>
+</p>
+
+<h4 id="social">social</h4>
+<div id="forums" class="neo">
+  <a title="cinni's social site!" href="https://angel-town.cinni.net" target="_blank"><img src="/_files/pages/sites/imgs/angel-town.gif"></a>
+  <a title="drawing site by cinni.net" href="https://oekaki.cinni.net" target="_blank"><img src="/_files/pages/sites/imgs/cinnisoekaki.gif"></a>
+  <a title="status cafe - microblog site" href="https://status.cafe" target="_blank"><img src="https://status.cafe/assets/button.png" alt="Status Cafe" /></a>
+  <a title="melonland.net forum" href="https://forum.melonland.net" target="_blank"><img src="/_files/pages/sites/imgs/MELONLAND-FORUM.gif"></a>
+  <a title="32.bit cafe" href="https://www.32bit.cafe/" target="_blank"><img src="/_files/pages/sites/imgs/32bit-cafe.png" alt="32.bit cafe"></a>
+  <a href="https://nekoweb.org/" target="_blank"><img src="/_files/pages/sites/imgs/nekoweb-mimi.gif" alt="nekoweb"></a>
+  <a title="silly.city webring" href="https://silly.city" target="_blank"><img src="/_files/pages/sites/imgs/silly.city.gif" alt="silly city"></a>
+</div>
+
+<!--box1 end wrapper end div-->
+</div>
+
+<div class="box">
+
+  <h3><img src="/_files/assets/pix/icon_k_gyo.gif"> 404 graveyard / moved :(</h3>
+  <p>please do let me know if these sites had their URL changed!</p>
+
+  <div id="grave" class="neo">
+    <a title="mufo - small little site with a nice blog" href="https://mufo.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/mufo.gif"></a>
+    <a title="bee - beautiful site and art!!! i love this a whole lot" href="https://fatgrrlz.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/fatgrrlz.gif"></a>
+    <a href="https://hydrangeagarden.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/hydrangeagarden.gif"></a>
+    <a title="mewtle" href="https://meowii.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/meowii.gif"></a>
+    <a title="leanne" href="https://leanneu.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/leanne.png"></a>
+    <a title="meg" href="https://lim-lim.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/limlim.jpg"></a>
+    <a href="https://ohnno-eggs.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/ohnno-eggs.png"></a>
+    <a href="https://reminiscing.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/reminiscing.png"></a>
+    <a title="miu" href="https://gears.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/gears.gif"></a>
+    <a title="aoi - lovely layout and interesting links in here!" href="https://a0i.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/a0i.gif"></a>
+    <a href="https://deathbycats.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/deathbycats.png"></a>
+    <a title="cora - cute site!! i love the cats around this site" href="https://realitv.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/realitv.gif"></a>
+    <a title="nyatchi - such a cute layout" href="https://nyatchi.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/nyatchi.gif"></a>
+    <a title="a0i - LOVELY layout designs" href="https://hatsu.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/hatsu.png" alt="hatsu"></a>
+    <a title="kengo - nice and minimalistic site" href="https://kengo.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/kengo.png"></a>
+    <a title="rue - very interesting and well written music reviews!" href="https://angelpuppyclub.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/angelpuppyclub.gif"></a>
+    <a title="kojou - i love all the art around this site!" href="https://kojou.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/kojou.jpg"></a>
+    <a title="finn - i love their /cats page the most!" href="https://snowenti.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/snowenti.gif"></a>
+    <a href="https://panaceas.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/panaceas.png"></a>
+    <a title="vulpix" href="https://ocha.cafe" target="_blank"><img src="/_files/pages/sites/imgs/ocha.cafe.png" alt="ocha.cafe"></a>
+    <a title="maalused - has a very cool and mysterious vibe to it!" href="https://maalused.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/maalused.gif"></a>
+    <a title="telle - nice site with interesting logs!" href="https://catcakes.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/catcakes.gif" alt="catcakes"></a>
+    <a title="lovely photos on their blog" href="https://bootlegfriend.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/bootleg.png" alt="bootleg"></a>
+    <a title="juliette - CUTEEEE site!!! i love being here" href="https://juriettoo.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/juriettoo.png"></a>
+    <a href="https://angelscake.neocities.org/" target="_blank"><img src="/_files/pages/sites/imgs/angelscake.gif" alt="angelscake"></a>
+    <a href="https://sealparty.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/sealparty.gif"></a>
+    <a href="https://adilene.net" target="_blank"><img src="/_files/pages/sites/imgs/adilene.net.png"></a>
+    <a title="pom" href="https://pomelo.lol/" target="_blank"><img src="/_files/pages/sites/imgs/pomelo.gif"></a>
+    <a href="https://strawberryreverie.neocities.org" target="_blank"><img src="/_files/pages/sites/imgs/strawberryreverie.gif" alt="strawberryreverie"></a>
+    <a href="https://maria.town" target="_blank"><img src="/_files/pages/sites/imgs/maria.town.png" alt="maria.town"></a>
+    <a href="https://411.rip/" target="_blank"><img src="/_files/pages/sites/imgs/411.gif" alt="411"></a>
+    <a title="futureisfailed / erbatur - electronic artist i like!" href="http://erbatur.web.fc2.com/" target="_blank"><img src="/_files/pages/sites/imgs/erbatur.gif" alt="erbatur"></a>
+  </div>

@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<!-- coded by des ✩₊˚.⋆☾⋆⁺₊✧
+<!-- 
+coded by des ✩₊˚.⋆☾⋆⁺₊✧ 
+----
 plain layout for WIP pages :p
 04.jul.26
-
 ----
-
 btw please don't take my entire code and use it as a base.
-you're free to take whatever you need from my site, but please refrain from taking entire pages as templates that arent free to use and using it for your own. -->
+you're free to take whatever you need from my code! but please refrain from taking ENTIRE html/css/js as templates for your own website.
+that's lame 
+-->
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
-  <link rel="icon" type="image/x-icon" href="/_files/{{ favicon }}">
+  <link rel="icon" type="image/x-icon" href="/_files/{% if favicon %}{{ favicon }}{% else %}assets/silly.gif{% endif %}">
   <link href="/_files/css/plain.css" rel="stylesheet" type="text/css" media="all">
   {% if extra_css %}
   <link href="/_files/{{ extra_css }}" rel="stylesheet" type="text/css" media="all">{% endif %}
@@ -42,6 +44,8 @@ you're free to take whatever you need from my site, but please refrain from taki
     </footer>
   </wrapper>
 
+  {% if extra_js %}
+  <script src="/_files/{{ extra_js }}"></script>{% endif %}
   {% if page.url == "/" %}
   <script src="/_files/js/last-fm.js"></script>
   <script src="https://status.cafe/current-status.js?name=doqmeat" defer></script>
