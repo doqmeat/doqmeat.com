@@ -5,16 +5,16 @@
 
 :root {
 	--fonts: gaegu-r, ms pgothic, arial;
-	--purple: #5E5275;
-	--lilac: #B19DBE;
-	--pink: #D38985;
-	--coral: #EB9E92;
-	--orange: #FDAC7F;
+	--purple: #5e5275;
+	--lilac: #b19dbe;
+	--pink: #d38985;
+	--coral: #eb9e92;
+	--orange: #fdac7f;
 }
 
 body {
 	font-family: var(--fonts);
-	background: url('bg.png');
+	background: url("bg.png");
 	font-size: 18px;
 	background-position: center top;
 	background-size: cover;
@@ -29,7 +29,7 @@ a#home {
 	top: -3px;
 	left: 10px;
 	font-family: gaegu-b, var(--fonts);
-	background: url("/!g/pix/lc09-icon-bookmark.gif") no-repeat;
+	background: url("/_files/assets/pix/lc09-icon-bookmark.gif") no-repeat;
 	background-size: 20px;
 	height: 60px;
 	width: 20px;
@@ -67,7 +67,6 @@ h1 {
 main {
 	max-width: 600px;
 	margin: auto;
-
 }
 
 footer {
@@ -112,7 +111,7 @@ footer p {
 	background: white;
 }
 
-@media only screen and (max-width:500px) {
+@media only screen and (max-width: 500px) {
 	#pop-up {
 		margin-bottom: 20px;
 	}
@@ -120,7 +119,8 @@ footer p {
 
 /* Start https://www.cursors-4u.com */
 * {
-	cursor: url(https://cur.cursors-4u.net/nature/nat-4/nat345.cur), auto !important;
+	cursor:
+		url(https://cur.cursors-4u.net/nature/nat-4/nat345.cur), auto !important;
 }
 
 /* End https://www.cursors-4u.com */

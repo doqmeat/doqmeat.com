@@ -1,5 +1,5 @@
 body {
-	background: url(/!g/bg/picnicclothbg.png);
+	background: url(/_files/assets/bg/picnicclothbg.png);
 	word-wrap: break-word;
 	font-size: 16px;
 	line-height: 23px;
@@ -21,7 +21,7 @@ a:hover {
 
 ::selection {
 	color: black;
-	background-color: #D0FF8D;
+	background-color: #d0ff8d;
 }
 
 main {
@@ -75,7 +75,7 @@ h1 {
 
 footer {
 	font-size: small;
-	background: #FFFBAA;
+	background: #fffbaa;
 	position: relative;
 	margin-top: 10px;
 	margin-right: auto;
@@ -93,7 +93,6 @@ footer {
 
 #home img {
 	width: 200px;
-	;
 }
 
 #corner {
@@ -119,7 +118,7 @@ footer {
 	margin: 30px 15px 7px 12px;
 	padding: 5px;
 	border-radius: 10px;
-	border: 1px solid #99D9EA;
+	border: 1px solid #99d9ea;
 	color: black;
 	background: white;
 }
@@ -138,5 +137,4 @@ footer {
 	#home {
 		display: none;
 	}
-
 }

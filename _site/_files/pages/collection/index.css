@@ -28,7 +28,8 @@
 }
 
 .border {
-	filter: drop-shadow(3px 0px 5px white) drop-shadow(0px 3px 5px white) drop-shadow(-1px 0px 5px white);
+	filter: drop-shadow(3px 0px 5px white) drop-shadow(0px 3px 5px white)
+		drop-shadow(-1px 0px 5px white);
 }
 
 .desc {
@@ -36,17 +37,19 @@
 }
 
 body {
-	background: #F9E7E7;
+	background: #f9e7e7;
 	word-wrap: break-word;
 	font-size: 12px;
 	line-height: 20px;
-	font-family: starlight, ms gothic;
+	font-family:
+		starlight,
+		ms gothic;
 	letter-spacing: 1px;
 	color: black;
 }
 
 li {
-	list-style-image: url('/!g/pix/heartfabi.gif');
+	list-style-image: url("/_files/assets/pix/heartfabi.gif");
 	padding-left: 2px;
 }
 
@@ -56,7 +59,7 @@ ul {
 }
 
 a {
-	color: #F04A4F;
+	color: #f04a4f;
 	font-weight: normal;
 	text-decoration: none;
 	transition-duration: 0.3s;
@@ -90,7 +93,7 @@ footer {
 
 ::selection {
 	color: black;
-	background-color: #FFEA86;
+	background-color: #ffea86;
 }
 
 ::-webkit-scrollbar {
@@ -99,26 +102,24 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-	background-color: #F48286;
+	background-color: #f48286;
 	border: 1px solid black;
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-	background-color: #FBEAF0;
+	background-color: #fbeaf0;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #FBEAF0;
+	background-color: #fbeaf0;
 }
 
 @media only screen and (max-width: 600px) {
-
 	.corner-right,
 	.home {
 		display: none;
 	}
-
 }
 
 #s-m-t-tooltip {

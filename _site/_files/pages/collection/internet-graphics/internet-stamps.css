@@ -42,7 +42,7 @@ h2 {
 	font-family: morningtea;
 	letter-spacing: 5px;
 	font-weight: normal;
-	color: #58BC55;
+	color: #58bc55;
 }
 
 h1 {
@@ -115,18 +115,20 @@ body {
 	word-spacing: 8px;
 	letter-spacing: 1px;
 	line-height: 20px;
-	font-family: starlight, ms gothic;
+	font-family:
+		starlight,
+		ms gothic;
 	color: black;
 }
 
 li {
-	list-style-image: url('/!g/pix/strawfavi.gif');
+	list-style-image: url("/_files/assets/pix/strawfavi.gif");
 	padding-left: 2px;
 	list-style-position: inside;
 }
 
 a {
-	color: #FF7E7E;
+	color: #ff7e7e;
 	font-weight: normal;
 	text-decoration: none;
 }
@@ -160,7 +162,7 @@ img:hover {
 
 ::selection {
 	color: black;
-	background-color: #FFEA86;
+	background-color: #ffea86;
 }
 
 ::-webkit-scrollbar {
@@ -169,16 +171,16 @@ img:hover {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-	background-color: #FF7E7E;
+	background-color: #ff7e7e;
 	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-	background-color: #FF7E7E;
+	background-color: #ff7e7e;
 }
 
 ::-webkit-scrollbar-track {
-	background-color: #FFD3D3;
+	background-color: #ffd3d3;
 }
 
 #s-m-t-tooltip {

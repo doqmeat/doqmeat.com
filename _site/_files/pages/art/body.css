@@ -13,10 +13,13 @@ html {
 }
 
 body {
-	font-family: basiic, ms pgothic, arial;
+	font-family:
+		basiic,
+		ms pgothic,
+		arial;
 	font-size: 17px;
 	margin: 0px;
-	background-image: url("/notebook/!g/grid-mustard.png");
+	background-image: url("/notebook/_files/assets/grid-mustard.png");
 	background-size: 10px;
 }
 

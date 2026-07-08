@@ -9,8 +9,11 @@ html {
 body {
 	margin: 0px;
 	background: lightgoldenrodyellow;
-	background-image: url(/!g/bg/h096-2.gif);
-	font-family: ms pgothic, basiic, arial;
+	background-image: url(/_files/assets/bg/h096-2.gif);
+	font-family:
+		ms pgothic,
+		basiic,
+		arial;
 	font-size: 18px;
 	line-height: 20px;
 	text-align: center;
@@ -51,7 +54,10 @@ h1 {
 	font-weight: normal;
 	margin: 0px;
 	letter-spacing: 3px;
-	font-family: garden-cursive, ms pgothic, arial;
+	font-family:
+		garden-cursive,
+		ms pgothic,
+		arial;
 }
 
 main {

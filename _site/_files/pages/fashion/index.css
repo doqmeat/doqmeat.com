@@ -1,6 +1,7 @@
 * {
 	box-sizing: border-box;
-	cursor: url(https://cur.cursors-4u.net/others/oth-2/oth191.cur), auto !important;
+	cursor:
+		url(https://cur.cursors-4u.net/others/oth-2/oth191.cur), auto !important;
 }
 :root {
 	--fonts: nintendo-ds-bios, ms pgothic, arial;
@@ -64,7 +65,7 @@ main {
 }
 
 #clothes {
-	background: url("/!g/div/clothes2.gif");
+	background: url("/_files/assets/div/clothes2.gif");
 	width: 100%;
 	height: 49px;
 	position: fixed;

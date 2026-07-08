@@ -50,13 +50,13 @@ details {
 		font-family: unset;
 	}
 	summary.pending {
-		list-style-image: url(/!g/pix/checkdots.png);
+		list-style-image: url(/_files/assets/pix/checkdots.png);
 	}
 	summary.done {
-		list-style-image: url(/!g/pix/checkyes.png);
+		list-style-image: url(/_files/assets/pix/checkyes.png);
 	}
 	summary.not_done {
-		list-style-image: url(/!g/pix/checkno.png);
+		list-style-image: url(/_files/assets/pix/checkno.png);
 	}
 }
 
@@ -176,7 +176,7 @@ header.page {
 
 /* wanna make a better drawing for the push pin */
 /* .left.pin::after {
-	content: url("/!g/deco/pin.png");
+	content: url("/_files/assets/deco/pin.png");
 	position: absolute;
 	top: -8%;
 	left: -6%;
@@ -184,7 +184,7 @@ header.page {
 }
 
 .right.pin::after {
-	content: url("/!g/deco/pin.png");
+	content: url("/_files/assets/deco/pin.png");
 	position: absolute;
 	top: -9%;
 	rotate: 10deg;
@@ -205,7 +205,7 @@ header.page {
 	max-width: 800px;
 	border: 1px solid lightblue;
 	padding: 15px;
-	background: url("/notebook/!g/grid-blue.png");
+	background: url("/notebook/_files/assets/grid-blue.png");
 	border-radius: 10px;
 	overflow: auto;
 	h2 {
@@ -234,24 +234,24 @@ li details {
 }
 
 li.played {
-	list-style-image: url("/!g/pix/vgs.gif");
+	list-style-image: url("/_files/assets/pix/vgs.gif");
 }
 
 li.watched,
 li.tv {
-	list-style-image: url("/!g/pix/tv.gif");
+	list-style-image: url("/_files/assets/pix/tv.gif");
 }
 
 li.movie {
-	list-style-image: url("/!g/pix/cat-watching-tv.gif");
+	list-style-image: url("/_files/assets/pix/cat-watching-tv.gif");
 }
 
 li.read {
-	list-style-image: url("/!g/pix/book3.gif");
+	list-style-image: url("/_files/assets/pix/book3.gif");
 }
 
 li.music {
-	list-style-image: url("/!g/pix/mp3.gif");
+	list-style-image: url("/_files/assets/pix/mp3.gif");
 }
 
 footer {
@@ -259,7 +259,7 @@ footer {
 	padding: 10px;
 	text-align: center;
 	border: 1px solid lightpink;
-	background: url("/notebook/!g/grid-pink.png");
+	background: url("/notebook/_files/assets/grid-pink.png");
 }
 
 .spoiler {

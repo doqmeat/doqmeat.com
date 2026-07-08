@@ -3,7 +3,8 @@
 }
 
 body {
-	background: url(https://64.media.tumblr.com/ae454ed3a5d1e6b4df199cde688d32ef/tumblr_inline_n25dowxCKH1qhwjx8.gif) no-repeat center center fixed;
+	background: url(https://64.media.tumblr.com/ae454ed3a5d1e6b4df199cde688d32ef/tumblr_inline_n25dowxCKH1qhwjx8.gif)
+		no-repeat center center fixed;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -28,7 +29,7 @@ h1::before,
 h2::before,
 h3::before,
 h4::before {
-	content: url("/!g/pix/butter3.gif");
+	content: url("/_files/assets/pix/butter3.gif");
 	padding-right: 10px;
 }
 
@@ -36,7 +37,7 @@ h1::after,
 h2::after,
 h3::after,
 h4::after {
-	content: url("/!g/pix/butter3.gif");
+	content: url("/_files/assets/pix/butter3.gif");
 	padding-left: 10px;
 }
 
@@ -47,11 +48,11 @@ li {
 }
 
 .f1 {
-	list-style-image: url("/!g/pix/fourple.gif");
+	list-style-image: url("/_files/assets/pix/fourple.gif");
 }
 
 .f2 {
-	list-style-image: url("/!g/pix/flowerpink.gif");
+	list-style-image: url("/_files/assets/pix/flowerpink.gif");
 }
 
 mark {
@@ -71,7 +72,7 @@ a:focus {
 
 a:active,
 a:hover {
-	outline: 0
+	outline: 0;
 }
 
 .inner {
@@ -106,7 +107,12 @@ p {
 
 main {
 	background: rgb(218, 255, 217);
-	background: linear-gradient(146deg, rgba(218, 255, 217, 0.907527977011117) 0%, rgba(255, 219, 214, 0.8963234952183998) 49%, rgba(187, 210, 255, 0.9131302179074755) 100%);
+	background: linear-gradient(
+		146deg,
+		rgba(218, 255, 217, 0.907527977011117) 0%,
+		rgba(255, 219, 214, 0.8963234952183998) 49%,
+		rgba(187, 210, 255, 0.9131302179074755) 100%
+	);
 	position: relative;
 	top: 40px;
 	margin: auto;
@@ -116,11 +122,10 @@ main {
 	padding: 10px;
 }
 
-summary{
+summary {
 	text-align: center;
-	cursor:help;
+	cursor: help;
 }
-
 
 #back a {
 	cursor: pointer;
@@ -131,7 +136,12 @@ summary{
 
 footer {
 	background: rgb(218, 255, 217);
-	background: linear-gradient(146deg, rgba(218, 255, 217, 0.907527977011117) 0%, rgba(255, 219, 214, 0.8963234952183998) 49%, rgba(187, 210, 255, 0.9131302179074755) 100%);
+	background: linear-gradient(
+		146deg,
+		rgba(218, 255, 217, 0.907527977011117) 0%,
+		rgba(255, 219, 214, 0.8963234952183998) 49%,
+		rgba(187, 210, 255, 0.9131302179074755) 100%
+	);
 	text-align: center;
 	border-top: 1px dashed black;
 	border-bottom: 1px dashed black;
@@ -141,7 +151,11 @@ footer {
 
 #musicbox {
 	background: rgb(187, 255, 206);
-	background: linear-gradient(343deg, rgba(187, 255, 206, 0.8991246156665791) 0%, rgba(255, 254, 214, 0.8823178929775035) 48%);
+	background: linear-gradient(
+		343deg,
+		rgba(187, 255, 206, 0.8991246156665791) 0%,
+		rgba(255, 254, 214, 0.8823178929775035) 48%
+	);
 	position: fixed;
 	width: 200px;
 	bottom: 60px;
@@ -159,7 +173,11 @@ footer {
 	border: 1px dashed black;
 	color: black;
 	background: rgb(187, 255, 206);
-	background: linear-gradient(343deg, rgba(187, 255, 206, 0.8991246156665791) 0%, rgba(255, 254, 214, 0.8823178929775035) 48%);
+	background: linear-gradient(
+		343deg,
+		rgba(187, 255, 206, 0.8991246156665791) 0%,
+		rgba(255, 254, 214, 0.8823178929775035) 48%
+	);
 }
 
 @media only screen and (max-width: 650px) {
@@ -181,7 +199,6 @@ footer {
 	#back a {
 		display: none;
 	}
-
 }
 
 @media only screen and (max-width: 1100px) {

@@ -24,18 +24,18 @@
 	padding: 2px;
 }
 
-.cat{
-	background: url(/!g/bg/tora-thinkin.gif);
-	background-size:80px;
-	color:black;
-	font-family:newpenji;
+.cat {
+	background: url(/_files/assets/bg/tora-thinkin.gif);
+	background-size: 80px;
+	color: black;
+	font-family: newpenji;
 }
 
 .cat a {
 	font-weight: bold;
-color:black;
+	color: black;
 }
 
-.cat mark{
-	background:lightgreen;
+.cat mark {
+	background: lightgreen;
 }

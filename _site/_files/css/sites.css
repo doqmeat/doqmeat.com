@@ -1,0 +1,10 @@
+a[href^="https://"]::after {
+	content: none;
+}
+
+.neo {
+	img {
+		width: 88px;
+		height: 31px;
+	}
+}

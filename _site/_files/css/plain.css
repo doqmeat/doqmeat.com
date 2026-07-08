@@ -20,6 +20,17 @@ body {
 	font-family: var(--fonts);
 }
 
+button {
+	border-radius: 4px;
+	background: var(--tt-bg);
+	font-family: inherit;
+	color: var(--tt-color);
+	&:hover {
+		background: var(--tt-color);
+		color: var(--tt-bg);
+	}
+}
+
 details {
 	margin: 5px;
 	border: 1px solid var(--tt-bg);

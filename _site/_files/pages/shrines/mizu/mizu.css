@@ -14,22 +14,22 @@ body {
 }
 
 li {
-	list-style-image: url('/!g/pix/mizuli.png');
+	list-style-image: url("/_files/assets/pix/mizuli.png");
 	padding-left: 2px;
 	list-style-position: inside;
 }
 
 i {
-	background: #C8F7B0;
+	background: #c8f7b0;
 }
 
 b,
 strong {
-	background: #B0EDF9;
+	background: #b0edf9;
 }
 
 mark {
-	background: #FFE8B0;
+	background: #ffe8b0;
 }
 
 a {
@@ -45,7 +45,7 @@ a:focus {
 
 a:active,
 a:hover {
-	outline: 0
+	outline: 0;
 }
 
 a:hover {
@@ -65,7 +65,7 @@ p img {
 
 ::selection {
 	color: black;
-	background-color: #C8CEFF;
+	background-color: #c8ceff;
 }
 
 img {
@@ -125,7 +125,11 @@ img {
 
 #headerwords {
 	background: rgb(255, 255, 255);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.8851190134256828) 0%,
+		rgba(255, 255, 255, 0.8851190134256828) 33%
+	);
 	box-shadow: 1px 1px 20px 1px white;
 	padding: 5px;
 	border-radius: 20px;
@@ -168,7 +172,11 @@ h1:hover {
 	z-index: 1;
 	position: relative;
 	background: rgb(255, 255, 255);
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0.8851190134256828) 0%, rgba(255, 255, 255, 0.8851190134256828) 33%);
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.8851190134256828) 0%,
+		rgba(255, 255, 255, 0.8851190134256828) 33%
+	);
 	box-shadow: 1px 1px 20px 1px white;
 	max-width: 500px;
 	border: 1px double black;
@@ -238,7 +246,10 @@ h1:hover {
 
 /* like a sticker border */
 .border1 {
-	filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white) drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white) drop-shadow(1px 0px 0 black) drop-shadow(0px 1px 0 black) drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black);
+	filter: drop-shadow(2px 0px 0px white) drop-shadow(0px 2px 0px white)
+		drop-shadow(-2px 0px 0px white) drop-shadow(0px -2px 0px white)
+		drop-shadow(1px 0px 0 black) drop-shadow(0px 1px 0 black)
+		drop-shadow(1px -1px 0 black) drop-shadow(-1px 1px 0 black);
 }
 
 /* gallery */
@@ -310,7 +321,7 @@ h1:hover {
 	padding: 8px;
 	border: 2px dashed black;
 	border-radius: 10px;
-	background: #FFDDEA;
+	background: #ffddea;
 }
 
 /* scrollbar for chrome ppl*/
@@ -321,13 +332,13 @@ h1:hover {
 }
 
 ::-webkit-scrollbar-thumb:vertical {
-	background-color: #FFF4AE;
+	background-color: #fff4ae;
 	border: 1px solid black;
 	border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:horizontal {
-	background-color: #E5C3D1;
+	background-color: #e5c3d1;
 	border: 1px solid black;
 	border-radius: 10px;
 }
@@ -339,7 +350,8 @@ h1:hover {
 
 /* Start https://www.cursors-4u.com */
 * {
-	cursor: url(https://cur.cursors-4u.net/nature/nat-8/nat720.cur), auto !important;
+	cursor:
+		url(https://cur.cursors-4u.net/nature/nat-8/nat720.cur), auto !important;
 }
 
 /* End https://www.cursors-4u.com */

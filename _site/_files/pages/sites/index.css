@@ -1,3 +1,5 @@
+@import url(../../css/style.css);
+
 body {
 	background: url(bg-sora1_2.gif) fixed;
 	font-family:
@@ -84,7 +86,7 @@ textarea {
 }
 
 .footer {
-	background: url(/!g/div/bgk_shita1.gif);
+	background: url(/_files/assets/div/bgk_shita1.gif);
 	background-repeat: repeat-x;
 	position: fixed;
 	width: 100%;
