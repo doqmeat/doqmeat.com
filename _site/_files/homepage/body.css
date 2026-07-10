@@ -62,8 +62,18 @@ main {
 	}
 }
 
-@media screen and (max-width: 700px) {
-	#music {
-		display: none;
+@media screen and (max-width: 450px) {
+	main {
+		grid-template-areas:
+			"header header"
+			"content content"
+			"nav nav";
+		gap: 0px;
+		nav {
+			position: relative;
+			li {
+				display: inline-block;
+			}
+		}
 	}
 }

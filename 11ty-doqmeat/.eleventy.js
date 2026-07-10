@@ -29,6 +29,16 @@ module.exports = function (eleventyConfig) {
 		return str.replace(regexPattern, " ");
 	});
 
+	// converts a string into multicolor
+	eleventyConfig.addFilter("multicolor", (str) => {
+		const colors = ["#78b07e", "#c9aa55", "#7092b8", "#c7959b", "#9778aa"];
+		let newstring = "";
+		for (let i = 0; i < str.length; i++) {
+			newstring += `<span style="color:${colors[i % 5]}">${str[i]}</span>`;
+		}
+		return newstring;
+	});
+
 	// custom page.date ----- {{ page.date | shortDate }}
 	// example: 01.may.26
 	eleventyConfig.addFilter("shortDate", (dateObj) => {

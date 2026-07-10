@@ -36,6 +36,7 @@ let playbtn = document.querySelector("button[onclick='playPause()']");
 
 albumCover.setAttribute("width", "90px");
 albumCover.setAttribute("height", "90px");
+albumCover.setAttribute("alt", "loading album cover....");
 
 link.setAttribute("target", "_blank");
 link.classList.add("no-arrow");
@@ -69,7 +70,7 @@ function playPause() {
 }
 
 function prevSong() {
-	currentIndex = (currentIndex - 1) % playlist.length;
+	currentIndex = currentIndex ? currentIndex - 1 : playlist.length - 1;
 	loadSong(currentIndex);
 }
 
