@@ -2,8 +2,8 @@
 
 :root {
 	--fonts: dot gothic, ms pgothic, arial;
-	--accent: rgb(85, 72, 183);
-	--tt-bg: rgb(85, 72, 183);
+	--accent: #7092b8;
+	--tt-bg: var(--accent);
 	--tt-color: rgb(255, 255, 255);
 }
 
@@ -14,7 +14,7 @@ html {
 body {
 	background-color: rgb(245, 244, 240);
 	margin: 0px;
-	color: #4f3b24;
+	color: #676160;
 	font-size: 15px;
 	word-spacing: 3px;
 	font-family: var(--fonts);

@@ -13,7 +13,7 @@ extra_js: pages/sites/random-button.js
 <h2>personal websites</h2>
 <p>a collection of sites from the indie web i've gathered and like visiting from time to time!</p>
 <div id="button-wall">
-  {% for site in button_wall %}
+  {% for site in button_wall reversed %}
   <a {% if site.desc !='' %}title="{{ site.desc }}" {% elsif site.name !='' %}title="{{ site.name }}" {% endif %} href="{{ site.link }}" target="_blank"><img src="/_files/pages/sites/imgs/{{ site.img }}" width="88px" height="31px" alt="{{ site.name }}"></a>
   {% endfor %}
 </div>

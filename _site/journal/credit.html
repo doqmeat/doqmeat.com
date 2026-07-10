@@ -32,7 +32,7 @@ working on it on 11ty since 23.may.26
         <li><a href="/journal/credit.html">credits</a></li>
         <li><a href="/">homepage</a></li>
       </ul>
-      <p>last updated on: <b>29.may.26</b></p>
+      <p>last updated on: <b>10.jul.26</b></p>
       <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
     </nav>
 
@@ -45,6 +45,7 @@ working on it on 11ty since 23.may.26
 
       
 <ul>
+  <li>music player done using <a href="https://developers.google.com/youtube/iframe_api_reference" target="_blank">youtube's iframe API</a></li>
   <li>dynamic calendar code from <a href="https://tutorials.designfreaks.net/view/779" target="_blank">designfreaks</a></li>
   <li>draggable js code from <a href="https://stackoverflow.com/questions/14695933/draggable-div-with-classname" target="_blank">stackoverflow</a></li>
   <li>blank bookmark from <a href="https://foollovers.com/" target="_blank">foollovers.com</a></li>
@@ -70,7 +71,22 @@ working on it on 11ty since 23.may.26
 
   <aside id="memo1" class="memo draggable">
     <div class="innermemo">
-      <p>a music player will be here eventually :3</p>
+
+      <h3 id="song-title">Loading...</h3>
+      <div id="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">⏯</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+
+      <!-- <details>
+        <summary>playlist</summary>
+        <button onclick="loadSong(0)">Song 1</button>
+        <button onclick="loadSong(1)">Song 2</button>
+        <button onclick="loadSong(2)">Song 3</button>
+      </details> -->
+
+      <div id="player"></div>
     </div>
   </aside>
 
@@ -150,6 +166,8 @@ working on it on 11ty since 23.may.26
   <script src="/_files/pages/journal/memo.js"></script>
   <script src="/_files/js/draggable.js"></script>
   <script src="/journal/dynamic-calendar.js"></script>
+  <script src="/_files/pages/journal/music.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="/_files/js/tooltip.js"></script>

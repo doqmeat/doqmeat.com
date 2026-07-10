@@ -94,7 +94,22 @@ working on it on 11ty since 23.may.26
 
   <aside id="memo1" class="memo draggable">
     <div class="innermemo">
-      <p>a music player will be here eventually :3</p>
+
+      <h3 id="song-title">Loading...</h3>
+      <div id="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">⏯</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+
+      <!-- <details>
+        <summary>playlist</summary>
+        <button onclick="loadSong(0)">Song 1</button>
+        <button onclick="loadSong(1)">Song 2</button>
+        <button onclick="loadSong(2)">Song 3</button>
+      </details> -->
+
+      <div id="player"></div>
     </div>
   </aside>
 
@@ -150,6 +165,8 @@ working on it on 11ty since 23.may.26
   <script src="/_files/pages/journal/memo.js"></script>
   <script src="/_files/js/draggable.js"></script>
   <script src="/journal/dynamic-calendar.js"></script>
+  <script src="/_files/pages/journal/music.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
   <script src="https://unpkg.com/@popperjs/core@2"></script>
 <script src="https://unpkg.com/tippy.js@6"></script>
 <script src="/_files/js/tooltip.js"></script>

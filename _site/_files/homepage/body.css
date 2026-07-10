@@ -1,0 +1,69 @@
+h3.title {
+	border-bottom-width: 2px;
+	border-bottom-style: dashed;
+	line-height: 5px;
+	text-shadow:
+		1px 1px 0px white,
+		-1px -1px 0px white;
+	&:nth-of-type(5n + 1) {
+		border-bottom-color: #78b07e;
+	}
+	&:nth-of-type(5n + 2) {
+		border-bottom-color: #c9aa55;
+	}
+	&:nth-of-type(5n + 3) {
+		border-bottom-color: #7092b8;
+	}
+	&:nth-of-type(5n + 4) {
+		border-bottom-color: #c7959b;
+	}
+	&:nth-of-type(5n + 5) {
+		border-bottom-color: #9778aa;
+	}
+}
+
+nav li {
+	&:nth-of-type(5n + 1) a {
+		color: #78b07e;
+	}
+	&:nth-of-type(5n + 2) a {
+		color: #c9aa55;
+	}
+	&:nth-of-type(5n + 3) a {
+		color: #7092b8;
+	}
+	&:nth-of-type(5n + 4) a {
+		color: #c7959b;
+	}
+	&:nth-of-type(5n + 5) a {
+		color: #9778aa;
+	}
+}
+
+main {
+	display: grid;
+	position: relative;
+	grid-template-areas:
+		"header header"
+		"content nav";
+	gap: 20px;
+	header {
+		grid-area: header;
+		text-align: center;
+	}
+	#content {
+		grid-area: content;
+	}
+	nav {
+		top: 0px;
+		position: sticky;
+		grid-area: nav;
+		height: fit-content;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	#music {
+		display: none;
+	}
+}

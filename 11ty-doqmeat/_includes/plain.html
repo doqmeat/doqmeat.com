@@ -17,7 +17,7 @@ that's lame
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
-  <link rel="icon" type="image/x-icon" href="/_files/{% if favicon %}{{ favicon }}{% else %}assets/silly.gif{% endif %}">
+  <link rel="icon" type="image/x-icon" href="/_files/{% if favicon %}{{ favicon }}{% else %}assets/pix/silly-cat.gif{% endif %}">
   <link href="/_files/css/plain.css" rel="stylesheet" type="text/css" media="all">
   {% if extra_css %}
   <link href="/_files/{{ extra_css }}" rel="stylesheet" type="text/css" media="all">{% endif %}
@@ -47,7 +47,6 @@ that's lame
   {% if extra_js %}
   <script src="/_files/{{ extra_js }}"></script>{% endif %}
   {% if page.url == "/" %}
-  <script src="/_files/js/last-fm.js"></script>
   <script src="https://status.cafe/current-status.js?name=doqmeat" defer></script>
   {% endif %}
   {% include "_tooltip.html" %}
