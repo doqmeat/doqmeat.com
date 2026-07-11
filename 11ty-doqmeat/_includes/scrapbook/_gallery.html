@@ -1,6 +1,6 @@
 <!-- not in use -->
 <div class="grid">
   {% for img in imgs %}
-  <div class="grid-item"><img src="/_files/pages/scrapbook/{{ page.date | date:'%Y' }}/{{ img.path }}" alt="{{ img.alt }}"><caption-space>{{ img.caption }}</caption-space></div>
+  <div class="grid-item"><img src="/_files/pages/scrapbook/{{ page.date | date:'%Y' }}/{{ img.path }}" alt="{{ img.alt }}"><pic-caption>{{ img.caption }}</pic-caption></div>
   {% endfor %}
 </div>
