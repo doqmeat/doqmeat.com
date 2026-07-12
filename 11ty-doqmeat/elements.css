@@ -21,7 +21,7 @@
 	display: none;
 }
 .site-box > a > p {
-	padding-top: 8px;
+	padding-top: 13px;
 	color: #af8fc3;
 	text-shadow:
 		1px 1px 4px #fff,
@@ -29,7 +29,7 @@
 		-1px -1px 4px #fff,
 		-1px -1px 4px #fff;
 	font-weight: 700;
-	font-size: 15px;
+	font-size: 17px;
 }
 .site-box > a > span {
 	color: #86aad4;
@@ -37,8 +37,6 @@
 	font-size: 13px;
 }
 .site-box > a > span::after {
-	font-size: 13px;
-	content: "and passion project on the indie web :3";
 	padding: 5px;
 }
 .post-box {
