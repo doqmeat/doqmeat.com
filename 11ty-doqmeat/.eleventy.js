@@ -3,19 +3,14 @@ const { DateTime } = require("luxon");
 module.exports = function (eleventyConfig) {
 	// eleventyConfig.setServerPassthroughCopyBehavior("copy");
 
-	// Forces Eleventy to merge tag arrays together instead of overwriting them
-	// eleventyConfig.setDataDeepMerge(true);
-
 	eleventyConfig.addPassthroughCopy("_files");
+	eleventyConfig.addPassthroughCopy("elements.css");
 
 	// This will stop the default behaviour of foo.html being turned into foo/index.html
 	eleventyConfig.addGlobalData("permalink", "{{ page.filePathStem }}.html");
 
 	// default date format
 	eleventyConfig.addGlobalData("date", "Last Modified");
-
-	// shortcode for year {% year %} --- not using it rn
-	eleventyConfig.addShortcode("year", () => `${new Date().getFullYear()}`);
 
 	// girl i am tired
 	eleventyConfig.addFilter("gamepics", (dir) => {
