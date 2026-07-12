@@ -85,6 +85,22 @@ module.exports = function (eleventyConfig) {
 		return gamelogs;
 	});
 
+	// subpages but ordered by file name
+	eleventyConfig.addCollection("sitemapPages", (collectionApi) => {
+		let pages = collectionApi.getFilteredByTags("subpage").sort((a, b) => {
+			let file1 = a.page.fileSlug;
+			let file2 = b.page.fileSlug;
+			if (file1 < file2) {
+				return -1;
+			} else if (file1 > file2) {
+				return 1;
+			} else {
+				return 0;
+			}
+		});
+		return pages;
+	});
+
 	// Generates a list of unique tags found ONLY inside the journal folder
 	eleventyConfig.addCollection("journalTags", (collectionApi) => {
 		const journal = collectionApi.getFilteredByGlob("journal/**");

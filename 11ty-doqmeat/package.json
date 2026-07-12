@@ -3,7 +3,8 @@
   "version": "5.5.0",
   "scripts": {
     "delete": "rm -rf ../_site",
-    "build": "npx @11ty/eleventy && npx pagefind --site ../_site",
+    "build": "npx @11ty/eleventy",
+    "search": "npx pagefind --site ../_site --glob '../_site/notebook/**/*.html'",
     "incr": "npx @11ty/eleventy --serve --incremental"
   },
   "type": "commonjs",

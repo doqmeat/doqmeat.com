@@ -34,7 +34,7 @@ that's lame
     <footer>
       {% if page.url != "/" %}
       <p><b>last updated on {{ page.date | shortDate }}</b></p>
-      <p><a href="javascript:history.back()">go back</a> / <a href="/">homepage</a> / <a href="#">top</a></p>
+      <p><a href="javascript:history.back()">go back</a> / <a href="{{ siteInfo.sitemap }}">sitemap</a> / <a href="/">homepage</a> / <a href="#">top</a></p>
       {% else %}
       <p><img title="doqmeat.com protected by nyan cat" src="/_files/assets/pix/nyancat.gif" alt="nyan cat"></p>
       <p><b>last updated on {{ page.date | shortDate }}</b></p>

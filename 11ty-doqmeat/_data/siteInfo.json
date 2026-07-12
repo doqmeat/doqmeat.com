@@ -1,11 +1,11 @@
 {
-  "email":"meow@doqmeat.com",
-  "sitemap":"?",
-  "fontPage":"?",
-  "websites":{
-    "siinamota_fansite":"https://siinamota.doqmeat.com",
-    "siinamota_fanlisting":"https://siinamota.doqmeat.com/fanlisting",
-    "portfolio":"https://desteny.me",
-    "collective":"https://sepiarecord.net"
+  "email": "meow@doqmeat.com",
+  "sitemap": "/sitemap.html",
+  "fontPage": "?",
+  "websites": {
+    "siinamota_fansite": "https://siinamota.doqmeat.com",
+    "siinamota_fanlisting": "https://siinamota.doqmeat.com/fanlisting",
+    "portfolio": "https://desteny.me",
+    "collective": "https://sepiarecord.net"
   }
 }

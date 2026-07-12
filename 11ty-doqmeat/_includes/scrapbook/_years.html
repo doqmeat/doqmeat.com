@@ -1,15 +1,16 @@
 <a href="/scrapbook">back to scrapbook index</a>
 <h1>{{ title }} scrapbook</h1>
 <nav>
-  {% for page in yearPages %}
-  <a href="#{{ page.date | date:'%b','UTC' }}">{{ page.data.title}}</a>
-  {% endfor %}
+  <p>go to month: {% for page in yearPages %}
+    <a href="#{{ page.date | date:'%b','UTC' }}">{{ page.data.title}}</a>
+    {% endfor %}
+  </p>
 </nav>
 <details>
   <summary>key legend</summary>
-  □ = ongoing / ✘ = dropped / ✔ = completed / ⟳ = repeat
+  {{ scrapbook.ongoing }} = ongoing / {{ scrapbook.dropped }} = dropped / {{ scrapbook.finished }} = finished / {{ scrapbook.repeat }} = repeat
   <br>
-  ★☆☆☆☆ = did not like / ★★☆☆☆ = eh? / ★★★☆☆ = its okay / ★★★★☆ = enjoyable / ★★★★★ = perfect
+  {{ scrapbook.ratings[0] }} = i am probably pissed as FUCK / {{ scrapbook.ratings[1] }} = did not like / {{ scrapbook.ratings[2] }} = eh? / {{ scrapbook.ratings[3] }} = its okay / {{ scrapbook.ratings[4] }} = enjoyable / {{ scrapbook.ratings[5] }} = perfect
   <ul>
     <li class="tv">show / anime</li>
     <li class="movie">movies</li>
