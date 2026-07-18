@@ -19,7 +19,7 @@
       {% assign allTags = tags | join: "," %}
       <aside id="box1">
         {% if allTags contains "gamelog" %}
-        <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/cover.jpg" alt="{{ page.title }} game cover" class="gamelog_cover">
+        <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/{% if cover %}{{ cover }}{% else %}cover.jpg{% endif %}" alt="{{ page.title }} game cover" class="gamelog_cover">
         <!-- make full date filter -->
         <p><b>release date:</b> {{ release_date | date:"%d %B %Y","UCT" | downcase }}</p>
         <p><b>dev:</b> {{ dev }} </p>

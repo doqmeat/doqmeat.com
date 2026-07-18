@@ -37,11 +37,11 @@ favicon: assets/pix/flower-purple.gif
   <p>des' passion project about archival, self-expression, and having fun.</p>
   <p><b>currently working on a site-wide rework!</b> <a href="https://archive.doqmeat.com">archive.doqmeat.com</a> is live in case you'd like to visit it or are looking for something not available here at the moment.</p>
   <h2>latest news - <a href="rss.xml">RSS</a></h2>
-  {% for item in collections.rss reversed%}
-  {% if forloop.index0 == 1 %} {% break %}
+  {% for item in collections.rss reversed %}
+  {% if forloop.index0 == 2 %} {% break %}
   {% else %}
   <details>
-    <summary>{{ item.date | shortDate }} - {{ item.data.title }}</summary>
+    <summary>{{ item.date | shortDate }} - {% if item.data.link %}<a href="/{{ item.data.link }}">{{ item.data.title }}</a>{% else %}{{ item.data.title }}{% endif %}</summary>
     <p>{{ item.content }}</p>
   </details>
   {% endif %}

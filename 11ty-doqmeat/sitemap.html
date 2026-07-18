@@ -3,6 +3,8 @@ title: sitemap
 layout: plain.html
 ---
 <h1>{{ title }}</h1>
-{% for sitePage in collections.sitemapPages %}
-<li><a href="{{ sitePage.url}}">{{ sitePage.page.fileSlug }}</a></li>
-{% endfor %}
+<ul>
+  {% for sitePage in collections.sitemapPages %}
+  <li><a href="{{ sitePage.url}}">{{ sitePage.page.fileSlug }}</a></li>
+  {% endfor %}
+</ul>
