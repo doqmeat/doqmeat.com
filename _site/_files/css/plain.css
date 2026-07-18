@@ -7,6 +7,11 @@
 	--tt-color: rgb(255, 255, 255);
 }
 
+::selection {
+	background: var(--accent);
+	color: black;
+}
+
 html {
 	scrollbar-color: var(--accent) white;
 }
