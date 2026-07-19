@@ -21,6 +21,7 @@
         {% if allTags contains "gamelog" %}
         <img src="/_files/pages/vgs/games/{{ page.fileSlug }}/{% if cover %}{{ cover }}{% else %}cover.jpg{% endif %}" alt="{{ page.title }} game cover" class="gamelog_cover">
         <!-- make full date filter -->
+        <p><b>title:</b> {{ title }}</p>
         <p><b>release date:</b> {{ release_date | date:"%d %B %Y","UCT" | downcase }}</p>
         <p><b>dev:</b> {{ dev }} </p>
         <p><b>genre:</b> {{ genre }}</p>

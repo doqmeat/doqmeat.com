@@ -11,7 +11,12 @@ const calendarConfig = {
 // this replaces events
 const logPosts = {
   
-    "2023-10-31": {
+    "2024-10-25": {
+      "text": "look back",
+      "url": "/journal/241025.html"
+    },
+  
+    "2024-10-31": {
       "text": "happy halloween!",
       "url": "/journal/241031.html"
     },
