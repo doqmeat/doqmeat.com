@@ -1,0 +1,179 @@
+<!-- THIS FUCKING WORKS -->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>journal -  logs with #media</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <span class="title">des' notepad</span>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/archive.html">archive</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
+        <li><a href="/">homepage</a></li>
+      </ul>
+      <p>last updated on: <b>22.jun.26</b></p>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <!-- variable for string of tags -->
+    
+    <main>
+       <h1 >logs with #media</h1> 
+      <!-- if log post -->
+      
+
+      
+<ul>
+  
+  <li>
+    <span class="date">25.oct.24</span> -
+    <a href="/journal/241025.html">look back</a>
+  </li>
+  
+</ul>
+
+
+
+      
+      <hr>
+      <p><small>any replies or comments are welcome on my <a href="mailto:meow@doqmeat.com" target="_blank">e-mail</a> or <button onclick="chatMemo()">chatbox</button> :3</small></p>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+
+      <h3 id="song-title">Loading...</h3>
+      <div id="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">⏯</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+
+      <!-- <details>
+        <summary>playlist</summary>
+        <button onclick="loadSong(0)">Song 1</button>
+        <button onclick="loadSong(1)">Song 2</button>
+        <button onclick="loadSong(2)">Song 3</button>
+      </details> -->
+
+      <div id="player"></div>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    <div class="innermemo">
+      
+      <h3>tag cloud</h3>
+      <ul>
+        
+        <li>
+          <a href="/journal/tags/interests.html">#interests</a> - 6  logs 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/media.html">#media</a> - 1  log 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/life.html">#life</a> - 15  logs 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/pets.html">#pets</a> - 2  logs 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/tech.html">#tech</a> - 2  logs 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/uni.html">#uni</a> - 6  logs 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/music.html">#music</a> - 1  log 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/site.html">#site</a> - 3  logs 
+        </li>
+        
+        <li>
+          <a href="/journal/tags/gaming.html">#gaming</a> - 1  log 
+        </li>
+        
+      </ul>
+      
+      <!-- status list for journal logs -->
+      
+
+      
+      
+    </div>
+  </aside>
+
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <h3>logs & events calendar</h3>
+      <div id="calendar-nav"></div>
+      <div id="calendar"></div>
+    </div>
+  </aside>
+
+  <aside id="memo5" class="draggable">
+    <button onclick="chatMemo()" style="float:right;margin:20px;">close chat memo</button>
+    <div class="innermemo">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="/journal/dynamic-calendar.js"></script>
+  <script src="/_files/pages/journal/music.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

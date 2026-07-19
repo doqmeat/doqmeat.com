@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>journal -  look back</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <span class="title">des' notepad</span>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/archive.html">archive</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
+        <li><a href="/">homepage</a></li>
+      </ul>
+      <p>last updated on: <b>25.oct.24</b></p>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <!-- variable for string of tags -->
+    
+    <main>
+       <h1 class="log" >look back</h1> 
+      <!-- if log post -->
+      
+      <p class="date">「25.oct.24」</p>
+      
+
+      
+<p>ever since the <b>look back</b> movie got announced, i have been YEARNING to watch it. after a very painful month of waiting for it to be released in Puerto Rico, it finally premiered yesterday on the island.</p>
+<p>the entire time i was watching this movie, i was just in AWE.... it felt like a dream. there was so much charm and love put into this. i wanted to cry just out of happiness during the first 10 minutes of this movie. i loved how the character had rougher lines while the background just looked so clean and beautiful. it's such a nice little detail that represents fujino and kyomoto's art style so well. having read the one shot some time around 2022, i knew exactly where this movie was gonna go the entire time. and yet i couldn't help but sob for like a good half of the movie. watching this just felt so magical. i absolutely love every single second of this movie. the music was also so so so good and it really added to key moments of the film. i was so emotional when the movie ended... what a beautiful piece of media.</p>
+<img title="movie ticket" src="/_files/pages/journal/imgs/241025-lookbackticket.png" alt="look back theater ticket" width="30%" style="float:right;margin:10px;">
+<p>i went to the theater in a suit to commemorate the very special occasion of having look back premiere in PR. i was hoping to take a picture next to the poster, because you know, theaters USUALLY have posters displaying the films they are screening. sadly my theater did not have a poster up for look back... possibly to the fact that it got a bit of a limited??? release in PR. since out of the 30 theaters in PR it only premiered in 2. nonetheless, i ended up taking a pic with the ticket machine that displayed a mini version of the poster while choosing the tickets.</p>
+<figure><img src="/_files/pages/journal/imgs/241025-youknowihadtodoittoem.png" width="60%" alt="me in a black suit with a red tie. and converse of course">
+  <figcaption>you know i had to do it to them.</figcaption>
+</figure>
+<p>i think it's safe to say that this might be the best movie i have ever watched in my life.</p>
+<p>P.S. if you haven't watched <b>look back</b> if will be available on amazon prime on november 07! and i highly recommend you read it as well. this was the first work of tatsuki fujimoto that i read and it was what got me into his other works like <i>chainsaw man</i> and <i>goodbye eri</i>!</p>
+
+
+      
+      <!-- here goes next and prev logic -->
+      
+      <hr>
+      <p><small>any replies or comments are welcome on my <a href="mailto:meow@doqmeat.com" target="_blank">e-mail</a> or <button onclick="chatMemo()">chatbox</button> :3</small></p>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+
+      <h3 id="song-title">Loading...</h3>
+      <div id="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">⏯</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+
+      <!-- <details>
+        <summary>playlist</summary>
+        <button onclick="loadSong(0)">Song 1</button>
+        <button onclick="loadSong(1)">Song 2</button>
+        <button onclick="loadSong(2)">Song 3</button>
+      </details> -->
+
+      <div id="player"></div>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    <div class="innermemo">
+      
+      <!-- status list for journal logs -->
+      
+      <h3>right now...</h3>
+      <ul>
+        
+        <li class="feeling">happy :)</li>
+        
+        <li class="listening"><a title='youtube link' href='https://youtu.be/GC6fbdgIwW8?si=qiCBa9lmPzV5IwsN' target='_blank'>solitude</a> by haruka nakamura</li>
+        
+        <li class="watching">orange is the new black S6</li>
+        
+        <li class="tags"> #<a href="/journal/tags/interests">interests</a> #<a href="/journal/tags/media">media</a></li>
+      </ul>
+      <!-- log end if -->
+      
+
+      
+      
+    </div>
+  </aside>
+
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <h3>logs & events calendar</h3>
+      <div id="calendar-nav"></div>
+      <div id="calendar"></div>
+    </div>
+  </aside>
+
+  <aside id="memo5" class="draggable">
+    <button onclick="chatMemo()" style="float:right;margin:20px;">close chat memo</button>
+    <div class="innermemo">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="/journal/dynamic-calendar.js"></script>
+  <script src="/_files/pages/journal/music.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

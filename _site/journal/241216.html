@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+
+  <!-- 
+coded with love by des!
+---
+working on it on 11ty since 23.may.26
+ -->
+
+  <meta charset="UTF-8">
+  <title>journal -  1st year of uni done!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="doqmeat's journal logs">
+  <link rel="icon" type="image/x-icon" href="/_files/pages/journal/assets/favicon.gif">
+  <link href="/_files/pages/journal/body.css" rel="stylesheet" type="text/css" media="all">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+</head>
+
+<body>
+  <div id="notepad">
+    <div id="header"></div>
+
+    <nav>
+      <span class="title">des' notepad</span>
+      <img class="hide" src="/_files/assets/deco/pencil1.gif" style="max-width:100%">
+      <h3>navigation</h3>
+      <ul>
+        <li><a href="/journal/index.html">index</a></li>
+        <li><a href="/journal/archive.html">archive</a></li>
+        <li><a href="/journal/credit.html">credits</a></li>
+        <li><a href="/">homepage</a></li>
+      </ul>
+      <p>last updated on: <b>16.dec.24</b></p>
+      <button class="hide" title="memos are also draggable!" onclick="closeMemos()">hide memos</button>
+    </nav>
+
+    <!-- variable for string of tags -->
+    
+    <main>
+       <h1 class="log" >1st year of uni done!</h1> 
+      <!-- if log post -->
+      
+      <p class="date">「16.dec.24」</p>
+      
+
+      
+<p>i am FREEEEEE from my 2nd uni semester today! these past 2 weeks have felt like A LOT to me because of all the things i've had to do + keeping up with people doing holiday shopping at my work. i'm currently sick which is not very great but whatever. it will pass through before christmas hopefully. i really need to mask up at my work place because last month i also got sick... and now i'm sick once again <img src="/_files/assets/pix/bored-cat.gif" alt=""></p>
+<p><b>today was my final exam for my precalculus 2 class.</b> that exam was ROUGH... and that is from someone who has studied a lot for this class and gotten from 98% to 100% on my previous class exams. but i'm also like WHATEVER. i found it difficult to study a lot for it because of how many hours i've been doing at my job lately. at the end of the day, i know i passed that class and thats really all that matters. yay <img src="/_files/assets/pix/heart4.png" alt=""></p>
+<p>thank god my <b>computer science final exam was a take home one</b> and you could do it with a classmate in pairs! i did it yesterday with a <a title="i've talked about how i met him here!" href="240927.html">friend</a> i had made throughout the semester. sometimes i hang out with people and i'm like <q>oh that's right i do like to talk and hang around and laugh with people</q> <img src="/_files/assets/pix/skull.gif"> maybe i'm just very picky... because i feel like i get really drained in the usual social setting. i'm not really a social butterfly but i have been trying to talk to more people while i attend uni. so i'm happy that at the end of the day i was able to meet some cool ones and befriend them! it's kinda amazing how math brings some people together.</p>
+<p>i have a few <b>things planned for my free time</b> this coming month. here's a list for convenience:</p>
+<ul>
+  <li>finish <i>fallout new vegas</i>, get DLCs through the steam winter sale.</li>
+  <li>finish <i>kirby planet robobot</i></li>
+  <li>fix PS4</li>
+  <li>make new page that resembles my old mp3 player</li>
+  <li>keep working on siinamota <a href="https://siinamota.doqmeat.com" target="_blank">fansite</a></li>
+</ul>
+<p>will probably talk more about my PS4 on another log but good lord. what a struggle. i hate sony.</p>
+<p>i also got interviewed by maren bell for an <a href="https://coldcuts.neocities.org/writing1">article</a> about neocities and social media and it got published recently! it's awesome to see other sites that i visit participate in this as well <img src="/_files/assets/pix/catupndown.gif" alt=""></p>
+
+
+      
+      <!-- here goes next and prev logic -->
+      
+      <hr>
+      <p><small>any replies or comments are welcome on my <a href="mailto:meow@doqmeat.com" target="_blank">e-mail</a> or <button onclick="chatMemo()">chatbox</button> :3</small></p>
+      <a title="go to the top" href="#" class="top">⤴︎ to top</a>
+    </main>
+  </div>
+
+  <div id="tag">
+    <a data-toggle="tooltip" title="go back home" href="/">home</a>
+    <img src="/_files/assets/pix/lc01-icon-bookmark.gif" width="23px">
+  </div>
+
+  <aside id="memo1" class="memo draggable">
+    <div class="innermemo">
+
+      <h3 id="song-title">Loading...</h3>
+      <div id="controls">
+        <button onclick="prevSong()">⏮</button>
+        <button onclick="playPause()">⏯</button>
+        <button onclick="nextSong()">⏭</button>
+      </div>
+
+      <!-- <details>
+        <summary>playlist</summary>
+        <button onclick="loadSong(0)">Song 1</button>
+        <button onclick="loadSong(1)">Song 2</button>
+        <button onclick="loadSong(2)">Song 3</button>
+      </details> -->
+
+      <div id="player"></div>
+    </div>
+  </aside>
+
+  <aside id="memo3" class="memo draggable">
+    <!-- quotes -->
+    <div class="innermemo">
+    </div>
+  </aside>
+
+  <aside id="memo2" class="memo draggable">
+    <div class="innermemo">
+      
+      <!-- status list for journal logs -->
+      
+      <h3>right now...</h3>
+      <ul>
+        
+        <li class="feeling">SICK.</li>
+        
+        <li class="listening"><a title='youtube link' href='https://youtu.be/p7IJuvv2NqM' target='_blank'>taste</a> by the deep, h4rdy</li>
+        
+        <li class="watching">beastars season 3. also on piece to get me to fall asleep.</li>
+        
+        <li class="tags"> #<a href="/journal/tags/life">life</a> #<a href="/journal/tags/uni">uni</a></li>
+      </ul>
+      <!-- log end if -->
+      
+
+      
+      
+    </div>
+  </aside>
+
+
+  <aside id="memo4" class="memo draggable">
+    <div class="innermemo">
+      <h3>logs & events calendar</h3>
+      <div id="calendar-nav"></div>
+      <div id="calendar"></div>
+    </div>
+  </aside>
+
+  <aside id="memo5" class="draggable">
+    <button onclick="chatMemo()" style="float:right;margin:20px;">close chat memo</button>
+    <div class="innermemo">
+      <iframe src="https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+    </div>
+  </aside>
+
+  <aside id="pen"><img src="/_files/pages/journal/assets/tupip-d.png" width="100%"></aside>
+
+  <script src="/_files/pages/journal/quotes.js"></script>
+  <script src="/_files/pages/journal/memo.js"></script>
+  <script src="/_files/js/draggable.js"></script>
+  <script src="/journal/dynamic-calendar.js"></script>
+  <script src="/_files/pages/journal/music.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>
