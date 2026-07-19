@@ -1,0 +1,91 @@
+a[href]::after {
+	content: none;
+}
+
+:root {
+	--red: #f67a67;
+	--red-s: #bf1800;
+	--green: #d2ff61;
+	--green-s: #9ebf49;
+	--cyan: #25f2e8;
+	--cyan-s: #329a95;
+	--pink: #ea76cb;
+	--pink-s: #bf6299;
+}
+
+wrapper {
+	max-width: 1000px;
+}
+
+main {
+	display: grid;
+	grid-template-areas:
+		"h1 h1"
+		"webring list";
+	grid-template-columns: 1fr 1fr;
+	gap: 10px;
+}
+
+div#webrings {
+	grid-area: webring;
+	text-align: center;
+	a {
+		text-decoration: none;
+	}
+	hr {
+		border: 0px;
+	}
+}
+
+div#listings {
+	grid-area: list;
+	text-align: center;
+}
+
+#webfish-pmoring {
+	width: auto;
+	display: block;
+	margin: auto;
+}
+
+#gradientring {
+	padding: 10px;
+	border-radius: 10px;
+	background: #c2c8ed;
+	background: linear-gradient(
+		90deg,
+		rgba(194, 200, 237, 1) 0%,
+		rgba(255, 208, 235, 1) 39%,
+		rgba(255, 228, 153, 1) 100%
+	);
+	a {
+		text-decoration: none;
+	}
+}
+
+#Pikring {
+	display: block;
+	margin: auto;
+}
+
+span.a {
+	color: #bf1800;
+}
+
+span.e {
+	color: #9ebf49;
+}
+
+span.c1 {
+	color: #329a95;
+}
+
+span.c2 {
+	color: #bf6299;
+}
+
+@media screen and (max-width: 500px) {
+	main {
+		display: block;
+	}
+}
