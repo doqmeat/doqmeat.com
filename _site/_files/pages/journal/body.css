@@ -50,8 +50,11 @@ hr {
 	background-size: contain;
 }
 
-li::marker {
-	color: var(--blue);
+li {
+	margin: 10px auto;
+	&::marker {
+		color: var(--red);
+	}
 }
 
 ul.logs {

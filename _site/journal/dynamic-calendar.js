@@ -124,6 +124,11 @@ const logPosts = {
     "2026-06-28": {
       "text": "re-touching everything around here + life update",
       "url": "/journal/260628.html"
+    },
+  
+    "2026-07-20": {
+      "text": "worries",
+      "url": "/journal/260720.html"
     }
   
 };

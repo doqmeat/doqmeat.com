@@ -1,0 +1,10 @@
+---
+title: news
+---
+<p>from my <a href="/rss.xml">rss feed</a>!</p>
+{% for item in collections.rss reversed %}
+<details>
+  <summary>{{ item.date | shortDate }} - {% if item.data.link %}<a href="/{{ item.data.link }}">{{ item.data.title }}</a>{% else %}{{ item.data.title }}{% endif %}</summary>
+  <p>{{ item.content }}</p>
+</details>
+{% endfor %}

@@ -1,7 +1,7 @@
 @import url(../css/style.css);
 
 :root {
-	--fonts: dot gothic, ms pgothic, arial;
+	--fonts: gaegu-r, ms pgothic, arial;
 	--accent: #7092b8;
 	--tt-bg: var(--accent);
 	--tt-color: rgb(255, 255, 255);
@@ -20,7 +20,6 @@ body {
 	background-color: rgb(245, 244, 240);
 	margin: 0px;
 	color: #676160;
-	font-size: 15px;
 	word-spacing: 3px;
 	font-family: var(--fonts);
 }
@@ -28,7 +27,6 @@ body {
 button {
 	border-radius: 4px;
 	background: var(--tt-bg);
-	font-family: inherit;
 	color: var(--tt-color);
 	&:hover {
 		background: var(--tt-color);
@@ -50,9 +48,7 @@ hr {
 h1,
 h2,
 h3 {
-	font-family:
-		dot gothic,
-		var(--gothic);
+	font-family: dot gothic;
 	letter-spacing: 2px;
 }
 

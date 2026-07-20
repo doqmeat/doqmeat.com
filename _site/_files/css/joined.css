@@ -42,10 +42,12 @@ div#listings {
 	text-align: center;
 }
 
+/* webrings */
+
 #webfish-pmoring {
 	width: auto;
 	display: block;
-	margin: auto;
+	margin: 10px auto;
 }
 
 #gradientring {
@@ -63,8 +65,10 @@ div#listings {
 	}
 }
 
-#Pikring {
+div#PikRing div.PikRing {
 	display: block;
+	width: 100%;
+	max-width: auto;
 	margin: auto;
 }
 

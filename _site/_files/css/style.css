@@ -15,7 +15,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: rgb(22, 29, 77);
-	font-size: 16px;
+	font-size: 18px;
 	font-family: var(--fonts);
 	min-height: 100vh;
 }
@@ -40,6 +40,11 @@ code {
 summary,
 button {
 	cursor: help;
+}
+
+button,
+code {
+	font-family: mononoki, var(--fonts);
 }
 
 details {
