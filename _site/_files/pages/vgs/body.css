@@ -20,6 +20,7 @@ html {
 body {
 	font-family: nintendo-ds-bios, var(--fonts);
 	font-size: 21px;
+	line-height: 1.1em;
 	color: var(--text);
 	background: var(--purple);
 	background-image: url(/_files/pages/vgs/assets/altie2.png);
@@ -69,6 +70,7 @@ mark {
 
 h1 {
 	color: var(--text);
+	line-height: normal;
 }
 
 h1,
@@ -79,8 +81,11 @@ h4 {
 	font-family: bangalore, var(--fonts);
 }
 
-sidebar p {
-	margin: 10px 5px;
+sidebar {
+	p,
+	li {
+		margin: 10px 5px;
+	}
 }
 
 button {
@@ -103,14 +108,13 @@ button {
 
 /* wrapper for the whole page */
 div#wrapper {
-	/* background: rgba(33, 29, 32, 0.592); */
 	display: flex;
-	flex-wrap: wrap;
+	flex-wrap: nowrap;
 }
 
 main {
 	color: var(--text);
-	width: 50vw;
+	width: 50dvw;
 	padding: 0 20px;
 	padding-top: 100px;
 	font-family: basiic, var(--fonts);
@@ -168,11 +172,11 @@ div.wrapper-vgs {
 	justify-content: space-around;
 	flex-wrap: wrap;
 	a {
+		flex: 1 1 130px;
+		aspect-ratio: 1 / 1;
 		position: relative;
-		margin-bottom: 10px;
+		margin: 10px;
 		display: block;
-		max-width: 150px;
-		max-height: 150px;
 		text-decoration: none;
 		text-align: center;
 		overflow: hidden;
@@ -209,7 +213,7 @@ div.wrapper-vgs {
 
 		img {
 			display: block;
-			max-width: 100%;
+			width: 100%;
 		}
 	}
 }
@@ -219,7 +223,7 @@ sidebar {
 	position: relative;
 	color: var(--orange);
 	display: block;
-	width: 50vw;
+	width: 50dvw;
 	padding: 30px 90px;
 
 	wrapper#sticky-wrap {
@@ -358,7 +362,13 @@ dialog {
 	}
 }
 
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1200px) {
+	#pagedoll {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 900px) {
 	div#wrapper {
 		display: block;
 	}
@@ -372,5 +382,22 @@ dialog {
 
 	.gamelog_cover {
 		max-width: 120px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	aside {
+		&#box1 {
+			width: 90%;
+		}
+		&#box2 {
+			width: 85%;
+		}
+		&#box3 {
+			width: 85%;
+		}
+		&#box4 {
+			width: 85%;
+		}
 	}
 }
