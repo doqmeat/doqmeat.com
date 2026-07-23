@@ -1343,10 +1343,22 @@
     "img": "virtualdreamland.gif",
     "name": "virtualdreamland"
   },
-    {
+  {
     "desc": "mana - what an inpiration to me as an inpiring web dev!!! we really need to make more software more fun",
     "link": "https://manacake.co",
     "img": "manacake.png",
     "name": "manacake"
+  },
+  {
+    "desc": "electric tenshi",
+    "link": "https://electric-tenshi.nekoweb.org/",
+    "img": "electric-tenshi.gif",
+    "name": "electric-tenshi"
+  },
+  {
+    "desc": "katelyn",
+    "link": "https://katelyn.moe/",
+    "img": "katelyn.moe.gif",
+    "name": "katelyn.moe"
   }
 ]
