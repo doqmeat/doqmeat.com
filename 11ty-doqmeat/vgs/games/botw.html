@@ -1,0 +1,35 @@
+---
+title: breath of the wild
+tags: ["adventure","finished"]
+release_date: 2017-03-03
+published_date: 2023-05-01
+dev: nintendo
+genre: adventure
+status: finished
+---
+
+{% layout "vgs/index.html" %}
+
+{% block box2 %}
+<h3>sections</h3>
+<ul>
+  <li><a href="#logs">logs</a></li>
+  <li><a href="#screenshots">screenshots</a></li>
+</ul>
+{% endblock %}
+
+
+{% block main %}
+<section id="logs">
+  <h2>logs</h2>
+  <p><span class="date">13.apr.24</span> very fun little game :)</p>
+</section>
+
+<hr>
+
+<section id="screenshots">
+  <h2>screenshots</h2>
+  <img title="gay" src="{{ page.fileSlug | gamepics }}botw1.jpg" width="100%" alt="link pointing at a rainbow">
+  <img title="pupy :3" src="{{ page.fileSlug | gamepics }}botw2.jpg" width="100%" alt="link petting a puppy">
+</section>
+{% endblock %}

@@ -1,0 +1,38 @@
+---
+title: bound
+tags: ["3d platformer","finished","fav"]
+release_date: 2016-08-16
+published_date: 2023-05-01
+dev: plastic studio
+genre: 3d platformer
+status: finished
+---
+
+{% layout "vgs/index.html" %}
+
+{% block box2 %}
+<h3>sections</h3>
+<ul>
+  <li><a href="#logs">logs</a></li>
+  <li><a href="#screenshots">screenshots</a></li>
+</ul>
+{% endblock %}
+
+
+{% block main %}
+<section id="logs">
+  <h2>logs</h2>
+  <p>remember vividly watching the trailer for this the summer of 2015 during e3 and i thought it looked so so so cool. and it was indeed very cool! fighting your demons while doing ballet is hardcore af! a game that i have very close to my heart bc of the story</p>
+</section>
+
+<hr>
+
+<section id="screenshots">
+  <h2>screenshots</h2>
+  <img src="{{ page.fileSlug | gamepics }}bound4.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bound1.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bound2.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bound3.jpg" width="100%">
+  <img src="{{ page.fileSlug | gamepics }}bound5.jpg" width="100%">
+</section>
+{% endblock %}
