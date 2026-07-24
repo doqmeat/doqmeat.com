@@ -1,0 +1,11 @@
+---
+title: recipes
+tags: ["subpage"]
+---
+<p>i love cooking and eating food.</p>
+<p>will be sharing here some recipes i've tried and learned around the web or my mom.</p>
+<ol>
+  {% for item in collections.recipes %}
+  <li><a href="{{ item.page.url }}">{{ item.data.title }}</a> - {{ item.page.date | shortDate }}</li>
+  {% endfor %}
+</ol>

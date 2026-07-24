@@ -6,7 +6,7 @@
 }
 
 :root {
-	--fonts: ms pgothic, arial;
+	--fonts: gaegu-r, ms pgothic, arial;
 	--tt-bg: rgb(59, 50, 50);
 	--tt-color: rgb(233, 201, 162);
 }

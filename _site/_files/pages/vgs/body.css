@@ -173,6 +173,7 @@ div.wrapper-vgs {
 	flex-wrap: wrap;
 	a {
 		flex: 1 1 130px;
+		max-width: 300px;
 		aspect-ratio: 1 / 1;
 		position: relative;
 		margin: 10px;

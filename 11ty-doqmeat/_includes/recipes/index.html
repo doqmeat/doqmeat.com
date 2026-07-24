@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/_files/assets/pix/puter.gif" type="image/x-icon">
+  <link rel="stylesheet" href="/_files/pages/recipes/body.css">
+  <title>{{ title }}</title>
+</head>
+
+<body>
+  <h1>{{ title }}</h1>
+  <main>
+    <main-wrapper>
+      {{ content }}
+    </main-wrapper>
+  </main>
+  <footer>
+    <p>last updated on: {{ page.date | shortDate }}</p>
+    <p><a href="/recipes">index</a> / <a href="/">homepage</a> / <a href="/sitemap.html">sitemap</a></p>
+    <p><b>credit:</b>background from <a href="https://unsplash.com/photos/a-table-topped-with-plates-of-sandwiches-and-croissants-HjhAFrFJeiU" target="_blank">unsplash</a>, memo from <a href="https://www.flickr.com/photos/kawaiiscans/" target="_blank">kawaiiscans</a></p>
+  </footer>
+  {% include "_tooltip.html" %}
+</body>
+
+</html>

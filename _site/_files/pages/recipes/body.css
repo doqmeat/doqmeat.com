@@ -1,35 +1,56 @@
-* {
-	box-sizing: border-box;
+@import url(../../css/style.css);
+
+:root {
+	--c1: #fff1e0;
+	--c2: rgb(59, 50, 50);
+}
+
+html {
+	scrollbar-color: #72462a var(--c1);
 }
 
 body {
-	background: url("/_files/assets/bg/baking.png");
-	font-family:
-		ms pgothic,
-		arial;
-	font-size: 18px;
+	background-image: url(bg-2.png);
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center;
+	background-color: var(--c1);
+	color: var(--c2);
+}
+
+a {
+	color: #e16a3f;
+}
+
+h1,
+footer {
+	filter: drop-shadow(2px 2px 2px var(--c1)) drop-shadow(2px 2px 2px var(--c1))
+		drop-shadow(-2px -2px 2px var(--c1)) drop-shadow(-2px -2px 2px var(--c1));
+	text-align: center;
 }
 
 main {
+	position: relative;
 	border-radius: 10px;
-	background: url("/_files/assets/bg/bggrid-transp.png");
-	background-color: rgb(254, 249, 220);
-	max-width: 600px;
+	background-image: url(memo.jpg);
+	background-size: cover;
+	width: 400px;
+	height: 600px;
 	margin: auto;
+	overflow: hidden;
+	box-shadow: 1px 1px 5px var(--c2);
+}
+
+main-wrapper {
+	display: block;
+	overflow: auto;
+	width: 80%;
+	height: 70%;
+	margin-left: auto;
 	padding: 10px;
 }
 
 hr {
-	color: black;
-	font-family: Arial, Helvetica, sans-serif;
-	border: none;
-	text-align: center;
-}
-
-hr::after {
-	content: "✦•┈๑⋅⋯ ⋯⋅๑┈•✦ ✦•┈๑⋅⋯ ⋯⋅๑┈•✦ ✦•┈๑⋅⋯ ⋯⋅๑┈•✦";
-}
-
-footer {
-	text-align: center;
+	border-style: dashed;
+	border-color: var(--c2);
 }
