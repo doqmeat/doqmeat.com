@@ -1,3 +1,5 @@
+@import url(../../css/style.css);
+
 :root {
 	--fonts: mononoki, ms pgothic, arial;
 }
@@ -10,11 +12,18 @@ html {
 	scrollbar-color: #ca5e2c #f5f2ea;
 }
 
+h1,
+h2,
+h3,
+h4 {
+	margin: 25px 5px;
+}
+
 body {
 	font-size: 0.9rem;
 	font-family: var(--fonts);
 	margin: 0;
-	text-align: center;
+	text-align: left;
 	color: #ca5e2c;
 	background-color: #fad97c;
 	background-position: center;
@@ -44,9 +53,10 @@ figure {
 }
 
 h1 {
+	text-align: center;
 	font-weight: normal;
 	letter-spacing: 5px;
-	font-size: 40px;
+	font-size: 45px;
 	line-height: 60px;
 	font-family: bm-neko, var(--fonts);
 }
@@ -84,15 +94,17 @@ a:hover {
 
 h1,
 footer {
-	margin: 1%;
+	margin: 30px auto;
 }
 
 main {
 	margin: auto;
-	max-width: 900px;
-	padding: 10px;
 	overflow: auto;
 	border-radius: 20px;
+	position: relative;
+	margin-left: 2%;
+	padding: 10px;
+	max-width: 600px;
 }
 
 textarea {
@@ -121,15 +133,11 @@ footer p {
 	vertical-align: text-bottom;
 }
 
-#s-m-t-tooltip {
-	background: brown;
-	color: white;
-	text-align: center;
-	z-index: 9999;
-	margin: 30px 15px 7px 12px;
-	padding: 5px;
-	font-size: 18px;
-	font-family: gaegu-l;
-	max-width: 300px;
-	border-radius: 20px;
+#power {
+	position: fixed;
+	max-width: 320px;
+	width: 29%;
+	bottom: -10px;
+	left: 600px;
+	z-index: -1;
 }

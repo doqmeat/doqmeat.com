@@ -4,10 +4,14 @@
 
 body {
 	background-image: url(assets/fish-bg.png);
+	font-size: 18px;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
-	font-family: papyrus, ms pgothic, arial;
+	font-family:
+		papyrus,
+		ms pgothic,
+		arial;
 }
 
 a {
@@ -46,7 +50,9 @@ dialog#kiss {
 dialog#info {
 	background: rgb(204, 231, 243);
 	border: 1px solid rgb(152, 85, 152);
-	font-family: ms pgothic, arial;
+	font-family:
+		ms pgothic,
+		arial;
 	font-size: 1em;
 	padding: 10px;
 	p {

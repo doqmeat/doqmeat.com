@@ -55,6 +55,12 @@ details > p {
 	margin: 10px;
 }
 
+figure {
+	img {
+		width: 100%;
+	}
+}
+
 .tippy-box[data-theme~="des"] {
 	font-family: inherit;
 	font-size: inherit;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/_files/assets/pix/sticky.gif">
+  <title>learning in public</title>
+  <link href="/_files/pages/learning/body.css" rel="stylesheet">
+  {% if extra_css %}
+  <link href="/_files/pages/learning/{{ extra_css }}" rel="stylesheet" type="text/css" media="all">{% endif %}
+</head>
+
+<body>
+  <aside id="power">
+    <img src="/_files/pages/learning/imgs/power.png" width="100%" alt="power from chainsaw man">
+  </aside>
+  <main>
+    <h1>{{ title }}</h1>
+    {{ content }}
+    <footer>
+      <p>last updated on {{ page.date | shortDate }}</p>
+      <p><a title="learning in public index" href="/learning">index</a> &hearts; <a title="go back home" href="/">homepage</a> &hearts; <a href="/sitemap.html">sitemap</a> </p>
+      <p><b>credit</b>: <a href="/notebook/resources/fonts.html">fonts</a> used: bm-neko, mononoki, power pagedoll from fujimoto's <i>chainsaw man</i>, <a href="https://www.swyx.io/learn-in-public" target="_blank" class="outlink">insp</a></p>
+    </footer>
+  </main>
+  {% include "_tooltip.html" %}
+</body>
+
+</html>
