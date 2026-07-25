@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/_files/pages/resources/body.css">
+  <title>{{ title }}</title>
+</head>
+
+<body>
+  <header>
+    <h1><a href=""></a> {{ title }}</h1>
+    <nav>
+      <a href="/resources/">info</a>
+      <a href="/resources/links/">links</a>
+      <!-- <a href="/resources/bookmarks/">bookmarks</a>
+      <a href="/resources/graphics/">graphics</a>
+      <a href="/resources/codes/">codes</a>
+      <a href="/resources/tutorials/">tutorials</a>
+      <a href="/resources/materials/">materials</a> -->
+    </nav>
+  </header>
+  <wrapper>
+    <nav>
+      {% block nav %}
+      {% endblock %}
+    </nav>
+    <main>
+      {% block content %}
+      {% endblock %}
+      <hr>
+      <footer>
+        <p>last updated on: {{ page.date | shortDate }}</p>
+        <p><a href="/">homepage</a> / <a href="/sitemap.html">sitemap </a></p>
+      </footer>
+    </main>
+  </wrapper>
+  {% include "_tooltip.html" %}
+</body>
+
+</html>

@@ -7,17 +7,27 @@
 
 :root {
 	--fonts: gaegu-r, ms pgothic, arial;
+	--monospace: mononoki, consolas, monospace;
 	--tt-bg: rgb(59, 50, 50);
 	--tt-color: rgb(233, 201, 162);
+}
+
+::selection {
+	background: rgb(77, 77, 200);
+	color: rgb(254, 245, 239);
 }
 
 body {
 	margin: 0px;
 	padding: 0px;
-	color: rgb(22, 29, 77);
+	color: black;
 	font-size: 18px;
 	font-family: var(--fonts);
 	min-height: 100vh;
+}
+
+a:hover {
+	text-decoration: none;
 }
 
 a[href^="https://"]::after {
@@ -31,8 +41,6 @@ a.no-arrow[href^="https://"]::after {
 }
 
 code {
-	font-family: mononoki, consolas, monospace;
-	font-size: 0.8em;
 	background: rgb(49, 53, 82);
 	color: rgb(244, 244, 244);
 }
@@ -43,8 +51,11 @@ button {
 }
 
 button,
-code {
-	font-family: mononoki, var(--fonts);
+code,
+textarea,
+pre {
+	font-family: var(--monospace);
+	font-size: 0.8em;
 }
 
 details {

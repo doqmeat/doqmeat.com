@@ -1,0 +1,146 @@
+@import url(../../css/style.css);
+
+:root {
+	--f: var(--fonts);
+	--k: #27282a;
+	--c: #7ed5d5;
+	--y: #f2f275;
+	--m: #e982e9;
+	--bg-trans: rgba(254, 254, 254, 0.841);
+}
+
+html {
+	scrollbar-width: thin;
+	scrollbar-color: var(--c) var(--y);
+}
+
+body {
+	font-family: var(--f);
+	color: rgb(48, 51, 77);
+	position: relative;
+	background:
+	/* Visual by Codioful */
+		linear-gradient(125.95deg, #c700bf 10.95%, #7da900 100%),
+		linear-gradient(341.1deg, #00c2ff 7.52%, #4e00b1 77.98%),
+		linear-gradient(222.34deg, #a90000 12.99%, #03ffe2 87.21%),
+		linear-gradient(130.22deg, #8fa600 18.02%, #5a31ff 100%);
+	background-blend-mode: screen, color-dodge, color-dodge, normal;
+}
+
+a {
+	color: rgb(101, 101, 205);
+}
+
+hr {
+	background: #7ed5d5;
+	background: linear-gradient(
+		90deg,
+		rgba(126, 213, 213, 1) 0%,
+		rgba(236, 236, 137, 1) 50%,
+		rgba(233, 130, 233, 1) 100%
+	);
+	border: 0px;
+	height: 2px;
+	margin: auto 30px;
+}
+
+header {
+	display: flex;
+	border-bottom: 1px dashed var(--c);
+	height: 50px;
+	overflow: hidden;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	background: var(--bg-trans);
+	padding: 10px;
+	nav {
+		display: block;
+		a {
+			border-radius: 2px;
+			padding: 1px 3px;
+			margin: 0px 8px;
+			color: var(--k);
+			text-decoration: none;
+			display: inline-block;
+			&:nth-of-type(3n + 1) {
+				background: var(--y);
+			}
+			&:nth-of-type(3n + 2) {
+				background: var(--c);
+			}
+			&:nth-of-type(3n + 3) {
+				background: var(--m);
+			}
+			&:hover {
+				color: white;
+				background: var(--k);
+			}
+		}
+	}
+}
+
+h1 {
+	font-size: 25px;
+	margin: 0px;
+}
+
+wrapper {
+	display: grid;
+	grid-template-areas: "nav main";
+	grid-template-columns: 2fr 3fr;
+	margin: auto;
+	gap: 30px;
+	padding: 30px;
+	max-width: 1200px;
+	/* - 50px from the header */
+	height: calc(100vh - 50px);
+	position: relative;
+	nav {
+		grid-area: nav;
+	}
+	main {
+		grid-area: main;
+	}
+	nav,
+	main {
+		padding: 10px;
+		overflow: auto;
+		border: 1px dashed var(--m);
+		background: var(--bg-trans);
+	}
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: 2px;
+}
+
+footer,
+h2 {
+	text-align: center;
+}
+
+/* for the font page */
+
+.font {
+	text-align: center;
+	line-height: normal;
+}
+
+p.font a {
+	font-weight: normal;
+}
+
+@media screen and (max-width: 600px) {
+	header {
+		height: fit-content;
+	}
+
+	wrapper {
+		display: block;
+		height: 90vh;
+		overflow: auto;
+	}
+}
