@@ -1,0 +1,13 @@
+---
+title: tutorials
+tags: ["resources_page"]
+no_nav: True
+desc: tutorials & guides i've written
+permalink: resources/tutorials/index.html
+layout: resources/index.html
+---
+<ul>
+  {% for item in collections.resources_tutorials %}
+  <li><a href="{{ item.page.url }}">{{ item.data.title }}</a> - {{ item.data.desc }}</li>
+  {% endfor %}
+</ul>

@@ -5,15 +5,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/_files/pages/resources/body.css">
+  <link rel="shortcut icon" href="/_files/assets/pix/notebook.gif" type="image/x-icon">
   <title>{{ title }}</title>
+  {% if no_nav %}
+  <style>
+    wrapper {
+      height: fit-content;
+      grid-template-areas:
+        "main main"
+        "footer footer";
+      grid-template-rows: min-content auto;
+    }
+  </style>
+  {% endif %}
 </head>
 
 <body>
   <header>
-    <h1>★ {{ title }}</h1>
+    <h1><a title="go back to homepage" href="/">★</a> {{ title }}</h1>
     <nav>
       <a href="/resources/">info</a>
       <a href="/resources/links/">links</a>
+      <a href="/resources/F2U/">F2U</a>
+      <a href="/resources/tutorials/">tutorials</a>
       <!-- <a href="/resources/bookmarks/">bookmarks</a>
       <a href="/resources/graphics/">graphics</a>
       <a href="/resources/codes/">codes</a>
@@ -22,19 +36,25 @@
     </nav>
   </header>
   <wrapper>
+    {% unless no_nav %}
     <nav>
       {% block nav %}
       {% endblock %}
     </nav>
+    {% endunless %}
     <main>
+      <p>{{ desc }}</p>
+      {% if no_nav %}
+      {{ content }}
+      {% else %}
       {% block content %}
       {% endblock %}
-      <hr>
-      <footer>
-        <p>last updated on: {{ page.date | shortDate }}</p>
-        <p><a href="/">homepage</a> / <a href="/sitemap.html">sitemap </a></p>
-      </footer>
+      {% endif %}
     </main>
+    <footer>
+      <p>{% if published_date %} published on <b>{{ published_date | shortDate }}</b> / {% endif %}last updated on <b>{{ page.date | shortDate }}</b></p>
+      <p><a href="/">homepage</a> / <a href="/sitemap.html">sitemap </a></p>
+    </footer>
   </wrapper>
   {% include "_tooltip.html" %}
 </body>

@@ -6,7 +6,7 @@
 }
 
 :root {
-	--fonts: gaegu-r, ms pgothic, arial;
+	--fonts: dot gothic, gaegu-r, ms pgothic, arial;
 	--monospace: mononoki, consolas, monospace;
 	--tt-bg: rgb(59, 50, 50);
 	--tt-color: rgb(233, 201, 162);
@@ -21,7 +21,7 @@ body {
 	margin: 0px;
 	padding: 0px;
 	color: black;
-	font-size: 18px;
+	font-size: 16px;
 	font-family: var(--fonts);
 	min-height: 100vh;
 }
@@ -41,7 +41,8 @@ a.no-arrow[href^="https://"]::after {
 }
 
 code {
-	background: rgb(49, 53, 82);
+	padding: 1px 2px;
+	background: rgb(46, 49, 73);
 	color: rgb(244, 244, 244);
 }
 
@@ -50,12 +51,16 @@ button {
 	cursor: help;
 }
 
+mark {
+	background: #fcefae;
+}
+
 button,
 code,
 textarea,
 pre {
 	font-family: var(--monospace);
-	font-size: 0.8em;
+	font-size: 16px;
 }
 
 details {

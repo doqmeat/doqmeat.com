@@ -1,0 +1,34 @@
+---
+title: HTML templates
+tags: ["resources_page"]
+desc: F2U layouts, templates, and snippets coded by me for you to use on your website!
+---
+
+{% layout "resources/index.html" %}
+
+{% block nav %}
+{% include "resources/_F2U-nav.html" %}
+{% endblock %}
+
+{% block content %}
+<p>source code for these are hosted on <a href="https://tangled.org/doqmeat.com/?tab=repos" target="_blank">tangled</a> and you can download them via my <a href="https://vgen.co/doqmeat/shop" target="_blank">VGen shop</a>!</p>
+<h3>rules</h3>
+<ul>
+  <li>you are allowed to edit and use code from these templates for your own things to your hearts content</li>
+  <li><b>credit is not mandatory</b> but a link back to my <a href="https://doqmeat.com/" target="_blank">website</a> anywhere is very appreciated.</li>
+</ul>
+
+<h2 id="walkman"><a title="preview and download" href="/_files/pages/resources/preview/walkman/" target="_blank">JS sony walkman mp3 player</a></h2>
+<img src="/_files/pages/resources/preview/walkman-mp3.gif" alt="demo of the JS walkman mp3 player">
+<p>i had one of these when i was little so i wanted to try doing a JS music player (using sayantanm19's <a href="https://github.com/sayantanm19/js-music-player" target="_blank" class="outlink">js-music-player</a>) that looked as much as the real thing. it was very fun to do tbh! i implemented a little playlist screen in which you can select what song to play.</p>
+<p>it looks best on firefox, but looks okay on chrome. more details about issues can be found on the tangled repo</p>
+
+<h2 id="yukika"><a title="click for preview and download!" href="/_files/pages/resources/preview/yukika.html" target="_blank">yukika passport</a></h2>
+<img src="/_files/pages/resources/preview/yukika1.jpg" width="100%" alt="screenshots of yukika theme">
+<img src="/_files/pages/resources/preview/yukika2.jpg" width="100%" alt="screenshots of yukika theme">
+<p>a fun exercise on CSS animations and to see how close i could get to doing all of this with my current knowledge of JS. inspired by yukika's soul lady album and the passport inclusion! i talk more about it in the preview :3</p>
+
+<h2 id="notebook"><a title="click for preview and download!" href="/_files/pages/resources/preview/notebook.html" target="_blank">notebook</a></h2>
+<center><img src="/_files/pages/resources/preview/notebook.jpg" width="100%"><br><img src="/_files/pages/resources/preview/notebook2.jpg" width="100%"></center>
+<p>since i was making the notebook code for my resources page, i wanted to clean to code up eventually so i could share it with others and here is the result!</p>
+{% endblock %}

@@ -1,7 +1,6 @@
 @import url(../css/style.css);
 
 :root {
-	--fonts: gaegu-r, ms pgothic, arial;
 	--accent: #7092b8;
 	--tt-bg: var(--accent);
 	--tt-color: rgb(255, 255, 255);
