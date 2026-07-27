@@ -1,7 +1,6 @@
 @import url(../../css/style.css);
 
 :root {
-	--f: var(--fonts);
 	--k: #27282a;
 	--c: #e3edff;
 	--y: #d1ebcd;
@@ -22,7 +21,6 @@ html {
 }
 
 body {
-	font-family: var(--f);
 	color: rgb(48, 51, 77);
 	position: relative;
 	background: url(assets/iri-bg.png);
@@ -136,7 +134,7 @@ wrapper {
 	}
 	nav,
 	main {
-		padding: 10px;
+		padding: 20px;
 		overflow: auto;
 	}
 }

@@ -41,7 +41,7 @@ nav li {
 }
 
 wrapper {
-	max-width: 900px;
+	max-width: 800px;
 }
 
 main {
@@ -99,7 +99,7 @@ main {
 span#statuscafe-username::after {
 	content: " - ";
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
 	wrapper {
 		margin: auto 20px;
 	}
