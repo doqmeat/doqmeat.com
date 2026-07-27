@@ -1,5 +1,10 @@
 const playlist = [
 	{
+		title: "past - kensuke ushio",
+		cover: "csm-reze.png",
+		id: "2k5O77EL9gc",
+	},
+	{
 		title: "fish in the pool - yeule",
 		cover: "fish-in-the-pool.png",
 		id: "xcWl8VlxGpA",

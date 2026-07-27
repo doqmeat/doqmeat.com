@@ -64,6 +64,11 @@ header {
 	padding: 10px;
 	nav {
 		display: block;
+		p {
+			padding: 1px 3px;
+			margin: 0px 8px;
+			display: inline-block;
+		}
 		a {
 			border-radius: 2px;
 			padding: 1px 3px;

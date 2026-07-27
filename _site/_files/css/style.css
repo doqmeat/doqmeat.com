@@ -60,7 +60,7 @@ code,
 textarea,
 pre {
 	font-family: var(--monospace);
-	font-size: 16px;
+	font-size: 15px;
 }
 
 details {

@@ -40,13 +40,47 @@ nav li {
 	}
 }
 
+wrapper {
+	max-width: 900px;
+}
+
 main {
 	display: grid;
 	position: relative;
 	grid-template-areas:
 		"header header"
-		"content nav";
+		"content nav"
+		"currently nav";
 	gap: 20px;
+	grid-template-columns: 4fr 1.5fr;
+
+	div#currently {
+		grid-area: currently;
+		display: grid;
+		grid-template-columns: 1.5fr 1fr;
+		grid-template-areas:
+			"heading heading"
+			"status music";
+		h2 {
+			grid-area: heading;
+			margin: 0px;
+		}
+	}
+
+	aside#status {
+		grid-area: status;
+		padding-right: 10px;
+	}
+
+	aside#featured-music {
+		grid-area: music;
+		padding-left: 10px;
+		img {
+			display: block;
+			margin: 10px auto;
+			max-width: 50%;
+		}
+	}
 	header {
 		grid-area: header;
 		text-align: center;
@@ -65,12 +99,31 @@ main {
 span#statuscafe-username::after {
 	content: " - ";
 }
+@media screen and (max-width: 900px) {
+	wrapper {
+		margin: auto 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	main aside#featured-music {
+		padding: 0px;
+	}
+	main div#currently {
+		gap: 0px;
+		grid-template-areas:
+			"heading heading"
+			"status status"
+			"music music";
+	}
+}
 
 @media screen and (max-width: 450px) {
 	main {
 		grid-template-areas:
 			"header header"
 			"content content"
+			"currently currently"
 			"nav nav";
 		gap: 0px;
 		nav {
