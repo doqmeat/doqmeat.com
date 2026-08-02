@@ -41,7 +41,7 @@ a.no-arrow[href^="https://"]::after {
 }
 
 li {
-	margin: 10px 5px;
+	margin: 5px;
 }
 
 code {

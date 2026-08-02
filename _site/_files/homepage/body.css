@@ -99,6 +99,23 @@ main {
 span#statuscafe-username::after {
 	content: " - ";
 }
+
+#chatbox {
+	background: transparent;
+	border: 0px;
+	padding: 0;
+	width: 90vw;
+	max-width: 500px;
+	height: 60vh;
+	max-height: 400px;
+	margin: auto auto;
+}
+
+footer {
+	a[href]::after {
+		content: none;
+	}
+}
 @media screen and (max-width: 800px) {
 	wrapper {
 		margin: auto 20px;

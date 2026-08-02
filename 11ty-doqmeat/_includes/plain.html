@@ -17,15 +17,12 @@ that's lame
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>{{ title }}</title>
   <link href="rss.xml" rel="alternate" type="application/rss+xml" title="doqmeat RSS feed">
+  {% if page.url == "/" %}
+  <script src="https://u.widget.st/ar.js"></script>{% endif %}
   <link rel="icon" type="image/x-icon" href="/_files/{% if favicon %}{{ favicon }}{% else %}assets/pix/silly-cat.gif{% endif %}">
   <link href="/_files/css/plain.css" rel="stylesheet" type="text/css" media="all">
   {% if extra_css %}
   <link href="/_files/{{ extra_css }}" rel="stylesheet" type="text/css" media="all">{% endif %}
-  <!-- pagefind -->
-  {% if page.url == "/search/" %}
-  <link href="/_files/css/pagefind.css" rel="stylesheet">
-  <script src="/pagefind/pagefind-ui.js"></script>
-  {% endif %}
 </head>
 
 <body>
@@ -37,11 +34,20 @@ that's lame
       <p><a href="javascript:history.back()">go back</a> / <a href="{{ siteInfo.sitemap }}">sitemap</a> / <a href="/">homepage</a> / <a href="#">top</a></p>
       {% else %}
       <p><b>last updated on {{ page.date | shortDate }}</b> / <a href="{{ siteInfo.sitemap }}">sitemap</a> / <a href="/info/credit.html#homepage">credit</a></p>
-      <p>coded with <img title="LOVE!" src="/_files/assets/pix/heart-paper.gif" alt="love"> by <b>des</b> / on the web since <b>11.apr.23</b> / <a href="mailto:&#x6d;&#x65;&#x6f;&#x77;&commat;&#x64;&#x6f;&#x71;&#x6d;&#x65;&#x61;&#x74;&period;&#x63;&#x6f;&#x6d;" target="_blank">e-mail</a> / <a href="javascript:window.open('https://www3.cbox.ws/box/?boxid=3527348&boxtag=lFAd4a', 'chatbox', 'width=390,height=470,popup=true')">chatbox</a></p>
+      <p>coded with <img title="LOVE!" src="/_files/assets/pix/heart-paper.gif" alt="love"> by <b>des</b> / on the web since <b>11.apr.23</b> / <a href="mailto:{{ siteInfo.email }}" target="_blank">e-mail</a> / <button onclick="openChatbox()">chatbox</button> / <!-- FC2 Counter  Starts here -->
+        <script language="javascript" type="text/javascript" src="//counter1.fc2.com/counter.php?id=39059397&main=1"></script><noscript><img src="//counter1.fc2.com/counter_img.php?id=39059397&main=1" /></noscript>
+        <!-- FC2 Counter  Ends here -->
+      </p>
       <img title="my site's button :3" src="/_files/assets/web/buttons/doqmeat-3.png" alt="doqmeat button"> <a class="no-arrow" title="a collective of my sites and projects :p" href="https://sepiarecord.net" target="_blank"><img src="https://sepiarecord.net/assets/imgs/sepiarecord-btn.png" alt="sepiarecord.net link"></a>
       {% endif %}
     </footer>
   </wrapper>
+  {% if page.url == "/" %}
+  <dialog id="chatbox">
+    <ws-widget width="100%" height="96%" type="chat" iid="869"></ws-widget>
+  </dialog>
+  {% endif %}
+
 
   {% if extra_js %}
   <script src="/_files/{{ extra_js }}"></script>{% endif %}
