@@ -15,16 +15,6 @@ function closeMemos() {
 	}
 }
 
-function chatMemo() {
-	let memo5 = document.getElementById("memo5");
-	console.log(memo5.style.display);
-	if (memo5.style.display == "block") {
-		memo5.style.display = "none";
-	} else {
-		memo5.style.display = "block";
-	}
-}
-
 for (i = 0; i < memos.length; i++) {
 	let memoClick = memos[i];
 	// changes the z-index of the memos as you click on them

@@ -654,33 +654,6 @@ button:hover {
 	}
 }
 
-#memo5 {
-	/* default memo class */
-	cursor: move;
-	position: fixed;
-	overflow: hidden;
-	border-radius: 10px;
-	box-shadow: 5px 5px 10px 1px var(--l-red);
-	scrollbar-color: #e4a79d #fffcdc;
-	/* memo 5 */
-	display: none;
-	text-align: left;
-	top: 10%;
-	right: 34%;
-	rotate: 7deg;
-	width: 400px;
-	height: 500px;
-	background: url("assets/memo-diner.jpg");
-	background-size: cover;
-	.innermemo {
-		background: #fbe6efc5;
-		overflow: hidden;
-		padding: 10px;
-		height: 48%;
-		margin-top: calc(500px / 1.9);
-	}
-}
-
 .innermemo {
 	overflow: auto;
 }

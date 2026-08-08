@@ -1,0 +1,9 @@
+img#cd-player-img {
+	width: 100%;
+	max-width: 300px;
+	float: left;
+	shape-outside: url(../pages/music/assets/cd-player.png);
+	shape-image-threshold: 0;
+	shape-margin: 10px;
+	margin-right: 15px;
+}

@@ -135,9 +135,9 @@ const logPosts = {
 
 // Recurring events every year (e.g. birthdays)
 const recurringEvents = {
-	"01-01": { icon: "🎉", text: "new years" },
-	"04-13": { icon: "✨", text: "doqmeat website anniversary" },
-	"10-31": { icon: "🎃", text: "halloween" },
+	"04-11": { icon: "✨", text: "doqmeat website anniversary" },
+	"02-02": { icon: "🎂", text: "my b-day!" },
+	"12-10": { icon: "❤️", text: "me and gf anniversary" },
 };
 
 // Weekday headers
