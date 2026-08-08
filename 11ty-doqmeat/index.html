@@ -8,7 +8,7 @@ favicon: assets/pix/flower-purple.gif
 <!-- ~~~~~~~ current to-do's !!!! ~~~~~~~~ -->
 <!-- fix strikethrough y-axis -->
 <!-- scrapbook layout -->
-<!-- finish resources -->
+<!-- remove chatbox css from journal -->
 <header>
   <h1>welcome to {{ "doqmeat.com" | multicolor }}</h1>
   <img title="doqmeat mascot.... :3" src="/_files/homepage/catmeat-trans.png" width="95%" style="max-width:600px;display:block;margin:auto;" alt="doqmeat mascot">
@@ -72,7 +72,7 @@ favicon: assets/pix/flower-purple.gif
   </aside>
   <aside id="featured-music">
     <h3 class="title">on repeat:</h3>
-    {% for item in collections.featured_music reversed %}
+    {% for item in collections.featured_songs reversed %}
     {% if forloop.index0 == 1 %}
     {% break %}
     {% else %}
