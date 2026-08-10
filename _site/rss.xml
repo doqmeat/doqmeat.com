@@ -28,6 +28,15 @@
 			<pubDate>Sat, 18 Jul 2026 12:00:00 -0400</pubDate>
 		</item>
 
+    <item>
+			<title>added music page</title>
+			<link>https://doqmeat.com/music</link>
+			<description>
+added a music page with a subpage dedicated to the &lt;a href=&#34;https://doqmeat.com/music/featured.html&#34;&gt;featured&lt;/a&gt; songs &lt;small&gt;(and soon to be featured albums too!)&lt;/small&gt; of whatever i have on repeat. and also a subpage for my &lt;a href=&#34;https://doqmeat.com/music/listening-logs.html&#34;&gt;listening logs&lt;/a&gt; lists. that are mostly on rateyourmusic but hey it&#39;s there.</description>
+			<guid isPermaLink="false">260810</guid>
+			<pubDate>Mon, 10 Aug 2026 12:00:00 -0400</pubDate>
+		</item>
+
 
 	</channel>
 </rss>

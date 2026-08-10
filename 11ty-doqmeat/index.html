@@ -79,10 +79,11 @@ favicon: assets/pix/flower-purple.gif
     {% else %}
     <article>
       <p><i>{{ item.data.title }}</i> - <b>{{ item.data.artist }}</b></p>
-      <a title="click to listen on youtube!" href="https://www.youtube.com/watch?v={{ item.data.youtube_id }}" target="_blank" class="no-arrow"><img src="/_files/pages/music/featured/{{ item.data.cover }}" alt="cover for {{ item.data.title }}"></a>
+      <a title="click to listen on youtube!" href="https://www.youtube.com/watch?v={{ item.data.youtube_id }}" target="_blank" class="no-arrow"><img src="/_files/pages/music/covers/{{ item.data.cover }}" alt="cover for {{ item.data.title }}"></a>
       {{ item.content }}
     </article>
     {% endif %}
     {% endfor %}
+    <a href="/music/featured.html">view past songs...</a>
   </aside>
 </div>
