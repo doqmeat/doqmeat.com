@@ -7,3 +7,20 @@ img#cd-player-img {
 	shape-margin: 10px;
 	margin-right: 15px;
 }
+
+#lastfm-content {
+	max-width: 500px;
+	margin: auto;
+	span {
+		margin: 10px;
+		display: block;
+		position: relative;
+	}
+	div.album-content {
+		float: right;
+		margin: 10px;
+	}
+	img.album-cover {
+		max-height: 130px;
+	}
+}
