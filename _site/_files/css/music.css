@@ -10,17 +10,36 @@ img#cd-player-img {
 
 #lastfm-content {
 	max-width: 500px;
+	max-height: 300px;
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
 	margin: auto;
+	flex-grow: 1;
 	span {
-		margin: 10px;
 		display: block;
 		position: relative;
 	}
+	div.info-content {
+		flex-basis: 400px;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: space-around;
+	}
 	div.album-content {
-		float: right;
-		margin: 10px;
+		flex-shrink: 1;
+		flex-basis: 150px;
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: column;
+		justify-content: center;
+		transition-duration: 0.5s;
+		&:hover {
+			transform: scale(2);
+		}
 	}
 	img.album-cover {
-		max-height: 130px;
+		width: 100%;
 	}
 }

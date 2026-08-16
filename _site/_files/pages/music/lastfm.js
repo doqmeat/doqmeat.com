@@ -10,6 +10,8 @@ let artistName = document.createElement("span");
 let albumName = document.createElement("span");
 let albumContent = document.createElement("div");
 albumContent.setAttribute("class", "album-content");
+let infoContent = document.createElement("div");
+infoContent.setAttribute("class", "info-content");
 let albumImg = document.createElement("img");
 albumImg.setAttribute("class", "album-cover");
 let linkP = document.createElement("span");
@@ -47,23 +49,26 @@ fetch(url)
 			albumImg.setAttribute("alt", `${album} album cover`);
 			albumContent.append(albumImg);
 		}
-		content.append(albumContent);
 
 		// track
 		songName.textContent = "🎵 " + track;
-		content.append(songName);
+		infoContent.append(songName);
 
 		// artist
 		artistName.textContent = "👤 " + artist;
-		content.append(artistName);
+		infoContent.append(artistName);
 
 		// album title
-		content.append(albumName);
+		infoContent.append(albumName);
 
 		// lastfm link
 		link.setAttribute("href", trackLink);
 		link.textContent = `listen on lastFM`;
 		linkP.append("📻 ");
 		linkP.append(link);
-		content.append(linkP);
+		infoContent.append(linkP);
+
+		// add the final 2 blocks
+		content.append(infoContent);
+		content.append(albumContent);
 	});
