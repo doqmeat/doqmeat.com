@@ -1,22 +1,55 @@
 ---
-title: featured songs
+title: featured music
 tags: ["music-subpage"]
 ---
+<style>
+  wrapper {
+    max-width: 1200px;
+  }
+</style>
 <p><a href="/music">⬅ go back to /music</a></p>
 <h1>{{ title }}</h1>
-<p>songs i would like to highlight and that i probably have on repeat at the moment.</p>
-{% for item in collections.featured_songs reversed %}
-<article id="{{ item.page.fileSlug }}" style="display:flow-root;padding:10px">
-  <h2><a href="#{{ item.page.fileSlug }}" style="text-decoration: none;">♪</a><i>{{ item.data.title }}</i> {% if item.data.artist %}- <b>{{ item.data.artist }}{% endif %}</b></h2>
-  {% if item.data.cover %}
-  <img src="/_files/pages/music/covers/{{ item.data.cover }}" style="max-width:150px; float:left; margin:10px" alt="cover for {{ item.data.title }}">
-  {% endif %}
-  <div style="padding-top:1px">{{ item.content }}</div>
-  <p><b>added on {{ item.date | shortDate }}</b></p>
-  {% if item.data.youtube_id %}
-  <p><a href="https://www.youtube.com/watch?v={{ item.data.youtube_id }}" target="_blank">listen on youtube!</a></p>
-  {% endif %}
-</article>
-<hr>
-{% endfor %}
+<p>songs and albums i would like to highlight / recommend and that i probably have on repeat at the moment.</p>
+<div id="featured">
+  <section id="featured-music">
+    <h2>songs</h2>
+    {% for item in collections.featured_songs reversed %}
+    <article id="{{ item.page.fileSlug }}" style="display:flow-root;padding:10px">
+      <h3><a href="#{{ item.page.fileSlug }}" style="text-decoration: none;">♪</a><i>{{ item.data.title }}</i> {% if item.data.artist %}- <b>{{ item.data.artist }}{% endif %}</b></h3>
+      {% if item.data.cover %}
+      <img src="/_files/pages/music/covers/{{ item.data.cover }}" style="max-width:150px; float:left; margin:10px" alt="cover for {{ item.data.title }}">
+      {% endif %}
+      <div style="padding-top:1px">{{ item.content }}</div>
+      <p><b>added on {{ item.date | shortDate }}</b></p>
+      {% if item.data.youtube_id %}
+      <p><a href="https://www.youtube.com/watch?v={{ item.data.youtube_id }}" target="_blank">listen on youtube!</a></p>
+      {% endif %}
+      {% if item.data.link %}
+      <p><a href="{{ item.data.link }}" target="_blank">click to listen!</a></p>
+      {% endif %}
+    </article>
+    <hr>
+    {% endfor %}
+  </section>
+  <section id="featured-album">
+    <h2>albums</h2>
+    {% for item in collections.featured_albums reversed %}
+    <article id="{{ item.page.fileSlug }}" style="display:flow-root;padding:10px">
+      <h3><a href="#{{ item.page.fileSlug }}" style="text-decoration: none;">♪</a><i>{{ item.data.title }}</i> {% if item.data.artist %}- <b>{{ item.data.artist }}{% endif %}</b></h3>
+      {% if item.data.cover %}
+      <img src="/_files/pages/music/covers/{{ item.data.cover }}" style="max-width:150px; float:left; margin:10px" alt="cover for {{ item.data.title }}">
+      {% endif %}
+      <div style="padding-top:1px">{{ item.content }}</div>
+      <p><b>added on {{ item.date | shortDate }}</b></p>
+      {% if item.data.youtube_id %}
+      <p><a href="https://www.youtube.com/watch?v={{ item.data.youtube_id }}" target="_blank">listen on youtube!</a></p>
+      {% endif %}
+      {% if item.data.link %}
+      <p><a href="{{ item.data.link }}" target="_blank">click to listen!</a></p>
+      {% endif %}
+    </article>
+    <hr>
+    {% endfor %}
+  </section>
+</div>
 <p><small>more older entries to be added at some point :p</small></p>

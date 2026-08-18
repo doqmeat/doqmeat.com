@@ -2,8 +2,9 @@
 
 :root {
 	--accent: #7092b8;
+	--bg: rgb(245, 244, 240);
 	--tt-bg: var(--accent);
-	--tt-color: rgb(255, 255, 255);
+	--tt-color: var(--bg);
 }
 
 ::selection {
@@ -16,7 +17,7 @@ html {
 }
 
 body {
-	background-color: rgb(245, 244, 240);
+	background-color: var(--bg);
 	margin: 0px;
 	color: #676160;
 	word-spacing: 3px;
@@ -36,6 +37,7 @@ button {
 details {
 	margin: 5px;
 	border: 1px solid var(--tt-bg);
+	background: var(--tt-color);
 }
 
 hr {

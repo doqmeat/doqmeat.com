@@ -139,6 +139,13 @@ module.exports = function (eleventyConfig) {
 		return Array.from(tagSet);
 	});
 
+	eleventyConfig.addPreprocessor("drafts", "njk,md,liquid", (data, content) => {
+		if (data.draft) {
+			// Ignore this file.
+			return false;
+		}
+	});
+
 	return {
 		dir: {
 			output: "../_site",

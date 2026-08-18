@@ -43,3 +43,20 @@ img#cd-player-img {
 		width: 100%;
 	}
 }
+
+/* featured music page */
+div#featured {
+	display: grid;
+	grid-template-areas: "songs albums";
+	grid-template-columns: 1fr 1fr;
+	gap: 20px;
+	h2 {
+		text-align: center;
+	}
+}
+section#featured-songs {
+	grid-area: songs;
+}
+section#featured-albums {
+	grid-area: albums;
+}
