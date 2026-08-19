@@ -305,8 +305,8 @@ nav {
 	grid-area: margin;
 	border-right: 2px solid var(--l-red);
 	overflow: auto;
-	scroll-behavior: smooth;
 	scrollbar-color: #c7d9f8 #e4a79d;
+	min-height: 100%;
 
 	ul {
 		margin: 20px 0;
