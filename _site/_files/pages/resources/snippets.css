@@ -1,0 +1,71 @@
+.rainbow:hover {
+	letter-spacing: 0px;
+	filter: none;
+	animation-name: rainbowLink;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rainbowLink {
+	0% {
+		color: #d593ff;
+	}
+
+	20% {
+		color: #00c3fe;
+	}
+
+	40% {
+		color: #8ef77b;
+	}
+
+	60% {
+		color: #f9d56a;
+	}
+
+	80% {
+		color: #fea17f;
+	}
+
+	100% {
+		color: #ff76b1;
+	}
+}
+
+.rainbowDark:hover {
+	letter-spacing: 0px;
+	filter: none;
+	animation-name: rainbowLinkD;
+	animation-duration: 1.8s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: none;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes rainbowLinkD {
+	0% {
+		color: #9669b1;
+	}
+
+	20% {
+		color: #3794b0;
+	}
+
+	40% {
+		color: #49a739;
+	}
+
+	60% {
+		color: #a88726;
+	}
+
+	80% {
+		color: #c6651c;
+	}
+
+	100% {
+		color: #ac2d38;
+	}
+}
