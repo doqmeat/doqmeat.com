@@ -5,7 +5,7 @@ hello! this is the repository of my personal website, its kind of like a digital
 
 ## about site
 
-- deployed to **nekoweb.org** using [deploy2nekoweb](https://deploy.nekoweb.org/)
+- deployed to **nekoweb.org** using git.
 - tested on firefox, on a desktop. and on chrome and mobile sometimes.
 - this massive site is all (mostly) hand-coded HTML #freak
 - built with [11ty](https://11ty.dev) which helps out for pages with repetitive layouts. it was getting too crazy to maintain

@@ -2,7 +2,7 @@
   "name": "doqmeat.com",
   "version": "6.0.0",
   "scripts": {
-    "delete": "rm -rf ../_site",
+    "delete": "rm -rf ../../nekoweb-git/doqmeat.com",
     "build": "npx @11ty/eleventy",
     "search": "npx pagefind --site ../_site --glob '../_site/notebook/**/*.html'",
     "incr": "npx @11ty/eleventy --serve --incremental"
