@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/_files/assets/pix/sticky.gif">
+  <title>learning in public</title>
+  <link href="/_files/pages/learning/body.css" rel="stylesheet">
+  
+</head>
+
+<body>
+  <aside id="power">
+    <img src="/_files/pages/learning/imgs/power.png" width="100%" alt="power from chainsaw man">
+  </aside>
+  <main>
+    <h1>terminal reference sheet</h1>
+    <p>i only ever use <b>bash</b> shells because using powershell makes me want to kill myself. <q>you should switch to linux</q> i don't think i'm ready for that emotionally.</p>
+<p>anyways, i use <a href="https://git-scm.com/" target="_blank" class="outlink">git bash</a> for windows alongside bash in WSL ubuntu. <b>git bash</b> is a bit weird at times due to being a bash shell in windows so if something is not working right (i can't use neovim in git bash for example) don't panic. i'm new to all this so i've explained some things from how i understand them. feel free to e-mail me if i got something wrong though <img src="/_files/assets/pix/catsob.gif" alt="cat crying"></p>
+<h2>overall</h2>
+<ul>
+  <li><code>clear</code> - clears the terminal screen.</li>
+  <li><code>touch [filename]</code> - creates a file.</li>
+  <li><code>cd [dirname]</code> - moves where you are. <code>cd -</code> gets you to the directory you were previously at.</li>
+  <li><code>mkdir [dirname]</code> - makes a directory / folder.</li>
+  <li><code>exit</code> - exit terminal.</li>
+  <li><code>history</code> - gives you a history of your inputs. <b>tip:</b> you can use a command again by typing an ! and the line number directly by it.</li>
+  <li><code>help</code> - more info.</li>
+  <li><code>start [filename]</code> - opens a file.</li>
+  <li><code>mv [source file] [destination directory or renaming]</code> - for renaming / moving files</li>
+  <li><code>pwd</code> - shows you where you currently are</li>
+  <li><code>which [program-name]</code> - tells you the location path the terminal is using to locate the program.</li>
+  <li><code>ls</code> - lists files of the directory you're currently in. <code>ls -l</code> for a more detailed listing. <code>ls -a</code> to show hidden files. <code>ls --help</code> help!!!</li>
+  <li><code>rm</code> - remove a file.</li>
+  <li><code>echo</code> - outputs whatever you give it. </li>
+  <li><code>cat [filename]</code> - outputs the contents of that file in the terminal</li>
+  <li><code>scp [source file] [destination directory]</code> - lets you copy files between different computers with ssh</li>
+  <li><code>cp [filename1] [newfile]</code> - copies a files. you can also achieve the same with <code>cat &lt;[filename1]&gt; [newfile]</code></li>
+  <li><code>find -name '*[search]*'</code> - searches for files with that word.</li>
+  <li><code>sudo</code> - run things as a superuser</li>
+  <li><code>winget</code> - package manager for windows</li>
+  <li><code>CTRL</code> + <code>c</code> lets you quit / terminate anything that's happening on your terminal</li>
+  <li><code>wc [filename]</code> - gives you the amount of lines, words, and bytes a file has</li>
+  <li><code>[command] &gt; file.txt</code> will output the display of that command into the file.txt, overwriting it.</li>
+  <li><code>[command] &gt;&gt; file.txt</code> will output the display of that command into the file.txt, appending it (does not overwrite it).</li>
+  <li><code>rm -rf name-of-folder/</code> <b>USE THIS WITH CAUTION.</b> <i>-r</i> is for recursive and <i>-f</i> is for force. i often use this to delete non-empty folders.</li>
+
+
+</ul>
+<h2>editors</h2>
+<ul>
+  <li><code>nano [filename]</code> - opens the file in the terminal with nano! should already be in your terminal</li>
+  <li><code>notepad [filename]</code> - opens file on notepad (windows exclusive i guess)</li>
+</ul>
+<h2>operators</h2>
+<ul>
+  <li><code>&&</code> - logical and. it will execute two or more commands at once. i use this combo a lot when compiling and running C++ programs: <code>gcc -o main file.cpp && ./main</code></li>
+  <li><code>|</code> - <u>pipe</u>. it will what's on the left as <b>input</b> and feed it to whatever command is on the right.</li>
+  <li><code>&gt;</code> - output redirection. mostly use it to save terminal outputs on a txt file: <code>git status &gt; git-status.txt</code></li>
+  <li><code>&gt;&gt;</code> output append. same as above but instead of overwriting a file, it <b>appends</b> to the file</li>
+</ul>
+<h2>notes</h2>
+<ol>
+  <li>when using ! in file or directory names, bash needs to escape it using the backslash. if i have a folder called <b>!g/</b> then you would write <code>\!g/</code> on the terminal.</li>
+  <li>files with spaces need to be closed with single or double quotes like this <code>'folder 1'</code></li>
+  <li>use <code>q</code> to quit some scripts</li>
+  <li>under <code>~/.profile</code>, <code>~/.bashrc</code>, or <code>~/.bash_profile</code> you can set up variables for paths you frequently use. <a href="shortcuts.jpg" target="_blank">img of my .profile</a>, you can use them in the terminal as variables using this <code>$</code> symbol. example: <code>cd $DOQMEAT</code> will take me to the path i assigned the variable "DOQMEAT" to.</li>
+  <li>i love customizing my terminal with <a href="https://ohmyposh.dev/" target="_blank">oh-my-posh</a>. here's how my <a href="gitbash.jpg" target="_blank">git bash</a> looks like</li>
+</ol>
+
+<h2>programs</h2>
+<p>you have to download this stuff in order to use them!</p>
+<ul>
+  <li><code>tldr [command]</code> - gives you briefs explanations of what that command does</li>
+  <li><code>code [file/folder]</code> - opens the folder or file in VSC</li>
+</ul>
+<h3>node.js / npm</h3>
+<ul>
+  <li><code>npx http-server -o [filepath]</code> - local http server for you to preview your site! <code>-o</code> opens the browsers upon executing the command</li>
+</ul>
+<h3>git</h3>
+<ul>
+  <li><code>git help</code> - help for git commands.</li>
+  <li><code>git init</code> - initializes a repo</li>
+  <li><code>git status</code> - list changes</li>
+  <li><code>git restore [filename]</code> - restores a file</li>
+  <li><code>git add [files] [dirs]</code> - things to stage for a <code>git commit</code>. you can also use <code>git add -p</code> and it will ask you to yes or no every change before adding it. you can also do <code>git add .</code> to add all changes made to that current directory.</li>
+  <li><code>git diff [filename]</code> - shows you the changes of that file</li>
+  <li><code>git commit -m "[your message here!]"</code> - commits changes while also adding a message to them.</li>
+  <li><code>git push</code> - pushes the code out there.</li>
+  <li><code>git fetch</code> - fetches code.</li>
+  <li><code>git pull</code> - pulls code for any changes.</li>
+  <li><code>git diff --stat --cached [remote/branch]</code> - shows you commits that are about to be pushed. remote/branch is usually <code>origin/main</code> for me.</li>
+  <li><code>git show</code> - show changes made</li>
+  <li><code>git log</code> - previous commits</li>
+  <li><code>rm -rf .git</code> - deletes the .git folder, if you don't want git in your directory then do this.</li>
+
+</ul>
+    <footer>
+      <p>last updated on 24.jul.26</p>
+      <p><a title="learning in public index" href="/learning">index</a> &hearts; <a title="go back home" href="/">homepage</a> &hearts; <a href="/sitemap.html">sitemap</a> </p>
+      <p><b>credit</b>: <a href="/notebook/resources/fonts.html">fonts</a> used: bm-neko, mononoki, power pagedoll from fujimoto's <i>chainsaw man</i>, <a href="https://www.swyx.io/learn-in-public" target="_blank" class="outlink">insp</a></p>
+    </footer>
+  </main>
+  <script src="https://unpkg.com/@popperjs/core@2"></script>
+<script src="https://unpkg.com/tippy.js@6"></script>
+<script src="/_files/js/tooltip.js"></script>
+</body>
+
+</html>

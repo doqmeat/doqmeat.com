@@ -1,0 +1,14 @@
+    body {
+      background-color: rgb(204, 225, 173);
+      background-image: url(/_files/assets/bg/bggrid-transp.png);
+      background-size: auto;
+    }
+
+    dt {
+      font-weight: bold;
+      font-style: italic;
+    }
+
+    dd:not(:last-of-type) {
+      margin-bottom: 20px;
+    }

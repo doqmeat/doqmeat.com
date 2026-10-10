@@ -1,0 +1,44 @@
+body {
+			background: url(bg.png) no-repeat center center fixed;
+			-webkit-background-size: cover;
+			-moz-background-size: cover;
+			-o-background-size: cover;
+			background-size: cover;
+		}
+
+		h3 {
+			text-align: right;
+		}
+
+		blockquote {
+			font-style: italic;
+		}
+
+		a {
+			background: #E986B4;
+			color: black;
+		}
+
+		b {
+			background: #FDFBFC;
+			color: black;
+		}
+
+		i {
+			background: #7EB6C8;
+			color: black;
+		}
+
+		u {
+			text-decoration: wavy underline;
+		}
+
+		.r-img {
+			float: right;
+			margin: 5px 10px;
+		}
+
+		.l-img {
+			float: left;
+			margin: 5px 10px;
+		}
