@@ -148,7 +148,7 @@ module.exports = function (eleventyConfig) {
 
 	return {
 		dir: {
-			output: "../../nekoweb-git/doqmeat.com/",
+			output: "../nekoweb-git/doqmeat.com/",
 		},
 	};
 };
