@@ -1,0 +1,9 @@
+img {
+	vertical-align: middle;
+	max-width: 200px;
+}
+.frame {
+	display: inline-block;
+	border: 1px solid grey;
+	margin: 5px;
+}

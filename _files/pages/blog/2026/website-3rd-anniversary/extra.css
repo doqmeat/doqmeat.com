@@ -1,0 +1,10 @@
+body {
+	background:
+		url(/_files/assets/bg/bggrid-transp.png),
+		linear-gradient(
+			0deg,
+			rgb(216, 157, 157) 0%,
+			rgba(214, 189, 163, 1) 51%,
+			rgb(181, 210, 244) 100%
+		);
+}

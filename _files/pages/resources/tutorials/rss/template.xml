@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+	<channel>
+		<title>title of your RSS feed. can just be your site's name</title>
+		<link>https://YOUR-URL</link>
+		<description>description of your site</description>
+
+		<item>
+			<title>title of the update 2</title>
+			<link>https://URL-OF-THE-UPDATE2</link>
+			<description>this is a description of the update. this is a &lt;a href=&quot;URL&quot;&gt;LINK&lt;/a&gt;.</description>
+			<pubDate>Wed, 10 Jul 2024 15:00:00 -0400</pubDate>
+		</item>
+
+		<item>
+			<title>title of the update 1</title>
+			<link>https://URL-OF-THE-UPDATE2</link>
+			<description>this is a description of the update. &lt;img src=&quot;/!g/pix/2ofem.gif&quot;&gt; this is an image.</description>
+			<pubDate>Tue, 09 Jul 2024 15:00:00 -0400</pubDate>
+		</item>
+
+	</channel>
+</rss>
