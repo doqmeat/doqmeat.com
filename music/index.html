@@ -11,7 +11,7 @@ extra_js: pages/music/lastfm.js
 <h3>subpages</h3>
 <ul>
   {% for item in collections.music-subpage %}
-  <li><a href="{{ item.url }}">{{ item.data.title }}</a></li>
+  <li><a href="{{ item.url }}">{{ item.data.title }} {% if item.data.updated %}<img src="/_files/assets/pix/updated1.gif">{% endif %}</a></li>
   {% endfor %}
   <!-- <li>yearly recaps</li>
   <li>favorite albums</li> 
@@ -30,9 +30,14 @@ extra_js: pages/music/lastfm.js
 <p>i've been honestly very sick of songs i listen getting deleted off streaming platforms or whatever, so i've been resorting to downloading music since early 2024.</p>
 <p>though to listen to new releases i usually resort to the spotify web app with an ad blocker #idgaf</p>
 <h3>is he listening?</h3>
-<img src="/_files/pages/music/assets/is-he-listening.png" alt="a cat with headphones" style="max-width:500px;display:block;margin:auto;">
-<br>
-<a href="https://poll.pollcode.com/18957215" target="_blank">vote here now!</a>
+<form method="post" target="_blank" action="https://poll.pollcode.com/18957215">
+  <div id="is-he-listening">
+    <input type="radio" name="answer" value="1" id="answer189572151" style="float:left;" /><label for="answer189572151" style="float:left;">yes</label>
+    <div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer189572152" style="float:left;" /><label for="answer189572152" style="float:left;width:110px;">no</label>
+    <div style="clear:both;height:2px;"></div>
+    <div style="padding:3px;"><input type="submit" value=" Vote "></div>
+  </div>
+</form>
 <h3>mini projects</h3>
 <p><a href="{{ siteInfo.websites.siinamota_fansite }}" target="_blank"><img src="https://siinamota.doqmeat.com/_files/buttons/siinamotafansite200x40.png" alt="button for the siinamota fansite"></a> - fansite dedicated for my favorite vocaloid producer: siinamota</p>
 <p><a href="{{ siteInfo.websites.siinamota_fanlisting}}" target="_blank"><img src="https://siinamota.doqmeat.com/_files/fanlisting/buttons/200x40/2.png" alt="siinamota fanlisting button"></a> - fanlisting for siinamota</p>

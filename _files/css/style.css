@@ -77,7 +77,12 @@ details > p {
 
 figure {
 	img {
+		display: block;
+		margin: auto;
 		width: 100%;
+	}
+	figcaption {
+		margin: 5px;
 	}
 }
 

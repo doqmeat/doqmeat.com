@@ -8,6 +8,34 @@ img#cd-player-img {
 	margin-right: 15px;
 }
 
+/* is he listening widget */
+div#is-he-listening {
+	max-width: 500px;
+	display: block;
+	margin: auto;
+	padding: 20px;
+	width: 100%;
+	height: 350px;
+	color: inherit;
+	background: url("/_files/pages/music/assets/is-he-listening.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	border-radius: 10px;
+	box-shadow:
+		1px 1px 1px rgba(0, 0, 0, 0.132),
+		-1px -1px 1px rgba(0, 0, 0, 0.132);
+
+	input[type="submit"] {
+		font-family: inherit;
+		font-size: inherit;
+		font-color: inherit;
+		background: var(--tt-bg);
+		border: 0px;
+		border-radius: 2px;
+	}
+}
+
 #lastfm-content {
 	max-width: 500px;
 	max-height: 300px;
@@ -54,6 +82,7 @@ div#featured {
 		text-align: center;
 	}
 }
+
 section#featured-songs {
 	grid-area: songs;
 }
