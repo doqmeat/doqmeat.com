@@ -1,5 +1,5 @@
 # doqmeat.com
-[![doqmeat mascot](_site/_files/homepage/catmeat-trans.png)](https://doqmeat.com/)
+[![doqmeat mascot](_files/homepage/catmeat-trans.png)](https://doqmeat.com/)
 
 hello! this is the repository of my personal website, its kind of like a digital journal
 
